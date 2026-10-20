@@ -2,7 +2,7 @@ import {chromium,webkit} from 'playwright';import {readFile,mkdir,writeFile} fro
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true});
 const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await mkdir('test-results',{recursive:true});const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');const checks=[];
-const base='http://127.0.0.1:4173/UtahBills/';
+const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 try{
 await page.goto(base);await page.getByRole('heading',{name:'Find a bill. Understand its impact.'}).waitFor();
 await page.locator('#search').fill('HB 154');assert.equal(await page.locator('.bill-row').count(),1);await page.locator('#clear').click();
@@ -30,3 +30,4 @@ await page.goto(base+'#bill/HB0154');await page.reload();await page.getByRole('h
 assert.deepEqual(errors,[]);checks.push('Keyboard skip link, direct bill reload under /UtahBills/, and no browser runtime errors passed');
 await writeFile('test-results/report.json',JSON.stringify({testedAt:new Date().toISOString(),checks,limitations:['Automated checks do not prove WCAG conformance. Screen-reader and real-device testing pending.']},null,2));console.log(checks.join('\n'));
 }finally{await browser.close()}
+

@@ -73,3 +73,20 @@ When publishing is desired, create `utahbug/UtahBills`, push this repository's `
 Local Edge checks passed on seven routes at 320, 390, 768, and 1280 pixels: no horizontal overflow and no axe violations for WCAG A/AA tags through 2.2. Search, combined filters, no-result recovery, the explicitly unconnected 2027 state, legal-text checks, identical-version comparisons, direct hash-route reload, and keyboard skip links passed. See `VERIFICATION.md` for the final run.
 
 This is not a WCAG certification. Screen-reader testing, real iPhone/iPad testing, complete keyboard review, human editorial review, individual voting records, live 2027 ingestion, historical-Code validation, reliable publication timing, and substantive-change analysis remain later milestones.
+
+## Environment policy
+
+Only these two published environment addresses are permitted:
+
+| Environment | Permanent address | Purpose |
+| --- | --- | --- |
+| Main | https://utahbug.github.io/UtahBills/ | Normal updates and stable development |
+| Review | https://utahbug.github.io/UtahBills/review/ | Experimental or disruptive changes, only when needed |
+
+These addresses are planned; this documentation does not confirm deployment. Both must be reachable publicly from iPhone and PC. Clearly label Main versus Review in the interface and handoffs. No additional preview hosts, temporary sites, or per-branch deployment URLs.
+
+Use one local instance at http://127.0.0.1:4173/UtahBills/ and reuse its browser tab. A second local instance is allowed only for necessary side-by-side testing and should be stopped afterward.
+
+Before the first Review deployment, extend the Pages packaging workflow to preserve both environments in the same artifact. A Review-only upload would replace the entire Pages deployment and must never be used. Until that packaging exists, the included workflow supports Main only. Assess disruptive changes for Review before replacing working Main.
+
+See `AGENTS.md` for the persistent development policy.
