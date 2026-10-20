@@ -1,0 +1,1 @@
+{"name":"utahbills","version":"0.1.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","start":"node scripts/serve.mjs","test":"node tests/qa.mjs","refresh":"python scripts/acquire.py"},"dependencies":{"diff":"8.0.2","lucide":"0.468.0"},"devDependencies":{"esbuild":"0.25.11","playwright":"1.56.1","axe-core":"4.11.0"}}

@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://le.utah.gov/data/2026GS/HB0011.json",
+    "path": "data/raw/HB0011.json",
+    "retrievedAt": "2026-10-20T22:29:59.827423+00:00",
+    "sha256": "efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0011.xml",
+    "path": "data/raw/Enrolled-HB0011.xml",
+    "retrievedAt": "2026-10-20T22:29:59.849225+00:00",
+    "sha256": "0d68f0dfe0f3ccc15335183e671bb201356e81106ae881b5e396d55508bd4fe5"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0011.xml",
+    "path": "data/raw/Introduced-HB0011.xml",
+    "retrievedAt": "2026-10-20T22:29:59.884118+00:00",
+    "sha256": "c51e667e9b4c70f0490d37d1c305816a17cd77f91a9e0506bfc6c2ae15fc0eed"
+  },
+  {
+    "url": "https://le.utah.gov/data/2026GS/HB0154.json",
+    "path": "data/raw/HB0154.json",
+    "retrievedAt": "2026-10-20T22:29:59.931675+00:00",
+    "sha256": "66282875368e95818a0206e19d805b15caab8345127e4654a8a425a013fa14e9"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0154.xml",
+    "path": "data/raw/Introduced-HB0154.xml",
+    "retrievedAt": "2026-10-20T22:29:59.958004+00:00",
+    "sha256": "64ce83faaf33cc8e65d84c821eb02b8ce03ffa05a670ccaecb66827f93f6c9fd"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0154S01.xml",
+    "path": "data/raw/PubSub-HB0154S01.xml",
+    "retrievedAt": "2026-10-20T22:29:59.995533+00:00",
+    "sha256": "7cbc935f17219524c175c5a6b18662736c3ebba23973870a9010127b27c07907"
+  },
+  {
+    "url": "https://le.utah.gov/data/2026GS/HB0155.json",
+    "path": "data/raw/HB0155.json",
+    "retrievedAt": "2026-10-20T22:30:00.027890+00:00",
+    "sha256": "96a5df18f5af9d1dabfb07280feac437e84fc53bc07604e8e98c2ff486643537"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0155.xml",
+    "path": "data/raw/Introduced-HB0155.xml",
+    "retrievedAt": "2026-10-20T22:30:00.064665+00:00",
+    "sha256": "11ca32d8cc8c0cb462835ed8bb557056e16973fa991a05504d6d9665cfb84b05"
+  },
+  {
+    "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+    "path": "data/raw/SB0069.json",
+    "retrievedAt": "2026-10-20T22:30:00.096021+00:00",
+    "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/SB0069.xml",
+    "path": "data/raw/Introduced-SB0069.xml",
+    "retrievedAt": "2026-10-20T22:30:00.122512+00:00",
+    "sha256": "79c8fc129cd63c01d269de6a2432df01f65f559e3ca980201b86a485d86fbfbf"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/enrolled/SB0069.xml",
+    "path": "data/raw/Enrolled-SB0069.xml",
+    "retrievedAt": "2026-10-20T22:30:00.160465+00:00",
+    "sha256": "0e3168bea59cef85affefb88386b57b2c62c0e629593889a86d7ed114d98e124"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/SB0069S01.xml",
+    "path": "data/raw/PubSub-SB0069S01.xml",
+    "retrievedAt": "2026-10-20T22:30:00.204223+00:00",
+    "sha256": "c8c52417ecb2134848705eedac76c4b823f7d1035344113606a28c0232d7b6c1"
+  },
+  {
+    "url": "https://le.utah.gov/Session/2026/bills/introduced/SB0069S02.xml",
+    "path": "data/raw/PubSub-SB0069S02.xml",
+    "retrievedAt": "2026-10-20T22:30:00.245135+00:00",
+    "sha256": "3fca3ddeba41770f8e1ede9448f3ae7c7fa566c9639672109f00e856341720f0"
+  }
+]

@@ -1,0 +1,3244 @@
+[
+  {
+    "year": "2026",
+    "sessionID": "2026GS",
+    "sessionIndex": "1",
+    "billNumber": "HB0011",
+    "billNumberShort": "H.B. 11",
+    "billNumberLong": "HB0011",
+    "fileNumber": "2026FL0035",
+    "shortTitle": "Dyed Diesel Fuel Search Amendments",
+    "currentSubVersion": "0",
+    "currentMinVersion": "0",
+    "primeSponsor": "GRICIS",
+    "primeSponsorName": "Rep. Gricius, Stephanie",
+    "primeSponsorHouse": "H",
+    "floorSponsor": "HARPEWA",
+    "floorSponsorName": "Sen. Harper, Wayne A.",
+    "floorSponsorHouse": "S",
+    "generalProvisions": "This bill addresses searching a vehicle for a dyed diesel fuel violation.",
+    "highlightedProvisions": "This bill:<hr><ltbullet>establishes that a government official may only inspect a vehicle for a dyed diesel fuel violation if the official:<hr><ltbullet1>has probable cause that a dyed diesel fuel violation has occurred;<hr><ltbullet1>has consent of the owner of the vehicle; or<hr><ltbullet1>is conducting the search at a port-of-entry in compliance with Section 72-9-501; and<hr><ltbullet>specifies that probable cause is not established simply by observing an individual drive a motor vehicle that uses diesel fuel on a highway.",
+    "moniesAppropriated": "None",
+    "draftingAttorney": "Shad Larson",
+    "fiscalAnalyst": "Nate Osborne",
+    "lastAction": "Governor Signed",
+    "lastActionOwner": "Lieutenant Governor's office for filing",
+    "lastActionDate": "2/27/2026",
+    "trackingID": "WBXJYOWFOT",
+    "actionHistoryList": [
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for HB0011",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2025-09-02 12:50:25.230",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for HB0011",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2025-09-02 12:50:25.230",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for HB0011",
+        "owner": "Version Sponsor",
+        "actionDate": "2025-09-15 12:52:12.618",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Bill Numbered but not Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2025-12-02 14:18:14.243",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LNUMBER",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Numbered Bill Publicly Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2025-12-02 14:18:14.243",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for HB0011",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-01-08 12:28:04.273",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for HB0011",
+        "owner": "Released",
+        "actionDate": "2026-01-08 12:28:06.398",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received bill from Legislative Research",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-01-14 13:36:34.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECLRGC",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received fiscal note from Fiscal Analyst",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-01-14 14:18:35.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 1st reading (Introduced)",
+        "owner": "House Rules Committee",
+        "actionDate": "2026-01-20 10:43:19.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ Rules to 3rd Reading Calendar",
+        "owner": "House 3rd Reading Calendar for House bills",
+        "actionDate": "2026-01-20 11:20:03.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRUL3RD",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 2nd reading",
+        "owner": "House 3rd Reading Calendar for House bills",
+        "actionDate": "2026-01-20 11:21:00.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ passed 3rd reading",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-01-20 11:28:42.000",
+        "actionClass": "H",
+        "voteID": "6",
+        "voiceVote": "0",
+        "voteHouse": "H",
+        "voteStr": "74-0-1",
+        "actionCode": "HPASS3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ to Senate",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-01-20 12:09:31.697",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOSEN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received from House",
+        "owner": "Waiting for Introduction in the Senate",
+        "actionDate": "2026-01-20 17:14:11.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECH",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 1st reading (Introduced)",
+        "owner": "Senate Rules Committee",
+        "actionDate": "2026-01-21 11:19:42.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to standing committee",
+        "owner": "Senate Revenue and Taxation Committee",
+        "actionDate": "2026-01-23 11:12:01.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOSTAND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate Comm - Favorable Recommendation",
+        "owner": "Senate Revenue and Taxation Committee",
+        "actionDate": "2026-01-28 14:51:30.143",
+        "actionClass": "A",
+        "voteID": "39046",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "4-0-3",
+        "actionCode": "SCAFAV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ committee report favorable",
+        "owner": "Senate Revenue and Taxation Committee",
+        "actionDate": "2026-01-29 11:43:57.307",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SCR",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ placed on 2nd Reading Calendar",
+        "owner": "Senate 2nd Reading Calendar",
+        "actionDate": "2026-01-29 11:43:58.307",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SON2ND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 2nd reading",
+        "owner": "Senate 2nd Reading Calendar",
+        "actionDate": "2026-02-04 14:25:37.977",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ passed 2nd reading",
+        "owner": "Senate 3rd Reading Calendar",
+        "actionDate": "2026-02-04 14:27:40.147",
+        "actionClass": "S",
+        "voteID": "208",
+        "voiceVote": "0",
+        "voteHouse": "S",
+        "voteStr": "26-0-3",
+        "actionCode": "SPASS2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 3rd reading",
+        "owner": "Senate 3rd Reading Calendar",
+        "actionDate": "2026-02-05 11:24:04.303",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ passed 3rd reading",
+        "owner": "Senate President",
+        "actionDate": "2026-02-05 11:29:03.460",
+        "actionClass": "S",
+        "voteID": "233",
+        "voiceVote": "0",
+        "voteHouse": "S",
+        "voteStr": "28-0-1",
+        "actionCode": "SPASS3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ signed by President/ returned to House",
+        "owner": "House Speaker",
+        "actionDate": "2026-02-05 11:29:04.460",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SSIGNH",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to House",
+        "owner": "House Speaker",
+        "actionDate": "2026-02-05 11:29:05.460",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOHOU",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received from Senate",
+        "owner": "House Speaker",
+        "actionDate": "2026-02-05 13:10:59.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ signed by Speaker/ sent for enrolling",
+        "owner": "Legislative Research and General Counsel / Enrolling",
+        "actionDate": "2026-02-05 13:11:00.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HSIGN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Bill Received from House for Enrolling",
+        "owner": "Legislative Research and General Counsel / Enrolling",
+        "actionDate": "2026-02-11 09:07:41.360",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LRGCRH",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Draft of Enrolled Bill Prepared",
+        "owner": "Legislative Research and General Counsel / Enrolling",
+        "actionDate": "2026-02-11 09:07:44.130",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LENROLL",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Enrolled Bill Returned to House or Senate",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-02-11 13:13:49.617",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LPASSREV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ enrolled bill to Printing",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-02-11 13:13:53.890",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOPRINTEN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received enrolled bill from Printing",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-02-18 13:13:25.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECENRP",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ to Governor",
+        "owner": "Executive Branch - Governor",
+        "actionDate": "2026-02-18 13:13:27.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOGOV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Governor Signed",
+        "owner": "Lieutenant Governor's office for filing",
+        "actionDate": "2026-02-27 14:45:23.477",
+        "actionClass": "G",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "GSIGN",
+        "parm1": "",
+        "parm2": ""
+      }
+    ],
+    "agendaList": [
+      {
+        "mtgID": "20205",
+        "committeeID": "SSTREV",
+        "mtgDate": "2026-01-28 14:00:00.0",
+        "agendaItem": "2",
+        "mtgPlace": "210 Senate Building",
+        "committeeName": "Senate Revenue and Taxation Committee",
+        "upcomming": false,
+        "minutesURL": "/interim/2026/html/00000767.htm",
+        "agendaURL": "/~2026/agenda/SREV0128.ag.htm",
+        "billSession": "2026GS",
+        "markerID": "290655"
+      }
+    ],
+    "recommendingCommitteeList": [
+      {
+        "id": "INTREV",
+        "name": "Revenue and Taxation Interim Committee"
+      }
+    ],
+    "billVersionList": [
+      {
+        "activeVersion": true,
+        "hasEnrolled": true,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "00929",
+            "description": "Energy"
+          },
+          {
+            "code": "02176u",
+            "description": "Crimes"
+          },
+          {
+            "code": "02205",
+            "description": "Law Enforcement and Criminal Justice"
+          },
+          {
+            "code": "02205",
+            "description": "Law Enforcement and Criminal Justice"
+          },
+          {
+            "code": "02239u",
+            "description": "Oil and Gas"
+          },
+          {
+            "code": "02474u",
+            "description": "Department of Public Safety"
+          },
+          {
+            "code": "02751",
+            "description": "Roads/Highways"
+          },
+          {
+            "code": "02828",
+            "description": "Transportation"
+          },
+          {
+            "code": "n0094",
+            "description": "Fossil Fuels"
+          },
+          {
+            "code": "n0254",
+            "description": "Traffic Violations"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C59-13-S320.5_2026050620260506",
+            "secNo": "59-13-320.5"
+          }
+        ],
+        "minorVersion": "0",
+        "versionSponsorHouse": "H",
+        "versionSponsorName": "Rep. Gricius, Stephanie",
+        "billNumber": "HB0011",
+        "billDocs": [
+          {
+            "subVersion": "-2",
+            "billNumber": "HB0011",
+            "fileName": "HB0011.xml",
+            "fileType": "Enrolled",
+            "fileDate": "2026-02-11 13:13:53.8",
+            "url": "/Session/2026/bills/enrolled/HB0011.xml",
+            "chamber": "",
+            "shortDesc": "Enrolled",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0011",
+            "fileName": "HB0011.xml",
+            "fileType": "Introduced",
+            "fileDate": "2025-12-02 14:18:13.49",
+            "url": "/Session/2026/bills/introduced/HB0011.xml",
+            "chamber": "",
+            "shortDesc": "Introduced",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0011",
+            "fileName": "HB0011S02",
+            "fileType": "ComReport",
+            "fileDate": "2026-01-28 17:43:08.537",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/comreport/HB0011S02.pdf",
+            "chamber": "S",
+            "shortDesc": "Senate Committee Report",
+            "intVal1": 0,
+            "strVal1": "SSTREV",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0011",
+            "fileName": "2026GS-HB0011-H-1.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-01-20 11:44:24.17",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-HB0011-H-1.pdf",
+            "chamber": "",
+            "shortDesc": "House Transmittal Letter 1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0011",
+            "fileName": "2026GS-HB0011-S-1.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-02-05 12:07:16.153",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-HB0011-S-1.pdf",
+            "chamber": "",
+            "shortDesc": "Senate Transmittal Letter 1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0011",
+            "fileName": "HB0011.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-08 12:28:06.2",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0011.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0011",
+            "fileName": "HB0011.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-08 12:28:06.2",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0011.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "subVersion": "0",
+        "subTrackID": "10509",
+        "billNumberShort": "H.B. 11",
+        "versionSponsor": "GRICIS"
+      }
+    ],
+    "floorDebateList": [
+      {
+        "markerID": "132729",
+        "dayOfSession": "1",
+        "house": "H",
+        "description": "HB0011 Dyed Diesel Fuel Search Amendments, Gricius, S.",
+        "sessionDate": "1/20/2026"
+      },
+      {
+        "markerID": "133406",
+        "dayOfSession": "16",
+        "house": "S",
+        "description": "HB0011 Dyed Diesel Fuel Search Amendments, Gricius, S.",
+        "sessionDate": "2/4/2026"
+      },
+      {
+        "markerID": "133456",
+        "dayOfSession": "17",
+        "house": "S",
+        "description": "HB0011 Dyed Diesel Fuel Search Amendments, Gricius, S.",
+        "sessionDate": "2/5/2026"
+      }
+    ],
+    "versions": [
+      {
+        "id": "HB0011",
+        "label": "Introduced",
+        "date": "2025-12-02 14:18:13.49",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0011.xml",
+        "sections": [
+          {
+            "number": "59-13-320.5",
+            "type": "amend",
+            "line": "27",
+            "uid": "C59-13-S320.5_2026050620260506",
+            "before": "(1) A person may not operate a motor vehicle on a highway if a fuel supply tank of the motor vehicle contains dyed diesel fuel, unless:(a) permitted under federal law;\n(b) (i) the motor vehicle is used on the highway only to travel from one parcel of land owned or operated by the owner to another parcel of land owned or operated by the owner; and\n(ii) the motor vehicle's travel on the highway is necessary for furtherance of agricultural purposes; or\n\n(c) the motor vehicle is special mobile equipment, as defined in Section 41-1a-102, including off-road motorized construction or maintenance equipment, that is only incidentally operated or moved on a highway in connection with a construction project.\n\n(2) A person who violates Subsection (1) shall pay a penalty assessed by the commission as follows:(a) the greater of $500 or $5 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank; or\n(b) for a second and subsequent offense, the greater of $1,000 or $10 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank.\n\n(3) The penalty imposed under this section:(a) is in addition to any other taxes, interest, or penalties imposed under this chapter; and\n(b) shall be deposited in the Transportation Fund.\n\n(4) Upon making a record of its actions, and upon reasonable cause shown, the commission may waive, reduce, or compromise the penalty imposed under this section.",
+            "after": "(1) A person may not operate a motor vehicle on a highway if a fuel supply tank of the motor vehicle contains dyed diesel fuel, unless:(a) permitted under federal law;\n(b) (i) the motor vehicle is used on the highway only to travel from one parcel of land owned or operated by the owner to another parcel of land owned or operated by the owner; and\n(ii) the motor vehicle's travel on the highway is necessary for furtherance of agricultural purposes; or\n\n(c) the motor vehicle is special mobile equipment, as defined in Section 41-1a-102, including off-road motorized construction or maintenance equipment, that is only incidentally operated or moved on a highway in connection with a construction project.\n\n(2) A person who violates Subsection (1) shall pay a penalty assessed by the commission as follows:(a) the greater of $500 or $5 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank; or\n(b) for a second and subsequent offense, the greater of $1,000 or $10 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank.\n\n(3) The penalty imposed under this section:(a) is in addition to any other taxes, interest, or penalties imposed under this chapter; and\n(b) shall be deposited in the Transportation Fund.\n\n(4) Upon making a record of its actions, and upon reasonable cause shown, the commission may waive, reduce, or compromise the penalty imposed under this section.\n(5) (a) A government official, including a law enforcement officer, may not inspect the fuel from a fuel supply tank of a motor vehicle to determine if the fuel supply tank contains dyed diesel fuel unless the official:(i) subject to Subsection (5)(b), has probable cause to believe that the operator or owner of the motor vehicle is in violation of this section;\n(ii) has received consent from the operator or owner of the motor vehicle to inspect the fuel; or\n(iii) is conducting the search at a port-of-entry in accordance with Section 72-9-501 for the purpose of checking the motor vehicle for compliance with state and federal laws.\n\n(b) The act of driving a motor vehicle that uses diesel fuel on a highway, without additional facts indicating a potential violation of this section, does not constitute sufficient facts to establish probable cause for an official, including a law enforcement officer, to inspect the fuel from a fuel supply tank of a motor vehicle under Subsection (5)(a)(i)."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "69",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on May 6, 2026."
+          }
+        ],
+        "source": "data/raw/Introduced-HB0011.xml"
+      },
+      {
+        "id": "HB0011-enrolled",
+        "label": "Enrolled",
+        "date": "2026-02-11 13:13:53.8",
+        "url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0011.xml",
+        "sections": [
+          {
+            "number": "59-13-320.5",
+            "type": "amend",
+            "line": "24",
+            "uid": "C59-13-S320.5_2026050620260506",
+            "before": "(1) A person may not operate a motor vehicle on a highway if a fuel supply tank of the motor vehicle contains dyed diesel fuel, unless:(a) permitted under federal law;\n(b) (i) the motor vehicle is used on the highway only to travel from one parcel of land owned or operated by the owner to another parcel of land owned or operated by the owner; and\n(ii) the motor vehicle's travel on the highway is necessary for furtherance of agricultural purposes; or\n\n(c) the motor vehicle is special mobile equipment, as defined in Section 41-1a-102, including off-road motorized construction or maintenance equipment, that is only incidentally operated or moved on a highway in connection with a construction project.\n\n(2) A person who violates Subsection (1) shall pay a penalty assessed by the commission as follows:(a) the greater of $500 or $5 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank; or\n(b) for a second and subsequent offense, the greater of $1,000 or $10 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank.\n\n(3) The penalty imposed under this section:(a) is in addition to any other taxes, interest, or penalties imposed under this chapter; and\n(b) shall be deposited in the Transportation Fund.\n\n(4) Upon making a record of its actions, and upon reasonable cause shown, the commission may waive, reduce, or compromise the penalty imposed under this section.",
+            "after": "(1) A person may not operate a motor vehicle on a highway if a fuel supply tank of the motor vehicle contains dyed diesel fuel, unless:(a) permitted under federal law;\n(b) (i) the motor vehicle is used on the highway only to travel from one parcel of land owned or operated by the owner to another parcel of land owned or operated by the owner; and\n(ii) the motor vehicle's travel on the highway is necessary for furtherance of agricultural purposes; or\n\n(c) the motor vehicle is special mobile equipment, as defined in Section 41-1a-102, including off-road motorized construction or maintenance equipment, that is only incidentally operated or moved on a highway in connection with a construction project.\n\n(2) A person who violates Subsection (1) shall pay a penalty assessed by the commission as follows:(a) the greater of $500 or $5 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank; or\n(b) for a second and subsequent offense, the greater of $1,000 or $10 per gallon of dyed diesel fuel within each fuel supply tank of the motor vehicle, based on the maximum storage capacity of each fuel supply tank.\n\n(3) The penalty imposed under this section:(a) is in addition to any other taxes, interest, or penalties imposed under this chapter; and\n(b) shall be deposited in the Transportation Fund.\n\n(4) Upon making a record of its actions, and upon reasonable cause shown, the commission may waive, reduce, or compromise the penalty imposed under this section.\n(5) (a) A government official, including a law enforcement officer, may not inspect the fuel from a fuel supply tank of a motor vehicle to determine if the fuel supply tank contains dyed diesel fuel unless the official:(i) subject to Subsection (5)(b), has probable cause to believe that the operator or owner of the motor vehicle is in violation of this section;\n(ii) has received consent from the operator or owner of the motor vehicle to inspect the fuel; or\n(iii) is conducting the search at a port-of-entry in accordance with Section 72-9-501 for the purpose of checking the motor vehicle for compliance with state and federal laws.\n\n(b) The act of driving a motor vehicle that uses diesel fuel on a highway, without additional facts indicating a potential violation of this section, does not constitute sufficient facts to establish probable cause for an official, including a law enforcement officer, to inspect the fuel from a fuel supply tank of a motor vehicle under Subsection (5)(a)(i)."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "66",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on May 6, 2026."
+          }
+        ],
+        "source": "data/raw/Enrolled-HB0011.xml"
+      }
+    ],
+    "topic": "Transportation",
+    "summary": "The proposal limits when government officials may inspect a vehicleâ€™s fuel tank for dyed diesel. It allows inspections based on probable cause, consent, or specified port-of-entry checks. Driving a diesel vehicle alone would not establish probable cause.",
+    "extra": "The bill addresses inspection authority; the existing fuel-use prohibitions and penalties remain in the section.",
+    "summaryVersion": "HB0011",
+    "status": "Signed",
+    "committees": [
+      "Senate Revenue and Taxation Committee"
+    ],
+    "sourceUrl": "https://le.utah.gov/data/2026GS/HB0011.json",
+    "retrievedAt": "2026-10-20T22:29:59.827423+00:00"
+  },
+  {
+    "year": "2026",
+    "sessionID": "2026GS",
+    "sessionIndex": "1",
+    "billNumber": "HB0154",
+    "billNumberShort": "H.B. 154",
+    "billNumberLong": "HB0154S01",
+    "fileNumber": "2026FL0559",
+    "shortTitle": "Water Loss Study Amendments",
+    "currentSubVersion": "1",
+    "currentMinVersion": "0",
+    "primeSponsor": "OWENSDO",
+    "primeSponsorName": "Rep. Owens, Doug",
+    "primeSponsorHouse": "H",
+    "floorSponsor": "MCKELMK",
+    "floorSponsorName": "Sen. McKell, Michael K.",
+    "floorSponsorHouse": "S",
+    "generalProvisions": "This bill directs the Division of Water Resources (division) to study reported data regarding water loss.",
+    "highlightedProvisions": "This bill:<hr><ltbullet>defines terms;<hr><ltbullet>requires the division to conduct a study regarding water loss;<hr><ltbullet>requires the division to report the findings of the study;<hr><ltbullet>imposes a repeal date; and<hr><ltbullet>makes technical and conforming amendments.",
+    "moniesAppropriated": "None",
+    "draftingAttorney": "Patricia Owen",
+    "fiscalAnalyst": "Lacey K. Moore",
+    "lastAction": "House/ filed",
+    "lastActionOwner": "House file for bills not passed",
+    "lastActionDate": "3/6/2026",
+    "trackingID": "DIXTWAVRWD",
+    "actionHistoryList": [
+      {
+        "description": "Bill Numbered but not Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2026-01-06 13:23:49.807",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LNUMBER",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Numbered Bill Publicly Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2026-01-06 13:23:49.807",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for HB0154",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2026-01-06 13:23:51.540",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for HB0154",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2026-01-06 13:23:51.540",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for HB0154S01",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2026-01-13 10:32:56.007",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for HB0154S01",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2026-01-13 10:32:56.007",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received bill from Legislative Research",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-01-14 13:59:06.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECLRGC",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for HB0154",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-01-16 05:57:46.637",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for HB0154S01",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-01-16 05:57:56.336",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for HB0154",
+        "owner": "Released",
+        "actionDate": "2026-01-16 16:02:37.003",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received fiscal note from Fiscal Analyst",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-01-20 09:17:04.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for HB0154S01",
+        "owner": "Released",
+        "actionDate": "2026-01-20 13:47:51.383",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 1st reading (Introduced)",
+        "owner": "House Rules Committee",
+        "actionDate": "2026-01-20 15:38:23.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Bill Substituted by Sponsor in House Rules Comm",
+        "owner": "House Rules Committee",
+        "actionDate": "2026-02-02 11:22:00.000",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LRULSUBH",
+        "parm1": "1",
+        "parm2": "0"
+      },
+      {
+        "description": "House/ to standing committee",
+        "owner": "House Natural Resources, Agriculture, and Environment Committee",
+        "actionDate": "2026-02-02 12:13:54.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOSTAND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House Comm - Favorable Recommendation",
+        "owner": "House Natural Resources, Agriculture, and Environment Committee",
+        "actionDate": "2026-02-05 16:24:30.687",
+        "actionClass": "A",
+        "voteID": "39567",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "12-0-2",
+        "actionCode": "HCAFAV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ committee report favorable",
+        "owner": "House Natural Resources, Agriculture, and Environment Committee",
+        "actionDate": "2026-02-06 11:24:11.743",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HCR",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 2nd reading",
+        "owner": "House 3rd Reading Calendar for House bills",
+        "actionDate": "2026-02-06 11:24:12.743",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 3rd reading",
+        "owner": "House 3rd Reading Calendar for House bills",
+        "actionDate": "2026-02-17 15:02:31.870",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ passed 3rd reading",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-02-17 15:07:08.000",
+        "actionClass": "H",
+        "voteID": "480",
+        "voiceVote": "0",
+        "voteHouse": "H",
+        "voteStr": "48-22-5",
+        "actionCode": "HPASS3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ held",
+        "owner": "House Docket Clerk",
+        "actionDate": "2026-02-17 15:07:10.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HHOLD",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ to Senate",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-02-18 10:30:17.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOSEN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received from House",
+        "owner": "Waiting for Introduction in the Senate",
+        "actionDate": "2026-02-18 11:41:15.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECH",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 1st reading (Introduced)",
+        "owner": "Senate Rules Committee",
+        "actionDate": "2026-02-18 14:31:29.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to standing committee",
+        "owner": "Senate Natural Resources, Agriculture, and Environment Committee",
+        "actionDate": "2026-02-24 14:12:35.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOSTAND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate Comm - Recommends Returned to Rules",
+        "owner": "Senate Natural Resources, Agriculture, and Environment Committee",
+        "actionDate": "2026-03-03 14:48:29.180",
+        "actionClass": "A",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SCARUL",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ comm rpt/ sent to Rules",
+        "owner": "Senate Rules Committee",
+        "actionDate": "2026-03-04 09:40:16.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SCRRUL",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ strike enacting clause",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-03-06 23:59:55.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SECS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to House",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-03-06 23:59:56.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOHOU",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received from Senate",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-03-06 23:59:58.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ filed",
+        "owner": "House file for bills not passed",
+        "actionDate": "2026-03-06 23:59:59.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HFILED",
+        "parm1": "",
+        "parm2": ""
+      }
+    ],
+    "agendaList": [
+      {
+        "mtgID": "20322",
+        "committeeID": "HSTNAE",
+        "mtgDate": "2026-02-05 15:40:00.0",
+        "agendaItem": "1",
+        "mtgPlace": "120 Senate Building",
+        "committeeName": "House Natural Resources, Agriculture, and Environment Committee",
+        "upcomming": false,
+        "minutesURL": "/interim/2026/html/00001556.htm",
+        "agendaURL": "/~2026/agenda/HNAE0205.ag.htm",
+        "billSession": "2026GS",
+        "markerID": "294431"
+      }
+    ],
+    "recommendingCommitteeList": [
+      {
+        "id": "SPESWD",
+        "name": "Legislative Water Development Commission"
+      }
+    ],
+    "billVersionList": [
+      {
+        "activeVersion": false,
+        "hasEnrolled": false,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "01166",
+            "description": "Natural Resources"
+          },
+          {
+            "code": "01166u",
+            "description": "Department of Natural Resources"
+          },
+          {
+            "code": "n0287",
+            "description": "Water"
+          },
+          {
+            "code": "n0327",
+            "description": "Water Conservation"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C63I-2-S273_2026050620260506",
+            "secNo": "63I-2-273"
+          },
+          {
+            "uid": "C63I-2-S273_2026070120260701",
+            "secNo": "63I-2-273"
+          }
+        ],
+        "minorVersion": "0",
+        "versionSponsorHouse": "H",
+        "versionSponsorName": "Rep. Owens, Doug",
+        "billNumber": "HB0154",
+        "billDocs": [
+          {
+            "subVersion": "0",
+            "billNumber": "HB0154",
+            "fileName": "HB0154.xml",
+            "fileType": "Introduced",
+            "fileDate": "2026-01-06 13:23:47.507",
+            "url": "/Session/2026/bills/introduced/HB0154.xml",
+            "chamber": "",
+            "shortDesc": "Introduced",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0154",
+            "fileName": "HB0154H02",
+            "fileType": "ComReport",
+            "fileDate": "2026-02-05 16:56:45.567",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/comreport/HB0154H02.pdf",
+            "chamber": "H",
+            "shortDesc": "House Committee Report",
+            "intVal1": 0,
+            "strVal1": "HSTNAE",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0154",
+            "fileName": "HB0154S02",
+            "fileType": "ComReport",
+            "fileDate": "2026-03-03 14:49:51.64",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/comreport/HB0154S02.pdf",
+            "chamber": "S",
+            "shortDesc": "Senate Committee Report",
+            "intVal1": 0,
+            "strVal1": "SSTNAE",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0154",
+            "fileName": "HB0154.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-16 16:02:36.867",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0154.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0154",
+            "fileName": "HB0154.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-16 16:02:36.867",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0154.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "subVersion": "0",
+        "subTrackID": "11034",
+        "billNumberShort": "H.B. 154",
+        "versionSponsor": "OWENSDO"
+      },
+      {
+        "activeVersion": true,
+        "hasEnrolled": false,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "01166",
+            "description": "Natural Resources"
+          },
+          {
+            "code": "01166",
+            "description": "Natural Resources"
+          },
+          {
+            "code": "01166u",
+            "description": "Department of Natural Resources"
+          },
+          {
+            "code": "n0287",
+            "description": "Water"
+          },
+          {
+            "code": "n0327",
+            "description": "Water Conservation"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C63I-2-S273_2026050620260506",
+            "secNo": "63I-2-273"
+          },
+          {
+            "uid": "C63I-2-S273_2026070120260701",
+            "secNo": "63I-2-273"
+          }
+        ],
+        "minorVersion": "0",
+        "versionSponsorHouse": "H",
+        "versionSponsorName": "Rep. Owens, Doug",
+        "billNumber": "HB0154S01",
+        "billDocs": [
+          {
+            "subVersion": "1",
+            "billNumber": "HB0154S01",
+            "fileName": "CP HB0154 To HB0154S01.pdf",
+            "fileType": "BillComp",
+            "fileDate": "2026-01-13 10:32:55.047",
+            "url": "/Session/2026/bills/introduced/CP HB0154 To HB0154S01.pdf",
+            "chamber": "",
+            "shortDesc": "Comparison to Original Bill",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "HB0154S01",
+            "fileName": "HB0154S01.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-20 13:47:51.257",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0154S01.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "HB0154S01",
+            "fileName": "HB0154S01.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-20 13:47:51.257",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0154S01.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "HB0154S01",
+            "fileName": "HB0154S01.xml",
+            "fileType": "PubSub",
+            "fileDate": "2026-01-13 10:32:53.747",
+            "url": "/Session/2026/bills/introduced/HB0154S01.xml",
+            "chamber": "",
+            "shortDesc": "Substitute #1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0154",
+            "fileName": "2026GS-HB0154S01-H-1.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-02-18 10:36:40.483",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-HB0154S01-H-1.pdf",
+            "chamber": "",
+            "shortDesc": "House Transmittal Letter 1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "subVersion": "1",
+        "subTrackID": "11968",
+        "billNumberShort": "H.B. 154 S1",
+        "versionSponsor": "OWENSDO"
+      }
+    ],
+    "floorDebateList": [
+      {
+        "markerID": "134184",
+        "dayOfSession": "28",
+        "house": "H",
+        "description": "HB0154S01 Water Loss Study Amendments, Owens, D.",
+        "sessionDate": "2/17/2026"
+      }
+    ],
+    "versions": [
+      {
+        "id": "HB0154",
+        "label": "Introduced",
+        "date": "2026-01-06 13:23:47.507",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0154.xml",
+        "sections": [
+          {
+            "number": "63I-2-273",
+            "type": "amend",
+            "line": "27",
+            "uid": "C63I-2-S273_2026050620260506",
+            "before": "Reserved.",
+            "after": "Section 73-10-32.7, Study regarding water losses, is repealed July 1, 2027."
+          },
+          {
+            "number": "63I-2-273",
+            "type": "amend",
+            "line": "30",
+            "uid": "C63I-2-S273_2026070120260701",
+            "before": "",
+            "after": "(1) Section 73-10-32.7, Study regarding water losses, is repealed July 1, 2027.\n(2) Subsection 73-10g-607(5), regarding a requirement to report to an interim committee, is repealed January 1, 2027."
+          },
+          {
+            "number": "73-10-32.7",
+            "type": "enact",
+            "line": "35",
+            "uid": "C73-10-S32.7_2026050620260506",
+            "before": "",
+            "after": "(1) As used in this section:(a) \"Division\" means the Division of Water Resources.\n(b) \"Public water system\" means the same as that term is defined in Section 19-4-102.\n\n(2) The division shall, in conjunction with the Division of Drinking Water, conduct a study regarding water loss by public water systems under which the division shall:(a) compile and analyze water loss estimates based on system size from data provided by a public water system for the period beginning January 1, 2015, and ending December 31, 2024;\n(b) provide an overview of industry standard water loss principles and practices, including for both public system and end use water losses; and\n(c) make recommendations on how to:(i) improve water loss estimates and associated data reliability; and\n(ii) reduce actual water losses.\n\n\n(3) The division shall report the division's findings under the study described in Subsection (2) to the Legislative Water Development Commission by no later than October 31, 2026."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "53",
+            "uid": "EF0000",
+            "before": "",
+            "after": "(1) Except as provided in Subsection (2), this bill takes effect May 6, 2026.\n(2) The actions affecting Section 63I-2-273 Effective 07/01/26 take effect on July 1, 2026."
+          }
+        ],
+        "source": "data/raw/Introduced-HB0154.xml"
+      },
+      {
+        "id": "HB0154S01",
+        "label": "Substitute #1",
+        "date": "2026-01-13 10:32:53.747",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0154S01.xml",
+        "sections": [
+          {
+            "number": "63I-2-273",
+            "type": "amend",
+            "line": "30",
+            "uid": "C63I-2-S273_2026050620260506",
+            "before": "Reserved.",
+            "after": "Section 73-10-32.7, Study regarding water losses, is repealed July 1, 2027."
+          },
+          {
+            "number": "63I-2-273",
+            "type": "amend",
+            "line": "33",
+            "uid": "C63I-2-S273_2026070120260701",
+            "before": "",
+            "after": "(1) Section 73-10-32.7, Study regarding water losses, is repealed July 1, 2027.\n(2) Subsection 73-10g-607(5), regarding a requirement to report to an interim committee, is repealed January 1, 2027."
+          },
+          {
+            "number": "73-10-32.7",
+            "type": "enact",
+            "line": "38",
+            "uid": "C73-10-S32.7_2026050620260506",
+            "before": "",
+            "after": "(1) As used in this section:(a) \"Division\" means the Division of Water Resources.\n(b) \"Public water system\" means the same as that term is defined in Section 19-4-102.\n\n(2) The division shall, in conjunction with the Division of Drinking Water, conduct a study regarding water loss by public water systems under which the division shall:(a) compile and analyze water loss estimates based on system size from data provided by a public water system for the period beginning January 1, 2015, and ending December 31, 2024;\n(b) provide an overview of industry standard water loss principles and practices, including for both public system and end use water losses; and\n(c) make recommendations on how to:(i) improve water loss estimates and associated data reliability; and\n(ii) reduce actual water losses.\n\n\n(3) The division shall report the division's findings under the study described in Subsection (2) to the Legislative Water Development Commission by no later than October 31, 2026."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "56",
+            "uid": "EF0000",
+            "before": "",
+            "after": "(1) Except as provided in Subsection (2), this bill takes effect May 6, 2026.\n(2) The actions affecting Section 63I-2-273 Effective 07/01/26 take effect on July 1, 2026."
+          }
+        ],
+        "source": "data/raw/PubSub-HB0154S01.xml"
+      }
+    ],
+    "topic": "Water",
+    "summary": "The proposal directs the Division of Water Resources, with the Division of Drinking Water, to study water losses using public water system data from 2015 through 2024 and recommend improvements. It requires a report by October 31, 2026.",
+    "extra": "The proposed study provision would be repealed July 1, 2027. This bill did not pass, so its proposed deadlines did not become requirements through this bill.",
+    "summaryVersion": "HB0154S01",
+    "status": "Did not pass",
+    "committees": [
+      "House Natural Resources, Agriculture, and Environment Committee",
+      "Senate Natural Resources, Agriculture, and Environment Committee"
+    ],
+    "sourceUrl": "https://le.utah.gov/data/2026GS/HB0154.json",
+    "retrievedAt": "2026-10-20T22:29:59.931675+00:00"
+  },
+  {
+    "year": "2026",
+    "sessionID": "2026GS",
+    "sessionIndex": "1",
+    "billNumber": "HB0155",
+    "billNumberShort": "H.B. 155",
+    "billNumberLong": "HB0155",
+    "fileNumber": "2026FL0639",
+    "shortTitle": "Water Rates Amendments",
+    "currentSubVersion": "0",
+    "currentMinVersion": "0",
+    "primeSponsor": "OWENSDO",
+    "primeSponsorName": "Rep. Owens, Doug",
+    "primeSponsorHouse": "H",
+    "floorSponsor": "",
+    "floorSponsorName": "",
+    "floorSponsorHouse": "",
+    "generalProvisions": "This bill addresses the setting of water rates.",
+    "highlightedProvisions": "This bill:<hr><ltbullet>provides for increasing block units for residential water use in certain water rate structures; <hr><ltbullet>addresses the purpose of increases in rates charged for additional blocks; and<hr><ltbullet>makes technical and conforming amendments.",
+    "moniesAppropriated": "None",
+    "draftingAttorney": "Patricia Owen",
+    "fiscalAnalyst": "Lacey K. Moore",
+    "lastAction": "House/ filed",
+    "lastActionOwner": "House file for bills not passed",
+    "lastActionDate": "3/6/2026",
+    "trackingID": "BLYCGSGHAV",
+    "actionHistoryList": [
+      {
+        "description": "Bill Numbered but not Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2026-01-06 13:27:02.747",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LNUMBER",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Numbered Bill Publicly Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2026-01-06 13:27:02.747",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for HB0155",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2026-01-06 13:27:08.150",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for HB0155",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2026-01-06 13:27:08.150",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received bill from Legislative Research",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-01-14 13:59:06.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECLRGC",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for HB0155",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-01-16 09:47:10.872",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for HB0155",
+        "owner": "Released",
+        "actionDate": "2026-01-16 16:03:42.806",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received fiscal note from Fiscal Analyst",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-01-20 09:17:04.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 1st reading (Introduced)",
+        "owner": "House Rules Committee",
+        "actionDate": "2026-01-20 15:38:23.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ strike enacting clause",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-03-06 23:59:55.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HECS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ filed",
+        "owner": "House file for bills not passed",
+        "actionDate": "2026-03-06 23:59:59.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HFILED",
+        "parm1": "",
+        "parm2": ""
+      }
+    ],
+    "agendaList": [],
+    "recommendingCommitteeList": [],
+    "billVersionList": [
+      {
+        "activeVersion": true,
+        "hasEnrolled": false,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "01092",
+            "description": "Environment"
+          },
+          {
+            "code": "01166",
+            "description": "Natural Resources"
+          },
+          {
+            "code": "n0287",
+            "description": "Water"
+          },
+          {
+            "code": "n0327",
+            "description": "Water Conservation"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C73-10-S32.5_2026050620260506",
+            "secNo": "73-10-32.5"
+          }
+        ],
+        "minorVersion": "0",
+        "versionSponsorHouse": "H",
+        "versionSponsorName": "Rep. Owens, Doug",
+        "billNumber": "HB0155",
+        "billDocs": [
+          {
+            "subVersion": "0",
+            "billNumber": "HB0155",
+            "fileName": "HB0155.xml",
+            "fileType": "Introduced",
+            "fileDate": "2026-01-06 13:27:02.01",
+            "url": "/Session/2026/bills/introduced/HB0155.xml",
+            "chamber": "",
+            "shortDesc": "Introduced",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0155",
+            "fileName": "HB0155.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-16 16:03:42.647",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0155.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "HB0155",
+            "fileName": "HB0155.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-16 16:03:42.647",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/HB0155.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "subVersion": "0",
+        "subTrackID": "11116",
+        "billNumberShort": "H.B. 155",
+        "versionSponsor": "OWENSDO"
+      }
+    ],
+    "floorDebateList": [],
+    "versions": [
+      {
+        "id": "HB0155",
+        "label": "Introduced",
+        "date": "2026-01-06 13:27:02.01",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0155.xml",
+        "sections": [
+          {
+            "number": "73-10-32.5",
+            "type": "amend",
+            "line": "21",
+            "uid": "C73-10-S32.5_2026050620260506",
+            "before": "(1) As used in this section:(a) \"Public water system\" means the same as that term is defined in Section 19-4-102.\n(b) \"Retail water supplier\" means the same as that term is defined in Section 19-4-102.\n(c) (i) \"Water conservation effort\" means a program that is designed to incentivize, encourage, or result in reduced water usage or more efficient use of water.\n(ii) \"Water conservation effort\" includes the costs associated with designing, implementing, and operating a program described in Subsection (1)(c)(i).\n\n(d) \"Wholesale water supplier\" means the same as that term is defined in Section 19-4-102.\n\n(2) A retail water supplier shall:(a) consider water conservation, including at least one water conservation effort, in setting water rates with the goal of encouraging efficient water use and eliminating wasteful or excessive water use;\n(b) establish a culinary water rate structure that:(i) incorporates increasing block units of water used; \n(ii) provides for an increase in the rate charged for additional block units of water used as usage increases from one block unit to the next;\n(iii) by July 1, 2027, includes one or more water conservation efforts as an element in determining the rate charged for at least the highest usage block unit of water for a customer classification that primarily serves residential customers; and\n(iv) is based on a generally accepted rate setting method, including a standard or method established by the American Water Works Association;\n\n(c) provide in customer billing notices, or in a notice that is distributed to customers at least annually, block unit rates and the customer's billing cycle; \n(d) include individual customer water usage in customer billing notices; and\n(e) consider urban farming that improves food security, reduces pollution, and creates green spaces in setting rates.\n\n(3) This section does not prohibit:(a) a public water system with 500 or fewer service connections from taking an action or adopting a culinary water rate structure described in Subsection (2); or\n(b) a retail water supplier from including water conservation and a water conservation effort as an element in setting rates for customer classifications that do not primarily serve residential customers.\n\n(4) A public water system:(a) is not required to establish or show that the portion of the rate designed to encourage water conservation, and fund a water conservation effort, within the highest usage block unit of water for a customer classification:(i) is based on the public water system's actual cost of service;\n(ii) has a reasonable basis when compared to rates the public water system charges:(A) for other block units of water within a customer classification; or\n(B) for block units of water in other customer classifications; or\n\n(iii) is limited to a reasonable profit or return on investment;\n\n(b) may include in a customer billing a fee, surcharge, penalty, or other charge that is collected pursuant to an agreement between the public water system and the wholesale water supplier from whom the public water system purchases water; and\n(c) if the public water system is a for-profit entity, may not use revenue from the highest usage block unit of water designed to encourage water conservation to pay profits or dividends to the public water system's investors or owners.\n\n(5) The use of revenue collected from the portion of any block unit of water designed to encourage water conservation may include funding water conservation efforts that are shared with or administered by another public water system or a wholesale water supplier.\n(6) The adoption and implementation of that portion of a public water system's water rate that includes water conservation as an element in determining the rate charged for the highest usage block unit of water, as provided in this section, is conclusively presumed:(a) to be reasonable; and\n(b) to reflect the reasonable estimated cost of delivering the service for which the fee was paid.",
+            "after": "(1) As used in this section:(a) \"Public water system\" means the same as that term is defined in Section 19-4-102.\n(b) \"Retail water supplier\" means the same as that term is defined in Section 19-4-102.\n(c) (i) \"Water conservation effort\" means a program that is designed to incentivize, encourage, or result in reduced water usage or more efficient use of water.\n(ii) \"Water conservation effort\" includes the costs associated with designing, implementing, and operating a program described in Subsection (1)(c)(i).\n\n(d) \"Wholesale water supplier\" means the same as that term is defined in Section 19-4-102.\n\n(2) A retail water supplier shall:(a) consider water conservation, including at least one water conservation effort, in setting water rates with the goal of encouraging efficient water use and eliminating wasteful or excessive water use;\n(b) establish a culinary water rate structure that:(i) incorporates increasing block units of water used; \n(ii) for a retail water supplier that provides culinary water for outdoor use, incorporates by July 1, 2027, at least three increasing block units in the water rate structure for a customer classification that primarily serves residential customers and receives culinary water for outdoor use, including:(A) at least one block unit of water representing efficient indoor water use;\n(B) at least one block unit of water representing efficient water use that includes outdoor water use; and\n(C) at least one block unit of water representing wasteful or excessive water use;\n\n(iii) provides for an increase in the rate charged for additional block units of water used as usage increases from one block unit to the next that is sufficient to provide a clear price signal or financial incentive to a customer to consider reducing the customer's water use;\n(iv) by July 1, 2027, includes one or more water conservation efforts as an element in determining the rate charged for at least the highest usage block unit of water for a customer classification that primarily serves residential customers; and\n(v) is based on a generally accepted rate setting method, including a standard or method established by the American Water Works Association;\n\n(c) provide in customer billing notices, or in a notice that is distributed to customers at least annually, block unit rates and the customer's billing cycle; \n(d) include individual customer water usage in customer billing notices; and\n(e) consider urban farming that improves food security, reduces pollution, and creates green spaces in setting rates.\n\n(3) This section does not prohibit:(a) a public water system with 500 or fewer service connections from taking an action or adopting a culinary water rate structure described in Subsection (2); or\n(b) a retail water supplier from including water conservation and a water conservation effort as an element in setting rates for customer classifications that do not primarily serve residential customers.\n\n(4) A public water system:(a) is not required to establish or show that the portion of the rate designed to encourage water conservation, and fund a water conservation effort, within the highest usage block unit of water for a customer classification:(i) is based on the public water system's actual cost of service;\n(ii) has a reasonable basis when compared to rates the public water system charges:(A) for other block units of water within a customer classification; or\n(B) for block units of water in other customer classifications; or\n\n(iii) is limited to a reasonable profit or return on investment;\n\n(b) may include in a customer billing a fee, surcharge, penalty, or other charge that is collected pursuant to an agreement between the public water system and the wholesale water supplier from whom the public water system purchases water; and\n(c) if the public water system is a for-profit entity, may not use revenue from the highest usage block unit of water designed to encourage water conservation to pay profits or dividends to the public water system's investors or owners.\n\n(5) The use of revenue collected from the portion of any block unit of water designed to encourage water conservation may include funding water conservation efforts that are shared with or administered by another public water system or a wholesale water supplier.\n(6) The adoption and implementation of that portion of a public water system's water rate that includes water conservation as an element in determining the rate charged for the highest usage block unit of water, as provided in this section, is conclusively presumed:(a) to be reasonable; and\n(b) to reflect the reasonable estimated cost of delivering the service for which the fee was paid."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "91",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on May 6, 2026."
+          }
+        ],
+        "source": "data/raw/Introduced-HB0155.xml"
+      }
+    ],
+    "topic": "Water",
+    "summary": "The proposal changes water-rate requirements. For residential customers receiving culinary water for outdoor use, it requires at least three increasing usage tiers by July 1, 2027. Higher tiers would provide a clear financial incentive to reduce water use.",
+    "extra": "It also requires suppliers to consider urban farming that improves food security, reduces pollution, and creates green spaces when setting rates. This bill did not pass.",
+    "summaryVersion": "HB0155",
+    "status": "Did not pass",
+    "committees": [],
+    "sourceUrl": "https://le.utah.gov/data/2026GS/HB0155.json",
+    "retrievedAt": "2026-10-20T22:30:00.027890+00:00"
+  },
+  {
+    "year": "2026",
+    "sessionID": "2026GS",
+    "sessionIndex": "1",
+    "billNumber": "SB0069",
+    "billNumberShort": "S.B. 69",
+    "billNumberLong": "SB0069S01",
+    "fileNumber": "2026FL0330",
+    "shortTitle": "School Device Revisions",
+    "currentSubVersion": "1",
+    "currentMinVersion": "3",
+    "primeSponsor": "FILLML",
+    "primeSponsorName": "Sen. Fillmore, Lincoln",
+    "primeSponsorHouse": "S",
+    "floorSponsor": "WELTOD",
+    "floorSponsorName": "Rep. Welton, Doug",
+    "floorSponsorHouse": "H",
+    "generalProvisions": "This bill establishes the default standard device use from prohibited during instructional time to prohibited during the school day.",
+    "highlightedProvisions": "This bill:<hr><ltbullet>establishes the default standard device use from prohibited during instructional time to prohibited during the school day; and<hr><ltbullet>makes technical and conforming changes.",
+    "moniesAppropriated": "None",
+    "draftingAttorney": "Jeff Van Hulten",
+    "fiscalAnalyst": "Kiki Hudson",
+    "lastAction": "Governor Signed",
+    "lastActionOwner": "Lieutenant Governor's office for filing",
+    "lastActionDate": "3/18/2026",
+    "trackingID": "ATGQDGXCKF",
+    "actionHistoryList": [
+      {
+        "description": "Bill Numbered but not Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2026-01-02 16:41:28.257",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LNUMBER",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Numbered Bill Publicly Distributed",
+        "owner": "Legislative Research and General Counsel",
+        "actionDate": "2026-01-02 16:41:28.273",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for SB0069",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2026-01-02 16:41:30.927",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for SB0069",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2026-01-02 16:41:30.927",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received bill from Legislative Research",
+        "owner": "Waiting for Introduction in the Senate",
+        "actionDate": "2026-01-07 10:09:08.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECLRGC",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for SB0069",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-01-16 05:12:35.764",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for SB0069",
+        "owner": "Released",
+        "actionDate": "2026-01-16 05:12:37.661",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received fiscal note from Fiscal Analyst",
+        "owner": "Waiting for Introduction in the Senate",
+        "actionDate": "2026-01-16 09:14:18.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECLFA",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 1st reading (Introduced)",
+        "owner": "Senate Rules Committee",
+        "actionDate": "2026-01-20 11:07:24.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to standing committee",
+        "owner": "Senate Education Committee",
+        "actionDate": "2026-01-20 15:08:33.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOSTAND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for SB0069S01",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2026-01-21 14:53:53.267",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for SB0069S01",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2026-01-21 14:53:53.267",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate Comm - Substitute Recommendation",
+        "owner": "Senate Education Committee",
+        "actionDate": "2026-01-21 14:59:28.547",
+        "actionClass": "A",
+        "voteID": "38615",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "6-0-1",
+        "actionCode": "SCASUB",
+        "parm1": "1",
+        "parm2": "0"
+      },
+      {
+        "description": "Senate Comm - Favorable Recommendation",
+        "owner": "Senate Education Committee",
+        "actionDate": "2026-01-21 15:00:46.500",
+        "actionClass": "A",
+        "voteID": "38617",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "6-1-0",
+        "actionCode": "SCAFAV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ comm rpt/ substituted",
+        "owner": "Senate Education Committee",
+        "actionDate": "2026-01-22 11:12:05.257",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SCRSUB",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ placed on 2nd Reading Calendar",
+        "owner": "Senate 2nd Reading Calendar",
+        "actionDate": "2026-01-22 11:12:06.257",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SON2ND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 2nd reading",
+        "owner": "Senate 2nd Reading Calendar",
+        "actionDate": "2026-01-22 11:56:16.303",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ circled",
+        "owner": "Senate 2nd Reading Calendar",
+        "actionDate": "2026-01-22 11:56:36.123",
+        "actionClass": "S",
+        "voteID": "72",
+        "voiceVote": "1",
+        "voteHouse": "S",
+        "voteStr": "0-0-29",
+        "actionCode": "SCIRCLED",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for SB0069S01",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-01-22 14:53:53.527",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for SB0069S01",
+        "owner": "Released",
+        "actionDate": "2026-01-22 14:53:54.558",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ uncircled",
+        "owner": "Senate 2nd Reading Calendar",
+        "actionDate": "2026-01-30 11:37:20.780",
+        "actionClass": "S",
+        "voteID": "139",
+        "voiceVote": "1",
+        "voteHouse": "S",
+        "voteStr": "0-0-29",
+        "actionCode": "SUNCIRCLED",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ passed 2nd reading",
+        "owner": "Senate 3rd Reading Calendar",
+        "actionDate": "2026-01-30 11:54:53.803",
+        "actionClass": "S",
+        "voteID": "140",
+        "voiceVote": "0",
+        "voteHouse": "S",
+        "voteStr": "26-0-3",
+        "actionCode": "SPASS2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ 3rd reading",
+        "owner": "Senate 3rd Reading Calendar",
+        "actionDate": "2026-02-02 11:20:21.740",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SREAD3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ circled",
+        "owner": "Senate 3rd Reading Calendar",
+        "actionDate": "2026-02-02 11:20:38.910",
+        "actionClass": "S",
+        "voteID": "142",
+        "voiceVote": "1",
+        "voteHouse": "S",
+        "voteStr": "0-0-29",
+        "actionCode": "SCIRCLED",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ uncircled",
+        "owner": "Senate 3rd Reading Calendar",
+        "actionDate": "2026-02-03 11:39:42.060",
+        "actionClass": "S",
+        "voteID": "165",
+        "voiceVote": "1",
+        "voteHouse": "S",
+        "voteStr": "0-0-29",
+        "actionCode": "SUNCIRCLED",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ passed 3rd reading",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-02-03 11:43:52.210",
+        "actionClass": "S",
+        "voteID": "166",
+        "voiceVote": "0",
+        "voteHouse": "S",
+        "voteStr": "27-1-1",
+        "actionCode": "SPASS3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to House",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-02-03 11:43:53.210",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOHOU",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received from Senate",
+        "owner": "Clerk of the House",
+        "actionDate": "2026-02-03 12:28:29.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 1st reading (Introduced)",
+        "owner": "House Rules Committee",
+        "actionDate": "2026-02-03 14:03:40.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ to standing committee",
+        "owner": "House Education Committee",
+        "actionDate": "2026-02-05 11:59:32.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOSTAND",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill assigned to staff for fiscal analysis for SB0069S02",
+        "owner": "Legislative Fiscal Analyst",
+        "actionDate": "2026-02-18 17:56:53.847",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA1",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ bill sent to agencies for fiscal input for SB0069S02",
+        "owner": "Legislative Fiscal Agency",
+        "actionDate": "2026-02-18 17:56:53.847",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House Comm - Favorable Recommendation",
+        "owner": "House Education Committee",
+        "actionDate": "2026-02-18 18:07:06.033",
+        "actionClass": "A",
+        "voteID": "40524",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "8-3-4",
+        "actionCode": "HCAFAV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ committee report favorable",
+        "owner": "House Education Committee",
+        "actionDate": "2026-02-19 10:27:10.873",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HCR",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 2nd reading",
+        "owner": "House 3rd Reading Calendar for Senate bills",
+        "actionDate": "2026-02-19 10:27:11.873",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD2",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note sent to sponsor for SB0069S02",
+        "owner": "Version Sponsor",
+        "actionDate": "2026-02-19 17:27:36.854",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "LFA/ fiscal note publicly available for SB0069S02",
+        "owner": "Released",
+        "actionDate": "2026-02-19 17:27:37.716",
+        "actionClass": "F",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LFA4",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ 3rd reading",
+        "owner": "House 3rd Reading Calendar for Senate bills",
+        "actionDate": "2026-02-25 10:30:33.590",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HREAD3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ floor amendment",
+        "owner": "House 3rd Reading Calendar for Senate bills",
+        "actionDate": "2026-02-25 10:40:26.143",
+        "actionClass": "H",
+        "voteID": "825",
+        "voiceVote": "1",
+        "voteHouse": "H",
+        "voteStr": "0-0-75",
+        "actionCode": "HAMEND",
+        "parm1": "1",
+        "parm2": ""
+      },
+      {
+        "description": "House/ passed 3rd reading",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-02-25 10:48:52.517",
+        "actionClass": "H",
+        "voteID": "826",
+        "voiceVote": "0",
+        "voteHouse": "H",
+        "voteStr": "46-21-8",
+        "actionCode": "HPASS3",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ to Senate",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-02-25 10:48:54.517",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOSEN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received from House",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-02-25 14:24:53.717",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECH",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ placed on Concurrence Calendar",
+        "owner": "Senate Concurrence Calendar",
+        "actionDate": "2026-02-25 14:24:54.717",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SONCURCAL",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ concurs with House amendment",
+        "owner": "House Speaker",
+        "actionDate": "2026-02-26 11:27:48.720",
+        "actionClass": "S",
+        "voteID": "1236",
+        "voiceVote": "0",
+        "voteHouse": "S",
+        "voteStr": "19-0-10",
+        "actionCode": "SCONCUR",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to House",
+        "owner": "House Speaker",
+        "actionDate": "2026-02-26 11:27:49.737",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOHOU",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ received from Senate",
+        "owner": "House Speaker",
+        "actionDate": "2026-02-26 12:28:46.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HRECS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ signed by Speaker/ returned to Senate",
+        "owner": "Senate President",
+        "actionDate": "2026-02-26 12:28:47.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HSIGNS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "House/ to Senate",
+        "owner": "Senate President",
+        "actionDate": "2026-02-26 12:28:48.000",
+        "actionClass": "H",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "HTOSEN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received from House",
+        "owner": "Senate President",
+        "actionDate": "2026-02-26 18:13:30.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECH",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ signed by President/ sent for enrolling",
+        "owner": "Legislative Research and General Counsel / Enrolling",
+        "actionDate": "2026-02-26 18:13:31.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SSIGN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Bill Received from Senate for Enrolling",
+        "owner": "Legislative Research and General Counsel / Enrolling",
+        "actionDate": "2026-03-02 09:21:19.363",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LRGCRS",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Draft of Enrolled Bill Prepared",
+        "owner": "Legislative Research and General Counsel / Enrolling",
+        "actionDate": "2026-03-02 09:21:21.313",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LENROLL",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Enrolled Bill Returned to House or Senate",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-03-03 11:11:24.480",
+        "actionClass": "L",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "LPASSREV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ enrolled bill to Printing",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-03-03 11:11:28.577",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOPRINTEN",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ received enrolled bill from Printing",
+        "owner": "Senate Secretary",
+        "actionDate": "2026-03-11 10:58:18.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "SRECENRP",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Senate/ to Governor",
+        "owner": "Executive Branch - Governor",
+        "actionDate": "2026-03-11 10:58:20.000",
+        "actionClass": "S",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "STOGOV",
+        "parm1": "",
+        "parm2": ""
+      },
+      {
+        "description": "Governor Signed",
+        "owner": "Lieutenant Governor's office for filing",
+        "actionDate": "2026-03-18 09:41:00.000",
+        "actionClass": "G",
+        "voteID": "",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "",
+        "actionCode": "GSIGN",
+        "parm1": "",
+        "parm2": ""
+      }
+    ],
+    "agendaList": [
+      {
+        "mtgID": "20513",
+        "committeeID": "HSTEDU",
+        "mtgDate": "2026-02-18 16:00:00.0",
+        "agendaItem": "4",
+        "mtgPlace": "120 Senate Building",
+        "committeeName": "House Education Committee",
+        "upcomming": false,
+        "minutesURL": "/interim/2026/html/00001779.htm",
+        "agendaURL": "/~2026/agenda/HEDU0218.ag.htm",
+        "billSession": "2026GS",
+        "markerID": "298617"
+      },
+      {
+        "mtgID": "20266",
+        "committeeID": "SSTEDU",
+        "mtgDate": "2026-01-21 14:00:00.0",
+        "agendaItem": "7",
+        "mtgPlace": "210 Senate Building",
+        "committeeName": "Senate Education Committee",
+        "upcomming": false,
+        "minutesURL": "/interim/2026/html/00000391.htm",
+        "agendaURL": "/~2026/agenda/SEDU0121.ag.htm",
+        "billSession": "2026GS",
+        "markerID": "287591"
+      }
+    ],
+    "recommendingCommitteeList": [],
+    "billVersionList": [
+      {
+        "activeVersion": false,
+        "hasEnrolled": false,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "00346u",
+            "description": "Technology"
+          },
+          {
+            "code": "00790",
+            "description": "Education"
+          },
+          {
+            "code": "00792u",
+            "description": "K-12 Education"
+          },
+          {
+            "code": "01427",
+            "description": "Public Utilities and Technology"
+          },
+          {
+            "code": "54400b67-7",
+            "description": "Local Education Agencies (LEAs)"
+          },
+          {
+            "code": "n0225",
+            "description": "School Districts"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C53G-7-S227_2026050620260506",
+            "secNo": "53G-7-227"
+          }
+        ],
+        "minorVersion": "0",
+        "billNumber": "SB0069",
+        "billNumberShort": "S.B. 69",
+        "versionSponsor": "FILLML",
+        "subVersion": "0",
+        "subTrackID": "10804",
+        "billDocs": [
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "SB0069.xml",
+            "fileType": "Introduced",
+            "fileDate": "2026-01-02 16:41:27.383",
+            "url": "/Session/2026/bills/introduced/SB0069.xml",
+            "chamber": "",
+            "shortDesc": "Introduced",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "SB0069H01",
+            "fileType": "ComReport",
+            "fileDate": "2026-02-18 18:35:33.48",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/comreport/SB0069H01.pdf",
+            "chamber": "H",
+            "shortDesc": "House Committee Report",
+            "intVal1": 0,
+            "strVal1": "HSTEDU",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "SB0069S02",
+            "fileType": "ComReport",
+            "fileDate": "2026-01-21 16:36:27.507",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/comreport/SB0069S02.pdf",
+            "chamber": "S",
+            "shortDesc": "Senate Committee Report",
+            "intVal1": 0,
+            "strVal1": "SSTEDU",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "SB0069.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-16 05:12:37.527",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/SB0069.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "SB0069.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-16 05:12:37.523",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/SB0069.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "versionSponsorHouse": "S",
+        "versionSponsorName": "Sen. Fillmore, Lincoln"
+      },
+      {
+        "activeVersion": true,
+        "hasEnrolled": true,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "00346u",
+            "description": "Technology"
+          },
+          {
+            "code": "00790",
+            "description": "Education"
+          },
+          {
+            "code": "00792u",
+            "description": "K-12 Education"
+          },
+          {
+            "code": "01427",
+            "description": "Public Utilities and Technology"
+          },
+          {
+            "code": "54400b67-7",
+            "description": "Local Education Agencies (LEAs)"
+          },
+          {
+            "code": "n0225",
+            "description": "School Districts"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C53G-7-S227_2026070120260701",
+            "secNo": "53G-7-227"
+          }
+        ],
+        "minorVersion": "3",
+        "billNumber": "SB0069S01",
+        "billNumberShort": "S.B. 69 S1",
+        "versionSponsor": "FILLML",
+        "subVersion": "1",
+        "subTrackID": "12135",
+        "billDocs": [
+          {
+            "subVersion": "-2",
+            "billNumber": "SB0069",
+            "fileName": "SB0069.xml",
+            "fileType": "Enrolled",
+            "fileDate": "2026-03-03 11:11:28.527",
+            "url": "/Session/2026/bills/enrolled/SB0069.xml",
+            "chamber": "",
+            "shortDesc": "Enrolled",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "AV_SB0069S01_2026-02-26_13-59-44.pdf",
+            "fileType": "Amended",
+            "fileDate": "2026-02-26 13:59:45.51",
+            "url": "/Session/2026/bills/amended/AV_SB0069S01_2026-02-26_13-59-44.pdf",
+            "chamber": "",
+            "shortDesc": "Amended 2/26/2026 13:02:102",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "AV_SB0069S01_2026-02-26_13-59-44.xml",
+            "fileType": "Amended",
+            "fileDate": "2026-02-26 13:59:44.46",
+            "url": "/Session/2026/bills/amended/AV_SB0069S01_2026-02-26_13-59-44.xml",
+            "chamber": "",
+            "shortDesc": "Amended 2/26/2026 13:02:102",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "current",
+            "strVal3": "2026-02-26_13-59-44"
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "AP_SB0069S01_2026-02-26_13-59-44.pdf",
+            "fileType": "AmdPages",
+            "fileDate": "2026-02-26 13:59:45.777",
+            "url": "/Session/2026/bills/amended/AP_SB0069S01_2026-02-26_13-59-44.pdf",
+            "chamber": "",
+            "shortDesc": "Amended Excerpts 2/26/2026 13:02:102",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "CP SB0069 To SB0069S01.pdf",
+            "fileType": "BillComp",
+            "fileDate": "2026-01-21 14:53:50.73",
+            "url": "/Session/2026/bills/introduced/CP SB0069 To SB0069S01.pdf",
+            "chamber": "",
+            "shortDesc": "Comparison to Original Bill",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "SB0069S01.Hamd.1.pdf",
+            "fileType": "PubAmend",
+            "fileDate": "2026-02-23 10:51:23.55",
+            "url": "/Session/2026/bills/amended/SB0069S01.Hamd.1.pdf",
+            "chamber": "H",
+            "shortDesc": "House Amendment 1",
+            "intVal1": 1,
+            "strVal1": "pass",
+            "strVal2": "floor",
+            "strVal3": "W"
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "SB0069S01.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-22 14:53:54.42",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/SB0069S01.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "SB0069S01.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-01-22 14:53:54.42",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/SB0069S01.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "1",
+            "billNumber": "SB0069S01",
+            "fileName": "SB0069S01.xml",
+            "fileType": "PubSub",
+            "fileDate": "2026-01-21 14:53:49.277",
+            "url": "/Session/2026/bills/introduced/SB0069S01.xml",
+            "chamber": "",
+            "shortDesc": "Substitute #1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "2026GS-SB0069S01-H-1.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-02-25 11:20:15.983",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-SB0069S01-H-1.pdf",
+            "chamber": "",
+            "shortDesc": "House Transmittal Letter 1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "2026GS-SB0069S01-H-2.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-02-26 15:11:41.153",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-SB0069S01-H-2.pdf",
+            "chamber": "",
+            "shortDesc": "House Transmittal Letter 2",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "2026GS-SB0069S01-S-1.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-02-03 12:02:28.72",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-SB0069S01-S-1.pdf",
+            "chamber": "",
+            "shortDesc": "Senate Transmittal Letter 1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "0",
+            "billNumber": "SB0069",
+            "fileName": "2026GS-SB0069S02-S-2.pdf",
+            "fileType": "transmit",
+            "fileDate": "2026-02-26 11:42:23.903",
+            "url": "https://pf.utleg.gov/public-web/transmittal-letters/2026GS-SB0069S02-S-2.pdf",
+            "chamber": "",
+            "shortDesc": "Senate Transmittal Letter 2",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "versionSponsorHouse": "S",
+        "versionSponsorName": "Sen. Fillmore, Lincoln"
+      },
+      {
+        "activeVersion": false,
+        "hasEnrolled": false,
+        "coSponsorList": [],
+        "subjectList": [
+          {
+            "code": "00346u",
+            "description": "Technology"
+          },
+          {
+            "code": "00790",
+            "description": "Education"
+          },
+          {
+            "code": "00792u",
+            "description": "K-12 Education"
+          },
+          {
+            "code": "01427",
+            "description": "Public Utilities and Technology"
+          },
+          {
+            "code": "54400b67-7",
+            "description": "Local Education Agencies (LEAs)"
+          },
+          {
+            "code": "n0225",
+            "description": "School Districts"
+          }
+        ],
+        "sectionAffectedList": [
+          {
+            "uid": "C53G-7-S227_2026070120260701",
+            "secNo": "53G-7-227"
+          }
+        ],
+        "minorVersion": "0",
+        "billNumber": "SB0069S02",
+        "billNumberShort": "S.B. 69 S2",
+        "versionSponsor": "MACPHM",
+        "subVersion": "2",
+        "subTrackID": "12943",
+        "billDocs": [
+          {
+            "subVersion": "2",
+            "billNumber": "SB0069S02",
+            "fileName": "CP SB0069 To SB0069S02.pdf",
+            "fileType": "BillComp",
+            "fileDate": "2026-02-18 17:56:51.697",
+            "url": "/Session/2026/bills/introduced/CP SB0069 To SB0069S02.pdf",
+            "chamber": "",
+            "shortDesc": "Comparison to Original Bill",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "2",
+            "billNumber": "SB0069S02",
+            "fileName": "CP SB0069S01 To SB0069S02.pdf",
+            "fileType": "BillComp",
+            "fileDate": "2026-02-18 17:56:50.977",
+            "url": "/Session/2026/bills/introduced/CP SB0069S01 To SB0069S02.pdf",
+            "chamber": "",
+            "shortDesc": "Comparison to Sub #1",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "2",
+            "billNumber": "SB0069S02",
+            "fileName": "SB0069S02.html",
+            "fileType": "PubFN",
+            "fileDate": "2026-02-19 17:27:37.6",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/SB0069S02.fn.html",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "2",
+            "billNumber": "SB0069S02",
+            "fileName": "SB0069S02.pdf",
+            "fileType": "PubFN",
+            "fileDate": "2026-02-19 17:27:37.6",
+            "url": "https://pf.utleg.gov/public-web/sessions/2026GS/fiscal-notes/SB0069S02.fn.pdf",
+            "chamber": "",
+            "shortDesc": "Fiscal Note",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          },
+          {
+            "subVersion": "2",
+            "billNumber": "SB0069S02",
+            "fileName": "SB0069S02.xml",
+            "fileType": "PubSub",
+            "fileDate": "2026-02-18 17:56:49.567",
+            "url": "/Session/2026/bills/introduced/SB0069S02.xml",
+            "chamber": "",
+            "shortDesc": "Substitute #2",
+            "intVal1": 0,
+            "strVal1": "",
+            "strVal2": "",
+            "strVal3": ""
+          }
+        ],
+        "versionSponsorHouse": "H",
+        "versionSponsorName": "Rep. MacPherson, Matt"
+      }
+    ],
+    "floorDebateList": [
+      {
+        "markerID": "133171",
+        "dayOfSession": "11",
+        "house": "S",
+        "description": "SB0069S01 School Device Revisions, Fillmore, L.",
+        "sessionDate": "1/30/2026"
+      },
+      {
+        "markerID": "133269",
+        "dayOfSession": "15",
+        "house": "S",
+        "description": "SB0069S01 School Device Revisions, Fillmore, L.",
+        "sessionDate": "2/3/2026"
+      },
+      {
+        "markerID": "135027",
+        "dayOfSession": "36",
+        "house": "H",
+        "description": "SB0069S01 School Device Revisions, Fillmore, L.",
+        "sessionDate": "2/25/2026"
+      },
+      {
+        "markerID": "135207",
+        "dayOfSession": "37",
+        "house": "S",
+        "description": "SB0069S02 School Device Revisions, MacPherson, M.",
+        "sessionDate": "2/26/2026"
+      }
+    ],
+    "versions": [
+      {
+        "id": "SB0069",
+        "label": "Introduced",
+        "date": "2026-01-02 16:41:27.383",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/SB0069.xml",
+        "sections": [
+          {
+            "number": "53G-7-227",
+            "type": "amend",
+            "line": "21",
+            "uid": "C53G-7-S227_2026050620260506",
+            "before": "(1) As used in this section:(a) (b) \"Cellphone\" includes:(i) a smartphone;\n(ii) a feature phone;\n(iii) a mobile phone;\n(iv) a satellite phone; or\n(v) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(c) \"Classroom hours\" means:(i) time during which a student receives scheduled, teacher-supervised instruction that occurs:(A) in a physical or virtual classroom setting;\n(B) during regular school operating hours; and\n(C) as part of an approved educational curriculum.\n\n(ii) \"Classroom hours\" does not include:(A) lunch periods;\n(B) recess;\n(C) transit time between classes;\n(D) study halls unless directly supervised by a qualified instructor;\n(E) after-school activities unless part of an approved extended learning program; or\n(F) independent study time occurring outside scheduled instruction.\n\n\n(d) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(e) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(f) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) (a) An LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology.\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-classroom hours during the school day, including:(A) lunch periods;\n(B) transition times between classes; and\n(C) other school-supervised activities; and\n\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(3) Except as provided in Subsection (2), a student may not use a cellphone, smart watch, or emerging technology at a school during classroom hours.\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during classroom hours consistent with this section.",
+            "after": "(1) As used in this section:(a) (i) \"Cellphone\" means a handheld, portable electronic device that is designed to be operated using one or both hands and is capable of transmitting and receiving voice, data, or text communication by means of:(A) a cellular network;\n(B) a satellite network; or\n(C) any other wireless technology.\n\n(ii) \"Cellphone\" includes:(A) a smartphone;\n(B) a feature phone;\n(C) a mobile phone;\n(D) a satellite phone; or\n(E) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(b) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(c) \"School hours\" means the time from the beginning of the school day, as designated by the school's bell schedule, until the end of the school day, as designated by the school's bell schedule, including all instructional time, lunch periods, recess, and transition times between classes.\n(d) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(e) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) Except as provided in Subsection (3), a student may not use a cellphone, smart watch, or emerging technology at a school during school hours.\n(3) (a) Notwithstanding this section, an LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) in addition to the exceptions described in Subsection (3)(a)(i), may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology during the school day.\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-school hours, including\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during school hours consistent with this section."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "93",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on May 6, 2026."
+          }
+        ],
+        "source": "data/raw/Introduced-SB0069.xml"
+      },
+      {
+        "id": "SB0069S01",
+        "label": "Substitute #1",
+        "date": "2026-01-21 14:53:49.277",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/SB0069S01.xml",
+        "sections": [
+          {
+            "number": "53G-7-227",
+            "type": "amend",
+            "line": "21",
+            "uid": "C53G-7-S227_2026070120260701",
+            "before": "(1) As used in this section:(a) (b) \"Cellphone\" includes:(i) a smartphone;\n(ii) a feature phone;\n(iii) a mobile phone;\n(iv) a satellite phone; or\n(v) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(c) \"Classroom hours\" means:(i) time during which a student receives scheduled, teacher-supervised instruction that occurs:(A) in a physical or virtual classroom setting;\n(B) during regular school operating hours; and\n(C) as part of an approved educational curriculum.\n\n(ii) \"Classroom hours\" does not include:(A) lunch periods;\n(B) recess;\n(C) transit time between classes;\n(D) study halls unless directly supervised by a qualified instructor;\n(E) after-school activities unless part of an approved extended learning program; or\n(F) independent study time occurring outside scheduled instruction.\n\n\n(d) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(e) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(f) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) (a) An LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology.\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-classroom hours during the school day, including:(A) lunch periods;\n(B) transition times between classes; and\n(C) other school-supervised activities; and\n\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(3) Except as provided in Subsection (2), a student may not use a cellphone, smart watch, or emerging technology at a school during classroom hours.\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during classroom hours consistent with this section.",
+            "after": "(1) As used in this section:(a) (i) \"Cellphone\" means a handheld, portable electronic device that is designed to be operated using one or both hands and is capable of transmitting and receiving voice, data, or text communication by means of:(A) a cellular network;\n(B) a satellite network; or\n(C) any other wireless technology.\n\n(ii) \"Cellphone\" includes:(A) a smartphone;\n(B) a feature phone;\n(C) a mobile phone;\n(D) a satellite phone; or\n(E) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(b) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(c) \"School hours\" means the time from the beginning of the school day, as designated by the school's bell schedule, until the end of the school day, as designated by the school's bell schedule, including all instructional time, lunch periods, recess, and transition times between classes.\n(d) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(e) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) Except as provided in Subsection (3), a student may not use a cellphone, smart watch, or emerging technology at a school during school hours.\n(3) (a) Notwithstanding this section, an LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) in addition to the exceptions described in Subsection (3)(a)(i), may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology during the school day.\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-school hours, including\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during school hours consistent with this section."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "93",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on July 1, 2026."
+          }
+        ],
+        "source": "data/raw/PubSub-SB0069S01.xml"
+      },
+      {
+        "id": "SB0069S02",
+        "label": "Substitute #2",
+        "date": "2026-02-18 17:56:49.567",
+        "url": "https://le.utah.gov/Session/2026/bills/introduced/SB0069S02.xml",
+        "sections": [
+          {
+            "number": "53G-7-227",
+            "type": "amend",
+            "line": "21",
+            "uid": "C53G-7-S227_2026070120260701",
+            "before": "(1) As used in this section:(a) (b) \"Cellphone\" includes:(i) a smartphone;\n(ii) a feature phone;\n(iii) a mobile phone;\n(iv) a satellite phone; or\n(v) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(c) \"Classroom hours\" means:(i) time during which a student receives scheduled, teacher-supervised instruction that occurs:(A) in a physical or virtual classroom setting;\n(B) during regular school operating hours; and\n(C) as part of an approved educational curriculum.\n\n(ii) \"Classroom hours\" does not include:(A) lunch periods;\n(B) recess;\n(C) transit time between classes;\n(D) study halls unless directly supervised by a qualified instructor;\n(E) after-school activities unless part of an approved extended learning program; or\n(F) independent study time occurring outside scheduled instruction.\n\n\n(d) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(e) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(f) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) (a) An LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology.\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-classroom hours during the school day, including:(A) lunch periods;\n(B) transition times between classes; and\n(C) other school-supervised activities; and\n\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(3) Except as provided in Subsection (2), a student may not use a cellphone, smart watch, or emerging technology at a school during classroom hours.\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during classroom hours consistent with this section.",
+            "after": "(1) As used in this section:(a) (i) \"Cellphone\" means a handheld, portable electronic device that is designed to be operated using one or both hands and is capable of transmitting and receiving voice, data, or text communication by means of:(A) a cellular network;\n(B) a satellite network; or\n(C) any other wireless technology.\n\n(ii) \"Cellphone\" includes:(A) a smartphone;\n(B) a feature phone;\n(C) a mobile phone;\n(D) a satellite phone; or\n(E) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(b) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(c) \"School hours\" means the time from the beginning of the school day, as designated by the school's bell schedule, until the end of the school day, as designated by the school's bell schedule, including all instructional time, lunch periods, recess, and transition times between classes.\n(d) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(e) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) Except as provided in Subsection (3), a student may not use a cellphone, smart watch, or emerging technology at a school during school hours.\n(3) (a) Notwithstanding this section, an LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) in addition to the exceptions described in Subsection (3)(a)(i), may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology during the school day.\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-school hours, including\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(4) (a) Notwithstanding Subsections (2) and (3), a parent or legal guardian of a student may submit a written opt-out request to the LEA.\n(b) Upon receipt of a written opt-out request under Subsection (4)(a), an LEA shall permit the student to possess and use the student's cellphone, smart watch, or emerging technology:(i) outside of instructional time, including:(A) passing periods;\n(B) lunch periods;\n(C) release time; and\n(D) before and after the school day; and\n\n(ii) in a manner that does not materially disrupt instruction or LEA operations.\n\n(c) An LEA may not require a student to have an individualized education program, Section 504 accommodation plan, medical accommodation, or special education designation as a condition for granting a parental opt-out under this Subsection (4).\n(d) An LEA may continue to prohibit a student's use of a cellphone, smart watch, or emerging technology during instructional time, except as otherwise permitted by a teacher for instructional purposes.\n(e) An LEA may adopt rules limiting use under this Subsection (4) to designated areas of LEA property.\n\n(5) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during school hours consistent with this section."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "112",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on July 1, 2026."
+          }
+        ],
+        "source": "data/raw/PubSub-SB0069S02.xml"
+      },
+      {
+        "id": "SB0069S01-enrolled",
+        "label": "Enrolled",
+        "date": "2026-03-03 11:11:28.527",
+        "url": "https://le.utah.gov/Session/2026/bills/enrolled/SB0069.xml",
+        "sections": [
+          {
+            "number": "53G-7-227",
+            "type": "amend",
+            "line": "21",
+            "uid": "C53G-7-S227_2026070120260701",
+            "before": "(1) As used in this section:(a) (b) \"Cellphone\" includes:(i) a smartphone;\n(ii) a feature phone;\n(iii) a mobile phone;\n(iv) a satellite phone; or\n(v) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(c) \"Classroom hours\" means:(i) time during which a student receives scheduled, teacher-supervised instruction that occurs:(A) in a physical or virtual classroom setting;\n(B) during regular school operating hours; and\n(C) as part of an approved educational curriculum.\n\n(ii) \"Classroom hours\" does not include:(A) lunch periods;\n(B) recess;\n(C) transit time between classes;\n(D) study halls unless directly supervised by a qualified instructor;\n(E) after-school activities unless part of an approved extended learning program; or\n(F) independent study time occurring outside scheduled instruction.\n\n\n(d) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(e) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(f) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) (a) An LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) \n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-classroom hours during the school day, including:(A) lunch periods;\n(B) transition times between classes; and\n(C) other school-supervised activities; and\n\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(3) Except as provided in Subsection (2), a student may not use a cellphone, smart watch, or emerging technology at a school during classroom hours.\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during classroom hours consistent with this section.",
+            "after": "(1) As used in this section:(a) (i) \"Cellphone\" means a handheld, portable electronic device that is designed to be operated using one or both hands and is capable of transmitting and receiving voice, data, or text communication by means of:(A) a cellular network;\n(B) a satellite network; or\n(C) any other wireless technology.\n\n(ii) \"Cellphone\" includes:(A) a smartphone;\n(B) a feature phone;\n(C) a mobile phone;\n(D) a satellite phone; or\n(E) a personal digital assistant that incorporates capabilities similar to a smartphone, feature phone, mobile phone, or satellite phone.\n\n\n(b) (i) \"Emerging technology\" means any other device that has or will be able to act in place of or as an extension of an individual's cellphone.\n(ii) \"Emerging technology\" does not include school provided or required devices.\n\n(c) \"School hours\" means the time from the beginning of the school day, as designated by the school's bell schedule, until the end of the school day, as designated by the school's bell schedule, including all instructional time, lunch periods, recess, and transition times between classes.\n(d) \"Smart watch\" means a wearable computing device that closely resembles a wristwatch or other time-keeping device with the capacity to act in place of or as an extension of an individual's cellphone.\n(e) \"Smart watch\" does not include a wearable device that can only:(i) tell time;\n(ii) monitor an individual's health informatics;\n(iii) receive and display notifications or information without the capability to respond; or\n(iv) track the individual's physical location.\n\n\n(2) Except as provided in Subsection (3), a student may not use a cellphone, smart watch, or emerging technology at a school during school hours.\n(3) (a) Notwithstanding this section, an LEA:(i) shall establish a policy that allows a student to use a cellphone, smart watch, or emerging technology:(A) to respond to an imminent threat to the health or safety of an individual;\n(B) to respond to a school-wide emergency;\n(C) to use the SafeUT Crisis Line described in Section 53H-4-210;\n(D) for a student's IEP or Section 504 accommodation plan; or\n(E) to address a medical necessity; and\n\n(ii) in addition to the exceptions described in Subsection (3)(a)(i):(A) may establish a policy that provides for other circumstances when a student may use a cellphone, smart watch, or emerging technology during the school day; and\n(B) shall establish a policy that allows a parent to request an accommodation for the parent's student to briefly use a cellphone, smart watch, or emerging technology in a specified area the school designates during non-instructional time.\n\n\n(b) An LEA may establish policies that:(i) extend restrictions on student use of cellphones, smart watches, or emerging technologies to non-school hours, including\n(ii) impose additional limitations on the use of cellphones, smart watches, or emerging technologies beyond those required by this section.\n\n\n(4) The state board may create one or more model policies regarding when a student may use a student's cellphone, smart watch, or emerging technology in a school during school hours consistent with this section."
+          },
+          {
+            "number": "Effective date",
+            "type": "uncod",
+            "line": "98",
+            "uid": "EF0000",
+            "before": "",
+            "after": "This bill takes effect on July 1, 2026."
+          }
+        ],
+        "source": "data/raw/Enrolled-SB0069.xml"
+      }
+    ],
+    "topic": "Education",
+    "summary": "The second substitute expands the default student device-use restriction from classroom hours to the full school day. It retains emergency, disability-accommodation, and medical exceptions and allows additional exceptions in local policies.",
+    "extra": "The second substitute adds a written parental opt-out for use outside instructional time, subject to limits. Read the enrolled version for the final enacted text.",
+    "summaryVersion": "SB0069S02",
+    "status": "Signed",
+    "committees": [
+      "House Education Committee",
+      "Senate Education Committee"
+    ],
+    "sourceUrl": "https://le.utah.gov/data/2026GS/SB0069.json",
+    "retrievedAt": "2026-10-20T22:30:00.096021+00:00"
+  }
+]

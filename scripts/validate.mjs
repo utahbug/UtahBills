@@ -1,0 +1,5 @@
+import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
+const json=async p=>JSON.parse(await readFile(p,'utf8'));const sources=await json('data/sources.json'),bills=await json('data/bills.json'),pins=await json('data/summary-evidence.json');
+for(const s of sources){assert.equal(new URL(s.url).hostname,'le.utah.gov');assert.equal(createHash('sha256').update(await readFile(s.path)).digest('hex'),s.sha256,`Changed raw source: ${s.path}`);assert.ok(!Number.isNaN(Date.parse(s.retrievedAt)))}
+for(const b of bills){assert.equal(b.sessionID,'2026GS');assert.ok(b.actionHistoryList.length);assert.equal(b.retrievedAt,sources.find(s=>s.url===b.sourceUrl).retrievedAt,'Re-run analysis after retrieval');const p=pins[b.billNumber];assert.equal(p.version,b.summaryVersion);assert.equal(p.sha256,createHash('sha256').update(await readFile(p.path)).digest('hex'),'Source changed: summary review required');for(const v of b.versions)assert.ok(sources.some(s=>s.path===v.source&&s.url===v.url))}
+console.log('Source checksums, session IDs, version links, retrieval dates, and summary evidence verified.');

@@ -1,0 +1,26 @@
+{
+  "HB0011": {
+    "version": "HB0011",
+    "path": "data/raw/Introduced-HB0011.xml",
+    "sha256": "c51e667e9b4c70f0490d37d1c305816a17cd77f91a9e0506bfc6c2ae15fc0eed",
+    "review": "AI-assisted source check; human editorial review pending"
+  },
+  "HB0154": {
+    "version": "HB0154S01",
+    "path": "data/raw/PubSub-HB0154S01.xml",
+    "sha256": "7cbc935f17219524c175c5a6b18662736c3ebba23973870a9010127b27c07907",
+    "review": "AI-assisted source check; human editorial review pending"
+  },
+  "HB0155": {
+    "version": "HB0155",
+    "path": "data/raw/Introduced-HB0155.xml",
+    "sha256": "11ca32d8cc8c0cb462835ed8bb557056e16973fa991a05504d6d9665cfb84b05",
+    "review": "AI-assisted source check; human editorial review pending"
+  },
+  "SB0069": {
+    "version": "SB0069S02",
+    "path": "data/raw/PubSub-SB0069S02.xml",
+    "sha256": "3fca3ddeba41770f8e1ede9448f3ae7c7fa566c9639672109f00e856341720f0",
+    "review": "AI-assisted source check; human editorial review pending"
+  }
+}
