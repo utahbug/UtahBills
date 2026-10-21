@@ -92,3 +92,7 @@ remains necessary. The 104-entry year roster is not a claim about current member
 Four former members lack matching current contact data. New measures have basic official
 records, not full XML analysis or reviewed explanations. Bill/request refresh is manual;
 calendar remains independently scheduled daily. No finalized 2027 roster is asserted.
+
+CI font-metric follow-up: enlarged text exposed intrinsic minimum widths in the
+listing help columns. Flexible wrapping now prevents that overflow; the reflow
+regression covers both system UI and Verdana font metrics.

@@ -59,3 +59,4 @@ button{max-width:100%;overflow-wrap:anywhere}main{overflow-wrap:anywhere}
 
 .directory-controls label{max-width:100%}.directory-controls input,.directory-controls select{width:100%}.details-grid aside{min-width:0}.panel p,.sponsor-filter{overflow-wrap:anywhere}
 .directory-controls label:last-child{flex:1 1 160px}.directory-controls label{min-width:min(140px,100%)}
+.support>div{min-width:0;overflow-wrap:anywhere}.filters label{overflow-wrap:anywhere}
