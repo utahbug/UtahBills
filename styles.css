@@ -98,3 +98,5 @@ summary::-webkit-details-marker{display:none}
 .profile-records{padding-inline-start:1.1em;overflow-wrap:anywhere}.profile-records li{margin-block:6px}
 
 .archive-metadata .profile-records{font-size:.875rem;padding-inline-start:1em}
+
+.archive-metadata .profile-records > li > small{display:block}
