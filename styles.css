@@ -162,3 +162,7 @@ footer{padding-bottom:80px}
 .agenda-heading.results-toolbar .result-summary h2{flex:auto;margin:8px 0}
 @media(max-width:900px){.results-toolbar{grid-template-columns:minmax(0,1fr)}.result-controls{justify-content:flex-start}}
 @media(max-width:600px){.result-controls{align-items:end}.result-controls label{display:grid;gap:2px}.copy-control{align-self:end}}
+/* Match toolbar controls at normal and enlarged text sizes. */
+.result-controls select,.copy-control .copy-results{height:max(44px,calc(1.5em + 14px));min-height:44px;line-height:1.5;font-size:inherit;border:1px solid #8295a2;border-radius:5px}
+/* Auto margins center a wrapped navigation row without changing wide headers. */
+@media(max-width:899px){.header-inner nav{margin-inline:auto;justify-content:center}}
