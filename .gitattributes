@@ -1,3 +1,5 @@
 * text=auto
 data/raw/* -text
 *.cmd text eol=crlf
+
+data/catalog-raw/* -text

@@ -1,3 +1,4 @@
+import {execFileSync} from 'node:child_process';
 import './validate.mjs';
 import {build} from 'esbuild';
 import {mkdir,copyFile,cp,rm,readFile,writeFile} from 'node:fs/promises';
@@ -13,6 +14,7 @@ const calendar=JSON.parse(await readFile('data/calendar.json','utf8'));
 const {agendas,...calendarView}=calendar;
 calendarView.sources=calendar.sources.map(({body,...source})=>source);
 await writeFile('dist/data/calendar-ui.json',JSON.stringify(calendarView));
+execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['scripts/catalog_model.py','--build'],{stdio:'inherit'});
 await cp('assets','dist/assets',{recursive:true});
 await copyFile('node_modules/lucide/LICENSE','dist/LUCIDE-LICENSE.txt');
 console.log('Built static site in dist; all assets use relative URLs.');

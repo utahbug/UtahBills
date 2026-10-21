@@ -6,8 +6,9 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "start": "node scripts/serve.mjs",
-    "test": "node tests/qa.mjs && node tests/text-resize.mjs && node tests/batch1.mjs && node tests/batch2.mjs",
-    "refresh": "python scripts/acquire.py"
+    "test": "node tests/qa.mjs && node tests/text-resize.mjs && node tests/batch1.mjs && node tests/batch2.mjs && node tests/batch2b.mjs",
+    "refresh": "python scripts/acquire.py",
+    "refresh:catalog": "python scripts/refresh_catalog.py"
   },
   "dependencies": {
     "diff": "8.0.2",

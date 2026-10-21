@@ -1,0 +1,415 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /geo/maps/DC2020/SLD_RefMap/SLD2022/lower/st49_ut</title>
+ </head>
+ <body>
+<!-- GOV BANNER AND SIMPLE HEADER LAST UPDATED 11/17/2021 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="/main/uswds/uswds-2.12.0/js/uswds-init.min.js" type="356ea2592df5e9d75330dc62-text/javascript"></script>
+    <script async type="356ea2592df5e9d75330dc62-text/javascript" id="_fed_an_ua_tag" src="/main/javascript/dap/Universal-Federated-Analytics-Min.js?agency=DOC"></script>
+   <!-- <link rel="stylesheet" href="https://www.census.gov/main/uswds/uswds-2.12.0/css/uswds.min.css" /> -->
+  <!--  <link rel="stylesheet" href="https://www.census.gov/main/.in/css/all_header_styles.css" /> -->
+  <link rel="stylesheet" href="/main/css/all_header_styles.css" />
+   
+   
+  </head>
+  <body>
+    <script src="/main/uswds/uswds-2.12.0/js/uswds.min.js" type="356ea2592df5e9d75330dc62-text/javascript"></script>
+    <section class="usa-banner" aria-label="Official government website">
+        <div class="usa-accordion">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img
+                  class="usa-banner__header-flag"
+                  src="/main/uswds/uswds-2.12.0/img/us_flag_small.png"
+                  alt="U.S. flag"
+                />
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto">
+                <p class="usa-banner__header-text">
+                  An official website of the United States government
+                </p>
+                <!-- <p class="usa-banner__header-action" aria-hidden="true">
+                  Here's how you know
+                </p>
+              </div>
+              <button
+                class="usa-accordion__button usa-banner__button"
+                aria-expanded="false"
+                aria-controls="gov-banner-default"
+              >
+                <span class="usa-banner__button-text">Here's how you know</span>
+              </button>
+            </div>
+          </header>
+          <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+            <div class="grid-row grid-gap-lg">
+              <div class="usa-banner__guidance tablet:grid-col-6">
+                <img
+                  class="usa-banner__icon usa-media-block__img"
+                  src="https://www.census.gov/main/uswds/uswds-2.12.0/img/icon-dot-gov.svg"
+                  role="img"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <div class="usa-media-block__body">
+                  <p>
+                    <strong> Official websites use .gov </strong>
+                    <br />
+                    A <strong>.gov</strong> website belongs to an official government
+                    organization in the United States.
+                  </p>
+                </div>
+              </div>
+              <div class="usa-banner__guidance tablet:grid-col-6">
+                <img
+                  class="usa-banner__icon usa-media-block__img"
+                  src="https://www.census.gov/main/uswds/uswds-2.12.0/img/icon-https.svg"
+                  role="img"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <div class="usa-media-block__body">
+                  <p>
+                    <strong> Secure .gov websites use HTTPS </strong>
+                    <br />
+                    A <strong>lock</strong> (
+                    <span class="icon-lock"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="52"
+                        height="64"
+                        viewBox="0 0 52 64"
+                        class="usa-banner__lock-image"
+                        role="img"
+                        aria-labelledby="banner-lock-title-default banner-lock-description-default"
+                        focusable="false"
+                      >
+                        <title id="banner-lock-title-default">Lock</title>
+                        <desc id="banner-lock-description-default">A locked padlock</desc>
+                        <path
+                          fill="#000000"
+                          fill-rule="evenodd"
+                          d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/>
+                        </svg></span>
+                    ) or <strong>https://</strong> means you’ve safely connected to
+                    the .gov website. Share sensitive information only on official,
+                    secure websites.
+                  </p> -->
+                </div>
+              </div>
+            </div>
+         <!-- </div>
+        </div>-->
+      </section>
+
+
+<!-- Adding original census.gov css -->
+<!-- 
+<link rel="stylesheet" href="https://www.census.gov/main/css/_new/bootstrap.css" class="cb-main-support global-file">
+<link rel="stylesheet" href="https://www.census.gov/main/css/_new/base.css" class="cb-main-support global-file">
+<link rel="stylesheet" href="https://www.census.gov/main/css/_new/extra.css" class="cb-main-support global-file">
+<link rel="stylesheet" href="https://www.census.gov/main/css/_new/typeahead.css" class="cb-main-support global-file">
+<link rel="stylesheet" href="https://www.census.gov/main/css/_new/header.css" class="cb-main-support global-file">
+<link rel="stylesheet" href="https://www.census.gov/main/css/_new/search.css" class="cb-main-support global-file">
+ -->
+<!--
+<style id="antiClickjack">
+    body {
+        display: none !important
+    }
+</style>
+-->
+<!--
+<script type="text/javascript" src="/main/javascript/clickjack.js"></script>
+-->
+<script src="/main/responsive-header/jquery/jquery.js" class="cb-main-support global-file" type="356ea2592df5e9d75330dc62-text/javascript"></script>
+<!-- <script src="https://www.census.gov/main/javascript/jquery-ui-1.13.2/jquery-ui.js" class="cb-main-support global-file"></script> -->
+
+<!-- Check for jquery conflict -->
+<script type="356ea2592df5e9d75330dc62-text/javascript">
+
+	$.ajax({
+		type : 'get',
+		url : '/main/app-config/header/adobe-launch.txt',	
+		dataType: 'text',            	
+		success : function(data){		 		
+	                var adobeLaunchScript = document.createElement("script");
+	                adobeLaunchScript.setAttribute("src",data);
+	                document.head.appendChild(adobeLaunchScript);
+	            },
+	    error : function(xhr, errorText, errorMessage){
+	                console.log('adobe-launch URL recognition failed: ' + errorText);
+	            }
+	});
+
+    $acn = jQuery.noConflict();
+    if (typeof jQuery === 'undefined' || typeof $ === 'undefined') {
+        jQuery = $acn;
+        $ = $acn;
+    }
+    $(function () {
+        $('.cb-header-skip-nav').click(function () {
+            $('#cb-after-header-anchor').focus();
+        });
+    });
+</script>
+
+<script src="/main/responsive-header/bootstrap-custom/js/bootstrap.js" class="cb-main-support global-file" type="356ea2592df5e9d75330dc62-text/javascript"></script>
+<!-- <script src="https://www.census.gov/main/responsive-header/js/typeahead.js" class="cb-main-support global-file"></script> -->
+
+
+<style type="text/css">
+    header.hdr-primary,
+    header.hdr-primary>nav {
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 64px !important;
+        background-color: #ffffff !important;
+       /* border-color: #112e51 !important;*/
+    }
+
+    header.hdr-primary>nav>div {
+        box-sizing: border-box !important;
+        height: 36.62px !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.02em !important;
+        line-height: 30px !important;
+        white-space: nowrap !important;
+        vertical-align: baseline !important;
+        padding: 0 0 0 16px !important;
+        margin: 0 !important;
+        min-width: 150px !important;
+    }
+
+    header.hdr-primary>nav>div>a,
+    header.hdr-primary>nav>div>a>img {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-style: none !important;
+        background: transparent !important;
+        text-decoration: none !important;
+    }
+
+    header.hdr-primary>nav>div>a {
+        box-sizing: border-box !important;
+        cursor: pointer !important;
+        text-decoration: none !important;
+    }
+
+    header.hdr-primary>nav>div>a>img {
+        width: 86px !important;
+        height: 33.62px !important;
+        margin-left: 15px !important;
+    }
+    hr.blue-line {
+   /* border-top-width: 2px;*/
+   /* border-color: #d0dce1;*/
+    margin: 0px;
+    border-bottom: #d0dce1 1px solid;
+    
+    }
+    
+</style>
+<button class="cb-header-skip-nav sr-only sr-only-focusable">Skip to main content</button>
+<header class="hdr-primary">
+    <nav>
+        <!--  <div><a href="https://www.census.gov" id="census-home-link"><img src="https://data.census.gov/cedsci/img/census-logo-white.25c8cb29.svg" alt="United States Census Bureau" title="U.S. Census Bureau"></a></div> 
+          <div><a href="https://www.census.gov" id="census-home-link"><img src="https://www.census.gov/main/.in/USCENSUS_IDENTITY_SOLO_White_2in_TM.svg" alt="United States Census Bureau" title="U.S. Census Bureau"></a></div>
+    -->
+        <div><a href="https://www.census.gov" id="census-home-link"><img
+                    src="/main/img/USCENSUS_IDENTITY_SOLO_BLACK_1.5in_R_no_padding.svg"
+                    alt="United States Census Bureau" title="U.S. Census Bureau"></a></div>
+    </nav>
+</header>
+<hr class="blue-line">
+<a class="sr-only" tabindex="-1" id="cb-after-header-anchor">end of header</a>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="356ea2592df5e9d75330dc62-|49" defer></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7e4353b0de94489d8c328f144e852cc3","spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/geo/maps/DC2020/SLD_RefMap/SLD2022/lower/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="Catalog_SLDL_Maps_st49.pdf">Catalog_SLDL_Maps_st49.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49001.pdf">SLD22L_49001.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">4.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49002.pdf">SLD22L_49002.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">655K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49003.pdf">SLD22L_49003.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49004.pdf">SLD22L_49004.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">7.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49005.pdf">SLD22L_49005.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">1.6M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49006.pdf">SLD22L_49006.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">775K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49007.pdf">SLD22L_49007.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">306K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49008.pdf">SLD22L_49008.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">1.6M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49009.pdf">SLD22L_49009.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">462K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49010.pdf">SLD22L_49010.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">455K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49011.pdf">SLD22L_49011.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">490K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49012.pdf">SLD22L_49012.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">584K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49013.pdf">SLD22L_49013.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">267K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49014.pdf">SLD22L_49014.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">300K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49015.pdf">SLD22L_49015.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">690K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49016.pdf">SLD22L_49016.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">440K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49017.pdf">SLD22L_49017.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">420K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49018.pdf">SLD22L_49018.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">495K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49019.pdf">SLD22L_49019.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">472K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49020.pdf">SLD22L_49020.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">363K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49021.pdf">SLD22L_49021.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">635K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49022.pdf">SLD22L_49022.pdf</a></td><td align="right">2022-10-24 14:20  </td><td align="right">519K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49023.pdf">SLD22L_49023.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">487K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49024.pdf">SLD22L_49024.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">184K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49025.pdf">SLD22L_49025.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">321K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49026.pdf">SLD22L_49026.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">299K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49027.pdf">SLD22L_49027.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">945K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49028.pdf">SLD22L_49028.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">638K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49029.pdf">SLD22L_49029.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right"> 11M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49030.pdf">SLD22L_49030.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">251K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49031.pdf">SLD22L_49031.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">317K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49032.pdf">SLD22L_49032.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">316K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49033.pdf">SLD22L_49033.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">598K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49034.pdf">SLD22L_49034.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">368K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49035.pdf">SLD22L_49035.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">363K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49036.pdf">SLD22L_49036.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">308K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49037.pdf">SLD22L_49037.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">192K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49038.pdf">SLD22L_49038.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">275K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49039.pdf">SLD22L_49039.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">368K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49040.pdf">SLD22L_49040.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">342K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49041.pdf">SLD22L_49041.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">892K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49042.pdf">SLD22L_49042.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">428K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49043.pdf">SLD22L_49043.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">459K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49044.pdf">SLD22L_49044.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">377K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49045.pdf">SLD22L_49045.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">542K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49046.pdf">SLD22L_49046.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">778K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49047.pdf">SLD22L_49047.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">399K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49048.pdf">SLD22L_49048.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">352K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49049.pdf">SLD22L_49049.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">529K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49050.pdf">SLD22L_49050.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">2.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49051.pdf">SLD22L_49051.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">618K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49052.pdf">SLD22L_49052.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">405K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49053.pdf">SLD22L_49053.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">420K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49054.pdf">SLD22L_49054.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49055.pdf">SLD22L_49055.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">347K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49056.pdf">SLD22L_49056.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">289K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49057.pdf">SLD22L_49057.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">298K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49058.pdf">SLD22L_49058.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">605K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49059.pdf">SLD22L_49059.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">3.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49060.pdf">SLD22L_49060.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">270K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49061.pdf">SLD22L_49061.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">607K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49062.pdf">SLD22L_49062.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">268K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49063.pdf">SLD22L_49063.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49064.pdf">SLD22L_49064.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">589K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49065.pdf">SLD22L_49065.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">614K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49066.pdf">SLD22L_49066.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">4.5M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49067.pdf">SLD22L_49067.pdf</a></td><td align="right">2022-10-24 14:21  </td><td align="right">4.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49068.pdf">SLD22L_49068.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">5.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49069.pdf">SLD22L_49069.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right"> 26M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49070.pdf">SLD22L_49070.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">8.8M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49071.pdf">SLD22L_49071.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">2.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49072.pdf">SLD22L_49072.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49073.pdf">SLD22L_49073.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">928K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49074.pdf">SLD22L_49074.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">725K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="SLD22L_49075.pdf">SLD22L_49075.pdf</a></td><td align="right">2022-10-24 14:22  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<!-- START CB Footer - Last Revised: 10/04/2022 -->
+<!-- Responsive Version -->
+<!DOCTYPE html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<!--  <link rel="stylesheet" type="text/css" href="/main/css/bootstrap-4.3.1.min.css">-->
+<link rel="stylesheet" type="text/css" href="/main/css/new_footer.css">
+<link rel="stylesheet" href="/main/css/font-awesome-6.5.1/css/all.min.css">
+<script src="/main/css/font-awesome-6.5.1/js/all.min.js" type="356ea2592df5e9d75330dc62-text/javascript"></script>
+
+
+<!-- <script src="/main/javascript/jquery-3.0.0/jquery.min.js"></script>
+<script src="/main/javascript/bootstrap-4.3.1/bootstrap.min.js"></script>-->
+
+<style>
+
+@media only screen and (max-width: 700px) {
+    .val {
+    width: 100%;
+    margin: auto 0;
+    
+}
+
+a{
+font-size: small;
+}
+
+.foot_bottom_links{
+width: 100%;
+
+text-align:left;
+}
+
+}
+
+hr.foot-line {
+margin-bottom: 10px;
+}
+
+
+
+</style>
+
+</head>
+        
+        <footer class="footer container-fluid">
+   <div class="row">
+  
+    <div class="grid_footer_links cf">
+   
+
+        <div class="foot_bottom">
+            <div class="foot_bottom_links">
+            
+                <div class="footerbottom">
+                
+                 
+                <div class="val">
+					<a class="foot_bottom_socialLinks" href="https://www.census.gov/about/contact-us/social_media.html">CONNECT WITH US</a>
+                    <a class="social-icon" href="https://www.facebook.com/uscensusbureau"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="social-icon" href="https://twitter.com/uscensusbureau"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/company/us-census-bureau"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://www.youtube.com/user/uscensusbureau"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="social-icon" href="https://www.instagram.com/uscensusbureau/"><i class="fa-brands fa-instagram"></i></a>
+                    <!-- <i class="foot_bottom_socialLinks" href="https://public.govdelivery.com/accounts/USCENSUS/subscriber/new" target="_blank"><img src="//www.census.gov/main/img/Mail_White.svg" alt="Email Updates logo" title="Email Updates"/></i> -->
+</div>
+
+<div class="val">
+                    <ul class="legal-menu">
+                    <li><a href="https://www.census.gov/quality/">Information Quality</a></li>
+                    <li><a href="https://www.census.gov/datalinkage/">Data Linkage Infrastructure</a></li>
+                    <li><a href="https://www.census.gov/privacy/">Data Protection and Privacy Policy</a></li>
+                    <li><a href="https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility">Accessibility</a></li>      
+                    <li><a href="https://www.census.gov/foia/">FOIA</a></li>
+                    <li><a href="https://www.oig.doc.gov/Pages/default.aspx">Inspector General</a></li>
+                    <li><a href="https://www.commerce.gov/cr/reports-and-resources/no-fear-act">No FEAR Act</a></li>
+                    <li><a href="https://www.commerce.gov/">U.S. Department of Commerce</a></li>
+                    <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                        
+                    </ul>
+                   
+                   </div>
+                   <hr class="foot-line">
+                   <p class="foot_bottom_tagline">Measuring America's People and Economy</p>
+                   </div> 
+                </div> <!-- end class=footerbotom -->
+            </div> <!-- end class=foot_bottom_links -->
+        </div> <!-- end class=grid_footer_links -->
+    </div>
+</footer> <!-- end class=footer -->
+
+
+</html>
+</body></html>

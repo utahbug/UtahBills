@@ -1,8 +1,8 @@
 # UtahBills development roadmap
 
-Status: **Implemented** = available in the sample prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
+Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
-## Implemented — prototype, Batch 1 and Batch 2A
+## Implemented — through Batch 2B
 
 - Four real 2026 bills, saved official records and provenance checks.
 - Search/filters, bill details, stages, aggregate votes, version comparisons and transparency timeline.
@@ -13,23 +13,26 @@ Status: **Implemented** = available in the sample prototype; **Planned** = appro
 - **Batch 2A:** official combined month-and-agenda calendar, category filters, Mountain times, rooms, agendas, explicit numbered-bill links and participation links; preserved sources and guarded daily Main refresh (October 2026–May 2027).
 - **Batch 2A:** whole-row bill links, hover/focus feedback, 25-result pages, cached search text, restored filters/sort/page/scroll and logo return to top.
 
-## Stage 1 — Legislative data and transparency · Planned
+## Stage 1 — Legislative data and transparency · Partly implemented
 
-- Complete historical 2026 coverage and ongoing 2027 data, with completeness/freshness indicators.
-- Distinguish bill requests from introduced bills.
+- **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
+- **Next bounded batch:** controlled 2027 introduced-measure refresh and officially established session roster; reconcile requests to introduced measures and retain 2026 history. Broader full-text analysis remains planned.
+- **Implemented:** 253 public 2027 requests separately labeled; zero introduced 2027 measures in the retrieved index.
 - Substitutes, late changes and boxcar-bill histories using verifiable version/publication evidence.
 - Complete recorded voting histories and individual votes, distinguishing procedural and final-passage questions.
 - Historical statutory comparisons and related legislation; independently verify baseline and effective dates.
 
-## Stage 2 — Legislator directory · Planned
+## Stage 2 — Legislator directory · Partly implemented
 
-- Browsable/searchable list; names link to official profiles/contact information.
-- District numbers link to appropriate official maps.
-- Bill counts and linked bill lists, separating chief, floor and cosponsor roles.
+- **Implemented:** 104-member 2026 year roster, chamber/name filters and suggested spelling matches, profiles and separately dated current contact records. Four former members have no matched current contact record.
+- **Implemented:** district-specific official Census maps for 2022 state legislative boundaries.
+- **Implemented:** linked bill counts/listings by stable ID; chief, floor and version-specific cosponsor roles stay separate.
+- **Planned:** establish 2027 membership from official session records; historical contact snapshots when verified.
 - **Deferred:** public financial disclosures, after source and interpretation review.
 
 ## Stage 3 — Calendar and activity · Partly implemented
 
+- **Batch 2B implemented:** compact two-row controls, Legend left / All Month right, duplicate month heading removed.
 - **Implemented:** combined month grid and chronological agenda of official meetings, times, rooms and available agendas.
 - **Implemented:** 2027 session milestones/deadlines. Floor, special-session and caucus entries appear only when supplied by official records.
 - **Planned:** extend coverage after May 2027, richer agenda/draft/PDF extraction, per-bill next actions, and cross-check other official special-session/caucus notices.

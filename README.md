@@ -1,10 +1,10 @@
 # UtahBug — UtahBills
 
-Independent, nonpartisan legislative-information prototype. Application: **UtahBug**. Repository: **UtahBills**. Intended permanent URL: **https://utahbug.github.io/UtahBills/**. Initial live-session target: **2027 General Session**. Current prototype: four real 2026 bills, nine published text versions, saved official records; not live.
+Independent, nonpartisan legislative-information prototype. Application: **UtahBug**. Repository: **UtahBills**. Intended permanent URL: **https://utahbug.github.io/UtahBills/**. Initial live-session target: **2027 General Session**. Current prototype: 1,016 indexed 2026 measures, 253 public 2027 requests, a 104-entry 2026 legislator directory, and an official calendar. Four analyzed examples retain nine text versions and comparisons. Saved official records; not live.
 
 ## Run
 
-Node 22 or later:
+Node 22 or later and Python 3:
 
 ```sh
 npm ci
@@ -34,7 +34,7 @@ Tests expect the local server running. Windows uses installed Microsoft Edge. CI
 
 The official download tool at https://le.utah.gov/data/scripts/BillList_download.html uses `data/{year}GS/filelist.json` for requests, `billlist.json` for bills, and `{billNumber}.json` for individual records. These paths were observed in its source; they are not a guaranteed, versioned API contract. Its page warns that updates are irregular.
 
-Individual records were verified for HB0011, HB0154, HB0155, and SB0069 in 2026GS. Fields include sponsor names, action histories, vote totals and identifiers, committee meetings, affected sections, document versions, source dates, and links to XML, comparisons, fiscal notes, and committee reports. Some supporting documents are hosted at `pf.utleg.gov`; no SharePoint dependency was found in this acquisition path. Request and full-session feed ingestion remain unimplemented.
+Individual records were verified for HB0011, HB0154, HB0155, and SB0069 in 2026GS. Fields include sponsor names, action histories, vote totals and identifiers, committee meetings, affected sections, document versions, source dates, and links to XML, comparisons, fiscal notes, and committee reports. Some supporting documents are hosted at `pf.utleg.gov`; no SharePoint dependency was found in this acquisition path. Batch 2B now imports the full 2026 index and public 2027 requests; detailed XML analysis remains limited to those four examples.
 
 The official “Bill Data” information page currently points to a Power BI statistics report; it should not be confused with the download tool's JSON source. Official bill HTML pages populate details dynamically, so fetching their HTML alone is insufficient. Some web fetches were rejected or timed out. Acquisition must fail rather than invent missing content.
 
@@ -169,3 +169,53 @@ month. An empty remainder or empty month has an explicit message. All Month rest
 the complete filtered month. The category legend is a native keyboard-accessible
 collapsed disclosure; month and type selectors share a compact responsive row.
 Official acquisition, scheduled refresh and source data are unchanged.
+
+
+## Batch 2B — expanded discovery
+
+The official 2026 General Session index supplies 1,016 unique base measures: 931
+bills and 85 resolutions (48 joint, 25 concurrent, 12 single-chamber). All were
+retrieved successfully. Coverage means complete against that retrieved index,
+not a claim about unpublished drafting work. Substitute versions are not separate
+measures. The four analyzed examples retain their readers and comparisons; other
+pages show official general descriptions, actions, sponsorship, committees and
+version/document links without unreviewed plain-English explanations.
+
+Sources: https://le.utah.gov/data/2026GS/billlist.json and individual measure JSON,
+https://le.utah.gov/data/2027GS/billlist.json (currently empty), and
+https://le.utah.gov/data/2027GS/filelist.json (253 public drafting requests).
+Requests are separate from introduced measures and may exclude confidential work.
+The 2027 roster is deliberately unavailable until established from official records.
+
+`python scripts/refresh_catalog.py` is a **manual**, incremental refresh. It fetches
+seven index/roster/contact/map-index sources, then only measures whose official
+update marker changed; requests are paced by 150 ms. Content-addressed original
+bytes, SHA-256 hashes, URLs and retrieval timestamps are preserved in
+`data/catalog-raw/` and `data/catalog.json`. A failed retrieval, lost measure ID,
+or unexplained disappearing request stops publication of the candidate manifest.
+A disappeared request must have a corresponding introduced tracking ID. Investigate
+source changes before accepting removals. The final manifest is replaced atomically.
+The ignored resume cache is only a download optimization; all selected source hashes
+are verified again. Retrieval dates are not official publication dates.
+
+Run `python tests/catalog_data.py`, build, and the full browser suite before publishing
+an updated snapshot. CI performs provenance and association checks. Catalog refresh
+is not scheduled; the existing daily calendar refresh remains independent and unchanged.
+Build requires Python 3 (`PYTHON` can specify its executable on Windows).
+The browser fetches a roughly 1 MB listing projection and lazy-loads detailed records;
+it does not load the raw evidence archive. Listings render at most 25 results per page.
+
+Legislators uses https://le.utah.gov/asp/roster/roster.asp?year=2026 (104 entries),
+joined by official stable identifiers. Former entries lacking an ID link are resolved
+only by an unambiguous complete official name. Current contacts from
+https://le.utah.gov/data/legislators.json require matching ID and complete name;
+four former members have no matching current contact, and successor information is
+never substituted. The roster supplies historical districts. District links use the
+official Census 2022 legislative district map indexes for Utah, consistent with the
+2022–2032 state legislative boundaries documented by Utah SGID. These are district
+maps, not live voter-address lookup. Counts include HB/SB chief-sponsored base bills;
+floor sponsorship and verified version cosponsorship have separate linked lists.
+
+Primary navigation is Bills, Calendar, Legislators. Calendar controls now place month
+left/type right, Legend left/All Month right, and omit the duplicate month heading.
+Acquisition and scheduled calendar refresh were not changed.

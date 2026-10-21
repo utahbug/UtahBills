@@ -77,7 +77,7 @@ try{
   await page.evaluate(()=>{const sizes=[...document.querySelectorAll('body,body *')].map(e=>[e,parseFloat(getComputedStyle(e).fontSize)]);for(const [e,n]of sizes)e.style.fontSize=n*2+'px'});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`Expanded reader doubled-text overflow at ${width}`);
  }
- await visit('bills');assert.equal(await page.locator('header nav a').count(),2);await page.locator('footer a[href="#guide"]').click();await page.getByRole('heading',{name:'How Utah legislation works'}).waitFor();assert.match(await page.locator('main').innerText(),/may vote to advance a bill and later vote against final passage/);await page.locator('footer a[href="#sources"]').click();await page.getByRole('heading',{name:'Built on the official record'}).waitFor();
+ await visit('bills');assert.equal(await page.locator('header nav a').count(),3);await page.locator('footer a[href="#guide"]').click();await page.getByRole('heading',{name:'How Utah legislation works'}).waitFor();assert.match(await page.locator('main').innerText(),/may vote to advance a bill and later vote against final passage/);await page.locator('footer a[href="#sources"]').click();await page.getByRole('heading',{name:'Built on the official record'}).waitFor();
  assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'),'noindex, nofollow');assert.match(await page.locator('.notice').innerText(),/Research prototype/);
  await visit('bills',390);await page.screenshot({path:'test-results/batch1-mobile-bills.png',fullPage:true});
  await mkdir('test-results',{recursive:true});await writeFile('test-results/batch1.json',JSON.stringify({testedAt:new Date().toISOString(),base,notes},null,2));console.log(notes.join('\n'));

@@ -61,3 +61,34 @@ normal/doubled-text/200%-zoom checks include the expanded legend. WebKit touch s
 covers selection, All Month, Legend and an empty month. Mobile/desktop screenshots
 reviewed. Physical iPhone and manual screen-reader testing remain user review tasks.
 Calendar source data, acquisition and scheduled refresh are unchanged.
+
+
+### Batch 2B verification
+
+- Verified all 1,016 official 2026 indexed base measures (931 bills, 85 resolutions),
+  unique IDs, original byte hashes, exact sponsor associations and independent raw-record
+  chief-sponsored counts. The 2027 index is empty; 253 public requests are separate.
+- Eight catalog data tests cover complete/partial coverage, source date conversion,
+  historical roster/current-contact separation, district-specific maps, cosponsorship,
+  request/introduced distinction, network failure, disappearing requests and incremental reuse.
+- Existing complete browser suite retained: search/filter/page/scroll restoration,
+  actual bill text-rectangle overlap, nine-version exact legislative wording/change markup,
+  calendar dates/filters/selection, 1,200 generated test bills and automated WCAG checks.
+- New browser regressions cover real expanded coverage, exact bill-number search,
+  directory chamber/partial-name/spelling search, keyboard profile navigation, stable-ID
+  role counts/list links, former-member contact unavailability, 2027 unavailable roster,
+  request details, partial coverage and failed detail fetches.
+- New routes checked at 320, 375, 390, 430 and 1280 CSS pixels, doubled text and 200%
+  CSS zoom; automated WCAG A/AA checks found no violations. Visual review caught and
+  corrected an official-source date-format mismatch and a narrow search-field overflow.
+- WebKit mobile touch checks: directory/profile/sponsored bills, return navigation,
+  calendar selection and All Month. Desktop/mobile screenshots reviewed. Representative
+  official district PDFs, House/Senate biographies and measure links returned HTTP 200.
+- Calendar acquisition/refresh, original analysis source snapshots, icons, static noindex
+  and Research Prototype designation preserved. No fictional records published.
+
+Limits: no physical iPhone or manual VoiceOver certification; independent factual review
+remains necessary. The 104-entry year roster is not a claim about current membership.
+Four former members lack matching current contact data. New measures have basic official
+records, not full XML analysis or reviewed explanations. Bill/request refresh is manual;
+calendar remains independently scheduled daily. No finalized 2027 roster is asserted.

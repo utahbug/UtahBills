@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link type='text/css' rel='stylesheet' href="/css/styles.css?r=13" />
+
+	<link rel='apple-touch-icon' href="/images/apple-touch-icon.png" sizes="114x114" />
+	<link rel="icon" type="image/png" href="/images/favicon.ico" sizes="32x32">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="/js/libs/jquery.cookie.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="/js/navigation.js?r=9"></script>
+<SCRIPT>
+<!-- Hide script from old browsers
+	
+	function jumpPage(year)
+	{
+		window.location.href = "roster.asp?year=" + year;
+	}
+	
+// End hiding script-->
+</SCRIPT>
+ <title>Utah Legislators by Year</title>
+</head>
+
+<body>
+	<header>
+		<div class="overlay"></div>
+		<nav>
+			<!-- settings.shtml -->
+            <div class="skip-links" tabindex="0">
+                <ul>
+                    <li>Accessibility</li>
+                    <li>Use the Settings Button to view other accessibility Settings</li>
+                    <li><a href="#main-content" tabindex="0" id="skip-btn">Skip to Content</a></li>
+                </ul>
+            </div>
+			<div id="settingsNav">
+                <div id="dateline">
+                    <div id="button-nav">
+                        <div id="settings-section">
+                            <button aria-controls="search-div" id="toggle-search">
+                                Search <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="15 15 20 20"><path fill="#DBDBDB" d="M33.9 34.9c-.3 0-.5-.1-.8-.3l-6.2-6-.6.3c-1.2.7-2.5 1.1-3.8 1.1-2 0-3.9-.8-5.3-2.2-2.9-2.9-2.9-7.6 0-10.5 1.4-1.4 3.3-2.2 5.3-2.2s3.9.8 5.3 2.2c2.4 2.4 2.9 6.3 1.1 9.2l-.4.5 6.1 5.9c.4.4.5 1.1 0 1.6-.2.2-.4.4-.7.4zM22.5 16.6c-1.6 0-3 .6-4.1 1.7-2.3 2.3-2.3 6 0 8.2 1.1 1.1 2.6 1.7 4.1 1.7 1.6 0 3-.6 4.1-1.7 2.3-2.3 2.3-6 0-8.2-1.1-1.1-2.5-1.7-4.1-1.7z"/></svg>
+                            </button>
+                            <button aria-controls="settings" aria-label="view accessibility settings" id="toggleSettings" tabindex="0">
+                                <span>Settings</span>
+                                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><style>.st0{fill:#dbdbdb}</style><path class="st0" d="M96.8 40.1h-7.9c-1.1-3.6-2.5-7.2-4.3-10.5l5.8-5.8c1.4-1.4 1.4-3.2 0-4.7L81 9.7c-1.4-1.4-3.2-1.4-4.7 0l-5.8 5.8c-3.2-2.2-6.8-3.2-10.4-4.3v-8c0-1.8-1.8-3.2-3.2-3.2H43.5c-1.8 0-3.2 1.8-3.2 3.2v7.9c-3.6 1.1-7.2 2.5-10.4 4.3l-5.8-6.1c-1.4-1.4-3.2-1.4-4.7 0L10 19c-1.4 1.4-1.4 3.2 0 4.7l5.8 5.8c-2.2 3.2-3.2 6.9-4.3 10.5H3.2C1.4 40 0 41.8 0 43.2v13.4c0 1.8 1.8 3.2 3.2 3.2h7.9c1.1 3.6 2.5 7.2 4.3 10.5l-5.8 5.8c-1.4 1.4-1.4 3.2 0 4.7l9.4 9.4c1.4 1.4 3.2 1.4 4.7 0l5.8-5.8c3.2 2.2 6.8 3.2 10.4 4.3v7.9c0 1.8 1.8 3.2 3.2 3.2h13.3c1.8 0 3.2-1.8 3.2-3.2v-7.9c3.6-1.1 7.2-2.5 10.4-4.3l5.8 5.8c1.4 1.4 3.2 1.4 4.7 0l9.4-9.4c1.4-1.4 1.4-3.2 0-4.7l-5.8-5.8c2.2-3.2 3.2-6.9 4.3-10.5h8.3c1.8 0 3.2-1.8 3.2-3.2V43.3c.1-1.1-1.7-3.2-3.1-3.2zM49.6 69c-10.1 0-18.3-8.3-18.3-18.4s7.9-18.8 18.3-18.8S68 40.1 68 50.2 59.4 69 49.6 69z"/></svg>
+                            </button>
+                            <div id="login-div">
+                                <a href="/tracking/tracking.jsp" id="toploginbutton" title="Login">
+                                    <span id="loginspan">Login</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="#FFF" d="M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm-8.4 54c0-.1 0-.1 0 0zm41.7 23c.1-.5.1-1 .2-1.5v-.4c0-1.6.1-3.2-.4-4.7-.2-.9-.6-1.8-1.2-2.6v-.1c-.4-.5-.9-1-1.3-1.6-.6-.5-1.1-.9-1.7-1.4-1.1-.6-2.3-1.3-3.4-1.9l-.6-.3c-1.4-.5-2.8-.9-4.2-1.4-1-.3-2-.5-3-.8-.9-.2-1.9-.5-2.8-.7-.8-.2-1.7-.5-2.5-.7-.4-.2-.9-.3-1.3-.5-1-.4-2-.9-2.5-2 0-1.1-.1-2.1-.1-3.2.3-.4.5-.8.8-1.2 1.7-2.6 2.7-5.4 3.4-8.4.1-.5.3-.8.7-1.1.9-.6 1.8-1.3 2-2.4.4-1.4.6-2.8.7-4.2.1-.9-.3-1.2-1.2-.9 0-.1 0-.3.1-.4.4-1.9.5-3.8.2-5.7-.7-4.3-3-7.6-6.8-9.8-4.2-2.4-8.6-2.8-13.3-1.8-4.3 1-7.4 3.5-9.5 7.4-1.7 3.3-1.7 6.7-1.1 10.2H34c-.5 0-.8.3-.9.7 0 .3-.1.6 0 .8.2.8.4 1.7.5 2.5.2.9.6 1.6 1.2 2.3.3.3.6.6.8.9l.3.3.6.6c.2.7.3 1.3.5 2 .4 1.1.7 2.2 1.1 3.2.4.9.9 1.8 1.3 2.7.5.8 1.1 1.6 1.6 2.4.1.2.2.4.2.6v1.4c.1 1.2-.6 2.1-1.6 2.6-1.2.5-2.4 1-3.7 1.4-2.9.8-5.8 1.5-8.7 2.4-2.6.8-5.1 1.9-7.2 3.6-2.2 1.8-3.6 4-3.7 6.9-.1 1.5 0 3.1.1 4.6-6.2-7.6-9.5-17-9.5-26.9 0-11.5 4.5-22.2 12.6-30.3 8.3-8 19-12.5 30.5-12.5s22.2 4.5 30.3 12.6c8.1 8.1 12.6 18.9 12.6 30.3 0 10-3.4 19.4-9.6 27z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="stream-meeting"></div>
+                    </div>
+                </div>
+                <div id="search-div">
+                    <div>
+                        <form id="navSearch" action="/solrsearch.jsp" onsubmit="return doNavSearch(this)" method="get">
+                            <input tabindex="-1" type="text" name="request" aria-label="Search le.utah.gov" placeholder="Search le.utah.gov">
+							<input type="hidden" name="stype" class="hiddenStype" value="">
+                            <button tabindex="-1"  type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+			</div>
+
+			<!-- END settings.shtml -->
+        <div id="fullNavContainer">
+            <div id="fullNav">
+                <a id="logo" href="https://le.utah.gov/" title="Home">
+                    <div>
+                        <img src="/images/logos/web-logo-horizontal.png" alt="Utah State Legislature Home">
+                    </div>
+                </a>
+                <button id="menuOpen" aria-controls="mainNav" aria-label="Open Menu" tabindex="0"><svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.2 40.2"><path d="M0 16.6h58.2v7H0zM0 0h58.2v7H0zm0 33.2h58.2v7H0z" fill="#FFF"/></svg></button>
+                <ul class="mainNav" id="mainNav">
+                    <li>
+                        <button id="menuClose" aria-controls="mainNav" aria-label="Close Menu"><svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="#fff" d="M100 10.1L89.9 0 50 39.9 10.1 0 0 10.1 39.9 50 0 89.9 10.1 100 50 60.1 89.9 100 100 89.9 60.1 50 100 10.1z"></path></svg></button>
+                    </li>
+                    <li class="menu-item" id="leg-menu-item">
+                        <a href="/Documents/find.htm" class="has-drop">Legislators</a>
+                        <div id="legislator-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                    <button class="nav-header" aria-controls="all-list" aria-haspopup="true" tabindex="0">All Legislators</button>
+                                    <a href="/Documents/find.htm" class="sub-header">All Legislators</a>
+                                    <ul id="all-list">
+                                        <li class="hide-large"><a  href="/Documents/find.htm">Find Legislators</a></li>
+                                        <li><a href="/asp/roster/roster.asp">By Session (1896-Current)</a></li>
+                                        <li><a href="/asp/roster/complist.asp">Alphabetical (Historical)</a></li>
+                                        <li><a href="/GIS/findDistrict.jsp">Find by Address/Map</a></li>
+                                        <li><a href="/sessions/sessions.jsp">Sessions</a></li>
+                                        <li><a href="https://readingcalendar.le.utah.gov/">Reading Calendars</a></li>
+                                        <li><a href="/asp/schedule/journal.asp">Journals</a></li>
+                                        <li><a href="/sessionSchedule/sessdates.jsp">Session Dates</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="https://house.utleg.gov/" class="sub-header">House</a>
+                                    <button class="nav-header" aria-controls="house-list" aria-haspopup="true" tabindex="0">House</button>
+                                    <ul id="house-list">
+                                        <li class="hide-large"><a href="https://house.utleg.gov/">House Home</a></li>
+                                        <li><a href="https://house.utleg.gov/about/">About the House</a></li>
+                                        <li><a href="https://house.utleg.gov/house-leadership/">Leadership</a></li>
+                                        <li><a href="https://house.utleg.gov/house-members/">Roster</a></li>
+                                        <li><a href="/asp/seating/hseat.asp">Seating Chart</a></li>
+                                        <li><a href="https://house.utleg.gov/conflict-disclosures/">Conflict of Interest Forms</a></li>
+                                        <li><a href="/asp/audio/index.asp?House=H">Past Floor Debates</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="https://senate.utah.gov/" class="sub-header" >Senate</a>
+                                    <button class="nav-header" aria-haspopup="true" aria-controls="senate-list" tabindex="0">Senate</button>
+                                    <ul id="senate-list">
+                                        <li class="hide-large"><a href="https://senate.utah.gov/">Senate Home</a></li>
+                                        <li><a href="https://senate.utah.gov/about-the-senate/">About the Senate</a></li>
+                                        <li><a href="https://senate.utah.gov/leadership/">Leadership</a></li>
+                                        <li><a href="https://senate.utah.gov/senate-roster/">Roster</a></li>
+                                        <li><a href="/asp/seating/sseat.asp">Seating Chart</a></li>
+                                        <li><a href="/sessions/es.jsp">Extraordinary Sessions</a></li>
+                                        <li><a href="/asp/audio/index.asp?House=S">Past Floor Debates</a></li>
+                                        <li><a href="https://disclosures.utah.gov/Search/PublicSearch?type=PCC">Disclosure Forms</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/bills/bills_By_Session.jsp" class="has-drop">Bills</a>
+                        <div id="bills-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                    <a href="/bills/bills_By_Session.jsp" class="big-header">View Bills</a>
+                                    <ul>
+                                        <li><a href="/billlist.jsp?session=2026GS">2026 Bills</a></li>
+                                        <li><a href="https://le.utah.gov/bills/billSearch.jsp">Browse by Session</a></li>
+                                        <li><a href="/asp/passedbills/passedbills.asp">Passed Bills</a></li>
+
+                                        <li><a href="/solrsearch.jsp?ktype=Bill">Keyword Search</a></li>
+                                        <li><a href="/tracking/tracking.jsp">Tracking Service</a></li>
+                                        <li><a href="http://images.archives.utah.gov/cdm/search/collection/432n!428/searchterm/working%20bills/field/all/mode/all/conn/and/order/identi/ad/asc">Working Bills (1896-1989)</a></li>
+                                        <li><a href="/lrgc/bill-data.html">Bill Data</a></li>
+                                        <!-- <li><a href="https://image.le.utah.gov/imaging/bill.asp">Bill Drafting/Research Files (1990-Ongoing)</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/xcode/code.html" class="has-drop">Code</a>
+                        <div id="code-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                    <a href="/xcode/code.html" class="big-header">Utah Code </a>
+                                    <ul>
+                                        <li><a href="/Documents/code_const.htm">Code and Constitution</a></li>
+                                        <li><a href="/solrsearch.jsp?ktype=Code">Keyword Search</a></li>
+                                        <li><a href="/xcode/constitution.html">Utah Constitution</a></li>
+                                        <li><a href="/documents/conconv/utconstconv.htm">Constitutional Convention</a></li>
+										<li><a href="/documents/laws-recent.htm">Laws of Utah 2014-ongoing</a></li>
+										<li><a href="https://onlinelibrary.utah.gov/library-resource/uspl/?topic=law-legal">Historical Laws of Utah</a></li>
+                                        <li><a href="/xcode/R.html">Legislative Rules</a></li>
+                                        <li><a href="https://adminrules.utah.gov/">Utah Administrative Rules</a></li>
+                                        <li><a href="https://le.utah.gov/lawSearch.jsp">Advanced Law Search</a></li>
+                                        <li><a href="https://le.utah.gov/UtahCode/historical.jsp">Historical Code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/asp/interim/Main.asp?ComType=All&List=2" class="has-drop">Committees</a>
+                        <div id="committees-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                    <a href="/asp/interim/Main.asp?ComType=All&List=2" class="big-header">All Committees</a>
+                                    <ul>
+                                        <li><a href="/asp/interim/Main.asp?ComType=App&List=2">Appropriations</a></li>
+                                        <li><a href="/asp/interim/Main.asp?ComType=Com&List=2">Commissions</a></li>
+                                        <li><a href="/asp/interim/Main.asp?ComType=Cnf&List=2">Confirmation</a></li>
+                                        <li><a href="/asp/interim/Main.asp?ComType=Int&List=2">Interim</a></li>
+                                        <li><a href="/asp/interim/Main.asp?ComType=Std&List=2">Standing</a></li>
+                                        <li><a href="/asp/interim/Main.asp?ComType=Sub&List=2">Subcommittees</a></li>
+                                        <li><a href="/asp/interim/Main.asp?ComType=Tsk&List=2">Task Forces</a></li>
+                                        <li><a href="/asp/billsintro/committeebills.asp">Bills in Committees</a></li>
+                                        <!-- <li><a href="https://image.le.utah.gov/imaging/History.asp">Interim Committee Histories (1990-Ongoing)</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="menu-item">
+                        <a href="https://lag.utleg.gov/" class="has-drop">Audits</a>
+                        <div id="audits-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                        <ul>
+                                            <li><a href="https://lag.utleg.gov/audits_current.jsp">New Audits</a></li>
+                                            <li><a href="https://le.utah.gov/committee/committee.jsp?com=SPEAUD">Audit Subcommittee</a></li>
+                                            <li><a href="https://lag.utleg.gov/best_practices.jsp">Government Excellence</a></li>
+                                            <li><a href="https://lag.utleg.gov/annual_report.jsp">Annual Reports</a></li>
+                                            <li><a href="https://lag.utleg.gov/">Office of the Legislative Auditor General</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://budget.utah.gov/" class="has-drop">Budget</a>
+                        <div id="budget-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                    <a href="https://budget.utah.gov/" class="big-header">Budget.Utah.gov</a>
+                                    <ul>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=stateBudget">State Budget (PDF)</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=cobi">COBI</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=quickFacts">Quick Facts (PDF)</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=fiscalHealth">Fiscal Health</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=taxpayerReceipt">Taxpayer Receipt</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=budgetVisualizer">Data Visualizer</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=appsByBills">Budget Bills</a></li>
+                                        <li><a href="/CobiServlet/cobi/BudgetRD?key=appsBySubcommittees">Budget Committees</a></li>
+                                        <li><a href="/asp/lfa/lfareports.asp">Budget Publications</a></li>
+                                        <li><a href="https://budget.utah.gov/products/aboutLFA/">Office of the Legislative Fiscal Analyst</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"style="min-width: 120px;">
+                        <a href="/lrgc/home.html" class="has-drop">Research and Legal</a>
+                        <div id="research-div" class="drop-down">
+                            <div class="nav-div">
+                                <div>
+                                    <ul>
+                                        <li ><a href="/lrgc/home.html">Office of Legislative Research and General Counsel</a></li>
+                                        <li><a href="/lrgc/publications.html">Publications</a></li>
+                                        <li><a href="/lrgc/bill-data.html">Bill Data</a></li>
+                                        <li><a href="/lrgc/researchMaterials.htm">Legislative Information</a></li>
+                                        <li><a href="/AgencyRP/index.jsp">Agency Reporting</a></li>
+                                        <li><a href="/lawSearch.jsp">Advanced Law Search</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		</nav>
+        <div class="modal" id="settings">
+            <div id="settings-modal">
+                <button aria-label="close" id="close-settings" class="close">
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <path fill="#fff" d="M100 10.1L89.9 0 50 39.9 10.1 0 0 10.1 39.9 50 0 89.9 10.1 100 50 60.1 89.9 100 100 89.9 60.1 50 100 10.1z"></path>
+                    </svg>
+                </button>
+                <h2>Additional Accessibility Settings</h2>
+                <p class="settings">
+                    <button class="defaultStyles">Default Settings</button>
+                    <button class="highContrast">High Contrast</button>
+                    <button class="textOnly">Text Only</button>
+                </p>
+                <div id="fontSizer">
+                    <span>Font Size:</span>
+                    <button title="Font size smaller" aria-label="Font size smaller" class="fontsize small" data-size="smallFont">A</button>
+                    <button title="Font size default" aria-label="Font size default" class="fontsize default">A</button>
+                    <button title="Font size larger" aria-label="Font size larger" class="fontsize large" data-size="largeFont">A</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Site under maintenance notice -->
+        <!-- <div id="alert-div">
+        <div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 154.6 156.6" style="enable-background:new 0 0 154.6 156.6;" xml:space="preserve">
+            <style type="text/css">
+                .alert0{fill:none;stroke:#FFFFFF;stroke-width:11;stroke-miterlimit:10;}
+                .alert1{fill:#FFFFFF;}
+                .alert2{font-family:'MyriadPro-Regular';}
+                .alert3{font-size:133px;}
+            </style>
+            <circle class="alert0" cx="77.6" cy="77.6" r="70.5"/>
+            <g class="st1">
+                <path class="alert1" d="M69.8,117.9c0-4.8,3.3-8.2,7.8-8.2c4.8,0,7.8,3.5,7.8,8.2c0,4.7-3.1,8.2-7.8,8.2
+                    C73,126.1,69.8,122.5,69.8,117.9z M73.1,98.8L71.3,35H84l-1.9,63.8H73.1z"/>
+            </g>
+		</svg>  
+        The Playback of past Legislative meetings will be unavailable until 12:00pm today October 20th. We apologize for any inconvenience and appreciate your understanding.
+        </div>
+    </div> -->
+    
+	</header>
+
+<div id="main-block">
+	<main id="main-content">
+<ol aria-label="Breadcrumb" id="breadcrumb">
+	<li><a href="/">Home</a></li>
+    <li><a href="/Documents/find.htm">Legislators</a></li>
+    <li><a href="#" aria-current="page">Legislators By Year (1896-current)</a></li>
+</ol>
+<h1 class="heading">Legislators By Year (1896-current)</h1>
+<FORM METHOD=post name=searchForm>
+<BR>
+
+
+ <label for="year">Year</label>&nbsp;
+<!--<select name="Listbox1" id="year" onChange="javascript:jumpPage(Listbox1.options[Listbox1.selectedIndex].value)" size="1">-->
+<select name="year" id="year" size="1">
+ 
+	<Option SELECTED value =2026 > 2026 </option>
+	 
+	<Option  value =2025 > 2025 </option>
+	 
+	<Option  value =2024 > 2024 </option>
+	 
+	<Option  value =2023 > 2023 </option>
+	 
+	<Option  value =2022 > 2022 </option>
+	 
+	<Option  value =2021 > 2021 </option>
+	 
+	<Option  value =2020 > 2020 </option>
+	 
+	<Option  value =2019 > 2019 </option>
+	 
+	<Option  value =2018 > 2018 </option>
+	 
+	<Option  value =2017 > 2017 </option>
+	 
+	<Option  value =2016 > 2016 </option>
+	 
+	<Option  value =2015 > 2015 </option>
+	 
+	<Option  value =2014 > 2014 </option>
+	 
+	<Option  value =2013 > 2013 </option>
+	 
+	<Option  value =2012 > 2012 </option>
+	 
+	<Option  value =2011 > 2011 </option>
+	 
+	<Option  value =2010 > 2010 </option>
+	 
+	<Option  value =2009 > 2009 </option>
+	 
+	<Option  value =2008 > 2008 </option>
+	 
+	<Option  value =2007 > 2007 </option>
+	 
+	<Option  value =2006 > 2006 </option>
+	 
+	<Option  value =2005 > 2005 </option>
+	 
+	<Option  value =2004 > 2004 </option>
+	 
+	<Option  value =2003 > 2003 </option>
+	 
+	<Option  value =2002 > 2002 </option>
+	 
+	<Option  value =2001 > 2001 </option>
+	 
+	<Option  value =2000 > 2000 </option>
+	 
+	<Option  value =1999 > 1999 </option>
+	 
+	<Option  value =1998 > 1998 </option>
+	 
+	<Option  value =1997 > 1997 </option>
+	 
+	<Option  value =1996 > 1996 </option>
+	 
+	<Option  value =1995 > 1995 </option>
+	 
+	<Option  value =1994 > 1994 </option>
+	 
+	<Option  value =1993 > 1993 </option>
+	 
+	<Option  value =1992 > 1992 </option>
+	 
+	<Option  value =1991 > 1991 </option>
+	 
+	<Option  value =1990 > 1990 </option>
+	 
+	<Option  value =1989 > 1989 </option>
+	 
+	<Option  value =1988 > 1988 </option>
+	 
+	<Option  value =1987 > 1987 </option>
+	 
+	<Option  value =1986 > 1986 </option>
+	 
+	<Option  value =1985 > 1985 </option>
+	 
+	<Option  value =1984 > 1984 </option>
+	 
+	<Option  value =1983 > 1983 </option>
+	 
+	<Option  value =1982 > 1982 </option>
+	 
+	<Option  value =1981 > 1981 </option>
+	 
+	<Option  value =1980 > 1980 </option>
+	 
+	<Option  value =1979 > 1979 </option>
+	 
+	<Option  value =1978 > 1978 </option>
+	 
+	<Option  value =1977 > 1977 </option>
+	 
+	<Option  value =1976 > 1976 </option>
+	 
+	<Option  value =1975 > 1975 </option>
+	 
+	<Option  value =1974 > 1974 </option>
+	 
+	<Option  value =1973 > 1973 </option>
+	 
+	<Option  value =1972 > 1972 </option>
+	 
+	<Option  value =1971 > 1971 </option>
+	 
+	<Option  value =1970 > 1970 </option>
+	 
+	<Option  value =1969 > 1969 </option>
+	 
+	<Option  value =1967 > 1967 </option>
+	 
+	<Option  value =1965 > 1965 </option>
+	 
+	<Option  value =1963 > 1963 </option>
+	 
+	<Option  value =1961 > 1961 </option>
+	 
+	<Option  value =1959 > 1959 </option>
+	 
+	<Option  value =1957 > 1957 </option>
+	 
+	<Option  value =1955 > 1955 </option>
+	 
+	<Option  value =1953 > 1953 </option>
+	 
+	<Option  value =1951 > 1951 </option>
+	 
+	<Option  value =1949 > 1949 </option>
+	 
+	<Option  value =1947 > 1947 </option>
+	 
+	<Option  value =1945 > 1945 </option>
+	 
+	<Option  value =1943 > 1943 </option>
+	 
+	<Option  value =1941 > 1941 </option>
+	 
+	<Option  value =1939 > 1939 </option>
+	 
+	<Option  value =1937 > 1937 </option>
+	 
+	<Option  value =1935 > 1935 </option>
+	 
+	<Option  value =1933 > 1933 </option>
+	 
+	<Option  value =1931 > 1931 </option>
+	 
+	<Option  value =1929 > 1929 </option>
+	 
+	<Option  value =1927 > 1927 </option>
+	 
+	<Option  value =1925 > 1925 </option>
+	 
+	<Option  value =1923 > 1923 </option>
+	 
+	<Option  value =1921 > 1921 </option>
+	 
+	<Option  value =1919 > 1919 </option>
+	 
+	<Option  value =1917 > 1917 </option>
+	 
+	<Option  value =1915 > 1915 </option>
+	 
+	<Option  value =1913 > 1913 </option>
+	 
+	<Option  value =1911 > 1911 </option>
+	 
+	<Option  value =1909 > 1909 </option>
+	 
+	<Option  value =1907 > 1907 </option>
+	 
+	<Option  value =1905 > 1905 </option>
+	 
+	<Option  value =1903 > 1903 </option>
+	 
+	<Option  value =1901 > 1901 </option>
+	 
+	<Option  value =1899 > 1899 </option>
+	 
+	<Option  value =1897 > 1897 </option>
+	 
+	<Option  value =1896 > 1896 </option>
+	
+</SELECT>
+<input type="submit" class="button" onClick="javascript:jumpPage(year.options[year.selectedIndex].value)" value="Select">
+<BR>
+
+    <BR>
+
+<table class="UItable" style="width:100%;">
+<TR>
+<th scope="col">Name</th>
+<th scope="col">Senate/House</th>
+<th scope="col">Party</th>
+<th scope="col">District</th>
+<th>Legislation</th>
+</TR>
+<tr><td><a href="leglookup.asp?dist=57&house=H">Abbott, Nelson T.</a></td><td>Representative</td><td>Republican</td><td>57</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ABBOTN">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=38&house=H">Acton, Cheryl K.</a></td><td>Representative</td><td>Republican</td><td>38</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ACTONCK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=7&house=S">Adams, J. Stuart</a></td><td>Senator</td><td>Republican</td><td>7</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=ADAMSJS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=70&house=H">Albrecht, Carl R.</a></td><td>Representative</td><td>Republican</td><td>70</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ALBRECR">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=41&house=H">Arthur, John</a></td><td>Representative</td><td>Democrat</td><td>41</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ARTHUJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=4&house=H">Auxier, Tiara</a></td><td>Representative</td><td>Republican</td><td>4</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=AUXIET">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=22&house=S">Balderree, Heidi</a></td><td>Senator</td><td>Republican</td><td>22</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=BALDEH">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=20&house=H">Ballard, Melissa G.</a></td><td>Representative</td><td>Republican</td><td>20</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=BALLAMG">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=17&house=H">Barlow, Stewart E.</a></td><td>Representative</td><td>Republican</td><td>17</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=BARLOSE">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=13&house=S">Blouin, Nate</a></td><td>Senator</td><td>Democrat</td><td>13</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=BLOUIN">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=29&house=H">Bolinder, Bridger</a></td><td>Representative</td><td>Republican</td><td>29</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=BOLINB">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=21&house=S">Brammer, Brady</a></td><td>Senator</td><td>Republican</td><td>21</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=BRAMMB">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=75&house=H">Brooks, Walt</a></td><td>Representative</td><td>Republican</td><td>75</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=BROOKW">View Legislation</a></td></tr><tr><td>Burton, Jefferson S.</td><td>Representative</td><td>Republican</td><td>64</td></tr><tr><td><a href="leglookup.asp?dist=11&house=S">Buss, Emily</a></td><td>Senator</td><td>Forward</td><td>11</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=BUSSEM">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=54&house=H">Chevrier, Kristen</a></td><td>Representative</td><td>Republican</td><td>54</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=CHEVRK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=68&house=H">Chew, Scott H.</a></td><td>Representative</td><td>Republican</td><td>68</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=CHEWSH">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=53&house=H">Christofferson, Kay J.</a></td><td>Representative</td><td>Republican</td><td>53</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=CHRISKJ">View Legislation</a></td></tr><tr><td>Clancy, Tyler</td><td>Representative</td><td>Republican</td><td>60</td></tr><tr><td><a href="leglookup.asp?dist=19&house=S">Cullimore, Kirk A.</a></td><td>Senator</td><td>Republican</td><td>19</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=CULLIKA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=18&house=H">Cutler, Paul A.</a></td><td>Representative</td><td>Republican</td><td>18</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=CUTLEP">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=22&house=H">Dailey-Provost, Jennifer</a></td><td>Representative</td><td>Democrat</td><td>22</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=DAILEJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=15&house=H">Defay, Ariel</a></td><td>Representative</td><td>Republican</td><td>15</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=DEFAYA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=35&house=H">Dominguez, Rosalba</a></td><td>Representative</td><td>Democrat</td><td>35</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=DOMINR">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=36&house=H">Dunnigan, James A.</a></td><td>Representative</td><td>Republican</td><td>36</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=DUNNIJA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=43&house=H">Eliason, Steve</a></td><td>Representative</td><td>Republican</td><td>43</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ELIASS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=72&house=H">Elison, Joseph</a></td><td>Representative</td><td>Republican</td><td>72</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ELISOJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=10&house=S">Escamilla, Luz</a></td><td>Senator</td><td>Democrat</td><td>10</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=ESCAML">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=48&house=H">Fiefia, Doug</a></td><td>Representative</td><td>Republican</td><td>48</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=FIEFID">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=17&house=S">Fillmore, Lincoln</a></td><td>Senator</td><td>Republican</td><td>17</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=FILLML">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=30&house=H">Fitisemanu, Jake</a></td><td>Representative</td><td>Democrat</td><td>30</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=FITISJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=50&house=H">Gricius, Stephanie</a></td><td>Representative</td><td>Republican</td><td>50</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=GRICIS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=23&house=S">Grover, Keith</a></td><td>Senator</td><td>Republican</td><td>23</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=GROVEK">View Legislation</a></td></tr><tr><td>Gwynn, Matthew H.</td><td>Representative</td><td>Republican</td><td>6</td></tr><tr><td><a href="leglookup.asp?dist=11&house=H">Hall, Katy</a></td><td>Representative</td><td>Republican</td><td>11</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=HALLK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=51&house=H">Hansen, Leah</a></td><td>Representative</td><td>Republican</td><td>51</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=LHANSEN">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=16&house=S">Harper, Wayne A.</a></td><td>Senator</td><td>Republican</td><td>16</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=HARPEWA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=55&house=H">Hawkins, Jon</a></td><td>Representative</td><td>Republican</td><td>55</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=HAWKIJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=32&house=H">Hayes, Sahara</a></td><td>Representative</td><td>Democrat</td><td>32</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=HAYESS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=26&house=S">Hinkins, David P.</a></td><td>Senator</td><td>Republican</td><td>26</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=HINKIDP">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=21&house=H">Hollins, Sandra</a></td><td>Representative</td><td>Democrat</td><td>21</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=HOLLIS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=29&house=S">Ipson, Don L.</a></td><td>Senator</td><td>Republican</td><td>29</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=IPSONDL">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=39&house=H">Ivory, Ken</a></td><td>Representative</td><td>Republican</td><td>39</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=IVORYK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=73&house=H">Jack, Colin W.</a></td><td>Representative</td><td>Republican</td><td>73</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=JACKC">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=3&house=S">Johnson, John D.</a></td><td>Senator</td><td>Republican</td><td>3</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=JOHNSJD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=10&house=H">Koford, Jill</a></td><td>Representative</td><td>Republican</td><td>10</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=KOFORJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=59&house=H">Kohler, Mike L.</a></td><td>Representative</td><td>Republican</td><td>59</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=KOHLEM">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=12&house=S">Kwan, Karen</a></td><td>Senator</td><td>Democrat</td><td>12</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=KWANK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=8&house=H">Kyle, Jason B.</a></td><td>Representative</td><td>Republican</td><td>8</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=KYLEJB">View Legislation</a></td></tr><tr><td>Lee, Trevor </td><td>Representative</td><td>Republican</td><td>16</td></tr><tr><td><a href="leglookup.asp?dist=14&house=H">Lisonbee, Karianne</a></td><td>Representative</td><td>Republican</td><td>14</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=LISONK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=27&house=H">Loubet, Anthony E.</a></td><td>Representative</td><td>Republican</td><td>27</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=LOUBEA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=26&house=H">MacPherson, Matt</a></td><td>Representative</td><td>Republican</td><td>26</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MACPHM">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=52&house=H">Maloy, A. Cory</a></td><td>Representative</td><td>Republican</td><td>52</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MALOYC">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=37&house=H">Matthews, Ashlee</a></td><td>Representative</td><td>Democrat</td><td>37</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MATTHA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=31&house=H">Mauga, Verona</a></td><td>Representative</td><td>Democrat</td><td>31</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MAUGAV">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=18&house=S">McCay, Daniel</a></td><td>Senator</td><td>Republican</td><td>18</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=MCCAYD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=25&house=S">McKell, Michael K.</a></td><td>Senator</td><td>Republican</td><td>25</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=MCKELMK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=24&house=H">Miller, Grant Amjad</a></td><td>Representative</td><td>Democrat</td><td>24</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MILLGR">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=45&house=H">Miller, Tracy</a></td><td>Representative</td><td>Republican</td><td>45</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MILLET">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=5&house=S">Millner, Ann</a></td><td>Senator</td><td>Republican</td><td>5</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=MILLNA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=69&house=H">Monson, Logan</a></td><td>Representative</td><td>Republican</td><td>69</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MONSOL">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=34&house=H">Moss, Carol S.</a></td><td>Representative</td><td>Democrat</td><td>34</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=MOSSCS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=4&house=S">Musselman, Calvin R.</a></td><td>Senator</td><td>Republican</td><td>4</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=MUSSECR">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=23&house=H">Nguyen, Hoang</a></td><td>Representative</td><td>Democrat</td><td>23</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=NGUYEH">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=42&house=H">Okerlund, Clinton</a></td><td>Representative</td><td>Republican</td><td>42</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=OKERLC">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=27&house=S">Owens, Derrin R.</a></td><td>Senator</td><td>Republican</td><td>27</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=OWENSD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=33&house=H">Owens, Doug</a></td><td>Representative</td><td>Democrat</td><td>33</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=OWENSDO">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=28&house=H">Peck, Nicholeen P.</a></td><td>Representative</td><td>Republican</td><td>28</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=PECKNI">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=2&house=H">Petersen, Michael J.</a></td><td>Representative</td><td>Republican</td><td>2</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=PETERM">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=13&house=H">Peterson, Karen M.</a></td><td>Representative</td><td>Republican</td><td>13</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=PETERK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=1&house=H">Peterson, Thomas W.</a></td><td>Representative</td><td>Republican</td><td>1</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=PETERT">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=56&house=H">Peterson, Val L.</a></td><td>Representative</td><td>Republican</td><td>56</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=PETERVL">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=49&house=H">Pierucci, Candice B.</a></td><td>Representative</td><td>Republican</td><td>49</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=PIERUC">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=14&house=S">Pitcher, Stephanie</a></td><td>Senator</td><td>Democrat</td><td>14</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=PITCHS">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=9&house=S">Plumb, Jen</a></td><td>Senator</td><td>Democrat</td><td>9</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=PLUMBJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=15&house=S">Riebe, Kathleen A.</a></td><td>Senator</td><td>Democrat</td><td>15</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=RIEBEK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=46&house=H">Roberts, Calvin</a></td><td>Representative</td><td>Republican</td><td>46</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ROBERC">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=25&house=H">Romero, Angela</a></td><td>Representative</td><td>Democrat</td><td>25</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=ROMERAY">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=1&house=S">Sandall, Scott D.</a></td><td>Senator</td><td>Republican</td><td>1</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=SANDASD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=9&house=H">Sawyer, Jake</a></td><td>Representative</td><td>Republican</td><td>9</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SAWYEJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=12&house=H">Schultz, Mike</a></td><td>Representative</td><td>Republican</td><td>12</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SCHULM">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=58&house=H">Shallenberger, David</a></td><td>Representative</td><td>Republican</td><td>58</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SHALLD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=66&house=H">Shelley, Troy</a></td><td>Representative</td><td>Republican</td><td>66</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SHELLT">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=61&house=H">Shepherd, Lisa</a></td><td>Representative</td><td>Republican</td><td>61</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SHEPHL">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=71&house=H">Shipp, Rex P.</a></td><td>Representative</td><td>Republican</td><td>71</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SHIPPRP">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=5&house=H">Snider, Casey</a></td><td>Representative</td><td>Republican</td><td>5</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=SNIDEC">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=6&house=S">Stevenson, Jerry W</a></td><td>Senator</td><td>Republican</td><td>6</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=STEVEJW">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=40&house=H">Stoddard, Andrew</a></td><td>Representative</td><td>Democrat</td><td>40</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=STODDA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=24&house=S">Stratton, Keven J.</a></td><td>Senator</td><td>Republican</td><td>24</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=STRATKJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=47&house=H">Strong, Mark A.</a></td><td>Representative</td><td>Republican</td><td>47</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=STRONMA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=44&house=H">Teuscher, Jordan D.</a></td><td>Representative</td><td>Republican</td><td>44</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=TEUSCJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=3&house=H">Thompson, Jason E.</a></td><td>Representative</td><td>Republican</td><td>3</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=THOMJA">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=62&house=H">Thurston, Norman K</a></td><td>Representative</td><td>Republican</td><td>62</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=THURSNK">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=28&house=S">Vickers, Evan J.</a></td><td>Senator</td><td>Republican</td><td>28</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=VICKEEJ">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=74&house=H">Walter, R. Neil</a></td><td>Representative</td><td>Republican</td><td>74</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=WALTER">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=19&house=H">Ward, Raymond P.</a></td><td>Representative</td><td>Republican</td><td>19</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=WARDR">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=67&house=H">Watkins, Christine F.</a></td><td>Representative</td><td>Republican</td><td>67</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=WATKICF">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=8&house=S">Weiler, Todd</a></td><td>Senator</td><td>Republican</td><td>8</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=WEILET">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=65&house=H">Welton, Doug</a></td><td>Representative</td><td>Republican</td><td>65</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=WELTOD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=63&house=H">Whyte, Stephen L.</a></td><td>Representative</td><td>Republican</td><td>63</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=WHYTESL">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=7&house=H">Wilcox, Ryan D.</a></td><td>Representative</td><td>Republican</td><td>7</td><td><a href="/asp/billsintro/RepResults.asp?Listbox3=WILCORD">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=2&house=S">Wilson, Chris H.</a></td><td>Senator</td><td>Republican</td><td>2</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=WILSOCH">View Legislation</a></td></tr><tr><td><a href="leglookup.asp?dist=20&house=S">Winterton, Ronald M.</a></td><td>Senator</td><td>Republican</td><td>20</td><td><a href="/asp/billsintro/SenResults.asp?Listbox2=WINTER">View Legislation</a></td></tr>
+</table>
+
+
+</FORM>
+</article>
+</div>
+</main>
+
+<footer>
+
+<!-- twitter.html -->
+<!--
+<div id="twitter">
+<div>Loading Twitter Feed...</div>
+</div>
+-->
+<!-- END twitter.html -->
+
+<div id="footerDetails">
+
+<div class="footerSection" id="footerSenate">
+	<a href="https://senate.utah.gov/"><div><img src="/images/logos/senate.svg" alt="Seal for Utah State Senate"><h2>State<br>Senate</h2></div></a>
+    <ul>
+		<li>
+			350 North State, Suite 320<br>
+			PO Box 145115<br>
+			Salt Lake City, Utah 84114
+		</li>
+		<li class="telephone">Telephone: <a href="tel:8015381035">(801) 538-1408</a></li>
+		<li><a href="https://senate.utah.gov" target="_blank">https://senate.utah.gov</a></li>
+        <li><a href="https://senate.utah.gov/contact/" class="button">Contact a Senator</a></li>
+	</ul>
+</div>
+
+<div class="footerSection" id="footerHouse">
+	<a href="https://house.utleg.gov"><div><img src="/images/logos/house.svg" alt="Seal for Utah House of Representatives"><h2>House of<br> Representatives</h2></div></a>
+    <ul>
+		<li>
+			350 North State, Suite 350<br>
+			PO Box 145030<br>
+			Salt Lake City, Utah 84114
+		</li>
+		<li class="telephone">Telephone: <a href="tel:8015381408">(801) 538-1408</a></li>
+		<li><a href="https://house.utleg.gov" target="_blank">https://house.utleg.gov</a></li>
+        <li><a href="https://house.utleg.gov/contact/" class="button">Contact a Representative</a></li>
+	</ul>
+</div>
+
+<div class="footerSection" id="footerStaff">
+    <div><a href="/Documents/staff.htm"><h2>Staff Offices</h2></a></div>
+    <ul>
+        <li><a href="https://lag.utleg.gov/">Legislative Auditor General</a></li>
+        <li><a href="https://budget.utah.gov/products/aboutLFA/">Legislative Fiscal Analyst</a></li>
+        <li><a href="/lrgc/home.html">Legislative Research and General Counsel</a></li>
+        <li><a href="/legservices/home.html">Legislative Services</a></li>
+        <li><a href="/ncsl/utahstaffawards.htm">Staff Awards</a></li>
+        <li><a href="/lrgc/researchMaterials.htm" class="button">Public Information</a></li>
+	</ul>
+</div>
+
+</div>
+
+<div id="footerNav">
+	<ul>
+		<li><a href="/Documents/recordsrequests.htm">Records Requests</a></li>
+		<li><a href="/rfp_legal.htm">Procurement</a></li>
+		<li><a href="/contact.htm">Contact the Webmaster</a></li>
+		<li><a href="/jobs/jobs.htm">Job Opportunities</a></li>
+		<!-- <li><a href="/faq.jsp">FAQ</a></li> -->
+		<li><a href="/sitemap.htm">Site Map</a></li>
+		<li><a href="/documents/disclaimer.htm">Terms of Use</a></li>
+		<li><a href="/documents/ADAnotice.htm">ADA</a></li>
+		<li><a href="http://utah.gov/">Utah.gov</a></li>
+	</ul>
+</div>
+
+</footer>
+
+<script src="/js/scripts.min.js?r=19"></script>
+<script src="/js/search.js?r=15"></script>
+<!--<script type="text/javascript" src="https://www.utah.gov/code/libs/uii.aggregator.min.js"></script>-->
+<script>
+//$.backstretch("/images/background.jpg");
+/*
+var lebgr = {};
+lebgr.baseUrl = '/images/backgrounds/';
+//lebgr.imgEl = document.querySelector('.backstretch-item img');
+lebgr.backgrounds = [
+'background-01.jpg',
+'background-02.jpg',
+'background-03.jpg',
+'background-04.jpg',
+'background-05.jpg',
+'background-06.jpg',
+];
+
+lebgr.random = function(max) {
+return Math.floor(Math.random() * (max - 0)) + 0;
+};
+
+lebgr.output = function(options) {
+var backgroundName = lebgr.backgrounds[lebgr.random(lebgr.backgrounds.length)];
+var backgroundUrl = lebgr.baseUrl + backgroundName;
+//lebgr.imgEl.src = backgroundUrl;
+$.backstretch(backgroundUrl);
+};
+lebgr.output();
+*/
+</script>
+
+</body>
+</html>
