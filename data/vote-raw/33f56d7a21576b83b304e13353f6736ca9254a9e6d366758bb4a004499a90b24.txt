@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0069
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/2/2026 11:20 AM</b><hr>
+<center>1SB 69</center>
+<center>School Device Revisions</center>
+<center>Fillmore</center>
+<center>Welton</center>
+<center>SEDU Substituted 6-1-0</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

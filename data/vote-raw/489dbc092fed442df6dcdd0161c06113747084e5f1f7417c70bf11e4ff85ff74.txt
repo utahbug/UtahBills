@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0002
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 9:58 AM</b><hr>
+<center>HB 2</center>
+<center>New Fiscal Year Supplemental Appropriations</center>
+<center>Peterson</center>
+<center>Stevenson</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

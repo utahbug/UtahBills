@@ -3,6 +3,7 @@ import './validate.mjs';
 import {build} from 'esbuild';
 import {mkdir,copyFile,cp,rm,readFile,writeFile} from 'node:fs/promises';
 import path from 'node:path';
+execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['tests/vote_data.py'],{stdio:'inherit'});
 const project=process.cwd(),output=path.resolve(project,'dist');
 if(output!==path.join(project,'dist')||path.dirname(output)!==project)throw Error('Unsafe output directory');
 await rm(output,{recursive:true,force:true});

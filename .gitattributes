@@ -3,3 +3,4 @@ data/raw/* -text
 *.cmd text eol=crlf
 
 data/catalog-raw/* -text
+data/vote-raw/* -text -whitespace

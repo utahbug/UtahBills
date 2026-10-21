@@ -11,7 +11,7 @@ const punctuation='“Quoted” vehicle’s — § 22 – café';
 assert.equal(renderLegislativeNode({tag:'sectionText',text:punctuation}),`<div class="bill-paragraph">${punctuation}</div>`);
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true});
 const page=await browser.newPage();const notes=[];let visitId=0;
-async function visit(route,width=390){await page.setViewportSize({width,height:900});await page.goto(base+'?batch1='+ (++visitId) +'-'+encodeURIComponent(route)+'#'+route);await page.locator('h1').waitFor();await page.waitForFunction(()=>!document.querySelector('main [role="status"]')?.textContent.includes('Loading legislative'));}
+async function visit(route,width=390){await page.setViewportSize({width,height:900});await page.goto(base+'?batch1='+ (++visitId) +'-'+encodeURIComponent(route)+'#'+route);await page.locator('h1').waitFor();if(route==='bills')await page.locator('#session').selectOption('2026');await page.waitForFunction(()=>!document.querySelector('main [role="status"]')?.textContent.includes('Loading legislative'));}
 // Check actual text rectangles, not just document width or parent boxes.
 async function checkRows(){return page.evaluate(()=>{
  const overlaps=[];

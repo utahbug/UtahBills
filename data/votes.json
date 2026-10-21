@@ -1,0 +1,3390 @@
+{
+  "schemaVersion": 1,
+  "scope": "Selected 2026 General Session records; not a complete voting history.",
+  "bills": [
+    "HB0002",
+    "HB0011",
+    "HB0154",
+    "HB0155",
+    "SB0069"
+  ],
+  "records": [
+    {
+      "bill": "HB0011",
+      "session": "2026GS",
+      "actionDate": "2026-01-20 11:28:42.000",
+      "action": "House/ passed 3rd reading",
+      "body": "House",
+      "committee": false,
+      "motion": "Final Passage",
+      "classification": "Final passage",
+      "version": null,
+      "sourceTime": "1/20/2026 12:09 PM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 74,
+        "No": 0,
+        "Absent or not voting": 1
+      },
+      "individuals": [
+        {
+          "name": "Abbott, N.",
+          "vote": "Yes",
+          "legislatorId": "ABBOTN"
+        },
+        {
+          "name": "Acton, C.K.",
+          "vote": "Yes",
+          "legislatorId": "ACTONCK"
+        },
+        {
+          "name": "Albrecht, C.",
+          "vote": "Yes",
+          "legislatorId": "ALBRECR"
+        },
+        {
+          "name": "Arthur, J.",
+          "vote": "Yes",
+          "legislatorId": "ARTHUJ"
+        },
+        {
+          "name": "Auxier, T.",
+          "vote": "Yes",
+          "legislatorId": "AUXIET"
+        },
+        {
+          "name": "Ballard, M.G.",
+          "vote": "Yes",
+          "legislatorId": "BALLAMG"
+        },
+        {
+          "name": "Barlow, S.",
+          "vote": "Yes",
+          "legislatorId": "BARLOSE"
+        },
+        {
+          "name": "Bolinder, B.",
+          "vote": "Yes",
+          "legislatorId": "BOLINB"
+        },
+        {
+          "name": "Brooks, W.",
+          "vote": "Yes",
+          "legislatorId": "BROOKW"
+        },
+        {
+          "name": "Burton, J.",
+          "vote": "Yes",
+          "legislatorId": "BURTOJS"
+        },
+        {
+          "name": "Chevrier, K.",
+          "vote": "Yes",
+          "legislatorId": "CHEVRK"
+        },
+        {
+          "name": "Chew, S.",
+          "vote": "Yes",
+          "legislatorId": "CHEWSH"
+        },
+        {
+          "name": "Christofferson, K.",
+          "vote": "Yes",
+          "legislatorId": "CHRISKJ"
+        },
+        {
+          "name": "Clancy, T.",
+          "vote": "Yes",
+          "legislatorId": "CLANCT"
+        },
+        {
+          "name": "Cutler, P.",
+          "vote": "Yes",
+          "legislatorId": "CUTLEP"
+        },
+        {
+          "name": "Dailey-Provost, J.",
+          "vote": "Yes",
+          "legislatorId": "DAILEJ"
+        },
+        {
+          "name": "Defay, A.",
+          "vote": "Yes",
+          "legislatorId": "DEFAYA"
+        },
+        {
+          "name": "Dominguez, R.",
+          "vote": "Yes",
+          "legislatorId": "DOMINR"
+        },
+        {
+          "name": "Dunnigan, J.",
+          "vote": "Yes",
+          "legislatorId": "DUNNIJA"
+        },
+        {
+          "name": "Eliason, S.",
+          "vote": "Yes",
+          "legislatorId": "ELIASS"
+        },
+        {
+          "name": "Elison, J.",
+          "vote": "Yes",
+          "legislatorId": "ELISOJ"
+        },
+        {
+          "name": "Fiefia, D.",
+          "vote": "Yes",
+          "legislatorId": "FIEFID"
+        },
+        {
+          "name": "Fitisemanu, J.",
+          "vote": "Yes",
+          "legislatorId": "FITISJ"
+        },
+        {
+          "name": "Gricius, S.",
+          "vote": "Yes",
+          "legislatorId": "GRICIS"
+        },
+        {
+          "name": "Gwynn, M.",
+          "vote": "Yes",
+          "legislatorId": "GWYNNM"
+        },
+        {
+          "name": "Hall, K.",
+          "vote": "Yes",
+          "legislatorId": "HALLK"
+        },
+        {
+          "name": "Hansen, L.",
+          "vote": "Yes",
+          "legislatorId": "LHANSEN"
+        },
+        {
+          "name": "Hawkins, J.",
+          "vote": "Yes",
+          "legislatorId": "HAWKIJ"
+        },
+        {
+          "name": "Hayes, S.",
+          "vote": "Yes",
+          "legislatorId": "HAYESS"
+        },
+        {
+          "name": "Hollins, S.",
+          "vote": "Yes",
+          "legislatorId": "HOLLIS"
+        },
+        {
+          "name": "Ivory, K.",
+          "vote": "Yes",
+          "legislatorId": "IVORYK"
+        },
+        {
+          "name": "Jack, C.",
+          "vote": "Yes",
+          "legislatorId": "JACKC"
+        },
+        {
+          "name": "Koford, J.",
+          "vote": "Yes",
+          "legislatorId": "KOFORJ"
+        },
+        {
+          "name": "Kohler, M.",
+          "vote": "Yes",
+          "legislatorId": "KOHLEM"
+        },
+        {
+          "name": "Kyle, J.",
+          "vote": "Yes",
+          "legislatorId": "KYLEJB"
+        },
+        {
+          "name": "Lee, T.",
+          "vote": "Yes",
+          "legislatorId": "LEETA"
+        },
+        {
+          "name": "Lisonbee, K.",
+          "vote": "Yes",
+          "legislatorId": "LISONK"
+        },
+        {
+          "name": "Loubet, A.",
+          "vote": "Yes",
+          "legislatorId": "LOUBEA"
+        },
+        {
+          "name": "MacPherson, M.",
+          "vote": "Yes",
+          "legislatorId": "MACPHM"
+        },
+        {
+          "name": "Maloy, A. Cory",
+          "vote": "Yes",
+          "legislatorId": "MALOYC"
+        },
+        {
+          "name": "Matthews, A.",
+          "vote": "Yes",
+          "legislatorId": "MATTHA"
+        },
+        {
+          "name": "Miller, G.",
+          "vote": "Yes",
+          "legislatorId": "MILLGR"
+        },
+        {
+          "name": "Miller, T.",
+          "vote": "Yes",
+          "legislatorId": "MILLET"
+        },
+        {
+          "name": "Monson, L.",
+          "vote": "Yes",
+          "legislatorId": "MONSOL"
+        },
+        {
+          "name": "Moss, C.",
+          "vote": "Yes",
+          "legislatorId": "MOSSCS"
+        },
+        {
+          "name": "Nguyen, H.",
+          "vote": "Yes",
+          "legislatorId": "NGUYEH"
+        },
+        {
+          "name": "Okerlund, C.",
+          "vote": "Yes",
+          "legislatorId": "OKERLC"
+        },
+        {
+          "name": "Owens, D.",
+          "vote": "Yes",
+          "legislatorId": "OWENSDO"
+        },
+        {
+          "name": "Peck, N.",
+          "vote": "Yes",
+          "legislatorId": "PECKNI"
+        },
+        {
+          "name": "Petersen, M.",
+          "vote": "Yes",
+          "legislatorId": "PETERM"
+        },
+        {
+          "name": "Peterson, K.",
+          "vote": "Yes",
+          "legislatorId": "PETERK"
+        },
+        {
+          "name": "Peterson, T.",
+          "vote": "Yes",
+          "legislatorId": "PETERT"
+        },
+        {
+          "name": "Peterson, V.",
+          "vote": "Yes",
+          "legislatorId": "PETERVL"
+        },
+        {
+          "name": "Pierucci, C.",
+          "vote": "Yes",
+          "legislatorId": "PIERUC"
+        },
+        {
+          "name": "Roberts, C.",
+          "vote": "Yes",
+          "legislatorId": "ROBERC"
+        },
+        {
+          "name": "Romero, A.",
+          "vote": "Yes",
+          "legislatorId": "ROMERAY"
+        },
+        {
+          "name": "Sawyer, J.",
+          "vote": "Yes",
+          "legislatorId": "SAWYEJ"
+        },
+        {
+          "name": "Schultz, M.",
+          "vote": "Yes",
+          "legislatorId": "SCHULM"
+        },
+        {
+          "name": "Shallenberger, D.",
+          "vote": "Yes",
+          "legislatorId": "SHALLD"
+        },
+        {
+          "name": "Shelley, T.",
+          "vote": "Yes",
+          "legislatorId": "SHELLT"
+        },
+        {
+          "name": "Shepherd, L.",
+          "vote": "Yes",
+          "legislatorId": "SHEPHL"
+        },
+        {
+          "name": "Shipp, R.P.",
+          "vote": "Yes",
+          "legislatorId": "SHIPPRP"
+        },
+        {
+          "name": "Snider, C.",
+          "vote": "Yes",
+          "legislatorId": "SNIDEC"
+        },
+        {
+          "name": "Stoddard, A.",
+          "vote": "Yes",
+          "legislatorId": "STODDA"
+        },
+        {
+          "name": "Strong, M.A.",
+          "vote": "Yes",
+          "legislatorId": "STRONMA"
+        },
+        {
+          "name": "Teuscher, J.",
+          "vote": "Yes",
+          "legislatorId": "TEUSCJ"
+        },
+        {
+          "name": "Thompson, J.",
+          "vote": "Yes",
+          "legislatorId": "THOMJA"
+        },
+        {
+          "name": "Thurston, N.",
+          "vote": "Yes",
+          "legislatorId": "THURSNK"
+        },
+        {
+          "name": "Walter, N.",
+          "vote": "Yes",
+          "legislatorId": null
+        },
+        {
+          "name": "Ward, R.",
+          "vote": "Yes",
+          "legislatorId": "WARDR"
+        },
+        {
+          "name": "Watkins, C.",
+          "vote": "Yes",
+          "legislatorId": "WATKICF"
+        },
+        {
+          "name": "Welton, D.",
+          "vote": "Yes",
+          "legislatorId": "WELTOD"
+        },
+        {
+          "name": "Whyte, S.",
+          "vote": "Yes",
+          "legislatorId": "WHYTESL"
+        },
+        {
+          "name": "Wilcox, R.",
+          "vote": "Yes",
+          "legislatorId": "WILCORD"
+        },
+        {
+          "name": "Mauga, V.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MAUGAV"
+        }
+      ],
+      "id": "HB0011-H-6",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=6&house=H",
+        "path": "data/vote-raw/f64bc629635c70a4d6651a6146301427a9f7cf05efe19000464aa14ae592f582.txt",
+        "sha256": "f64bc629635c70a4d6651a6146301427a9f7cf05efe19000464aa14ae592f582",
+        "retrievedAt": "2026-10-21T12:59:37.079284+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0011.json",
+        "path": "data/catalog-raw/efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2.json",
+        "sha256": "efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2",
+        "retrievedAt": "2026-10-21T03:56:57.742710+00:00",
+        "updatetime": "2026-02-27 14:45:23.477"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-01-21 14:59:28.547",
+      "action": "Senate Comm - Substitute Recommendation",
+      "body": "Senate Education Committee",
+      "committee": true,
+      "motion": "Senate Comm - Substitute Recommendation #SB0069S01 - PASSED",
+      "classification": "Committee substitute recommendation",
+      "version": "SB0069S01",
+      "sourceTime": "1/21/2026 2:00 PM - 210 Senate Building",
+      "sourceTimeKind": "Meeting notice time",
+      "result": "PASSED",
+      "voice": false,
+      "tally": {
+        "Yes": 6,
+        "No": 0,
+        "Absent": 1
+      },
+      "individuals": [
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Yes",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Yes",
+          "legislatorId": "MCKELMK"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Balderree, H.",
+          "vote": "Absent",
+          "legislatorId": "BALDEH"
+        }
+      ],
+      "id": "SB0069--38615",
+      "source": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=38615",
+        "path": "data/vote-raw/54aee04a44170adb1c277113031f56bca224a4f6e6fe49fc0d24603639b4c640.txt",
+        "sha256": "54aee04a44170adb1c277113031f56bca224a4f6e6fe49fc0d24603639b4c640",
+        "retrievedAt": "2026-10-21T12:59:39.089349+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-01-21 15:00:46.500",
+      "action": "Senate Comm - Favorable Recommendation",
+      "body": "Senate Education Committee",
+      "committee": true,
+      "motion": "Senate Comm - Favorable Recommendation - PASSED",
+      "classification": "Committee recommendation",
+      "version": null,
+      "sourceTime": "1/21/2026 2:00 PM - 210 Senate Building",
+      "sourceTimeKind": "Meeting notice time",
+      "result": "PASSED",
+      "voice": false,
+      "tally": {
+        "Yes": 6,
+        "No": 1,
+        "Absent": 0
+      },
+      "individuals": [
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Yes",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Yes",
+          "legislatorId": "MCKELMK"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "No",
+          "legislatorId": "RIEBEK"
+        }
+      ],
+      "id": "SB0069--38617",
+      "source": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=38617",
+        "path": "data/vote-raw/a3804fa4d8aadf3fc39114060008129624c9c1c1d3cd1c1cddfd4a2a7fde89b9.txt",
+        "sha256": "a3804fa4d8aadf3fc39114060008129624c9c1c1d3cd1c1cddfd4a2a7fde89b9",
+        "retrievedAt": "2026-10-21T12:59:39.433508+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-01-22 11:56:36.123",
+      "action": "Senate/ circled",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · 2nd Reading · Motion to Circle",
+      "classification": "Procedural",
+      "version": "SB0069S01",
+      "sourceTime": "1/22/2026 11:56 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "SB0069-S-72",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=72&house=S",
+        "path": "data/vote-raw/b57bddcb3f1df0b601bea81bc05f28833c03e4a91efee0cc167526acd851ac20.txt",
+        "sha256": "b57bddcb3f1df0b601bea81bc05f28833c03e4a91efee0cc167526acd851ac20",
+        "retrievedAt": "2026-10-21T12:59:39.781116+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "HB0011",
+      "session": "2026GS",
+      "actionDate": "2026-01-28 14:51:30.143",
+      "action": "Senate Comm - Favorable Recommendation",
+      "body": "Senate Revenue and Taxation Committee",
+      "committee": true,
+      "motion": "Senate Comm - Favorable Recommendation - PASSED",
+      "classification": "Committee recommendation",
+      "version": null,
+      "sourceTime": "1/28/2026 2:00 PM - 210 Senate Building",
+      "sourceTimeKind": "Meeting notice time",
+      "result": "PASSED",
+      "voice": false,
+      "tally": {
+        "Yes": 4,
+        "No": 0,
+        "Absent": 3
+      },
+      "individuals": [
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Yes",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Yes",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Absent",
+          "legislatorId": "CULLIKA"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Absent",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Absent",
+          "legislatorId": "WILSOCH"
+        }
+      ],
+      "id": "HB0011--39046",
+      "source": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=39046",
+        "path": "data/vote-raw/e0be3c20b0bc984f9155a2d9dd4af21ef7542d8879fffd6e1a4ac36801e1e5cf.txt",
+        "sha256": "e0be3c20b0bc984f9155a2d9dd4af21ef7542d8879fffd6e1a4ac36801e1e5cf",
+        "retrievedAt": "2026-10-21T12:59:37.396540+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0011.json",
+        "path": "data/catalog-raw/efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2.json",
+        "sha256": "efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2",
+        "retrievedAt": "2026-10-21T03:56:57.742710+00:00",
+        "updatetime": "2026-02-27 14:45:23.477"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-01-30 11:37:20.780",
+      "action": "Senate/ uncircled",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · 2nd Reading · Motion to Uncircle · Circled",
+      "classification": "Procedural",
+      "version": "SB0069S01",
+      "sourceTime": "1/30/2026 11:37 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "SB0069-S-139",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=139&house=S",
+        "path": "data/vote-raw/0c1c58d5cad86f0f6c00be077ccf92a68b74f2c56e60809cc564151eedeb4b89.txt",
+        "sha256": "0c1c58d5cad86f0f6c00be077ccf92a68b74f2c56e60809cc564151eedeb4b89",
+        "retrievedAt": "2026-10-21T12:59:40.111199+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-01-30 11:54:53.803",
+      "action": "Senate/ passed 2nd reading",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · 2nd Reading · Passage on Second · Ayes 26 Nays 0 Abs 3",
+      "classification": "Passage on second reading",
+      "version": "SB0069S01",
+      "sourceTime": "1/30/2026 11:54 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 26,
+        "No": 0,
+        "Absent or not voting": 3
+      },
+      "individuals": [
+        {
+          "name": "Adams, J. Stuart",
+          "vote": "Yes",
+          "legislatorId": "ADAMSJS"
+        },
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Blouin, N.",
+          "vote": "Yes",
+          "legislatorId": "BLOUIN"
+        },
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Buss, E.",
+          "vote": "Yes",
+          "legislatorId": "BUSSEM"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Yes",
+          "legislatorId": "CULLIKA"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Yes",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Grover, K.",
+          "vote": "Yes",
+          "legislatorId": "GROVEK"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Yes",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Ipson, D.",
+          "vote": "Yes",
+          "legislatorId": "IPSONDL"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "Kwan, K.",
+          "vote": "Yes",
+          "legislatorId": "KWANK"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Yes",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Yes",
+          "legislatorId": "MCKELMK"
+        },
+        {
+          "name": "Owens, D.R.",
+          "vote": "Yes",
+          "legislatorId": "OWENSD"
+        },
+        {
+          "name": "Pitcher, S.",
+          "vote": "Yes",
+          "legislatorId": "PITCHS"
+        },
+        {
+          "name": "Plumb, J.",
+          "vote": "Yes",
+          "legislatorId": "PLUMBJ"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Sandall, S.",
+          "vote": "Yes",
+          "legislatorId": "SANDASD"
+        },
+        {
+          "name": "Stevenson, J.",
+          "vote": "Yes",
+          "legislatorId": "STEVEJW"
+        },
+        {
+          "name": "Stratton, K.",
+          "vote": "Yes",
+          "legislatorId": "STRATKJ"
+        },
+        {
+          "name": "Vickers, E.",
+          "vote": "Yes",
+          "legislatorId": "VICKEEJ"
+        },
+        {
+          "name": "Weiler, T.",
+          "vote": "Yes",
+          "legislatorId": "WEILET"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Winterton, R.",
+          "vote": "Yes",
+          "legislatorId": "WINTER"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Absent or not voting",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Millner, A.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MILLNA"
+        },
+        {
+          "name": "Musselman, C.R.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MUSSECR"
+        }
+      ],
+      "id": "SB0069-S-140",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=140&house=S",
+        "path": "data/vote-raw/0f0ef3562755a0683dd872e2057833653f81d9b4acf17fa0860b93fe768f3d78.txt",
+        "sha256": "0f0ef3562755a0683dd872e2057833653f81d9b4acf17fa0860b93fe768f3d78",
+        "retrievedAt": "2026-10-21T12:59:40.458377+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-02 11:20:38.910",
+      "action": "Senate/ circled",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · 3rd Reading · Motion to Circle",
+      "classification": "Procedural",
+      "version": "SB0069S01",
+      "sourceTime": "2/2/2026 11:20 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "SB0069-S-142",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=142&house=S",
+        "path": "data/vote-raw/33f56d7a21576b83b304e13353f6736ca9254a9e6d366758bb4a004499a90b24.txt",
+        "sha256": "33f56d7a21576b83b304e13353f6736ca9254a9e6d366758bb4a004499a90b24",
+        "retrievedAt": "2026-10-21T12:59:40.810065+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-03 11:39:42.060",
+      "action": "Senate/ uncircled",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · 3rd Reading · Motion to Uncircle · Circled",
+      "classification": "Procedural",
+      "version": "SB0069S01",
+      "sourceTime": "2/3/2026 11:39 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "SB0069-S-165",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=165&house=S",
+        "path": "data/vote-raw/ae68360f6f4a206c61e638114da4d01683490e78c88a24eee3c71f280ec47524.txt",
+        "sha256": "ae68360f6f4a206c61e638114da4d01683490e78c88a24eee3c71f280ec47524",
+        "retrievedAt": "2026-10-21T12:59:41.144452+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-03 11:43:52.210",
+      "action": "Senate/ passed 3rd reading",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · 3rd Reading · Final Passage · Ayes 27 Nays 1 Abs 1",
+      "classification": "Final passage",
+      "version": "SB0069S01",
+      "sourceTime": "2/3/2026 11:43 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 27,
+        "No": 1,
+        "Absent or not voting": 1
+      },
+      "individuals": [
+        {
+          "name": "Adams, J. Stuart",
+          "vote": "Yes",
+          "legislatorId": "ADAMSJS"
+        },
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Blouin, N.",
+          "vote": "Yes",
+          "legislatorId": "BLOUIN"
+        },
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Buss, E.",
+          "vote": "Yes",
+          "legislatorId": "BUSSEM"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Yes",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Grover, K.",
+          "vote": "Yes",
+          "legislatorId": "GROVEK"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Yes",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Ipson, D.",
+          "vote": "Yes",
+          "legislatorId": "IPSONDL"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "Kwan, K.",
+          "vote": "Yes",
+          "legislatorId": "KWANK"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Yes",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Yes",
+          "legislatorId": "MCKELMK"
+        },
+        {
+          "name": "Millner, A.",
+          "vote": "Yes",
+          "legislatorId": "MILLNA"
+        },
+        {
+          "name": "Musselman, C.R.",
+          "vote": "Yes",
+          "legislatorId": "MUSSECR"
+        },
+        {
+          "name": "Owens, D.R.",
+          "vote": "Yes",
+          "legislatorId": "OWENSD"
+        },
+        {
+          "name": "Pitcher, S.",
+          "vote": "Yes",
+          "legislatorId": "PITCHS"
+        },
+        {
+          "name": "Plumb, J.",
+          "vote": "Yes",
+          "legislatorId": "PLUMBJ"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Sandall, S.",
+          "vote": "Yes",
+          "legislatorId": "SANDASD"
+        },
+        {
+          "name": "Stevenson, J.",
+          "vote": "Yes",
+          "legislatorId": "STEVEJW"
+        },
+        {
+          "name": "Stratton, K.",
+          "vote": "Yes",
+          "legislatorId": "STRATKJ"
+        },
+        {
+          "name": "Vickers, E.",
+          "vote": "Yes",
+          "legislatorId": "VICKEEJ"
+        },
+        {
+          "name": "Weiler, T.",
+          "vote": "Yes",
+          "legislatorId": "WEILET"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Winterton, R.",
+          "vote": "Yes",
+          "legislatorId": "WINTER"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "No",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Absent or not voting",
+          "legislatorId": "CULLIKA"
+        }
+      ],
+      "id": "SB0069-S-166",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=166&house=S",
+        "path": "data/vote-raw/b24ebe91deac9f5bf2dc8cfd0e0080870913d41fe9b38eaff7e31526be84ec2d.txt",
+        "sha256": "b24ebe91deac9f5bf2dc8cfd0e0080870913d41fe9b38eaff7e31526be84ec2d",
+        "retrievedAt": "2026-10-21T12:59:41.482844+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "HB0011",
+      "session": "2026GS",
+      "actionDate": "2026-02-04 14:27:40.147",
+      "action": "Senate/ passed 2nd reading",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SREV Passed 4-0-3 · 2nd Reading · Passage on Second · Ayes 26 Nays 0 Abs 3",
+      "classification": "Passage on second reading",
+      "version": null,
+      "sourceTime": "2/4/2026 2:27 PM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 26,
+        "No": 0,
+        "Absent or not voting": 3
+      },
+      "individuals": [
+        {
+          "name": "Adams, J. Stuart",
+          "vote": "Yes",
+          "legislatorId": "ADAMSJS"
+        },
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Blouin, N.",
+          "vote": "Yes",
+          "legislatorId": "BLOUIN"
+        },
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Buss, E.",
+          "vote": "Yes",
+          "legislatorId": "BUSSEM"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Yes",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Yes",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Yes",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Ipson, D.",
+          "vote": "Yes",
+          "legislatorId": "IPSONDL"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "Kwan, K.",
+          "vote": "Yes",
+          "legislatorId": "KWANK"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Yes",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Yes",
+          "legislatorId": "MCKELMK"
+        },
+        {
+          "name": "Millner, A.",
+          "vote": "Yes",
+          "legislatorId": "MILLNA"
+        },
+        {
+          "name": "Musselman, C.R.",
+          "vote": "Yes",
+          "legislatorId": "MUSSECR"
+        },
+        {
+          "name": "Owens, D.R.",
+          "vote": "Yes",
+          "legislatorId": "OWENSD"
+        },
+        {
+          "name": "Pitcher, S.",
+          "vote": "Yes",
+          "legislatorId": "PITCHS"
+        },
+        {
+          "name": "Plumb, J.",
+          "vote": "Yes",
+          "legislatorId": "PLUMBJ"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Sandall, S.",
+          "vote": "Yes",
+          "legislatorId": "SANDASD"
+        },
+        {
+          "name": "Stevenson, J.",
+          "vote": "Yes",
+          "legislatorId": "STEVEJW"
+        },
+        {
+          "name": "Vickers, E.",
+          "vote": "Yes",
+          "legislatorId": "VICKEEJ"
+        },
+        {
+          "name": "Weiler, T.",
+          "vote": "Yes",
+          "legislatorId": "WEILET"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Winterton, R.",
+          "vote": "Yes",
+          "legislatorId": "WINTER"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Absent or not voting",
+          "legislatorId": "CULLIKA"
+        },
+        {
+          "name": "Grover, K.",
+          "vote": "Absent or not voting",
+          "legislatorId": "GROVEK"
+        },
+        {
+          "name": "Stratton, K.",
+          "vote": "Absent or not voting",
+          "legislatorId": "STRATKJ"
+        }
+      ],
+      "id": "HB0011-S-208",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=208&house=S",
+        "path": "data/vote-raw/02a0b2e0285a9cc9996792a844c5add04ed815dc1139c43daea2f12775d0aebf.txt",
+        "sha256": "02a0b2e0285a9cc9996792a844c5add04ed815dc1139c43daea2f12775d0aebf",
+        "retrievedAt": "2026-10-21T12:59:37.728463+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0011.json",
+        "path": "data/catalog-raw/efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2.json",
+        "sha256": "efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2",
+        "retrievedAt": "2026-10-21T03:56:57.742710+00:00",
+        "updatetime": "2026-02-27 14:45:23.477"
+      }
+    },
+    {
+      "bill": "HB0011",
+      "session": "2026GS",
+      "actionDate": "2026-02-05 11:29:03.460",
+      "action": "Senate/ passed 3rd reading",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SREV Passed 4-0-3 · 3rd Reading · Final Passage · Ayes 28 Nays 0 Abs 1",
+      "classification": "Final passage",
+      "version": null,
+      "sourceTime": "2/5/2026 11:29 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 28,
+        "No": 0,
+        "Absent or not voting": 1
+      },
+      "individuals": [
+        {
+          "name": "Adams, J. Stuart",
+          "vote": "Yes",
+          "legislatorId": "ADAMSJS"
+        },
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Blouin, N.",
+          "vote": "Yes",
+          "legislatorId": "BLOUIN"
+        },
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Buss, E.",
+          "vote": "Yes",
+          "legislatorId": "BUSSEM"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Yes",
+          "legislatorId": "CULLIKA"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Yes",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Grover, K.",
+          "vote": "Yes",
+          "legislatorId": "GROVEK"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Yes",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Yes",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Ipson, D.",
+          "vote": "Yes",
+          "legislatorId": "IPSONDL"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "Kwan, K.",
+          "vote": "Yes",
+          "legislatorId": "KWANK"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Yes",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "Millner, A.",
+          "vote": "Yes",
+          "legislatorId": "MILLNA"
+        },
+        {
+          "name": "Musselman, C.R.",
+          "vote": "Yes",
+          "legislatorId": "MUSSECR"
+        },
+        {
+          "name": "Owens, D.R.",
+          "vote": "Yes",
+          "legislatorId": "OWENSD"
+        },
+        {
+          "name": "Pitcher, S.",
+          "vote": "Yes",
+          "legislatorId": "PITCHS"
+        },
+        {
+          "name": "Plumb, J.",
+          "vote": "Yes",
+          "legislatorId": "PLUMBJ"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Sandall, S.",
+          "vote": "Yes",
+          "legislatorId": "SANDASD"
+        },
+        {
+          "name": "Stevenson, J.",
+          "vote": "Yes",
+          "legislatorId": "STEVEJW"
+        },
+        {
+          "name": "Stratton, K.",
+          "vote": "Yes",
+          "legislatorId": "STRATKJ"
+        },
+        {
+          "name": "Vickers, E.",
+          "vote": "Yes",
+          "legislatorId": "VICKEEJ"
+        },
+        {
+          "name": "Weiler, T.",
+          "vote": "Yes",
+          "legislatorId": "WEILET"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Winterton, R.",
+          "vote": "Yes",
+          "legislatorId": "WINTER"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MCKELMK"
+        }
+      ],
+      "id": "HB0011-S-233",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=233&house=S",
+        "path": "data/vote-raw/8fbca90c3b1218ec578141e296aa8820478fd3f005415305748bf098da9b5a35.txt",
+        "sha256": "8fbca90c3b1218ec578141e296aa8820478fd3f005415305748bf098da9b5a35",
+        "retrievedAt": "2026-10-21T12:59:38.085747+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0011.json",
+        "path": "data/catalog-raw/efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2.json",
+        "sha256": "efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2",
+        "retrievedAt": "2026-10-21T03:56:57.742710+00:00",
+        "updatetime": "2026-02-27 14:45:23.477"
+      }
+    },
+    {
+      "bill": "HB0154",
+      "session": "2026GS",
+      "actionDate": "2026-02-05 16:24:30.687",
+      "action": "House Comm - Favorable Recommendation",
+      "body": "House Natural Resources, Agriculture, and Environment Committee",
+      "committee": true,
+      "motion": "House Comm - Favorable Recommendation - PASSED",
+      "classification": "Committee recommendation",
+      "version": null,
+      "sourceTime": "2/5/2026 3:40 PM - 120 Senate Building",
+      "sourceTimeKind": "Meeting notice time",
+      "result": "PASSED",
+      "voice": false,
+      "tally": {
+        "Yes": 12,
+        "No": 0,
+        "Absent": 2
+      },
+      "individuals": [
+        {
+          "name": "Albrecht, C.",
+          "vote": "Yes",
+          "legislatorId": "ALBRECR"
+        },
+        {
+          "name": "Arthur, J.",
+          "vote": "Yes",
+          "legislatorId": "ARTHUJ"
+        },
+        {
+          "name": "Bolinder, B.",
+          "vote": "Yes",
+          "legislatorId": "BOLINB"
+        },
+        {
+          "name": "Brooks, W.",
+          "vote": "Yes",
+          "legislatorId": "BROOKW"
+        },
+        {
+          "name": "Koford, J.",
+          "vote": "Yes",
+          "legislatorId": "KOFORJ"
+        },
+        {
+          "name": "Kohler, M.",
+          "vote": "Yes",
+          "legislatorId": "KOHLEM"
+        },
+        {
+          "name": "Monson, L.",
+          "vote": "Yes",
+          "legislatorId": "MONSOL"
+        },
+        {
+          "name": "Owens, D.",
+          "vote": "Yes",
+          "legislatorId": "OWENSDO"
+        },
+        {
+          "name": "Schultz, M.",
+          "vote": "Yes",
+          "legislatorId": "SCHULM"
+        },
+        {
+          "name": "Shallenberger, D.",
+          "vote": "Yes",
+          "legislatorId": "SHALLD"
+        },
+        {
+          "name": "Shipp, R.P.",
+          "vote": "Yes",
+          "legislatorId": "SHIPPRP"
+        },
+        {
+          "name": "Watkins, C.",
+          "vote": "Yes",
+          "legislatorId": "WATKICF"
+        },
+        {
+          "name": "Chew, S.",
+          "vote": "Absent",
+          "legislatorId": "CHEWSH"
+        },
+        {
+          "name": "Snider, C.",
+          "vote": "Absent",
+          "legislatorId": "SNIDEC"
+        }
+      ],
+      "id": "HB0154--39567",
+      "source": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=39567",
+        "path": "data/vote-raw/f21ba8c5cb1b96478eb570a5853adb13538800a701b4adab5b337fdbdea2cd89.txt",
+        "sha256": "f21ba8c5cb1b96478eb570a5853adb13538800a701b4adab5b337fdbdea2cd89",
+        "retrievedAt": "2026-10-21T12:59:38.415911+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0154.json",
+        "path": "data/catalog-raw/66282875368e95818a0206e19d805b15caab8345127e4654a8a425a013fa14e9.json",
+        "sha256": "66282875368e95818a0206e19d805b15caab8345127e4654a8a425a013fa14e9",
+        "retrievedAt": "2026-10-21T03:57:30.860941+00:00",
+        "updatetime": "2026-03-06 23:59:59.0"
+      }
+    },
+    {
+      "bill": "HB0154",
+      "session": "2026GS",
+      "actionDate": "2026-02-17 15:07:08.000",
+      "action": "House/ passed 3rd reading",
+      "body": "House",
+      "committee": false,
+      "motion": "HNAE Passed 12-0-2 · 3rd Reading · Final Passage",
+      "classification": "Final passage",
+      "version": "HB0154S01",
+      "sourceTime": "2/17/2026 3:07 PM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 48,
+        "No": 22,
+        "Absent or not voting": 5
+      },
+      "individuals": [
+        {
+          "name": "Abbott, N.",
+          "vote": "Yes",
+          "legislatorId": "ABBOTN"
+        },
+        {
+          "name": "Acton, C.K.",
+          "vote": "Yes",
+          "legislatorId": "ACTONCK"
+        },
+        {
+          "name": "Albrecht, C.",
+          "vote": "Yes",
+          "legislatorId": "ALBRECR"
+        },
+        {
+          "name": "Arthur, J.",
+          "vote": "Yes",
+          "legislatorId": "ARTHUJ"
+        },
+        {
+          "name": "Ballard, M.G.",
+          "vote": "Yes",
+          "legislatorId": "BALLAMG"
+        },
+        {
+          "name": "Barlow, S.",
+          "vote": "Yes",
+          "legislatorId": "BARLOSE"
+        },
+        {
+          "name": "Bolinder, B.",
+          "vote": "Yes",
+          "legislatorId": "BOLINB"
+        },
+        {
+          "name": "Clancy, T.",
+          "vote": "Yes",
+          "legislatorId": "CLANCT"
+        },
+        {
+          "name": "Cutler, P.",
+          "vote": "Yes",
+          "legislatorId": "CUTLEP"
+        },
+        {
+          "name": "Dailey-Provost, J.",
+          "vote": "Yes",
+          "legislatorId": "DAILEJ"
+        },
+        {
+          "name": "Defay, A.",
+          "vote": "Yes",
+          "legislatorId": "DEFAYA"
+        },
+        {
+          "name": "Dominguez, R.",
+          "vote": "Yes",
+          "legislatorId": "DOMINR"
+        },
+        {
+          "name": "Dunnigan, J.",
+          "vote": "Yes",
+          "legislatorId": "DUNNIJA"
+        },
+        {
+          "name": "Eliason, S.",
+          "vote": "Yes",
+          "legislatorId": "ELIASS"
+        },
+        {
+          "name": "Elison, J.",
+          "vote": "Yes",
+          "legislatorId": "ELISOJ"
+        },
+        {
+          "name": "Fitisemanu, J.",
+          "vote": "Yes",
+          "legislatorId": "FITISJ"
+        },
+        {
+          "name": "Gwynn, M.",
+          "vote": "Yes",
+          "legislatorId": "GWYNNM"
+        },
+        {
+          "name": "Hawkins, J.",
+          "vote": "Yes",
+          "legislatorId": "HAWKIJ"
+        },
+        {
+          "name": "Hayes, S.",
+          "vote": "Yes",
+          "legislatorId": "HAYESS"
+        },
+        {
+          "name": "Hollins, S.",
+          "vote": "Yes",
+          "legislatorId": "HOLLIS"
+        },
+        {
+          "name": "Jack, C.",
+          "vote": "Yes",
+          "legislatorId": "JACKC"
+        },
+        {
+          "name": "Koford, J.",
+          "vote": "Yes",
+          "legislatorId": "KOFORJ"
+        },
+        {
+          "name": "Kyle, J.",
+          "vote": "Yes",
+          "legislatorId": "KYLEJB"
+        },
+        {
+          "name": "Loubet, A.",
+          "vote": "Yes",
+          "legislatorId": "LOUBEA"
+        },
+        {
+          "name": "MacPherson, M.",
+          "vote": "Yes",
+          "legislatorId": "MACPHM"
+        },
+        {
+          "name": "Matthews, A.",
+          "vote": "Yes",
+          "legislatorId": "MATTHA"
+        },
+        {
+          "name": "Mauga, V.",
+          "vote": "Yes",
+          "legislatorId": "MAUGAV"
+        },
+        {
+          "name": "Miller, G.",
+          "vote": "Yes",
+          "legislatorId": "MILLGR"
+        },
+        {
+          "name": "Miller, T.",
+          "vote": "Yes",
+          "legislatorId": "MILLET"
+        },
+        {
+          "name": "Moss, C.",
+          "vote": "Yes",
+          "legislatorId": "MOSSCS"
+        },
+        {
+          "name": "Nguyen, H.",
+          "vote": "Yes",
+          "legislatorId": "NGUYEH"
+        },
+        {
+          "name": "Okerlund, C.",
+          "vote": "Yes",
+          "legislatorId": "OKERLC"
+        },
+        {
+          "name": "Owens, D.",
+          "vote": "Yes",
+          "legislatorId": "OWENSDO"
+        },
+        {
+          "name": "Peck, N.",
+          "vote": "Yes",
+          "legislatorId": "PECKNI"
+        },
+        {
+          "name": "Peterson, T.",
+          "vote": "Yes",
+          "legislatorId": "PETERT"
+        },
+        {
+          "name": "Roberts, C.",
+          "vote": "Yes",
+          "legislatorId": "ROBERC"
+        },
+        {
+          "name": "Romero, A.",
+          "vote": "Yes",
+          "legislatorId": "ROMERAY"
+        },
+        {
+          "name": "Shallenberger, D.",
+          "vote": "Yes",
+          "legislatorId": "SHALLD"
+        },
+        {
+          "name": "Shelley, T.",
+          "vote": "Yes",
+          "legislatorId": "SHELLT"
+        },
+        {
+          "name": "Shepherd, L.",
+          "vote": "Yes",
+          "legislatorId": "SHEPHL"
+        },
+        {
+          "name": "Shipp, R.P.",
+          "vote": "Yes",
+          "legislatorId": "SHIPPRP"
+        },
+        {
+          "name": "Snider, C.",
+          "vote": "Yes",
+          "legislatorId": "SNIDEC"
+        },
+        {
+          "name": "Stoddard, A.",
+          "vote": "Yes",
+          "legislatorId": "STODDA"
+        },
+        {
+          "name": "Thompson, J.",
+          "vote": "Yes",
+          "legislatorId": "THOMJA"
+        },
+        {
+          "name": "Walter, N.",
+          "vote": "Yes",
+          "legislatorId": null
+        },
+        {
+          "name": "Ward, R.",
+          "vote": "Yes",
+          "legislatorId": "WARDR"
+        },
+        {
+          "name": "Watkins, C.",
+          "vote": "Yes",
+          "legislatorId": "WATKICF"
+        },
+        {
+          "name": "Welton, D.",
+          "vote": "Yes",
+          "legislatorId": "WELTOD"
+        },
+        {
+          "name": "Auxier, T.",
+          "vote": "No",
+          "legislatorId": "AUXIET"
+        },
+        {
+          "name": "Burton, J.",
+          "vote": "No",
+          "legislatorId": "BURTOJS"
+        },
+        {
+          "name": "Christofferson, K.",
+          "vote": "No",
+          "legislatorId": "CHRISKJ"
+        },
+        {
+          "name": "Fiefia, D.",
+          "vote": "No",
+          "legislatorId": "FIEFID"
+        },
+        {
+          "name": "Gricius, S.",
+          "vote": "No",
+          "legislatorId": "GRICIS"
+        },
+        {
+          "name": "Hall, K.",
+          "vote": "No",
+          "legislatorId": "HALLK"
+        },
+        {
+          "name": "Hansen, L.",
+          "vote": "No",
+          "legislatorId": "LHANSEN"
+        },
+        {
+          "name": "Ivory, K.",
+          "vote": "No",
+          "legislatorId": "IVORYK"
+        },
+        {
+          "name": "Kohler, M.",
+          "vote": "No",
+          "legislatorId": "KOHLEM"
+        },
+        {
+          "name": "Lee, T.",
+          "vote": "No",
+          "legislatorId": "LEETA"
+        },
+        {
+          "name": "Lisonbee, K.",
+          "vote": "No",
+          "legislatorId": "LISONK"
+        },
+        {
+          "name": "Maloy, A. Cory",
+          "vote": "No",
+          "legislatorId": "MALOYC"
+        },
+        {
+          "name": "Monson, L.",
+          "vote": "No",
+          "legislatorId": "MONSOL"
+        },
+        {
+          "name": "Petersen, M.",
+          "vote": "No",
+          "legislatorId": "PETERM"
+        },
+        {
+          "name": "Peterson, K.",
+          "vote": "No",
+          "legislatorId": "PETERK"
+        },
+        {
+          "name": "Pierucci, C.",
+          "vote": "No",
+          "legislatorId": "PIERUC"
+        },
+        {
+          "name": "Sawyer, J.",
+          "vote": "No",
+          "legislatorId": "SAWYEJ"
+        },
+        {
+          "name": "Schultz, M.",
+          "vote": "No",
+          "legislatorId": "SCHULM"
+        },
+        {
+          "name": "Strong, M.A.",
+          "vote": "No",
+          "legislatorId": "STRONMA"
+        },
+        {
+          "name": "Thurston, N.",
+          "vote": "No",
+          "legislatorId": "THURSNK"
+        },
+        {
+          "name": "Whyte, S.",
+          "vote": "No",
+          "legislatorId": "WHYTESL"
+        },
+        {
+          "name": "Wilcox, R.",
+          "vote": "No",
+          "legislatorId": "WILCORD"
+        },
+        {
+          "name": "Brooks, W.",
+          "vote": "Absent or not voting",
+          "legislatorId": "BROOKW"
+        },
+        {
+          "name": "Chevrier, K.",
+          "vote": "Absent or not voting",
+          "legislatorId": "CHEVRK"
+        },
+        {
+          "name": "Chew, S.",
+          "vote": "Absent or not voting",
+          "legislatorId": "CHEWSH"
+        },
+        {
+          "name": "Peterson, V.",
+          "vote": "Absent or not voting",
+          "legislatorId": "PETERVL"
+        },
+        {
+          "name": "Teuscher, J.",
+          "vote": "Absent or not voting",
+          "legislatorId": "TEUSCJ"
+        }
+      ],
+      "id": "HB0154-H-480",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=480&house=H",
+        "path": "data/vote-raw/491910ed2a7d0cc5d805dea9406d001072394c1fc65929f29e5ccd806a805b8e.txt",
+        "sha256": "491910ed2a7d0cc5d805dea9406d001072394c1fc65929f29e5ccd806a805b8e",
+        "retrievedAt": "2026-10-21T12:59:38.757623+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0154.json",
+        "path": "data/catalog-raw/66282875368e95818a0206e19d805b15caab8345127e4654a8a425a013fa14e9.json",
+        "sha256": "66282875368e95818a0206e19d805b15caab8345127e4654a8a425a013fa14e9",
+        "retrievedAt": "2026-10-21T03:57:30.860941+00:00",
+        "updatetime": "2026-03-06 23:59:59.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-18 18:07:06.033",
+      "action": "House Comm - Favorable Recommendation",
+      "body": "House Education Committee",
+      "committee": true,
+      "motion": "House Comm - Favorable Recommendation - PASSED",
+      "classification": "Committee recommendation",
+      "version": null,
+      "sourceTime": "2/18/2026 4:00 PM - 120 Senate Building",
+      "sourceTimeKind": "Meeting notice time",
+      "result": "PASSED",
+      "voice": false,
+      "tally": {
+        "Yes": 8,
+        "No": 3,
+        "Absent": 4
+      },
+      "individuals": [
+        {
+          "name": "Defay, A.",
+          "vote": "Yes",
+          "legislatorId": "DEFAYA"
+        },
+        {
+          "name": "Elison, J.",
+          "vote": "Yes",
+          "legislatorId": "ELISOJ"
+        },
+        {
+          "name": "Hayes, S.",
+          "vote": "Yes",
+          "legislatorId": "HAYESS"
+        },
+        {
+          "name": "Miller, T.",
+          "vote": "Yes",
+          "legislatorId": "MILLET"
+        },
+        {
+          "name": "Peck, N.",
+          "vote": "Yes",
+          "legislatorId": "PECKNI"
+        },
+        {
+          "name": "Thompson, J.",
+          "vote": "Yes",
+          "legislatorId": "THOMJA"
+        },
+        {
+          "name": "Walter, N.",
+          "vote": "Yes",
+          "legislatorId": null
+        },
+        {
+          "name": "Welton, D.",
+          "vote": "Yes",
+          "legislatorId": "WELTOD"
+        },
+        {
+          "name": "Auxier, T.",
+          "vote": "No",
+          "legislatorId": "AUXIET"
+        },
+        {
+          "name": "Lisonbee, K.",
+          "vote": "No",
+          "legislatorId": "LISONK"
+        },
+        {
+          "name": "MacPherson, M.",
+          "vote": "No",
+          "legislatorId": "MACPHM"
+        },
+        {
+          "name": "Moss, C.",
+          "vote": "Absent",
+          "legislatorId": "MOSSCS"
+        },
+        {
+          "name": "Peterson, K.",
+          "vote": "Absent",
+          "legislatorId": "PETERK"
+        },
+        {
+          "name": "Peterson, V.",
+          "vote": "Absent",
+          "legislatorId": "PETERVL"
+        },
+        {
+          "name": "Pierucci, C.",
+          "vote": "Absent",
+          "legislatorId": "PIERUC"
+        }
+      ],
+      "id": "SB0069--40524",
+      "source": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=40524",
+        "path": "data/vote-raw/7ec24951a367727ea5ae5604d0014c9a5403c6add444578f55be89be302460e3.txt",
+        "sha256": "7ec24951a367727ea5ae5604d0014c9a5403c6add444578f55be89be302460e3",
+        "retrievedAt": "2026-10-21T12:59:41.836392+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-25 10:40:26.143",
+      "action": "House/ floor amendment",
+      "body": "House",
+      "committee": false,
+      "motion": "HEDU Passed 8-3-4 · Senate 3rd Reading · Motion to Amend 1",
+      "classification": "Amendment",
+      "version": "SB0069S01",
+      "sourceTime": "2/25/2026 10:40 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "SB0069-H-825",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=825&house=H",
+        "path": "data/vote-raw/b73c12f0f17d69d643802410e1f4fb71fd508b88111d8fb43b6e7d4fa0b57b2a.txt",
+        "sha256": "b73c12f0f17d69d643802410e1f4fb71fd508b88111d8fb43b6e7d4fa0b57b2a",
+        "retrievedAt": "2026-10-21T12:59:42.155130+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-25 10:48:52.517",
+      "action": "House/ passed 3rd reading",
+      "body": "House",
+      "committee": false,
+      "motion": "Amended · Senate 3rd Reading · Final Passage",
+      "classification": "Final passage",
+      "version": "SB0069S01",
+      "sourceTime": "2/25/2026 10:48 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 46,
+        "No": 21,
+        "Absent or not voting": 8
+      },
+      "individuals": [
+        {
+          "name": "Abbott, N.",
+          "vote": "Yes",
+          "legislatorId": "ABBOTN"
+        },
+        {
+          "name": "Acton, C.K.",
+          "vote": "Yes",
+          "legislatorId": "ACTONCK"
+        },
+        {
+          "name": "Arthur, J.",
+          "vote": "Yes",
+          "legislatorId": "ARTHUJ"
+        },
+        {
+          "name": "Ballard, M.G.",
+          "vote": "Yes",
+          "legislatorId": "BALLAMG"
+        },
+        {
+          "name": "Barlow, S.",
+          "vote": "Yes",
+          "legislatorId": "BARLOSE"
+        },
+        {
+          "name": "Clancy, T.",
+          "vote": "Yes",
+          "legislatorId": "CLANCT"
+        },
+        {
+          "name": "Cutler, P.",
+          "vote": "Yes",
+          "legislatorId": "CUTLEP"
+        },
+        {
+          "name": "Dailey-Provost, J.",
+          "vote": "Yes",
+          "legislatorId": "DAILEJ"
+        },
+        {
+          "name": "Defay, A.",
+          "vote": "Yes",
+          "legislatorId": "DEFAYA"
+        },
+        {
+          "name": "Dunnigan, J.",
+          "vote": "Yes",
+          "legislatorId": "DUNNIJA"
+        },
+        {
+          "name": "Elison, J.",
+          "vote": "Yes",
+          "legislatorId": "ELISOJ"
+        },
+        {
+          "name": "Fiefia, D.",
+          "vote": "Yes",
+          "legislatorId": "FIEFID"
+        },
+        {
+          "name": "Fitisemanu, J.",
+          "vote": "Yes",
+          "legislatorId": "FITISJ"
+        },
+        {
+          "name": "Gwynn, M.",
+          "vote": "Yes",
+          "legislatorId": "GWYNNM"
+        },
+        {
+          "name": "Hawkins, J.",
+          "vote": "Yes",
+          "legislatorId": "HAWKIJ"
+        },
+        {
+          "name": "Hayes, S.",
+          "vote": "Yes",
+          "legislatorId": "HAYESS"
+        },
+        {
+          "name": "Hollins, S.",
+          "vote": "Yes",
+          "legislatorId": "HOLLIS"
+        },
+        {
+          "name": "Jack, C.",
+          "vote": "Yes",
+          "legislatorId": "JACKC"
+        },
+        {
+          "name": "Kyle, J.",
+          "vote": "Yes",
+          "legislatorId": "KYLEJB"
+        },
+        {
+          "name": "Loubet, A.",
+          "vote": "Yes",
+          "legislatorId": "LOUBEA"
+        },
+        {
+          "name": "MacPherson, M.",
+          "vote": "Yes",
+          "legislatorId": "MACPHM"
+        },
+        {
+          "name": "Matthews, A.",
+          "vote": "Yes",
+          "legislatorId": "MATTHA"
+        },
+        {
+          "name": "Mauga, V.",
+          "vote": "Yes",
+          "legislatorId": "MAUGAV"
+        },
+        {
+          "name": "Miller, G.",
+          "vote": "Yes",
+          "legislatorId": "MILLGR"
+        },
+        {
+          "name": "Miller, T.",
+          "vote": "Yes",
+          "legislatorId": "MILLET"
+        },
+        {
+          "name": "Monson, L.",
+          "vote": "Yes",
+          "legislatorId": "MONSOL"
+        },
+        {
+          "name": "Moss, C.",
+          "vote": "Yes",
+          "legislatorId": "MOSSCS"
+        },
+        {
+          "name": "Nguyen, H.",
+          "vote": "Yes",
+          "legislatorId": "NGUYEH"
+        },
+        {
+          "name": "Okerlund, C.",
+          "vote": "Yes",
+          "legislatorId": "OKERLC"
+        },
+        {
+          "name": "Owens, D.",
+          "vote": "Yes",
+          "legislatorId": "OWENSDO"
+        },
+        {
+          "name": "Peck, N.",
+          "vote": "Yes",
+          "legislatorId": "PECKNI"
+        },
+        {
+          "name": "Peterson, T.",
+          "vote": "Yes",
+          "legislatorId": "PETERT"
+        },
+        {
+          "name": "Roberts, C.",
+          "vote": "Yes",
+          "legislatorId": "ROBERC"
+        },
+        {
+          "name": "Romero, A.",
+          "vote": "Yes",
+          "legislatorId": "ROMERAY"
+        },
+        {
+          "name": "Schultz, M.",
+          "vote": "Yes",
+          "legislatorId": "SCHULM"
+        },
+        {
+          "name": "Snider, C.",
+          "vote": "Yes",
+          "legislatorId": "SNIDEC"
+        },
+        {
+          "name": "Stoddard, A.",
+          "vote": "Yes",
+          "legislatorId": "STODDA"
+        },
+        {
+          "name": "Strong, M.A.",
+          "vote": "Yes",
+          "legislatorId": "STRONMA"
+        },
+        {
+          "name": "Thompson, J.",
+          "vote": "Yes",
+          "legislatorId": "THOMJA"
+        },
+        {
+          "name": "Thurston, N.",
+          "vote": "Yes",
+          "legislatorId": "THURSNK"
+        },
+        {
+          "name": "Walter, N.",
+          "vote": "Yes",
+          "legislatorId": null
+        },
+        {
+          "name": "Ward, R.",
+          "vote": "Yes",
+          "legislatorId": "WARDR"
+        },
+        {
+          "name": "Watkins, C.",
+          "vote": "Yes",
+          "legislatorId": "WATKICF"
+        },
+        {
+          "name": "Welton, D.",
+          "vote": "Yes",
+          "legislatorId": "WELTOD"
+        },
+        {
+          "name": "Whyte, S.",
+          "vote": "Yes",
+          "legislatorId": "WHYTESL"
+        },
+        {
+          "name": "Wilcox, R.",
+          "vote": "Yes",
+          "legislatorId": "WILCORD"
+        },
+        {
+          "name": "Albrecht, C.",
+          "vote": "No",
+          "legislatorId": "ALBRECR"
+        },
+        {
+          "name": "Auxier, T.",
+          "vote": "No",
+          "legislatorId": "AUXIET"
+        },
+        {
+          "name": "Bolinder, B.",
+          "vote": "No",
+          "legislatorId": "BOLINB"
+        },
+        {
+          "name": "Burton, J.",
+          "vote": "No",
+          "legislatorId": "BURTOJS"
+        },
+        {
+          "name": "Chevrier, K.",
+          "vote": "No",
+          "legislatorId": "CHEVRK"
+        },
+        {
+          "name": "Chew, S.",
+          "vote": "No",
+          "legislatorId": "CHEWSH"
+        },
+        {
+          "name": "Christofferson, K.",
+          "vote": "No",
+          "legislatorId": "CHRISKJ"
+        },
+        {
+          "name": "Eliason, S.",
+          "vote": "No",
+          "legislatorId": "ELIASS"
+        },
+        {
+          "name": "Gricius, S.",
+          "vote": "No",
+          "legislatorId": "GRICIS"
+        },
+        {
+          "name": "Hall, K.",
+          "vote": "No",
+          "legislatorId": "HALLK"
+        },
+        {
+          "name": "Hansen, L.",
+          "vote": "No",
+          "legislatorId": "LHANSEN"
+        },
+        {
+          "name": "Ivory, K.",
+          "vote": "No",
+          "legislatorId": "IVORYK"
+        },
+        {
+          "name": "Koford, J.",
+          "vote": "No",
+          "legislatorId": "KOFORJ"
+        },
+        {
+          "name": "Kohler, M.",
+          "vote": "No",
+          "legislatorId": "KOHLEM"
+        },
+        {
+          "name": "Maloy, A. Cory",
+          "vote": "No",
+          "legislatorId": "MALOYC"
+        },
+        {
+          "name": "Petersen, M.",
+          "vote": "No",
+          "legislatorId": "PETERM"
+        },
+        {
+          "name": "Peterson, K.",
+          "vote": "No",
+          "legislatorId": "PETERK"
+        },
+        {
+          "name": "Pierucci, C.",
+          "vote": "No",
+          "legislatorId": "PIERUC"
+        },
+        {
+          "name": "Sawyer, J.",
+          "vote": "No",
+          "legislatorId": "SAWYEJ"
+        },
+        {
+          "name": "Shelley, T.",
+          "vote": "No",
+          "legislatorId": "SHELLT"
+        },
+        {
+          "name": "Shipp, R.P.",
+          "vote": "No",
+          "legislatorId": "SHIPPRP"
+        },
+        {
+          "name": "Brooks, W.",
+          "vote": "Absent or not voting",
+          "legislatorId": "BROOKW"
+        },
+        {
+          "name": "Dominguez, R.",
+          "vote": "Absent or not voting",
+          "legislatorId": "DOMINR"
+        },
+        {
+          "name": "Lee, T.",
+          "vote": "Absent or not voting",
+          "legislatorId": "LEETA"
+        },
+        {
+          "name": "Lisonbee, K.",
+          "vote": "Absent or not voting",
+          "legislatorId": "LISONK"
+        },
+        {
+          "name": "Peterson, V.",
+          "vote": "Absent or not voting",
+          "legislatorId": "PETERVL"
+        },
+        {
+          "name": "Shallenberger, D.",
+          "vote": "Absent or not voting",
+          "legislatorId": "SHALLD"
+        },
+        {
+          "name": "Shepherd, L.",
+          "vote": "Absent or not voting",
+          "legislatorId": "SHEPHL"
+        },
+        {
+          "name": "Teuscher, J.",
+          "vote": "Absent or not voting",
+          "legislatorId": "TEUSCJ"
+        }
+      ],
+      "id": "SB0069-H-826",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=826&house=H",
+        "path": "data/vote-raw/313b33a081cf9a284fe656f8fbaa94c3604b8a048c556cbd34176fcf2d2296b9.txt",
+        "sha256": "313b33a081cf9a284fe656f8fbaa94c3604b8a048c556cbd34176fcf2d2296b9",
+        "retrievedAt": "2026-10-21T12:59:42.503416+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "SB0069",
+      "session": "2026GS",
+      "actionDate": "2026-02-26 11:27:48.720",
+      "action": "Senate/ concurs with House amendment",
+      "body": "Senate",
+      "committee": false,
+      "motion": "SEDU Substituted 6-1-0 · Concurrence · Final Passage · Ayes 19 Nays 0 Abs 10",
+      "classification": "Concurrence",
+      "version": "SB0069S01",
+      "sourceTime": "2/26/2026 11:27 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 19,
+        "No": 0,
+        "Absent or not voting": 10
+      },
+      "individuals": [
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Blouin, N.",
+          "vote": "Yes",
+          "legislatorId": "BLOUIN"
+        },
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Buss, E.",
+          "vote": "Yes",
+          "legislatorId": "BUSSEM"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Yes",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Yes",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "Grover, K.",
+          "vote": "Yes",
+          "legislatorId": "GROVEK"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Yes",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Yes",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "Kwan, K.",
+          "vote": "Yes",
+          "legislatorId": "KWANK"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Yes",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "Musselman, C.R.",
+          "vote": "Yes",
+          "legislatorId": "MUSSECR"
+        },
+        {
+          "name": "Pitcher, S.",
+          "vote": "Yes",
+          "legislatorId": "PITCHS"
+        },
+        {
+          "name": "Plumb, J.",
+          "vote": "Yes",
+          "legislatorId": "PLUMBJ"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Weiler, T.",
+          "vote": "Yes",
+          "legislatorId": "WEILET"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Winterton, R.",
+          "vote": "Yes",
+          "legislatorId": "WINTER"
+        },
+        {
+          "name": "Adams, J. Stuart",
+          "vote": "Absent or not voting",
+          "legislatorId": "ADAMSJS"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Absent or not voting",
+          "legislatorId": "CULLIKA"
+        },
+        {
+          "name": "Ipson, D.",
+          "vote": "Absent or not voting",
+          "legislatorId": "IPSONDL"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MCKELMK"
+        },
+        {
+          "name": "Millner, A.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MILLNA"
+        },
+        {
+          "name": "Owens, D.R.",
+          "vote": "Absent or not voting",
+          "legislatorId": "OWENSD"
+        },
+        {
+          "name": "Sandall, S.",
+          "vote": "Absent or not voting",
+          "legislatorId": "SANDASD"
+        },
+        {
+          "name": "Stevenson, J.",
+          "vote": "Absent or not voting",
+          "legislatorId": "STEVEJW"
+        },
+        {
+          "name": "Stratton, K.",
+          "vote": "Absent or not voting",
+          "legislatorId": "STRATKJ"
+        },
+        {
+          "name": "Vickers, E.",
+          "vote": "Absent or not voting",
+          "legislatorId": "VICKEEJ"
+        }
+      ],
+      "id": "SB0069-S-1236",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=1236&house=S",
+        "path": "data/vote-raw/bbbcfa9130605a50b58a8dd42e61320e8f853c10f2548f8d07dbf6cbfee10d35.txt",
+        "sha256": "bbbcfa9130605a50b58a8dd42e61320e8f853c10f2548f8d07dbf6cbfee10d35",
+        "retrievedAt": "2026-10-21T12:59:42.825420+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0069.json",
+        "path": "data/catalog-raw/b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff.json",
+        "sha256": "b69466aaa4fc8f4ec9c69e0b44f95e54eda8abc727df0f50d51503847b2b29ff",
+        "retrievedAt": "2026-10-21T04:00:22.505855+00:00",
+        "updatetime": "2026-03-18 09:41:00.0"
+      }
+    },
+    {
+      "bill": "HB0002",
+      "session": "2026GS",
+      "actionDate": "2026-03-03 10:01:48.783",
+      "action": "House/ passed 3rd reading",
+      "body": "House",
+      "committee": false,
+      "motion": "3rd Reading · Final Passage",
+      "classification": "Final passage",
+      "version": null,
+      "sourceTime": "3/3/2026 10:01 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 68,
+        "No": 6,
+        "Absent or not voting": 1
+      },
+      "individuals": [
+        {
+          "name": "Acton, C.K.",
+          "vote": "Yes",
+          "legislatorId": "ACTONCK"
+        },
+        {
+          "name": "Albrecht, C.",
+          "vote": "Yes",
+          "legislatorId": "ALBRECR"
+        },
+        {
+          "name": "Arthur, J.",
+          "vote": "Yes",
+          "legislatorId": "ARTHUJ"
+        },
+        {
+          "name": "Auxier, T.",
+          "vote": "Yes",
+          "legislatorId": "AUXIET"
+        },
+        {
+          "name": "Ballard, M.G.",
+          "vote": "Yes",
+          "legislatorId": "BALLAMG"
+        },
+        {
+          "name": "Barlow, S.",
+          "vote": "Yes",
+          "legislatorId": "BARLOSE"
+        },
+        {
+          "name": "Bolinder, B.",
+          "vote": "Yes",
+          "legislatorId": "BOLINB"
+        },
+        {
+          "name": "Brooks, W.",
+          "vote": "Yes",
+          "legislatorId": "BROOKW"
+        },
+        {
+          "name": "Burton, J.",
+          "vote": "Yes",
+          "legislatorId": "BURTOJS"
+        },
+        {
+          "name": "Chew, S.",
+          "vote": "Yes",
+          "legislatorId": "CHEWSH"
+        },
+        {
+          "name": "Christofferson, K.",
+          "vote": "Yes",
+          "legislatorId": "CHRISKJ"
+        },
+        {
+          "name": "Clancy, T.",
+          "vote": "Yes",
+          "legislatorId": "CLANCT"
+        },
+        {
+          "name": "Cutler, P.",
+          "vote": "Yes",
+          "legislatorId": "CUTLEP"
+        },
+        {
+          "name": "Dailey-Provost, J.",
+          "vote": "Yes",
+          "legislatorId": "DAILEJ"
+        },
+        {
+          "name": "Defay, A.",
+          "vote": "Yes",
+          "legislatorId": "DEFAYA"
+        },
+        {
+          "name": "Dominguez, R.",
+          "vote": "Yes",
+          "legislatorId": "DOMINR"
+        },
+        {
+          "name": "Dunnigan, J.",
+          "vote": "Yes",
+          "legislatorId": "DUNNIJA"
+        },
+        {
+          "name": "Eliason, S.",
+          "vote": "Yes",
+          "legislatorId": "ELIASS"
+        },
+        {
+          "name": "Elison, J.",
+          "vote": "Yes",
+          "legislatorId": "ELISOJ"
+        },
+        {
+          "name": "Fiefia, D.",
+          "vote": "Yes",
+          "legislatorId": "FIEFID"
+        },
+        {
+          "name": "Fitisemanu, J.",
+          "vote": "Yes",
+          "legislatorId": "FITISJ"
+        },
+        {
+          "name": "Gricius, S.",
+          "vote": "Yes",
+          "legislatorId": "GRICIS"
+        },
+        {
+          "name": "Gwynn, M.",
+          "vote": "Yes",
+          "legislatorId": "GWYNNM"
+        },
+        {
+          "name": "Hall, K.",
+          "vote": "Yes",
+          "legislatorId": "HALLK"
+        },
+        {
+          "name": "Hawkins, J.",
+          "vote": "Yes",
+          "legislatorId": "HAWKIJ"
+        },
+        {
+          "name": "Hayes, S.",
+          "vote": "Yes",
+          "legislatorId": "HAYESS"
+        },
+        {
+          "name": "Hollins, S.",
+          "vote": "Yes",
+          "legislatorId": "HOLLIS"
+        },
+        {
+          "name": "Ivory, K.",
+          "vote": "Yes",
+          "legislatorId": "IVORYK"
+        },
+        {
+          "name": "Jack, C.",
+          "vote": "Yes",
+          "legislatorId": "JACKC"
+        },
+        {
+          "name": "Koford, J.",
+          "vote": "Yes",
+          "legislatorId": "KOFORJ"
+        },
+        {
+          "name": "Kohler, M.",
+          "vote": "Yes",
+          "legislatorId": "KOHLEM"
+        },
+        {
+          "name": "Kyle, J.",
+          "vote": "Yes",
+          "legislatorId": "KYLEJB"
+        },
+        {
+          "name": "Loubet, A.",
+          "vote": "Yes",
+          "legislatorId": "LOUBEA"
+        },
+        {
+          "name": "MacPherson, M.",
+          "vote": "Yes",
+          "legislatorId": "MACPHM"
+        },
+        {
+          "name": "Maloy, A. Cory",
+          "vote": "Yes",
+          "legislatorId": "MALOYC"
+        },
+        {
+          "name": "Matthews, A.",
+          "vote": "Yes",
+          "legislatorId": "MATTHA"
+        },
+        {
+          "name": "Mauga, V.",
+          "vote": "Yes",
+          "legislatorId": "MAUGAV"
+        },
+        {
+          "name": "Miller, G.",
+          "vote": "Yes",
+          "legislatorId": "MILLGR"
+        },
+        {
+          "name": "Miller, T.",
+          "vote": "Yes",
+          "legislatorId": "MILLET"
+        },
+        {
+          "name": "Monson, L.",
+          "vote": "Yes",
+          "legislatorId": "MONSOL"
+        },
+        {
+          "name": "Moss, C.",
+          "vote": "Yes",
+          "legislatorId": "MOSSCS"
+        },
+        {
+          "name": "Nguyen, H.",
+          "vote": "Yes",
+          "legislatorId": "NGUYEH"
+        },
+        {
+          "name": "Okerlund, C.",
+          "vote": "Yes",
+          "legislatorId": "OKERLC"
+        },
+        {
+          "name": "Owens, D.",
+          "vote": "Yes",
+          "legislatorId": "OWENSDO"
+        },
+        {
+          "name": "Peterson, K.",
+          "vote": "Yes",
+          "legislatorId": "PETERK"
+        },
+        {
+          "name": "Peterson, T.",
+          "vote": "Yes",
+          "legislatorId": "PETERT"
+        },
+        {
+          "name": "Peterson, V.",
+          "vote": "Yes",
+          "legislatorId": "PETERVL"
+        },
+        {
+          "name": "Pierucci, C.",
+          "vote": "Yes",
+          "legislatorId": "PIERUC"
+        },
+        {
+          "name": "Roberts, C.",
+          "vote": "Yes",
+          "legislatorId": "ROBERC"
+        },
+        {
+          "name": "Romero, A.",
+          "vote": "Yes",
+          "legislatorId": "ROMERAY"
+        },
+        {
+          "name": "Sawyer, J.",
+          "vote": "Yes",
+          "legislatorId": "SAWYEJ"
+        },
+        {
+          "name": "Schultz, M.",
+          "vote": "Yes",
+          "legislatorId": "SCHULM"
+        },
+        {
+          "name": "Shallenberger, D.",
+          "vote": "Yes",
+          "legislatorId": "SHALLD"
+        },
+        {
+          "name": "Shelley, T.",
+          "vote": "Yes",
+          "legislatorId": "SHELLT"
+        },
+        {
+          "name": "Shepherd, L.",
+          "vote": "Yes",
+          "legislatorId": "SHEPHL"
+        },
+        {
+          "name": "Shipp, R.P.",
+          "vote": "Yes",
+          "legislatorId": "SHIPPRP"
+        },
+        {
+          "name": "Snider, C.",
+          "vote": "Yes",
+          "legislatorId": "SNIDEC"
+        },
+        {
+          "name": "Stoddard, A.",
+          "vote": "Yes",
+          "legislatorId": "STODDA"
+        },
+        {
+          "name": "Strong, M.A.",
+          "vote": "Yes",
+          "legislatorId": "STRONMA"
+        },
+        {
+          "name": "Teuscher, J.",
+          "vote": "Yes",
+          "legislatorId": "TEUSCJ"
+        },
+        {
+          "name": "Thompson, J.",
+          "vote": "Yes",
+          "legislatorId": "THOMJA"
+        },
+        {
+          "name": "Thurston, N.",
+          "vote": "Yes",
+          "legislatorId": "THURSNK"
+        },
+        {
+          "name": "Walter, N.",
+          "vote": "Yes",
+          "legislatorId": null
+        },
+        {
+          "name": "Ward, R.",
+          "vote": "Yes",
+          "legislatorId": "WARDR"
+        },
+        {
+          "name": "Watkins, C.",
+          "vote": "Yes",
+          "legislatorId": "WATKICF"
+        },
+        {
+          "name": "Welton, D.",
+          "vote": "Yes",
+          "legislatorId": "WELTOD"
+        },
+        {
+          "name": "Whyte, S.",
+          "vote": "Yes",
+          "legislatorId": "WHYTESL"
+        },
+        {
+          "name": "Wilcox, R.",
+          "vote": "Yes",
+          "legislatorId": "WILCORD"
+        },
+        {
+          "name": "Abbott, N.",
+          "vote": "No",
+          "legislatorId": "ABBOTN"
+        },
+        {
+          "name": "Chevrier, K.",
+          "vote": "No",
+          "legislatorId": "CHEVRK"
+        },
+        {
+          "name": "Hansen, L.",
+          "vote": "No",
+          "legislatorId": "LHANSEN"
+        },
+        {
+          "name": "Lee, T.",
+          "vote": "No",
+          "legislatorId": "LEETA"
+        },
+        {
+          "name": "Peck, N.",
+          "vote": "No",
+          "legislatorId": "PECKNI"
+        },
+        {
+          "name": "Petersen, M.",
+          "vote": "No",
+          "legislatorId": "PETERM"
+        },
+        {
+          "name": "Lisonbee, K.",
+          "vote": "Absent or not voting",
+          "legislatorId": "LISONK"
+        }
+      ],
+      "id": "HB0002-H-1088",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=1088&house=H",
+        "path": "data/vote-raw/a8170d39bf755dd6aaa1c2584bb3ba157087c53d32751334836977b5e28d06b4.txt",
+        "sha256": "a8170d39bf755dd6aaa1c2584bb3ba157087c53d32751334836977b5e28d06b4",
+        "retrievedAt": "2026-10-21T12:59:35.682176+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0002.json",
+        "path": "data/catalog-raw/20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7.json",
+        "sha256": "20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7",
+        "retrievedAt": "2026-10-21T03:56:56.384781+00:00",
+        "updatetime": "2026-03-26 13:01:19.573"
+      }
+    },
+    {
+      "bill": "HB0002",
+      "session": "2026GS",
+      "actionDate": "2026-03-03 19:02:55.870",
+      "action": "Senate/ circled",
+      "body": "Senate",
+      "committee": false,
+      "motion": "2nd Reading · Motion to Circle",
+      "classification": "Procedural",
+      "version": null,
+      "sourceTime": "3/3/2026 7:02 PM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "HB0002-S-1593",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=1593&house=S",
+        "path": "data/vote-raw/16c30517231dbab04a57b76482132cbb02335ec7398a1d3e75b3c8e3420af97a.txt",
+        "sha256": "16c30517231dbab04a57b76482132cbb02335ec7398a1d3e75b3c8e3420af97a",
+        "retrievedAt": "2026-10-21T12:59:36.034174+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0002.json",
+        "path": "data/catalog-raw/20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7.json",
+        "sha256": "20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7",
+        "retrievedAt": "2026-10-21T03:56:56.384781+00:00",
+        "updatetime": "2026-03-26 13:01:19.573"
+      }
+    },
+    {
+      "bill": "HB0002",
+      "session": "2026GS",
+      "actionDate": "2026-03-04 09:58:54.007",
+      "action": "Senate/ uncircled",
+      "body": "Senate",
+      "committee": false,
+      "motion": "2nd Reading · Motion to Uncircle · Circled",
+      "classification": "Procedural",
+      "version": null,
+      "sourceTime": "3/4/2026 9:58 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": true,
+      "tally": {},
+      "individuals": [],
+      "id": "HB0002-S-1641",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=1641&house=S",
+        "path": "data/vote-raw/489dbc092fed442df6dcdd0161c06113747084e5f1f7417c70bf11e4ff85ff74.txt",
+        "sha256": "489dbc092fed442df6dcdd0161c06113747084e5f1f7417c70bf11e4ff85ff74",
+        "retrievedAt": "2026-10-21T12:59:36.346980+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0002.json",
+        "path": "data/catalog-raw/20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7.json",
+        "sha256": "20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7",
+        "retrievedAt": "2026-10-21T03:56:56.384781+00:00",
+        "updatetime": "2026-03-26 13:01:19.573"
+      }
+    },
+    {
+      "bill": "HB0002",
+      "session": "2026GS",
+      "actionDate": "2026-03-04 10:03:04.113",
+      "action": "Senate/ passed 2nd & 3rd readings/ suspension",
+      "body": "Senate",
+      "committee": false,
+      "motion": "2nd Reading · Passage on 2nd & 3rd Under suspension of the rules · Ayes 25 Nays 0 Abs 4",
+      "classification": "Passage on second and third readings",
+      "version": null,
+      "sourceTime": "3/4/2026 10:03 AM",
+      "sourceTimeKind": "Vote record time",
+      "result": "Passed",
+      "voice": false,
+      "tally": {
+        "Yes": 25,
+        "No": 0,
+        "Absent or not voting": 4
+      },
+      "individuals": [
+        {
+          "name": "Adams, J. Stuart",
+          "vote": "Yes",
+          "legislatorId": "ADAMSJS"
+        },
+        {
+          "name": "Balderree, H.",
+          "vote": "Yes",
+          "legislatorId": "BALDEH"
+        },
+        {
+          "name": "Blouin, N.",
+          "vote": "Yes",
+          "legislatorId": "BLOUIN"
+        },
+        {
+          "name": "Brammer, B.",
+          "vote": "Yes",
+          "legislatorId": "BRAMMB"
+        },
+        {
+          "name": "Buss, E.",
+          "vote": "Yes",
+          "legislatorId": "BUSSEM"
+        },
+        {
+          "name": "Cullimore, K. A.",
+          "vote": "Yes",
+          "legislatorId": "CULLIKA"
+        },
+        {
+          "name": "Grover, K.",
+          "vote": "Yes",
+          "legislatorId": "GROVEK"
+        },
+        {
+          "name": "Harper, W.",
+          "vote": "Yes",
+          "legislatorId": "HARPEWA"
+        },
+        {
+          "name": "Hinkins, D.",
+          "vote": "Yes",
+          "legislatorId": "HINKIDP"
+        },
+        {
+          "name": "Ipson, D.",
+          "vote": "Yes",
+          "legislatorId": "IPSONDL"
+        },
+        {
+          "name": "Johnson, J.",
+          "vote": "Yes",
+          "legislatorId": "JOHNSJD"
+        },
+        {
+          "name": "Kwan, K.",
+          "vote": "Yes",
+          "legislatorId": "KWANK"
+        },
+        {
+          "name": "Millner, A.",
+          "vote": "Yes",
+          "legislatorId": "MILLNA"
+        },
+        {
+          "name": "Musselman, C.R.",
+          "vote": "Yes",
+          "legislatorId": "MUSSECR"
+        },
+        {
+          "name": "Owens, D.R.",
+          "vote": "Yes",
+          "legislatorId": "OWENSD"
+        },
+        {
+          "name": "Pitcher, S.",
+          "vote": "Yes",
+          "legislatorId": "PITCHS"
+        },
+        {
+          "name": "Plumb, J.",
+          "vote": "Yes",
+          "legislatorId": "PLUMBJ"
+        },
+        {
+          "name": "Riebe, K.",
+          "vote": "Yes",
+          "legislatorId": "RIEBEK"
+        },
+        {
+          "name": "Sandall, S.",
+          "vote": "Yes",
+          "legislatorId": "SANDASD"
+        },
+        {
+          "name": "Stevenson, J.",
+          "vote": "Yes",
+          "legislatorId": "STEVEJW"
+        },
+        {
+          "name": "Stratton, K.",
+          "vote": "Yes",
+          "legislatorId": "STRATKJ"
+        },
+        {
+          "name": "Vickers, E.",
+          "vote": "Yes",
+          "legislatorId": "VICKEEJ"
+        },
+        {
+          "name": "Weiler, T.",
+          "vote": "Yes",
+          "legislatorId": "WEILET"
+        },
+        {
+          "name": "Wilson, C.",
+          "vote": "Yes",
+          "legislatorId": "WILSOCH"
+        },
+        {
+          "name": "Winterton, R.",
+          "vote": "Yes",
+          "legislatorId": "WINTER"
+        },
+        {
+          "name": "Escamilla, L.",
+          "vote": "Absent or not voting",
+          "legislatorId": "ESCAML"
+        },
+        {
+          "name": "Fillmore, L.",
+          "vote": "Absent or not voting",
+          "legislatorId": "FILLML"
+        },
+        {
+          "name": "McCay, D.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MCCAYD"
+        },
+        {
+          "name": "McKell, M.",
+          "vote": "Absent or not voting",
+          "legislatorId": "MCKELMK"
+        }
+      ],
+      "id": "HB0002-S-1642",
+      "source": {
+        "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=1642&house=S",
+        "path": "data/vote-raw/835350891399ab0c3a9ce0cc633ca816b5ad881aee05096fabfcb69dfde7e0d6.txt",
+        "sha256": "835350891399ab0c3a9ce0cc633ca816b5ad881aee05096fabfcb69dfde7e0d6",
+        "retrievedAt": "2026-10-21T12:59:36.757947+00:00"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0002.json",
+        "path": "data/catalog-raw/20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7.json",
+        "sha256": "20f9a6b7695d673a990a3b9bd8a1e7993e675aade1c3027b2a31e241fc1d2bd7",
+        "retrievedAt": "2026-10-21T03:56:56.384781+00:00",
+        "updatetime": "2026-03-26 13:01:19.573"
+      }
+    }
+  ]
+}

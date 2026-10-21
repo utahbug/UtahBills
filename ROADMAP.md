@@ -2,7 +2,7 @@
 
 Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
-## Implemented — through Batch 2C
+## Implemented — through Batch 2D
 
 - Four real 2026 bills, saved official records and provenance checks.
 - Search/filters, bill details, stages, aggregate votes, version comparisons and transparency timeline.
@@ -17,12 +17,15 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
 - **Batch 2C implemented:** guarded daily 2027 metadata/request refresh, exact tracking-ID reconciliation, preserved request/measure revisions, independent refresh reports and retained 2026 history.
-- **Next bounded batch:** verify and connect the official 2027 session roster when published, and review early-session source completeness. Broader XML analysis and voting histories remain separate later work.
+- **Next bounded batch (2E):** verify and connect the official 2027 session roster when published, and review early-session source completeness. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
 - **Implemented:** separately labeled public requests and introduced measures; counts derive from each verified snapshot. The initial Batch 2C snapshot has 253 pending requests and an empty introduced index; neither count is fixed in the application.
 - **Batch 2C implemented:** compact status/Info disclosure and corrected shared request template, human-readable official listing, optional source/history details.
 - Substitutes, late changes and boxcar-bill histories using verifiable version/publication evidence.
-- Complete recorded voting histories and individual votes, distinguishing procedural and final-passage questions.
+- **Batch 2D implemented:** 22 source-verified decisions / 524 individual entries for HB0002, HB0011, HB0154 and SB0069; HB0155 has no imported roll call. Bill vote sections and explicitly partial legislator histories distinguish voice, procedural, amendment, committee recommendation, passage and concurrence records.
+- **Planned:** complete recorded voting histories, stronger official voter identifiers and broader committee-motion coverage.
 - Historical statutory comparisons and related legislation; independently verify baseline and effective dates.
+
+- **Batch 2D implemented:** initial 2027 request/introduced default based on verified records; preserved session choices; inline search Info, separate search clear and filter clear; structurally separated detail back links.
 
 ## Stage 2 — Legislator directory · Partly implemented
 
@@ -34,7 +37,7 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 ## Stage 3 — Calendar and activity · Partly implemented
 
-- **Batch 2B implemented:** compact two-row controls, Legend left / All Month right, duplicate month heading removed.
+- **Batch 2D implemented:** calendar heading Info with complete legend/freshness guidance, visible stale warning, compact agenda-level Show all month / return-to-date control.
 - **Implemented:** combined month grid and chronological agenda of official meetings, times, rooms and available agendas.
 - **Implemented:** 2027 session milestones/deadlines. Floor, special-session and caucus entries appear only when supplied by official records.
 - **Planned:** extend coverage after May 2027, richer agenda/draft/PDF extraction, per-bill next actions, and cross-check other official special-session/caucus notices.

@@ -279,3 +279,16 @@ Run `python tests/catalog_data.py`, `python tests/catalog_updates.py`, the calen
 integrity tests, build, and `npm test`. Exceptional update/reconciliation fixtures exist
 only in temporary test files/intercepted browser responses, never in published data.
 Physical iPhone and manual VoiceOver checks remain pending human review.
+
+
+## Batch 2D — verified vote sample
+
+`data/votes.json` contains 22 official decisions and 524 individual entries across HB0002, HB0011, HB0154 and SB0069 (2026GS). HB0155 is also checked and has no vote references in its preserved action history. This is a bounded sample, not a legislator’s complete history. The daily calendar and 2027 metadata refresh remain unchanged; votes are a saved, explicitly acquired historical sample, not a live or scheduled roll-call feed.
+
+Run `python scripts/acquire_votes.py` to reproduce the sample from preserved source responses (new URLs are fetched with a 250 ms delay). Original HTML bytes (served as plain `.txt` source archives), URL, retrieval timestamp and SHA-256 are retained in `data/vote-raw/`; the exact original bill-action source is referenced per vote. The importer only publishes its projection after all records validate. Build runs `tests/vote_data.py` to reproduce every record and check source hashes, tallies and identities. No AI summaries are generated.
+
+Floor sources are the official bill page’s `/DynaBill/svotes.jsp` links; committee sources are `/mtgvotes.jsp`. Floor source display times and committee meeting-notice times are preserved separately from action-history timestamps, without an invented time zone. Motion/stage text comes directly from the records; classifications use explicit wording. Concurrence stays distinct even when the display also says Final Passage. Second-reading passage is not labeled final passage. Voice-vote placeholder totals are not treated as individual votes or actual tallies.
+
+Voter links require a unique historical 2026 chamber, surname and given-name-initial match, also checking district when the source supplies it. Never match surname alone or use a current district successor. `Walter, N.` remains unlinked because the source abbreviation cannot be confidently matched to the preserved roster. All recorded names remain visible. Version identifiers are shown only when explicitly supplied; these do not establish the complete amendment state. Missing records are described as unavailable, not as proof no vote occurred.
+
+Batch 2D tests cover real source reproducibility and separated synthetic failure/ambiguity fixtures, vote distinctions, profile links, session defaults/restoration, compact Info/search/calendar controls, header geometry, 320/375/390/430 widths, doubled text, 200% CSS zoom and axe. Physical iPhone/iPad and manual screen-reader checks remain pending; automated checks do not certify WCAG conformance. Next bounded work: verify 2027 membership when official, review early-session completeness, and expand validated vote coverage.
