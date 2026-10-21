@@ -15,6 +15,8 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 - **Interface refinement:** collapsed contextual vote guidance, expanded readable source details with secondary new-tab technical links, formatted-reader entry point and official PDF links, fixed search Info alignment, compact heading and consolidated request counts. Formatted in-app text remains limited to the nine verified example versions; basic measures link to official readable documents.
 
+- **Request-status correction implemented:** complete tracking-ID joins to the official all-subject listing, daily status-only change detection, preserved status history and separate document-availability wording.
+
 ## Stage 1 — Legislative data and transparency · Partly implemented
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.

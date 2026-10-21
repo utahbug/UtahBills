@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "checkedAt": "2026-10-21T04:56:44.819452+00:00",
+  "checkedAt": "2026-10-21T14:35:35.801713+00:00",
   "sources": {
     "index2026": {
       "url": "https://le.utah.gov/data/2026GS/billlist.json",
@@ -12,13 +12,13 @@
       "url": "https://le.utah.gov/data/2027GS/billlist.json",
       "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
       "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "retrievedAt": "2026-10-21T04:56:44.454341+00:00"
+      "retrievedAt": "2026-10-21T14:35:35.088834+00:00"
     },
     "requests2027": {
       "url": "https://le.utah.gov/data/2027GS/filelist.json",
       "path": "data/catalog-raw/63c46cff580cc82252a26cea3319cdefa28980419f94ecb00ed3099b47c36800.json",
       "sha256": "63c46cff580cc82252a26cea3319cdefa28980419f94ecb00ed3099b47c36800",
-      "retrievedAt": "2026-10-21T04:56:44.818490+00:00"
+      "retrievedAt": "2026-10-21T14:35:35.363914+00:00"
     },
     "roster2026": {
       "url": "https://le.utah.gov/asp/roster/roster.asp?year=2026",
@@ -43,6 +43,12 @@
       "path": "data/catalog-raw/e5c484351c562721052d57cbb4435e24882fbfdba3f3aaf359598bb0c3fca081.txt",
       "sha256": "e5c484351c562721052d57cbb4435e24882fbfdba3f3aaf359598bb0c3fca081",
       "retrievedAt": "2026-10-21T04:04:43.580316+00:00"
+    },
+    "requestStatuses2027": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "path": "data/catalog-raw/a5ddc1a9238a0e36b04dbdb2b578cb351eeb93c288d1789d90e847e908f0e900.txt",
+      "sha256": "a5ddc1a9238a0e36b04dbdb2b578cb351eeb93c288d1789d90e847e908f0e900",
+      "retrievedAt": "2026-10-21T14:35:35.720304+00:00"
     }
   },
   "records": {
@@ -7167,5 +7173,13 @@
       "retrievedAt": "2026-10-21T04:04:42.121104+00:00"
     }
   ],
-  "measureHistory": {}
+  "measureHistory": {},
+  "requestStatusHistory": [
+    {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "path": "data/catalog-raw/a5ddc1a9238a0e36b04dbdb2b578cb351eeb93c288d1789d90e847e908f0e900.txt",
+      "sha256": "a5ddc1a9238a0e36b04dbdb2b578cb351eeb93c288d1789d90e847e908f0e900",
+      "retrievedAt": "2026-10-21T14:35:35.720304+00:00"
+    }
+  ]
 }

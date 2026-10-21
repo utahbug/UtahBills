@@ -67,5 +67,14 @@ class CatalogTests(unittest.TestCase):
     entry=fresh['records']['2027/'+item['number']];entry['retrievedAt']=refresh.now();entry['lastActionTime']=item.get('lastActionTime')
    target.write_text(json.dumps(fresh),encoding='utf-8')
    with patch.object(refresh,'TARGET',target),patch.object(refresh,'CACHE',pathlib.Path(d)/'cache.json'),patch.object(refresh,'get',side_effect=lambda u:byurl[u]) as getter:
-    refresh.refresh();self.assertEqual(getter.call_count,2)
+    refresh.refresh();self.assertEqual(getter.call_count,3)
+ def test_official_request_status_coverage_and_example(self):
+  from request_status import validate_statuses,parse_statuses
+  source=self.manifest['sources']['requestStatuses2027'];rows=validate_statuses(model.read(source),json.loads(model.read(self.manifest['sources']['requests2027'])))
+  for request in self.data['requests2027']:
+   self.assertEqual(request['officialStatus'],rows[request['trackingID']]['officialStatus']);self.assertEqual(request['statusCheckedAt'],source['retrievedAt'])
+  # Preserved initial official fixture: 253 identities, including six abandoned requests.
+  initial=parse_statuses(model.read(self.manifest['requestStatusHistory'][0]))
+  self.assertEqual(initial['DXYQRODBBU']['officialStatus'],'Bill Abandoned per Sponsor')
+  self.assertEqual(sum(r['officialStatus']=='Bill Abandoned per Sponsor' for r in initial.values()),6)
 if __name__=='__main__':unittest.main()

@@ -264,7 +264,7 @@ snapshots older than 36 hours. A successful scheduled run with an empty index st
 means only that the endpoint returned no introduced measures.
 
 Official human-readable request listing:
-https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sen=all&rep=&sub=&comm=
+https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all
 The parameters are the site's own session/display/chamber controls; no individual
 request deep links are invented. Raw JSON and tracking/history are in optional Source
 details. Data notices use native Info disclosures and dynamic counts/retrieval dates.
@@ -296,3 +296,11 @@ Batch 2D tests cover real source reproducibility and separated synthetic failure
 
 ### Document-reading refinement
 The existing nine verified formatted example versions retain their source-character/change-marking regression checks. Basic measure versions prioritize official readable PDF/document links, with raw XML under Technical source. The XML-to-PDF mapping is the same mapping used by the Legislature’s `rexBill.js` for introduced, substitute, amended and enrolled documents; sample endpoints were checked during this refinement. Official XML responses do not enable cross-origin browser reads, so no unsupported live browser conversion or broad new text acquisition was introduced. Raw-source links open in a new tab with an accessible notice. Retrieval dates remain explicitly distinct from publication dates.
+
+
+### Official 2027 request statuses
+The JSON `filelist.json` supplies IDs/titles/sponsors but no procedural status. The guarded daily catalog refresh now also retrieves the official all-subject `billSearch.jsp?sess=2027GS&disp=all&sub=all` listing on every run, even when the JSON feed and introduced index are unchanged. Chamber-filtered listings omit unsponsored requests, so they are not the status-coverage source. No per-request HTTP calls are needed: an unchanged run uses three catalog requests.
+
+Join only by the source’s `data-trackingid`, cross-check normalized titles, require the recognized six-column schema and a nonempty status for every current public request. Identical duplicates across subjects are deduplicated; conflicting duplicate statuses, incomplete results, missing identifiers, title disagreement and failed retrievals reject the candidate manifest atomically. The previous published snapshot and its dates remain intact. Original HTML is preserved byte-for-byte as a plain-text archive with URL, retrieval time and SHA-256; `requestStatusHistory` and per-request `statusHistory` retain observed status changes separately from title/sponsor history. Observation dates are not official status-change/publication dates.
+
+The initial complete check on October 21, 2026 found 253 public requests: 247 “In Process” and six “Bill Abandoned per Sponsor,” including DXYQRODBBU (Fillmore). These are snapshot counts, never constants in the UI. Abandoned requests remain discoverable and count as public unintroduced requests; they are never described as currently drafting. Document availability is a separate field: absence of a linked introduced document in our snapshot is not proof no document exists elsewhere. Status-only changes, missing/corrupt listing recovery, all-request rendering and mobile accessibility have regression coverage. The existing daily schedule and independent calendar refresh are unchanged.

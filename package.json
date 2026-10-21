@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "start": "node scripts/serve.mjs",
-    "test": "node tests/qa.mjs && node tests/text-resize.mjs && node tests/batch1.mjs && node tests/batch2.mjs && node tests/batch2b.mjs && node tests/batch2c.mjs && node tests/batch2d.mjs && node tests/refinement.mjs",
+    "test": "node tests/qa.mjs && node tests/text-resize.mjs && node tests/batch1.mjs && node tests/batch2.mjs && node tests/batch2b.mjs && node tests/batch2c.mjs && node tests/batch2d.mjs && node tests/refinement.mjs && node tests/request_status.mjs",
     "refresh": "python scripts/acquire.py",
     "refresh:catalog": "python scripts/refresh_catalog.py"
   },

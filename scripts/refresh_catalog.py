@@ -5,6 +5,7 @@ RAW=ROOT/'data/catalog-raw'; TARGET=ROOT/'data/catalog.json'; CACHE=ROOT/'test-r
 REPORT=ROOT/'test-results/catalog-refresh.json'
 # Conservative daily growth guard. Change only after reviewing official evidence.
 MAX_NEW_RECORDS=250
+from request_status import STATUS_URL,validate_statuses
 
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
 def get(url):
@@ -35,6 +36,8 @@ def refresh():
     cache={**cache,**old['records']}; sources=dict(old['sources'])
     for key,file in [('index2027','billlist.json'),('requests2027','filelist.json')]:
         sources[key]=get('https://le.utah.gov/data/2027GS/'+file)
+    sources['requestStatuses2027']=get(STATUS_URL)
+    validate_statuses(read(sources['requestStatuses2027']),requests(sources['requests2027']))
     index=json.loads(read(sources['index2027']));assert isinstance(index,list),'Index must be an array'
     for item in index:
         assert isinstance(item,dict) and re.fullmatch(r'[HS](?:B|R|JR|CR)\d{3,4}',item.get('number','')),'Invalid base measure'
@@ -67,12 +70,15 @@ def refresh():
     assert previous<=current|set(introduced),'Public requests disappeared without introduced records; review required'
     assert len(current-previous)<=MAX_NEW_RECORDS,'Major increase in request count; review required'
     history=list(old.get('requestHistory',[]));append_source(history,old['sources']['requests2027']);append_source(history,sources['requests2027'])
-    candidate={**old,'schemaVersion':2,'checkedAt':now(),'sources':sources,'records':records,'requestHistory':history,'measureHistory':measure_history}
+    status_history=list(old.get('requestStatusHistory',[]))
+    if 'requestStatuses2027' in old['sources']:append_source(status_history,old['sources']['requestStatuses2027'])
+    append_source(status_history,sources['requestStatuses2027'])
+    candidate={**old,'schemaVersion':2,'checkedAt':now(),'sources':sources,'records':records,'requestHistory':history,'measureHistory':measure_history,'requestStatusHistory':status_history}
     from catalog_model import derive
     data=derive(candidate)
     assert data['coverage']['2027']['imported']==len(index),'Incomplete projection'
     temp=TARGET.with_suffix('.candidate');temp.write_text(json.dumps(candidate,indent=2)+'\n',encoding='utf-8');os.replace(temp,TARGET)
-    return {'introduced2027':len(index),'publicRequests':len(data['requests2027']),'linkedRequests':sum(bool(r['introducedBill']) for r in data['requestArchive2027'])}
+    return {'introduced2027':len(index),'publicRequests':len(data['requests2027']),'requestStatusesVerified':sum(bool(r.get('officialStatus')) for r in data['requests2027']),'linkedRequests':sum(bool(r['introducedBill']) for r in data['requestArchive2027'])}
 
 def run():
     report={'attemptedAt':now(),'status':'failed'}
