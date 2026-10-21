@@ -83,3 +83,16 @@ button{max-width:100%;overflow-wrap:anywhere}main{overflow-wrap:anywhere}
 .vote-explanation summary,.technical-source summary{min-height:44px;padding:10px 0}.vote-source p{font-size:.85rem}.vote-source{margin-top:6px}.catalog-status:has(.coverage-note[hidden]){display:none}
 .bills-heading h1{margin-bottom:4px}.list-top{margin-top:10px}.request-sources>p{margin:8px 0}
 .search-tools{container-type:inline-size}@container(max-width:120px){.search input{padding-left:4px;padding-right:28px}.search>svg{display:none}#clear-search{min-width:24px;width:24px;right:1px}}
+/* One disclosure gutter: content starts at the heading text, including nested disclosures. */
+details:not(.catalog-info):not(.calendar-info):not(.type-info){padding-inline-start:1.25rem}
+details:not(.catalog-info):not(.calendar-info):not(.type-info)>summary{position:relative;display:block;list-style:none;padding-inline-start:0;padding-inline-end:0}
+details:not(.catalog-info):not(.calendar-info):not(.type-info)>summary::before{content:'▸';position:absolute;inset-inline-start:-1.15rem}
+details[open]:not(.catalog-info):not(.calendar-info):not(.type-info)>summary::before{content:'▾'}
+summary::-webkit-details-marker{display:none}
+.notice-aligned{padding-inline-start:15px}
+.external-tail{white-space:nowrap}.external-icon{width:.85em;height:.85em;vertical-align:baseline;position:static!important}
+.bill-row a.row-resource{display:inline-block;min-height:24px}
+.type-info{border:0;padding:0;position:relative}.type-info>summary{list-style:none;display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:10px}
+.type-info[open]{flex-basis:100%}.type-info p{max-width:75ch}
+
+.profile-records{padding-inline-start:1.1em;overflow-wrap:anywhere}.profile-records li{margin-block:6px}

@@ -10,11 +10,11 @@ class StatusListing(HTMLParser):
   attrs=dict(attrs)
   if tag=='table' and attrs.get('id')=='resultTbl':self.active=True;self.headers=[];self.tables+=1
   if not self.active:return
-  if tag=='tr':self.cells=[];self.ident=None;self.header=False
+  if tag=='tr':self.cells=[];self.ident=None;self.anchor=None;self.header=False
   if tag in ('td','th') and self.cells is not None:self.cell='';self.header|=tag=='th'
   if tag=='input' and 'data-trackingid' in attrs:
    assert self.ident is None or self.ident==attrs['data-trackingid'],'Conflicting row tracking IDs'
-   self.ident=attrs['data-trackingid']
+   self.ident=attrs['data-trackingid'];self.anchor=attrs.get('id')
  def handle_data(self,data):
   if self.active and self.cell is not None:self.cell+=data
  def handle_endtag(self,tag):
@@ -28,7 +28,7 @@ class StatusListing(HTMLParser):
     assert self.headers and len(self.cells)==len(self.headers),'Incomplete official status row'
     assert self.ident and re.fullmatch('[A-Z0-9]+',self.ident),'Missing official tracking ID'
     row=dict(zip(self.headers,self.cells));assert row['Status'] and row['ShortTitle'],'Missing official status/title'
-    value=dict(trackingID=self.ident,shortTitle=row['ShortTitle'],officialStatus=row['Status'],officialNumber=row['Bill#'])
+    value=dict(trackingID=self.ident,shortTitle=row['ShortTitle'],officialStatus=row['Status'],officialNumber=row['Bill#'],anchor=self.anchor if self.anchor=='trk'+self.ident else None)
     assert self.ident not in self.rows or self.rows[self.ident]==value,'Conflicting duplicate official statuses'
     self.rows[self.ident]=value
    self.cells=None

@@ -77,4 +77,16 @@ class CatalogTests(unittest.TestCase):
   initial=parse_statuses(model.read(self.manifest['requestStatusHistory'][0]))
   self.assertEqual(initial['DXYQRODBBU']['officialStatus'],'Bill Abandoned per Sponsor')
   self.assertEqual(sum(r['officialStatus']=='Bill Abandoned per Sponsor' for r in initial.values()),6)
+ def test_verified_request_targets_and_contact_ids(self):
+  from request_status import parse_statuses,STATUS_URL
+  body=model.read(self.manifest['sources']['requestStatuses2027']);rows=parse_statuses(body)
+  for r in self.data['requests2027']:
+   anchor=rows[r['trackingID']]['anchor']
+   self.assertEqual(r['officialRequestUrl'],STATUS_URL+'#'+anchor if anchor else None)
+  # No guessed fragment when the official HTML omits the anchor.
+  row=rows['PMJAPMXJQE'];self.assertEqual(row['anchor'],'trkPMJAPMXJQE')
+  self.assertIsNone(parse_statuses(body.replace(b'id="trkPMJAPMXJQE"',b''))['PMJAPMXJQE']['anchor'])
+  official={p['id']:p for p in json.loads(model.read(self.manifest['sources']['contacts']))['legislators']}
+  for p in self.data['contactPeople']:
+   self.assertEqual(p['name'],official[p['id']]['fullName']);self.assertEqual(p['district'],official[p['id']]['district'])
 if __name__=='__main__':unittest.main()

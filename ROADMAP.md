@@ -17,6 +17,8 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 - **Request-status correction implemented:** complete tracking-ID joins to the official all-subject listing, daily status-only change detection, preserved status history and separate document-availability wording.
 
+- **Navigation refinement implemented:** consistent nested disclosure alignment; stable-ID, session-aware sponsor profiles; source-verified request anchors; Lucide external-link indicators; Introduced Legislation with Bills/Resolutions filters. No expanded 2027 roster claim or new environment.
+
 ## Stage 1 — Legislative data and transparency · Partly implemented
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
