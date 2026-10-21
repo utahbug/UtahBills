@@ -1,0 +1,16 @@
+import {chromium} from 'playwright';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
+const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage(),base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
+await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>window.copied=text}}));
+try{
+ for(const width of [320,375,390,430,768,1024,1280])for(const mode of ['normal','text','zoom'])for(const session of ['2027-requests','2026']){
+ await page.setViewportSize({width,height:900});await page.goto(base+'?toolbar='+width+mode+session+'#bills');await page.locator('#session').selectOption(session);await page.locator('.bill-row').first().waitFor();
+ assert.equal(await page.locator('.copy-results').getAttribute('aria-label'),'Copy results.');assert.equal(await page.locator('.copy-results').getAttribute('title'),'Copy results.');assert.equal(await page.locator('.copy-results').innerText(),'');assert.match(await page.locator('#count').innerText(),/Checked/);if(session==='2026')assert.ok((await page.locator('#count').innerText()).includes((await page.locator('.coverage-note').innerText()).split('Last checked ')[1]));assert.match(await page.locator('.page-preference').innerText(),/^Per page/);
+ if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],ss=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=ss[i]*2+'px')});if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
+ await page.locator('.copy-results').focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>document.querySelector('.copy-status').textContent==='Copied');assert.ok((await page.evaluate(()=>window.copied)).includes('https://le.utah.gov'));const icon=await page.locator('.copy-results').boundingBox(),status=await page.locator('.copy-status').boundingBox();assert.ok(status.x>=icon.x+icon.width&&status.x-icon.x-icon.width<=12);assert.ok(icon.width>=44&&icon.height>=44);
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,width+' '+mode+' '+session);
+ if(mode==='normal'){const summary=await page.locator('.result-summary').boundingBox(),controls=await page.locator('.result-controls').boundingBox();if(width<=900)assert.ok(controls.y>=summary.y+summary.height);else assert.ok(controls.x>=summary.x+summary.width)}
+ await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
+ }
+ for(const route of ['calendar','legislators']){await page.goto(base+'?toolbar='+route+'#'+route);await page.locator('.copy-results').waitFor();assert.equal(await page.locator('.copy-control .copy-status').count(),1);await page.locator('.copy-results').click();assert.equal(await page.locator('.copy-status').innerText(),'Copied')}
+ console.log('Compact toolbar: grouped desktop/mobile controls, adjacent copy confirmation, keyboard copying, 44px targets, checked dates, 200% text/zoom and axe passed.');
+}finally{await browser.close()}

@@ -148,3 +148,17 @@ footer{padding-bottom:80px}
 /* Counts fit narrow cells even with platform font differences at 200% zoom. */
 .calendar-day{container-type:inline-size;grid-template-columns:minmax(0,1fr)}
 .calendar-day .day-count{font-size:min(.72rem,36cqi);min-width:0}
+
+/* Shared compact results toolbar: summary left, coordinated controls right. */
+.results-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;justify-content:normal;gap:8px 16px;margin:10px 0;font-size:13px}
+.result-summary{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;min-width:0}.result-summary p{margin:0}
+.result-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px;min-width:0;max-width:100%}
+.result-controls label{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;font-size:inherit;font-weight:400;min-width:0}
+.result-controls select{width:auto;max-width:100%;min-height:44px;margin:0;padding:6px;border-color:#8295a2;font-size:inherit}
+.copy-control{display:flex;align-items:center;gap:5px;max-width:100%;min-width:0}
+.copy-control:has(.copy-results[hidden]){display:none}
+.copy-control .copy-results{width:44px;height:44px;min-width:44px;padding:10px;justify-content:center;border-color:#8295a2;border-radius:5px}
+.copy-control .copy-status{font-size:inherit;overflow-wrap:anywhere}.results-toolbar>.copy-fallback{grid-column:1/-1}
+.agenda-heading.results-toolbar .result-summary h2{flex:auto;margin:8px 0}
+@media(max-width:900px){.results-toolbar{grid-template-columns:minmax(0,1fr)}.result-controls{justify-content:flex-start}}
+@media(max-width:600px){.result-controls{align-items:end}.result-controls label{display:grid;gap:2px}.copy-control{align-self:end}}
