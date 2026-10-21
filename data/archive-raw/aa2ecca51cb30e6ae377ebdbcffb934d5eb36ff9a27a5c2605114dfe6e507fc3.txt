@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0197
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/20/2026 2:06 PM</b><hr>
+<center>SB 197</center>
+<center>Transportation Funding and Governance Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>STPT Passed  5-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

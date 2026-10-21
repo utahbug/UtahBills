@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0228
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 6:35 PM</b><hr>
+<center>2HB 228</center>
+<center>Vehicle Sales Amendments</center>
+<center>Teuscher</center>
+<center>Fillmore</center>
+<center>STPT Passed  6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

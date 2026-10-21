@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0072
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/5/2026 2:42 PM</b><hr>
+<center>SB 72</center>
+<center>Obscene Animal Abuse Material Amendments</center>
+<center>Vickers</center>
+<center>/ Gricius</center>
+<center>HNAE Passed  10-0-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

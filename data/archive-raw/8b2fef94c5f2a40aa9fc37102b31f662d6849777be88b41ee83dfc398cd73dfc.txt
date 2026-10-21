@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0055
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/2/2026 11:32 AM</b><hr>
+<center>HB 55</center>
+<center>Privacy Compliance for Education Technology Vendors</center>
+<center>Auxier</center>
+<center>/ Johnson</center>
+<center>HEDU Amended 11-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

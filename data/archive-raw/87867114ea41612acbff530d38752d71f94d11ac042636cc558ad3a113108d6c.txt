@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0286
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 2:46 PM</b><hr>
+<center>1HB 286</center>
+<center>Artificial Intelligence Transparency Amendments</center>
+<center>Fiefia</center>
+<center>/ McKell</center>
+<center>HEDW Substituted 8-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

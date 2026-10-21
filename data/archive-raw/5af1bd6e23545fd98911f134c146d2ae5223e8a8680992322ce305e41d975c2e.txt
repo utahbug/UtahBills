@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0108
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 3:14 PM</b><hr>
+<center>HB 108</center>
+<center>Minors in State Custody Amendments</center>
+<center>Fiefia</center>
+<center>Weiler</center>
+<center>SHHS Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

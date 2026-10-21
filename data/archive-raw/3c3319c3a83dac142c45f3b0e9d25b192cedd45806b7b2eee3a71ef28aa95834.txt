@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0046
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 1/26/2026 12:05 PM</b><hr>
+<center>2HB 46</center>
+<center>Taxpayer Information Sharing Amendments</center>
+<center>Shelley</center>
+<center>/ Stratton</center>
+<center>HREV Substituted 11-0-0</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

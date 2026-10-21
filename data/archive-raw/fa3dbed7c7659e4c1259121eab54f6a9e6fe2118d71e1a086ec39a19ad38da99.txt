@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0075
+ - 
+ - Passed
+ on voice vote
+, 1/22/2026 11:55 AM</b><hr>
+<center>SB 75</center>
+<center>Educator Salary Adjustment Eligibility</center>
+<center>Musselman</center>
+<center>Hall</center>
+<center>SEDU Amended 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0286
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 6:49 PM</b><hr>
+<center>SB 286</center>
+<center>Interior Designer Amendments</center>
+<center>Escamilla</center>
+<center>SBUS Passed  8-0-0</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0143
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/24/2026 2:22 PM</b><hr>
+<center>SB 143</center>
+<center>Utah Exemptions Act Amendments</center>
+<center>Plumb</center>
+<center>SJLC Passed  5-3-1</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

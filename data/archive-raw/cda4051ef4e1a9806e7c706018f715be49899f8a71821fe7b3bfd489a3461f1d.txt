@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0168
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/17/2026 3:08 PM</b><hr>
+<center>HB 168</center>
+<center>Hunting and Fishing Amendments</center>
+<center>Shipp</center>
+<center>/ Vickers</center>
+<center>HNAE Amended 8-0-6</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

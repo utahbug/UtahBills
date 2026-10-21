@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR002
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 1/27/2026 11:58 AM</b><hr>
+<center>1HJR 2</center>
+<center>Joint Rules Resolution - Resolution Amendments</center>
+<center>Roberts</center>
+<center>/ </center>
+<center>HRUL Substituted 7-1-0</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR001
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 1/28/2026 12:00 PM</b><hr>
+<center>1HJR 1</center>
+<center>Joint Rules Resolution - Amendments to Joint Rules</center>
+<center>Dunnigan</center>
+<center>/ Fillmore</center>
+<center>HRUL Substituted 8-0-0</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

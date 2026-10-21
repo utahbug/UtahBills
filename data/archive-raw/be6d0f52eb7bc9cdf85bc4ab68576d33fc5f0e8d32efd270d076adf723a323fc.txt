@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0514
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/26/2026 7:31 PM</b><hr>
+<center>1HB 514</center>
+<center>Utah Energy Council Amendments</center>
+<center>Walter</center>
+<center>/ </center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

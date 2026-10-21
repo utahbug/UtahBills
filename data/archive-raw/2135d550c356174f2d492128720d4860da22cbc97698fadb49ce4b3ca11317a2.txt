@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0119
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:45 AM</b><hr>
+<center>2HB 119</center>
+<center>Automotive Repair Business Amendments</center>
+<center>Jack</center>
+<center>/ Ipson</center>
+<center>HTRA Amended 7-3-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

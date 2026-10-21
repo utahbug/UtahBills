@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0269
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 3:31 PM</b><hr>
+<center>SB 269</center>
+<center>School Board Meeting Notification Requirements</center>
+<center>Weiler</center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

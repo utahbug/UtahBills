@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0105
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/27/2026 3:04 PM</b><hr>
+<center>1SB 105</center>
+<center>Use of Force Amendments</center>
+<center>Riebe</center>
+<center>SJLC Substituted 4-1-4</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

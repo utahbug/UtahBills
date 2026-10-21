@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0296
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 4:50 PM</b><hr>
+<center>1SB 296</center>
+<center>Student Consent Amendments</center>
+<center>Cullimore</center>
+<center>/ Gricius</center>
+<center>HEDU Passed  10-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

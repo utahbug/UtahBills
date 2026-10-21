@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0190
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/18/2026 3:22 PM</b><hr>
+<center>2HB 190</center>
+<center>Child Care Business Tax Credit</center>
+<center>Thompson</center>
+<center>/ Balderree</center>
+<center>HREV Substituted 7-4-0</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

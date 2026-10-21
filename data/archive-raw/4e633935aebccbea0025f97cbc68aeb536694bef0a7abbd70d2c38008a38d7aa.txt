@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0200
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 3:47 PM</b><hr>
+<center>1SB 200</center>
+<center>Impounded Vehicle Amendments</center>
+<center>Pitcher</center>
+<center>Wilcox</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

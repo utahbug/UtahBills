@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0153
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:56 AM</b><hr>
+<center>HB 153</center>
+<center>Law Enforcement Officer Employment Amendments</center>
+<center>Gwynn</center>
+<center>McKell</center>
+<center>SREV Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

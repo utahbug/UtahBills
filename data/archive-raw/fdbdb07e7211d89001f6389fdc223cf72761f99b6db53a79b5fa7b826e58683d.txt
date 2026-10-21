@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0473
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/19/2026 3:24 PM</b><hr>
+<center>1HB 473</center>
+<center>Colorado River Authority Amendments</center>
+<center>Chew</center>
+<center>/ </center>
+<center>HNAE Substituted 9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

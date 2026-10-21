@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0044
+ - 
+ - Passed
+ on voice vote
+, 1/21/2026 11:15 AM</b><hr>
+<center>HB 44</center>
+<center>School Security Personnel Standards</center>
+<center>Wilcox</center>
+<center>/ </center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

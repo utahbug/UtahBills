@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0401
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/12/2026 11:57 AM</b><hr>
+<center>HB 401</center>
+<center>Geothermal Study Amendments</center>
+<center>Watkins</center>
+<center>/ </center>
+<center>HPUT Passed  8-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

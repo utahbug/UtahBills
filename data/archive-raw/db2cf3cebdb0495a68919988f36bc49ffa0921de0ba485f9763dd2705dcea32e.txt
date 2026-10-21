@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0274
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 11:57 AM</b><hr>
+<center>2HB 274</center>
+<center>Sentencing Amendments</center>
+<center>Schultz</center>
+<center>McKell</center>
+<center>SJLC Substituted 7-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

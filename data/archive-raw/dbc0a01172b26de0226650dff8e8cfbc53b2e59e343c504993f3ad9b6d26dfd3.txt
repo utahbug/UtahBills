@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0119
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 10:55 AM</b><hr>
+<center>3SB 119</center>
+<center>School and Classroom Amendments</center>
+<center>Fillmore</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0288
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 7:25 PM</b><hr>
+<center>1SB 288</center>
+<center>Medicaid Provider Amendments</center>
+<center>Stratton</center>
+<center>SHHS Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 5</center>
+
+
+</font>
+</body>
+</html>

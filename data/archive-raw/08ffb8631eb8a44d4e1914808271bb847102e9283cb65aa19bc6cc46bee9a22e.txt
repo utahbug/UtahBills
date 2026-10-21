@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0182
+ Substitute 5
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/19/2026 11:21 AM</b><hr>
+<center>5HB 182</center>
+<center>Genetic Information Amendments</center>
+<center>Brooks</center>
+<center>Stratton</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

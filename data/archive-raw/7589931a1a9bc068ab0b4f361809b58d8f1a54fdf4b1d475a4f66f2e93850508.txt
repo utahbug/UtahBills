@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0475
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/20/2026 4:02 PM</b><hr>
+<center>2HB 475</center>
+<center>Development Planning and Coordination Amendments</center>
+<center>Roberts</center>
+<center>/ </center>
+<center>HEDW Substituted 7-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

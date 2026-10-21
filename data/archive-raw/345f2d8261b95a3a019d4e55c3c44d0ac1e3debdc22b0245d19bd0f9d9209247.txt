@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0134
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 1/23/2026 11:37 AM</b><hr>
+<center>1SB 134</center>
+<center>Court Amendments</center>
+<center>Wilson</center>
+<center>SJLC Substituted Amended 8-1-0</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

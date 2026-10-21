@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0537
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 10:50 AM</b><hr>
+<center>1HB 537</center>
+<center>Olympic Ticket Sales Tax Exemption</center>
+<center>Hawkins</center>
+<center>McKell</center>
+<center>SREV Passed  7-0-0</center>
+<center>Consent</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

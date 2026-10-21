@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0221
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 11:33 AM</b><hr>
+<center>2HB 221</center>
+<center>Coercion Amendments</center>
+<center>Wilcox</center>
+<center>Musselman</center>
+<center>SJLC Passed  6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

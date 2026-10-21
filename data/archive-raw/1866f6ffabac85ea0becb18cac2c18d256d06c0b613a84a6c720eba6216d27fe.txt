@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0423
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/20/2026 2:39 PM</b><hr>
+<center>1HB 423</center>
+<center>Hit and Run and DUI Offense Amendments</center>
+<center>Eliason</center>
+<center>/ Weiler</center>
+<center>HREV Substituted 9-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

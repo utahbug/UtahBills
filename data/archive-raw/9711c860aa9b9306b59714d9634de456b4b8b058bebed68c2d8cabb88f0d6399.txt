@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0300
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 12:00 PM</b><hr>
+<center>HB 300</center>
+<center>School District Taxation Amendments</center>
+<center>Kyle</center>
+<center>Harper</center>
+<center>SREV Passed  5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

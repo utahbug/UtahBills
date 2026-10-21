@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0136
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 3:35 PM</b><hr>
+<center>4HB 136</center>
+<center>Unlicensed Driver Amendments</center>
+<center>MacPherson</center>
+<center>McCay</center>
+<center>STPT Substituted Amended 5-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

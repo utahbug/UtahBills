@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0120
+ - 
+ - Passed
+ on voice vote
+, 2/4/2026 2:44 PM</b><hr>
+<center>HB 120</center>
+<center>Tail Light Obstruction Amendments</center>
+<center>Chew</center>
+<center>/ Riebe</center>
+<center>Reconsideration</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

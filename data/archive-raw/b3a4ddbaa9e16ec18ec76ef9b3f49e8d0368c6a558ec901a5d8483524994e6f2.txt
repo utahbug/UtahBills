@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0241
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:51 PM</b><hr>
+<center>SB 241</center>
+<center>Early Literacy</center>
+<center>Millner</center>
+<center>Peterson</center>
+<center>SEDU Passed  6-1-0</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

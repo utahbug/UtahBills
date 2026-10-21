@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0539
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:40 PM</b><hr>
+<center>4HB 539</center>
+<center>Public Safety Modifications</center>
+<center>MacPherson</center>
+<center>Brammer</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

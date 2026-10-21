@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0071
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 11:09 AM</b><hr>
+<center>SB 71</center>
+<center>Evidence Retention Amendments</center>
+<center>Harper</center>
+<center>Ivory</center>
+<center>SJLC Passed  5-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

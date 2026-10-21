@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0123
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:52 PM</b><hr>
+<center>2SB 123</center>
+<center>Privacy and Cybersecurity Amendments</center>
+<center>Harper</center>
+<center>/ Wilcox</center>
+<center>HEDW Passed  8-1-1</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0242
+ Substitute 2
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/23/2026 5:59 PM</b><hr>
+<center>2SB 242</center>
+<center>Transportation Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

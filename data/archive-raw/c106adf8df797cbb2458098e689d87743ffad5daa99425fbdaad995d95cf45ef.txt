@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0377
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 11:21 PM</b><hr>
+<center>1HB 377</center>
+<center>Real Estate Amendments</center>
+<center>Walter</center>
+<center>Musselman</center>
+<center>SBUS Amended 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0262
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 7:35 PM</b><hr>
+<center>SB 262</center>
+<center>Law Enforcement Usage of Unmarked Vehicles</center>
+<center>McCay</center>
+<center>SJLC Passed  6-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

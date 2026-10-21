@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0331
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:12 PM</b><hr>
+<center>1HB 331</center>
+<center>Criminal Offenses Modifications</center>
+<center>Clancy</center>
+<center>/ Grover</center>
+<center>HJUD Substituted 7-2-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

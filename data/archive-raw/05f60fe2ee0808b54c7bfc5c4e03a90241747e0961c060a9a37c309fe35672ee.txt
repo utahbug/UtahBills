@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0124
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 5:13 PM</b><hr>
+<center>1SB 124</center>
+<center>Child Welfare Modifications</center>
+<center>Escamilla</center>
+<center>/ Watkins</center>
+<center>HJUD Amended 5-4-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

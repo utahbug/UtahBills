@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0027
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/6/2026 11:56 AM</b><hr>
+<center>1SB 27</center>
+<center>Assault or Threat of Violence Amendments</center>
+<center>Ipson</center>
+<center>Gwynn</center>
+<center>Concurrence</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0254
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:34 AM</b><hr>
+<center>4SB 254</center>
+<center>Extracted Natural Resources Amendments</center>
+<center>Millner</center>
+<center>/ Shallenberger</center>
+<center>Amended</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

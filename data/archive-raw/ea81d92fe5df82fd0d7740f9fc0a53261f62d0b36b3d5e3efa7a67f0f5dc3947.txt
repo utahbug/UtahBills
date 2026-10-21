@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0412
+ - 
+ - Passed
+ on voice vote
+, 2/11/2026 11:14 AM</b><hr>
+<center>HB 412</center>
+<center>Energy Development Planning Amendments</center>
+<center>Owens</center>
+<center>/ </center>
+<center>HPUT Passed  8-0-4</center>
+<center>Consent</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

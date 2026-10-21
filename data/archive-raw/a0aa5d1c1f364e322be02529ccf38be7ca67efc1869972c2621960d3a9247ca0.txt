@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0336
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:47 PM</b><hr>
+<center>1HB 336</center>
+<center>Recovery Operations Amendments</center>
+<center>Christofferson</center>
+<center>/ Weiler</center>
+<center>HTRA Substituted 10-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

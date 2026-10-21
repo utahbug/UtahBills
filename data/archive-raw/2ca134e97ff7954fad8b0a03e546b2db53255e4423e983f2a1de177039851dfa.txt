@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0546
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/26/2026 8:27 PM</b><hr>
+<center>HB 546</center>
+<center>Public Lands Duty of Care Amendments</center>
+<center>Ivory</center>
+<center>/ </center>
+<center>HNAE Passed  8-2-4</center>
+<center>3rd Reading</center>
+<center>Motion to Amend V</center>
+
+
+</font>
+</body>
+</html>

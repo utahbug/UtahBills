@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0135
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/6/2026 2:41 PM</b><hr>
+<center>1SB 135</center>
+<center>Nuclear Reprocessing Amendments</center>
+<center>Owens</center>
+<center>Albrecht</center>
+<center>SNAE Substituted 4-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

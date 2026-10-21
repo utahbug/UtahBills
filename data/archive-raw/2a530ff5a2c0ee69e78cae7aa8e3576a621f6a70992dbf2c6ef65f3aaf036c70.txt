@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0254
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 4:22 PM</b><hr>
+<center>1SB 254</center>
+<center>Critical Minerals Amendments</center>
+<center>Millner</center>
+<center>/ Shallenberger</center>
+<center>HNAE Passed  9-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

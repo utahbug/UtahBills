@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0013
+ - 
+ - Passed
+ on voice vote
+, 1/20/2026 11:53 AM</b><hr>
+<center>HB 13</center>
+<center>Municipal Services Fees and Political Subdivision Lien Amendments</center>
+<center>Cutler</center>
+<center>/ Harper</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

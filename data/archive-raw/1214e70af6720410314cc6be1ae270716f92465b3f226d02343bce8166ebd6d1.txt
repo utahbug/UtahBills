@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0065
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/9/2026 3:33 PM</b><hr>
+<center>SB 65</center>
+<center>Minimum Basic Tax Rate Amendments</center>
+<center>Fillmore</center>
+<center>SREV Passed  4-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

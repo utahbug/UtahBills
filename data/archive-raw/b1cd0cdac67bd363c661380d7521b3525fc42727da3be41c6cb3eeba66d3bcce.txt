@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0244
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 2:41 PM</b><hr>
+<center>SB 244</center>
+<center>Cardiac Emergency Response Plans in Schools</center>
+<center>Stevenson</center>
+<center>Peterson</center>
+<center>SEDU Passed  3-1-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

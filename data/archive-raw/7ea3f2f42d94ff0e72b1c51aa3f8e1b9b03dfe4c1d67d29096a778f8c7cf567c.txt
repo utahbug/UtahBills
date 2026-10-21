@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0273
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/18/2026 2:35 PM</b><hr>
+<center>2HB 273</center>
+<center>Classroom Technology Amendments</center>
+<center>Defay</center>
+<center>/ </center>
+<center>HEDU Amended 10-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 4</center>
+
+
+</font>
+</body>
+</html>

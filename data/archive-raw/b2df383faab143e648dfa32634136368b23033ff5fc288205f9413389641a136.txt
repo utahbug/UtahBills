@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0124
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 3:28 PM</b><hr>
+<center>SB 124</center>
+<center>Child Welfare Modifications</center>
+<center>Escamilla</center>
+<center>Watkins</center>
+<center>SJLC Amended 6-3-0</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0043
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/17/2026 2:48 PM</b><hr>
+<center>1HB 43</center>
+<center>School Security Amendments</center>
+<center>Wilcox</center>
+<center>/ </center>
+<center>HLAW Passed  10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

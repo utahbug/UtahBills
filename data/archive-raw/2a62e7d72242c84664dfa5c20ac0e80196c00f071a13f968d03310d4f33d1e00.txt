@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0241
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 3:23 PM</b><hr>
+<center>2HB 241</center>
+<center>Charter School Amendments</center>
+<center>Pierucci</center>
+<center>/ </center>
+<center>HEDU Substituted 8-4-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

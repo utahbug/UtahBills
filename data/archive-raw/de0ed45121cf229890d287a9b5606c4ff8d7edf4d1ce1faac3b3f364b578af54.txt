@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0288
+ Substitute 5
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 7:27 PM</b><hr>
+<center>5SB 288</center>
+<center>Medicaid Provider Amendments</center>
+<center>Stratton</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0090
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:40 PM</b><hr>
+<center>2HB 90</center>
+<center>Sexual Offenses Amendments</center>
+<center>Gwynn</center>
+<center>/ Musselman</center>
+<center>HLAW Passed  6-0-5</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

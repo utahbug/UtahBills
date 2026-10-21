@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0204
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/4/2026 11:19 AM</b><hr>
+<center>SB 204</center>
+<center>Physical Therapy Payment Amendments</center>
+<center>McKell</center>
+<center>/ Shallenberger</center>
+<center>HEDW Passed  6-1-3</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

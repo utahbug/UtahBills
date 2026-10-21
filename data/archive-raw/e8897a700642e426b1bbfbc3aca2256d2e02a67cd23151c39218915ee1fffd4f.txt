@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0423
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 7:17 PM</b><hr>
+<center>3HB 423</center>
+<center>Hit and Run and DUI Offense Amendments</center>
+<center>Eliason</center>
+<center>Weiler</center>
+<center>SJLC Substituted 5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0268
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:59 AM</b><hr>
+<center>SB 268</center>
+<center>Religious Curriculum in Schools</center>
+<center>Weiler</center>
+<center>Auxier</center>
+<center>Amended</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

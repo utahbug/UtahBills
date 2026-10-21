@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0380
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/18/2026 3:11 PM</b><hr>
+<center>HB 380</center>
+<center>Hospital Workplace Violence Reporting Requirements</center>
+<center>Hall</center>
+<center>/ </center>
+<center>HHHS Passed  8-0-6</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0092
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 2:23 PM</b><hr>
+<center>1SB 92</center>
+<center>Prosecution Amendments</center>
+<center>Wilson</center>
+<center>Snider</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

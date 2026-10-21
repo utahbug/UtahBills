@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0226
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:07 AM</b><hr>
+<center>1SB 226</center>
+<center>Fatal Motor Vehicle Accident Amendments</center>
+<center>Millner</center>
+<center>Eliason</center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

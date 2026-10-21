@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR001
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 11:33 AM</b><hr>
+<center>3HJR 1</center>
+<center>Joint Rules Resolution - Amendments to Joint Rules</center>
+<center>Dunnigan</center>
+<center>/ Fillmore</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

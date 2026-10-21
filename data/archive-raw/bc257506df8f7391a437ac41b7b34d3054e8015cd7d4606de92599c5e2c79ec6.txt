@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0032
+ Substitute 1
+ - 
+House/ substituted
+ - Failed
+ on voice vote
+, 2/12/2026 11:40 AM</b><hr>
+<center>1HB 32</center>
+<center>Signature Gathering and Verification Amendments</center>
+<center>Cutler</center>
+<center>/ Winterton</center>
+<center>HGOC Substituted 8-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

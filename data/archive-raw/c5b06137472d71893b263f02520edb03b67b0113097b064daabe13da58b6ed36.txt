@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0153
+ Substitute 3
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 9:45 AM</b><hr>
+<center>3SB 153</center>
+<center>Election Amendments</center>
+<center>Johnson</center>
+<center>/ Lee</center>
+<center>HGOC Substituted 5-3-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

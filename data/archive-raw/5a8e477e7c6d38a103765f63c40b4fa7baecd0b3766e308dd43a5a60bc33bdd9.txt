@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0043
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 1/20/2026 4:03 PM</b><hr>
+<center>SB 43</center>
+<center>Land Trusts Protection and Advocacy Office Amendments</center>
+<center>Owens</center>
+<center>Burton</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

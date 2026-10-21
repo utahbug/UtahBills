@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0264
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 2:26 PM</b><hr>
+<center>1SB 264</center>
+<center>Elected Official Publicity Amendments</center>
+<center>Pitcher</center>
+<center>SGOP Substituted 5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

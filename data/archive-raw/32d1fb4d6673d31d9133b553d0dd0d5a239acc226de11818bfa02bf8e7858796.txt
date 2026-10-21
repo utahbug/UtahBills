@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0182
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 2:49 PM</b><hr>
+<center>4HB 182</center>
+<center>Genetic Information Amendments</center>
+<center>Brooks</center>
+<center>Stratton</center>
+<center>SHHS Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 5</center>
+
+
+</font>
+</body>
+</html>

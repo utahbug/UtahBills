@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0450
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 2:43 PM</b><hr>
+<center>2HB 450</center>
+<center>Data Privacy Amendments</center>
+<center>Shallenberger</center>
+<center>/ Cullimore</center>
+<center>HPOL Substituted 7-1-4</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0036
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/20/2026 4:41 PM</b><hr>
+<center>1HB 36</center>
+<center>Gold Medal Schools Pilot Program</center>
+<center>Hall</center>
+<center>/ Stratton</center>
+<center>HEDU Substituted 13-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

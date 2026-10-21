@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0341
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:52 PM</b><hr>
+<center>HB 341</center>
+<center>Animal Fighting Penalties</center>
+<center>Okerlund</center>
+<center>/ Ipson</center>
+<center>HNAE Amended 9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

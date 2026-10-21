@@ -2,5 +2,7 @@
 data/raw/* -text
 *.cmd text eol=crlf
 
-data/catalog-raw/* -text
+data/catalog-raw/* -text -whitespace
 data/vote-raw/* -text -whitespace
+
+data/archive-raw/* -text -whitespace

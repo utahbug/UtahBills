@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0078
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 6:45 PM</b><hr>
+<center>3SB 78</center>
+<center>Property Tax Relief Amendments</center>
+<center>McCay</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

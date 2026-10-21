@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0174
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 8:05 PM</b><hr>
+<center>2SB 174</center>
+<center>Exercise of Religious Beliefs and Conscience Amendments</center>
+<center>Stratton</center>
+<center>SHHS Substituted 3-1-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0268
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 3:42 PM</b><hr>
+<center>1SB 268</center>
+<center>Religious Curriculum in Schools</center>
+<center>Weiler</center>
+<center>/ Auxier</center>
+<center>HEDU Amended 10-0-5</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0122
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 2:37 PM</b><hr>
+<center>HB 122</center>
+<center>Pregnant and Postpartum Inmate Amendments</center>
+<center>Pierucci</center>
+<center>Balderree</center>
+<center>SJLC Passed  5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

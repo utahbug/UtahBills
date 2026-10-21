@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0211
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 10:30 AM</b><hr>
+<center>1SB 211</center>
+<center>Tort Amendments</center>
+<center>Cullimore</center>
+<center>SJLC Substituted 7-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

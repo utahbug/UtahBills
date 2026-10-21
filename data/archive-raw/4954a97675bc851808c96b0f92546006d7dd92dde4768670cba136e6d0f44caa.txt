@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0038
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 11:31 AM</b><hr>
+<center>3HB 38</center>
+<center>County Government Amendments</center>
+<center>Dunnigan</center>
+<center>McKell</center>
+<center>SGOP Passed  6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

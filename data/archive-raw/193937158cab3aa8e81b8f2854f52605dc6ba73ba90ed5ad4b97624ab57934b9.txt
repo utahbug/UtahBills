@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0202
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 10:34 AM</b><hr>
+<center>SB 202</center>
+<center>Mowing Ordinance Amendments</center>
+<center>McCay</center>
+<center>SBUS Passed  5-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

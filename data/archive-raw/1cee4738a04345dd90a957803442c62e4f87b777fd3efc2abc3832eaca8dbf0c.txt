@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0146
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:45 AM</b><hr>
+<center>HB 146</center>
+<center>Mentoring and Supporting Teacher Excellence and Refinement Program Amendments</center>
+<center>Pierucci</center>
+<center>Balderree</center>
+<center>SEDU Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

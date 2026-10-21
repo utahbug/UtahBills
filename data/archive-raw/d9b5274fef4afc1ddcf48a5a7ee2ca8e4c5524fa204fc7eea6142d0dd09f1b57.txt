@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0040
+ - 
+ - Passed
+ on voice vote
+, 1/20/2026 3:58 PM</b><hr>
+<center>SB 40</center>
+<center>Business Entity Amendments</center>
+<center>Vickers</center>
+<center>Shallenberger</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

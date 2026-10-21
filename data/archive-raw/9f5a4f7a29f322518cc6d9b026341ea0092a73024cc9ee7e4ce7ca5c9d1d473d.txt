@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0469
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 3:22 PM</b><hr>
+<center>1HB 469</center>
+<center>Cannabinoid Amendments</center>
+<center>Dailey-Provost</center>
+<center>/ Vickers</center>
+<center>HNAE Passed  9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

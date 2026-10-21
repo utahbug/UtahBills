@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0446
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/23/2026 2:17 PM</b><hr>
+<center>HB 446</center>
+<center>Conflict of Interest Disclosure Amendments</center>
+<center>Acton</center>
+<center>/ </center>
+<center>HGOC Amended 7-3-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

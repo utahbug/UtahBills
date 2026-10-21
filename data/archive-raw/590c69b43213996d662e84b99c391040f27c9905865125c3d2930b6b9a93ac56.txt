@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0325
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/13/2026 11:21 AM</b><hr>
+<center>2HB 325</center>
+<center>Government Records Classification Amendments</center>
+<center>Shepherd</center>
+<center>/ Stratton</center>
+<center>HREV Substituted 10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

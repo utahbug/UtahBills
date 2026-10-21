@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0237
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 5:30 PM</b><hr>
+<center>SB 237</center>
+<center>Driver License Division and Motor Vehicle Division Consolidation Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>SREV Passed  4-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

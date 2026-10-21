@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0099
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 11:22 AM</b><hr>
+<center>1SB 99</center>
+<center>Emergency Reporting Offense Amendments</center>
+<center>Fillmore</center>
+<center>Gricius</center>
+<center>SJLC Substituted 6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Strike Enacting Clause</center>
+
+
+</font>
+</body>
+</html>

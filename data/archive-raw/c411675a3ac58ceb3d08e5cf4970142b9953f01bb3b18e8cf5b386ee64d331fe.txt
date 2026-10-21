@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0013
+ - 
+ - Passed
+ on voice vote
+, 1/30/2026 11:52 AM</b><hr>
+<center>SB 13</center>
+<center>Statutorily Required Reports and Presentations Amendments</center>
+<center>Musselman</center>
+<center>/ Wilcox</center>
+<center>HLAW Amended 7-0-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

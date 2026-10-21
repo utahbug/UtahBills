@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0274
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/6/2026 2:24 PM</b><hr>
+<center>1HB 274</center>
+<center>Sentencing Amendments</center>
+<center>Schultz</center>
+<center>/ </center>
+<center>HJUD Substituted 9-2-0</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

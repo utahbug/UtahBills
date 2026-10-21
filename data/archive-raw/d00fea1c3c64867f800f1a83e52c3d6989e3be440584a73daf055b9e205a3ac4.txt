@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0051
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 1/28/2026 11:47 AM</b><hr>
+<center>1SB 51</center>
+<center>School Safety Modifications</center>
+<center>Owens</center>
+<center>Wilcox</center>
+<center>SEDU Substituted 5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

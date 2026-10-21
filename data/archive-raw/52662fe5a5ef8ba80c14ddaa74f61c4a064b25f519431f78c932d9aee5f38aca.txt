@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0082
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 10:38 AM</b><hr>
+<center>1HB 82</center>
+<center>Judgment Information Amendments</center>
+<center>MacPherson</center>
+<center>Musselman</center>
+<center>SREV Passed  3-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

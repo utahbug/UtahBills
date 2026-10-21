@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0191
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 10:27 AM</b><hr>
+<center>2SB 191</center>
+<center>Tow Yard Amendments</center>
+<center>Ipson</center>
+<center>/ T. Peterson</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

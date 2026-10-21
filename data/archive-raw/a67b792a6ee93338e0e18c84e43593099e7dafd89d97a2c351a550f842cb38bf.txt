@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0329
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/17/2026 11:02 AM</b><hr>
+<center>HB 329</center>
+<center>State Employee Maternity and Leave Amendments</center>
+<center>Defay</center>
+<center>/ </center>
+<center>HEDW Passed  6-2-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

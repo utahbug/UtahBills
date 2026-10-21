@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0363
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/27/2026 2:42 PM</b><hr>
+<center>2HB 363</center>
+<center>Water Easement Amendments</center>
+<center>Abbott</center>
+<center>/ </center>
+<center>HPOL Substituted 6-1-5</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

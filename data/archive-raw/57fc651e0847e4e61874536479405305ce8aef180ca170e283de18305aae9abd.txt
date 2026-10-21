@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0205
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:02 PM</b><hr>
+<center>1HB 205</center>
+<center>Substance Use Intervention Amendments</center>
+<center>Clancy</center>
+<center>Brammer</center>
+<center>SJLC Passed  5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

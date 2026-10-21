@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0599
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/3/2026 10:54 AM</b><hr>
+<center>1HB 599</center>
+<center>Social Services Funding Amendments</center>
+<center>Ward</center>
+<center>/ Stratton</center>
+<center>HRUL Substituted 6-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

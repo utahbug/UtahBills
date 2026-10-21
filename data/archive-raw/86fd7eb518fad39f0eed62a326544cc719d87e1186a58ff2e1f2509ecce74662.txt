@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0006
+ - 
+ - Passed
+ on voice vote
+, 1/28/2026 11:37 AM</b><hr>
+<center>HB 6</center>
+<center>Criminal Justice Base Budget</center>
+<center>Gwynn</center>
+<center>/ Brammer</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

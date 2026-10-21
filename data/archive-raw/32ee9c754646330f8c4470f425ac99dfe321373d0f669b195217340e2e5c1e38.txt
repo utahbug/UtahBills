@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0040
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 11:45 AM</b><hr>
+<center>3SB 40</center>
+<center>Business Entity Amendments</center>
+<center>Vickers</center>
+<center>Shallenberger</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

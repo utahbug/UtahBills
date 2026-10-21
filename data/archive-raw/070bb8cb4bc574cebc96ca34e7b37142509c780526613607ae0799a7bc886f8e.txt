@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0229
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:45 AM</b><hr>
+<center>4SB 229</center>
+<center>State Employee Benefits Amendments</center>
+<center>Fillmore</center>
+<center>Thurston</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

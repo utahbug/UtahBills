@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0278
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:06 PM</b><hr>
+<center>SB 278</center>
+<center>Point of the Mountain State Land Authority Modifications</center>
+<center>Stevenson</center>
+<center>Teuscher</center>
+<center>SEDW Passed  5-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

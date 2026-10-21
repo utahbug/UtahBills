@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0227
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:56 PM</b><hr>
+<center>SB 227</center>
+<center>Punitive Damages Amendments</center>
+<center>Winterton</center>
+<center>STPT Passed  4-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

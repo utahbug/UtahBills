@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0324
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 3:19 PM</b><hr>
+<center>1SB 324</center>
+<center>Outcome-based Investment Grant Pilot Framework</center>
+<center>Musselman</center>
+<center>SGOP Substituted 7-0-0</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0190
+ Substitute 3
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 4:29 PM</b><hr>
+<center>3SB 190</center>
+<center>Trailer Registration Amendments</center>
+<center>Brammer</center>
+<center>/ Eliason</center>
+<center>HREV Passed  8-0-3</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

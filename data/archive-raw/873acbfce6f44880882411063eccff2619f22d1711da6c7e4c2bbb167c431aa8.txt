@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0407
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 6:51 PM</b><hr>
+<center>2HB 407</center>
+<center>Public Education Information System</center>
+<center>MacPherson</center>
+<center>/ Fillmore</center>
+<center>HEDU Substituted 9-0-6</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

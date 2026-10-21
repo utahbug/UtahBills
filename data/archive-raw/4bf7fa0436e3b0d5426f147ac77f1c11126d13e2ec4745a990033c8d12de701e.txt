@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0110
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/4/2026 11:55 AM</b><hr>
+<center>2SB 110</center>
+<center>Marriage Amendments</center>
+<center>Weiler</center>
+<center>SEDW Substituted 4-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

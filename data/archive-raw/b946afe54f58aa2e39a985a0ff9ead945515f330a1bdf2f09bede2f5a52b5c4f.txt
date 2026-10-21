@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0078
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 4:08 PM</b><hr>
+<center>2SB 78</center>
+<center>Property Tax Relief Amendments</center>
+<center>McCay</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

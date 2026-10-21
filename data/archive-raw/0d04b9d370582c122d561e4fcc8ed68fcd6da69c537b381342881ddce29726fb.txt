@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0559
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:25 PM</b><hr>
+<center>HB 559</center>
+<center>Pregnancy and Infant Loss Amendments</center>
+<center>Wilcox</center>
+<center>/ </center>
+<center>HHHS Passed  9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0437
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:33 PM</b><hr>
+<center>HB 437</center>
+<center>Environmental Permitting Amendments</center>
+<center>Shallenberger</center>
+<center>/ Millner</center>
+<center>HPUT Passed  7-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

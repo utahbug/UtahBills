@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0281
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 6:23 PM</b><hr>
+<center>1SB 281</center>
+<center>Senior Nutrition Private Donation Incentives</center>
+<center>Stratton</center>
+<center>SHHS Substituted 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0125
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 11:41 PM</b><hr>
+<center>3HB 125</center>
+<center>Department of Natural Resources Related Modifications Amendments</center>
+<center>Shipp</center>
+<center>/ Hinkins</center>
+<center>HNAE Amended 8-0-6</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0119
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:40 PM</b><hr>
+<center>SB 119</center>
+<center>School and Classroom Amendments</center>
+<center>Fillmore</center>
+<center>SEDU Passed  4-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

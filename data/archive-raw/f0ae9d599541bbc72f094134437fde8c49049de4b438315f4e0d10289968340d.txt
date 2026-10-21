@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0301
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 9:58 AM</b><hr>
+<center>SB 301</center>
+<center>Summons Amendments</center>
+<center>Pitcher</center>
+<center>SJLC Passed  5-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

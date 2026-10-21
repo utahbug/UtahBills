@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR005
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 8:14 PM</b><hr>
+<center>HCR 5</center>
+<center>House Concurrent Resolution on State Management of Federal Public Lands</center>
+<center>Eliason</center>
+<center>/ Stratton</center>
+<center>HNAE Amended 9-1-4</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0572
+ Substitute 6
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/5/2026 10:00 AM</b><hr>
+<center>6HB 572</center>
+<center>Behavioral and Mental Health Amendments</center>
+<center>Eliason</center>
+<center>Vickers</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

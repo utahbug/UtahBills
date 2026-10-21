@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0491
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:48 PM</b><hr>
+<center>1HB 491</center>
+<center>State Highway Designation Amendments</center>
+<center>Shallenberger</center>
+<center>/ Brammer</center>
+<center>HTRA Amended 11-0-1</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

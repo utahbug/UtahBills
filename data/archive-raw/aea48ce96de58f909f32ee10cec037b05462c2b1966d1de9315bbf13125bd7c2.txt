@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0514
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:35 PM</b><hr>
+<center>1HB 514</center>
+<center>Utah Energy Council Amendments</center>
+<center>Walter</center>
+<center>Millner</center>
+<center>SREV Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0453
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/24/2026 10:31 AM</b><hr>
+<center>1HB 453</center>
+<center>Unspent Funding Amendments</center>
+<center>Matthews</center>
+<center>/ Escamilla</center>
+<center>HGOC Substituted 7-4-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0125
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:04 PM</b><hr>
+<center>1HB 125</center>
+<center>Aquatic Invasive Species Amendments</center>
+<center>Shipp</center>
+<center>Hinkins</center>
+<center>SNAE Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

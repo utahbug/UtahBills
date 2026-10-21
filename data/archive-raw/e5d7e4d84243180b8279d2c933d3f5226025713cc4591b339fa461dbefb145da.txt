@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0165
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 10:27 AM</b><hr>
+<center>3HB 165</center>
+<center>Critical Infrastructure Amendments</center>
+<center>Brooks</center>
+<center>/ Stratton</center>
+<center>HLAW Passed  10-0-1</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

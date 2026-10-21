@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0259
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:01 PM</b><hr>
+<center>5HB 259</center>
+<center>Parental Access to Children's Medical Records Amendments</center>
+<center>Petersen</center>
+<center>Brammer</center>
+<center>SBUS Substituted Amended 6-2-0</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 6</center>
+
+
+</font>
+</body>
+</html>

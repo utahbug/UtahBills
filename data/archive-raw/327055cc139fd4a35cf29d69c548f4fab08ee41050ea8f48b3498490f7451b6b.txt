@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0022
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:39 AM</b><hr>
+<center>3HB 22</center>
+<center>Vintage Vehicle Amendments</center>
+<center>Thurston</center>
+<center>Buss</center>
+<center>STPT Substituted 5-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

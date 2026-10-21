@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0077
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 10:34 AM</b><hr>
+<center>2SB 77</center>
+<center>Dual Language Immersion Amendments</center>
+<center>McCay</center>
+<center>Pierucci</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

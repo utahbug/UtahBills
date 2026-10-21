@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0053
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 11:16 AM</b><hr>
+<center>HB 53</center>
+<center>Community Rehabilitation Program Amendments</center>
+<center>Miller G.</center>
+<center>Brammer</center>
+<center>SGOP Passed  5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

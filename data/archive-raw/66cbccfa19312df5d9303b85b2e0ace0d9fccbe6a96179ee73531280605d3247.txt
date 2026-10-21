@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0268
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/25/2026 11:19 AM</b><hr>
+<center>SB 268</center>
+<center>Religious Curriculum in Schools</center>
+<center>Weiler</center>
+<center>SEDU Amended 5-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to amend 3</center>
+
+
+</font>
+</body>
+</html>

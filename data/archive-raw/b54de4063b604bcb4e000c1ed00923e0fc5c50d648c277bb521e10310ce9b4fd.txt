@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0085
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:45 PM</b><hr>
+<center>1SB 85</center>
+<center>Excellence in Education and Leadership Supplement Modifications</center>
+<center>Fillmore</center>
+<center>SEDU Substituted 4-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0267
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/5/2026 8:00 PM</b><hr>
+<center>2SB 267</center>
+<center>Software in Education Amendments</center>
+<center>Cullimore</center>
+<center>/ Fiefia</center>
+<center>HEDU Amended 9-0-6</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 5</center>
+
+
+</font>
+</body>
+</html>

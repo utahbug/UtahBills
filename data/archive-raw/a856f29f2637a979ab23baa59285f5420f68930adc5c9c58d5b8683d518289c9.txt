@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0204
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 3:31 PM</b><hr>
+<center>1HB 204</center>
+<center>Higher Education Student Belief Accommodation</center>
+<center>Petersen</center>
+<center>Brammer</center>
+<center>SEDU Amended 2-1-4</center>
+<center>2nd Reading</center>
+<center>Motion to amend 4</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0221
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 10:49 AM</b><hr>
+<center>2SB 221</center>
+<center>Housing and Transit Reinvestment Zone Amendments</center>
+<center>Harper</center>
+<center>Dunnigan</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

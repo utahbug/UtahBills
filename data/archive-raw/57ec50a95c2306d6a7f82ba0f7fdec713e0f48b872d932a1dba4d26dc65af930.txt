@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0410
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:13 AM</b><hr>
+<center>1HB 410</center>
+<center>Water Leasing Amendments</center>
+<center>Koford</center>
+<center>/ Sandall</center>
+<center>HNAE Substituted 13-0-1</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

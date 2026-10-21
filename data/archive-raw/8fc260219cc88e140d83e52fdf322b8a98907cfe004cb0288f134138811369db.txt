@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0539
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/24/2026 3:16 PM</b><hr>
+<center>2HB 539</center>
+<center>Public Safety Modifications</center>
+<center>MacPherson</center>
+<center>/ </center>
+<center>HLAW Substituted 9-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

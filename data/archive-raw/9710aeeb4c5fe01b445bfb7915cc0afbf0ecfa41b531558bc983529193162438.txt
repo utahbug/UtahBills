@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0179
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:49 AM</b><hr>
+<center>3HB 179</center>
+<center>Milk Amendments</center>
+<center>Chevrier</center>
+<center>Cullimore</center>
+<center>SBUS Substituted Amended 7-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

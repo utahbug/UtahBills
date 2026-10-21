@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0306
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 3:15 PM</b><hr>
+<center>SB 306</center>
+<center>Special Districts Modifications</center>
+<center>Cullimore</center>
+<center>SREV Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

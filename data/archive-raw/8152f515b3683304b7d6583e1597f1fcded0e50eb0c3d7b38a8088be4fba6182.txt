@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0122
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 11:30 AM</b><hr>
+<center>3SB 122</center>
+<center>HOA Amendments</center>
+<center>Harper</center>
+<center>/ Maloy</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

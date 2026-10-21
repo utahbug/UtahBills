@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0234
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/11/2026 11:48 AM</b><hr>
+<center>1HB 234</center>
+<center>Education Testing Amendments</center>
+<center>Lisonbee</center>
+<center>/ Fillmore</center>
+<center>HEDU Passed  8-6-1</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

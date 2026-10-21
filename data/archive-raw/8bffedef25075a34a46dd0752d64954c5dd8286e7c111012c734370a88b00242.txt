@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0088
+ Substitute 6
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 4:24 PM</b><hr>
+<center>6HB 88</center>
+<center>Public Assistance Amendments</center>
+<center>Lee</center>
+<center>/ </center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

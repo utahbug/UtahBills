@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0284
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:39 PM</b><hr>
+<center>SB 284</center>
+<center>Local Land Use Modifications</center>
+<center>Fillmore</center>
+<center>Roberts</center>
+<center>SEDW Passed  4-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0210
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:24 PM</b><hr>
+<center>2HB 210</center>
+<center>Tax Penalties Amendments</center>
+<center>Ballard</center>
+<center>/ Balderree</center>
+<center>HREV Substituted 7-1-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

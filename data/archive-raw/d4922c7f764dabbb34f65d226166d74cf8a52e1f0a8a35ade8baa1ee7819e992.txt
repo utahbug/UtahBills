@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0108
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/6/2026 3:35 PM</b><hr>
+<center>1SB 108</center>
+<center>Online Marketplace Amendments</center>
+<center>Fillmore</center>
+<center>Fiefia</center>
+<center>SBUS Substituted 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

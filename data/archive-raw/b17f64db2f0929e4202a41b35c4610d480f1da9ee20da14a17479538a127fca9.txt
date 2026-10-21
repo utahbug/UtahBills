@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0537
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/20/2026 4:06 PM</b><hr>
+<center>1HB 537</center>
+<center>Olympic Ticket Sales Tax Exemption</center>
+<center>Hawkins</center>
+<center>/ </center>
+<center>HEDW Substituted 7-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0217
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:16 AM</b><hr>
+<center>1SB 217</center>
+<center>Local Food Amendments</center>
+<center>Cullimore</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

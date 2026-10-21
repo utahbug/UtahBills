@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0137
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 4:13 PM</b><hr>
+<center>1HB 137</center>
+<center>Violent Crime Clearance Rate Amendments</center>
+<center>Clancy</center>
+<center>McKell</center>
+<center>SJLC Passed  3-0-6</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0275
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 11:10 AM</b><hr>
+<center>SB 275</center>
+<center>State-Endorsed Digital Identity Program Amendments</center>
+<center>Cullimore</center>
+<center>Cutler</center>
+<center>SGOP Passed  6-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

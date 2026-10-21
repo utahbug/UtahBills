@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0597
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/4/2026 7:49 PM</b><hr>
+<center>1HB 597</center>
+<center>Alcohol Amendments</center>
+<center>Burton</center>
+<center>Stevenson</center>
+<center>SGOP Substituted 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

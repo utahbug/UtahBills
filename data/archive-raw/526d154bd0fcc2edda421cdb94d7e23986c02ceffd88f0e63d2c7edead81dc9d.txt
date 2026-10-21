@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0165
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 10:54 AM</b><hr>
+<center>3HB 165</center>
+<center>Critical Infrastructure Amendments</center>
+<center>Brooks</center>
+<center>Stratton</center>
+<center>STPT Substituted 6-0-2</center>
+<center>Motion to Refuse to Recede</center>
+
+
+</font>
+</body>
+</html>

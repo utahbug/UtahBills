@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0445
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:25 PM</b><hr>
+<center>1HB 445</center>
+<center>County Government Land Purchasing</center>
+<center>Strong</center>
+<center>/ </center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

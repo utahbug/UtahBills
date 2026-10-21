@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0142
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:21 PM</b><hr>
+<center>SB 142</center>
+<center>Private Probation and Court Ordered Services Amendments</center>
+<center>Plumb</center>
+<center>/ Loubet</center>
+<center>HLAW Passed  7-0-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

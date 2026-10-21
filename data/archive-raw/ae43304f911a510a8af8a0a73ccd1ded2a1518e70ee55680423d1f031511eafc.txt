@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0304
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 7:21 PM</b><hr>
+<center>1SB 304</center>
+<center>Protective Order Amendments</center>
+<center>Stratton</center>
+<center>Amended</center>
+<center>2nd Reading</center>
+<center>Motion to amend v</center>
+
+
+</font>
+</body>
+</html>

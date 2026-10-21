@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0555
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/26/2026 7:57 PM</b><hr>
+<center>HB 555</center>
+<center>Changes to Family Law Actions</center>
+<center>T. Miller</center>
+<center>/ </center>
+<center>HJUD Amended 10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

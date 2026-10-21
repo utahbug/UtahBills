@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0408
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 10:43 AM</b><hr>
+<center>1HB 408</center>
+<center>Data Sharing Amendments</center>
+<center>Fiefia</center>
+<center>/ </center>
+<center>HEDW Substituted 7-2-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

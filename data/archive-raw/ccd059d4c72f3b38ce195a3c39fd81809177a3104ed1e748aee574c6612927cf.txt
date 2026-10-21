@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0321
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:13 PM</b><hr>
+<center>2HB 321</center>
+<center>Inmate Medical Treatment Rates Amendments</center>
+<center>Fiefia</center>
+<center>/ Stratton</center>
+<center>HHHS Substituted 7-0-7</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

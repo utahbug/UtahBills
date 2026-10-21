@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0304
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:26 PM</b><hr>
+<center>2SB 304</center>
+<center>Protective Order Amendments</center>
+<center>Stratton</center>
+<center>/ MacPherson</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0216
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:18 PM</b><hr>
+<center>SB 216</center>
+<center>Higher Education Performance and Enrollment Funding</center>
+<center>Millner</center>
+<center>Peterson</center>
+<center>SEDU Amended 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

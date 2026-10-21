@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0342
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 6:20 PM</b><hr>
+<center>HB 342</center>
+<center>Federal Grant Process Amendments</center>
+<center>Peterson</center>
+<center>Stevenson</center>
+<center>SREV Passed  4-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

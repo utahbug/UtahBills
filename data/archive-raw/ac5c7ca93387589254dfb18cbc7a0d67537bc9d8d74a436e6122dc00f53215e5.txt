@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0041
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 11:08 AM</b><hr>
+<center>2HB 41</center>
+<center>Construction and Fire Codes Amendments</center>
+<center>Peterson</center>
+<center>Vickers</center>
+<center>SBUS Passed  6-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

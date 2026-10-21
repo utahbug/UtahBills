@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0495
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:16 AM</b><hr>
+<center>1HB 495</center>
+<center>Capital Felony Case Amendments</center>
+<center>Pierucci</center>
+<center>/ </center>
+<center>HLAW Substituted 8-2-1</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

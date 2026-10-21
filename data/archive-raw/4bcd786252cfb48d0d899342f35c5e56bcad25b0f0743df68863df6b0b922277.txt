@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0021
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 1/20/2026 3:56 PM</b><hr>
+<center>HB 21</center>
+<center>Senior Care Facility Amendments</center>
+<center>Auxier</center>
+<center>/ Weiler</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

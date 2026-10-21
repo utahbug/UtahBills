@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0217
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:39 PM</b><hr>
+<center>SB 217</center>
+<center>Local Food Amendments</center>
+<center>Cullimore</center>
+<center>SBUS Passed  7-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

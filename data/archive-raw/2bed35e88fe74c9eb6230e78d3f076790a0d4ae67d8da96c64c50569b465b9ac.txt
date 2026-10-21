@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0480
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/23/2026 3:58 PM</b><hr>
+<center>1HB 480</center>
+<center>Medical Record Amendments</center>
+<center>Lisonbee</center>
+<center>/ </center>
+<center>HJUD Substituted 9-2-0</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

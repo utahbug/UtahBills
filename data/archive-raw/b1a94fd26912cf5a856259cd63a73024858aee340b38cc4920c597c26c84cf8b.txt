@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0223
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 3:10 PM</b><hr>
+<center>1HB 223</center>
+<center>Electronic Signature Collection Amendments</center>
+<center>Teuscher</center>
+<center>Stevenson</center>
+<center>SEDW Passed  4-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

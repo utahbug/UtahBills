@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0048
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 3:08 PM</b><hr>
+<center>3HB 48</center>
+<center>Criminal and Juvenile Justice Changes</center>
+<center>Lisonbee</center>
+<center>Cullimore</center>
+<center>SJLC Passed  6-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

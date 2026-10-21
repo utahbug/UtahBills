@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0319
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 11:55 AM</b><hr>
+<center>SB 319</center>
+<center>Health Insurance Preauthorization Amendments</center>
+<center>Johnson</center>
+<center>SBUS Passed  4-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

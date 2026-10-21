@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0251
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 10:37 AM</b><hr>
+<center>SB 251</center>
+<center>Local Health Department and Department of Environmental Quality Coordination</center>
+<center>Sandall</center>
+<center>Peterson</center>
+<center>SREV Passed  4-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

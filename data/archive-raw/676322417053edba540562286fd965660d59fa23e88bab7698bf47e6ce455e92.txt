@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0324
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 11:43 AM</b><hr>
+<center>HB 324</center>
+<center>Utah Marriage Commission Fee Amendments</center>
+<center>Ballard</center>
+<center>Weiler</center>
+<center>SGOP Passed  3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

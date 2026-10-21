@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0031
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:09 PM</b><hr>
+<center>3SB 31</center>
+<center>Office of Professional Licensure Review Amendments</center>
+<center>Vickers</center>
+<center>Kyle</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

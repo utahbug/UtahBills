@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0400
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 10:49 AM</b><hr>
+<center>HB 400</center>
+<center>Landscaping Water Amendments</center>
+<center>Owens</center>
+<center>/ Fillmore</center>
+<center>HPOL Passed  7-3-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR018
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 10:40 AM</b><hr>
+<center>HJR 18</center>
+<center>Joint Resolution Urging Congress to Eliminate Marriage Penalties</center>
+<center>Ballard</center>
+<center>/ </center>
+<center>HREV Passed  9-0-2</center>
+<center>Consent</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

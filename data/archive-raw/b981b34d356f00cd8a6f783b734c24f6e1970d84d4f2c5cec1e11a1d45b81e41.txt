@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0034
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 3:09 PM</b><hr>
+<center>4SB 34</center>
+<center>Public Education Revisions</center>
+<center>Johnson</center>
+<center>Walter</center>
+<center>Substituted</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

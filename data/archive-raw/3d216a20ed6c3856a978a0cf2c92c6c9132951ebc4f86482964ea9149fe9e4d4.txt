@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0593
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 6:41 PM</b><hr>
+<center>1HB 593</center>
+<center>Bail Amendments</center>
+<center>MacPherson</center>
+<center>/ Brammer</center>
+<center>HJUD Substituted Amended 8-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

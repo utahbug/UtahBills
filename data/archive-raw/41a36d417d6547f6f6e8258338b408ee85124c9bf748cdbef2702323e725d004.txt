@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0123
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:42 PM</b><hr>
+<center>2HB 123</center>
+<center>Sex, Kidnap, and Child Abuse Offender Registration Amendments</center>
+<center>Acton</center>
+<center>/ Winterton</center>
+<center>HJUD Amended 8-0-3</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

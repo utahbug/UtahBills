@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0012
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:14 PM</b><hr>
+<center>2SB 12</center>
+<center>Alternative Dispute Resolution Sunset Amendments</center>
+<center>Weiler</center>
+<center>/ Stoddard</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Substitute Motion - Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

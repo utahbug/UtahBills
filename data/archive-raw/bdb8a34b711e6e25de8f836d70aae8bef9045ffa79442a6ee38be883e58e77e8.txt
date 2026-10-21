@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0329
+ Substitute 3
+ - 
+House/ substituted
+ - Failed
+ on voice vote
+, 2/17/2026 11:10 AM</b><hr>
+<center>3HB 329</center>
+<center>State Employee Maternity and Leave Amendments</center>
+<center>Defay</center>
+<center>/ </center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

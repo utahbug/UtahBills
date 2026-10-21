@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0208
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 10:36 AM</b><hr>
+<center>SB 208</center>
+<center>Vehicle Emission Inspection Program Revisions</center>
+<center>Pitcher</center>
+<center>SREV Passed  6-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

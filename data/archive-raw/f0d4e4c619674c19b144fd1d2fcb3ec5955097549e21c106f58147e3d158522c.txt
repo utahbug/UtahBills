@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0132
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/4/2026 2:15 PM</b><hr>
+<center>1HB 132</center>
+<center>Military Amendments</center>
+<center>Burton</center>
+<center>/ Millner</center>
+<center>HGOC Amended 10-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0495
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:31 PM</b><hr>
+<center>2HB 495</center>
+<center>Capital Felony Case Amendments</center>
+<center>Pierucci</center>
+<center>McCay</center>
+<center>SJLC Substituted 6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

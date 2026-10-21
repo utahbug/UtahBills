@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0152
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 12:01 PM</b><hr>
+<center>SB 152</center>
+<center>Public and Higher Education Collaboration</center>
+<center>McKell</center>
+<center>/ V. Peterson</center>
+<center>Reconsideration</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

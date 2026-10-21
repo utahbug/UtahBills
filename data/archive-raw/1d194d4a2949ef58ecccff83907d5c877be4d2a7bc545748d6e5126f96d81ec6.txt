@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0534
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/24/2026 10:58 AM</b><hr>
+<center>HB 534</center>
+<center>Firearm Immunity Amendments</center>
+<center>Ivory</center>
+<center>/ </center>
+<center>HPUT Passed  11-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

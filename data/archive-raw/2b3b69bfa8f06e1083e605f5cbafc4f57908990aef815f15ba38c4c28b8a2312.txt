@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0279
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/5/2026 2:54 PM</b><hr>
+<center>1HB 279</center>
+<center>Higher Education Code Amendments</center>
+<center>Peterson</center>
+<center>/ </center>
+<center>HEDU Substituted 12-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

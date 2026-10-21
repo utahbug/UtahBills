@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR011
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:49 PM</b><hr>
+<center>SJR 11</center>
+<center>Joint Resolution Recognizing National Blood Donor Month</center>
+<center>Escamilla</center>
+<center>Wilcox</center>
+<center>SHHS Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

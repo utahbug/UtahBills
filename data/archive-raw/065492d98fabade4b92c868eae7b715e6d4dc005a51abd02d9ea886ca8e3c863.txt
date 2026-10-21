@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0467
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 11:42 AM</b><hr>
+<center>4HB 467</center>
+<center>Utah Fits All Scholarship Program Modifications</center>
+<center>Pierucci</center>
+<center>Cullimore</center>
+<center>SEDU Substituted 5-1-1</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

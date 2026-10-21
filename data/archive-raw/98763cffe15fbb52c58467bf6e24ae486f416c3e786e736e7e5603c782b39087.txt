@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0319
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 8:46 PM</b><hr>
+<center>2HB 319</center>
+<center>Electronic Records Amendments</center>
+<center>Cutler</center>
+<center>Harper</center>
+<center>SJLC Substituted Amended 5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

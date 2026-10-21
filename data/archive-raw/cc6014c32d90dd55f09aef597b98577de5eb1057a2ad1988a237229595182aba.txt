@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0492
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:33 AM</b><hr>
+<center>3HB 492</center>
+<center>Transportation, Infrastructure, and Housing Amendments</center>
+<center>Roberts</center>
+<center>Cullimore</center>
+<center>STPT Passed  4-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

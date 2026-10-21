@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0312
+ Substitute 5
+ - 
+ - Failed
+ on voice vote
+, 3/5/2026 11:54 AM</b><hr>
+<center>5HB 312</center>
+<center>School Curriculum and Standards Modifications</center>
+<center>Auxier</center>
+<center>/ Fillmore</center>
+<center>HEDU Substituted Amended 13-1-1</center>
+<center>Concurrence</center>
+<center>Motion to Concur</center>
+
+
+</font>
+</body>
+</html>

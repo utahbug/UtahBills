@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0213
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/6/2026 4:09 PM</b><hr>
+<center>SB 213</center>
+<center>Utah Payment of Wages Act Statute of Limitations</center>
+<center>Stratton</center>
+<center>/ Lisonbee</center>
+<center>HJUD Amended 8-1-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

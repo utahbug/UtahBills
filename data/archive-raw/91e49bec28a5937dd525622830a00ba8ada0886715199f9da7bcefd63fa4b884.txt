@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR006
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 10:39 AM</b><hr>
+<center>1SJR 6</center>
+<center>Joint Resolution Amending Court Rules Regarding Medical Malpractice</center>
+<center>Sandall</center>
+<center>Hall</center>
+<center>SJLC Substituted 6-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

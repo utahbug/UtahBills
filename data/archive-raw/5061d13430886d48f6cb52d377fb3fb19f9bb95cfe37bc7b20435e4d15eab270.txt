@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0223
+ - 
+ - Passed
+ on voice vote
+, 2/9/2026 2:27 PM</b><hr>
+<center>HB 223</center>
+<center>Electronic Signature Collection Amendments</center>
+<center>Teuscher</center>
+<center>/ </center>
+<center>HGOC Passed  7-2-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

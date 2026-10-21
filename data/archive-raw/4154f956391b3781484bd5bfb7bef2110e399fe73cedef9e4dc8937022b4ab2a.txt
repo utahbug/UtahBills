@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0263
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 2:29 PM</b><hr>
+<center>HB 263</center>
+<center>Heavy Duty Vehicle Amendments</center>
+<center>Clancy</center>
+<center>/ Cullimore</center>
+<center>HTRA Amended 8-2-2</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

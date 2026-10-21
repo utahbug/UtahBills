@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0220
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 3:35 PM</b><hr>
+<center>2HB 220</center>
+<center>Public Safety Data Amendments</center>
+<center>Wilcox</center>
+<center>Cullimore</center>
+<center>SGOP Passed  6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

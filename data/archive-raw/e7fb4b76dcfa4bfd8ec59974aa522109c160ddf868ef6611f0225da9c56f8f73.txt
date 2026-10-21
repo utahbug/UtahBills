@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0457
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 10:36 AM</b><hr>
+<center>1HB 457</center>
+<center>County Growth Planning and Annexation Amendments</center>
+<center>Dunnigan</center>
+<center>/ Winterton</center>
+<center>HPOL Substituted 7-2-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

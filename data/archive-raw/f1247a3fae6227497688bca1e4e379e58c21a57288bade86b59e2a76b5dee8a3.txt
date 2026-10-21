@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0273
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 5:11 PM</b><hr>
+<center>2HB 273</center>
+<center>Classroom Technology Amendments</center>
+<center>Defay</center>
+<center>Wilson</center>
+<center>SEDU Passed  3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

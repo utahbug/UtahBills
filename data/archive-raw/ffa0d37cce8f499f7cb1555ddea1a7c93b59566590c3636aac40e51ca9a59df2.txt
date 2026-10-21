@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0535
+ Substitute 4
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 11:08 PM</b><hr>
+<center>4HB 535</center>
+<center>Disposition of Public Property Modifications</center>
+<center>Walter</center>
+<center>McCay</center>
+<center>SREV Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

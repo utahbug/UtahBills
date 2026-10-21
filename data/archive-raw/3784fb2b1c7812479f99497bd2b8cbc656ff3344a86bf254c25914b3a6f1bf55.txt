@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0315
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/2/2026 11:25 AM</b><hr>
+<center>1HB 315</center>
+<center>Human Growth and Development Instruction</center>
+<center>Peck</center>
+<center>/ </center>
+<center>HEDU Substituted Amended 6-5-4</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

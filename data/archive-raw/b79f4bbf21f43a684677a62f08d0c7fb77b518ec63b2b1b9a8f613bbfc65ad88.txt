@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0572
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 11:22 AM</b><hr>
+<center>4HB 572</center>
+<center>Behavioral and Mental Health Amendments</center>
+<center>Eliason</center>
+<center>Vickers</center>
+<center>SEDW Substituted 4-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 5</center>
+
+
+</font>
+</body>
+</html>

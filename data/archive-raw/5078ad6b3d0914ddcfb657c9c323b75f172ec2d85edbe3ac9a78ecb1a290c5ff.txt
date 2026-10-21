@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0287
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/27/2026 2:48 PM</b><hr>
+<center>SB 287</center>
+<center>Targeted Advertising Tax</center>
+<center>McKell</center>
+<center>Teuscher</center>
+<center>SREV Passed  4-2-1</center>
+<center>3rd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

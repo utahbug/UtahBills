@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0125
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 11:34 AM</b><hr>
+<center>1SB 125</center>
+<center>Theft Amendments</center>
+<center>Musselman</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

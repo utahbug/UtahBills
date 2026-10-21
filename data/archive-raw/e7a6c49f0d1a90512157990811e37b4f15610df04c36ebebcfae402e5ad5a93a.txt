@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0058
+ - 
+ - Passed
+ on voice vote
+, 1/22/2026 11:56 AM</b><hr>
+<center>SB 58</center>
+<center>Public School Attendance Amendments</center>
+<center>Fillmore</center>
+<center>Thompson</center>
+<center>SEDU Amended 3-1-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

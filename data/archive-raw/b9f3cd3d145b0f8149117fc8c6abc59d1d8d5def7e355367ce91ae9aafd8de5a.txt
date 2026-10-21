@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0548
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/2/2026 3:09 PM</b><hr>
+<center>HB 548</center>
+<center>Primary Election Amendments</center>
+<center>Stoddard</center>
+<center>/ McKell</center>
+<center>HPOL Amended 6-2-4</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

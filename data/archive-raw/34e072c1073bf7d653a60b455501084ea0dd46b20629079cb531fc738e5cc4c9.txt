@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0445
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:33 PM</b><hr>
+<center>2HB 445</center>
+<center>County Government Land Purchasing</center>
+<center>Strong</center>
+<center>McCay</center>
+<center>SREV Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

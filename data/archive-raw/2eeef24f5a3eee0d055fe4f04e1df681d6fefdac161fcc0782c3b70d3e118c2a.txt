@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0056
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/6/2026 11:37 AM</b><hr>
+<center>1HB 56</center>
+<center>Vehicle Registration Amendments</center>
+<center>Hall</center>
+<center>/ </center>
+<center>HREV Substituted 10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

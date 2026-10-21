@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0025
+ - 
+ - Passed
+ on voice vote
+, 1/30/2026 11:20 AM</b><hr>
+<center>SB 25</center>
+<center>Retirement Modifications</center>
+<center>Harper</center>
+<center>/ Acton</center>
+<center>HEDW Passed  9-0-1</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

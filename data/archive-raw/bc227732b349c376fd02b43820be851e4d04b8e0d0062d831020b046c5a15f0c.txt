@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0591
+ Substitute 3
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 10:53 PM</b><hr>
+<center>3HB 591</center>
+<center>Nuisance Amendments</center>
+<center>Jack</center>
+<center>Brammer</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0148
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 9:44 AM</b><hr>
+<center>3SB 148</center>
+<center>General Oversight Amendments</center>
+<center>McCay</center>
+<center>Lee</center>
+<center>Amended</center>
+<center>Concurrence</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

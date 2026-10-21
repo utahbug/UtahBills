@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0089
+ - 
+Senate/ floor amendment
+ - Failed
+ on voice vote
+, 3/5/2026 6:46 PM</b><hr>
+<center>HB 89</center>
+<center>Use of Polygraph Amendments</center>
+<center>Romero</center>
+<center>McKell</center>
+<center>SJLC Passed  3-2-4</center>
+<center>2nd Reading</center>
+<center>Motion to amend v</center>
+
+
+</font>
+</body>
+</html>

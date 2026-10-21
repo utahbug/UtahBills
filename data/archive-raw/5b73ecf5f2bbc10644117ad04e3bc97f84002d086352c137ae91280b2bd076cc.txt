@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SR0001
+ - 
+ - Passed
+ on voice vote
+, 1/20/2026 4:17 PM</b><hr>
+<center>SR 1</center>
+<center>Senate Rules Resolution - Amendments to Senate Rules</center>
+<center>Fillmore</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

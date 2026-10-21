@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0590
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 10:23 AM</b><hr>
+<center>1HB 590</center>
+<center>Child Therapy Amendments</center>
+<center>Dailey-Provost</center>
+<center>/ </center>
+<center>HHHS Substituted 12-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

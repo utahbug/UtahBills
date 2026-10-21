@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0287
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 7:12 PM</b><hr>
+<center>SB 287</center>
+<center>Targeted Advertising Tax</center>
+<center>McKell</center>
+<center>SREV Passed  4-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

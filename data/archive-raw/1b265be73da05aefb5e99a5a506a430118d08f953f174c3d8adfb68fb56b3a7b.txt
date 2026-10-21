@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0287
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/6/2026 4:20 PM</b><hr>
+<center>SB 287</center>
+<center>Targeted Advertising Tax</center>
+<center>McKell</center>
+<center>/ Teuscher</center>
+<center>HEDW Amended 8-2-0</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0148
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 2:32 PM</b><hr>
+<center>1HB 148</center>
+<center>Tax Return Donation Amendments</center>
+<center>MacPherson</center>
+<center>/ Escamilla</center>
+<center>HREV Substituted 10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

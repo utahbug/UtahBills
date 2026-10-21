@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0172
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 12:03 PM</b><hr>
+<center>SB 172</center>
+<center>Airport and Air Amendments</center>
+<center>Harper</center>
+<center>Welton</center>
+<center>STPT Amended 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

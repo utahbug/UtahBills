@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR003
+ - 
+ - Passed
+ on voice vote
+, 1/21/2026 11:33 AM</b><hr>
+<center>SJR 3</center>
+<center>Joint Resolution Amending Rules Relating to the Practice of Law</center>
+<center>McCay</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR012
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:06 AM</b><hr>
+<center>HCR 12</center>
+<center>Concurrent Resolution Celebrating the 250th Anniversary of the Declaration of Independence</center>
+<center>Wilcox</center>
+<center>Stratton</center>
+<center>SEDW Passed  3-0-3</center>
+<center>Consent</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

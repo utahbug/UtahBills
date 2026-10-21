@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0392
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/4/2026 2:20 PM</b><hr>
+<center>1HB 392</center>
+<center>Constitutional Court Amendments</center>
+<center>MacPherson</center>
+<center>/ McKell</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

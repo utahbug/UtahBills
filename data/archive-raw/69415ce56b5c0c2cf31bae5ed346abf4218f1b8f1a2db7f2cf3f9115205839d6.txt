@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0450
+ Substitute 6
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 12:02 PM</b><hr>
+<center>6HB 450</center>
+<center>Data Privacy Amendments</center>
+<center>Shallenberger</center>
+<center>/ Cullimore</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

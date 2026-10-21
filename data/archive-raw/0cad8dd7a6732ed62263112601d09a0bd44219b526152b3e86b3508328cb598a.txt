@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0314
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 3:47 PM</b><hr>
+<center>SB 314</center>
+<center>Sleep Disorders Education Amendments</center>
+<center>Kwan</center>
+<center>/ Dailey-Provost</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

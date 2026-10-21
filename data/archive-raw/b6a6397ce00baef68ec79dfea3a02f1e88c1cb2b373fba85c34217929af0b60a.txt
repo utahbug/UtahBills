@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0327
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 2:55 PM</b><hr>
+<center>SB 327</center>
+<center>Occupational Licensing Amendments</center>
+<center>Johnson</center>
+<center>SEDW Passed  3-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

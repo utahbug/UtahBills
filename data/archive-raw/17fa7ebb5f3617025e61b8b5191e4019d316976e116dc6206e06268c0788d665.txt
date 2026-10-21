@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0480
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 11:10 PM</b><hr>
+<center>2HB 480</center>
+<center>Medical Record Amendments</center>
+<center>Lisonbee</center>
+<center>Brammer</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

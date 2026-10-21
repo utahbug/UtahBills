@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0014
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 1/20/2026 3:47 PM</b><hr>
+<center>HB 14</center>
+<center>Behavior Analyst Licensing Amendments</center>
+<center>Maloy</center>
+<center>/ Weiler</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

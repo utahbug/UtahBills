@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0165
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/6/2026 11:20 PM</b><hr>
+<center>1SB 165</center>
+<center>Economic Mobility Initiative</center>
+<center>Fillmore</center>
+<center>/ Clancy</center>
+<center>HEDW Amended 6-3-1</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

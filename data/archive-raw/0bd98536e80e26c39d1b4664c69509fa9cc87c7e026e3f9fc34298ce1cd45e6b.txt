@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0153
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 4:24 PM</b><hr>
+<center>4SB 153</center>
+<center>Election Amendments</center>
+<center>Johnson</center>
+<center>Lee</center>
+<center>Substituted</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

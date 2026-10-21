@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0492
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:43 PM</b><hr>
+<center>4HB 492</center>
+<center>Transportation, Infrastructure, and Housing Amendments</center>
+<center>Roberts</center>
+<center>Cullimore</center>
+<center>Substituted</center>
+<center>Motion to Refuse to Recede</center>
+
+
+</font>
+</body>
+</html>

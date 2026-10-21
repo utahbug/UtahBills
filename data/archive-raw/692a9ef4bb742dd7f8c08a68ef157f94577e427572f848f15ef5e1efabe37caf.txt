@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0062
+ - 
+ - Passed
+ on voice vote
+, 2/9/2026 11:25 AM</b><hr>
+<center>SB 62</center>
+<center>School Funding Amendments</center>
+<center>Fillmore</center>
+<center>SEDU Passed  4-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

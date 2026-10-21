@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SCR008
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 11:32 AM</b><hr>
+<center>SCR 8</center>
+<center>Resolution Honoring the Utah Parent Teacher Association</center>
+<center>Harper</center>
+<center>Dunnigan</center>
+<center>STPT Passed  4-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0216
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/5/2026 3:37 PM</b><hr>
+<center>SB 216</center>
+<center>Higher Education Performance and Enrollment Funding</center>
+<center>Millner</center>
+<center>/ K. Peterson</center>
+<center>HEDU Passed  10-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 5</center>
+
+
+</font>
+</body>
+</html>

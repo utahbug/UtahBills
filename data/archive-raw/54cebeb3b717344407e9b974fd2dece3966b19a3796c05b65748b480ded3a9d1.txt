@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0444
+ Substitute 2
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 9:10 PM</b><hr>
+<center>2HB 444</center>
+<center>State Land Access Road Amendments</center>
+<center>Shelley</center>
+<center>Stratton</center>
+<center>STPT Passed  6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to amend 3</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0308
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 6:57 PM</b><hr>
+<center>HB 308</center>
+<center>Homeless Services Amendments</center>
+<center>Okerlund</center>
+<center>Weiler</center>
+<center>SEDW Passed  4-0-2</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

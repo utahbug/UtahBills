@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0270
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 11:06 AM</b><hr>
+<center>1SB 270</center>
+<center>State Court Amendments</center>
+<center>Cullimore</center>
+<center>/ Teuscher</center>
+<center>HJUD Passed  10-0-1</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0155
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/6/2026 3:06 PM</b><hr>
+<center>1SB 155</center>
+<center>Unclaimed Property Amendments</center>
+<center>Weiler</center>
+<center>SGOP Substituted 6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

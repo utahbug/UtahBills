@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0139
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:20 PM</b><hr>
+<center>1SB 139</center>
+<center>Notary Amendments</center>
+<center>Musselman</center>
+<center>Sawyer</center>
+<center>SBUS Substituted 8-0-0</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

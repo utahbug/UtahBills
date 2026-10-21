@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0068
+ Substitute 6
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 10:19 AM</b><hr>
+<center>6HB 68</center>
+<center>Housing and Community Development Amendments</center>
+<center>Roberts</center>
+<center>Fillmore</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

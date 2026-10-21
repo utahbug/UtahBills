@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0158
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 4:36 PM</b><hr>
+<center>1HB 158</center>
+<center>Unlawful Tracking Amendments</center>
+<center>Owens</center>
+<center>/ </center>
+<center>HLAW Passed  9-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

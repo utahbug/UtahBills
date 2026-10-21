@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0247
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/17/2026 3:17 PM</b><hr>
+<center>1HB 247</center>
+<center>Great Salt Lake Funding Amendments</center>
+<center>Ward</center>
+<center>/ Sandall</center>
+<center>HNAE Substituted 13-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

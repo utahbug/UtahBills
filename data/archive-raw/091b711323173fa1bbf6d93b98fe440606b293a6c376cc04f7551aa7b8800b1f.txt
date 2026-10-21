@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0392
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/3/2026 2:19 PM</b><hr>
+<center>HB 392</center>
+<center>Constitutional Court Amendments</center>
+<center>MacPherson</center>
+<center>/ </center>
+<center>HLAW Passed  7-2-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

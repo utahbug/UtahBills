@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HR0007
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/27/2026 3:33 PM</b><hr>
+<center>1HR 7</center>
+<center>House Rules Modifications</center>
+<center>Dunnigan</center>
+<center>/ </center>
+<center>HRUL Substituted Amended 7-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

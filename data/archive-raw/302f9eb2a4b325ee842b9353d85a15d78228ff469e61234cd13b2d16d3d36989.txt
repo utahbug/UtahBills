@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0278
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 2:38 PM</b><hr>
+<center>1SB 278</center>
+<center>Point of the Mountain State Land Authority Modifications</center>
+<center>Stevenson</center>
+<center>Teuscher</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

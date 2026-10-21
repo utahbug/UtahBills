@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0242
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 8:15 PM</b><hr>
+<center>4SB 242</center>
+<center>Transportation Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>Amended</center>
+<center>Concurrence</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

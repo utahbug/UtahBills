@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0306
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 11:50 AM</b><hr>
+<center>1HB 306</center>
+<center>Reinvestment Fee Amendments</center>
+<center>Defay</center>
+<center>Cullimore</center>
+<center>SBUS Amended 5-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

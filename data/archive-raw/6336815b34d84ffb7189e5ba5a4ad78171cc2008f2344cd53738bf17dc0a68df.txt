@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0012
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 11:26 AM</b><hr>
+<center>2SB 12</center>
+<center>Sunset and Repeal Date Amendments</center>
+<center>Weiler</center>
+<center>/ Stoddard</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

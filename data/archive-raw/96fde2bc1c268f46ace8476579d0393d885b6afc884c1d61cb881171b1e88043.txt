@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0213
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:27 PM</b><hr>
+<center>2SB 213</center>
+<center>Utah Payment of Wages Act Statute of Limitations</center>
+<center>Stratton</center>
+<center>Lisonbee</center>
+<center>SBUS Passed  7-0-1</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

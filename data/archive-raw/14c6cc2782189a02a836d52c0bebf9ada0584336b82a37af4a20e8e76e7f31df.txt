@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR005
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/11/2026 11:38 AM</b><hr>
+<center>2SJR 5</center>
+<center>Joint Resolution Amending the Utah Rules of Civil Procedure</center>
+<center>Brammer</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

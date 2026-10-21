@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0365
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/25/2026 3:46 PM</b><hr>
+<center>HB 365</center>
+<center>Taxation Notification Requirements</center>
+<center>T. Peterson</center>
+<center>/ </center>
+<center>HREV Amended 10-1-0</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 3</center>
+
+
+</font>
+</body>
+</html>

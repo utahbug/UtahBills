@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0073
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 4:13 PM</b><hr>
+<center>HB 73</center>
+<center>Public Employee Retaliatory Action Amendments</center>
+<center>Walter</center>
+<center>McCay</center>
+<center>SGOP Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

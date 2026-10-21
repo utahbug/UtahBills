@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0475
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 8:13 PM</b><hr>
+<center>3HB 475</center>
+<center>Development Planning and Coordination Amendments</center>
+<center>Roberts</center>
+<center>Cullimore</center>
+<center>SEDW Passed  3-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

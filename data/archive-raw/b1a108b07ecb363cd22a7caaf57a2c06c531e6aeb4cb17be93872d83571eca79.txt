@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0351
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/10/2026 3:28 PM</b><hr>
+<center>HB 351</center>
+<center>School Vision Screening Amendments</center>
+<center>Nguyen</center>
+<center>/ Escamilla</center>
+<center>HEDU Amended 14-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

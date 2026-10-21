@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0447
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 4:39 PM</b><hr>
+<center>1HB 447</center>
+<center>Tobacco Amendments</center>
+<center>Burton</center>
+<center>Cullimore</center>
+<center>SREV Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

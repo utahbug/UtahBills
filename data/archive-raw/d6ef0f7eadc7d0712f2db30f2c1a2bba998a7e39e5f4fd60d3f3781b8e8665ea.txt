@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0151
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 11:34 AM</b><hr>
+<center>2SB 151</center>
+<center>Public Safety Funding Amendments</center>
+<center>Harper</center>
+<center>Pierucci</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

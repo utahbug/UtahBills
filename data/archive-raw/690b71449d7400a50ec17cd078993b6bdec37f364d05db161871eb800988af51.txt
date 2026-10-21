@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0312
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 10:46 AM</b><hr>
+<center>1SB 312</center>
+<center>Educator License Amendments</center>
+<center>Johnson</center>
+<center>/ Welton</center>
+<center>HEDU Substituted 7-3-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

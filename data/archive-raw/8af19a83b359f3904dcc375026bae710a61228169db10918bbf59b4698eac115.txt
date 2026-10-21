@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0156
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 11:25 AM</b><hr>
+<center>SB 156</center>
+<center>Constable Amendments</center>
+<center>Weiler</center>
+<center>SJLC Passed  5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

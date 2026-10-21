@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0170
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 11:20 AM</b><hr>
+<center>2SB 170</center>
+<center>Vitamin K Amendments</center>
+<center>Plumb</center>
+<center>Ward</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

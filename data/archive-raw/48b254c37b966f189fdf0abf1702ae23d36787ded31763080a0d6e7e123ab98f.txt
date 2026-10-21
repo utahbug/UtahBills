@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0036
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 9:48 AM</b><hr>
+<center>1HB 36</center>
+<center>Gold Medal Schools Pilot Program</center>
+<center>Hall</center>
+<center>Stratton</center>
+<center>SEDU Passed  3-0-4</center>
+<center>Consent</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

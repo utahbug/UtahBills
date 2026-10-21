@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0450
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 8:27 PM</b><hr>
+<center>5HB 450</center>
+<center>Data Privacy Amendments</center>
+<center>Shallenberger</center>
+<center>Cullimore</center>
+<center>SJLC Passed  6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 6</center>
+
+
+</font>
+</body>
+</html>

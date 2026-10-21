@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0540
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/23/2026 11:25 AM</b><hr>
+<center>HB 540</center>
+<center>Judicial Transparency, Information Access, and Transition Amendments</center>
+<center>Monson</center>
+<center>/ Brammer</center>
+<center>HJUD Passed  6-5-0</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

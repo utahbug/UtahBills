@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0218
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 11:41 AM</b><hr>
+<center>1HB 218</center>
+<center>Digital Skills Amendments</center>
+<center>Teuscher</center>
+<center>/ </center>
+<center>HEDU Amended 9-0-6</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

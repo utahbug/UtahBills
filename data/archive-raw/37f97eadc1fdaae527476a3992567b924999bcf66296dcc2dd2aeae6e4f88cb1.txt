@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0354
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 3:09 PM</b><hr>
+<center>HB 354</center>
+<center>Rescue Tracking Equipment Offense Amendments</center>
+<center>Hawkins</center>
+<center>/ </center>
+<center>HLAW Passed  11-0-0</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

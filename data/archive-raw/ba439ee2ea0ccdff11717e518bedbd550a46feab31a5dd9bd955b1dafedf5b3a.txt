@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0120
+ - 
+ - Passed
+ on voice vote
+, 2/4/2026 2:43 PM</b><hr>
+<center>HB 120</center>
+<center>Tail Light Obstruction Amendments</center>
+<center>Chew</center>
+<center>/ Riebe</center>
+<center>HTRA Passed  12-0-0</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

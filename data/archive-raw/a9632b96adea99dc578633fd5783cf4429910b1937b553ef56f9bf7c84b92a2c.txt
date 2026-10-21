@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0091
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:48 AM</b><hr>
+<center>5SB 91</center>
+<center>Motor Vehicle Registration Services Amendments</center>
+<center>Wilson</center>
+<center>/ Bolinder</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

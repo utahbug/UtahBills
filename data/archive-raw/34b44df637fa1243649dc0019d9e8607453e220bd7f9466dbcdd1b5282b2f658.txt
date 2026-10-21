@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0151
+ Substitute 4
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 4:41 PM</b><hr>
+<center>4SB 151</center>
+<center>Public Safety Funding Amendments</center>
+<center>Harper</center>
+<center>/ Pierucci</center>
+<center>HTRA Substituted 8-0-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 5</center>
+
+
+</font>
+</body>
+</html>

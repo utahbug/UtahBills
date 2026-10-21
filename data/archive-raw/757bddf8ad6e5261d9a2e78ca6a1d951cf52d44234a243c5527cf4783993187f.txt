@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0531
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/24/2026 3:06 PM</b><hr>
+<center>HB 531</center>
+<center>Scarification Amendments</center>
+<center>Matthews</center>
+<center>/ </center>
+<center>HHHS Amended 9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

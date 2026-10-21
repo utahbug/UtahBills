@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0111
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 4:29 PM</b><hr>
+<center>1HB 111</center>
+<center>Wildlife Amendments</center>
+<center>Bolinder</center>
+<center>Musselman</center>
+<center>SNAE Passed  3-1-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

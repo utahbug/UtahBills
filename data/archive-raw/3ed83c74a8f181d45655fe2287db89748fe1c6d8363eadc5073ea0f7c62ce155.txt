@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0204
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/17/2026 11:22 AM</b><hr>
+<center>1HB 204</center>
+<center>Higher Education Student Belief Accommodation</center>
+<center>M. Petersen</center>
+<center>/ Brammer</center>
+<center>HEDU Substituted 8-1-6</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

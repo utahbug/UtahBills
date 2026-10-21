@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0167
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/9/2026 11:45 AM</b><hr>
+<center>SB 167</center>
+<center>Reintegration for Disciplined Students</center>
+<center>McCay</center>
+<center>SEDU Amended 3-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to amend 3</center>
+
+
+</font>
+</body>
+</html>

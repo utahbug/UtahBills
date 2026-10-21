@@ -2,7 +2,7 @@
 
 Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
-## Implemented — through Batch 2D
+## Implemented — through Phase 2
 
 - Four real 2026 bills, saved official records and provenance checks.
 - Search/filters, bill details, stages, aggregate votes, version comparisons and transparency timeline.
@@ -19,16 +19,19 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 - **Navigation refinement implemented:** consistent nested disclosure alignment; stable-ID, session-aware sponsor profiles; source-verified request anchors; Lucide external-link indicators; Introduced Legislation with Bills/Resolutions filters. No expanded 2027 roster claim or new environment.
 
+- **Phase 2 implemented:** independent 2026 index/listing verification; complete version/action/document/statutory-reference metadata; full referenced-vote acquisition with per-record gaps and conflicts reported; incremental daily 2027 vote acquisition; on-demand readers/votes, filtered paginated histories and a generated verification report.
+
 ## Stage 1 — Legislative data and transparency · Partly implemented
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
 - **Batch 2C implemented:** guarded daily 2027 metadata/request refresh, exact tracking-ID reconciliation, preserved request/measure revisions, independent refresh reports and retained 2026 history.
-- **Next bounded batch (2E):** verify and connect the official 2027 session roster when published, and review early-session source completeness. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
+- **Next bounded batch:** reconcile reported official vote-source discrepancies, verify unresolved historical voter identities, then verify and connect the official 2027 session roster when published, and review early-session source completeness. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
 - **Implemented:** separately labeled public requests and introduced measures; counts derive from each verified snapshot. The initial Batch 2C snapshot has 253 pending requests and an empty introduced index; neither count is fixed in the application.
 - **Batch 2C implemented:** compact status/Info disclosure and corrected shared request template, human-readable official listing, optional source/history details.
 - Substitutes, late changes and boxcar-bill histories using verifiable version/publication evidence.
 - **Batch 2D implemented:** 22 source-verified decisions / 524 individual entries for HB0002, HB0011, HB0154 and SB0069; HB0155 has no imported roll call. Bill vote sections and explicitly partial legislator histories distinguish voice, procedural, amendment, committee recommendation, passage and concurrence records.
-- **Planned:** complete recorded voting histories, stronger official voter identifiers and broader committee-motion coverage.
+- **Phase 2 implemented:** all 5,672 action-history vote sources retrieved; 5,667 reconciled records and 115,130 individual entries. Five conflicting tallies are flagged and individual attribution withheld. Full version/document/statutory metadata and an index/listing completeness report are available; readers and roll calls load on demand.
+- **Planned:** resolve official discrepancies and historical identity gaps; establish coverage beyond available action-history references.
 - Historical statutory comparisons and related legislation; independently verify baseline and effective dates.
 
 - **Batch 2D implemented:** initial 2027 request/introduced default based on verified records; preserved session choices; inline search Info, separate search clear and filter clear; structurally separated detail back links.

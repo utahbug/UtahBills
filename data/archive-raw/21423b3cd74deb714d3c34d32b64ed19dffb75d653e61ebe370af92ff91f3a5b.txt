@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0436
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 2:34 PM</b><hr>
+<center>1HB 436</center>
+<center>Moderate Income Housing Infrastructure Amendments</center>
+<center>Gricius</center>
+<center>Musselman</center>
+<center>STPT Substituted 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

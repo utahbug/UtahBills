@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0290
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 11:58 AM</b><hr>
+<center>1SB 290</center>
+<center>Victim and Witness Privacy Amendments</center>
+<center>Balderree</center>
+<center>Defay</center>
+<center>SJLC Substituted 7-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

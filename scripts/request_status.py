@@ -34,8 +34,8 @@ class StatusListing(HTMLParser):
    self.cells=None
   if tag=='table':self.active=False
 
-def parse_statuses(body):
- text=body.decode('utf-8-sig');heading=re.search(r'<h1\b[^>]*>(.*?)</h1>',text,re.S|re.I);assert heading and '2027GS' in normalized(re.sub('<[^>]+>',' ',heading[1])),'Wrong status session'
+def parse_statuses(body,session='2027GS'):
+ text=body.decode('utf-8-sig');heading=re.search(r'<h1\b[^>]*>(.*?)</h1>',text,re.S|re.I);assert heading and session in normalized(re.sub('<[^>]+>',' ',heading[1])),'Wrong status session'
  parser=StatusListing();parser.feed(text);parser.close()
  assert parser.tables and parser.rows,'No official status rows; reject empty/failed listing'
  return parser.rows

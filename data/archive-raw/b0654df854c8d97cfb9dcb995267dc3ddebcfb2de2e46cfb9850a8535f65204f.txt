@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0034
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 8:04 PM</b><hr>
+<center>HB 34</center>
+<center>Victim Rights Amendments</center>
+<center>Mauga</center>
+<center>Wilson</center>
+<center>SJLC Passed  6-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

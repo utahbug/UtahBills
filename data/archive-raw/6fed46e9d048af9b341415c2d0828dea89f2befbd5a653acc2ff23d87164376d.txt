@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0161
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 3:19 PM</b><hr>
+<center>SB 161</center>
+<center>Evaluations in Guardianship Amendments</center>
+<center>Weiler</center>
+<center>/ Ballard</center>
+<center>HJUD Passed  11-0-0</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

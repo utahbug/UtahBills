@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0077
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 1/27/2026 11:34 AM</b><hr>
+<center>HB 77</center>
+<center>Tax Modifications</center>
+<center>Eliason</center>
+<center>/ McCay</center>
+<center>HREV Passed  11-0-0</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

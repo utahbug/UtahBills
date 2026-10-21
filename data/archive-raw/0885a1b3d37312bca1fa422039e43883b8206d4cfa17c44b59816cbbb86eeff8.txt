@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0123
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 11:54 AM</b><hr>
+<center>1SB 123</center>
+<center>Privacy and Cybersecurity Amendments</center>
+<center>Harper</center>
+<center>Wilcox</center>
+<center>SEDU Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

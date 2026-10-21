@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0115
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/4/2026 11:55 AM</b><hr>
+<center>1SB 115</center>
+<center>Child and Animal Abuse Cross-reporting Amendments</center>
+<center>Plumb</center>
+<center>Eliason</center>
+<center>SHHS Substituted 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

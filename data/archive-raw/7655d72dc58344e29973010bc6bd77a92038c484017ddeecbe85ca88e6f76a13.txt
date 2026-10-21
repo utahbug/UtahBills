@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0258
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 2:46 PM</b><hr>
+<center>1HB 258</center>
+<center>Insurance Coverage Amendments</center>
+<center>Peck</center>
+<center>McCay</center>
+<center>SBUS Passed  4-3-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

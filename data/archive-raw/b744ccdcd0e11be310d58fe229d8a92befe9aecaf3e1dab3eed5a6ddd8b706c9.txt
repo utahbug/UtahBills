@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0079
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/11/2026 11:47 AM</b><hr>
+<center>1HB 79</center>
+<center>Governmental Immunity Amendments</center>
+<center>Gwynn</center>
+<center>SGOP Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

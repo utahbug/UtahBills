@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0279
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 11:24 AM</b><hr>
+<center>2HB 279</center>
+<center>Higher Education Code Amendments</center>
+<center>Peterson</center>
+<center>Millner</center>
+<center>SEDU Amended 5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

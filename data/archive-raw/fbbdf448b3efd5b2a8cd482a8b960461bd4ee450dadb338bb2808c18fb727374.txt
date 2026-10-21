@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0489
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/24/2026 11:08 AM</b><hr>
+<center>HB 489</center>
+<center>Water Infrastructure Amendments</center>
+<center>T. Peterson</center>
+<center>/ </center>
+<center>HPUT Passed  10-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

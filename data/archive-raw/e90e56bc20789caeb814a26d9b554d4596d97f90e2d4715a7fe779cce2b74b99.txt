@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0604
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 6:42 PM</b><hr>
+<center>HB 604</center>
+<center>Local Government Official Amendments</center>
+<center>MacPherson</center>
+<center>/ Grover</center>
+<center>HJUD Passed  10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

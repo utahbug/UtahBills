@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0234
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:28 PM</b><hr>
+<center>SB 234</center>
+<center>Rulemaking Amendments</center>
+<center>Brammer</center>
+<center>SNAE Passed  3-1-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

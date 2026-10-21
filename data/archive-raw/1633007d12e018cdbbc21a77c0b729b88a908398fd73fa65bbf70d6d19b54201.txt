@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0034
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:39 AM</b><hr>
+<center>3SB 34</center>
+<center>Public Education Revisions</center>
+<center>Johnson</center>
+<center>Walter</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

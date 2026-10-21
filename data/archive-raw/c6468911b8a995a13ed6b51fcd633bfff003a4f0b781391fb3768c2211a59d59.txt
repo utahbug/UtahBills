@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0158
+ - 
+ - Passed
+ on voice vote
+, 2/9/2026 3:26 PM</b><hr>
+<center>SB 158</center>
+<center>Recreational Therapy Program Amendments</center>
+<center>Weiler</center>
+<center>SHHS Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

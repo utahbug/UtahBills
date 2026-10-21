@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0231
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 2:56 PM</b><hr>
+<center>2SB 231</center>
+<center>Energy User Amendments</center>
+<center>Sandall</center>
+<center>/ Roberts</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

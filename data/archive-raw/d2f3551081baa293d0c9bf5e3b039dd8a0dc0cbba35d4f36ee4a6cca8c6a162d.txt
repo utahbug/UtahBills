@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0047
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 11:39 AM</b><hr>
+<center>SB 47</center>
+<center>Reauthorization of Administrative Rules</center>
+<center>McCay</center>
+<center>Lee</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

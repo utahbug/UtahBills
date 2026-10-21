@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0167
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 1:56 PM</b><hr>
+<center>SB 167</center>
+<center>Reintegration for Disciplined Students</center>
+<center>McCay</center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

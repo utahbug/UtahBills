@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0158
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/4/2026 6:29 PM</b><hr>
+<center>1HB 158</center>
+<center>Unlawful Tracking Amendments</center>
+<center>Owens</center>
+<center>Weiler</center>
+<center>SJLC Passed  5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to amend 2</center>
+
+
+</font>
+</body>
+</html>

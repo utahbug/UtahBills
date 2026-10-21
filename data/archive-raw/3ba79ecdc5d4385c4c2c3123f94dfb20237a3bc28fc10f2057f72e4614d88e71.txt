@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0209
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 1/23/2026 11:29 AM</b><hr>
+<center>1HB 209</center>
+<center>Voting Amendments</center>
+<center>Maloy</center>
+<center>/ Winterton</center>
+<center>HGOC Substituted Amended 9-3-0</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

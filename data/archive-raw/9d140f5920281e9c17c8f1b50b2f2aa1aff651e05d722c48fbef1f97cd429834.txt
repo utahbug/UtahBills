@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0103
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/3/2026 11:28 AM</b><hr>
+<center>HB 103</center>
+<center>Underage Marriage Amendments</center>
+<center>Ballard</center>
+<center>/ Weiler</center>
+<center>HLAW Passed  8-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

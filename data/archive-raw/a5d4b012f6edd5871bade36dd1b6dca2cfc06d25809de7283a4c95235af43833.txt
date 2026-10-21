@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0385
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:01 PM</b><hr>
+<center>2HB 385</center>
+<center>Specialized Product Sales Amendments</center>
+<center>Dailey-Provost</center>
+<center>McKell</center>
+<center>SNAE Passed  6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

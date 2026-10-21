@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0584
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 10:18 AM</b><hr>
+<center>HB 584</center>
+<center>State Employee Leave Amendments</center>
+<center>T. Peterson</center>
+<center>/ </center>
+<center>HEDW Passed  4-1-5</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

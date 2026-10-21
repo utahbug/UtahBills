@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0273
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 4:04 PM</b><hr>
+<center>SB 273</center>
+<center>License Plate Amendments</center>
+<center>McCay</center>
+<center>STPT Passed  4-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

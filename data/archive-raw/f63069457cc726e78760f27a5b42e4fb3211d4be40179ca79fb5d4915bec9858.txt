@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0410
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 5:55 PM</b><hr>
+<center>1HB 410</center>
+<center>Water Leasing Amendments</center>
+<center>Koford</center>
+<center>Sandall</center>
+<center>Amended</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

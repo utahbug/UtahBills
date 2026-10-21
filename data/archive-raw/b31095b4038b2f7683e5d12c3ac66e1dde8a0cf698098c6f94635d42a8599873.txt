@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0033
+ - 
+ - Passed
+ on voice vote
+, 2/4/2026 11:39 AM</b><hr>
+<center>SB 33</center>
+<center>Office of Professional Licensure Review Sunrise Amendments</center>
+<center>Vickers</center>
+<center>/ Ballard</center>
+<center>HBUS Passed  10-0-6</center>
+<center>Consent</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

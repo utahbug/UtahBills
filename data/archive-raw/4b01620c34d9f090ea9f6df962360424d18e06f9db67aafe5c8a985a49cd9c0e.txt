@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0464
+ Substitute 3
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/25/2026 2:18 PM</b><hr>
+<center>3HB 464</center>
+<center>Parent Taught Driver Education Amendments</center>
+<center>Peck</center>
+<center>/ Balderree</center>
+<center>HTRA Substituted Amended 10-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

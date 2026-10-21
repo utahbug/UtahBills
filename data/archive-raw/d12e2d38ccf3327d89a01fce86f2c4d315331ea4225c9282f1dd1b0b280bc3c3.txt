@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0222
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:40 PM</b><hr>
+<center>SB 222</center>
+<center>Right to Try Amendments</center>
+<center>Wilson</center>
+<center>Clancy</center>
+<center>SHHS Passed  3-1-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

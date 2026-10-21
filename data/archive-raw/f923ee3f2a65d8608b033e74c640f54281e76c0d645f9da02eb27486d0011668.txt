@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0267
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 10:47 AM</b><hr>
+<center>1SB 267</center>
+<center>Software in Education Amendments</center>
+<center>Cullimore</center>
+<center>SEDU Substituted 5-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

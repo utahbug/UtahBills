@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0111
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 4:35 PM</b><hr>
+<center>2HB 111</center>
+<center>Wildlife Amendments</center>
+<center>Bolinder</center>
+<center>Musselman</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

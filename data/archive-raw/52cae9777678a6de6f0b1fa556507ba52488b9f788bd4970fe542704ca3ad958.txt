@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR014
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/26/2026 8:34 PM</b><hr>
+<center>HCR 14</center>
+<center>Concurrent Resolution Supporting the Transfer of Federally Managed Lands</center>
+<center>Ward</center>
+<center>/ Ipson</center>
+<center>HNAE Amended 10-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

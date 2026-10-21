@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0220
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:50 AM</b><hr>
+<center>SB 220</center>
+<center>Veteran Scholarship Amendments</center>
+<center>Millner</center>
+<center>Peterson</center>
+<center>SEDU Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

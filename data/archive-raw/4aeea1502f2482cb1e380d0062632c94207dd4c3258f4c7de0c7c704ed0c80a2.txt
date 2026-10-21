@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0238
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:56 PM</b><hr>
+<center>SB 238</center>
+<center>Property Tax Adjustments</center>
+<center>Wilson</center>
+<center>/ Eliason</center>
+<center>HREV Passed  9-0-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

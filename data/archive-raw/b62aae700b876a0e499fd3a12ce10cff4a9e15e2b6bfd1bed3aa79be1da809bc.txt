@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0016
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 2:16 PM</b><hr>
+<center>1HB 16</center>
+<center>Solar Power Plant Amendments</center>
+<center>Jack</center>
+<center>Hinkins</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

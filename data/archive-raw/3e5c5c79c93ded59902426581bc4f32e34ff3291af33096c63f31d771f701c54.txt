@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR008
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/23/2026 11:05 AM</b><hr>
+<center>HCR 8</center>
+<center>Concurrent Resolution Directing PEHP to Establish the Weight Management and Obesity Pilot Program</center>
+<center>Barlow</center>
+<center>/ McCay</center>
+<center>HHHS Passed  9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

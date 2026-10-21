@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0044
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 2:56 PM</b><hr>
+<center>5HB 44</center>
+<center>School Security Personnel Standards</center>
+<center>Wilcox</center>
+<center>/ </center>
+<center>HLAW Substituted 9-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR002
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 1/20/2026 4:09 PM</b><hr>
+<center>SJR 2</center>
+<center>Joint Resolution Regarding Constitutional Brackets</center>
+<center>Weiler</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

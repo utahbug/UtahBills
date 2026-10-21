@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0242
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 5:57 PM</b><hr>
+<center>1SB 242</center>
+<center>Transportation Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>STPT Substituted 4-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

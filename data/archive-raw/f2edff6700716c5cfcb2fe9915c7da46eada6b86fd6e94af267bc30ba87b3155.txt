@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0007
+ - 
+ - Passed
+ on voice vote
+, 1/26/2026 11:29 AM</b><hr>
+<center>HB 7</center>
+<center>Social Services Base Budget</center>
+<center>Ward</center>
+<center>/ Stratton</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

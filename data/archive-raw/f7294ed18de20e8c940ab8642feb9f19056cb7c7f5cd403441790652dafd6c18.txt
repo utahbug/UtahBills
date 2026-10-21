@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0130
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/13/2026 11:25 AM</b><hr>
+<center>HB 130</center>
+<center>Employment Medical Examination Expense Amendments</center>
+<center>Gwynn</center>
+<center>/ </center>
+<center>HBUS Amended 10-0-6</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 3</center>
+
+
+</font>
+</body>
+</html>

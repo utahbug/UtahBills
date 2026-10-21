@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0036
+ - 
+ - Passed
+ on voice vote
+, 1/20/2026 4:41 PM</b><hr>
+<center>SB 36</center>
+<center>Transportation Commission Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

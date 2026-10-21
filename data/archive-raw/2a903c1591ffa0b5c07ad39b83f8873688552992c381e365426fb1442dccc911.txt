@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0439
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 11:18 PM</b><hr>
+<center>2HB 439</center>
+<center>Water Planning Amendments</center>
+<center>Shallenberger</center>
+<center>Stratton</center>
+<center>SGOP Amended 6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

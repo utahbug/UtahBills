@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0110
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:41 AM</b><hr>
+<center>3HB 110</center>
+<center>Offender Supervision Amendments</center>
+<center>Clancy</center>
+<center>McKell</center>
+<center>SJLC Amended 6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 6</center>
+
+
+</font>
+</body>
+</html>

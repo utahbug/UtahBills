@@ -96,3 +96,5 @@ summary::-webkit-details-marker{display:none}
 .type-info[open]{flex-basis:100%}.type-info p{max-width:75ch}
 
 .profile-records{padding-inline-start:1.1em;overflow-wrap:anywhere}.profile-records li{margin-block:6px}
+
+.archive-metadata .profile-records{font-size:.875rem;padding-inline-start:1em}

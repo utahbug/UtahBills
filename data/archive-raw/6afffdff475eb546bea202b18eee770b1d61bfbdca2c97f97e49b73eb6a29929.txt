@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SCR002
+ - 
+ - Passed
+ on voice vote
+, 1/23/2026 11:36 AM</b><hr>
+<center>SCR 2</center>
+<center>Concurrent Resolution Concerning Remembrances of the 25th Anniversary of the 9/11 Attacks</center>
+<center>Fillmore</center>
+<center>Wilcox</center>
+<center>SEDU Passed  4-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

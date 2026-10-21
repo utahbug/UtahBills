@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0230
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 11:38 AM</b><hr>
+<center>3HB 230</center>
+<center>Offender Amendments</center>
+<center>Ballard</center>
+<center>Brammer</center>
+<center>STPT Passed  6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0229
+ Substitute 3
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/5/2026 10:23 AM</b><hr>
+<center>3SB 229</center>
+<center>State Employee Benefits Amendments</center>
+<center>Fillmore</center>
+<center>/ Thurston</center>
+<center>Reconsideration</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

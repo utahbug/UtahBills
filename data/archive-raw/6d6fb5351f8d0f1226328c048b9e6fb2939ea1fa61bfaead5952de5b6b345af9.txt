@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0178
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 2:39 PM</b><hr>
+<center>2HB 178</center>
+<center>School Zone Speeding Amendments</center>
+<center>Moss</center>
+<center>Weiler</center>
+<center>STPT Amended 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

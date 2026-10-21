@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0513
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 8:17 PM</b><hr>
+<center>1HB 513</center>
+<center>Attorney General Funding Amendments</center>
+<center>Peterson</center>
+<center>McKell</center>
+<center>SGOP Passed  6-0-1</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

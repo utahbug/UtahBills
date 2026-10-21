@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0365
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 2:38 PM</b><hr>
+<center>HB 365</center>
+<center>Taxation Notification Requirements</center>
+<center>T. Peterson</center>
+<center>/ </center>
+<center>HREV Amended 10-1-0</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

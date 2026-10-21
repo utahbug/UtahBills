@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0038
+ - 
+ - Passed
+ on voice vote
+, 1/20/2026 4:41 PM</b><hr>
+<center>HB 38</center>
+<center>County Government Amendments</center>
+<center>Dunnigan</center>
+<center>/ </center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

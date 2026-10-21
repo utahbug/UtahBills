@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0179
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/12/2026 2:11 PM</b><hr>
+<center>2HB 179</center>
+<center>Milk Amendments</center>
+<center>Chevrier</center>
+<center>/ Cullimore</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Amend V</center>
+
+
+</font>
+</body>
+</html>

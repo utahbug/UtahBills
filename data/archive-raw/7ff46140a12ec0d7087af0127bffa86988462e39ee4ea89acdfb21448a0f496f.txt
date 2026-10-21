@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0145
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 10:37 AM</b><hr>
+<center>SB 145</center>
+<center>Lobbying Amendments</center>
+<center>Brammer</center>
+<center>SBUS Amended 4-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

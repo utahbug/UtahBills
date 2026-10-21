@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0311
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 4:31 PM</b><hr>
+<center>HB 311</center>
+<center>Amendments to Election Law</center>
+<center>Burton</center>
+<center>McKell</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

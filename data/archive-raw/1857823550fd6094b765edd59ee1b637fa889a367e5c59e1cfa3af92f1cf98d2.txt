@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0148
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 4:25 PM</b><hr>
+<center>2SB 148</center>
+<center>General Oversight Amendments</center>
+<center>McCay</center>
+<center>/ Lee</center>
+<center>HRUL Substituted 6-2-0</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

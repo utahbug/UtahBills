@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0065
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 3:42 PM</b><hr>
+<center>SB 65</center>
+<center>Minimum Basic Tax Rate Amendments</center>
+<center>Fillmore</center>
+<center>Amended</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

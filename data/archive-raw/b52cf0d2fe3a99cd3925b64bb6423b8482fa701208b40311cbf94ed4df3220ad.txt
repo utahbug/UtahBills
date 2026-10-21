@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0244
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 5:37 PM</b><hr>
+<center>SB 244</center>
+<center>Cardiac Emergency Response Plans in Schools</center>
+<center>Stevenson</center>
+<center>/ K. Peterson</center>
+<center>HHHS Passed  12-0-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

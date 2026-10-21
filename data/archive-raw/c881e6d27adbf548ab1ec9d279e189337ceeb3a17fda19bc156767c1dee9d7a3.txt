@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR011
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 8:54 PM</b><hr>
+<center>1SJR 11</center>
+<center>Joint Resolution Recognizing National Blood Donor Month</center>
+<center>Escamilla</center>
+<center>/ Wilcox</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

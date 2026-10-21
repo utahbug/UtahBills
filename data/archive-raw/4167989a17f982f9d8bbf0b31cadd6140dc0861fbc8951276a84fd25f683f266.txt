@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0210
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:24 PM</b><hr>
+<center>3SB 210</center>
+<center>Nicotine Amendments</center>
+<center>Plumb</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0048
+ - 
+ - Passed
+ on voice vote
+, 1/23/2026 11:26 AM</b><hr>
+<center>SB 48</center>
+<center>Kratom Revisions</center>
+<center>Vickers</center>
+<center>Sawyer</center>
+<center>SBUS Passed  4-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

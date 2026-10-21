@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0189
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 7:28 PM</b><hr>
+<center>2SB 189</center>
+<center>School District Funding Amendments</center>
+<center>Buss</center>
+<center>Miller T.</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

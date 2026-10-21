@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0210
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:41 PM</b><hr>
+<center>3SB 210</center>
+<center>Nicotine Amendments</center>
+<center>Plumb</center>
+<center>/ Burton</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

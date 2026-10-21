@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0236
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 3:28 PM</b><hr>
+<center>1HB 236</center>
+<center>Truth in Taxation Amendments</center>
+<center>Peterson</center>
+<center>McCay</center>
+<center>SREV Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0057
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/3/2026 2:56 PM</b><hr>
+<center>1HB 57</center>
+<center>Motor Vehicle Division Amendments</center>
+<center>Christofferson</center>
+<center>/ Harper</center>
+<center>HTRA Substituted 11-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

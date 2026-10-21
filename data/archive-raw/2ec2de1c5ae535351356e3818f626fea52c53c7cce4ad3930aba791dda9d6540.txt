@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0572
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 11:31 AM</b><hr>
+<center>2HB 572</center>
+<center>Behavioral and Mental Health Amendments</center>
+<center>Eliason</center>
+<center>/ </center>
+<center>HHHS Substituted 12-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0257
+ Substitute 3
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/6/2026 3:20 PM</b><hr>
+<center>3SB 257</center>
+<center>Domestic Relations Amendments</center>
+<center>Weiler</center>
+<center>/ Gricius</center>
+<center>HJUD Substituted 8-0-3</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

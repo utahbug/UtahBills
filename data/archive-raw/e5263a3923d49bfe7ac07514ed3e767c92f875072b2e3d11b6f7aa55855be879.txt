@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0017
+ - 
+ - Passed
+ on voice vote
+, 1/22/2026 11:54 AM</b><hr>
+<center>SB 17</center>
+<center>Credit Card Processing Fees Amendments</center>
+<center>Winterton</center>
+<center>SEDU Passed  3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

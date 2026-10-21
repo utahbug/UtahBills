@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0298
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 6:31 PM</b><hr>
+<center>1SB 298</center>
+<center>Programmable Money Amendments</center>
+<center>Stratton</center>
+<center>SBUS Substituted 5-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-21T15:44:20.006107+00:00",
+  "sources": {
+    "index2026": {
+      "url": "https://le.utah.gov/data/2026GS/billlist.json",
+      "path": "data/catalog-raw/5928c3d5774e8d021f6e69e6f6f8774e0fdda26fb035df04db9c52d03d87b2a4.json",
+      "sha256": "5928c3d5774e8d021f6e69e6f6f8774e0fdda26fb035df04db9c52d03d87b2a4",
+      "retrievedAt": "2026-10-21T15:44:18.588591+00:00"
+    },
+    "listing2026": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2026GS&disp=all&sub=all",
+      "path": "data/catalog-raw/e835c2ad1f229697bcbd55bb06698a2f621644ad452be4ffb75b4a5b06bd2ff9.txt",
+      "sha256": "e835c2ad1f229697bcbd55bb06698a2f621644ad452be4ffb75b4a5b06bd2ff9",
+      "retrievedAt": "2026-10-21T15:44:19.925740+00:00"
+    }
+  }
+}

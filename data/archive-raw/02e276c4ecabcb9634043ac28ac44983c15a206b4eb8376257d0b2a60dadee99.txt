@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0150
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 3:08 PM</b><hr>
+<center>2HB 150</center>
+<center>School-based Speech-language Pathologist Funding Amendments</center>
+<center>Koford</center>
+<center>Millner</center>
+<center>SEDU Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

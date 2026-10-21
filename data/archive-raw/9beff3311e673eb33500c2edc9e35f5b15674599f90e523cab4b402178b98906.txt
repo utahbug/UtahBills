@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0184
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 11:46 AM</b><hr>
+<center>SB 184</center>
+<center>Post-Conviction Offense Amendments</center>
+<center>Pitcher</center>
+<center>SJLC Passed  9-0-0</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

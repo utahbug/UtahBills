@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR001
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 10:26 AM</b><hr>
+<center>4HJR 1</center>
+<center>Joint Rules Resolution - Amendments to Joint Rules</center>
+<center>Dunnigan</center>
+<center>Fillmore</center>
+<center>Substituted</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

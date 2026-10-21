@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0153
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:38 PM</b><hr>
+<center>SB 153</center>
+<center>Voter Registration Records Amendments</center>
+<center>Johnson</center>
+<center>Lee</center>
+<center>SGOP Passed  4-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

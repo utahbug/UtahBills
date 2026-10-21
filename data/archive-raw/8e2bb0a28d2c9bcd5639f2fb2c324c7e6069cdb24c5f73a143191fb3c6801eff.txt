@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0161
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/26/2026 3:20 PM</b><hr>
+<center>SB 161</center>
+<center>Evaluations in Guardianship Amendments</center>
+<center>Weiler</center>
+<center>/ Ballard</center>
+<center>Reconsideration</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

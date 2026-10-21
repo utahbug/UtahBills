@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0087
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/2/2026 11:45 AM</b><hr>
+<center>1SB 87</center>
+<center>Naloxone Amendments</center>
+<center>Plumb</center>
+<center>Gwynn</center>
+<center>SHHS Substituted 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

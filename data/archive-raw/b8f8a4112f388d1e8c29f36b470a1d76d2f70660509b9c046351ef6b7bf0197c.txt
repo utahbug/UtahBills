@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0169
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:34 AM</b><hr>
+<center>SB 169</center>
+<center>High School Graduation Amendments</center>
+<center>Plumb</center>
+<center>SEDU Passed  3-2-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0174
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 2:46 PM</b><hr>
+<center>4SB 174</center>
+<center>Exercise of Religious Beliefs and Conscience Amendments</center>
+<center>Stratton</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

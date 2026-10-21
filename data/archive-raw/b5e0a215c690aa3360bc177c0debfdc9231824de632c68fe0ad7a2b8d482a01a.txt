@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0061
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 11:52 AM</b><hr>
+<center>HB 61</center>
+<center>Navajo Trust Fund Amendments</center>
+<center>Watkins</center>
+<center>Winterton</center>
+<center>SNAE Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

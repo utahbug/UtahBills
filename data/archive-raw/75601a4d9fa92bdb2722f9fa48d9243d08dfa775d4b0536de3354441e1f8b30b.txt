@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0479
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 3:05 PM</b><hr>
+<center>3HB 479</center>
+<center>Election Code Modifications</center>
+<center>Burton</center>
+<center>/ McKell</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

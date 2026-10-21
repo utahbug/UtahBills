@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0146
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 10:34 AM</b><hr>
+<center>1SB 146</center>
+<center>Industrial Byproduct Amendments</center>
+<center>Grover</center>
+<center>/ Bolinder</center>
+<center>HTRA Passed  7-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

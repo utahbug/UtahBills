@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0254
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 5:49 PM</b><hr>
+<center>SB 254</center>
+<center>Critical Minerals Amendments</center>
+<center>Millner</center>
+<center>Shallenberger</center>
+<center>SNAE Passed  4-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0290
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 3:00 PM</b><hr>
+<center>HB 290</center>
+<center>Child Tax Credit Amendments</center>
+<center>Miller T.</center>
+<center>Fillmore</center>
+<center>SREV Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

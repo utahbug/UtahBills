@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0241
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/4/2026 10:33 AM</b><hr>
+<center>1SB 241</center>
+<center>Early Literacy</center>
+<center>Millner</center>
+<center>/ K. Peterson</center>
+<center>HEDU Passed  9-2-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

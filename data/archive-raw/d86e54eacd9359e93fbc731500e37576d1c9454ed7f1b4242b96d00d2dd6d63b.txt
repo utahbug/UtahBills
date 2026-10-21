@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0130
+ - 
+ - Passed
+ on voice vote
+, 1/27/2026 11:43 AM</b><hr>
+<center>SB 130</center>
+<center>River Restoration Amendments</center>
+<center>Fillmore</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

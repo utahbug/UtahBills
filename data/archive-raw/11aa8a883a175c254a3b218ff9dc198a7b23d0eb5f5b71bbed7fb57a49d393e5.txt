@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0372
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/19/2026 2:53 PM</b><hr>
+<center>2HB 372</center>
+<center>Child Welfare Changes</center>
+<center>Lisonbee</center>
+<center>/ Harper</center>
+<center>HJUD Substituted 9-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0049
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 11:55 AM</b><hr>
+<center>2SB 49</center>
+<center>Natural Organic Reduction Amendments</center>
+<center>Plumb</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

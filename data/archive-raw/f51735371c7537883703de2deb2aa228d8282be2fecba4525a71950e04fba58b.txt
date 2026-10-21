@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0041
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 11:48 AM</b><hr>
+<center>2SB 41</center>
+<center>Business Entity Technical Amendments</center>
+<center>Vickers</center>
+<center>Shallenberger</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

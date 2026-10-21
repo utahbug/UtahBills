@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0033
+ - 
+ - Passed
+ on voice vote
+, 1/23/2026 11:56 AM</b><hr>
+<center>HB 33</center>
+<center>Political Signs Amendments</center>
+<center>Teuscher</center>
+<center>/ </center>
+<center>HGOC Passed  11-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0443
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/20/2026 11:43 AM</b><hr>
+<center>HB 443</center>
+<center>Amendments to Procedure to Fill A Legislative Vacancy</center>
+<center>Stoddard</center>
+<center>/ </center>
+<center>HGOC Passed  7-3-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

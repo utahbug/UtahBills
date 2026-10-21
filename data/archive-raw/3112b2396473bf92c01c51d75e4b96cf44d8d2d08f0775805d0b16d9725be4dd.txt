@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0536
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/26/2026 8:21 PM</b><hr>
+<center>1HB 536</center>
+<center>Criminal Conduct on Public Lands Amendments</center>
+<center>Barlow</center>
+<center>/ </center>
+<center>HNAE Substituted 9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

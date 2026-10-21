@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0140
+ - 
+ - Passed
+ on voice vote
+, 2/6/2026 11:34 AM</b><hr>
+<center>SB 140</center>
+<center>Election Adjustments</center>
+<center>Sandall</center>
+<center>/ Pierucci</center>
+<center>HGOC Passed  5-0-7</center>
+<center>Consent</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0440
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/23/2026 10:40 AM</b><hr>
+<center>1HB 440</center>
+<center>School Lunch Amendments</center>
+<center>Auxier</center>
+<center>/ </center>
+<center>HEDU Substituted Amended 7-5-3</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

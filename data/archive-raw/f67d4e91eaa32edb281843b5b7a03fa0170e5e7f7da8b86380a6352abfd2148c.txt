@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0073
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:52 PM</b><hr>
+<center>1SB 73</center>
+<center>Online Age Verification Amendments</center>
+<center>Musselman</center>
+<center>Eliason</center>
+<center>SREV Substituted Amended 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

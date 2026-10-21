@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0180
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/24/2026 11:38 AM</b><hr>
+<center>1SB 180</center>
+<center>School Nutrition Amendments</center>
+<center>Escamilla</center>
+<center>Clancy</center>
+<center>SEDU Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

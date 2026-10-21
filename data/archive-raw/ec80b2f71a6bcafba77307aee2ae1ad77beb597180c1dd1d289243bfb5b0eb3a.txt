@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0232
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:39 AM</b><hr>
+<center>SB 232</center>
+<center>Regulatory Impacts on Families</center>
+<center>Fillmore</center>
+<center>SEDU Passed  6-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

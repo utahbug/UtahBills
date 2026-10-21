@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0194
+ Substitute 3
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/17/2026 11:44 AM</b><hr>
+<center>3SB 194</center>
+<center>Election Modifications</center>
+<center>McKell</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

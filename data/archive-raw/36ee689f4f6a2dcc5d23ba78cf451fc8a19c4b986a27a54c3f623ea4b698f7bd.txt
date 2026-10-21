@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0373
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 8:16 PM</b><hr>
+<center>1HB 373</center>
+<center>Higher Education Innovation</center>
+<center>Peterson</center>
+<center>Millner</center>
+<center>SEDW Passed  3-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0161
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 3:03 PM</b><hr>
+<center>SB 161</center>
+<center>Evaluations in Guardianship Amendments</center>
+<center>Weiler</center>
+<center>Abbott</center>
+<center>SJLC Passed  7-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0217
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 3:37 PM</b><hr>
+<center>1HB 217</center>
+<center>Stolen Vehicle Amendments</center>
+<center>Teuscher</center>
+<center>Harper</center>
+<center>SJLC Passed  7-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

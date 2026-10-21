@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0539
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:39 PM</b><hr>
+<center>3HB 539</center>
+<center>Public Safety Modifications</center>
+<center>MacPherson</center>
+<center>Brammer</center>
+<center>SJLC Passed  7-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0566
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/27/2026 11:21 AM</b><hr>
+<center>1HB 566</center>
+<center>Health Care Transparency Amendments</center>
+<center>Hall</center>
+<center>/ </center>
+<center>HHHS Substituted 10-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

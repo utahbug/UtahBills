@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0209
+ Substitute 3
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/4/2026 10:29 AM</b><hr>
+<center>3HB 209</center>
+<center>Voting Amendments</center>
+<center>Maloy</center>
+<center>Winterton</center>
+<center>Amended</center>
+<center>2nd Reading</center>
+<center>Motion to amend 2</center>
+
+
+</font>
+</body>
+</html>

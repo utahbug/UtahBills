@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0507
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 2:22 PM</b><hr>
+<center>1HB 507</center>
+<center>State Coordination of Regional and Local Economic Development Projects Amendments</center>
+<center>Roberts</center>
+<center>/ </center>
+<center>HEDW Substituted 7-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

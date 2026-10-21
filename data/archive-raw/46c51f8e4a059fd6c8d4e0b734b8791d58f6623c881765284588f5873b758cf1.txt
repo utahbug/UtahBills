@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0438
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 7:34 PM</b><hr>
+<center>2HB 438</center>
+<center>Artificial Intelligence Amendments</center>
+<center>Fiefia</center>
+<center>Cullimore</center>
+<center>SBUS Substituted 5-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

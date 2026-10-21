@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0001
+ - 
+ - Passed
+ on voice vote
+, 1/29/2026 11:12 AM</b><hr>
+<center>HB 1</center>
+<center>Public Education Base Budget Amendments</center>
+<center>Whyte</center>
+<center>Balderree</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

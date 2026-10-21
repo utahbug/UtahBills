@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0414
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 10:43 AM</b><hr>
+<center>HB 414</center>
+<center>Dental Hygienist Amendments</center>
+<center>Dunnigan</center>
+<center>Weiler</center>
+<center>SBUS Passed  6-0-2</center>
+<center>Consent</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0032
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 11:32 AM</b><hr>
+<center>3HB 32</center>
+<center>Signature Gathering and Verification Amendments</center>
+<center>Cutler</center>
+<center>Winterton</center>
+<center>SREV Substituted 4-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

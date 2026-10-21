@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0160
+ - 
+ - Passed
+ on voice vote
+, 2/9/2026 11:22 AM</b><hr>
+<center>SB 160</center>
+<center>Medicaid Reimbursement Rate Amendments</center>
+<center>Weiler</center>
+<center>Gricius</center>
+<center>SGOP Passed  6-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

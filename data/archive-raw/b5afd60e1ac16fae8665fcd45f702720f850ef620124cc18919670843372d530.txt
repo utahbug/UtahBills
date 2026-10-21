@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0063
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 3:01 PM</b><hr>
+<center>HB 63</center>
+<center>Livestock Watering Amendments</center>
+<center>Chew</center>
+<center>Sandall</center>
+<center>SNAE Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

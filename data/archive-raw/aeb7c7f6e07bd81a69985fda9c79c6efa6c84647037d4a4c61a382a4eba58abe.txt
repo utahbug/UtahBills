@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0337
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 10:14 AM</b><hr>
+<center>3HB 337</center>
+<center>Nicotine Product Tax Amendments</center>
+<center>Clancy</center>
+<center>Stevenson</center>
+<center>SBUS Substituted 5-2-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

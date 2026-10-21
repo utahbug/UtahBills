@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SCR005
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/20/2026 2:46 PM</b><hr>
+<center>SCR 5</center>
+<center>Concurrent Resolution Directing PEHP Regarding Pain Medication</center>
+<center>Weiler</center>
+<center>SHHS Amended 6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to amend 2</center>
+
+
+</font>
+</body>
+</html>

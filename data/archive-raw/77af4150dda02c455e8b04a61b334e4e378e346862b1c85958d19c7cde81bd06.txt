@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0034
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:09 AM</b><hr>
+<center>3SB 34</center>
+<center>Public Education Revisions</center>
+<center>Johnson</center>
+<center>/ Walter</center>
+<center>HEDU Substituted Amended 9-0-6</center>
+<center>Motion to refuse to recede</center>
+
+
+</font>
+</body>
+</html>

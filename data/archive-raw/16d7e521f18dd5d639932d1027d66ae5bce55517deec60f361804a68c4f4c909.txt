@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0136
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:41 AM</b><hr>
+<center>5HB 136</center>
+<center>Unlicensed Driver Amendments</center>
+<center>MacPherson</center>
+<center>/ McCay</center>
+<center>Substituted</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

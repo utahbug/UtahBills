@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0270
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 11:06 AM</b><hr>
+<center>SB 270</center>
+<center>State Collections and Housing Court Amendments</center>
+<center>Cullimore</center>
+<center>SJLC Passed  8-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

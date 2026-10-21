@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0051
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/4/2026 2:46 PM</b><hr>
+<center>2HB 51</center>
+<center>Adoption Amendments</center>
+<center>Hall</center>
+<center>/ Wilson</center>
+<center>HJUD Substituted 11-0-0</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

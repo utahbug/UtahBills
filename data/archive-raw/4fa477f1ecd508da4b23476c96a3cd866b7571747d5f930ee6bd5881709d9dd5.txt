@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0236
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:23 PM</b><hr>
+<center>2HB 236</center>
+<center>Truth in Taxation Amendments</center>
+<center>Peterson</center>
+<center>McCay</center>
+<center>Amended</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

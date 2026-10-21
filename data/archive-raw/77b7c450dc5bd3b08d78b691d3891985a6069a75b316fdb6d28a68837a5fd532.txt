@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0481
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 2:34 PM</b><hr>
+<center>4HB 481</center>
+<center>Transportation Modifications</center>
+<center>Christofferson</center>
+<center>/ Harper</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

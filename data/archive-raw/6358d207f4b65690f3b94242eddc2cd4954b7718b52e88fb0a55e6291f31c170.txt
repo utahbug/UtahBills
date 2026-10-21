@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0149
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 3:39 PM</b><hr>
+<center>SB 149</center>
+<center>Licensing Modifications</center>
+<center>Weiler</center>
+<center>SBUS Passed  6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

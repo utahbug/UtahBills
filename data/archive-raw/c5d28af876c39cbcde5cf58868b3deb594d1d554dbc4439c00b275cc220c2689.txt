@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0229
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 6:21 PM</b><hr>
+<center>2SB 229</center>
+<center>State Employee Benefits Amendments</center>
+<center>Fillmore</center>
+<center>/ Thurston</center>
+<center>HGOC Passed  7-3-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

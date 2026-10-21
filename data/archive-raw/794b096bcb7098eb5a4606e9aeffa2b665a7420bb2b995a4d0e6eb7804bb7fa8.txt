@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0008
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:03 AM</b><hr>
+<center>1HB 8</center>
+<center>State Agency Fees and Internal Service Fund Authorization and Appropriations</center>
+<center>Brooks</center>
+<center>Sandall</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

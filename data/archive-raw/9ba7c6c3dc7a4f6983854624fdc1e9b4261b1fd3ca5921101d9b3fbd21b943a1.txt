@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0076
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 11:25 AM</b><hr>
+<center>3HB 76</center>
+<center>Data Center Water Transparency Amendments</center>
+<center>Koford</center>
+<center>Sandall</center>
+<center>SNAE Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

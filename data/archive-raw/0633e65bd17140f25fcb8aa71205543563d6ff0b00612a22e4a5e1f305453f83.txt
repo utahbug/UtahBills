@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0170
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:43 PM</b><hr>
+<center>SB 170</center>
+<center>Vitamin K Amendments</center>
+<center>Plumb</center>
+<center>SHHS Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

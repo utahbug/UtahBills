@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0045
+ Substitute 4
+ - 
+House/ floor amendment
+ - Failed
+ on voice vote
+, 3/4/2026 10:12 AM</b><hr>
+<center>4SB 45</center>
+<center>Kratom Adjustments</center>
+<center>McKell</center>
+<center>/ Hall</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

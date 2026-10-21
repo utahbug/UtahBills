@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0067
+ - 
+ - Passed
+ on voice vote
+, 2/3/2026 3:07 PM</b><hr>
+<center>HB 67</center>
+<center>Lead Acid Battery Disposal Sunset Amendments</center>
+<center>Albrecht</center>
+<center>Stratton</center>
+<center>SNAE Passed  5-0-2</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

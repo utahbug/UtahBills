@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0416
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:46 PM</b><hr>
+<center>2HB 416</center>
+<center>Firefighter Cancer Amendments</center>
+<center>Teuscher</center>
+<center>Sandall</center>
+<center>SGOP Passed  6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

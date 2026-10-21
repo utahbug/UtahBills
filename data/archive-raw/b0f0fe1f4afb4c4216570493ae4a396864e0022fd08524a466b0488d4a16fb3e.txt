@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0242
+ Substitute 3
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/6/2026 11:41 AM</b><hr>
+<center>3SB 242</center>
+<center>Transportation Amendments</center>
+<center>Harper</center>
+<center>/ Christofferson</center>
+<center>HTRA Substituted Amended 9-1-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

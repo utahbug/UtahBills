@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0165
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 11:39 AM</b><hr>
+<center>SB 165</center>
+<center>Economic Mobility Initiative</center>
+<center>Fillmore</center>
+<center>SEDW Passed  2-1-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

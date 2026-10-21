@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SR0004
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 6:29 PM</b><hr>
+<center>SR 4</center>
+<center>Resolution Encouraging the Integration of Agriculture into Residential Development</center>
+<center>Sandall</center>
+<center>SNAE Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0192
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/5/2026 3:27 PM</b><hr>
+<center>1SB 192</center>
+<center>Legislative Activities Amendments</center>
+<center>McKell</center>
+<center>/ V. Peterson</center>
+<center>Substituted</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend V</center>
+
+
+</font>
+</body>
+</html>

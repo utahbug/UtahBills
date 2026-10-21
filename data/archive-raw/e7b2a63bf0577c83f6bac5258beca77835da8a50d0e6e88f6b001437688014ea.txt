@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0310
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 3:13 PM</b><hr>
+<center>1HB 310</center>
+<center>School Reintegration Plan Amendments</center>
+<center>Romero</center>
+<center>McCay</center>
+<center>SEDU Substituted 6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

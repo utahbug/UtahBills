@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0068
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 3:39 PM</b><hr>
+<center>3HB 68</center>
+<center>Housing and Community Development Amendments</center>
+<center>Roberts</center>
+<center>Fillmore</center>
+<center>SEDW Passed  3-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

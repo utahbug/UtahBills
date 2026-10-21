@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0218
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:42 AM</b><hr>
+<center>1SB 218</center>
+<center>Constable Modifications</center>
+<center>Cullimore</center>
+<center>SBUS Substituted 7-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

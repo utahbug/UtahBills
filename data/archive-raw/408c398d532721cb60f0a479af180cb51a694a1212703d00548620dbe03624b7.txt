@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0214
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/20/2026 4:59 PM</b><hr>
+<center>SB 214</center>
+<center>Home-based Childcare Solutions</center>
+<center>Escamilla</center>
+<center>Auxier</center>
+<center>SEDW Passed  5-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

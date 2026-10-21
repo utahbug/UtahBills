@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0297
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 7:04 PM</b><hr>
+<center>1SB 297</center>
+<center>School Social Worker Amendments</center>
+<center>Buss</center>
+<center>Hayes</center>
+<center>SEDU Substituted 3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

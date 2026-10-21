@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0285
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 10:57 AM</b><hr>
+<center>1SB 285</center>
+<center>Uninsured Children Dental Care Amendments</center>
+<center>Escamilla</center>
+<center>SHHS Substituted 5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

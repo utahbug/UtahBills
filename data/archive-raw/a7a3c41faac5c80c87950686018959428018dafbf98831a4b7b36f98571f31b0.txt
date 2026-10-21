@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0117
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 1/23/2026 11:27 AM</b><hr>
+<center>1SB 117</center>
+<center>Occupational and Professional Licensing Amendments</center>
+<center>Sandall</center>
+<center>SBUS Substituted 5-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

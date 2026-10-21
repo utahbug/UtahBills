@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0271
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/12/2026 10:40 AM</b><hr>
+<center>HB 271</center>
+<center>Multi-Agency Joint Strike Force Modifications</center>
+<center>Christofferson</center>
+<center>/ Weiler</center>
+<center>HLAW Passed  10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

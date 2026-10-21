@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0263
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 11:33 AM</b><hr>
+<center>HB 263</center>
+<center>Heavy Duty Vehicle Amendments</center>
+<center>Clancy</center>
+<center>Cullimore</center>
+<center>SREV Passed  3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

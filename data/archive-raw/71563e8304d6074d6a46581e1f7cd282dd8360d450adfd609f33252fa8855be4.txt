@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0044
+ Substitute 6
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 4:07 PM</b><hr>
+<center>6HB 44</center>
+<center>School Security Personnel Standards</center>
+<center>Wilcox</center>
+<center>Millner</center>
+<center>SEDW Amended 4-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 7</center>
+
+
+</font>
+</body>
+</html>

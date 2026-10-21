@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0321
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 12:23 PM</b><hr>
+<center>SB 321</center>
+<center>Municipal Election Amendments</center>
+<center>McCay</center>
+<center>/ Shepherd</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

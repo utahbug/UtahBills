@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0125
+ - 
+ - Passed
+ on voice vote
+, 2/17/2026 3:49 PM</b><hr>
+<center>SB 125</center>
+<center>Theft of Service Amendments</center>
+<center>Musselman</center>
+<center>SJLC Passed  8-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

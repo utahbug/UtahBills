@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0222
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 11:16 AM</b><hr>
+<center>1HB 222</center>
+<center>Limitation of Actions Amendments</center>
+<center>Albrecht</center>
+<center>Balderree</center>
+<center>SJLC Passed  4-1-4</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

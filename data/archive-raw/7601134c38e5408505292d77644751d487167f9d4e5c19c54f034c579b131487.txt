@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0142
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 5:06 PM</b><hr>
+<center>SB 142</center>
+<center>Private Probation and Court Ordered Services Amendments</center>
+<center>Plumb</center>
+<center>SHHS Amended 5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

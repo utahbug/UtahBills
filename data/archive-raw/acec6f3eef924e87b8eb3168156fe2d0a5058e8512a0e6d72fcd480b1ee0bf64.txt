@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0520
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 8:19 PM</b><hr>
+<center>HB 520</center>
+<center>Higher Education Student Housing Study</center>
+<center>Thompson</center>
+<center>Brammer</center>
+<center>SEDW Passed  3-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

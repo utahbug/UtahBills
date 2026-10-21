@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0059
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 10:30 AM</b><hr>
+<center>2SB 59</center>
+<center>Alimony Amendments</center>
+<center>Fillmore</center>
+<center>Cutler</center>
+<center>SJLC Passed  5-0-4</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0021
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/6/2026 2:32 PM</b><hr>
+<center>1HB 21</center>
+<center>Senior Care Facility Amendments</center>
+<center>Auxier</center>
+<center>Weiler</center>
+<center>SBUS Substituted 6-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

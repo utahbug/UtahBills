@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0370
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:55 AM</b><hr>
+<center>1HB 370</center>
+<center>Sex Offender Oversight Amendments</center>
+<center>Lisonbee</center>
+<center>/ Brammer</center>
+<center>HJUD Substituted 11-0-0</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

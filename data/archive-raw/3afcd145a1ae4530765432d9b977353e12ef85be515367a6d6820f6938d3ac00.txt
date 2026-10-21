@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0474
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:18 PM</b><hr>
+<center>1HB 474</center>
+<center>Uniform Commercial Code Modifications</center>
+<center>Loubet</center>
+<center>Cullimore</center>
+<center>SBUS Passed  6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

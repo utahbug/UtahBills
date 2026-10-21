@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0019
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/2/2026 12:00 PM</b><hr>
+<center>1SB 19</center>
+<center>Digital Evidence Amendments</center>
+<center>Weiler</center>
+<center>Wilcox</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

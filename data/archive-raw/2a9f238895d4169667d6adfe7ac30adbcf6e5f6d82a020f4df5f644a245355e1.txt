@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0319
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 5:56 PM</b><hr>
+<center>1SB 319</center>
+<center>Health Insurance Preauthorization Amendments</center>
+<center>Johnson</center>
+<center>/ Hall</center>
+<center>HHHS Substituted 9-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

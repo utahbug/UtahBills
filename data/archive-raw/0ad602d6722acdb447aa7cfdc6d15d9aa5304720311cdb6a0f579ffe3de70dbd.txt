@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0296
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 3:31 PM</b><hr>
+<center>SB 296</center>
+<center>Student Consent Amendments</center>
+<center>Cullimore</center>
+<center>Gricius</center>
+<center>SEDW Passed  4-1-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

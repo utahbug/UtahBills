@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0064
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 3:44 PM</b><hr>
+<center>HB 64</center>
+<center>School and Institutional Trust Lands Amendments</center>
+<center>Albrecht</center>
+<center>Owens</center>
+<center>SNAE Amended 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

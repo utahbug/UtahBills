@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0219
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:51 PM</b><hr>
+<center>1HB 219</center>
+<center>Higher Education Civics Amendments</center>
+<center>Ballard</center>
+<center>/ Fillmore</center>
+<center>HEDU Passed  12-3-0</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

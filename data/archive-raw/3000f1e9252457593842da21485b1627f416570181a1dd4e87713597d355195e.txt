@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0117
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 3:56 PM</b><hr>
+<center>HB 117</center>
+<center>Organ Donation Amendments</center>
+<center>Owens</center>
+<center>/ Musselman</center>
+<center>HHHS Amended 12-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

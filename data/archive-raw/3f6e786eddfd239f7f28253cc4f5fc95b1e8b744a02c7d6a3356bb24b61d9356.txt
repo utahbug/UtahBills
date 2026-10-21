@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0493
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:06 PM</b><hr>
+<center>HB 493</center>
+<center>Pricing Protection Amendments</center>
+<center>Sawyer</center>
+<center>Millner</center>
+<center>SBUS Passed  6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

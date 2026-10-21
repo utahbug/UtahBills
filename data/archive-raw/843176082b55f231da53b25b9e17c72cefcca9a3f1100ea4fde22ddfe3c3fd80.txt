@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0039
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/5/2026 3:26 PM</b><hr>
+<center>SB 39</center>
+<center>Investment Zones Amendments</center>
+<center>Harper</center>
+<center>Whyte</center>
+<center>SGOP Passed  5-1-1</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

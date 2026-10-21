@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0267
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:29 PM</b><hr>
+<center>5SB 267</center>
+<center>Software in Education Amendments</center>
+<center>Cullimore</center>
+<center>/ Fiefia</center>
+<center>Reconsideration</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

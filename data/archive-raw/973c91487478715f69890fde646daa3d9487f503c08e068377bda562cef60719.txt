@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0258
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:05 PM</b><hr>
+<center>2SB 258</center>
+<center>Infant at Work Amendments</center>
+<center>Pitcher</center>
+<center>/ K. Peterson</center>
+<center>HHHS Passed  12-0-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

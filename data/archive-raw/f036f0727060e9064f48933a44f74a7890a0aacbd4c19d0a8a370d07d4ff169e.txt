@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0047
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 1/21/2026 11:24 AM</b><hr>
+<center>HB 47</center>
+<center>Vehicle Registration and Insurance Amendments</center>
+<center>Kyle</center>
+<center>/ Brammer</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

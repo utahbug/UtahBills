@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0111
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/6/2026 3:07 PM</b><hr>
+<center>1HB 111</center>
+<center>Wildlife Amendments</center>
+<center>Bolinder</center>
+<center>/ Musselman</center>
+<center>HNAE Passed  9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0195
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 4:04 PM</b><hr>
+<center>1HB 195</center>
+<center>Precious Metals Amendments</center>
+<center>Ivory</center>
+<center>Grover</center>
+<center>SGOP Passed  4-2-1</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

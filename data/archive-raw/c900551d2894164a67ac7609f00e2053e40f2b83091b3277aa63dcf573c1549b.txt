@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0021
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 4:35 PM</b><hr>
+<center>2SB 21</center>
+<center>Geothermal Amendments</center>
+<center>McKell</center>
+<center>SNAE Substituted 2-1-4</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

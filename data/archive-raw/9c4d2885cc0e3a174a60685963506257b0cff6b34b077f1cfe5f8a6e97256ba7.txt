@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0513
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 7:18 PM</b><hr>
+<center>HB 513</center>
+<center>Attorney General Funding Amendments</center>
+<center>V. Peterson</center>
+<center>/ </center>
+<center>HREV Amended 6-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0412
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 7:29 PM</b><hr>
+<center>HB 412</center>
+<center>Energy Development Planning Amendments</center>
+<center>Owens</center>
+<center>Owens</center>
+<center>SNAE Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

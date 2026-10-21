@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0417
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/17/2026 11:40 AM</b><hr>
+<center>HB 417</center>
+<center>Patient Interfacility Transportation Requirements</center>
+<center>Hayes</center>
+<center>/ Grover</center>
+<center>HHHS Amended 12-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

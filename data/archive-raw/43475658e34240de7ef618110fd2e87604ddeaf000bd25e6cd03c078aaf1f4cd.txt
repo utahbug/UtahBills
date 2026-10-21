@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0222
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 2:51 PM</b><hr>
+<center>2SB 222</center>
+<center>Right to Try Amendments</center>
+<center>Wilson</center>
+<center>Clancy</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

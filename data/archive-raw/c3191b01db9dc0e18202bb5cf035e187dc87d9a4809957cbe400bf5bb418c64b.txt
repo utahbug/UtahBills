@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0162
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 3:50 PM</b><hr>
+<center>SB 162</center>
+<center>Online Sales Tax Amendments</center>
+<center>Wilson</center>
+<center>SREV Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

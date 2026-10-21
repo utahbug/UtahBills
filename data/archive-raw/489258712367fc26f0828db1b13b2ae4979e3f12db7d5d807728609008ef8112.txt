@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0002
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 3:08 PM</b><hr>
+<center>SB 2</center>
+<center>Public Education Budget Amendments</center>
+<center>Balderree</center>
+<center>Whyte</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

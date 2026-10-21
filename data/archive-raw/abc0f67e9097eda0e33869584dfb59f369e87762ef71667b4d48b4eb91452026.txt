@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0176
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 11:18 AM</b><hr>
+<center>1HB 176</center>
+<center>Trust Business Modifications</center>
+<center>Loubet</center>
+<center>/ </center>
+<center>HBUS Substituted 8-5-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

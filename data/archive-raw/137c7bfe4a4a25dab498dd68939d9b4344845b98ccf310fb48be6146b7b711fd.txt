@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR001
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 2:39 PM</b><hr>
+<center>HCR 1</center>
+<center>House Concurrent Resolution Regarding Advanced Nuclear Manufacturing</center>
+<center>Albrecht</center>
+<center>Hinkins</center>
+<center>STPT Passed  4-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

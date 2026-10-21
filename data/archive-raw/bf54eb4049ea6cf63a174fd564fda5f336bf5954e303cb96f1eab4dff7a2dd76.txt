@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0318
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 4:36 PM</b><hr>
+<center>HB 318</center>
+<center>Agency Fee Amendments</center>
+<center>Christofferson</center>
+<center>Vickers</center>
+<center>SGOP Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

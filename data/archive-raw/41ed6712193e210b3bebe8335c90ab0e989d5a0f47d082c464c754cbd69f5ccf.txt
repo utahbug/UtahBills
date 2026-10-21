@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR028
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/27/2026 3:24 PM</b><hr>
+<center>HJR 28</center>
+<center>Joint Resolution Amending Court Rules Related to Capital Felony Cases</center>
+<center>Pierucci</center>
+<center>/ </center>
+<center>HLAW Passed  8-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0121
+ - 
+ - Passed
+ on voice vote
+, 2/9/2026 11:59 AM</b><hr>
+<center>SB 121</center>
+<center>Medical Cannabis Program Amendments</center>
+<center>Vickers</center>
+<center>Brooks</center>
+<center>SHHS Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

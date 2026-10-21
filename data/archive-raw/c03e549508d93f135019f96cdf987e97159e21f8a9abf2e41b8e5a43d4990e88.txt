@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0374
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 9:28 AM</b><hr>
+<center>2HB 374</center>
+<center>Speech, Language, and Hearing Occupations Licensing Amendments</center>
+<center>Ballard</center>
+<center>/ Vickers</center>
+<center>HBUS Passed  11-0-5</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

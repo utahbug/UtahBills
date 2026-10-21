@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0111
+ - 
+ - Passed
+ on voice vote
+, 1/22/2026 11:53 AM</b><hr>
+<center>SB 111</center>
+<center>Veterinary Post-Employment Amendments</center>
+<center>Plumb</center>
+<center>SBUS Passed  3-2-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR009
+ Substitute 2
+ - 
+ - Failed
+ on voice vote
+, 3/6/2026 11:39 AM</b><hr>
+<center>2HCR 9</center>
+<center>Concurrent Resolution Addressing the Great Salt Lake</center>
+<center>Elison</center>
+<center>Sandall</center>
+<center>SJLC Passed  6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

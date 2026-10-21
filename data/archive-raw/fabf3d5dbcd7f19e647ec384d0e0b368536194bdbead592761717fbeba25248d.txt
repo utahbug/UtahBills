@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0247
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 7:57 PM</b><hr>
+<center>SB 247</center>
+<center>Road Funding Amendments</center>
+<center>Buss</center>
+<center>Dailey-Provost</center>
+<center>SREV Amended 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

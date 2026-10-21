@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0316
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 11:04 AM</b><hr>
+<center>SB 316</center>
+<center>Public Employee Attorney Fee Recovery Amendments</center>
+<center>Pitcher</center>
+<center>SREV Passed  6-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

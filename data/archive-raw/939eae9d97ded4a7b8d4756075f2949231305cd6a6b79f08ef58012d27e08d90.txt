@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0192
+ - 
+ - Passed
+ on voice vote
+, 2/20/2026 2:34 PM</b><hr>
+<center>SB 192</center>
+<center>Legislative Activities Amendments</center>
+<center>McKell</center>
+<center>SBUS Amended 7-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

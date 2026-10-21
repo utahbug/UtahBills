@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0024
+ Substitute 2
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/3/2026 11:52 AM</b><hr>
+<center>2HB 24</center>
+<center>Criminal Penalty Amendments</center>
+<center>Wilcox</center>
+<center>/ </center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

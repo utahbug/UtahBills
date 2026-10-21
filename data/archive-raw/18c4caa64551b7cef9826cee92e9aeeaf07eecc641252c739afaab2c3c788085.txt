@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0016
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 1/23/2026 11:45 AM</b><hr>
+<center>HB 16</center>
+<center>Solar Power Plant Amendments</center>
+<center>Jack</center>
+<center>/ Hinkins</center>
+<center>HPUT Passed  10-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

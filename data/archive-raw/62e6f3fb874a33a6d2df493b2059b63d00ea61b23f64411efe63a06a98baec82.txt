@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0310
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:39 PM</b><hr>
+<center>SB 310</center>
+<center>Uniform Intimate Images Amendments</center>
+<center>McKell</center>
+<center>/ Teuscher</center>
+<center>HJUD Passed  10-0-1</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

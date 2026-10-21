@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0078
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:35 AM</b><hr>
+<center>HB 78</center>
+<center>Nuclear Regulatory Amendments</center>
+<center>Albrecht</center>
+<center>Owens</center>
+<center>STPT Amended 5-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0269
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/24/2026 3:21 PM</b><hr>
+<center>SB 269</center>
+<center>School Board Meeting Notification Requirements</center>
+<center>Weiler</center>
+<center>SEDU Amended 3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to amend v</center>
+
+
+</font>
+</body>
+</html>

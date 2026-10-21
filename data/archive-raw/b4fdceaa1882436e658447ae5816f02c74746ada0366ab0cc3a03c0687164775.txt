@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0020
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/12/2026 11:20 AM</b><hr>
+<center>1HB 20</center>
+<center>Correctional Facility Capacity Amendments</center>
+<center>Lisonbee</center>
+<center>Weiler</center>
+<center>SJLC Passed  5-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

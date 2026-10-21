@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR010
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 11:37 AM</b><hr>
+<center>HJR 10</center>
+<center>Joint Rules Resolution - Sponsor's Supporting Information</center>
+<center>Thurston</center>
+<center>Brammer</center>
+<center>SRUL Passed  7-1-1</center>
+<center>2nd Reading</center>
+<center>Motion to send to Rules</center>
+
+
+</font>
+</body>
+</html>

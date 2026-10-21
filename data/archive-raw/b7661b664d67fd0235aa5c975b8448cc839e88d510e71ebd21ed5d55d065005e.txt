@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0432
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/23/2026 3:23 PM</b><hr>
+<center>HB 432</center>
+<center>Egg Amendments</center>
+<center>Shipp</center>
+<center>/ Stratton</center>
+<center>HBUS Passed  11-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

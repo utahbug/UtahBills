@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0410
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/4/2026 10:57 AM</b><hr>
+<center>1HB 410</center>
+<center>Water Leasing Amendments</center>
+<center>Koford</center>
+<center>Sandall</center>
+<center>SNAE Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>

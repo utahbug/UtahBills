@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR012
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:44 PM</b><hr>
+<center>2HJR 12</center>
+<center>Joint Resolution Encouraging Strong Family Units</center>
+<center>Peck</center>
+<center>Stratton</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

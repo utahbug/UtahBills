@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0481
+ Substitute 5
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 9:35 PM</b><hr>
+<center>5HB 481</center>
+<center>Transportation Modifications</center>
+<center>Christofferson</center>
+<center>Harper</center>
+<center>Substituted</center>
+<center>Motion to Adopt Conference Committee Report</center>
+
+
+</font>
+</body>
+</html>

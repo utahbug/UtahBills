@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0507
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:51 PM</b><hr>
+<center>3HB 507</center>
+<center>State Coordination of Regional and Local Economic Development Projects Amendments</center>
+<center>Roberts</center>
+<center>/ Cullimore</center>
+<center>Substituted</center>
+<center>Concurrence</center>
+<center>Motion to Refuse to Concur</center>
+
+
+</font>
+</body>
+</html>

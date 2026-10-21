@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0391
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/17/2026 3:44 PM</b><hr>
+<center>1HB 391</center>
+<center>Vacancy Replacement Amendments</center>
+<center>Shepherd</center>
+<center>/ Stratton</center>
+<center>HGOC Passed  7-4-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

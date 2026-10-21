@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0112
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 3:43 PM</b><hr>
+<center>1SB 112</center>
+<center>Utah Exemptions Act Modifications</center>
+<center>Weiler</center>
+<center>SREV Substituted 3-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

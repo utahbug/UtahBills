@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0039
+ - 
+ - Passed
+ on voice vote
+, 2/4/2026 2:33 PM</b><hr>
+<center>HB 39</center>
+<center>Prison and Jail Standards Amendments</center>
+<center>Wilcox</center>
+<center>Musselman</center>
+<center>SJLC Passed  6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

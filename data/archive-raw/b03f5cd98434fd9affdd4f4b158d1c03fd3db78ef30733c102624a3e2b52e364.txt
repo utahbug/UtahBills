@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0545
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/26/2026 7:16 PM</b><hr>
+<center>1HB 545</center>
+<center>Budgetary Modifications</center>
+<center>V. Peterson</center>
+<center>/ </center>
+<center>HEDW Substituted Amended 8-1-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0312
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 7:27 PM</b><hr>
+<center>2HB 312</center>
+<center>School Curriculum and Standards Modifications</center>
+<center>Auxier</center>
+<center>Fillmore</center>
+<center>SEDU Passed  3-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 5</center>
+
+
+</font>
+</body>
+</html>

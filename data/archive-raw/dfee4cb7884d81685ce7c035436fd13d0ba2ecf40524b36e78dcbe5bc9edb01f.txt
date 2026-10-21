@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0227
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/5/2026 4:35 PM</b><hr>
+<center>2SB 227</center>
+<center>Punitive Damages Amendments</center>
+<center>Winterton</center>
+<center>/ Jack</center>
+<center>HBUS Passed  10-0-6</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

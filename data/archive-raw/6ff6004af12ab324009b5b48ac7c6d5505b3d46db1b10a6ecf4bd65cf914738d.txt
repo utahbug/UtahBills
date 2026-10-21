@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0501
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 10:27 AM</b><hr>
+<center>1HB 501</center>
+<center>Water Modifications</center>
+<center>Bolinder</center>
+<center>/ Sandall</center>
+<center>HNAE Passed  10-2-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

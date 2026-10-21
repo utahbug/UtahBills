@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0116
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 3:49 PM</b><hr>
+<center>1SB 116</center>
+<center>Income Tax Rate Modifications</center>
+<center>Fillmore</center>
+<center>SREV Substituted 3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

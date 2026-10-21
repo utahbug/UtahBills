@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0553
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 2:53 PM</b><hr>
+<center>HB 553</center>
+<center>Dog Attack Amendments</center>
+<center>Thompson</center>
+<center>/ </center>
+<center>HLAW Passed  6-1-4</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

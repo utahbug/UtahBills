@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0200
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 5:33 PM</b><hr>
+<center>SB 200</center>
+<center>Impounded Vehicle Amendments</center>
+<center>Pitcher</center>
+<center>Wilcox</center>
+<center>STPT Passed  5-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

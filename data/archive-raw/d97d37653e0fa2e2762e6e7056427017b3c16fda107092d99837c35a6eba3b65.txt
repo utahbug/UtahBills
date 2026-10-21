@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0151
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 12:00 PM</b><hr>
+<center>1SB 151</center>
+<center>Public Safety Funding Amendments</center>
+<center>Harper</center>
+<center>Pierucci</center>
+<center>STPT Substituted 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

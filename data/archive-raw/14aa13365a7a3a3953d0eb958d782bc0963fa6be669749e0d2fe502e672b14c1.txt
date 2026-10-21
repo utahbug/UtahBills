@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0330
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 4:15 PM</b><hr>
+<center>HB 330</center>
+<center>Liability Limitations Amendments</center>
+<center>Jack</center>
+<center>/ Winterton</center>
+<center>HJUD Passed  7-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

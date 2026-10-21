@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0132
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/19/2026 10:38 AM</b><hr>
+<center>1HB 132</center>
+<center>Military Amendments</center>
+<center>Burton</center>
+<center>Millner</center>
+<center>STPT Passed  5-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

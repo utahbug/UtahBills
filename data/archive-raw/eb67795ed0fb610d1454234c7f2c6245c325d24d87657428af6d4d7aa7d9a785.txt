@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR016
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 3:18 PM</b><hr>
+<center>1SJR 16</center>
+<center>Joint Rules Resolution - Joint Rule Modifications</center>
+<center>Millner</center>
+<center>Clancy</center>
+<center>SRUL Substituted 8-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

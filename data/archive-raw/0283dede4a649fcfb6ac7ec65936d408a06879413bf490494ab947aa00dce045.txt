@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0253
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:07 PM</b><hr>
+<center>SB 253</center>
+<center>Library Materials Amendments</center>
+<center>McKell</center>
+<center>SEDU Amended 3-2-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

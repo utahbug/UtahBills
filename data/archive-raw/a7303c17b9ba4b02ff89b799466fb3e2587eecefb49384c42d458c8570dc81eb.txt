@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0323
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 3:22 PM</b><hr>
+<center>1SB 323</center>
+<center>Criminal and Juvenile Justice Recodification</center>
+<center>Weiler</center>
+<center>/ Lisonbee</center>
+<center>HBUS Substituted Amended 11-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

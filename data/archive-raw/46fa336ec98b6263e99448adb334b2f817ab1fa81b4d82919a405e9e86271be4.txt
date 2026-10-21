@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0078
+ Substitute 4
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 10:42 PM</b><hr>
+<center>4SB 78</center>
+<center>Property Tax Relief Amendments</center>
+<center>McCay</center>
+<center>/ Walter</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

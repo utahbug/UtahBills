@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0422
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/24/2026 10:50 AM</b><hr>
+<center>1HB 422</center>
+<center>Public Infrastructure Districts Amendments</center>
+<center>Koford</center>
+<center>/ McCay</center>
+<center>HPOL Amended 9-1-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

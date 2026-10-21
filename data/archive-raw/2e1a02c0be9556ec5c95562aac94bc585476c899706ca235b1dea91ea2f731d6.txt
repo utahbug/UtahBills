@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0150
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/20/2026 2:32 PM</b><hr>
+<center>1SB 150</center>
+<center>Healthcare Providers Scope of Practice Amendments</center>
+<center>Vickers</center>
+<center>Dunnigan</center>
+<center>SBUS Substituted Amended 8-0-0</center>
+<center>2nd Reading</center>
+<center>Motion to amend 3</center>
+
+
+</font>
+</body>
+</html>

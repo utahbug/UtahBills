@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0052
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 2:14 PM</b><hr>
+<center>HB 52</center>
+<center>Tribal Endorsement of Utah Driver License Amendments</center>
+<center>Maloy</center>
+<center>Brammer</center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

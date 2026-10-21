@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0034
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:46 AM</b><hr>
+<center>2SB 34</center>
+<center>Public Education Revisions</center>
+<center>Johnson</center>
+<center>Walter</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

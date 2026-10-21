@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0292
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 3:48 PM</b><hr>
+<center>SB 292</center>
+<center>Autonomous Systems Amendments</center>
+<center>Cullimore</center>
+<center>SJLC Passed  6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

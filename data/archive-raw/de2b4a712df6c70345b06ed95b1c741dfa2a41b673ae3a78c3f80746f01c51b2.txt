@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0197
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 4:34 PM</b><hr>
+<center>1SB 197</center>
+<center>Transportation Funding and Governance Amendments</center>
+<center>Harper</center>
+<center>/ Christofferson</center>
+<center>HTRA Substituted Amended 11-1-0</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

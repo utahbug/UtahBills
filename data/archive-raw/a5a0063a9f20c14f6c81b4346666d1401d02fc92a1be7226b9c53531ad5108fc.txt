@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0054
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 3:40 PM</b><hr>
+<center>SB 54</center>
+<center>Carson Smith Opportunity Scholarship Program Amendments</center>
+<center>Fillmore</center>
+<center>/ Walter</center>
+<center>HEDU Passed  10-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

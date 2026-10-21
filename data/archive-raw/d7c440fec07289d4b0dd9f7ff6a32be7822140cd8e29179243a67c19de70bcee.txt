@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0058
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/27/2026 11:30 AM</b><hr>
+<center>2HB 58</center>
+<center>Insurance Code Modifications</center>
+<center>Dunnigan</center>
+<center>Vickers</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

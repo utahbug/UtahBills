@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0137
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 11:56 AM</b><hr>
+<center>SB 137</center>
+<center>Homeless Services Board Amendments</center>
+<center>Plumb</center>
+<center>SHHS Passed  5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

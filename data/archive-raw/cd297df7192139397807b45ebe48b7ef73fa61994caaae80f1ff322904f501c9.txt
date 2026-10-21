@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0376
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 10:38 AM</b><hr>
+<center>HB 376</center>
+<center>Land Management Funding Amendments</center>
+<center>Albrecht</center>
+<center>Sandall</center>
+<center>SNAE Passed  4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

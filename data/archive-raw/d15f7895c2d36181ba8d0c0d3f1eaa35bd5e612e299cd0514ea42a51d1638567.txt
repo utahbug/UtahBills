@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0123
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 4:26 PM</b><hr>
+<center>1HB 123</center>
+<center>Sex, Kidnap, and Child Abuse Offender Registration Amendments</center>
+<center>Acton</center>
+<center>Winterton</center>
+<center>SJLC Passed  4-0-5</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

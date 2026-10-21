@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0240
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 11:57 AM</b><hr>
+<center>1SB 240</center>
+<center>Higher Education Institutional Governance</center>
+<center>Wilson</center>
+<center>Snider</center>
+<center>SEDU Substituted 4-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

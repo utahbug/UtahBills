@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0385
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/20/2026 3:22 PM</b><hr>
+<center>1HB 385</center>
+<center>Nicotine Sales Amendments</center>
+<center>Dailey-Provost</center>
+<center>/ McKell</center>
+<center>HBUS Substituted 14-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

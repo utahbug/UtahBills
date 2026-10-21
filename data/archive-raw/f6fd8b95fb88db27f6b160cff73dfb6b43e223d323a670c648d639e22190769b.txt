@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HCR009
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 3:58 PM</b><hr>
+<center>1HCR 9</center>
+<center>Concurrent Resolution Addressing the Great Salt Lake</center>
+<center>Elison</center>
+<center>/ Sandall</center>
+<center>HNAE Substituted 9-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

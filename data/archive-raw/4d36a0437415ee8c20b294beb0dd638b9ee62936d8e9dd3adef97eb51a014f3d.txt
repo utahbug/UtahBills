@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0185
+ Substitute 3
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/2/2026 3:23 PM</b><hr>
+<center>3HB 185</center>
+<center>Carbon Credit Amendments</center>
+<center>Shelley</center>
+<center>/ </center>
+<center>HREV Substituted 8-3-0</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 4</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0396
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/6/2026 3:18 PM</b><hr>
+<center>1HB 396</center>
+<center>Public Project Subcontractor Amendments</center>
+<center>Burton</center>
+<center>Brammer</center>
+<center>SGOP Substituted 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to amend v</center>
+
+
+</font>
+</body>
+</html>

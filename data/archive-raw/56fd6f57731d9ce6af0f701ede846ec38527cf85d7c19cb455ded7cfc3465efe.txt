@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0148
+ Substitute 1
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 2/6/2026 2:59 PM</b><hr>
+<center>1SB 148</center>
+<center>General Oversight Amendments</center>
+<center>McCay</center>
+<center>SGOP Substituted 5-1-1</center>
+<center>2nd Reading</center>
+<center>Motion to amend 2</center>
+
+
+</font>
+</body>
+</html>

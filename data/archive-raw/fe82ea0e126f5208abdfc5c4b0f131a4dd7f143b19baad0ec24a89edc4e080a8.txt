@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0508
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:18 AM</b><hr>
+<center>3HB 508</center>
+<center>State Facilities Modifications</center>
+<center>Brooks</center>
+<center>Ipson</center>
+<center>SGOP Substituted 7-0-0</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

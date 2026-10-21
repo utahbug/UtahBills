@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0088
+ Substitute 5
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/23/2026 4:01 PM</b><hr>
+<center>5HB 88</center>
+<center>Public Assistance Amendments</center>
+<center>Lee</center>
+<center>/ </center>
+<center>HLAW Substituted 7-3-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 6</center>
+
+
+</font>
+</body>
+</html>

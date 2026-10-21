@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0445
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/20/2026 2:26 PM</b><hr>
+<center>HB 445</center>
+<center>County Government Land Purchasing</center>
+<center>Strong</center>
+<center>/ </center>
+<center>HPOL Passed  7-2-3</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

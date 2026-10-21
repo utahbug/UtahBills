@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0147
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 6:50 PM</b><hr>
+<center>3HB 147</center>
+<center>Government Form Submission Amendments</center>
+<center>Teuscher</center>
+<center>Vickers</center>
+<center>SGOP Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

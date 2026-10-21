@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0083
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/25/2026 10:53 AM</b><hr>
+<center>SB 83</center>
+<center>Controlled Substance Scheduling Amendments</center>
+<center>Vickers</center>
+<center>/ Monson</center>
+<center>HHHS Passed  9-0-5</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Amend 1</center>
+
+
+</font>
+</body>
+</html>

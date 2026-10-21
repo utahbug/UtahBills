@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0057
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 8:04 PM</b><hr>
+<center>1HB 57</center>
+<center>Motor Vehicle Division Amendments</center>
+<center>Christofferson</center>
+<center>Harper</center>
+<center>STPT Passed  5-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

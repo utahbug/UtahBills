@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0192
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/5/2026 3:09 PM</b><hr>
+<center>SB 192</center>
+<center>Legislative Activities Amendments</center>
+<center>McKell</center>
+<center>/ V. Peterson</center>
+<center>HRUL Passed  7-0-1</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

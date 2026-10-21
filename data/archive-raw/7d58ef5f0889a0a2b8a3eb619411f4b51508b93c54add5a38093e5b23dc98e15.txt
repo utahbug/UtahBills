@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0284
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:31 AM</b><hr>
+<center>1SB 284</center>
+<center>Local Land Use Modifications</center>
+<center>Fillmore</center>
+<center>Roberts</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SJR006
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 5:37 PM</b><hr>
+<center>2SJR 6</center>
+<center>Joint Resolution Amending Court Rules</center>
+<center>Sandall</center>
+<center>Hall</center>
+<center>SJLC Substituted 6-0-3</center>
+<center>Concurrence</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

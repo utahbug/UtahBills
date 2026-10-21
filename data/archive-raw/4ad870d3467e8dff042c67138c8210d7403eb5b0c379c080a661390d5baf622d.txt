@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0275
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/4/2026 11:25 AM</b><hr>
+<center>1SB 275</center>
+<center>State-Endorsed Digital Identity Program Amendments</center>
+<center>Cullimore</center>
+<center>/ Cutler</center>
+<center>HEDW Substituted Amended 7-0-3</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0248
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:47 AM</b><hr>
+<center>SB 248</center>
+<center>Child Care Expansion Act</center>
+<center>Escamilla</center>
+<center>SEDW Amended 4-1-1</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0099
+ - 
+ - Passed
+ on voice vote
+, 2/10/2026 11:34 AM</b><hr>
+<center>HB 99</center>
+<center>Eyewear Sales Tax Amendments</center>
+<center>Maloy</center>
+<center>/ Owens</center>
+<center>HREV Passed  9-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

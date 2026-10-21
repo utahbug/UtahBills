@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0281
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 11:18 AM</b><hr>
+<center>3SB 281</center>
+<center>Senior Nutrition Private Donation Incentives</center>
+<center>Stratton</center>
+<center>Shallenberger</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

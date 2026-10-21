@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0205
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/25/2026 11:33 AM</b><hr>
+<center>1SB 205</center>
+<center>Law Enforcement Artificial Intelligence Amendments</center>
+<center>Pitcher</center>
+<center>SJLC Substituted 8-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

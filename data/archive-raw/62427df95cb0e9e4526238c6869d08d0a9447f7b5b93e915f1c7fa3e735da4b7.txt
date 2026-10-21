@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0071
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 10:34 AM</b><hr>
+<center>3HB 71</center>
+<center>Health Provider Directory and Access Amendments</center>
+<center>Eliason</center>
+<center>Cullimore</center>
+<center>SHHS Substituted 5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to substitute 4</center>
+
+
+</font>
+</body>
+</html>

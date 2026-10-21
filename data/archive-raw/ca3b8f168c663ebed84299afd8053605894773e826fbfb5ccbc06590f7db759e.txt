@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0097
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 11:08 AM</b><hr>
+<center>3SB 97</center>
+<center>Tax Revenue Amendments</center>
+<center>McCay</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

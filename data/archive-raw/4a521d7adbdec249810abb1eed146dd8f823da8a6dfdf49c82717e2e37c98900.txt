@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0075
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 1/30/2026 12:06 PM</b><hr>
+<center>HB 75</center>
+<center>American Indian and Alaska Native Education Amendments</center>
+<center>Watkins</center>
+<center>/ Winterton</center>
+<center>HEDU Passed  10-1-4</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

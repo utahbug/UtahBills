@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0254
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 7:51 PM</b><hr>
+<center>3SB 254</center>
+<center>Extracted Natural Resources Amendments</center>
+<center>Millner</center>
+<center>/ Shallenberger</center>
+<center>Amended</center>
+<center>Motion to refuse to recede</center>
+
+
+</font>
+</body>
+</html>

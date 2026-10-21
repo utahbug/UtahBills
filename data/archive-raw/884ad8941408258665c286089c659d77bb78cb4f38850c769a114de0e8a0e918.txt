@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0112
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/25/2026 2:37 PM</b><hr>
+<center>2HB 112</center>
+<center>Political Advertising Amendments</center>
+<center>Hayes</center>
+<center>/ Winterton</center>
+<center>HGOC Substituted 7-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

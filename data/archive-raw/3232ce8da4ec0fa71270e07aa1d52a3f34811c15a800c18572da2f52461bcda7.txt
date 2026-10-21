@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0008
+ - 
+ - Passed
+ on voice vote
+, 3/2/2026 11:20 AM</b><hr>
+<center>SB 8</center>
+<center>State Agency and Higher Education Compensation Appropriations</center>
+<center>Sandall</center>
+<center>Brooks</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

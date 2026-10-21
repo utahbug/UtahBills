@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0069
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/5/2026 3:13 PM</b><hr>
+<center>1HB 69</center>
+<center>Drinking Water Restructuring Amendments</center>
+<center>Albrecht</center>
+<center>Stratton</center>
+<center>SNAE Substituted 6-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

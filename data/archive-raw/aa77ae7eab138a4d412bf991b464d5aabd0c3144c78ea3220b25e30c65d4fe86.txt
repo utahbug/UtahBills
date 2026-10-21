@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0157
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 3:18 PM</b><hr>
+<center>1SB 157</center>
+<center>New Motorboat Distributor Act</center>
+<center>Wilson</center>
+<center>Eliason</center>
+<center>SBUS Substituted 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 2</center>
+
+
+</font>
+</body>
+</html>

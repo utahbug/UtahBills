@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0328
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:44 AM</b><hr>
+<center>1HB 328</center>
+<center>Water Usage Modifications</center>
+<center>Okerlund</center>
+<center>McKell</center>
+<center>SGOP Passed  5-1-1</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

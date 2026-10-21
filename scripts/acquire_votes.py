@@ -19,7 +19,7 @@ def parse(body,bill,a,people):
     assert bill in text(s),'Wrong bill on vote record'
     votes=[];tally={};sourceTime='';version=None
     if committee:
-        motion=text(re.search(r'<b>([^<]*(?:Recommendation|Motion)[^<]*)</b>',s).group(1))
+        motion=text(re.search(r'<b>((?:House|Senate) Comm\s*-.*?)</b>',s,re.S).group(1))
         result=motion.rsplit(' - ',1)[-1]
         versionMatch=re.search(r'#([HS]B\d+(?:S\d+)?)',motion);version=versionMatch[1] if versionMatch else None
         cells=re.findall(r'<td valign="top">(.*?)</td>',s,re.S);assert len(cells)==3

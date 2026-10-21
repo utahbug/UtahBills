@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SCR004
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/18/2026 10:21 AM</b><hr>
+<center>SCR 4</center>
+<center>Concurrent Resolution Regarding Permitting of Oil, Gas, and Mining</center>
+<center>Winterton</center>
+<center>/ Albrecht</center>
+<center>HNAE Passed  8-0-6</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

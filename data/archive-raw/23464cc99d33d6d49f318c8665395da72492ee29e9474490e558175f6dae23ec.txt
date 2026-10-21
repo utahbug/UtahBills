@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0184
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/6/2026 11:04 PM</b><hr>
+<center>1SB 184</center>
+<center>Post-Conviction Offense Amendments</center>
+<center>Pitcher</center>
+<center>/ Wilcox</center>
+<center>HJUD Amended 7-0-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

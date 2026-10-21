@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0197
+ - 
+ - Passed
+ on voice vote
+, 2/23/2026 5:28 PM</b><hr>
+<center>SB 197</center>
+<center>Transportation Funding and Governance Amendments</center>
+<center>Harper</center>
+<center>Christofferson</center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

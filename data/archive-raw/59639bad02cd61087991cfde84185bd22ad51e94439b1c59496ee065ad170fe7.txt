@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HJR028
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 8:32 PM</b><hr>
+<center>1HJR 28</center>
+<center>Joint Resolution Amending Court Rules Related to Capital Felony Cases</center>
+<center>Pierucci</center>
+<center>McCay</center>
+<center>SJLC Passed  6-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

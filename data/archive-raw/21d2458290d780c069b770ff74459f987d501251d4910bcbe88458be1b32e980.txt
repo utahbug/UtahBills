@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0132
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 10:24 AM</b><hr>
+<center>SB 132</center>
+<center>Spaceport Amendments</center>
+<center>Stevenson</center>
+<center>/ Peterson</center>
+<center>HTRA Passed  10-0-2</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

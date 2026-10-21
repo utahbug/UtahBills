@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0174
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 7:57 PM</b><hr>
+<center>2HB 174</center>
+<center>Sex Characteristic Change Treatment Amendments</center>
+<center>Shipp</center>
+<center>McCay</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

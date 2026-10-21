@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0102
+ - 
+ - Passed
+ on voice vote
+, 2/18/2026 11:38 AM</b><hr>
+<center>SB 102</center>
+<center>Animal Control First Responder Amendments</center>
+<center>Plumb</center>
+<center>Burton</center>
+<center>SHHS Passed  5-0-2</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0045
+ - 
+ - Passed
+ on voice vote
+, 2/9/2026 11:22 AM</b><hr>
+<center>SB 45</center>
+<center>Kratom Adjustments</center>
+<center>McKell</center>
+<center>Hall</center>
+<center>SBUS Passed  7-1-0</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

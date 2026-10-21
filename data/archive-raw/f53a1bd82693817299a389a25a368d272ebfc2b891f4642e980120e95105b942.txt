@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0230
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/6/2026 2:55 PM</b><hr>
+<center>2HB 230</center>
+<center>Offender Amendments</center>
+<center>Ballard</center>
+<center>/ Brammer</center>
+<center>HLAW Substituted 7-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

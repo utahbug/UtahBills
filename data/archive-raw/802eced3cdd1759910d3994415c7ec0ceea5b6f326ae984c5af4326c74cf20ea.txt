@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0060
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/3/2026 2:29 PM</b><hr>
+<center>HB 60</center>
+<center>Water Rights Amendments</center>
+<center>Shallenberger</center>
+<center>/ Stratton</center>
+<center>HNAE Passed  7-2-5</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

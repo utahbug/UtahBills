@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0390
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 3:52 PM</b><hr>
+<center>1HB 390</center>
+<center>Veterans PTSD Clinical Research Amendments</center>
+<center>Dailey-Provost</center>
+<center>Cullimore</center>
+<center>SHHS Passed  5-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

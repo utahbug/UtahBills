@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0596
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 7:42 PM</b><hr>
+<center>1HB 596</center>
+<center>Homelessness Amendments</center>
+<center>Eliason</center>
+<center>/ Cullimore</center>
+<center>HLAW Substituted Amended 8-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

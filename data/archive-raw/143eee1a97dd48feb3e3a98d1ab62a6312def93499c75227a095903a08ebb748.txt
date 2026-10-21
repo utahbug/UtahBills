@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0381
+ Substitute 3
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 12:03 PM</b><hr>
+<center>3HB 381</center>
+<center>Electric Mobility Device Amendments</center>
+<center>Cutler</center>
+<center>Weiler</center>
+<center>STPT Amended 6-0-2</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

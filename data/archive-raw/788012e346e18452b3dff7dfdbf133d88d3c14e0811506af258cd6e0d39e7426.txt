@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0199
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 1/29/2026 12:01 PM</b><hr>
+<center>HB 199</center>
+<center>Health Data Amendments</center>
+<center>Thurston</center>
+<center>/ Cullimore</center>
+<center>HEDW Amended 5-3-2</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 1</center>
+
+
+</font>
+</body>
+</html>

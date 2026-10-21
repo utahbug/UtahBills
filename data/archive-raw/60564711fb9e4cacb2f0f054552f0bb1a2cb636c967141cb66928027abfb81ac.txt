@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0502
+ Substitute 4
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 8:23 PM</b><hr>
+<center>4HB 502</center>
+<center>School Attendance Modifications</center>
+<center>Welton</center>
+<center>McKell</center>
+<center>SGOP Substituted 5-0-2</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

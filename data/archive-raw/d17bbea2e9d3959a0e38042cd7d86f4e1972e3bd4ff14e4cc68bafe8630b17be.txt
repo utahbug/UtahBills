@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0509
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 4:06 PM</b><hr>
+<center>2HB 509</center>
+<center>Wetlands Study Amendments</center>
+<center>Owens</center>
+<center>McKell</center>
+<center>SNAE Passed  4-1-2</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 3</center>
+
+
+</font>
+</body>
+</html>

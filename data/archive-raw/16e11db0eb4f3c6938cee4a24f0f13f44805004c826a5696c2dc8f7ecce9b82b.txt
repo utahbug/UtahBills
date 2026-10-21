@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0448
+ Substitute 1
+ - 
+House/ floor amendment
+ - Passed
+ on voice vote
+, 2/18/2026 2:50 PM</b><hr>
+<center>1HB 448</center>
+<center>Utah Schools for the Deaf and Blind Amendments</center>
+<center>Whyte</center>
+<center>/ Johnson</center>
+<center>HEDU Substituted Amended 10-0-5</center>
+<center>3rd Reading</center>
+<center>Motion to Amend 2</center>
+
+
+</font>
+</body>
+</html>

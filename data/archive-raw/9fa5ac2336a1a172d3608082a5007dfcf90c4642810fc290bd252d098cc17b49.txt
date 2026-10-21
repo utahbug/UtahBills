@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0544
+ - 
+ - Passed
+ on voice vote
+, 3/3/2026 7:36 PM</b><hr>
+<center>HB 544</center>
+<center>County Land Use Authority Amendments</center>
+<center>Chevrier</center>
+<center>/ Grover</center>
+<center>HPOL Amended 7-1-4</center>
+<center>Motion to Reconsider</center>
+
+
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0180
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/26/2026 10:58 AM</b><hr>
+<center>1SB 180</center>
+<center>School Nutrition Amendments</center>
+<center>Escamilla</center>
+<center>Clancy</center>
+<center>Amended</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

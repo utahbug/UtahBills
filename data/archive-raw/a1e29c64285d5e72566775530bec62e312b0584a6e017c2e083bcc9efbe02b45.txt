@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0546
+ - 
+ - Passed
+ on voice vote
+, 3/5/2026 11:23 AM</b><hr>
+<center>HB 546</center>
+<center>Public Lands Duty of Care Amendments</center>
+<center>Ivory</center>
+<center>Stratton</center>
+<center>SREV Passed  3-0-4</center>
+<center>2nd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

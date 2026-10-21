@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0015
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/6/2026 10:10 AM</b><hr>
+<center>2HB 15</center>
+<center>Medicaid Amendments</center>
+<center>Eliason</center>
+<center>Grover</center>
+<center>SHHS Passed  4-0-3</center>
+<center>Consent</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

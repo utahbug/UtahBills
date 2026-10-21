@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0179
+ Substitute 1
+ - 
+ - Passed
+ on voice vote
+, 2/12/2026 1:49 PM</b><hr>
+<center>1HB 179</center>
+<center>Milk Amendments</center>
+<center>Chevrier</center>
+<center>/ Cullimore</center>
+<center>HHHS Amended 11-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Uncircle</center>
+<center>Circled</center>
+
+
+</font>
+</body>
+</html>

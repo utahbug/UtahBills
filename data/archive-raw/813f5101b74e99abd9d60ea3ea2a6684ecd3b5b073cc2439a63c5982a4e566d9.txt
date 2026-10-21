@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0381
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/12/2026 11:29 AM</b><hr>
+<center>2HB 381</center>
+<center>Electric Mobility Device Amendments</center>
+<center>Cutler</center>
+<center>/ </center>
+<center>HTRA Substituted 8-0-4</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

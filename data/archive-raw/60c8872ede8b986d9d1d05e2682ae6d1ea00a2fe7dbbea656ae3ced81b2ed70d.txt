@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0170
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/13/2026 10:45 AM</b><hr>
+<center>1HB 170</center>
+<center>School Board Referendum Amendments</center>
+<center>Shipp</center>
+<center>/ Fillmore</center>
+<center>HREV Substituted 10-0-1</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

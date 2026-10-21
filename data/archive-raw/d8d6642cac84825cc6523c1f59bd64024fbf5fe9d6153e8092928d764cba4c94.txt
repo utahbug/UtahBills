@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0276
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 3/4/2026 4:56 PM</b><hr>
+<center>2HB 276</center>
+<center>Artificial Intelligence Modifications</center>
+<center>Defay</center>
+<center>Cullimore</center>
+<center>Substituted</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

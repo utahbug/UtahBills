@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0535
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 2/27/2026 2:52 PM</b><hr>
+<center>2HB 535</center>
+<center>Disposition of Public Property Modifications</center>
+<center>Walter</center>
+<center>/ </center>
+<center>HPOL Substituted 9-0-3</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

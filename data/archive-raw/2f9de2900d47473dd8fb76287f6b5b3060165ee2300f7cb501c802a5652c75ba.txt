@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0195
+ - 
+ - Passed
+ on voice vote
+, 2/13/2026 11:42 AM</b><hr>
+<center>SB 195</center>
+<center>Workforce Development</center>
+<center>Millner</center>
+<center>Peterson</center>
+<center>SEDW Passed  5-0-1</center>
+<center>2nd Reading</center>
+<center>Motion to substitute 1</center>
+
+
+</font>
+</body>
+</html>

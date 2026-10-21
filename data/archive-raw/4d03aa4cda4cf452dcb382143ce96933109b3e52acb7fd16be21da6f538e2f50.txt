@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+HB0581
+ Substitute 1
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/3/2026 8:16 PM</b><hr>
+<center>1HB 581</center>
+<center>Autonomous Vehicle Amendments</center>
+<center>MacPherson</center>
+<center>/ </center>
+<center>HTRA Passed  7-2-3</center>
+<center>3rd Reading</center>
+<center>Motion to Adopt Substitute 2</center>
+
+
+</font>
+</body>
+</html>

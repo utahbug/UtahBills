@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0155
+ Substitute 2
+ - 
+ - Passed
+ on voice vote
+, 2/12/2026 11:17 AM</b><hr>
+<center>2SB 155</center>
+<center>Unclaimed Property Amendments</center>
+<center>Weiler</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

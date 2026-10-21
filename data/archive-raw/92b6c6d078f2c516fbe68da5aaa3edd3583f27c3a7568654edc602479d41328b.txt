@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0245
+ - 
+ - Passed
+ on voice vote
+, 2/24/2026 3:06 PM</b><hr>
+<center>SB 245</center>
+<center>Impact Fee Amendments</center>
+<center>Musselman</center>
+<center>SREV Amended 4-0-3</center>
+<center>2nd Reading</center>
+<center>Motion to Circle</center>
+
+
+</font>
+</body>
+</html>

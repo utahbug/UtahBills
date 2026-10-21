@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0183
+ Substitute 2
+ - 
+House/ substituted
+ - Passed
+ on voice vote
+, 3/5/2026 2:39 PM</b><hr>
+<center>2SB 183</center>
+<center>Surveillance Camera Amendments</center>
+<center>Pitcher</center>
+<center>/ Teuscher</center>
+<center>HLAW Passed  7-0-4</center>
+<center>Senate 3rd Reading</center>
+<center>Motion to Adopt Substitute 3</center>
+
+
+</font>
+</body>
+</html>

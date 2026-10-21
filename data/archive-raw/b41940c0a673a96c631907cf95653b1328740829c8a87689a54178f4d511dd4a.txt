@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <title>Vote Status</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif"><center><b>
+
+SB0097
+ Substitute 4
+ - 
+Senate/ floor amendment
+ - Passed
+ on voice vote
+, 3/3/2026 8:17 PM</b><hr>
+<center>4SB 97</center>
+<center>Tax Revenue Amendments</center>
+<center>McCay</center>
+<center>Substituted</center>
+<center>3rd Reading</center>
+<center>Motion to amend 1</center>
+
+
+</font>
+</body>
+</html>
