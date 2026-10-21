@@ -74,3 +74,12 @@ button{max-width:100%;overflow-wrap:anywhere}main{overflow-wrap:anywhere}
 .text-control{background:transparent;border:0;color:#145d94;text-decoration:underline;min-height:44px;padding:6px 8px;width:fit-content}
 .calendar-title{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}.calendar-title h1{margin:0}.calendar-info summary{min-height:44px;padding:10px 8px}.calendar-info[open]{flex-basis:100%}.calendar-controls{margin-bottom:8px}.agenda-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.agenda-heading h2{margin:12px 0}.vote-record{border-top:1px solid #d7e1e8;padding:10px 0;overflow-wrap:anywhere}.vote-record h3{margin:4px 0}.vote-record p{margin:8px 0}.vote-record summary,.all-votes>summary{min-height:44px;padding:10px 0}.vote-table{width:100%;border-collapse:collapse}.vote-table th,.vote-table td{text-align:left;padding:8px 4px;border-bottom:1px solid #d7e1e8;overflow-wrap:anywhere}.voter-search{width:100%}[hidden]{display:none!important}
 .compare-controls label{min-width:0;max-width:100%}.compare-controls select{min-width:0;max-width:100%;width:100%}.vote-table{table-layout:fixed}.calendar-info summary,#search-info summary{display:flex;align-items:center;justify-content:center;min-width:44px}
+/* Compact header and stable search-help position, including expanded help. */
+.bills-heading{display:block;margin-bottom:12px}.bills-heading .session{max-width:310px;margin-top:8px}.bills-heading .eyebrow{display:none}
+.search-tools{position:relative;display:block;padding-right:52px}.search-tools:has(details[open]){display:block}
+#search-info{display:block}#search-info:has(details[open]){display:block}
+#search-info .catalog-info>summary{position:absolute;right:0;top:0;width:44px;height:44px;padding:10px;margin:0}
+#search-info .catalog-info[open]{padding:0;margin:8px -52px 0 0;max-width:none}#search-info .catalog-info[open]>p{margin:8px 0}
+.vote-explanation summary,.technical-source summary{min-height:44px;padding:10px 0}.vote-source p{font-size:.85rem}.vote-source{margin-top:6px}.catalog-status:has(.coverage-note[hidden]){display:none}
+.bills-heading h1{margin-bottom:4px}.list-top{margin-top:10px}.request-sources>p{margin:8px 0}
+.search-tools{container-type:inline-size}@container(max-width:120px){.search input{padding-left:4px;padding-right:28px}.search>svg{display:none}#clear-search{min-width:24px;width:24px;right:1px}}

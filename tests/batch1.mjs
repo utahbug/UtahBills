@@ -39,7 +39,7 @@ try{
   await visit('bill/'+b.billNumber);await page.locator('#formatted-reader > summary').click();
   for(let i=0;i<b.versions.length;i++){
    const version=b.versions[i];await page.locator('#reader-version').selectOption(String(i));
-   assert.equal(await page.locator('#reader-source a').getAttribute('href'),version.url);
+   assert.equal(await page.locator('#reader-source a').first().getAttribute('href'),version.url.replace(/\.xml$/,'.pdf'));assert.equal(await page.locator('#reader-source a').last().getAttribute('href'),version.url);
    const raw=await readFile(version.source,'utf8');
    const result=await page.evaluate(({raw})=>{
     const xml=new DOMParser().parseFromString(raw,'application/xml');if(xml.querySelector('parsererror'))throw Error('XML parse failure');

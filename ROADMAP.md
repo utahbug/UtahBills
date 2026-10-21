@@ -13,6 +13,8 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 - **Batch 2A:** official combined month-and-agenda calendar, category filters, Mountain times, rooms, agendas, explicit numbered-bill links and participation links; preserved sources and guarded daily Main refresh (October 2026–May 2027).
 - **Batch 2A:** whole-row bill links, hover/focus feedback, 25-result pages, cached search text, restored filters/sort/page/scroll and logo return to top.
 
+- **Interface refinement:** collapsed contextual vote guidance, expanded readable source details with secondary new-tab technical links, formatted-reader entry point and official PDF links, fixed search Info alignment, compact heading and consolidated request counts. Formatted in-app text remains limited to the nine verified example versions; basic measures link to official readable documents.
+
 ## Stage 1 — Legislative data and transparency · Partly implemented
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.

@@ -1,0 +1,6 @@
+import {escapeHTML as esc} from './discovery.js';
+// Same XML-to-PDF document mapping used by the Legislature's rexBill.js.
+export const readableUrl=url=>url.replace(/\.xml$/i,'.pdf');
+export function documentLinks(v){return `<a href="${esc(readableUrl(v.url))}">${esc(v.id+' · '+v.label)} · Official ${/\.pdf$/i.test(readableUrl(v.url))?'PDF':'document'}</a>${/\.xml$/i.test(v.url)?`<details class="technical-source"><summary>Technical source</summary><a href="${esc(v.url)}" target="_blank" rel="noopener">Raw XML (opens in a new tab)</a></details>`:''}`}
+export const voteExplanation=()=>`<details class="vote-explanation"><summary>Understanding these voting records</summary><p>Selected 2026 records, not a complete voting history. Each vote decides a specific question; advancing or amending a bill is different from final passage. Different votes do not establish motives. Voice votes are not attributed to individual legislators. <a href="#guide">How votes work</a>.</p></details>`;
+export function secondaryRawLinks(root){root.querySelectorAll('a[href]').forEach(a=>{if(/\.(json|xml|txt)(?:[?#]|$)/i.test(a.getAttribute('href'))){a.target='_blank';a.rel='noopener';if(!a.textContent.includes('new tab')){const note=document.createElement('span');note.className='sr-only';note.textContent=' (opens in a new tab)';a.append(note)}}})}
