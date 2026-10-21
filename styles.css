@@ -145,3 +145,6 @@ footer{padding-bottom:80px}
 /* Search controls share the session/search/results inset. */
 .advanced-search{padding-inline-start:0!important}.advanced-search>summary{padding-inline-start:1.25rem!important}.advanced-search>summary::before{inset-inline-start:0!important}
 .calendar-title{width:fit-content;max-width:100%}
+/* Counts fit narrow cells even with platform font differences at 200% zoom. */
+.calendar-day{container-type:inline-size;grid-template-columns:minmax(0,1fr)}
+.calendar-day .day-count{font-size:min(.72rem,36cqi);min-width:0}
