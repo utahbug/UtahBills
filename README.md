@@ -64,9 +64,9 @@ If source hashes change, review the source, revise explanations if necessary, an
 
 ## GitHub Pages preparation
 
-The local project is independent. No other application or repository is used or modified. The remote repository did not resolve during the initial check; no GitHub publication has been performed.
+The local project is independent. No other application or repository is used or modified. Main is published at https://utahbug.github.io/UtahBills/. Review remains unconfigured and undeployed.
 
-When publishing is desired, create `utahbug/UtahBills`, push this repository's `main` branch, and choose **Settings → Pages → Build and deployment → GitHub Actions**. The included Pages workflow builds, checks provenance, runs browser/accessibility tests, and deploys `dist/`. All navigation stays below the permanent `/UtahBills/` URL. No Sites hosting or external backend is required.
+The existing `utahbug/UtahBills` repository deploys updates pushed to `main` through GitHub Actions. The included Pages workflow builds, checks provenance, runs browser/accessibility tests, and deploys `dist/`. All navigation stays below the permanent `/UtahBills/` URL. No Sites hosting or external backend is required.
 
 ## Verification and remaining work
 
@@ -98,3 +98,15 @@ Main remains directly accessible for iPhone and PC testing, but `index.html` inc
 Do not block crawling with robots.txt: crawlers need to retrieve the HTML to see noindex. Do not submit sitemaps during development. No domain-wide settings or other repositories are involved. Retain the Research Prototype notice.
 
 Public-release checklist: intentionally remove the robots noindex/nofollow meta tag from all application HTML, rebuild, deploy Main, and inspect the published HTML source. Revisit sitemap submission only when public release is approved. This directive discourages compliant search engines; it is not access control or an immediate removal guarantee for previously indexed content.
+
+## Development Batch 1 — implementation notes
+
+- Narrow bill rows stack vertically; metadata wraps instead of occupying a fixed side column. Tests compare every visible text rectangle in each row at 320/375/390/430px, with normal text, doubled computed font sizes, and 200% CSS zoom. This supplements document-level overflow checks.
+- Encoding trace: the H.B. 11 authored summary already contained the UTF-8-as-Windows-1252 sequence for a curly apostrophe in `scripts/analyze.py`. Analysis faithfully copied that corruption to `data/bills.json`; rendering was not the origin. Corrected only the authored string. All analysis JSON reads now explicitly specify UTF-8 rather than the Windows locale default. Raw source bytes and summary source pins remain unchanged.
+- `formatted` version data preserves the source XML tree for cover/long title, enacting clause, and body. `reader.js` escapes text, maps sections/subsections to readable blocks, and retains addition/deletion states. Internal `sinfo` metadata, print footers, and line-break markers are not displayed. Whitespace is adapted; no legal wording is paraphrased. All nine sample versions are checked character-by-character (excluding whitespace) and by effective change state against an independent browser XML parse.
+- `python scripts/analyze.py --check` verifies deterministic regeneration without writing. CI runs it before the build. The complete `npm test` command now includes the original suite, text-enlargement tests, and `tests/batch1.mjs`.
+- How It Works was checked on October 20, 2026 against current official Constitution Article VI §22, House Rules HR4-4-101/201 and HR4-7-201, Senate Rules SR4-4-201/301 and SR4-7-101/201/202, and Joint Rules JR4-3-101 and JR4-2-103. Links and rule identifiers appear in the guide. Voting to advance and voting for final passage are explicitly distinguished. The current Joint Rules do not impose the old same-chamber cosponsor restriction; the explanation does not repeat that obsolete restriction.
+- Header navigation now contains Bills only; reference links remain in the footer and in relevant bill content. No nonfunctional future sections were introduced.
+- `ROADMAP.md` separates implemented work from planned and deferred stages. These are priorities for later batches, not promised delivery dates.
+
+The reader is a rendering of a selected official XML version, not an independently verified current-law snapshot. Manual assistive-technology checks and physical iPhone/iPad checks remain required before claiming WCAG conformance. Main remains noindex/nofollow and a Research Prototype.

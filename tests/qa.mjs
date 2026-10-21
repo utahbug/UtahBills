@@ -13,7 +13,7 @@ checks.push('Search normalization, combined filters, empty state, and 2027 non-l
 await page.goto(base+'#bill/HB0011');await page.locator('#law-text').waitFor();assert.match(await page.locator('#law-text').innerText(),/probable cause/);await page.getByRole('button',{name:'Law before proposal',exact:true}).click();assert.doesNotMatch(await page.locator('#law-text').innerText(),/probable cause/);await page.getByRole('button',{name:'Resulting text',exact:true}).click();assert.match(await page.locator('#law-text').innerText(),/probable cause/);
 await page.goto(base+'#bill/SB0069');await page.locator('#law-text').waitFor();await page.getByRole('button',{name:'Resulting text',exact:true}).click();assert.match(await page.locator('#law-text').innerText(),/written opt-out request/);assert.doesNotMatch(await page.locator('#law-text').innerText(),/"Classroom hours" means/);await page.locator('#from-version').selectOption('0');await page.locator('#to-version').selectOption('0');assert.match(await page.locator('#version-diff').innerText(),/No differences/);
 checks.push('Historical baseline excludes new inspection language; proposed text includes it; school-device text removes old definition and includes opt-out; identical-version comparison passed');
-for(const width of [320,390,768,1280]){
+for(const width of [320,375,390,430,768,1280]){
  await page.setViewportSize({width,height:900});
  for(const route of ['bills','bill/HB0011','bill/HB0154','bill/HB0155','bill/SB0069','guide','sources']){
   await page.goto(base+'#'+route);await page.locator('h1').waitFor();await page.waitForTimeout(80);

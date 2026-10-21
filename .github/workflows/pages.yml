@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Verify reproducible UTF-8 source analysis
+        run: python3 scripts/analyze.py --check
       - run: npm ci
       - run: npm run build
       - run: npx playwright install --with-deps chromium
