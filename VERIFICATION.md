@@ -27,3 +27,27 @@ Run `npm test` with `npm start` running. Local reports/screenshots are generated
 - Visual inspection: stacked mobile listing and indented legislative sections reviewed.
 
 Still needed: physical iPhone/iPad checks, independent human factual review, and manual screen-reader/complete keyboard accessibility review. Published data remains the same four-bill 2026 snapshot. Future stages are in ROADMAP.md.
+
+### Batch 2A verification — October 20, 2026
+
+- Complete existing browser suite passed after adding Calendar as an eighth route.
+- Five Python calendar tests: original source hashes and deterministic derivation,
+  incomplete/missing/duplicate record rejection, cancellation/revision handling,
+  network failure preservation, and Mountain daylight/standard time.
+- Month alignment and leap-year arithmetic; keyboard date selection; month/list and
+  category switching; chronological sorting; January opening and December meetings.
+- 320, 375, 390, 430 and 1280 CSS pixels, doubled computed text and 200% CSS zoom;
+  calendar date-cell overflow and automated WCAG A/AA checks. Existing bill text-rectangle
+  overlap and exact official wording/change-markup checks remain passing.
+- Generated 1,200-bill fixture: at most 25 rows rendered, single row target, filters/sort/
+  pagination, padding-area click, keyboard activation, independent secondary resource link,
+  detail/back scroll restoration and same-route logo return to top.
+- WebKit mobile touch smoke: date selection, list view, logo, row tap and return to list.
+- Reviewed mobile/desktop screenshots. Temporary scroll-stop highlight trial moved emphasis
+  across three rows during normal scrolling; deferred to avoid ambiguous selection feedback.
+- Representative official meeting, room-map, agenda and extraordinary-session links returned
+  HTTP 200. SB 197 is explicitly linked by the Transportation agenda; no synthetic bill data
+  is included in production. Source bodies remain downloadable; the browser loads a compact
+  derived calendar file instead of the approximately 3 MB evidence archive.
+- No physical iPhone or manual VoiceOver conformance claim. Scheduled Actions execution is
+  subject to GitHub timing; it has not yet had its first scheduled run at initial publication.

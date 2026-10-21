@@ -110,3 +110,51 @@ Public-release checklist: intentionally remove the robots noindex/nofollow meta 
 - `ROADMAP.md` separates implemented work from planned and deferred stages. These are priorities for later batches, not promised delivery dates.
 
 The reader is a rendering of a selected official XML version, not an independently verified current-law snapshot. Manual assistive-technology checks and physical iPhone/iPad checks remain required before claiming WCAG conformance. Main remains noindex/nofollow and a Research Prototype.
+
+## Batch 2A — Calendar and bill navigation
+
+The Calendar uses the public JSON endpoint called by https://le.utah.gov/calendar.html:
+`https://www.utleg.gov/Calendar/month?month=10&year=2026` (one-based months).
+The feed supplies complete day arrays, explicit timezone-aware timestamps, meeting IDs,
+rooms, agenda links, electronic participation and R/C revision/cancellation flags.
+The published 2027 significant-date table at https://le.utah.gov/sessionSchedule/sessdates.jsp
+was checked against the calendar: General Session January 19–March 5, 2027.
+The initial bounded snapshot covers October 2026–May 2027: 89 entries, including
+54 meetings, two Senate extraordinary floor sessions, two session milestones and
+31 deadlines. October 21 and November 18 include the twelve interim committees;
+December 8 includes Management, Executive Appropriations and Audit meetings.
+An empty date/month is not evidence that no legislative work occurs.
+
+`scripts/refresh_calendar.py` fetches eight months and each unique linked HTML agenda
+(initially 25) once, spaced by 250 ms. It does not crawl bills or infer draft-bill identities.
+Only explicit numbered-bill hyperlinks are extracted (initial snapshot: 2026 SB 197 in
+the October 21 Transportation agenda). Other proposals remain in the linked agenda.
+`data/calendar.json` preserves source bodies, URLs, encoding, SHA-256 hashes and each
+retrieval timestamp. `checkedAt` is retrieval completion, never publication time.
+HTML source bodies are JSON strings, not new published HTML pages.
+
+The existing Main Pages workflow attempts a refresh daily at 12:17 UTC (06:17 MDT /
+05:17 MST; GitHub scheduling can be delayed). Push/manual builds use the saved snapshot.
+A refresh validates every day, date, timezone, event type, unique ID and session boundary.
+Missing old IDs or disappearing logistics stop the run for manual review; disappearance
+is not cancellation. Explicit canceled events may omit logistics. All requests and
+validation finish before one atomic snapshot replacement. Tests/build run before the
+snapshot is committed and Main deployed. Network/parser/test/push failures retain the
+working Main deployment; a rejected refresh does not advance its displayed check time.
+A snapshot older than 36 hours is labeled older. No live-update promise is made.
+This is a public website endpoint, not a versioned supported API. Monitor Actions failures,
+review source changes, and extend the bounded date window in a later batch.
+
+Bill search text is indexed once after loading; only 25 matching rows are rendered per
+page. In-memory query, filters, sort, page and scroll survive bill detail/back navigation;
+a full reload resets them. Native anchors provide full-row hit targets via a stretched
+pseudo-element. Future secondary resource links must be siblings with `row-resource`
+positioning, never nested in the primary link. Logo activation returns to Bills/top.
+Touch scroll-stop highlighting was evaluated in a temporary browser experiment and
+left out: moving emphasis was ambiguous with selection. Native tap/focus is stable.
+The synthetic 1,200-bill fixture exists only inside test interception, never in `data/`.
+
+Run `python tests/calendar_data.py` and `npm test` after `npm run build` with the normal
+single local server. Calendar tests cover provenance, fail-closed refreshes, DST, month
+alignment, view/category changes, enlarged text, generated scale and navigation state.
+Full WCAG conformance, VoiceOver and physical iPhone testing still require human review.

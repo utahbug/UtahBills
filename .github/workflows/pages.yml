@@ -2,9 +2,11 @@ name: Deploy UtahBills to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '17 12 * * *'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -21,6 +23,11 @@ jobs:
           cache: npm
       - name: Verify reproducible UTF-8 source analysis
         run: python3 scripts/analyze.py --check
+      - name: Refresh official calendar (daily run only)
+        if: github.event_name == 'schedule'
+        run: python3 scripts/refresh_calendar.py
+      - name: Verify calendar provenance and failure safeguards
+        run: python3 tests/calendar_data.py
       - run: npm ci
       - run: npm run build
       - run: npx playwright install --with-deps chromium
@@ -29,6 +36,16 @@ jobs:
           npm start > /tmp/utahbills-preview.log 2>&1 &
           for i in {1..20}; do curl -fsS http://127.0.0.1:4173/UtahBills/ && break || sleep 1; done
           npm test
+      - name: Preserve tested calendar snapshot
+        if: github.event_name == 'schedule'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/calendar.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh verified calendar snapshot'
+            git push origin HEAD:main
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

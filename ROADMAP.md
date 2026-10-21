@@ -2,13 +2,16 @@
 
 Status: **Implemented** = available in the sample prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
-## Implemented — prototype and Batch 1
+## Implemented — prototype, Batch 1 and Batch 2A
 
 - Four real 2026 bills, saved official records and provenance checks.
 - Search/filters, bill details, stages, aggregate votes, version comparisons and transparency timeline.
 - Mobile stacked listings, UTF-8 pipeline correction, structured formatted bill reader for nine versions.
 - Readings/votes/sponsorship guide with official references; compact header and secondary help navigation.
 - Blue icons, Main deployment, temporary noindex/nofollow and Research Prototype notice.
+
+- **Batch 2A:** official month/list calendar, category filters, Mountain times, rooms, agendas, explicit numbered-bill links and participation links; preserved sources and guarded daily Main refresh (October 2026–May 2027).
+- **Batch 2A:** whole-row bill links, hover/focus feedback, 25-result pages, cached search text, restored filters/sort/page/scroll and logo return to top.
 
 ## Stage 1 — Legislative data and transparency · Planned
 
@@ -25,11 +28,12 @@ Status: **Implemented** = available in the sample prototype; **Planned** = appro
 - Bill counts and linked bill lists, separating chief, floor and cosponsor roles.
 - **Deferred:** public financial disclosures, after source and interpretation review.
 
-## Stage 3 — Calendar and activity · Planned
+## Stage 3 — Calendar and activity · Partly implemented
 
-- Month and chronological list views of committee hearings, times, locations and agendas.
-- General sessions and officially announced special sessions.
-- Official caucus information when available; next scheduled action and participation details.
+- **Implemented:** month/list views of official meetings, times, rooms and available agendas.
+- **Implemented:** 2027 session milestones/deadlines. Floor, special-session and caucus entries appear only when supplied by official records.
+- **Planned:** extend coverage after May 2027, richer agenda/draft/PDF extraction, per-bill next actions, and cross-check other official special-session/caucus notices.
+- **Deferred:** scroll-stop row highlighting; experimental moving emphasis could be mistaken for selection. Keep stable tap/focus feedback.
 
 ## Stage 4 — Additional bill information · Planned
 
@@ -42,6 +46,13 @@ Status: **Implemented** = available in the sample prototype; **Planned** = appro
 - **Planned:** Legislative Resources directory, relevant articles on bill pages, RSS-powered news listings.
 - Evaluate feeds and permitted use from Deseret News, KSL TV/Radio and other Utah outlets; clearly separate reporting from official records.
 - **Deferred:** optional X and Bluesky feeds after core source reliability and accessibility work.
+
+## Legal resources — Planned for a later bounded batch
+
+- Readable, searchable Utah Constitution.
+- Current Utah Code and historical statutory resources.
+- Utah Administrative Rules.
+- Constitutional amendment comparisons, including ballot proposals and subsequent officially verified outcomes.
 
 ## Stage 6 — Public-release preparation · Planned
 

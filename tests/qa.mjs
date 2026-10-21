@@ -15,7 +15,7 @@ await page.goto(base+'#bill/SB0069');await page.locator('#law-text').waitFor();a
 checks.push('Historical baseline excludes new inspection language; proposed text includes it; school-device text removes old definition and includes opt-out; identical-version comparison passed');
 for(const width of [320,375,390,430,768,1280]){
  await page.setViewportSize({width,height:900});
- for(const route of ['bills','bill/HB0011','bill/HB0154','bill/HB0155','bill/SB0069','guide','sources']){
+ for(const route of ['bills','bill/HB0011','bill/HB0154','bill/HB0155','bill/SB0069','guide','sources','calendar']){
   await page.goto(base+'#'+route);await page.locator('h1').waitFor();await page.waitForTimeout(80);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`Overflow at ${width} ${route}`);
   await page.evaluate(axe);const a=await page.evaluate(async()=>await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}}));

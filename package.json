@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "start": "node scripts/serve.mjs",
-    "test": "node tests/qa.mjs && node tests/text-resize.mjs && node tests/batch1.mjs",
+    "test": "node tests/qa.mjs && node tests/text-resize.mjs && node tests/batch1.mjs && node tests/batch2.mjs",
     "refresh": "python scripts/acquire.py"
   },
   "dependencies": {
