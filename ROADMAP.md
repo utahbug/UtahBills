@@ -2,7 +2,7 @@
 
 Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
-## Implemented — through Phase 2
+## Implemented — through Phase 3
 
 - Four real 2026 bills, saved official records and provenance checks.
 - Search/filters, bill details, stages, aggregate votes, version comparisons and transparency timeline.
@@ -20,6 +20,8 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 - **Navigation refinement implemented:** consistent nested disclosure alignment; stable-ID, session-aware sponsor profiles; source-verified request anchors; Lucide external-link indicators; Introduced Legislation with Bills/Resolutions filters. No expanded 2027 roster claim or new environment.
 
 - **Phase 2 implemented:** independent 2026 index/listing verification; complete version/action/document/statutory-reference metadata; full referenced-vote acquisition with per-record gaps and conflicts reported; incremental daily 2027 vote acquisition; on-demand readers/votes, filtered paginated histories and a generated verification report.
+
+- **Phase 3 implemented:** paged individual Recent Activity events, Mountain calendar-day windows, distinct document/status-observation labels, direct history links, collapsed Advanced Search and Source details, compact independent search scope.
 
 ## Stage 1 — Legislative data and transparency · Partly implemented
 

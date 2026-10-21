@@ -100,3 +100,7 @@ summary::-webkit-details-marker{display:none}
 .archive-metadata .profile-records{font-size:.875rem;padding-inline-start:1em}
 
 .archive-metadata .profile-records > li > small{display:block}
+
+/* Phase 3: one compact search disclosure and incremental activity rows. */
+.advanced-search{margin-top:8px}.advanced-search>summary,.activity-info>summary{min-height:44px;padding-block:10px}.advanced-search>label{display:block;max-width:260px}.advanced-search .filters{margin-block:8px}.activity-controls{display:flex;gap:12px;flex-wrap:wrap}.activity-controls label{flex:1;min-width:120px;max-width:260px}.activity-controls select{width:100%;min-height:44px}.activity-row{border-bottom:1px solid #d7e1e8;padding:12px 0;overflow-wrap:anywhere}.activity-row h2{font-size:1.05rem;margin:4px 0}.activity-row p{margin:5px 0}.activity-row small{display:block}.activity-row a{display:inline-block;min-height:24px}.activity-info{margin-block:8px}.history-target{scroll-margin-top:12px}
+@media(max-width:600px){.header-inner nav{display:flex;flex-wrap:wrap;gap:2px 8px}.header-inner nav a{padding:6px 3px;min-height:44px}.header-inner{gap:4px}}

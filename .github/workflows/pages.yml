@@ -81,6 +81,7 @@ jobs:
           python3 tests/catalog_data.py
           python3 tests/catalog_updates.py
           python3 tests/foundation_data.py
+          python3 tests/activity_data.py
       - run: npm ci
       - run: npm run build
       - run: npx playwright install --with-deps chromium

@@ -21,6 +21,7 @@ calendarView.sources=calendar.sources.map(({body,...source})=>source);
 await writeFile('dist/data/calendar-ui.json',JSON.stringify(calendarView));
 execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['scripts/catalog_model.py','--build'],{stdio:'inherit'});
 execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['scripts/foundation_model.py','--build','--report'],{stdio:'inherit'});
+execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['scripts/activity_model.py'],{stdio:'inherit'});
 await cp('assets','dist/assets',{recursive:true});
 await copyFile('node_modules/lucide/LICENSE','dist/LUCIDE-LICENSE.txt');
 console.log('Built static site in dist; all assets use relative URLs.');
