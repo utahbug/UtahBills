@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "checkedAt": "2026-10-21T04:50:04.437516+00:00",
+  "checkedAt": "2026-10-21T04:56:44.819452+00:00",
   "sources": {
     "index2026": {
       "url": "https://le.utah.gov/data/2026GS/billlist.json",
@@ -12,13 +12,13 @@
       "url": "https://le.utah.gov/data/2027GS/billlist.json",
       "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
       "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "retrievedAt": "2026-10-21T04:50:04.122393+00:00"
+      "retrievedAt": "2026-10-21T04:56:44.454341+00:00"
     },
     "requests2027": {
       "url": "https://le.utah.gov/data/2027GS/filelist.json",
       "path": "data/catalog-raw/63c46cff580cc82252a26cea3319cdefa28980419f94ecb00ed3099b47c36800.json",
       "sha256": "63c46cff580cc82252a26cea3319cdefa28980419f94ecb00ed3099b47c36800",
-      "retrievedAt": "2026-10-21T04:50:04.431713+00:00"
+      "retrievedAt": "2026-10-21T04:56:44.818490+00:00"
     },
     "roster2026": {
       "url": "https://le.utah.gov/asp/roster/roster.asp?year=2026",
