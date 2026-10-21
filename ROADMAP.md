@@ -83,3 +83,9 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 ## Guardrails
 
 Keep batches small and preserve political neutrality. Use official evidence, identify summary sources, and do not infer motives. Main remains the normal environment; evaluate Review only for disruptive experiments. Do not add empty navigation for future features. No extra published URLs, unrelated repository edits, or domain changes.
+
+## Consolidated usability refinements (October 2026)
+
+Implemented: Utah Legislation subtitle; wide-screen sticky header and reduced-motion-aware Back to top; aligned compact search, request Title/Status/Tracking ID sorts; locally remembered 25/50/100/200 result pages (50 mobile, 100 desktop); displayed-results copying with accessible confirmation and manual-copy fallback; historical labels; contextual request guidance; current/upcoming 2027 activity with collapsed source notes; calendar date/category/count hierarchy. Data snapshots and daily refresh remain unchanged.
+
+Official request/update dates are not established in the saved records, so those sorts are omitted. Calendar has no search field; its Info stays beside the heading. Physical iPhone performance and manual screen-reader validation remain pending. Next: independent factual/accessibility review and resolution of documented vote-record gaps before wider feature expansion.

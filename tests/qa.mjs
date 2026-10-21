@@ -3,6 +3,7 @@ const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'mse
 const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await mkdir('test-results',{recursive:true});const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');const checks=[];
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
+await page.addInitScript(()=>localStorage.setItem('utahbills-results-per-page','25'));
 try{
 await page.goto(base);await page.getByRole('heading',{name:'Find a bill. Understand its impact.'}).waitFor();
 await page.locator('#session').selectOption('2026');await page.locator('#search').fill('HB 154');assert.equal(await page.locator('.bill-row').count(),1);await page.locator('#clear-search').click();

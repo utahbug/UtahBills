@@ -104,3 +104,44 @@ summary::-webkit-details-marker{display:none}
 /* Phase 3: one compact search disclosure and incremental activity rows. */
 .advanced-search{margin-top:8px}.advanced-search>summary,.activity-info>summary{min-height:44px;padding-block:10px}.advanced-search>label{display:block;max-width:260px}.advanced-search .filters{margin-block:8px}.activity-controls{display:flex;gap:12px;flex-wrap:wrap}.activity-controls label{flex:1;min-width:120px;max-width:260px}.activity-controls select{width:100%;min-height:44px}.activity-row{border-bottom:1px solid #d7e1e8;padding:12px 0;overflow-wrap:anywhere}.activity-row h2{font-size:1.05rem;margin:4px 0}.activity-row p{margin:5px 0}.activity-row small{display:block}.activity-row a{display:inline-block;min-height:24px}.activity-info{margin-block:8px}.history-target{scroll-margin-top:12px}
 @media(max-width:600px){.header-inner nav{display:flex;flex-wrap:wrap;gap:2px 8px}.header-inner nav a{padding:6px 3px;min-height:44px}.header-inner{gap:4px}}
+
+/* Shared compact result tools and navigation */
+:root{scroll-padding-top:calc(var(--sticky-height,0px) + 12px)}
+header.sticky-navigation{position:sticky;top:0;z-index:30;background:#fff;box-shadow:0 1px 5px #142f4920}
+#back-to-top{position:fixed;right:16px;bottom:20px;z-index:25;width:46px;height:46px;padding:10px;border:1px solid #8197ac;border-radius:9px;background:white;color:#193e63;box-shadow:0 2px 8px #18395430}
+#back-to-top[hidden]{display:none}
+footer{padding-bottom:80px}
+.result-actions,.list-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:12px 0}
+.result-actions p,.list-top p{margin:0}
+.list-top label,.page-preference{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-weight:400}
+.list-top select,.page-preference select{width:auto;min-height:44px}
+.copy-results{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:7px 10px;font-size:.9rem}
+.copy-results svg{width:18px;height:18px;flex-shrink:0}
+.copy-status:empty{display:none}.copy-fallback{flex-basis:100%;width:100%;min-height:140px}
+.historical-label{font-size:.85rem;color:#42576a}
+.panel[aria-label="Find bills"]{padding:0;border:0;background:transparent}
+.sponsor-filter{align-items:center}.sponsor-filter label{font-weight:400}
+.calendar-title{position:relative;display:block;padding-right:52px}
+.calendar-title h1{margin-bottom:12px}
+.calendar-info{position:static}.calendar-info>summary{position:absolute;right:0;top:0}
+.calendar-info[open]{margin-right:-52px}
+.calendar-day{display:grid;grid-template-rows:auto 1fr auto;align-items:start;justify-items:start;min-height:88px;height:100%;gap:3px}
+.calendar-day .day-number{justify-self:start}.calendar-day .day-kinds{align-self:center}
+.calendar-day .day-count{font-style:italic;font-size:.72rem;white-space:nowrap;min-height:1em;align-self:end}
+.agenda-heading{flex-wrap:wrap;gap:8px}.agenda-heading h2{flex:1 1 220px}
+.request-info>summary{width:44px;min-height:44px;padding:10px;display:flex;align-items:center;justify-content:center}
+.request-info>summary svg{width:20px;height:20px}
+.request-info{margin:0 0 6px}.request-info p{margin:4px 0 8px}
+@media(max-width:600px){.count-word{display:none}.calendar-day{min-height:78px}.list-top{display:flex}.list-top select{width:auto;max-width:100%}.page-preference{max-width:100%}.sponsor-filter{align-items:start}}
+
+.kind-control{display:flex;align-items:end;gap:6px;position:relative;min-width:0}.kind-control label{flex:1;min-width:0}.kind-control .type-info{position:static;margin:0}.kind-control .type-info[open]{flex-basis:auto}.kind-control .type-info p{position:absolute;z-index:10;left:0;top:100%;background:white;border:1px solid #8197ac;padding:12px;width:100%;box-sizing:border-box}
+.request-status-tools{position:relative;padding-right:52px}.request-status-tools .note{margin-bottom:8px}.request-status-tools .request-info>summary{position:absolute;right:0;top:0}.request-status-tools .request-info[open]{margin-right:-52px;padding-left:15px}
+[hidden]{display:none!important}
+
+.calendar-info{border:0;padding:0}.calendar-title{margin-bottom:12px}.calendar-title h1{min-height:44px;display:flex;align-items:center;margin:0}
+.request-info{border:0;padding:0!important}.request-info>summary::before{display:none!important}.request-status-tools .request-info>summary{position:absolute!important;padding:10px!important}.request-status-tools .request-info[open]{padding-left:15px!important}
+.kind-control{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:end}.kind-control:has(details[open]){padding-bottom:0}.kind-control .type-info[open]{grid-column:1/-1}.kind-control .type-info[open]>summary{position:absolute;right:0;top:20px}.kind-control .type-info p{position:static;width:auto;border:0;padding:4px 0;box-shadow:none}
+.skip{z-index:40}
+/* Search controls share the session/search/results inset. */
+.advanced-search{padding-inline-start:0!important}.advanced-search>summary{padding-inline-start:1.25rem!important}.advanced-search>summary::before{inset-inline-start:0!important}
+.calendar-title{width:fit-content;max-width:100%}

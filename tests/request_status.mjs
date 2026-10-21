@@ -1,5 +1,6 @@
 import {chromium} from 'playwright';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
 const data=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8')),base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',axe=await readFile('node_modules/axe-core/axe.min.js','utf8');const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.addInitScript(()=>localStorage.setItem('utahbills-results-per-page','25'));
 try{
  await page.goto(base+'#bills');await page.locator('#session').selectOption('2027-requests');let count=0;
  do{for(const row of await page.locator('.bill-row').all()){const href=await row.locator('h2 a').getAttribute('href'),record=data.requests2027.find(r=>href==='#request/'+r.trackingID);assert.equal(await row.locator('.tag').innerText(),record.officialStatus||'Status unavailable');assert.doesNotMatch(await row.innerText(),/Drafting request/);count++}if(!await page.locator('#next-page').count()||await page.locator('#next-page').isDisabled())break;await page.locator('#next-page').click()}while(true);assert.equal(count,data.requests2027.length);

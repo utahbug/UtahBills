@@ -1,6 +1,7 @@
 import {chromium} from 'playwright';import {readFile} from 'node:fs/promises';import {gzipSync} from 'node:zlib';import assert from 'node:assert/strict';
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',data=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8')),report=JSON.parse(await readFile('dist/data/verification-report.json','utf8')),axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage({viewport:{width:390,height:844}}),errors=[],requested=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requested.push(r.url()));
+await page.addInitScript(()=>localStorage.setItem('utahbills-results-per-page','25'));
 try{
  await page.goto(base+'#bills');await page.locator('#session').selectOption('2026');assert.equal(await page.locator('.bill-row').count(),25);assert.equal(requested.some(u=>/\/data\/(?:bills.json|archive-votes\/|voting-history\/|examples\/)/.test(u)),false,'Large detail files must not load on initial listing');
  const payload=await Promise.all(['app.js','styles.css','data/catalog-ui.json','data/examples-ui.json'].map(async p=>readFile('dist/'+p)));assert.ok(payload.reduce((n,b)=>n+b.length,0)<2300000,'Initial raw payload budget');assert.ok(payload.reduce((n,b)=>n+gzipSync(b).length,0)<250000,'Compressed-equivalent initial payload budget');

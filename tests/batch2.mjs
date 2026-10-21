@@ -2,6 +2,7 @@ import {chromium} from 'playwright';import {readFile} from 'node:fs/promises';im
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true});const page=await browser.newPage();
 const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.addInitScript(()=>localStorage.setItem('utahbills-results-per-page','25'));
 try{
  assert.deepEqual(monthDays('2026-10'),{offset:4,count:31});assert.deepEqual(monthDays('2027-02'),{offset:1,count:28});assert.deepEqual(monthDays('2028-02'),{offset:2,count:29});
  await page.goto(base+'#calendar');await page.locator('#calendar-month').waitFor();await page.locator('#calendar-month').selectOption('2026-10');
