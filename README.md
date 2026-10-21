@@ -90,3 +90,11 @@ Use one local instance at http://127.0.0.1:4173/UtahBills/ and reuse its browser
 Before the first Review deployment, extend the Pages packaging workflow to preserve both environments in the same artifact. A Review-only upload would replace the entire Pages deployment and must never be used. Until that packaging exists, the included workflow supports Main only. Assess disruptive changes for Review before replacing working Main.
 
 See `AGENTS.md` for the persistent development policy.
+
+## Temporary search-engine exclusion — remove for public release
+
+Main remains directly accessible for iPhone and PC testing, but `index.html` includes the static head directive `<meta name="robots" content="noindex, nofollow">`. Every application route uses this same HTML document (hash-based navigation), so the directive covers Bills, bill details, How it works, and About the data. Keep it in any new HTML pages added during development.
+
+Do not block crawling with robots.txt: crawlers need to retrieve the HTML to see noindex. Do not submit sitemaps during development. No domain-wide settings or other repositories are involved. Retain the Research Prototype notice.
+
+Public-release checklist: intentionally remove the robots noindex/nofollow meta tag from all application HTML, rebuild, deploy Main, and inspect the published HTML source. Revisit sitemap submission only when public release is approved. This directive discourages compliant search engines; it is not access control or an immediate removal guarantee for previously indexed content.
