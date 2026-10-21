@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "roster2027": {
+      "url": "https://le.utah.gov/asp/roster/roster.asp?year=2027",
+      "path": "data/catalog-raw/abfcb8821da4a3bc12e5992d10cfeab0c267c6c56794e9a43c13af54a8c846d7.txt",
+      "sha256": "abfcb8821da4a3bc12e5992d10cfeab0c267c6c56794e9a43c13af54a8c846d7",
+      "retrievedAt": "2026-10-21T04:52:43.043972+00:00"
+    },
+    "requestListing2027": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sen=all&rep=&sub=&comm=",
+      "path": "data/catalog-raw/25393d2296932e22edd84605cc1bd5fcdcaff4455f7be92d380f0d7c9cdb5e25.txt",
+      "sha256": "25393d2296932e22edd84605cc1bd5fcdcaff4455f7be92d380f0d7c9cdb5e25",
+      "retrievedAt": "2026-10-21T04:52:43.431823+00:00"
+    }
+  },
+  "roster2027Status": "The official year selector ends at 2026. No established 2027 session roster was found; membership remains unassigned."
+}

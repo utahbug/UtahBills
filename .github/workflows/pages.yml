@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '17 12 * * *'
   workflow_dispatch:
+    inputs:
+      refresh_data:
+        description: Run the guarded daily data refresh now
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -14,6 +19,9 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
+    outputs:
+      calendar_result: ${{ steps.calendar_refresh.outcome }}
+      catalog_result: ${{ steps.catalog_refresh.outcome }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,13 +31,46 @@ jobs:
           cache: npm
       - name: Verify reproducible UTF-8 source analysis
         run: python3 scripts/analyze.py --check
-      - name: Refresh official calendar (daily run only)
-        if: github.event_name == 'schedule'
-        run: python3 scripts/refresh_calendar.py
+      - name: Refresh official calendar
+        id: calendar_refresh
+        if: github.event_name == 'schedule' || inputs.refresh_data == true
+        continue-on-error: true
+        run: |
+          mkdir -p test-results
+          set -o pipefail
+          python3 scripts/refresh_calendar.py 2>&1 | tee test-results/calendar-refresh.log
+      - name: Refresh 2027 legislation and requests
+        id: catalog_refresh
+        if: github.event_name == 'schedule' || inputs.refresh_data == true
+        continue-on-error: true
+        run: python3 scripts/refresh_catalog.py
+      - name: Preserve refresh attempt reports
+        if: always() && (github.event_name == 'schedule' || inputs.refresh_data == true)
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-attempt-${{ github.run_id }}
+          path: |
+            test-results/catalog-refresh.json
+            test-results/calendar-refresh.log
+          retention-days: 90
+      - name: Report independent refresh outcomes
+        if: always() && (github.event_name == 'schedule' || inputs.refresh_data == true)
+        env:
+          CALENDAR_RESULT: ${{ steps.calendar_refresh.outcome }}
+          CATALOG_RESULT: ${{ steps.catalog_refresh.outcome }}
+        run: |
+          echo "Calendar refresh: $CALENDAR_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          echo "2027 catalog refresh: $CATALOG_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Failed retrievals retain the previous snapshot. Download refresh-attempt artifacts for diagnostics.' >> "$GITHUB_STEP_SUMMARY"
+          if [ "$CALENDAR_RESULT" = failure ] || [ "$CATALOG_RESULT" = failure ]; then
+            echo '::warning::An official-source refresh failed; previous verified data is retained. See refresh reports.'
+          fi
       - name: Verify calendar provenance and failure safeguards
         run: python3 tests/calendar_data.py
       - name: Verify bill catalog provenance and associations
-        run: python3 tests/catalog_data.py
+        run: |
+          python3 tests/catalog_data.py
+          python3 tests/catalog_updates.py
       - run: npm ci
       - run: npm run build
       - run: npx playwright install --with-deps chromium
@@ -38,14 +79,19 @@ jobs:
           npm start > /tmp/utahbills-preview.log 2>&1 &
           for i in {1..20}; do curl -fsS http://127.0.0.1:4173/UtahBills/ && break || sleep 1; done
           npm test
-      - name: Preserve tested calendar snapshot
-        if: github.event_name == 'schedule'
+      - name: Preserve tested snapshots
+        if: github.event_name == 'schedule' || inputs.refresh_data == true
+        env:
+          CATALOG_RESULT: ${{ steps.catalog_refresh.outcome }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/calendar.json
+          if [ "$CATALOG_RESULT" = success ]; then
+            git add data/catalog.json data/catalog-raw/
+          fi
           if ! git diff --cached --quiet; then
-            git commit -m 'Refresh verified calendar snapshot'
+            git commit -m 'Refresh verified legislative snapshots'
             git push origin HEAD:main
           fi
       - uses: actions/configure-pages@v5
@@ -62,3 +108,13 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+  refresh_health:
+    needs: build
+    if: always() && (needs.build.outputs.calendar_result == 'failure' || needs.build.outputs.catalog_result == 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Flag unsuccessful refresh without blocking the independent valid snapshot
+        run: |
+          echo '::error::An official-source refresh failed. Previous data was retained; see build summary and refresh-attempt artifact.'
+          exit 1

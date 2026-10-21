@@ -106,7 +106,7 @@ Public-release checklist: intentionally remove the robots noindex/nofollow meta 
 - `formatted` version data preserves the source XML tree for cover/long title, enacting clause, and body. `reader.js` escapes text, maps sections/subsections to readable blocks, and retains addition/deletion states. Internal `sinfo` metadata, print footers, and line-break markers are not displayed. Whitespace is adapted; no legal wording is paraphrased. All nine sample versions are checked character-by-character (excluding whitespace) and by effective change state against an independent browser XML parse.
 - `python scripts/analyze.py --check` verifies deterministic regeneration without writing. CI runs it before the build. The complete `npm test` command now includes the original suite, text-enlargement tests, and `tests/batch1.mjs`.
 - How It Works was checked on October 20, 2026 against current official Constitution Article VI §22, House Rules HR4-4-101/201 and HR4-7-201, Senate Rules SR4-4-201/301 and SR4-7-101/201/202, and Joint Rules JR4-3-101 and JR4-2-103. Links and rule identifiers appear in the guide. Voting to advance and voting for final passage are explicitly distinguished. The current Joint Rules do not impose the old same-chamber cosponsor restriction; the explanation does not repeat that obsolete restriction.
-- Header navigation now contains Bills only; reference links remain in the footer and in relevant bill content. No nonfunctional future sections were introduced.
+- At Batch 1, header navigation contained Bills only; reference links remain in the footer and in relevant bill content. No nonfunctional future sections were introduced.
 - `ROADMAP.md` separates implemented work from planned and deferred stages. These are priorities for later batches, not promised delivery dates.
 
 The reader is a rendering of a selected official XML version, not an independently verified current-law snapshot. Manual assistive-technology checks and physical iPhone/iPad checks remain required before claiming WCAG conformance. Main remains noindex/nofollow and a Research Prototype.
@@ -187,7 +187,7 @@ https://le.utah.gov/data/2027GS/filelist.json (253 public drafting requests).
 Requests are separate from introduced measures and may exclude confidential work.
 The 2027 roster is deliberately unavailable until established from official records.
 
-`python scripts/refresh_catalog.py` is a **manual**, incremental refresh. It fetches
+The original Batch 2B refresh was manual. Batch 2C replaces it with the guarded 2027-only process described below. It fetches
 seven index/roster/contact/map-index sources, then only measures whose official
 update marker changed; requests are paced by 150 ms. Content-addressed original
 bytes, SHA-256 hashes, URLs and retrieval timestamps are preserved in
@@ -199,8 +199,7 @@ The ignored resume cache is only a download optimization; all selected source ha
 are verified again. Retrieval dates are not official publication dates.
 
 Run `python tests/catalog_data.py`, build, and the full browser suite before publishing
-an updated snapshot. CI performs provenance and association checks. Catalog refresh
-is not scheduled; the existing daily calendar refresh remains independent and unchanged.
+an updated snapshot. CI performs provenance and association checks. Batch 2C schedules 2027 catalog refresh daily; the calendar remains independent.
 Build requires Python 3 (`PYTHON` can specify its executable on Windows).
 The browser fetches a roughly 1 MB listing projection and lazy-loads detailed records;
 it does not load the raw evidence archive. Listings render at most 25 results per page.
@@ -219,3 +218,64 @@ floor sponsorship and verified version cosponsorship have separate linked lists.
 Primary navigation is Bills, Calendar, Legislators. Calendar controls now place month
 left/type right, Legend left/All Month right, and omit the duplicate month heading.
 Acquisition and scheduled calendar refresh were not changed.
+
+
+## Batch 2C — guarded daily 2027 updates
+
+The Main workflow runs calendar and 2027 catalog retrieval independently each day at
+12:17 UTC (06:17 MDT / 05:17 MST). GitHub may delay scheduled jobs. The cron expression
+in `.github/workflows/pages.yml` is the scheduling configuration; future additional
+legislative runs should retain the calendar's daily cadence. Manual dispatch with
+`refresh_data=true` exercises the same refresh/test/commit/deploy path. Ordinary pushes
+build saved data. No real-time promise is made.
+
+`refresh_catalog.py` now leaves every 2026 source and record reference unchanged. It
+fetches the official 2027 index and public request list, then newly indexed measures,
+changed official update/action markers, and records not rechecked in seven days.
+Requests are spaced by 250 ms with 40-second request timeouts. Original bytes are
+content-addressed; SHA-256 and source identity are verified before atomic manifest
+replacement. No XML analysis or AI summaries are generated. JSON metadata preserves
+sponsors, committees, actions, vote references/tallies, version IDs and official links,
+including published amendments and amended text. A saved vote reference is not an
+individual-vote analysis or proof that every action was a final-passage vote.
+
+Guardrails reject malformed JSON/schema, ambiguous identities, missing existing
+measures, unexplained request disappearance, lost versions/actions, and increases of
+more than 250 new measures or requests in one retrieval. The threshold is deliberately
+conservative (`MAX_NEW_RECORDS`); review actual official evidence before changing it.
+An empty index when no earlier measures were saved is accepted as an **empty retrieved
+index**, never labeled complete or treated as proof that legislation does not exist.
+
+Request history preserves observed title/sponsor revisions and source references.
+Only the same official `trackingID` in a request and introduced base-measure record
+establishes their relationship. Titles/names are never matching keys. Linked request
+URLs continue working and lead to the assigned bill; bill pages link back to request
+history. Linked requests leave the pending list and never add to introduced bill counts.
+Earlier observations remain available even if the official public list drops the request.
+
+A failed refresh leaves its previous manifest and last-checked time intact. The other
+refresh may still succeed. Both retained/new snapshots must pass source, browser and
+accessibility tests before commit/deployment. Push failure prevents deployment.
+Each attempt records timestamps, outcome, counts or an error in the Actions summary
+and `refresh-attempt-<run ID>` artifact (90-day retention); a separate refresh-health
+job marks source failures red without blocking the independent validated snapshot.
+A failed build never replaces Main. The interface links to Actions and labels 2027
+snapshots older than 36 hours. A successful scheduled run with an empty index still
+means only that the endpoint returned no introduced measures.
+
+Official human-readable request listing:
+https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sen=all&rep=&sub=&comm=
+The parameters are the site's own session/display/chamber controls; no individual
+request deep links are invented. Raw JSON and tracking/history are in optional Source
+details. Data notices use native Info disclosures and dynamic counts/retrieval dates.
+
+The official year-roster selector still ends at 2026 at this investigation. Requesting
+`year=2027` alone does not prove that a 2027 roster exists. Preserved evidence and check
+timestamps are in `data/discovery-sources.json`. The historical 2026 directory remains;
+2027 membership is unavailable pending verification of an officially published session
+roster. Current officeholders/request sponsors are not assumed to be 2027 members.
+
+Run `python tests/catalog_data.py`, `python tests/catalog_updates.py`, the calendar
+integrity tests, build, and `npm test`. Exceptional update/reconciliation fixtures exist
+only in temporary test files/intercepted browser responses, never in published data.
+Physical iPhone and manual VoiceOver checks remain pending human review.

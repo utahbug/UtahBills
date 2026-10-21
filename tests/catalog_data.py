@@ -12,12 +12,12 @@ class CatalogTests(unittest.TestCase):
   for year,c in self.data['coverage'].items():
    expected={r['number'] for r in json.loads(model.read(self.manifest['sources']['index'+year]))}
    got=[b['billNumber'] for b in self.data['measures'] if b['sessionID']==year+'GS']
-   self.assertEqual(set(got),expected);self.assertEqual(len(got),len(set(got)));self.assertTrue(c['complete'])
-  self.assertEqual(len(self.data['measures']),1016)
-  self.assertEqual(sum(b['kind']=='Bill' for b in self.data['measures']),931)
+   self.assertEqual(set(got),expected);self.assertEqual(len(got),len(set(got)));self.assertEqual(c['complete'],bool(expected))
+  self.assertEqual(sum(b['sessionID']=='2026GS' for b in self.data['measures']),1016)
+  self.assertEqual(sum(b['kind']=='Bill' and b['sessionID']=='2026GS' for b in self.data['measures']),931)
  def test_action_dates_match_source_without_inventing_timezone(self):
   for b in self.data['measures']:
-   self.assertEqual(b['lastActionDate'],datetime.strptime(b['sourceLastActionDate'],'%m/%d/%Y').date().isoformat())
+   self.assertEqual(b['lastActionDate'],datetime.strptime(b['sourceLastActionDate'],'%m/%d/%Y').date().isoformat() if b['sourceLastActionDate'] else '')
   self.assertEqual(next(b for b in self.data['measures'] if b['billNumber']=='HB0001')['lastActionDate'],'2026-01-31')
  def test_partial_coverage_is_explicit(self):
   partial=copy.deepcopy(self.manifest);partial['records'].pop(next(iter(partial['records'])))
@@ -33,12 +33,13 @@ class CatalogTests(unittest.TestCase):
   expected={p:0 for p in people}
   for key,source in self.manifest['records'].items():
    b=json.loads(model.read(source))
-   if b['billNumber'].startswith(('HB','SB')):expected[b['primeSponsor']]+=1
-  actual={p:sum(b['kind']=='Bill' and b['primeSponsor']==p for b in self.data['measures']) for p in people}
+   if b['sessionID']=='2026GS' and b['billNumber'].startswith(('HB','SB')):expected[b['primeSponsor']]+=1
+  actual={p:sum(b['sessionID']=='2026GS' and b['kind']=='Bill' and b['primeSponsor']==p for b in self.data['measures']) for p in people}
   self.assertEqual(expected,actual)
   b=next(b for b in self.data['measures'] if b['billNumber']=='HB0034');self.assertIn('IVORYK',b['cosponsors'])
  def test_requests_are_not_introduced_and_no_final_2027_roster(self):
-  self.assertEqual(self.data['coverage']['2027']['imported'],0);self.assertEqual(len(self.data['requests2027']),253)
+  raw={r['trackingID'] for r in json.loads(model.read(self.manifest['sources']['requests2027']))};introduced={b['trackingID'] for b in self.data['measures'] if b['sessionID']=='2027GS'}
+  self.assertEqual({r['trackingID'] for r in self.data['requests2027']},raw-introduced)
   self.assertTrue(all(p['session']=='2026GS' for p in self.data['legislators']))
   self.assertTrue(all('billNumber' not in r for r in self.data['requests2027']))
  def test_failure_preserves_published_manifest(self):
@@ -61,7 +62,10 @@ class CatalogTests(unittest.TestCase):
   # No per-bill requests permitted during an unchanged-index refresh.
   byurl={s['url']:s for s in self.manifest['sources'].values()}
   with tempfile.TemporaryDirectory() as d:
-   target=pathlib.Path(d)/'catalog.json';target.write_text(json.dumps(self.manifest),encoding='utf-8')
+   target=pathlib.Path(d)/'catalog.json';fresh=copy.deepcopy(self.manifest)
+   for item in json.loads(model.read(fresh['sources']['index2027'])):
+    entry=fresh['records']['2027/'+item['number']];entry['retrievedAt']=refresh.now();entry['lastActionTime']=item.get('lastActionTime')
+   target.write_text(json.dumps(fresh),encoding='utf-8')
    with patch.object(refresh,'TARGET',target),patch.object(refresh,'CACHE',pathlib.Path(d)/'cache.json'),patch.object(refresh,'get',side_effect=lambda u:byurl[u]) as getter:
-    refresh.refresh();self.assertEqual(getter.call_count,len(byurl))
+    refresh.refresh();self.assertEqual(getter.call_count,2)
 if __name__=='__main__':unittest.main()

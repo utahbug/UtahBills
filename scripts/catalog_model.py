@@ -21,19 +21,24 @@ def namekey(s):return re.sub('[^a-z]','',re.sub(r'^(Rep\.|Sen\.)\s*','',s).lower
 def clean(s):return html.unescape(re.sub('<[^>]+>',' ',s or '')).strip()
 def derive(manifest):
     sources=manifest['sources'];measure=[];names={}
+    for key,history in manifest.get('measureHistory',{}).items():
+        for source in history:
+            old=json.loads(read(source));assert key==old['sessionID'][:4]+'/'+old['billNumber'],'Invalid archived measure identity'
     for key,source in sorted(manifest['records'].items()):
         b=json.loads(read(source));year,ident=key.split('/');assert b['sessionID']==year+'GS' and b['billNumber']==ident
         for field in ('primeSponsor','floorSponsor'):
-            if b.get(field):names.setdefault(namekey(b[field+'Name']),set()).add(b[field])
+            if year=='2026' and b.get(field):names.setdefault(namekey(b[field+'Name']),set()).add(b[field])
         codes={a['actionCode'] for a in b['actionHistoryList']};versions=[];cosponsors={}
         for v in b['billVersionList']:
             for c in v.get('coSponsorList',[]):
                 assert c.get('lid') and c.get('house') in ('H','S'),'Unknown cosponsor schema'
                 cosponsors.setdefault(c['lid'],[]).append(v['billNumber'])
             for d in v['billDocs']:
-                if d['fileType'] in ('Introduced','PubSub','Enrolled'):
-                    from urllib.parse import urljoin
-                    versions.append(dict(id=v['billNumber'],label={'PubSub':'Substitute'}.get(d['fileType'],d['fileType']),url=urljoin('https://le.utah.gov',d['url']),date=d['fileDate']))
+                if d['fileType'] in ('Introduced','PubSub','Enrolled','Amended','PubAmend','AmdPages'):
+                    from urllib.parse import urljoin, urlparse
+                    url=urljoin('https://le.utah.gov',d['url']);parsed=urlparse(url)
+                    assert parsed.scheme in ('http','https') and (parsed.hostname or '').endswith(('.utah.gov','.utleg.gov')),'Unexpected document host'
+                    versions.append(dict(id=v['billNumber'],label={'PubSub':'Substitute','PubAmend':'Published amendment','AmdPages':'Amendment pages','Amended':'Amended text'}.get(d['fileType'],d['fileType']),url=urljoin('https://le.utah.gov',d['url']),date=d['fileDate']))
         committee=sorted({x['committeeName'] for x in b.get('agendaList',[]) if x.get('committeeName')}|{x['name'] for x in b.get('recommendingCommitteeList',[]) if x.get('name')})
         status='Signed' if 'GSIGN' in codes else 'Vetoed' if 'GVETO' in codes else 'Filed' if codes.intersection({'HFILED','SFILED'}) else 'Other recorded action'
         measure.append(dict(trackingID=b['trackingID'],billNumber=ident,billNumberShort=b['billNumberShort'],shortTitle=b['shortTitle'],sessionID=b['sessionID'],kind='Bill' if re.fullmatch('[HS]B[0-9]+',ident) else 'Joint resolution' if 'JR' in ident else 'Concurrent resolution' if 'CR' in ident else 'Resolution',primeSponsor=b['primeSponsor'],primeSponsorName=b['primeSponsorName'],floorSponsor=b['floorSponsor'],floorSponsorName=b['floorSponsorName'],cosponsors=cosponsors,generalProvisions=clean(b.get('generalProvisions')),committees=committee,topic='Official record',status=status,lastAction=b['lastAction'],lastActionDate=datetime.strptime(b['lastActionDate'],'%m/%d/%Y').date().isoformat() if b['lastActionDate'] else '',sourceLastActionDate=b['lastActionDate'],lastActionOwner=b['lastActionOwner'],versions=versions,actionHistoryList=b['actionHistoryList'],sourceUrl=source['url'],retrievedAt=source['retrievedAt'],officialUrl=f'https://le.utah.gov/~{year}/bills/static/{ident}.html',detailed=False))
@@ -57,15 +62,35 @@ def derive(manifest):
         people.append(dict(id=ident,name=full,house=house,district=district,session='2026GS',email=c.get('email','') if c else '',phone=(c.get('workPhone') or c.get('cell') or '') if c else '',address=c.get('address','') if c else '',contactCheckedAt=sources['contacts']['retrievedAt'],currentContact=bool(c),biography=('https://house.utleg.gov/rep/' if house=='H' else 'https://senate.utah.gov/sen/')+ident if c else sources['roster2026']['url'],mapUrl=maps[(house,district)],rosterSource=sources['roster2026']['url']))
     assert len(people)>=104 and len({p['id'] for p in people})==len(people),'Incomplete/duplicate roster'
     ids={p['id'] for p in people};unmatched=sorted({b[k] for b in measure if b['sessionID']=='2026GS' for k in ('primeSponsor','floorSponsor') if b[k] and b[k] not in ids})
-    requests=json.loads(read(sources['requests2027']));assert isinstance(requests,list) and len({r['trackingID'] for r in requests})==len(requests)
-    introduced={b['trackingID'] for b in measure if b['sessionID']=='2027GS'}
-    requests=[dict(r,sponsorName=byid.get(r['sponsor'],{}).get('fullName') or next((p['name'] for p in people if p['id']==r['sponsor']),r['sponsor'])) for r in requests if r['trackingID'] not in introduced]
+    # Preserve every observed request revision; reconcile only an exact official tracking ID.
+    from refresh_catalog import requests as checked_requests
+    snapshots=list(manifest.get('requestHistory',[]))
+    if not snapshots or snapshots[-1]['sha256']!=sources['requests2027']['sha256']:snapshots.append(sources['requests2027'])
+    archive={}
+    for source in snapshots:
+        for r in checked_requests(source):
+            entry=archive.setdefault(r['trackingID'],dict(r,history=[],firstSeenAt=source['retrievedAt']))
+            if not entry['history'] or any(entry[k]!=r[k] for k in ('shortTitle','sponsor')):
+                entry['history'].append(dict(shortTitle=r['shortTitle'],sponsor=r['sponsor'],observedAt=source['retrievedAt'],source=source))
+            entry.update(r);entry['lastSeenAt']=source['retrievedAt']
+    introduced={}
+    for b in measure:
+        if b['sessionID']=='2027GS':
+            assert b['trackingID'] not in introduced,'Ambiguous tracking identifier'
+            introduced[b['trackingID']]=b['billNumber']
+    current={r['trackingID'] for r in checked_requests(sources['requests2027'])}
+    for ident,r in archive.items():
+        r['introducedBill']=introduced.get(ident);r['currentlyListed']=ident in current
+        if r['currentlyListed']:r['lastSeenAt']=sources['requests2027']['retrievedAt']
+        r['sponsorName']=byid.get(r['sponsor'],{}).get('fullName') or next((p['name'] for p in people if p['id']==r['sponsor']),r['sponsor'])
+    request_archive=list(archive.values())
+    requests=[r for r in request_archive if r['currentlyListed'] and not r['introducedBill']]
     coverage={}
     for year in (2026,2027):
         expected={x['number'] for x in json.loads(read(sources['index'+str(year)]))};obtained={b['billNumber'] for b in measure if b['sessionID']==str(year)+'GS'}
         assert obtained<=expected
-        coverage[str(year)]={'expected':len(expected),'imported':len(obtained),'complete':expected==obtained,'missing':sorted(expected-obtained),'sourceUrl':sources['index'+str(year)]['url'],'checkedAt':sources['index'+str(year)]['retrievedAt']}
-    return dict(checkedAt=manifest['checkedAt'],coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),unmatchedSponsors=unmatched,requests2027=requests,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
+        coverage[str(year)]={'expected':len(expected),'imported':len(obtained),'complete':bool(expected) and expected==obtained,'emptyIndex':not expected,'missing':sorted(expected-obtained),'sourceUrl':sources['index'+str(year)]['url'],'checkedAt':sources['index'+str(year)]['retrievedAt']}
+    return dict(checkedAt=manifest['checkedAt'],coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing='https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sen=all&rep=&sub=&comm=',requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
 if __name__=='__main__':
     import sys
     d=derive(json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8')))

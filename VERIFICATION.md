@@ -96,3 +96,34 @@ calendar remains independently scheduled daily. No finalized 2027 roster is asse
 CI font-metric follow-up: enlarged text exposed intrinsic minimum widths in the
 listing help columns. Flexible wrapping now prevents that overflow; the reflow
 regression covers both system UI and Verdana font metrics.
+
+
+### Batch 2C verification
+
+- Real official refresh: 253 pending public requests and zero entries in the retrieved
+  2027 introduced index. Counts are derived, not pinned. Empty indexes are explicitly
+  uncertain, not complete. The official 2027 human listing was checked with its own
+  session/display/chamber query controls; the unfiltered form alone did not show rows.
+- Official year-roster selector ends at 2026. Saved discovery evidence and timestamps
+  support retaining an unavailable 2027 directory rather than assuming membership.
+- Eight catalog integrity tests plus five controlled-update tests: new measures,
+  changed request titles, exact tracking-ID reconciliation, title-collision separation,
+  archived revisions, preserved 2026 references, vote/version metadata, unchanged reuse,
+  count spikes, corrupted/duplicate records, inconsistent IDs, lost actions, failed
+  updates and recovery. Synthetic data is temporary and never enters production data.
+- Complete existing browser and calendar suites retained. Every saved request page
+  tested at 320/375/390/430 CSS pixels for shared-template layout, actual back-link/label
+  geometry, human-readable official link and hidden machine-readable sources.
+- Long request title tested with normal/doubled text and 200% CSS zoom, expanded Source
+  details, keyboard activation and automated WCAG A/AA checks. Info disclosure and
+  empty-index wording checked. Synthetic linked-request/bill/back navigation checked.
+- WebKit touch checks and mobile screenshots reviewed: Info and Source details toggle,
+  request link separation, raw-data visibility and return to the request listing.
+- Refresh reports and health-job behavior are documented in README. A manual Actions
+  dispatch with refresh_data=true exercises the same data path used by the daily cron;
+  actual deployment/run outcomes are reported in the final handoff.
+
+Pending: physical iPhone and manual VoiceOver testing of this update, independent
+factual review, real-world observation of the first request-to-introduced conversion,
+and verification of an official 2027 session roster when published. Official endpoint
+schema changes and guarded count spikes require review rather than silent acceptance.

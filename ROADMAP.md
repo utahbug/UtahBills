@@ -2,7 +2,7 @@
 
 Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
-## Implemented — through Batch 2B
+## Implemented — through Batch 2C
 
 - Four real 2026 bills, saved official records and provenance checks.
 - Search/filters, bill details, stages, aggregate votes, version comparisons and transparency timeline.
@@ -16,8 +16,10 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 ## Stage 1 — Legislative data and transparency · Partly implemented
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
-- **Next bounded batch:** controlled 2027 introduced-measure refresh and officially established session roster; reconcile requests to introduced measures and retain 2026 history. Broader full-text analysis remains planned.
-- **Implemented:** 253 public 2027 requests separately labeled; zero introduced 2027 measures in the retrieved index.
+- **Batch 2C implemented:** guarded daily 2027 metadata/request refresh, exact tracking-ID reconciliation, preserved request/measure revisions, independent refresh reports and retained 2026 history.
+- **Next bounded batch:** verify and connect the official 2027 session roster when published, and review early-session source completeness. Broader XML analysis and voting histories remain separate later work.
+- **Implemented:** separately labeled public requests and introduced measures; counts derive from each verified snapshot. The initial Batch 2C snapshot has 253 pending requests and an empty introduced index; neither count is fixed in the application.
+- **Batch 2C implemented:** compact status/Info disclosure and corrected shared request template, human-readable official listing, optional source/history details.
 - Substitutes, late changes and boxcar-bill histories using verifiable version/publication evidence.
 - Complete recorded voting histories and individual votes, distinguishing procedural and final-passage questions.
 - Historical statutory comparisons and related legislation; independently verify baseline and effective dates.

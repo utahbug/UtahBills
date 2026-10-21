@@ -60,3 +60,6 @@ button{max-width:100%;overflow-wrap:anywhere}main{overflow-wrap:anywhere}
 .directory-controls label{max-width:100%}.directory-controls input,.directory-controls select{width:100%}.details-grid aside{min-width:0}.panel p,.sponsor-filter{overflow-wrap:anywhere}
 .directory-controls label:last-child{flex:1 1 160px}.directory-controls label{min-width:min(140px,100%)}
 .support>div{min-width:0;overflow-wrap:anywhere}.filters label{overflow-wrap:anywhere}
+
+/* Request pages and concise data notices retain native disclosure semantics. */
+.request-heading{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:10px}.request-heading .back{margin:0;min-height:44px;padding:8px 0}.request-heading .eyebrow{display:block}.request-sources{overflow-wrap:anywhere}.request-sources summary,.catalog-info summary{min-height:44px;padding:10px 4px}.catalog-status{margin:8px 0 12px}.catalog-status .coverage-note{margin:0;display:inline}.catalog-info{padding:0;border:0}.catalog-info summary{width:max-content;max-width:100%;color:#155c79}.catalog-info p{max-width:85ch}.tracking-id{overflow-wrap:anywhere}
