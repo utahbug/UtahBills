@@ -10,7 +10,7 @@ Status: **Implemented** = available in the sample prototype; **Planned** = appro
 - Readings/votes/sponsorship guide with official references; compact header and secondary help navigation.
 - Blue icons, Main deployment, temporary noindex/nofollow and Research Prototype notice.
 
-- **Batch 2A:** official month/list calendar, category filters, Mountain times, rooms, agendas, explicit numbered-bill links and participation links; preserved sources and guarded daily Main refresh (October 2026–May 2027).
+- **Batch 2A:** official combined month-and-agenda calendar, category filters, Mountain times, rooms, agendas, explicit numbered-bill links and participation links; preserved sources and guarded daily Main refresh (October 2026–May 2027).
 - **Batch 2A:** whole-row bill links, hover/focus feedback, 25-result pages, cached search text, restored filters/sort/page/scroll and logo return to top.
 
 ## Stage 1 — Legislative data and transparency · Planned
@@ -30,7 +30,7 @@ Status: **Implemented** = available in the sample prototype; **Planned** = appro
 
 ## Stage 3 — Calendar and activity · Partly implemented
 
-- **Implemented:** month/list views of official meetings, times, rooms and available agendas.
+- **Implemented:** combined month grid and chronological agenda of official meetings, times, rooms and available agendas.
 - **Implemented:** 2027 session milestones/deadlines. Floor, special-session and caucus entries appear only when supplied by official records.
 - **Planned:** extend coverage after May 2027, richer agenda/draft/PDF extraction, per-bill next actions, and cross-check other official special-session/caucus notices.
 - **Deferred:** scroll-stop row highlighting; experimental moving emphasis could be mistaken for selection. Keep stable tap/focus feedback.

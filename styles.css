@@ -39,3 +39,17 @@ button{max-width:100%;overflow-wrap:anywhere}main{overflow-wrap:anywhere}
 .calendar-controls>*{max-width:100%;min-width:0}.calendar-controls select{min-width:0}.calendar-day{padding:2px}.day-kinds .calendar-key{padding:1px 0}.calendar-day>span,.calendar-day small{max-width:100%;overflow-wrap:anywhere}
 
 .bill-row:focus-within{outline-offset:-3px}
+
+/* Combined calendar: agenda remains visible without operating the date grid. */
+.calendar-controls{display:grid;grid-template-columns:repeat(2,minmax(0,230px));gap:8px}
+.calendar-controls label{display:flex;flex-direction:column;align-items:stretch;gap:3px;font-size:.9rem}
+.calendar-controls select{width:100%;max-width:100%}
+.calendar-tools{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px;margin:8px 0}
+.calendar-tools button[aria-pressed=true]{background:#dbeeff;border-color:#17629a;color:#173650}
+.legend-disclosure{border:0;padding:0;flex:1;min-width:100px}
+.legend-disclosure summary{display:list-item;min-height:44px;padding:10px 8px;cursor:pointer}
+.calendar-legend{margin:4px 0 8px;gap:6px 12px}
+.calendar-freshness{margin-bottom:10px}.month-grid{margin-bottom:14px}
+.calendar-day[aria-pressed=true]{box-shadow:inset 0 0 0 2px #17629a}
+.calendar-empty{margin:8px 0 12px}
+@media(max-width:600px){.calendar-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}

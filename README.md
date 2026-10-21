@@ -158,3 +158,14 @@ Run `python tests/calendar_data.py` and `npm test` after `npm run build` with th
 single local server. Calendar tests cover provenance, fail-closed refreshes, DST, month
 alignment, view/category changes, enlarged text, generated scale and navigation state.
 Full WCAG conformance, VoiceOver and physical iPhone testing still require human review.
+
+### Calendar usability refinement
+
+The calendar now always presents its chronological agenda below the month grid.
+The default and month-change state is All Month, so the agenda can be read without
+operating any date button. Selecting a date limits the existing filtered events to
+that date through month-end; empty dates identify the next matching event within the
+month. An empty remainder or empty month has an explicit message. All Month restores
+the complete filtered month. The category legend is a native keyboard-accessible
+collapsed disclosure; month and type selectors share a compact responsive row.
+Official acquisition, scheduled refresh and source data are unchanged.

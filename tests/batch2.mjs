@@ -6,12 +6,24 @@ try{
  assert.deepEqual(monthDays('2026-10'),{offset:4,count:31});assert.deepEqual(monthDays('2027-02'),{offset:1,count:28});assert.deepEqual(monthDays('2028-02'),{offset:2,count:29});
  await page.goto(base+'#calendar');await page.locator('#calendar-month').waitFor();await page.locator('#calendar-month').selectOption('2026-10');
  assert.equal(await page.locator('.calendar-day').count(),31);await page.locator('[data-date="2026-10-21"]').focus();await page.keyboard.press('Enter');assert.match(await page.locator('#day-events').innerText(),/Transportation Interim/);assert.match(await page.locator('#day-events').innerText(),/8:30 AM MDT/);
- await page.locator('#list-view').click();assert.equal(await page.locator('.calendar-day').count(),0);const dates=await page.locator('.calendar-event time').evaluateAll(es=>es.map(e=>e.dateTime));assert.deepEqual(dates,[...dates].sort());
+ await page.locator('#all-month').click();assert.equal(await page.locator('.calendar-day').count(),31);assert.equal(await page.locator('[data-date][aria-pressed=true]').count(),0);const dates=await page.locator('.calendar-event time').evaluateAll(es=>es.map(e=>e.dateTime));assert.deepEqual(dates,[...dates].sort());
+ const snapshot=JSON.parse(await readFile('data/calendar.json','utf8'));
+ const ids=()=>page.locator('.calendar-event').evaluateAll(es=>es.map(e=>e.dataset.event));
+ const expected=(month,start='',type='')=>snapshot.events.filter(e=>e.date.startsWith(month)&&e.date>=start&&(!type||e.category===type)).map(e=>e.id);
+ assert.deepEqual(await ids(),expected('2026-10'));
+ await page.locator('[data-date="2026-10-21"]').click();assert.deepEqual(await ids(),expected('2026-10','2026-10-21'));
+ assert.equal(await page.locator('[data-date="2026-10-21"]').getAttribute('aria-pressed'),'true');
+ await page.locator('[data-date="2026-10-23"]').click();assert.deepEqual(await ids(),expected('2026-10','2026-10-23'));assert.match(await page.locator('.calendar-empty').innerText(),/Next scheduled/);
+ await page.locator('[data-date="2026-10-31"]').click();assert.equal(await page.locator('.calendar-event').count(),0);assert.match(await page.locator('.calendar-empty').innerText(),/No more matching events/);
+ await page.locator('#all-month').click();assert.deepEqual(await ids(),expected('2026-10'));
+ await page.locator('#calendar-month').selectOption('2027-04');assert.equal(await page.locator('.calendar-event').count(),0);assert.match(await page.locator('.calendar-empty').innerText(),/No events are listed for this month/);
+ await page.locator('#calendar-month').selectOption('2026-10');assert.deepEqual(await ids(),expected('2026-10'));
+ assert.equal(await page.locator('#month-view,#list-view').count(),0);
  await page.locator('#calendar-type').selectOption('floor');assert.match(await page.locator('#calendar-content').innerText(),/Extraordinary Session/);await page.locator('#calendar-type').selectOption('');
  await page.locator('#calendar-month').selectOption('2026-12');assert.match(await page.locator('#calendar-content').innerText(),/Executive Appropriations/);
  await page.locator('#calendar-month').selectOption('2027-01');assert.match(await page.locator('#calendar-content').innerText(),/First day of the annual General Session/);
- for(const width of [320,375,390,430,1280])for(const mode of ['month','list'])for(const enlarged of [false,true,'zoom']){
-  await page.setViewportSize({width,height:850});await page.goto(base+'?calendar-test='+width+mode+enlarged+'#calendar');await page.locator('#calendar-month').waitFor();await page.locator('#calendar-month').selectOption('2026-10');await page.locator('#'+mode+'-view').click();
+ for(const width of [320,375,390,430,1280])for(const mode of ['all','selected'])for(const enlarged of [false,true,'zoom']){
+  await page.setViewportSize({width,height:850});await page.goto(base+'?calendar-test='+width+mode+enlarged+'#calendar');await page.locator('#calendar-month').waitFor();await page.locator('#calendar-month').selectOption('2026-10');if(mode==='selected')await page.locator('[data-date="2026-10-21"]').click();else await page.locator('#all-month').click();await page.locator('.legend-disclosure summary').click();
   if(enlarged==='zoom')await page.evaluate(()=>document.documentElement.style.zoom='2');
   if(enlarged===true)await page.evaluate(()=>{const els=[...document.querySelectorAll('body *')];const sizes=els.map(e=>parseFloat(getComputedStyle(e).fontSize));els.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`Calendar overflow ${width} ${mode} enlarged=${enlarged}`);

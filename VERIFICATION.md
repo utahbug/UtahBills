@@ -51,3 +51,13 @@ Still needed: physical iPhone/iPad checks, independent human factual review, and
   derived calendar file instead of the approximately 3 MB evidence archive.
 - No physical iPhone or manual VoiceOver conformance claim. Scheduled Actions execution is
   subject to GitHub timing; it has not yet had its first scheduled run at initial publication.
+
+### Calendar usability refinement verification
+
+Combined agenda regression checks cover date-to-month-end selection, All Month,
+chronological ordering, filters, empty dates, empty remaining ranges, empty months,
+month changes and removal of separate view controls. Existing mobile/desktop axe,
+normal/doubled-text/200%-zoom checks include the expanded legend. WebKit touch smoke
+covers selection, All Month, Legend and an empty month. Mobile/desktop screenshots
+reviewed. Physical iPhone and manual screen-reader testing remain user review tasks.
+Calendar source data, acquisition and scheduled refresh are unchanged.
