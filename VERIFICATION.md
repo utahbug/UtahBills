@@ -160,3 +160,29 @@ Validation: production build and deterministic analysis check passed; Python sui
 CI follow-up: the first Phase 4A run stopped before deployment because Git text normalization changed the newly added minutes in the Linux checkout. The existing raw-source `-text -whitespace` rule is now also applied to `data/phase4a-raw/*`; original local response bytes and recorded SHA-256 values are retained. Staged Git blobs are checked against the evidence manifest before publishing. No source hash was relaxed or rewritten.
 
 CI reflow follow-up: all 14 existing suites passed; the new Phase 4A matrix exposed detail-stage grid overflow at 768px / 200% CSS zoom on Linux Chromium. Reproduced locally with wider Verdana font metrics. Stage columns now use `minmax(0,1fr)` and their cells allow wrapping, retaining the same column counts. The added wide-font regression guards this case without weakening the overflow assertion.
+
+
+### Phase 4B — compact interface and navigation (October 22, 2026)
+
+Baseline: clean Main `8e469161ce42a33fecac890910dd0ec3358c753f`, successful deployment 39854274380; remote fetch found no newer commit. This is UI-only work. No legislative source, acquisition, reconciliation, provenance or scheduled-refresh code was modified. The five conflicts and 1,046 unlinked historical identity entries remain intact.
+
+Before/after geometry below uses local Edge, a 900px-high viewport, normal text, the default public-request session and October 2026 calendar. Positions are CSS pixels from the viewport top; lower positions mean less scrolling. Measurements and before/after screenshots are in ignored `test-results/phase4b-*` files.
+
+| Measurement | 1280px before → after | 390px before → after |
+| --- | --- | --- |
+| Header height | 61.9 → 61.9 | 107.6 → 107.6 |
+| Bills: heading bottom to first request | 221.5 → 173.0 | 289.0 → 194.5 |
+| Bills: first request top | 339.2 → 290.7 | 477.6 → 383.1 |
+| First request card height | 93.5 → 81.5 | 177.5 → 163.5 |
+| Bills results toolbar height | 44.0 → 44.0 | 111.5 → 65.5 |
+| Calendar grid height | 480.4 → 389.2 | 420.4 → 365.2 |
+| First calendar event top | 756.9 → 615.1 | 746.6 → 680.8 |
+| Activity empty-state top | 210.7 → 175.9 | 255.6 → 221.6 |
+
+Desktop result column gaps reduced from 18px to 9px. Native controls and Copy keep 44px minimum height; font sizes were not reduced to obtain the savings. Calendar cells expand for content and enlarged text. At 320px normal Edge metrics, compact navigation gaps/padding keep the header at two lines while aligning the Bills text with the U in UtahBug. Wider text may wrap naturally; it is never clipped. Mobile calendar selectors intentionally occupy separate inline-label rows when both cannot fit readably on one line.
+
+Preservation checks compare all original How It Works and About the Data text and source links with the consolidated sections. Legacy routes and section navigation, official legal citations, disclosure keyboard operation, verification counts and source limitations remain. The footer has one About & FAQ link. Contact cleanup removes only the raw JSON UI link, not contact data or internal verification. Recent Activity no longer reserves a viewport-height blank area beneath sparse results. It already had no concluded-session selector; no redundant change or historical-data deletion was made. Temporary intercepted historical-event fixtures exercise current-session pagination without entering published data.
+
+Calendar is a continuous table with seven weekday column headers, original month alignment and unchanged date/filter/All Month semantics. The selected heading omits From while Info explains through-month-end behavior. Sunday shading is explicitly conventional. The preserved feed contains holiday-related deadline wording but no explicit holiday/recess non-meeting designation, so no other dates were labeled as closures. All prior Calendar sources, coverage, retrieval and failure qualifications now appear in its single Info disclosure; stale warnings remain visible.
+
+Validation status: production build, deterministic analysis and Python suites passed (calendar 5, catalog 10, controlled updates 6, foundation 8, activity 4; build-time vote tests 3). All 16 browser regression suites passed locally, including Phase 4A preservation and the new Phase 4B suite; no automated WCAG A/AA violations were reported. Desktop and phone before/after screenshots were visually reviewed. Publication proceeds through the existing required GitHub Actions build and browser checks; the final report records the deployment result and live asset verification. The new suite covers 320/375/390/430/600/768/900/1024/1280 widths, normal/doubled text/200% CSS zoom, heading Info, calendar cell overflow, grid/Copy alignment, wrapped navigation, legacy About routes/content and fixture-backed activity page labels. Physical iPhone/iPad and manual screen-reader testing remain pending; automated axe results do not certify WCAG conformance.

@@ -353,3 +353,11 @@ Official request/update dates are not established in the saved records, so those
 The shared prototype banner is removed; headings use consistent 16px main top padding and Main remains identified in the footer. About the Data retains snapshot, review and provenance disclosures. Static noindex/nofollow remains mandatory.
 
 The five historical tally discrepancies and the Walter abbreviation were investigated without changing production vote parsing or attribution. `VERIFICATION.md` records the findings; `data/phase4a-evidence.json` references original action/vote evidence and four newly preserved linked official minutes in `data/phase4a-raw/`. Existing `tests/foundation_data.py` now verifies supplemental hashes, named-group counts, conflict withholding and conservative identity behavior. `tests/phase4a.mjs` adds route geometry, text/zoom, keyboard and axe coverage to `npm test`.
+
+## Phase 4B — compact interface and navigation
+
+The shared result controls retain native selects and 44px Copy targets with transparent borders. On wide screens controls precede the right-aligned count/check date and Copy; narrow layouts wrap labels and controls as groups. Bills keeps Session before Search. Desktop card column gaps are 9px rather than 18px; status width is content-sized with a 240px cap and mobile rows remain stacked.
+
+`#about` is the sole About & FAQ footer destination. `#guide` and `#sources` remain valid routes that render the same consolidated page and land on their respective sections; `#about/process`, `#about/data` and `#about/faq` are section routes. Original guide/data prose and links are regression-pinned in `tests/fixtures/phase4b-explanations.json`. Archive verification remains within the data section.
+
+Calendar uses a native table with weekday column headers and native date buttons. Sunday shading denotes a conventional pattern only; the saved feed contains no explicit non-meeting-day holiday/recess records to justify additional closure labels. Selected dates still show the remainder of the month. Heading Info contains the original source, coverage, freshness and limitation material. Recent Activity likewise uses heading Info and clear page labels; it was already limited to the current/upcoming session. No data or refresh logic changes are part of this batch.

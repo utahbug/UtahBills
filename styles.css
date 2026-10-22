@@ -166,3 +166,67 @@ footer{padding-bottom:80px}
 @media(max-width:600px){.result-controls{align-items:end}.result-controls label{display:grid;gap:0}.bills-heading .session{width:100%}.bills-heading .session select{width:100%}}
 /* Auto margins center a wrapped navigation row without changing wide headers. */
 @media(max-width:899px){.header-inner nav{margin-inline:auto;justify-content:center}}
+
+/* Phase 4B: compact controls keep native affordances and 44px action targets. */
+.bills-heading .session{display:flex;align-items:center;flex-wrap:wrap;gap:0 8px;margin-top:2px}
+.bills-heading .session label{margin:0}.bills-heading .session select{margin:0;width:auto;max-width:100%}
+.bills-heading{margin-bottom:4px}.search-label{margin-bottom:3px}
+.panel[aria-label="Find bills"]{margin-bottom:4px}.advanced-search{margin-top:2px}
+.results-toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:2px 8px;margin:4px 0}
+.result-controls{grid-column:1;grid-row:1;align-items:center;gap:2px 8px}
+.result-controls label{display:flex;align-items:center;flex-wrap:nowrap;gap:4px}
+.result-summary{grid-column:2;grid-row:1;justify-content:flex-end;text-align:right}
+.copy-control{grid-column:3;grid-row:1}
+.result-controls select,.copy-control .copy-results{border-color:transparent;border-radius:3px;background-color:transparent}
+.result-controls select:hover,.copy-control .copy-results:hover{background-color:#eaf1f3}
+.results-toolbar:has(>.result-controls:empty){grid-template-columns:minmax(0,1fr) auto}
+.results-toolbar:has(>.result-controls:empty)>.result-summary{grid-column:1;justify-content:flex-start;text-align:left}
+.results-toolbar:has(>.result-controls:empty)>.copy-control{grid-column:2}
+.bill-row{grid-template-columns:90px minmax(0,1fr) fit-content(240px);column-gap:9px;padding:12px 16px}
+.bill-state{max-width:240px;overflow-wrap:anywhere}.bill-state .tag{max-width:100%;overflow-wrap:anywhere}
+.field-label,.sidebar dt{font-weight:600}
+.context-title{position:relative;width:fit-content;max-width:100%;padding-right:48px;margin-bottom:4px}
+.context-title h1{min-height:44px;margin:0;display:flex;align-items:center}
+.context-info{border:0;padding:0!important;margin:0}
+.context-info>summary{position:absolute!important;right:0;top:0;width:44px;min-height:44px;padding:10px!important;display:flex!important;align-items:center;justify-content:center}
+.context-info>summary::before{display:none!important}.context-info[open]{margin-right:-48px}.context-info p{max-width:85ch}
+.activity-controls label{display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;max-width:100%;flex:0 1 auto}
+.activity-controls select{width:auto;max-width:100%;border-color:transparent;background-color:transparent}
+main:has(.activity-controls){min-height:0}
+.activity-empty{padding:10px 12px;margin:6px 0}.activity-controls{margin-bottom:4px}
+.about-page{max-width:850px}.about-page>nav{flex-wrap:wrap;margin:4px 0 12px}
+.about-page>nav a{min-height:44px}.about-page>.guide{margin:16px 0;scroll-margin-top:calc(var(--sticky-height,0px) + 12px)}
+.about-page .eyebrow{display:none}.about-page h3{font-size:1rem}.about-page>.guide>h2{font-size:1.3rem}
+.calendar-title{margin-bottom:4px}.calendar-controls{display:flex;flex-wrap:wrap;gap:0 12px;max-width:850px;margin-bottom:4px}
+.calendar-controls label{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:0 4px;min-width:0;max-width:100%;font-size:.9rem}
+.calendar-controls select{width:auto;max-width:100%;border-color:transparent;background-color:transparent;padding:4px 20px 4px 6px}
+.month-grid{display:table;width:100%;max-width:850px;table-layout:fixed;border-collapse:collapse;border-spacing:0;margin-bottom:4px;background:#fff}
+.month-grid th,.month-grid td{border:1px solid var(--line);padding:0;vertical-align:top}
+.month-grid th{font-size:.85rem;font-weight:600;padding:4px 0;background:#edf1f4;overflow-wrap:anywhere}
+.month-grid td{height:1px}.month-grid .calendar-blank{background:#f5f7f8}
+.month-grid .calendar-sunday{background:#f0f3f6}
+.calendar-day{border:0;border-radius:0;width:100%;height:100%;min-height:64px;padding:4px;gap:1px;background:transparent;container-type:inline-size}
+.calendar-day:focus-visible{outline-offset:-3px}.calendar-day[aria-current=date]{box-shadow:inset 0 0 0 2px #17629a}
+.calendar-day[aria-pressed=true]{background:#dbeeff;box-shadow:inset 0 0 0 2px #17629a}
+.calendar-day .day-count{white-space:normal;font-size:.72rem;overflow-wrap:anywhere;min-height:0}
+.agenda-heading.results-toolbar{max-width:850px;grid-template-columns:minmax(0,1fr) auto auto;gap:0 4px;margin:4px 0}
+.agenda-heading.results-toolbar>.result-summary{grid-column:1;justify-content:flex-start;text-align:left}
+.agenda-heading.results-toolbar>.result-controls{grid-column:2;grid-row:1}.agenda-heading.results-toolbar>.copy-control{grid-column:3;grid-row:1}
+.agenda-heading.results-toolbar h2{font-size:1.1rem;flex:1;margin:0}.agenda-heading .text-control{font-size:.85rem;padding:4px}
+.calendar-empty{margin:6px 0}.calendar-freshness{margin:4px 0;font-size:.85rem}
+@media(max-width:899px){
+ .header-inner nav{margin-inline:37px 0;justify-content:flex-start;gap:2px;min-width:0;max-width:calc(100% - 37px)}
+ .header-inner nav a{padding-inline:2px}.brand svg{flex-shrink:0}
+}
+@media(max-width:760px){.bill-row{display:flex;padding:10px 12px;gap:6px}.bill-state{max-width:100%}}
+@media(max-width:700px){
+ .results-toolbar{grid-template-columns:minmax(0,1fr) auto}.result-controls{grid-column:1;grid-row:1}.copy-control{grid-column:2;grid-row:1}
+ .result-summary{grid-column:1/-1;grid-row:2;justify-content:flex-start;text-align:left}
+ .results-toolbar:has(>.result-controls:empty)>.result-summary{grid-row:1}
+ .bills-heading .session{width:auto}.bills-heading .session select{width:auto}
+ .agenda-heading.results-toolbar{grid-template-columns:minmax(0,1fr) auto}
+ .agenda-heading.results-toolbar>.result-summary{grid-column:1;grid-row:1}
+ .agenda-heading.results-toolbar>.result-controls{grid-column:1;grid-row:2}
+ .agenda-heading.results-toolbar>.copy-control{grid-column:2;grid-row:1}
+ .calendar-day{padding:2px;min-height:56px}
+}
