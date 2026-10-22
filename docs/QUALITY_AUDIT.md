@@ -78,6 +78,12 @@ None confirmed. This does not establish exhaustive correctness, legal completene
 
 **Reproduce/next action:** on physical iPhone/iPad and desktop NVDA, check rotor/heading navigation, weekday/date context, Info expanded state, focus visibility/order, Copy confirmation/fallback, 200% browser zoom, sticky-header focus obstruction and long reader/vote navigation. Independently review the four source-pinned summaries against their specified versions. No certification or physical-device claim is made.
 
+### M4 — Some UI tests still assume a request-heavy default session — open, future transition
+
+**Evidence/affected:** `tests/usability.mjs` initially expects 50/100 rows, no Advanced Search, title sort, and later 200 rows without selecting the request session. `tests/batch2d.mjs` correctly verifies that the default switches to introduced 2027 legislation once such records exist. Those assumptions therefore conflict when the first small set of 2027 introduced bills arrives. Current saved data does not trigger this failure.
+
+**Reproduce/recommendation:** use an isolated catalog fixture with one valid 2027 introduced measure and run the usability scenario: the default legitimately has fewer than 50/100 rows and exposes Advanced Search. Extend the initial-session transition fixture across the usability/toolbar suites and isolate large-page preference scenarios from changing live counts before the introduced-bill transition. Do not hold back real measures merely to satisfy test counts. This broader future-snapshot test cleanup is documented rather than changing multiple scenarios during this audit; H1's already-observed calendar failure is corrected separately.
+
 ## Low
 
 ### L1 — README contradicted later implementation notes — corrected
