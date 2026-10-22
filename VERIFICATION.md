@@ -127,3 +127,32 @@ Pending: physical iPhone and manual VoiceOver testing of this update, independen
 factual review, real-world observation of the first request-to-introduced conversion,
 and verification of an official 2027 session roster when published. Official endpoint
 schema changes and guarded count spikes require review rather than silent acceptance.
+
+
+### Phase 4A — layout cleanup and vote-record investigation (October 22, 2026)
+
+Part A removes the shared Research Prototype banner entirely, including its DOM container and CSS. All routes use 16px main top padding (previously 26px desktop / 22px mobile). Main identification moves to the existing footer. Redundant visible prototype wording is removed from About the Data, summary-source wording and the no-JavaScript fallback. Official attribution, snapshot dates, incomplete-record warnings, request/introduced distinctions, pending independent review, and static noindex/nofollow remain. This label removal is not public-release approval, live coverage, or factual certification.
+
+Part B inspected the original checksum-verified action JSON and vote HTML for each of the five conflicts. The three displayed tally columns exactly match the named voters in every vote page; there is no missing cell, duplicate voter or demonstrated parsing error. Additional linked official minutes were retrieved on October 22 and saved byte-for-byte in `data/phase4a-raw/`; `data/phase4a-evidence.json` records URLs, full SHA-256 values, retrieval timestamps, original action/vote source references and the named groups for reproducible comparison. Meeting notice times are not exact vote times; action timestamps below have unspecified source timezone.
+
+| Bill / official vote | Action date/time | Committee and motion | Action tally | Vote page and minutes tally |
+| --- | --- | --- | --- | --- |
+| HB0117 / [39191](https://le.utah.gov/mtgvotes.jsp?voteid=39191) | 2026-01-30 14:21:36.653 | House Health and Human Services; Amendment #1 recommendation | 12-0-2 | 11-0-3 |
+| HB0117 / [39193](https://le.utah.gov/mtgvotes.jsp?voteid=39193) | 2026-01-30 14:21:51.707 | House Health and Human Services; favorable recommendation | 12-0-2 | 11-0-3 |
+| HB0264 / [38981](https://le.utah.gov/mtgvotes.jsp?voteid=38981) | 2026-01-27 17:32:53.730 | House Health and Human Services; replace HB0264 with HB0264S01 | 11-0-3 | 12-0-2 |
+| SB0141 / [38882](https://le.utah.gov/mtgvotes.jsp?voteid=38882) | 2026-01-26 14:49:50.000 | Senate Health and Human Services; favorable recommendation of SB0141S02 | 6-0-1 | 5-1-1 |
+| SJR006 / [41466](https://le.utah.gov/mtgvotes.jsp?voteid=41466) | 2026-03-02 12:15:39.743 | House Rules; replace SJR006S01 with SJR006S02 | 7-0-1 | 8-0-0 |
+
+Tallies are yes-no-absent. Each remains an **unresolved official-source conflict**, not an application correction:
+
+- HB0117 39191: the [January 30 minutes](https://le.utah.gov/interim/2026/html/00000951.htm) record Ward's amendment motion at 11-0-3. Vote page names total 11 yes, no nays, with Bolinder, Clancy and Hollins absent.
+- HB0117 39193: the same minutes separately record Ward's favorable-report motion at 11-0-3, with the same names. Neither motion reconciles with its 12-0-2 action entry.
+- HB0264 38981: the [January 27 minutes](https://le.utah.gov/interim/2026/html/00000759.htm) record 12-0-2 for the substitute motion; vote-page names total 12 yes with Abbott and Bolinder absent. The action remains 11-0-3.
+- SB0141 38882: the [January 26 minutes](https://le.utah.gov/interim/2026/html/00000634.htm) record Buss's favorable-report motion at 5-1-1. The vote page lists Buss, Escamilla, Grover, Plumb and Stratton yes, Stevenson no, and Adams absent. The action's 6-0-1 cannot support those individual attributions.
+- SJR006 41466: the [March 2 minutes](https://le.utah.gov/interim/2026/html/00001997.htm) record Burton's substitute motion at 8-0-0. All eight vote-page names are yes; the action remains 7-0-1.
+
+Minutes corroborate the roll-call representation but may share an upstream record system; they are not independent certification and do not erase the conflicting action records. No tally, original snapshot, manifest date, reconciliation rule or individual attribution was changed. All five warnings remain. Official clarification or corrected, preserved source evidence is required before resolving them. The previously documented 5,672 sources / 5,667 reconciled records / 115,130 individual entries remain unchanged.
+
+Historical identities: the unresolved generated name set is only `Walter, N.` (1,046 individual entries). The saved 2026 roster lists `Walter, R. Neil`, ID `WALTER`, House district 74. The matcher requires surname plus the first given-name initial, chamber and supplied district; `N` does not equal `R`. Across raw sources, the abbreviation occurs in 827 floor and 230 committee responses (raw appearances include voice records and are not the count of attributable individuals). The floor cell links to `/asp/roster/leglookup.asp?house=H&dist=74`; it contains no stable legislator ID or historical year. The example source and its hash are retained in the investigation manifest. No current district lookup was followed, no successor substituted, and no surname-only or general middle-initial match introduced. The historical roster and floor district support a candidate, but this batch does not establish a source-backed alias applicable to all committee entries. All 1,046 remain unlinked pending that verification; the original visible names remain available. 2027 membership is still unverified.
+
+Validation: production build and deterministic analysis check passed; Python suites passed (calendar 5, catalog 10, controlled updates 6, foundation 8, activity 4; build-time vote tests 3). All 14 existing browser suites plus the new Phase 4A suite passed locally in Edge. Checks cover search/filter/sort/pagination/copy/navigation, all 255 current request templates, bill details/readers/vote histories/calendar, 320–1280px widths, doubled computed text and 200% CSS zoom, keyboard, static noindex and automated WCAG A/AA tags through 2.2 with no violations. New geometry/axe checks cover seven routes at 320/390/768/1280px in all three text/zoom modes. Phone and desktop Bills/Calendar screenshots were visually reviewed. The supplemental evidence manifest was synchronized into dist after completing its annotations; it is not consumed by runtime vote processing. Physical iPhone/iPad and manual screen-reader testing remain pending. Automated checks are not WCAG certification.

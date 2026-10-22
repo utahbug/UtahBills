@@ -1,0 +1,955 @@
+<html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin-left: 1in; margin-right: 1in;">
+<table cellspacing="0" cellpadding="0" style="width:100%">
+<tr style="height:25px"></tr>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt;font-weight:bold;margin-top:40px">MINUTES OF THE</div>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt;font-weight:bold;margin-bottom:10px">SENATE HEALTH AND HUMAN SERVICES STANDING COMMITTEE</div>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt">
+<b>Monday, 
+							January&nbsp;26,&nbsp;2026
+							&bull;
+							2:00 p.m.
+							&bull;
+							215 Senate Building</b>
+</div>
+<tr align="left">
+<td align="left"><b>Members Present:<br>
+</b>Sen. Keith Grover, Chair<br>Sen. Emily Buss<br>Sen. Luz Escamilla<br>Sen. Jen Plumb<br>Sen. Jerry W Stevenson<br>Sen. Keven J. Stratton<br>
+</td><td align="left">
+<br>
+<b>Members Absent:<br>
+</b>President J. Stuart Adams<br>
+<br>
+<b>Staff Present:<br>
+</b>Seth Anderson, Policy Analyst<br>Michele Miller, Committee Secretary<br>
+</td>
+</tr>
+<br>
+<tr>
+<td>
+<br>
+<div style="text-align:left;font-family:Times New Roman,serif;font-size:8.9pt">Note: A copy of related materials and an audio recording of the meeting can be found at www.le.utah.gov.</div>
+<br>
+</td>
+</tr>
+<br>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt">
+<b>
+<table width="100%">
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Grover called the meeting to order at 2:00:45 PM.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>1.S.B. 55 Placental Tissue Amendments(Vickers, E.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Vickers presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Buss moved to pass SB0055 out favorably.The motion
+									passed
+									with a vote of
+									3-0-4.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											3</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											4</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Plumb<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>2.S.B. 66 Medical Cannabis Pharmacy License Amendments(Vickers, E.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Vickers presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Buss moved to pass SB0066 out favorably.The motion
+									passed
+									with a vote of
+									4-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											4</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Plumb moved to approve the minutes Jan 21, 2026.The motion
+									passed
+									with a vote of
+									4-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											4</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>3.SB0083 - Controlled Substance Scheduling Amendments</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Vickers presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Walter Plumb, President, Drug Safe Utah, spoke in opposition of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Dani Bordeaux, Vice President, Utah Eagle Forum, spoke in opposition of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Plumb moved to pass SB0083 out favorably.The motion
+									passed
+									with a vote of
+									4-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											4</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>4.S.B. 121 Medical Cannabis Program Amendments(Vickers, E.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">MedCan_FrontandBack</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Vickers presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Amber Brown, Deputy Commissioner, Utah Department of Agriculture and Food, spoke in support of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Chair Grover moved to pass SB0121 out favorably.The motion
+									passed
+									with a vote of
+									4-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											4</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>5.S.B. 158 Recreational Therapy Program Amendments(Weiler, T.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Weiler presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Plumb moved to pass SB0158 out favorably.The motion
+									passed
+									with a vote of
+									4-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											4</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>6.S.C.R. 6 Concurrent Resolution Regarding Pediatric Care for Autonomic Disorders(Weiler, T.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Weiler presented the concurrent resolution.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Buss moved to pass SCR006 out favorably.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>7.S.B. 127 Pediatric Care Amendments(Plumb, J.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">PediReadinessSavesLives</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Plumb and Hilary Hewes, Physician, presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Erik Bornemeier, Bureau Director, Bureau of Emergency Medical Services, Utah Department of Public Safety, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Mike Ely, Program Director, Emergency Medical Services for Children Program, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Plumb moved to pass SB0127 out favorably.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>8.H.B. 50 Child Protection Ombudsman Amendments(Lisonbee, K.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Lisonbee presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Plumb moved to pass HB0050 out favorably.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>9.S.B. 137 Homeless Services Board Amendments(Plumb, J.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Plumb presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Stratton moved to pass SB0137 out favorably.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>10.S.B. 141 Child Welfare Amendments(Harper, W.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Stratton moved to replace SB0141 with SB0141S02.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Harper presented the substituted bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Buss moved to pass SB0141S02 out favorably.The motion
+									passed
+									with a vote of
+									5-1-1.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											1</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											1</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Stevenson<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>11.S.B. 170 Vitamin K Amendments(Plumb, J.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">VitKPacket</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Plumb presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Jennifer Brinton, Pediatrician, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Kris Campbell, Pediatrician, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Maryann Martindale, CEO, Utah Academy of Family Physicians, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Chair Grover moved to pass SB0170 out favorably.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>12.S.B. 142 Private Probation and Court Ordered Services Amendments(Plumb, J.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Chair Grover moved to amend SB0142 with Amendment #1.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+<div style="text-align:center">Amendment  1<br>
+<br>
+</div>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">1
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 75 through 83
+									:&nbsp;
+									Line 75 through 83<br xmlns:xlink="http://www.w3.org/1999/xlink">757677787980 818283<br>
+<br>
+<eol></eol>
+</td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Plumb presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Stratton moved to pass SB0142 as amended out favorably.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>13.S.B. 49 Funeral Services Amendments(Plumb, J.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">NaturalOrganicReduction_Front</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">NaturalOrganicReduction_Back</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Recompose NOR Overview Slides - Jan 2024</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Plumb moved to replace SB0049 with SB0049S01.The motion
+									passed
+									with a vote of
+									5-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>Sen. J. Stevenson<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Plumb presented the substituted bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Mccormick Thompson, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Travis Greenwood, President, Funeral Director Association of Utah, spoke in opposition of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Claudine Miller, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Andrew Anderson, Licensed Director, Funeral Home, spoke in opposition of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Shayneh Starks, Licensed Director, Funeral Home, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Diane Foster-Burke, Registered Nurse, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Jason Starks, Licensed Director, Funeral Home, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Jase Allen, Licensed Director, Funeral Home, spoke in opposition of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Chair Grover moved to pass SB0049S01 out favorably.The motion
+									passed
+									with a vote of
+									4-2-1.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											4</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											2</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											1</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>14.H.B. 14 Behavior Analyst Licensing Amendments(Maloy, A. Cory)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Maloy presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Buss moved to pass HB0014 out favorably.The motion
+									passed
+									with a vote of
+									6-0-1.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											6</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											1</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Sen. Stratton moved to adjourn.The motion
+									passed
+									with a vote of
+									6-0-1.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											6</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											1</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. E. Buss<br>Sen. L. Escamilla<br>Sen. K. Grover<br>Sen. J. Plumb<br>Sen. J. Stevenson<br>Sen. K. Stratton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Sen. J. Adams<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Grover adjourned the meeting at 3:36:57 PM.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+</table>
+</b>
+</div>
+<div style="text-align:left;font-family:Times New Roman,serif;font-size:9pt">NOTE:
+							S.B. 0113, S.C.R. 005, H.B. 0028
+							were not discussed in the meeting.
+						</div>
+</table>
+</body>
+</html>

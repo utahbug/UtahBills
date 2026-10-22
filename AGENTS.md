@@ -23,4 +23,4 @@ Do not add that line to processing/progress updates.
 
 ## Temporary indexing restriction
 
-Until public release is explicitly approved, preserve `<meta name="robots" content="noindex, nofollow">` in the static head of every application HTML page. Current hash routes share index.html. Do not block crawling in robots.txt or submit sitemaps during development. Keep direct access and the Research Prototype notice. At approved public release, remove the directive from all application HTML and verify the deployed source; see README.md.
+Until public release is explicitly approved, preserve `<meta name="robots" content="noindex, nofollow">` in the static head of every application HTML page. Current hash routes share index.html. Do not block crawling in robots.txt or submit sitemaps during development. Keep direct access, source attribution, snapshot freshness and review-status disclosures. Phase 4A explicitly removes the Research Prototype banner and visible label; retain Main identification in the footer. At approved public release, remove the directive from all application HTML and verify the deployed source; see README.md.

@@ -1,0 +1,370 @@
+<html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin-left: 1in; margin-right: 1in;">
+<table cellspacing="0" cellpadding="0" style="width:100%">
+<tr style="height:25px"></tr>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt;font-weight:bold;margin-top:40px">MINUTES OF THE</div>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt;font-weight:bold;margin-bottom:10px">HOUSE RULES STANDING COMMITTEE</div>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt">
+<b>Monday, 
+							March&nbsp;2,&nbsp;2026
+							&bull;
+							12:00 p.m.
+							&bull;
+							450 State Capitol</b>
+</div>
+<tr align="left">
+<td align="left"><b>Members Present:<br>
+</b>Rep. Jordan D. Teuscher, Chair<br>Rep. Karen M. Peterson, Vice Chair<br>Rep. Jefferson S. Burton<br>Rep. Sandra Hollins<br>Rep. Trevor Lee<br>
+</td><td align="left">Rep. Ashlee Matthews<br>Rep. Calvin Roberts<br>Rep. Ryan D. Wilcox<br>
+<br>
+<b>Staff Present:<br>
+</b>Megan L. Bolin, Senior Policy Analyst<br>Lorna Wells, Committee Secretary<br>
+</td>
+</tr>
+<br>
+<tr>
+<td>
+<br>
+<div style="text-align:left;font-family:Times New Roman,serif;font-size:8.9pt">Note: A copy of related materials and an audio recording of the meeting can be found at www.le.utah.gov.</div>
+<br>
+</td>
+</tr>
+<br>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt">
+<b>
+<table width="100%">
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Teuscher called the meeting to order at 12:07 PM.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Karen Peterson moved to approve the minutes of the February 25, 2026, meeting.The motion
+									passed
+									with a vote of
+									5-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											5</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. K. Peterson<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Lee<br>Rep. A. Matthews<br>Rep. C. Roberts<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>1.H.B. 599 Social Services Funding Amendments(Ward, R.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Ray Ward presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Karen Peterson moved to replace HB0599 with HB0599S01.The motion
+									passed
+									with a vote of
+									6-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											6</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Lee<br>Rep. C. Roberts<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Karen Peterson moved to pass HB0599S01 out favorably.The motion
+									passed
+									with a vote of
+									6-0-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											6</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Lee<br>Rep. C. Roberts<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>2.1st Sub. S.J.R. 6 Joint Resolution Amending Court Rules Regarding Medical Malpractice(Sandall, S.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Scott Sandall presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Burton moved to replace SJR006S01 with SJR006S02.The motion
+									passed
+									with a vote of
+									8-0-0.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											8</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											0</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. T. Lee<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. C. Roberts<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Burton moved to pass SJR006S02 out favorably.The motion
+									passed
+									with a vote of
+									8-0-0.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											8</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											0</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. T. Lee<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. C. Roberts<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>3.S.J.R. 13 Joint Resolution Honoring Irish and Irish-American Contributions to the Founding of the United States(Harper, W.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Wayne Harper presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Wilcox moved to pass SJR013 out favorably.The motion
+									passed
+									with a vote of
+									8-0-0.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											8</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											0</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. T. Lee<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. C. Roberts<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>4.H.R. 8 Resolution Admonishing and Censuring Judge Don M. Torgerson(MacPherson, M.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Matt MacPherson presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Michael Drechsel, Assistant State Court Administrator, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Karen Peterson moved to amend HR0008 with Amendment #1.The motion
+									passed
+									with a vote of
+									7-1-0.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+<div style="text-align:center">Amendment  1<br>
+<br>
+</div>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">1
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 29 through 44
+									:&nbsp;
+									Line 29 through 44<br xmlns:xlink="http://www.w3.org/1999/xlink">29303132333435363738394041424344<br>
+<br>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">2
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 63 through 71
+									:&nbsp;
+									Line 63 through 71<br xmlns:xlink="http://www.w3.org/1999/xlink">636465666768697071<br>
+<br>
+<eol></eol>
+</td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											7</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											1</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											0</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. S. Hollins<br>Rep. T. Lee<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. C. Roberts<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Lee moved to pass HR0008 as amended out favorably.The motion
+									passed
+									with a vote of
+									8-0-0.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											8</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											0</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. T. Lee<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. C. Roberts<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Lee moved to adjourn.The motion
+									passed
+									with a vote of
+									8-0-0.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											8</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											0</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Burton<br>Rep. S. Hollins<br>Rep. T. Lee<br>Rep. A. Matthews<br>Rep. K. Peterson<br>Rep. C. Roberts<br>Rep. J. Teuscher<br>Rep. R. Wilcox<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Teuscher adjourned the meeting at 12:54 PM.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+</table>
+</b>
+</div>
+<div style="text-align:left;font-family:Times New Roman,serif;font-size:9pt"></div>
+</table>
+</body>
+</html>

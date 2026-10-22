@@ -1,0 +1,342 @@
+{
+  "scope": "Supplementary official minutes for Phase 4A conflict investigation; does not override action or vote snapshots.",
+  "sources": [
+    {
+      "url": "https://le.utah.gov/interim/2026/html/00000951.htm",
+      "path": "data/phase4a-raw/3981cf9049210f5f697f922d04298d6f5667180a46acf8e2f0aac21ebeb69dc4.txt",
+      "sha256": "3981cf9049210f5f697f922d04298d6f5667180a46acf8e2f0aac21ebeb69dc4",
+      "retrievedAt": "2026-10-22T20:41:10.200963+00:00"
+    },
+    {
+      "url": "https://le.utah.gov/interim/2026/html/00000759.htm",
+      "path": "data/phase4a-raw/878f740f9a4878921d99958980e72dd01fe823e4e3f87fd60d4f4fa849dac8b5.txt",
+      "sha256": "878f740f9a4878921d99958980e72dd01fe823e4e3f87fd60d4f4fa849dac8b5",
+      "retrievedAt": "2026-10-22T20:41:10.609806+00:00"
+    },
+    {
+      "url": "https://le.utah.gov/interim/2026/html/00000634.htm",
+      "path": "data/phase4a-raw/27f36d1a36dfde9b659723b6fc5d7960b9a20fa32527ba3e5bbe5a302fabfe10.txt",
+      "sha256": "27f36d1a36dfde9b659723b6fc5d7960b9a20fa32527ba3e5bbe5a302fabfe10",
+      "retrievedAt": "2026-10-22T20:41:11.017785+00:00"
+    },
+    {
+      "url": "https://le.utah.gov/interim/2026/html/00001997.htm",
+      "path": "data/phase4a-raw/6256284315e8bb8c41fba911a5210e5da38e383c538f2c4a94f8d4d249c8dd9d.txt",
+      "sha256": "6256284315e8bb8c41fba911a5210e5da38e383c538f2c4a94f8d4d249c8dd9d",
+      "retrievedAt": "2026-10-22T20:41:11.429964+00:00"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "2026GS/HB0117//39191",
+      "action": {
+        "description": "House Comm - Amendment Recommendation",
+        "owner": "House Health and Human Services Committee",
+        "actionDate": "2026-01-30 14:21:36.653",
+        "actionClass": "A",
+        "voteID": "39191",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "12-0-2",
+        "actionCode": "HCAAMD",
+        "parm1": "1",
+        "parm2": ""
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0117.json",
+        "path": "data/catalog-raw/2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07.json",
+        "sha256": "2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07",
+        "retrievedAt": "2026-10-21T03:57:22.670799+00:00",
+        "updatetime": "2026-03-17 09:38:00.0"
+      },
+      "voteSource": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=39191",
+        "path": "data/archive-raw/8a10300d5fa9e33bbc49b1b3bfaab2b34fdaea48d8aac1f59ca229d78c118869.txt",
+        "sha256": "8a10300d5fa9e33bbc49b1b3bfaab2b34fdaea48d8aac1f59ca229d78c118869",
+        "retrievedAt": "2026-10-21T15:47:06.534447+00:00"
+      },
+      "minutesSource": {
+        "url": "https://le.utah.gov/interim/2026/html/00000951.htm",
+        "path": "data/phase4a-raw/3981cf9049210f5f697f922d04298d6f5667180a46acf8e2f0aac21ebeb69dc4.txt",
+        "sha256": "3981cf9049210f5f697f922d04298d6f5667180a46acf8e2f0aac21ebeb69dc4",
+        "retrievedAt": "2026-10-22T20:41:10.200963+00:00"
+      },
+      "rollCallTally": [
+        11,
+        0,
+        3
+      ],
+      "recordedNames": {
+        "Yes": [
+          "Abbott, N.",
+          "Acton, C.K.",
+          "Barlow, S.",
+          "Chevrier, K.",
+          "Dailey-Provost, J.",
+          "Eliason, S.",
+          "Fitisemanu, J.",
+          "Gricius, S.",
+          "Hall, K.",
+          "Monson, L.",
+          "Ward, R."
+        ],
+        "No": [],
+        "Absent": [
+          "Bolinder, B.",
+          "Clancy, T.",
+          "Hollins, S."
+        ]
+      },
+      "finding": "Official action-history tally conflicts with internally consistent roll-call names/tally and linked minutes. No parser correction; attribution remains withheld."
+    },
+    {
+      "id": "2026GS/HB0117//39193",
+      "action": {
+        "description": "House Comm - Favorable Recommendation",
+        "owner": "House Health and Human Services Committee",
+        "actionDate": "2026-01-30 14:21:51.707",
+        "actionClass": "A",
+        "voteID": "39193",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "12-0-2",
+        "actionCode": "HCAFAV",
+        "parm1": "",
+        "parm2": ""
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0117.json",
+        "path": "data/catalog-raw/2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07.json",
+        "sha256": "2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07",
+        "retrievedAt": "2026-10-21T03:57:22.670799+00:00",
+        "updatetime": "2026-03-17 09:38:00.0"
+      },
+      "voteSource": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=39193",
+        "path": "data/archive-raw/b302d45f52b11bc1ab05fcc5c16e3b1bc81a47b4521b3086504635f609f9991b.txt",
+        "sha256": "b302d45f52b11bc1ab05fcc5c16e3b1bc81a47b4521b3086504635f609f9991b",
+        "retrievedAt": "2026-10-21T15:47:06.842755+00:00"
+      },
+      "minutesSource": {
+        "url": "https://le.utah.gov/interim/2026/html/00000951.htm",
+        "path": "data/phase4a-raw/3981cf9049210f5f697f922d04298d6f5667180a46acf8e2f0aac21ebeb69dc4.txt",
+        "sha256": "3981cf9049210f5f697f922d04298d6f5667180a46acf8e2f0aac21ebeb69dc4",
+        "retrievedAt": "2026-10-22T20:41:10.200963+00:00"
+      },
+      "rollCallTally": [
+        11,
+        0,
+        3
+      ],
+      "recordedNames": {
+        "Yes": [
+          "Abbott, N.",
+          "Acton, C.K.",
+          "Barlow, S.",
+          "Chevrier, K.",
+          "Dailey-Provost, J.",
+          "Eliason, S.",
+          "Fitisemanu, J.",
+          "Gricius, S.",
+          "Hall, K.",
+          "Monson, L.",
+          "Ward, R."
+        ],
+        "No": [],
+        "Absent": [
+          "Bolinder, B.",
+          "Clancy, T.",
+          "Hollins, S."
+        ]
+      },
+      "finding": "Official action-history tally conflicts with internally consistent roll-call names/tally and linked minutes. No parser correction; attribution remains withheld."
+    },
+    {
+      "id": "2026GS/HB0264//38981",
+      "action": {
+        "description": "House Comm - Substitute Recommendation",
+        "owner": "House Health and Human Services Committee",
+        "actionDate": "2026-01-27 17:32:53.730",
+        "actionClass": "A",
+        "voteID": "38981",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "11-0-3",
+        "actionCode": "HCASUB",
+        "parm1": "1",
+        "parm2": "0"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0264.json",
+        "path": "data/catalog-raw/40a271a8caffd22b65e9dd374800a299fbb6ad75a3047718d48e83994477f22b.json",
+        "sha256": "40a271a8caffd22b65e9dd374800a299fbb6ad75a3047718d48e83994477f22b",
+        "retrievedAt": "2026-10-21T03:57:55.339694+00:00",
+        "updatetime": "2026-03-17 09:51:00.0"
+      },
+      "voteSource": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=38981",
+        "path": "data/archive-raw/6ba32c629fbf8eb23bb8f78ffaf8c5c2167e7e6dd785ba24e9bd7bbfd7769134.txt",
+        "sha256": "6ba32c629fbf8eb23bb8f78ffaf8c5c2167e7e6dd785ba24e9bd7bbfd7769134",
+        "retrievedAt": "2026-10-21T15:51:03.633540+00:00"
+      },
+      "minutesSource": {
+        "url": "https://le.utah.gov/interim/2026/html/00000759.htm",
+        "path": "data/phase4a-raw/878f740f9a4878921d99958980e72dd01fe823e4e3f87fd60d4f4fa849dac8b5.txt",
+        "sha256": "878f740f9a4878921d99958980e72dd01fe823e4e3f87fd60d4f4fa849dac8b5",
+        "retrievedAt": "2026-10-22T20:41:10.609806+00:00"
+      },
+      "rollCallTally": [
+        12,
+        0,
+        2
+      ],
+      "recordedNames": {
+        "Yes": [
+          "Acton, C.K.",
+          "Barlow, S.",
+          "Chevrier, K.",
+          "Clancy, T.",
+          "Dailey-Provost, J.",
+          "Eliason, S.",
+          "Fitisemanu, J.",
+          "Gricius, S.",
+          "Hall, K.",
+          "Hollins, S.",
+          "Monson, L.",
+          "Ward, R."
+        ],
+        "No": [],
+        "Absent": [
+          "Abbott, N.",
+          "Bolinder, B."
+        ]
+      },
+      "finding": "Official action-history tally conflicts with internally consistent roll-call names/tally and linked minutes. No parser correction; attribution remains withheld."
+    },
+    {
+      "id": "2026GS/SB0141//38882",
+      "action": {
+        "description": "Senate Comm - Favorable Recommendation",
+        "owner": "Senate Health and Human Services Committee",
+        "actionDate": "2026-01-26 14:49:50.000",
+        "actionClass": "A",
+        "voteID": "38882",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "6-0-1",
+        "actionCode": "SCAFAV",
+        "parm1": "",
+        "parm2": ""
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SB0141.json",
+        "path": "data/catalog-raw/4d1fe5f8b4b5d35715b91c1efa1d65035084ac785846313068c69f8633309683.json",
+        "sha256": "4d1fe5f8b4b5d35715b91c1efa1d65035084ac785846313068c69f8633309683",
+        "retrievedAt": "2026-10-21T04:00:38.735868+00:00",
+        "updatetime": "2026-03-17 09:35:00.0"
+      },
+      "voteSource": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=38882",
+        "path": "data/archive-raw/833a74084b7990861008d30a6224391c89f11e0605271b3575b90f8e8ee5b892.txt",
+        "sha256": "833a74084b7990861008d30a6224391c89f11e0605271b3575b90f8e8ee5b892",
+        "retrievedAt": "2026-10-21T16:04:27.734304+00:00"
+      },
+      "minutesSource": {
+        "url": "https://le.utah.gov/interim/2026/html/00000634.htm",
+        "path": "data/phase4a-raw/27f36d1a36dfde9b659723b6fc5d7960b9a20fa32527ba3e5bbe5a302fabfe10.txt",
+        "sha256": "27f36d1a36dfde9b659723b6fc5d7960b9a20fa32527ba3e5bbe5a302fabfe10",
+        "retrievedAt": "2026-10-22T20:41:11.017785+00:00"
+      },
+      "rollCallTally": [
+        5,
+        1,
+        1
+      ],
+      "recordedNames": {
+        "Yes": [
+          "Buss, E.",
+          "Escamilla, L.",
+          "Grover, K.",
+          "Plumb, J.",
+          "Stratton, K."
+        ],
+        "No": [
+          "Stevenson, J."
+        ],
+        "Absent": [
+          "Adams, J. Stuart"
+        ]
+      },
+      "finding": "Official action-history tally conflicts with internally consistent roll-call names/tally and linked minutes. No parser correction; attribution remains withheld."
+    },
+    {
+      "id": "2026GS/SJR006//41466",
+      "action": {
+        "description": "House Comm - Substitute Recommendation",
+        "owner": "House Rules Committee",
+        "actionDate": "2026-03-02 12:15:39.743",
+        "actionClass": "A",
+        "voteID": "41466",
+        "voiceVote": "",
+        "voteHouse": "",
+        "voteStr": "7-0-1",
+        "actionCode": "HCASUB",
+        "parm1": "2",
+        "parm2": "1"
+      },
+      "actionSource": {
+        "url": "https://le.utah.gov/data/2026GS/SJR006.json",
+        "path": "data/catalog-raw/a359948aadc5546db135cbc671c4efdf4803a09d75976bfcd620db865c6bfda6.json",
+        "sha256": "a359948aadc5546db135cbc671c4efdf4803a09d75976bfcd620db865c6bfda6",
+        "retrievedAt": "2026-10-21T04:01:25.988681+00:00",
+        "updatetime": "2026-03-13 11:22:43.0"
+      },
+      "voteSource": {
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=41466",
+        "path": "data/archive-raw/e758d8db92fcc6cb9f228ae6e4d165b5a0ea9bacdb7fc7218e09a6275ec68f8e.txt",
+        "sha256": "e758d8db92fcc6cb9f228ae6e4d165b5a0ea9bacdb7fc7218e09a6275ec68f8e",
+        "retrievedAt": "2026-10-21T16:11:39.562423+00:00"
+      },
+      "minutesSource": {
+        "url": "https://le.utah.gov/interim/2026/html/00001997.htm",
+        "path": "data/phase4a-raw/6256284315e8bb8c41fba911a5210e5da38e383c538f2c4a94f8d4d249c8dd9d.txt",
+        "sha256": "6256284315e8bb8c41fba911a5210e5da38e383c538f2c4a94f8d4d249c8dd9d",
+        "retrievedAt": "2026-10-22T20:41:11.429964+00:00"
+      },
+      "rollCallTally": [
+        8,
+        0,
+        0
+      ],
+      "recordedNames": {
+        "Yes": [
+          "Burton, J.",
+          "Hollins, S.",
+          "Lee, T.",
+          "Matthews, A.",
+          "Peterson, K.",
+          "Roberts, C.",
+          "Teuscher, J.",
+          "Wilcox, R."
+        ],
+        "No": [],
+        "Absent": []
+      },
+      "finding": "Official action-history tally conflicts with internally consistent roll-call names/tally and linked minutes. No parser correction; attribution remains withheld."
+    }
+  ],
+  "identityFinding": {
+    "name": "Walter, N.",
+    "candidate": "Walter, R. Neil",
+    "historicalId": "WALTER",
+    "house": "H",
+    "district": 74,
+    "status": "Unresolved; no alias rule added. First given initial differs. District-bearing floor links are corroboration only; they do not establish every committee abbreviation. No current district lookup used.",
+    "exampleSource": {
+      "url": "https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2026GS&voteid=81&house=H",
+      "path": "data/archive-raw/ff3e3c3fcf51eedd4d9d123ebd8b3027bdecb8673663b6198b6dddbd391354ae.txt",
+      "sha256": "ff3e3c3fcf51eedd4d9d123ebd8b3027bdecb8673663b6198b6dddbd391354ae",
+      "retrievedAt": "2026-10-21T15:43:27.134256+00:00"
+    }
+  }
+}

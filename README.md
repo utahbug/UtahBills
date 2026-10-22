@@ -95,7 +95,7 @@ See `AGENTS.md` for the persistent development policy.
 
 Main remains directly accessible for iPhone and PC testing, but `index.html` includes the static head directive `<meta name="robots" content="noindex, nofollow">`. Every application route uses this same HTML document (hash-based navigation), so the directive covers Bills, bill details, How it works, and About the data. Keep it in any new HTML pages added during development.
 
-Do not block crawling with robots.txt: crawlers need to retrieve the HTML to see noindex. Do not submit sitemaps during development. No domain-wide settings or other repositories are involved. Retain the Research Prototype notice.
+Do not block crawling with robots.txt: crawlers need to retrieve the HTML to see noindex. Do not submit sitemaps during development. No domain-wide settings or other repositories are involved. Retain source attribution, freshness and independent-review disclosures; Phase 4A removes the prototype banner and visible label.
 
 Public-release checklist: intentionally remove the robots noindex/nofollow meta tag from all application HTML, rebuild, deploy Main, and inspect the published HTML source. Revisit sitemap submission only when public release is approved. This directive discourages compliant search engines; it is not access control or an immediate removal guarantee for previously indexed content.
 
@@ -109,7 +109,7 @@ Public-release checklist: intentionally remove the robots noindex/nofollow meta 
 - At Batch 1, header navigation contained Bills only; reference links remain in the footer and in relevant bill content. No nonfunctional future sections were introduced.
 - `ROADMAP.md` separates implemented work from planned and deferred stages. These are priorities for later batches, not promised delivery dates.
 
-The reader is a rendering of a selected official XML version, not an independently verified current-law snapshot. Manual assistive-technology checks and physical iPhone/iPad checks remain required before claiming WCAG conformance. Main remains noindex/nofollow and a Research Prototype.
+The reader is a rendering of a selected official XML version, not an independently verified current-law snapshot. Manual assistive-technology checks and physical iPhone/iPad checks remain required before claiming WCAG conformance. Main remains noindex/nofollow; removal of the prototype label does not indicate independent factual certification.
 
 ## Batch 2A — Calendar and bill navigation
 
@@ -347,3 +347,9 @@ Advanced Search is collapsed initially and retains type/status/chamber/committee
 Implemented: Utah Legislation subtitle; wide-screen sticky header and reduced-motion-aware Back to top; aligned compact search, request Title/Status/Tracking ID sorts; locally remembered 25/50/100/200 result pages (50 mobile, 100 desktop); displayed-results copying with accessible confirmation and manual-copy fallback; historical labels; contextual request guidance; current/upcoming 2027 activity with collapsed source notes; calendar date/category/count hierarchy. Data snapshots and daily refresh remain unchanged.
 
 Official request/update dates are not established in the saved records, so those sorts are omitted. Calendar has no search field; its Info stays beside the heading. Physical iPhone performance and manual screen-reader validation remain pending. Next: independent factual/accessibility review and resolution of documented vote-record gaps before wider feature expansion.
+
+## Phase 4A — compact layout and source conflicts
+
+The shared prototype banner is removed; headings use consistent 16px main top padding and Main remains identified in the footer. About the Data retains snapshot, review and provenance disclosures. Static noindex/nofollow remains mandatory.
+
+The five historical tally discrepancies and the Walter abbreviation were investigated without changing production vote parsing or attribution. `VERIFICATION.md` records the findings; `data/phase4a-evidence.json` references original action/vote evidence and four newly preserved linked official minutes in `data/phase4a-raw/`. Existing `tests/foundation_data.py` now verifies supplemental hashes, named-group counts, conflict withholding and conservative identity behavior. `tests/phase4a.mjs` adds route geometry, text/zoom, keyboard and axe coverage to `npm test`.

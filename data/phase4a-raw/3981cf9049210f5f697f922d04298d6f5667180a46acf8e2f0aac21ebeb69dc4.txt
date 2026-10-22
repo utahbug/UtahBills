@@ -1,0 +1,995 @@
+<html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin-left: 1in; margin-right: 1in;">
+<table cellspacing="0" cellpadding="0" style="width:100%">
+<tr style="height:25px"></tr>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt;font-weight:bold;margin-top:40px">MINUTES OF THE</div>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt;font-weight:bold;margin-bottom:10px">HOUSE HEALTH AND HUMAN SERVICES STANDING COMMITTEE</div>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt">
+<b>Friday, 
+							January&nbsp;30,&nbsp;2026
+							&bull;
+							2:00 p.m.
+							&bull;
+							30 House Building</b>
+</div>
+<tr align="left">
+<td align="left"><b>Members Present:<br>
+</b>Rep. Katy Hall, Chair<br>Rep. Logan J. Monson, Vice Chair<br>Rep. Nelson T. Abbott<br>Rep. Cheryl K. Acton<br>Rep. Stewart E. Barlow<br>Rep. Bridger Bolinder<br>Rep. Kristen Chevrier<br>Rep. Jennifer Dailey-Provost<br>Rep. Steve Eliason<br>
+</td><td align="left">Rep. Jake Fitisemanu<br>Rep. Stephanie Gricius<br>Rep. Sandra Hollins<br>Rep. Raymond P. Ward<br>
+<br>
+<b>Members Absent:<br>
+</b>Rep. Tyler Clancy<br>
+<br>
+<b>Staff Present:<br>
+</b>Lisa Sorensen, Policy Analyst<br>Karen C. Allred, Committee Secretary<br>
+</td>
+</tr>
+<br>
+<tr>
+<td>
+<br>
+<div style="text-align:left;font-family:Times New Roman,serif;font-size:8.9pt">Note: A copy of related materials and an audio recording of the meeting can be found at www.le.utah.gov.</div>
+<br>
+</td>
+</tr>
+<br>
+<div style="text-align:center;font-family:Times New Roman,serif;font-size:11pt">
+<b>
+<table width="100%">
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Hall called the meeting to order at 02:07 PM.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Acton moved to approve the minutes of the January 27, 2026 meeting.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. B. Bolinder<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>1.H.B. 97 Medical Waste Amendments(Bolinder, B.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Bridger Bolinder presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Maryann Martindale, Chief Executive Officer, Utah Academy of Family Physicians, spoke in a favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Ward moved to replace HB0097 with HB0097S02.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. B. Bolinder<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Ward moved to pass HB0097S02 out favorably.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. B. Bolinder<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>2.HB0117 - Organ Donation Amendments</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Doug Owens presented the bill with the assistance of Mark Dixon, DonnerConnect.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chris Essltine, Deputy Director/General Counsel, Utah Medical Association, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Justice Shannon, Deputy Director, Utah Division of Wildlife Resources, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Kael Weston, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Ward moved to amend HB0117 with Amendment #1.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+<div style="text-align:center">Amendment  1<br>
+<br>
+</div>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">1
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 9 through 15
+									:&nbsp;
+									Line 9 through 15<br xmlns:xlink="http://www.w3.org/1999/xlink">9101112131415<br>
+<br>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">2
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 62 through 74
+									:&nbsp;
+									Line 62 through 74<br xmlns:xlink="http://www.w3.org/1999/xlink">62636465 666768697071727374<br>
+<br>
+<eol></eol>
+</td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. J. Dailey-Provost<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Monson assumed the Chair.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Ward moved to pass HB0117 out favorably.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. J. Dailey-Provost<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Hall resumed the Chair.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>3.H.B. 356 Drug Distribution Amendments(Monson, L.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Logan Monson presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Dave Gessell, Executive Vice President, Utah Hospital Association, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Katelin Lucariello, representing Pharmaceutical Research Manufactures of America (PHRMA), spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Primo Castro, Biotechnology Innovation Organization , Los Angeles, California, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Eliason moved to pass HB0356 out favorably.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. J. Dailey-Provost<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Fitisemanu moved to place HB0356 on the Consent Calendar.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. J. Dailey-Provost<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>4.1st Sub. H.B. 152 Public Education Immunization Requirement Repeal(Lee, T.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Vice Chair Monson assumed the chair.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Trevor Lee presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Jennifer Brinton, Pediatrician, spoke to the bill. </td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chris Estelstein, Utah Medical Association, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Leslie Zabriski, Mormon Women for Ethical Government, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Gayle Ruzika, Utah Eagle Forum, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Tate Holton, medical student, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Jen Brown, President, Utah Citizens for the Constitution, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Caitlyn Jasumback, Utah Public Health Association, Immunization Advocacy Coalition, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Cindy Whinham, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Bill Cosgrove, retired pediatrician, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Dolly, resident, spoke in favor of the bill. </td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Max, epidemiologist, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Krystal Cordingley, mother, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Erin Lore, physician in training, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sierra Debenham, emergency medicine physician , spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Angela Page, doctor of nursing practice, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rachel Hawks, resident, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Katie Olsen, nurse, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Maryann Christensen resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Neil Schultz, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Gricius moved to replace HB0152S01 with HB0152S02.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. B. Bolinder<br>Rep. K. Chevrier<br>Rep. J. Dailey-Provost<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Clancy<br>Rep. K. Hall<br>Rep. S. Hollins<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Gricius moved to pass HB0152S02 out favorably.The motion
+									failed
+									with a vote of
+									6-6-2.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											6</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											6</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											2</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. S. Barlow<br>Rep. B. Bolinder<br>Rep. K. Chevrier<br>Rep. S. Gricius<br>Rep. L. Monson<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. C. Acton<br>Rep. J. Dailey-Provost<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Hollins<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. T. Clancy<br>Rep. K. Hall<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>5.1st Sub. H.B. 179 Milk Amendments(Chevrier, K.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Kristen Chevrier presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">HB179 1st Sub Raw Milk</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Kelly Pearson, Commissioner of Agriculture, Utah Department of Agriculture and Food, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Amber Brown, Deputy Commissioner, Utah Department of Agriculture and Food, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Spencer Gibbons, Chief Executive Officer, Utah Farm Bureau, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Paul Opfor, Owner, Springville Dairy, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Tamara Watson, Consumer Advocate, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Kirk Benge. Health Officer, Tri County Health Department in Vernal, representing Association of Local Health Deparmtnets, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Aurora Ninow, resident, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Russel Kohler, dairy farmer and member, Utah Farm Bureau's Board of Directors, spoke in opposition to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Symbria Patterson, Cofounder, Red Acres Center, spoke to the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sara Patterson, Red Acre Farms, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Eliason moved to amend HB0179S01 with Amendment #1.The motion
+									passed
+									with a vote of
+									11-0-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+<div style="text-align:center">Amendment  1<br>
+<br>
+</div>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">1
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 109 through 115
+									:&nbsp;
+									Line 109 through 115<br xmlns:xlink="http://www.w3.org/1999/xlink">109110111112113114115<br>
+<br>
+<fo:inline xmlns:fo="http://www.w3.org/1999/XSL/Format" space-start="5mm">2
+										.&nbsp; &nbsp; &nbsp; &nbsp;
+									</fo:inline>Line 144
+									:&nbsp;
+									Line 144<br xmlns:xlink="http://www.w3.org/1999/xlink">144145146 <br>
+<br>
+<eol></eol>
+</td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. S. Hollins<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Eliason moved to pass HB0179S01 out favorably.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>SUBSTITUTE MOTION:</b>Rep. Ward moved to hold HB0179S01.The substitute motion
+									failed
+									with a vote of
+									2-9-3.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											2</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											9</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. J. Fitisemanu<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. S. Hollins<br>Rep. L. Monson<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Eliason's motion to pass HB0179S01 out favorablypassed
+								with a vote
+								11-0-3.
+							</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											11</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											3</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Gricius<br>Rep. K. Hall<br>Rep. S. Hollins<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>6.H.B. 248 Family Law Modifications(Ward, R.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Rep. Raymond Ward presented the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">HB 248 Family Law Modifications</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Roshelle Pulsipher, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Emily Martin Prisbrey, Utah Single Mother's Coalition, spoke in favor of the bill</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Shannon Durr Brown, resident, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Gina Cornia, Executive Director, Utah Against Hunger, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Fitisemanu moved to replace HB0248 with HB0248S01.The motion
+									passed
+									with a vote of
+									9-0-5.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											9</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											5</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Hollins<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Gricius<br>Rep. K. Hall<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Fitisemanu moved to pass HB0248S01 out favorably.The motion
+									passed
+									with a vote of
+									9-0-5.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											9</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											5</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Hollins<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Gricius<br>Rep. K. Hall<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>7.S.B. 14 Utah Commission on Aging Sunset Amendments(Kwan, K.)</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Sen. Karen Kwan presented the bill with the assistance of Rob Ence, Executive Director, Utah Commission On Aging.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Jeremy Cunningham, Chair, Division of Aging and Adult Services Board, Utah Health and Human Services, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Joel Macey, Chair, Utah Commission on Aging, and Chief Executive Officer, Community Nursing Services, spoke in favor of the bill.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Ward moved to pass SB0014 out favorably.The motion
+									passed
+									with a vote of
+									9-0-5.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											9</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											5</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Hollins<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Gricius<br>Rep. K. Hall<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top"><b>MOTION:</b>Rep. Ward moved to adjourn.The motion
+									passed
+									with a vote of
+									9-0-5.
+								</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+<table width="2200px" align="left">
+<tr>
+<td style="font-weight: bold;text-align:left" width="200px"><u>Yeas -
+											9</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Nays-
+											0</u></td><td style="font-weight: bold;text-align:left" width="200px"><u>Abs-
+											5</u></td><td width="1600px"></td>
+</tr>
+<TR>
+<td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. N. Abbott<br>Rep. C. Acton<br>Rep. S. Barlow<br>Rep. K. Chevrier<br>Rep. S. Eliason<br>Rep. J. Fitisemanu<br>Rep. S. Hollins<br>Rep. L. Monson<br>Rep. R. Ward<br>
+</td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px"></td><td style="text-align:left;vertical-align:top;padding:0" rowspan="2" width="200px">Rep. B. Bolinder<br>Rep. T. Clancy<br>Rep. J. Dailey-Provost<br>Rep. S. Gricius<br>Rep. K. Hall<br>
+</td><td width="1600px"></td>
+</TR>
+</table>
+</table>
+<table>
+<tr>
+<td style="vertical-align:top; padding-left: 0cm" valign="top">Chair Monson adjourned the meeting at 04:41 PM.</td>
+</tr>
+<tr>
+<td style="vertical-align:top"></td>
+</tr>
+</table>
+</table>
+</b>
+</div>
+<div style="text-align:left;font-family:Times New Roman,serif;font-size:9pt"></div>
+</table>
+</body>
+</html>

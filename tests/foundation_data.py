@@ -47,4 +47,35 @@ class Foundation(unittest.TestCase):
     for section in v['sectionAffectedList']:self.assertTrue(section.get('secNo'));self.assertTrue(section.get('uid'))
     for doc in v['billDocs']:
      u=urlparse(urljoin('https://le.utah.gov',doc['url']));self.assertIn(u.scheme,['http','https']);self.assertTrue(u.hostname.endswith(('.utah.gov','.utleg.gov')));self.assertTrue(doc['fileName']);self.assertTrue(doc['fileType'])
+ def test_phase4a_preserved_conflicts_and_minutes(self):
+  from html.parser import HTMLParser
+  # Independent cell extraction verifies counts without altering production tallies.
+  class Names(HTMLParser):
+   def __init__(self):super().__init__();self.groups=[];self.active=False;self.parts=[]
+   def flush(self):
+    name=' '.join(''.join(self.parts).split());self.parts=[]
+    if name:self.groups[-1].append(name)
+   def handle_starttag(self,tag,attrs):
+    if tag=='td' and dict(attrs).get('valign')=='top':self.active=True;self.groups.append([])
+    if tag=='br' and self.active:self.flush()
+   def handle_endtag(self,tag):
+    if tag=='td' and self.active:self.flush();self.active=False
+   def handle_data(self,data):
+    if self.active:self.parts.append(data)
+  evidence=json.loads((ROOT/'data/phase4a-evidence.json').read_text(encoding='utf-8'))
+  self.assertEqual(len(evidence['sources']),4);self.assertEqual(len(evidence['conflicts']),5)
+  for source in evidence['sources']:self.assertIn(b'MINUTES OF THE',read(source));self.assertTrue(source['retrievedAt'])
+  for finding in evidence['conflicts']:
+   item=self.archive['votes'][finding['id']];self.assertEqual(item['action'],finding['action']);self.assertEqual(item['source'],finding['voteSource']);self.assertEqual(item['actionSource'],finding['actionSource']);read(finding['actionSource']);read(finding['minutesSource'])
+   parser=Names();parser.feed(read(finding['voteSource']).decode('utf-8-sig'))
+   self.assertEqual(parser.groups,list(finding['recordedNames'].values()));self.assertEqual(list(map(len,parser.groups)),finding['rollCallTally'])
+   self.assertNotEqual(finding['rollCallTally'],list(map(int,item['action']['voteStr'].split('-'))))
+   vote,error=model.project_vote(item,self.people);self.assertIn('Action and roll-call tally disagree',error['reason']);self.assertEqual(vote['individuals'],[])
+ def test_phase4a_identity_not_guessed(self):
+  from acquire_votes import identity
+  self.assertIsNone(identity('Walter, N.','H',74,self.people))
+  self.assertIsNone(identity('Walter, N.','H',None,self.people))
+  evidence=json.loads((ROOT/'data/phase4a-evidence.json').read_text(encoding='utf-8'))
+  self.assertIn(b'Walter, N.',read(evidence['identityFinding']['exampleSource']))
+  self.assertEqual(self.report['unresolvedVoterNames'],['Walter, N.'])
 if __name__=='__main__':unittest.main()
