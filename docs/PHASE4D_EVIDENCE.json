@@ -1,0 +1,136 @@
+{
+  "sources": {
+    "requests.json": {
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "path": "docs/phase4d-sources/requests.json",
+      "sha256": "fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a",
+      "retrievedAt": "2026-10-22T23:05:17.783146+00:00"
+    },
+    "statuses.txt": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "path": "docs/phase4d-sources/statuses.txt",
+      "sha256": "539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037",
+      "retrievedAt": "2026-10-22T23:05:17.956200+00:00"
+    },
+    "introduced.json": {
+      "url": "https://le.utah.gov/data/2027GS/billlist.json",
+      "path": "docs/phase4d-sources/introduced.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "retrievedAt": "2026-10-22T23:05:17.989689+00:00"
+    }
+  },
+  "requests": 268,
+  "statuses": 268,
+  "introduced": 0,
+  "missingStatusIDs": [],
+  "extraStatusIDs": [],
+  "targetRequest": [
+    {
+      "trackingID": "MDIQORVFRP",
+      "shortTitle": "Aquaculture Amendments",
+      "sponsor": "WILCORD"
+    }
+  ],
+  "targetStatus": {
+    "trackingID": "MDIQORVFRP",
+    "shortTitle": "Aquaculture Amendments",
+    "officialStatus": "In Process",
+    "officialNumber": "Not Numbered",
+    "anchor": "trkMDIQORVFRP"
+  },
+  "reconciliation": "passed",
+  "baselineCommit": "4673e250e3905bda04a3558e429c54afb9d80e15",
+  "statusComparisonToPhase4C": {
+    "added": [
+      "MDIQORVFRP"
+    ],
+    "removed": [],
+    "changedCommonRows": [],
+    "interpretation": "Upstream status row added; existing exact-ID/title validation now passes without parser changes."
+  },
+  "scheduledRunsAtInvestigation": [
+    {
+      "id": 39820847031,
+      "event": "schedule",
+      "conclusion": "failure",
+      "note": "Before Phase 4C Calendar test correction; no subsequent scheduled run yet."
+    }
+  ],
+  "guardedManualRefresh": {
+    "id": 39869478421,
+    "event": "workflow_dispatch",
+    "refresh_data": true,
+    "catalog": {
+      "attemptedAt": "2026-10-22T23:05:55.957737+00:00",
+      "status": "success",
+      "introduced2027": 0,
+      "publicRequests": 268,
+      "requestStatusesVerified": 268,
+      "linkedRequests": 0,
+      "finishedAt": "2026-10-22T23:05:57.643164+00:00"
+    },
+    "calendarLog": "Calendar: 90 official events; 8 complete months checked",
+    "archive": {
+      "attemptedAt": "2026-10-22T23:05:58.092360+00:00",
+      "status": "success",
+      "expected": 5672,
+      "retrieved": 5672,
+      "unavailable": []
+    },
+    "conclusion": "success",
+    "snapshotCommit": "d4fa8cc22fb57eaec991423372d6d1fd95150a7a",
+    "publishedFilesVerified": [
+      {
+        "path": "index.html",
+        "sha256": "58569ff7c688b29ba09b43a889a073e89daa9f8efc01442bb997a603f4778c50",
+        "comparison": "committed Git bytes (Linux checkout)"
+      },
+      {
+        "path": "styles.css",
+        "sha256": "9223af63ae9a2eed7f6233cd945780563deeb2378cfbaacc97b5bd5074482645",
+        "comparison": "committed Git bytes (Linux checkout)"
+      },
+      {
+        "path": "data/catalog.json",
+        "sha256": "641dd5835dec7a5bbe4f3028714ce219a29d2983058add98b1889646aa8de78d",
+        "comparison": "committed Git bytes (Linux checkout)"
+      },
+      {
+        "path": "data/calendar.json",
+        "sha256": "74b032bd993bb99c4e8ceb98a27eb5cef100049685c8f01ee2e9ebeaff0291b9",
+        "comparison": "committed Git bytes (Linux checkout)"
+      },
+      {
+        "path": "data/archive.json",
+        "sha256": "be194af147550fdddfabb0c4c065fdfa87bde355f6fada02514ab8eaf5558d5d",
+        "comparison": "committed Git bytes (Linux checkout)"
+      },
+      {
+        "path": "app.js",
+        "sha256": "315151cb1888dac0c01f8df64ce750650b7eef0610dfe1aae57fa1da592483b5",
+        "comparison": "generated build bytes with Linux line endings"
+      },
+      {
+        "path": "data/catalog-ui.json",
+        "sha256": "98fda258df6f05d62e4bc14f5876258b1c89c8486b2e5ceeb386bd505dbb17db",
+        "comparison": "generated build bytes with Linux line endings"
+      },
+      {
+        "path": "data/calendar-ui.json",
+        "sha256": "67956a26c8f087958be8b756b9c9809b6dcfcd2d1bad0f19f1fcf3cabb5516c0",
+        "comparison": "generated build bytes with Linux line endings"
+      },
+      {
+        "path": "data/verification-report.json",
+        "sha256": "e20a083f0784417b6bafabd478d35143db771a8a558d6dea029dc3d89027979a",
+        "comparison": "generated build bytes with Linux line endings"
+      }
+    ]
+  },
+  "publishedCounts": {
+    "requests": 268,
+    "calendarEvents": 90,
+    "unresolvedVoteRecords": 5
+  },
+  "verificationNote": "Generated report matches after CRLF-to-LF normalization. The committed full report additionally has a final newline; parsed JSON matches exactly. No value or record differences."
+}

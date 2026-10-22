@@ -11,3 +11,6 @@ data/phase4a-raw/* -text -whitespace
 
 # Preserve independent audit response bytes and evidence hashes.
 docs/audit-sources/* -text -whitespace
+
+# Preserve Phase 4D official investigation bytes.
+docs/phase4d-sources/* -text -whitespace
