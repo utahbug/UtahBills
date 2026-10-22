@@ -2,44 +2,38 @@
 
 Updated: October 22, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
 
+Phase 4D maintenance: request freshness and transition-test readiness are complete; the next actual scheduled run remains unverified. See [Phase 4D verification](PHASE4D_VERIFICATION.md) and the completed task ledger.
+
 ## Baseline and evidence
 
 Before this documentation batch, fetched `main` and `origin/main` both pointed to [af26e785e5d9f9acca5ee7cb4f2e00bb1b1c9759](https://github.com/utahbug/UtahBills/commit/af26e785e5d9f9acca5ee7cb4f2e00bb1b1c9759); working tree clean, zero commits ahead/behind. Latest push deployment [39860908975](https://github.com/utahbug/UtahBills/actions/runs/39860908975) succeeded. No scheduled data commit had advanced that handoff. GitHub issue inventory (all states) was empty. `docs/CODEX_HANDOFF.md` was absent.
 
-Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../README.md), [VERIFICATION.md](../VERIFICATION.md), [QUALITY_AUDIT.md](QUALITY_AUDIT.md), the workflow and relevant existing implementation/tests. Source counts below are dated audit/snapshot evidence, not a new live-source acquisition. This batch changes documentation only; it does not perform a refresh or start any task below.
+Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../README.md), [VERIFICATION.md](../VERIFICATION.md), [QUALITY_AUDIT.md](QUALITY_AUDIT.md), the workflow and relevant existing implementation/tests. Source counts below are dated audit/snapshot evidence, not a new live-source acquisition. The original backlog-establishment batch changed documentation only. The separately authorized Phase 4D batch subsequently completed DATA-001 and SESSION-001 and manually verified the guarded refresh path; its results are recorded below.
 
 “Backlog approval” references the owner's **UtahBills — Create and Maintain Authoritative Task Backlog** request, received October 22, 2026, especially §§4 and 8. It explicitly adds Find My Legislators and the remaining Calendar refinements. Existing roadmap **Planned** items retain approved direction; audit opportunities remain Proposed.
 
 ## Status and priority
 
-Active inventory: **40 tasks**. Completed batches below are excluded from these counts.
+Active inventory: **38 tasks**; **2 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
 | In progress | 0 |
-| Approved/Not started | 29 |
+| Approved/Not started | 28 |
 | Proposed | 2 |
-| Blocked | 6 |
+| Blocked | 5 |
 | Deferred | 3 |
 
 | Priority | Count |
 | --- | ---: |
 | Critical | 0 |
-| High | 3 |
-| Medium | 31 |
+| High | 2 |
+| Medium | 30 |
 | Low | 6 |
 
 Priority is a planning order, not a new defect-severity finding. Blocked tasks remain approved work whose completion requires the stated evidence/dependency; bounded investigation may continue when separately scoped. No critical defect was established by Phase 4C.
 
 ## 1. Legislative data integrity and accuracy
-
-### DATA-001
-
-**Restore verified 2027 request freshness** — **High** · **Blocked**
-
-- **Dependencies:** Official request/status sources must reconcile; TEST-001 validates subsequent publication.
-- **Source:** [Audit H2](QUALITY_AUDIT.md#h2--new-official-requests-are-not-yet-safely-publishable--open-upstreamfreshness); backlog approval §4.
-- **Acceptance:** Recheck and preserve both official responses; reconcile every exact tracking ID and normalized title; pass existing safeguards and publish only the validated snapshot with truthful dates. Audit observed 268 requests versus 267 status rows, missing MDIQORVFRP; Main retains 255. These are October 22 observations, not fixed expected counts. Never infer the missing status, omit the request, or bypass fail-closed behavior.
 
 ### DATA-002
 
@@ -66,14 +60,6 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Acceptance:** Define and report the independently verified coverage boundary, preserve newly acquired originals, reproduce classifications/tallies, and disclose missing or conflicting records without claiming every vote is recorded.
 
 ## 2. 2027 legislative-session readiness
-
-### SESSION-001
-
-**Test the public-request to introduced-bill transition** — **Medium** · **Approved/Not started**
-
-- **Dependencies:** Isolated valid future-session fixtures; complete before the first introduced 2027 records arrive.
-- **Source:** [Audit M4](QUALITY_AUDIT.md#m4--some-ui-tests-still-assume-a-request-heavy-default-session--open-future-transition); [Roadmap Phase 4C](../ROADMAP.md#phase-4c--independent-technical-audit).
-- **Acceptance:** Remove request-only and fixed 50/100/200-row assumptions from default-session scenarios. Exercise zero, one and multiple introduced records across usability/toolbar suites, exact-ID request conversion, preserved request history and 2026 session access. Keep large-page preference tests isolated from changing live counts; do not hold back valid measures.
 
 ### SESSION-002
 
@@ -287,6 +273,8 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Source:** [Audit H1](QUALITY_AUDIT.md#h1--calendar-regression-blocked-scheduled-publication--corrected); [workflow](../.github/workflows/pages.yml).
 - **Acceptance:** Record run ID, Calendar acquisition outcome, attempt reports, source provenance, validation, snapshot commit and deployed freshness. Confirm the Calendar refresh passes the corrected regression and publishes verified updates. Record catalog/archive outcomes separately even if retained data deploys. A successful push build is not this evidence; leave any failed acquisition open.
 
+**Phase 4D progress:** Manual guarded run [39869478421](https://github.com/utahbug/UtahBills/actions/runs/39869478421) passed Calendar/Catalog/archive acquisition, reconciliation, tests, snapshot commit and deployment. No subsequent cron-triggered run existed at verification; this task remains open for that distinct evidence. DATA-001 is resolved.
+
 ### TEST-002
 
 **Review tests when official historical records change** — **Medium** · **Approved/Not started**
@@ -371,6 +359,30 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Source:** [Roadmap Stage 3](../ROADMAP.md#stage-3--calendar-and-activity--partly-implemented); [Batch 2A verification](../VERIFICATION.md).
 - **Acceptance:** Do not reopen stable tap/focus behavior by default. Any reconsideration must demonstrate unambiguous selection, keyboard/touch accessibility and reduced-motion behavior before acceptance.
 
+## Completed tasks
+
+Stable IDs are retained here and excluded from active counts.
+
+### DATA-001
+
+**Restore verified 2027 request freshness** — **High** · **Completed — October 22, 2026**
+
+- **Dependencies at approval:** Official request/status sources must reconcile; TEST-001 validates subsequent publication.
+- **Source:** [Audit H2](QUALITY_AUDIT.md#h2--new-official-requests-are-not-yet-safely-publishable--open-upstreamfreshness); backlog approval §4.
+- **Acceptance:** Recheck and preserve both official responses; reconcile every exact tracking ID and normalized title; pass existing safeguards and publish only the validated snapshot with truthful dates. Audit observed 268 requests versus 267 status rows, missing MDIQORVFRP; Main retains 255. These are October 22 observations, not fixed expected counts. Never infer the missing status, omit the request, or bypass fail-closed behavior.
+
+- **Completion evidence:** [Commit d4fa8cc](https://github.com/utahbug/UtahBills/commit/d4fa8cc22fb57eaec991423372d6d1fd95150a7a). Official 268/268 exact-ID/title reconciliation, guarded refresh 39869478421, integrity/browser checks, snapshot commit and verified Main publication. TEST-001 remains open only for a later cron-triggered observation. See [Phase 4D verification](PHASE4D_VERIFICATION.md).
+
+### SESSION-001
+
+**Test the public-request to introduced-bill transition** — **Medium** · **Completed — October 22, 2026**
+
+- **Dependencies at approval:** Isolated valid future-session fixtures; complete before the first introduced 2027 records arrive.
+- **Source:** [Audit M4](QUALITY_AUDIT.md#m4--some-ui-tests-still-assume-a-request-heavy-default-session--open-future-transition); [Roadmap Phase 4C](../ROADMAP.md#phase-4c--independent-technical-audit).
+- **Acceptance:** Remove request-only and fixed 50/100/200-row assumptions from default-session scenarios. Exercise zero, one and multiple introduced records across usability/toolbar suites, exact-ID request conversion, preserved request history and 2026 session access. Keep large-page preference tests isolated from changing live counts; do not hold back valid measures.
+
+- **Completion evidence:** [Commit abfbd5c](https://github.com/utahbug/UtahBills/commit/abfbd5caed21ea189ff204f2105024dbe1b3ea73). All 18 local browser suites passed, including the 0/1/3/240 introduced-record matrix and 25/50/100/200 preferences; existing Python update/reconciliation tests passed. The matrix also passed after rebuilding the refreshed official snapshot. See [Phase 4D verification](PHASE4D_VERIFICATION.md).
+
 ## Completed development batches and preserved decisions
 
 These batches are completed; their unresolved findings remain in the active inventory. Historical batch IDs below are completion records, not additional active tasks.
@@ -398,18 +410,18 @@ Blue icons, neutral compact design, static `noindex, nofollow`, provenance, hist
 ## Documentation reconciliation
 
 - **Older README generalizations:** “Verification and remaining work” still lists individual voting records and live 2027 ingestion as future milestones; “Environment policy” says addresses are planned and deployment unconfirmed. Later Phase 2/Batch 2C records, the actual workflow and the verified successful Main deployment establish implemented referenced-vote coverage, guarded scheduled ingestion and deployed Main. This does not establish live data, complete vote coverage, a verified 2027 roster or successful subsequent scheduled acquisition. This backlog uses that narrower verified state; no completed feature is reopened.
-- **Dated snapshots and controls:** earlier README/VERIFICATION sections mention 253 requests, 25-row defaults, older Calendar arrangements and an unconnected 2027 state. Later records document the 255 saved request snapshot, shared page preferences and Phase 4B controls. These historical observations are not permanent current counts or active feature requests.
+- **Dated snapshots and controls:** earlier README/VERIFICATION sections mention 253 requests, 25-row defaults, older Calendar arrangements and an unconnected 2027 state. Phase 4C documented the then-saved 255-request snapshot; Phase 4D publishes 268 verified requests. Later records also establish shared page preferences and Phase 4B controls. These historical observations are not permanent current counts or active feature requests.
 - **Banner retention:** the early roadmap implemented list mentions the Research Prototype notice. The explicit Phase 4A section and current AGENTS policy supersede it. Keep noindex and substantive disclosures, not the removed banner.
 - **Approval not previously itemized:** address lookup and remaining deadline typography/label refinements were not explicit strategic roadmap items. The current owner request approves their direction; [LEG-001](#leg-001) and [CAL-001](#cal-001) preserve that decision. Existing Census district maps do not implement address lookup, and the completed Calendar grid does not complete these refinements.
-- **Batch completion versus unresolved findings:** Phase 4C H1/M1 code corrections are complete. H2/H3, identity/roster gaps, M3 human review and M4 transition tests remain open under their task IDs. Phase completion and deployment are not evidence of factual completeness or accessibility certification.
+- **Batch completion versus unresolved findings:** Phase 4C H1/M1 code corrections are complete. Phase 4D subsequently resolves H2 under DATA-001 and M4 under SESSION-001. H3, identity/roster gaps, M3 human review and the next actual scheduled-run observation remain open under their task IDs. Phase completion and deployment are not evidence of factual completeness or accessibility certification.
 
 No roadmap item was deleted or silently reclassified. The historical source documents remain available for context; this reconciliation records why the active inventory differs from their older statements.
 
 ## Next Recommended Batch
 
-**Recommended, not started: source freshness and scheduled-refresh verification** — scope [DATA-001](#data-001) and [TEST-001](#test-001) together. Recheck official request/status consistency, inspect the first subsequent scheduled Calendar acquisition, retain reports and verify any tested snapshot through publication. If upstream disagreement persists, retain the prior request snapshot and leave DATA-001 blocked while independently reporting Calendar results.
+**Recommended, not started:** verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
 
-Before introduced 2027 measures arrive, separately scope [SESSION-001](#session-001). Continue to prioritize authoritative vote-conflict evidence and human accessibility/editorial review; do not expand features automatically from this recommendation.
+Separately scope authoritative evidence for [DATA-002](#data-002) and [DATA-003](#data-003), and arrange [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
 
 ## Maintenance rules
 

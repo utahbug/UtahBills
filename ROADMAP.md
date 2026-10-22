@@ -114,3 +114,10 @@ Official request/update dates are not established in the saved records, so those
 - See `docs/QUALITY_AUDIT.md` for evidence and limits. All five vote conflicts, 1,046 unresolved Walter entries, 2027 roster verification, independent human factual review, physical-device and manual screen-reader checks remain unfinished.
 
 - **Before first introduced 2027 measures:** remove request-only default/count assumptions from usability scenarios and exercise the existing automatic session transition across suites (audit M4). Current snapshots pass; a small initial introduced index can legitimately invalidate fixed 50/100/200-row assumptions.
+
+## Phase 4D — refresh recovery and 2027 test readiness
+
+- **Completed DATA-001:** upstream status listing added MDIQORVFRP; exact-ID/title reconciliation now passes for all 268 requests. Guarded manual run 39869478421 validated, committed and deployed 268 requests and 90 Calendar events. No reconciliation rule changed.
+- **Completed SESSION-001:** isolated 0/1/3/240 introduced-record browser fixtures cover defaults, request conversion, historical access, shared toolbar and all page-size choices. Fixed large-request usability scenarios no longer depend on changing production counts. Runtime selection behavior is unchanged.
+- **Still open TEST-001:** the shared scheduled path recovered under manual dispatch; no later actual scheduled trigger was available to verify. Five tally conflicts, 1,046 unresolved identities, the 2027 roster and human review remain open.
+- See [Phase 4D verification](docs/PHASE4D_VERIFICATION.md) and the [task backlog](docs/TASK_BACKLOG.md). Earlier Phase 4C counts/findings remain dated evidence, not current freshness claims.

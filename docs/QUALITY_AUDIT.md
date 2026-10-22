@@ -4,6 +4,8 @@ Audit date: October 22, 2026 (UTC). Baseline: `1ff2b05dceeab42e1738bbf0a5fa5a41f
 
 This is an independent technical recomputation, source comparison and adversarial test pass by the coding agent, **not independent human editorial approval, legal analysis, or accessibility certification**. No redesign, new environment, production source refresh, vote reinterpretation or historical identity substitution was performed. Review remains unconfigured.
 
+Follow-up: [Phase 4D](PHASE4D_VERIFICATION.md) resolves H2 through an upstream status-row correction and guarded publication, and implements the M4 transition-test readiness work. A manual guarded refresh succeeded; the next actual scheduled trigger and other unresolved findings remain open. The audit observations below retain their original date and evidence.
+
 ## Outcome and priorities
 
 No new critical defect was established within the audited scope. Two narrow defects were corrected: a date-dependent browser test that blocked scheduled publication, and an incomplete historical-listing coverage condition. Current public-source freshness remains an open high-priority issue: newer request/status sources disagree, and the last scheduled publication failed. A successful code-push deployment must not be mistaken for a successful scheduled acquisition.

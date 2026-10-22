@@ -1,6 +1,6 @@
 # UtahBug — UtahBills
 
-Independent, nonpartisan legislative-information prototype. Application: **UtahBug**. Repository: **UtahBills**. Intended permanent URL: **https://utahbug.github.io/UtahBills/**. Initial live-session target: **2027 General Session**. Current prototype: 1,016 indexed 2026 measures, 255 public 2027 requests in the saved October 21 snapshot, a 104-entry 2026 legislator directory, and an official calendar. Four analyzed examples retain nine text versions and comparisons. Saved official records; not live.
+Independent, nonpartisan legislative-information prototype. Application: **UtahBug**. Repository: **UtahBills**. Intended permanent URL: **https://utahbug.github.io/UtahBills/**. Initial live-session target: **2027 General Session**. Current prototype: 1,016 indexed 2026 measures, 268 public 2027 requests in the saved October 22 snapshot, a 104-entry 2026 legislator directory, and an official calendar. Four analyzed examples retain nine text versions and comparisons. Saved official records; not live.
 
 ## Run
 
@@ -365,3 +365,7 @@ Calendar uses a native table with weekday column headers and native date buttons
 ## Phase 4C — independent technical audit
 
 See [docs/QUALITY_AUDIT.md](docs/QUALITY_AUDIT.md) for source comparisons, categorized findings, corrected refresh-test/completeness-report gaps, performance measurements, and outstanding human/device review. This audit does not replace the guarded published snapshots with newer, inconsistent official feeds.
+
+## Phase 4D — refresh recovery and session readiness
+
+See [Phase 4D verification](docs/PHASE4D_VERIFICATION.md) for the corrected official 268-request/status join, guarded publication of 90 Calendar events, and isolated introduced-session regression matrix. The full browser command now contains 18 suites. A later actual scheduled run, 2027 roster verification, historical vote/identity gaps and human review remain open in the [task backlog](docs/TASK_BACKLOG.md).
