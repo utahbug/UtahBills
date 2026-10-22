@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "checkedAt": "2026-10-21T17:16:15.776898+00:00",
+  "checkedAt": "2026-10-22T23:05:57.188925+00:00",
   "sources": {
     "index2026": {
       "url": "https://le.utah.gov/data/2026GS/billlist.json",
@@ -12,13 +12,13 @@
       "url": "https://le.utah.gov/data/2027GS/billlist.json",
       "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
       "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "retrievedAt": "2026-10-21T17:16:14.577051+00:00"
+      "retrievedAt": "2026-10-22T23:05:56.303221+00:00"
     },
     "requests2027": {
       "url": "https://le.utah.gov/data/2027GS/filelist.json",
-      "path": "data/catalog-raw/d9a335121b60e3501af2ac374bc6d6e2c4cf671284895bedb63acb065436b882.json",
-      "sha256": "d9a335121b60e3501af2ac374bc6d6e2c4cf671284895bedb63acb065436b882",
-      "retrievedAt": "2026-10-21T17:16:15.052424+00:00"
+      "path": "data/catalog-raw/fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a.json",
+      "sha256": "fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a",
+      "retrievedAt": "2026-10-22T23:05:56.647422+00:00"
     },
     "roster2026": {
       "url": "https://le.utah.gov/asp/roster/roster.asp?year=2026",
@@ -46,9 +46,9 @@
     },
     "requestStatuses2027": {
       "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
-      "path": "data/catalog-raw/be7f72aafad44bb8534aba8d221eb89a0c82f27870c8b0ebcc571aef6cfab44c.txt",
-      "sha256": "be7f72aafad44bb8534aba8d221eb89a0c82f27870c8b0ebcc571aef6cfab44c",
-      "retrievedAt": "2026-10-21T17:16:15.752534+00:00"
+      "path": "data/catalog-raw/539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037.txt",
+      "sha256": "539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037",
+      "retrievedAt": "2026-10-22T23:05:57.164217+00:00"
     }
   },
   "records": {
@@ -7177,6 +7177,12 @@
       "path": "data/catalog-raw/d9a335121b60e3501af2ac374bc6d6e2c4cf671284895bedb63acb065436b882.json",
       "sha256": "d9a335121b60e3501af2ac374bc6d6e2c4cf671284895bedb63acb065436b882",
       "retrievedAt": "2026-10-21T17:16:15.052424+00:00"
+    },
+    {
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "path": "data/catalog-raw/fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a.json",
+      "sha256": "fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a",
+      "retrievedAt": "2026-10-22T23:05:56.647422+00:00"
     }
   ],
   "measureHistory": {},
@@ -7198,6 +7204,12 @@
       "path": "data/catalog-raw/be7f72aafad44bb8534aba8d221eb89a0c82f27870c8b0ebcc571aef6cfab44c.txt",
       "sha256": "be7f72aafad44bb8534aba8d221eb89a0c82f27870c8b0ebcc571aef6cfab44c",
       "retrievedAt": "2026-10-21T17:16:15.752534+00:00"
+    },
+    {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "path": "data/catalog-raw/539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037.txt",
+      "sha256": "539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037",
+      "retrievedAt": "2026-10-22T23:05:57.164217+00:00"
     }
   ]
 }
