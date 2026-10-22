@@ -150,19 +150,19 @@ footer{padding-bottom:80px}
 .calendar-day .day-count{font-size:min(.72rem,36cqi);min-width:0}
 
 /* Shared compact results toolbar: summary left, coordinated controls right. */
-.results-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;justify-content:normal;gap:8px 16px;margin:10px 0;font-size:13px}
-.result-summary{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;min-width:0}.result-summary p{margin:0}
-.result-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px;min-width:0;max-width:100%}
-.result-controls label{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;font-size:inherit;font-weight:400;min-width:0}
-.result-controls select{width:auto;max-width:100%;min-height:44px;margin:0;padding:6px;border-color:#8295a2;font-size:inherit}
-.copy-control{display:flex;align-items:center;gap:5px;max-width:100%;min-width:0}
-.copy-control:has(.copy-results[hidden]){display:none}
-.copy-control .copy-results{width:44px;height:44px;min-width:44px;padding:10px;justify-content:center;border-color:#8295a2;border-radius:5px}
-.copy-control .copy-status{font-size:inherit;overflow-wrap:anywhere}.results-toolbar>.copy-fallback{grid-column:1/-1}
-.agenda-heading.results-toolbar .result-summary h2{flex:auto;margin:8px 0}
-@media(max-width:900px){.results-toolbar{grid-template-columns:minmax(0,1fr)}.result-controls{justify-content:flex-start}}
-@media(max-width:600px){.result-controls{align-items:end}.result-controls label{display:grid;gap:2px}.copy-control{align-self:end}}
-/* Match toolbar controls at normal and enlarged text sizes. */
-.result-controls select,.copy-control .copy-results{height:max(44px,calc(1.5em + 14px));min-height:44px;line-height:1.5;font-size:inherit;border:1px solid #8295a2;border-radius:5px}
+/* Shared results layout: Copy always occupies the upper-right cell. */
+.results-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;justify-content:normal;gap:4px 12px;margin:8px 0;font-size:13px}
+.result-summary{grid-column:1;grid-row:1;display:flex;flex-wrap:wrap;align-items:center;gap:2px 10px;min-width:0;overflow-wrap:anywhere}.result-summary p{margin:0}
+.result-controls{grid-column:2;grid-row:1;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;min-width:0;max-width:100%}.result-controls:empty{display:none}
+.result-controls label{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;font-size:inherit;font-weight:400;min-width:0;max-width:100%}
+.result-controls select{width:auto;max-width:100%;margin:0;padding:4px 20px 4px 6px;background-color:transparent}
+.result-controls select,.copy-control .copy-results{height:max(44px,calc(1.5em + 10px));min-height:44px;line-height:1.5;font-size:inherit;border:1px solid #b3c1ca;border-radius:4px}
+.copy-control{grid-column:3;grid-row:1;align-self:start;position:relative;display:flex;align-items:center;min-width:44px}.copy-control:has(.copy-results[hidden]){display:none}
+.copy-control .copy-results{width:44px;min-width:44px;padding:10px;justify-content:center;background:transparent}
+.copy-control .copy-status{position:absolute;right:calc(100% + 6px);top:50%;transform:translateY(-50%);z-index:2;width:max-content;max-width:min(240px,60vw);padding:2px 6px;background:#fff;color:#173d53;border-radius:3px;font-size:inherit;overflow-wrap:anywhere;box-shadow:0 0 0 1px #d7e1e8}
+.results-toolbar>.copy-fallback{grid-column:1/-1}.agenda-heading.results-toolbar .result-summary h2{margin:0}
+.search-tools{max-width:850px}.bills-heading{margin-bottom:8px}.bills-heading .session{max-width:100%;width:fit-content;margin-top:4px}.bills-heading .session select{width:auto;max-width:100%;border-color:#b3c1ca;padding:6px 10px}.bills-heading .session label{margin-bottom:2px}
+@media(max-width:1100px){.results-toolbar{grid-template-columns:minmax(0,1fr) auto;column-gap:8px}.copy-control{grid-column:2}.result-controls{grid-column:1/-1;grid-row:2;justify-content:flex-start}}
+@media(max-width:600px){.result-controls{align-items:end}.result-controls label{display:grid;gap:0}.bills-heading .session{width:100%}.bills-heading .session select{width:100%}}
 /* Auto margins center a wrapped navigation row without changing wide headers. */
 @media(max-width:899px){.header-inner nav{margin-inline:auto;justify-content:center}}
