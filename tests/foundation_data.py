@@ -10,6 +10,13 @@ class Foundation(unittest.TestCase):
   cls.catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));cls.archive=json.loads((ROOT/'data/archive.json').read_text(encoding='utf-8'));cls.report=model.build();cls.people=derive(cls.catalog)['legislators']
  def test_complete_metadata_cross_checks(self):
   c=self.report['sessions']['2026'];self.assertTrue(c['metadataComplete']);self.assertEqual(c['expected'],1016);self.assertEqual(c['retrieved'],c['humanListingCount']);self.assertEqual(c['versionRecords'],2180);self.assertEqual(c['actionRecords'],37214);self.assertEqual(self.report['indexMarkerDifferences'],[])
+ def test_shortened_official_listing_cannot_claim_complete(self):
+  # No production source is changed; omit one listing entry and skip unrelated vote work.
+  verification=json.loads((ROOT/'data/session-verification.json').read_text(encoding='utf-8'))
+  rows,conflicts=model.official_listing(verification['sources']['listing2026']);removed=next(iter(rows));rows.pop(removed)
+  with patch.object(model,'official_listing',return_value=(rows,conflicts)),patch.object(model,'expected',return_value={}):report=model.build()
+  self.assertFalse(report['sessions']['2026']['metadataComplete'])
+  self.assertEqual(report['sessions']['2026']['absentFromSubjectListing'],[removed])
  def test_no_unattempted_references_in_release(self):
   self.assertFalse([k for k,v in self.archive['votes'].items() if v['state']=='not-retrieved'],'Acquisition checkpoint is not ready for publication')
  def test_every_vote_reference_accounted_for(self):

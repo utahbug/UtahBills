@@ -1,6 +1,6 @@
 # UtahBug — UtahBills
 
-Independent, nonpartisan legislative-information prototype. Application: **UtahBug**. Repository: **UtahBills**. Intended permanent URL: **https://utahbug.github.io/UtahBills/**. Initial live-session target: **2027 General Session**. Current prototype: 1,016 indexed 2026 measures, 253 public 2027 requests, a 104-entry 2026 legislator directory, and an official calendar. Four analyzed examples retain nine text versions and comparisons. Saved official records; not live.
+Independent, nonpartisan legislative-information prototype. Application: **UtahBug**. Repository: **UtahBills**. Intended permanent URL: **https://utahbug.github.io/UtahBills/**. Initial live-session target: **2027 General Session**. Current prototype: 1,016 indexed 2026 measures, 255 public 2027 requests in the saved October 21 snapshot, a 104-entry 2026 legislator directory, and an official calendar. Four analyzed examples retain nine text versions and comparisons. Saved official records; not live.
 
 ## Run
 
@@ -46,7 +46,7 @@ Document dates and action timestamps have no explicit timezone and do not establ
 
 Cross-version comparisons include proposed section/effective-date text, excluding titles, sponsor blocks, and formatting. A comparison can truthfully show no extracted text difference even when source formatting or metadata differs. The UI links each exact source version. Comparison is not a legal-effect determination.
 
-Votes show official aggregate strings without assigning unverified meanings to each component. Individual roll calls and comprehensive amendment incorporation need further development; supporting records are linked.
+Vote coverage now includes 5,667 reconciled action-history records and 115,130 individual entries; five official tally conflicts remain flagged with individual attribution withheld. The original aggregate-only implementation has been superseded. Comprehensive amendment incorporation remains future work; supporting records are linked.
 
 Summaries are AI-assisted, source-checked during development, and labeled as pending independent human review. They are not presented as human-approved. SB0069's explanation specifically refers to its second substitute; its enrolled version is separately available.
 
@@ -60,7 +60,7 @@ python scripts/analyze.py
 npm run build
 ```
 
-If source hashes change, review the source, revise explanations if necessary, and intentionally update `data/summary-evidence.json`. Do not blindly replace pins. Inspect the resulting dataset diff before committing. Manual retrieval workflow saves an artifact for review and does not commit or publish. Scheduled acquisition is feasible on GitHub Actions but intentionally not activated in this non-live prototype.
+If source hashes change, review the source, revise explanations if necessary, and intentionally update `data/summary-evidence.json`. Do not blindly replace pins. Inspect the resulting dataset diff before committing. Manual retrieval workflow saves an artifact for review and does not commit or publish. This manual four-example acquisition does not auto-publish. The separate guarded calendar, 2027 catalog/request and vote-archive refreshes are scheduled daily through the Main workflow described below; they are not a live feed.
 
 ## GitHub Pages preparation
 
@@ -338,7 +338,7 @@ Recent Activity uses a separate generated index (`scripts/activity_model.py`) bu
 
 Today, Yesterday, and Last 5 days use America/Denver calendar-day boundaries; Last 5 days includes today plus four preceding dates. Official action/document dates have unspecified time zones, so their source calendar dates are preserved and exact times are not asserted. Same-day ordering uses supplied source timestamps without asserting precise cross-source timing. Document record dates are not independently verified publication dates. Missing/invalid dates remain in All activity only. Historical 2026 is labeled concluded; an empty 2027 snapshot links directly to public requests without claiming no legislation exists.
 
-Activity pages contain at most 100 indexed events each, with 25 rendered at a time and an eight-file cache. The browser reads only the index and necessary pages, never all detailed bill histories. Activity links open the corresponding bill's action-history disclosure. Period/session state is independent of bill search. The existing daily guarded refresh and build regenerate the index automatically; no new acquisition requests or schedules are introduced.
+Activity source pages contain at most 100 indexed events each, with rendering controlled by the shared 25/50/100/200 per-page preference and an eight-file cache. The browser reads only the index and necessary pages, never all detailed bill histories. Activity links open the corresponding bill's action-history disclosure. Period/session state is independent of bill search. The existing daily guarded refresh and build regenerate the index automatically; no new acquisition requests or schedules are introduced.
 
 Advanced Search is collapsed initially and retains type/status/chamber/committee/topic/sort controls. Ordinary search and its adjacent Info control stay visible. Source details are now collapsed by default, superseding the earlier expanded-default refinement. Tests cover source counts, deduplication, missing dates, status-observation distinctions, Mountain midnight/month/year/DST boundaries, paged loading, search independence, history links, keyboard access, enlarged text, and 320–1280px layouts with axe. Physical iPhone/iPad and manual screen-reader checks remain pending human review.
 
@@ -361,3 +361,7 @@ The shared result controls retain native selects and 44px Copy targets with tran
 `#about` is the sole About & FAQ footer destination. `#guide` and `#sources` remain valid routes that render the same consolidated page and land on their respective sections; `#about/process`, `#about/data` and `#about/faq` are section routes. Original guide/data prose and links are regression-pinned in `tests/fixtures/phase4b-explanations.json`. Archive verification remains within the data section.
 
 Calendar uses a native table with weekday column headers and native date buttons. Sunday shading denotes a conventional pattern only; the saved feed contains no explicit non-meeting-day holiday/recess records to justify additional closure labels. Selected dates still show the remainder of the month. Heading Info contains the original source, coverage, freshness and limitation material. Recent Activity likewise uses heading Info and clear page labels; it was already limited to the current/upcoming session. No data or refresh logic changes are part of this batch.
+
+## Phase 4C — independent technical audit
+
+See [docs/QUALITY_AUDIT.md](docs/QUALITY_AUDIT.md) for source comparisons, categorized findings, corrected refresh-test/completeness-report gaps, performance measurements, and outstanding human/device review. This audit does not replace the guarded published snapshots with newer, inconsistent official feeds.

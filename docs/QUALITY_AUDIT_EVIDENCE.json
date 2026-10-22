@@ -1,0 +1,485 @@
+{
+  "checkedAt": "2026-10-22T21:43:26.276025+00:00",
+  "counts": {
+    "records": 1016,
+    "kinds": {
+      "HB": 603,
+      "HC": 14,
+      "HJ": 30,
+      "HR": 8,
+      "SB": 328,
+      "SC": 11,
+      "SJ": 18,
+      "SR": 4
+    },
+    "versions": 2180,
+    "actions": 37214,
+    "documents": 14044
+  },
+  "report": {
+    "sessions": {
+      "2026": {
+        "expected": 1016,
+        "retrieved": 1016,
+        "humanListingCount": 1016,
+        "metadataComplete": true,
+        "missingIndexRecords": [],
+        "missingListingRecords": [],
+        "absentFromSubjectListing": [],
+        "versionRecords": 2180,
+        "actionRecords": 37214,
+        "documentReferences": 14044,
+        "statutoryReferences": 20467
+      },
+      "2027": {
+        "expected": 0,
+        "imported": 0,
+        "complete": false,
+        "emptyIndex": true,
+        "missing": [],
+        "sourceUrl": "https://le.utah.gov/data/2027GS/billlist.json",
+        "checkedAt": "2026-10-21T17:16:14.577051+00:00",
+        "publicRequests": 255,
+        "requestsCheckedAt": "2026-10-21T17:16:15.052424+00:00",
+        "humanListingIntroducedCount": 0,
+        "listingMissingFromIndex": [],
+        "indexMissingFromListing": []
+      }
+    },
+    "voteReferences": 5672,
+    "retrievedVoteSources": 5672,
+    "verifiedVoteDetails": 5667,
+    "individualEntries": 115130,
+    "missingVoteDetails": [
+      {
+        "id": "2026GS/HB0117//39191",
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=39191",
+        "reason": "AssertionError: Action and roll-call tally disagree",
+        "state": "retrieved"
+      },
+      {
+        "id": "2026GS/HB0117//39193",
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=39193",
+        "reason": "AssertionError: Action and roll-call tally disagree",
+        "state": "retrieved"
+      },
+      {
+        "id": "2026GS/HB0264//38981",
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=38981",
+        "reason": "AssertionError: Action and roll-call tally disagree",
+        "state": "retrieved"
+      },
+      {
+        "id": "2026GS/SB0141//38882",
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=38882",
+        "reason": "AssertionError: Action and roll-call tally disagree",
+        "state": "retrieved"
+      },
+      {
+        "id": "2026GS/SJR006//41466",
+        "url": "https://le.utah.gov/mtgvotes.jsp?voteid=41466",
+        "reason": "AssertionError: Action and roll-call tally disagree",
+        "state": "retrieved"
+      }
+    ],
+    "unresolvedIndividualEntries": 1046,
+    "unresolvedVoterNames": [
+      "Walter, N."
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://le.utah.gov/data/2026GS/billlist.json",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/data/2026GS/billlist.json",
+      "contentType": "application/json",
+      "bytes": 126540,
+      "seconds": 0.09,
+      "sha256": "5928c3d5774e8d021f6e69e6f6f8774e0fdda26fb035df04db9c52d03d87b2a4",
+      "rejectionPage": false,
+      "sameBytesAsSnapshot": true,
+      "savedRetrievedAt": "2026-10-21T15:44:18.588591+00:00",
+      "items": 1016,
+      "missingSaved": [],
+      "extraSaved": [],
+      "changedMarkers": []
+    },
+    {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2026GS&disp=all&sub=all",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/bills/billSearch.jsp?sess=2026GS&disp=all&sub=all",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 1588129,
+      "seconds": 0.7,
+      "sha256": "e835c2ad1f229697bcbd55bb06698a2f621644ad452be4ffb75b4a5b06bd2ff9",
+      "rejectionPage": false,
+      "sameBytesAsSnapshot": true,
+      "savedRetrievedAt": "2026-10-21T15:44:19.925740+00:00"
+    },
+    {
+      "url": "https://le.utah.gov/data/2027GS/billlist.json",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/data/2027GS/billlist.json",
+      "contentType": "application/json",
+      "bytes": 2,
+      "seconds": 0.02,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "rejectionPage": false,
+      "sameBytesAsSnapshot": true,
+      "savedRetrievedAt": "2026-10-21T17:16:14.577051+00:00",
+      "items": 0
+    },
+    {
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/data/2027GS/filelist.json",
+      "contentType": "application/json",
+      "bytes": 26049,
+      "seconds": 0.05,
+      "sha256": "fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a",
+      "rejectionPage": false,
+      "sameBytesAsSnapshot": false,
+      "savedRetrievedAt": "2026-10-21T17:16:15.052424+00:00",
+      "items": 268,
+      "newIDs": [
+        "AABKLYMHCO",
+        "AMCUJJJUSD",
+        "AYWKMFJYRV",
+        "BBGNDHWWWU",
+        "ECMJQIXCHM",
+        "LRFAESADKV",
+        "MDIQORVFRP",
+        "PPCSBEPDQC",
+        "RJTCOOKAWU",
+        "RQTBAXTKDP",
+        "VKVFSUBBEA",
+        "WMNSFFIYDA",
+        "XKUCMCIIHJ"
+      ],
+      "missingIDs": [],
+      "auditPath": "docs/audit-sources/2027-requests.json"
+    },
+    {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "contentType": "text/html;charset=UTF-8",
+      "bytes": 118796,
+      "seconds": 0.14,
+      "sha256": "54d2add6c14c615d16d0c03b4c0a18cdf906c9f2c73d23ddd1b13488626da588",
+      "rejectionPage": false,
+      "sameBytesAsSnapshot": false,
+      "savedRetrievedAt": "2026-10-21T17:16:15.752534+00:00",
+      "auditPath": "docs/audit-sources/2027-status-listing.txt"
+    },
+    {
+      "url": "https://le.utah.gov/data/2026GS/HB0011.json",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/data/2026GS/HB0011.json",
+      "contentType": "application/json",
+      "bytes": 13926,
+      "seconds": 0.03,
+      "sha256": "efd35a257b27eeb5336ac65eec8a0b98ee6f7045f238b53a544af27d3bd6ced2",
+      "rejectionPage": false,
+      "sameBytesAsSnapshot": true,
+      "savedRetrievedAt": "2026-10-21T03:56:57.742710+00:00",
+      "items": 30
+    },
+    {
+      "url": "https://le.utah.gov/~2026/bills/hbillenr/HB0011.pdf",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/~2026/bills/hbillenr/HB0011.pdf",
+      "contentType": "application/pdf",
+      "bytes": 24401,
+      "seconds": 0.05,
+      "sha256": "355a8d8ea9257fdb2b59f69385d683a8bba9bf00c85f840ef83873b57fb6d238",
+      "rejectionPage": false
+    },
+    {
+      "url": "https://le.utah.gov/calendar.html",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/calendar.html",
+      "contentType": "text/html",
+      "bytes": 43559,
+      "seconds": 0.05,
+      "sha256": "d551985674e0100ce002a9c226306569d1f231f1031b0e8bdd659ca3554e0e6b",
+      "rejectionPage": false
+    },
+    {
+      "url": "https://le.utah.gov/sessionSchedule/sessdates.jsp",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/sessionSchedule/sessdates.jsp",
+      "contentType": "text/html;charset=ISO-8859-1",
+      "bytes": 39039,
+      "seconds": 0.14,
+      "sha256": "ed4339db41ea36795d04903e193b766b7554303f2d9244de2343568fc149cd59",
+      "rejectionPage": false
+    },
+    {
+      "url": "https://le.utah.gov/asp/roster/roster.asp?year=2026",
+      "status": 200,
+      "finalUrl": "https://le.utah.gov/asp/roster/roster.asp?year=2026",
+      "bytes": 53187,
+      "rejectionPage": false
+    },
+    {
+      "url": "https://house.utleg.gov/rep/ABBOTN",
+      "status": 200,
+      "finalUrl": "https://house.utleg.gov/rep/ABBOTN/",
+      "bytes": 73296,
+      "rejectionPage": false
+    },
+    {
+      "url": "https://senate.utah.gov/sen/ADAMSJS",
+      "status": 200,
+      "finalUrl": "https://senate.utah.gov/sen/ADAMSJS/",
+      "bytes": 55800,
+      "rejectionPage": false
+    },
+    {
+      "url": "https://www.utleg.gov/Calendar/month?month=10&year=2026",
+      "status": 200,
+      "finalUrl": "https://www.utleg.gov/Calendar/month?month=10&year=2026",
+      "bytes": 25635,
+      "rejectionPage": false,
+      "liveOctoberCount": 32,
+      "savedOctoberCount": 31,
+      "newEvents": [
+        {
+          "id": "meeting-20784",
+          "date": "2026-10-23",
+          "name": "General Oversight Committee"
+        }
+      ],
+      "auditPath": "docs/audit-sources/2026-october-calendar.json",
+      "sha256": "6b5e5e4ecf9c6feb4611f4c3995686fc9dace3245df964d2d708783039c7e4c8"
+    }
+  ],
+  "liveRequestValidation": {
+    "count": 268,
+    "statusRows": 267,
+    "missingStatusIDs": [
+      "MDIQORVFRP"
+    ],
+    "statuses": {
+      "In Process": 261,
+      "Bill Abandoned per Sponsor": 6
+    }
+  },
+  "snapshotRequests": {
+    "count": 255,
+    "statuses": {
+      "In Process": 249,
+      "Bill Abandoned per Sponsor": 6
+    },
+    "linkedIntroduced": 0
+  },
+  "historicalRoster": {
+    "count": 104,
+    "noCurrentContact": [
+      "BURTOJS",
+      "CLANCT",
+      "GWYNNM",
+      "LEETA"
+    ]
+  },
+  "calendar": {
+    "checkedAt": "2026-10-21T17:16:14.004050+00:00",
+    "events": 89,
+    "months": 8
+  },
+  "baselineCommit": "1ff2b05dceeab42e1738bbf0a5fa5a41fba1fb7a",
+  "browser": {
+    "environment": "Headless Chromium/Edge; local loopback, no CPU/network throttling; elapsed times are diagnostic, not field performance",
+    "routes": [
+      {
+        "route": "requests",
+        "readyMs": 57.39480000000003,
+        "title": "Bills · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "request/DXYQRODBBU",
+        "readyMs": 8.098199999999906,
+        "title": "Bill request · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "legislators",
+        "readyMs": 29.164999999999964,
+        "title": "Legislators · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "legislator/WALTER/2026",
+        "readyMs": 9.535300000000007,
+        "title": "Walter, R. Neil · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "activity",
+        "readyMs": 8.245599999999968,
+        "title": "Recent Activity · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "calendar",
+        "readyMs": 29.30580000000009,
+        "title": "Legislative Calendar · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "about",
+        "readyMs": 13.511199999999917,
+        "title": "About & FAQ · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "guide",
+        "readyMs": 8.59069999999997,
+        "title": "About & FAQ · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "sources",
+        "readyMs": 6.833000000000084,
+        "title": "About & FAQ · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "bill/HB0001",
+        "readyMs": 11.298700000000053,
+        "title": "H.B. 1 · UtahBug",
+        "h1": 1
+      },
+      {
+        "route": "bill/2026/HB0011/history",
+        "readyMs": 15.871599999999944,
+        "title": "H.B. 11 · Dyed Diesel Fuel Search Amendments · UtahBug",
+        "h1": 1
+      }
+    ],
+    "searchMs": [
+      {
+        "query": "water",
+        "ms": 3.600000023841858,
+        "rows": 32
+      },
+      {
+        "query": "tax",
+        "ms": 4.400000095367432,
+        "rows": 60
+      },
+      {
+        "query": "school",
+        "ms": 6.300000071525574,
+        "rows": 84
+      },
+      {
+        "query": "HB0011",
+        "ms": 1.100000023841858,
+        "rows": 1
+      },
+      {
+        "query": "",
+        "ms": 11.700000047683716,
+        "rows": 200
+      }
+    ],
+    "initialReadyMs": 103.85160000000008,
+    "initialResources": [
+      {
+        "name": "/UtahBills/styles.css",
+        "transferSize": 33847,
+        "decodedBodySize": 33547,
+        "duration": 5.699999928474426
+      },
+      {
+        "name": "/UtahBills/app.js",
+        "transferSize": 94122,
+        "decodedBodySize": 93822,
+        "duration": 5.700000047683716
+      },
+      {
+        "name": "/UtahBills/data/examples-ui.json",
+        "transferSize": 2352,
+        "decodedBodySize": 2052,
+        "duration": 2.100000023841858
+      },
+      {
+        "name": "/UtahBills/data/catalog-ui.json",
+        "transferSize": 1933730,
+        "decodedBodySize": 1933430,
+        "duration": 5.5
+      },
+      {
+        "name": "/UtahBills/assets/favicon.ico",
+        "transferSize": 12477,
+        "decodedBodySize": 12177,
+        "duration": 3.4000000953674316
+      }
+    ],
+    "initialPayload": {
+      "rawBytes": 2062851,
+      "gzipEquivalentBytes": 190581
+    },
+    "memoryBefore": {
+      "dom": {
+        "documents": 1,
+        "nodes": 529,
+        "jsEventListeners": 21
+      },
+      "metrics": [
+        {
+          "name": "Documents",
+          "value": 1
+        },
+        {
+          "name": "JSEventListeners",
+          "value": 21
+        },
+        {
+          "name": "Nodes",
+          "value": 529
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 4466264
+        },
+        {
+          "name": "JSHeapTotalSize",
+          "value": 5541888
+        }
+      ]
+    },
+    "memoryAfter": {
+      "dom": {
+        "documents": 1,
+        "nodes": 528,
+        "jsEventListeners": 21
+      },
+      "metrics": [
+        {
+          "name": "Documents",
+          "value": 1
+        },
+        {
+          "name": "JSEventListeners",
+          "value": 21
+        },
+        {
+          "name": "Nodes",
+          "value": 528
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 4565236
+        },
+        {
+          "name": "JSHeapTotalSize",
+          "value": 5017600
+        }
+      ]
+    }
+  }
+}

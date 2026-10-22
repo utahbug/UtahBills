@@ -8,3 +8,6 @@ data/vote-raw/* -text -whitespace
 data/archive-raw/* -text -whitespace
 
 data/phase4a-raw/* -text -whitespace
+
+# Preserve independent audit response bytes and evidence hashes.
+docs/audit-sources/* -text -whitespace
