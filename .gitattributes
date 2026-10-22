@@ -6,3 +6,5 @@ data/catalog-raw/* -text -whitespace
 data/vote-raw/* -text -whitespace
 
 data/archive-raw/* -text -whitespace
+
+data/phase4a-raw/* -text -whitespace
