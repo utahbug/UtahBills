@@ -1,5 +1,7 @@
 # UtahBills development roadmap
 
+Actionable task IDs, priorities, dependencies and acceptance criteria are maintained in the [authoritative task backlog](docs/TASK_BACKLOG.md). This roadmap remains the high-level strategy; completed phases do not close unresolved backlog findings.
+
 Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
 
 ## Implemented — through Phase 3
