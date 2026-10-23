@@ -1,4 +1,4 @@
-import {createElement,Copy,ArrowUpToLine} from 'lucide';
+import {createElement,Copy,ArrowUpToLine,Info,List} from 'lucide';
 const key='utahbills-results-per-page';
 export function resultsPerPage(){try{const n=Number(localStorage.getItem(key));if([25,50,100,200].includes(n))return n}catch{}return matchMedia('(min-width:900px)').matches?100:50}
 function resultControls(host){let controls=host.querySelector(':scope > .result-controls');if(controls)return controls;host.classList.add('results-toolbar');const summary=document.createElement('div');summary.className='result-summary';controls=document.createElement('div');controls.className='result-controls';for(const child of [...host.children]){(child.matches('label,button')?controls:summary).append(child)}host.append(controls,summary);return controls}
@@ -14,4 +14,12 @@ export function navigationTools(){const header=document.querySelector('header'),
 export function scrollSectionIntoView(target){
  const previous=target.previousElementSibling;
  (previous?.matches('nav')?previous:target).scrollIntoView({block:'start'});
+}
+
+// Native auto popovers provide Escape and outside-click dismissal without route listeners.
+export function toolbarInfo(host,{id,label,html,legend=false}){
+ const button=document.createElement('button');button.type='button';button.className='toolbar-info';button.setAttribute('aria-label',label);button.title=label;button.append(createElement(legend?List:Info,{'aria-hidden':'true'}));
+ const panel=document.createElement('div');panel.id=id;panel.className='toolbar-popover';panel.popover='auto';panel.setAttribute('role','region');panel.setAttribute('aria-label',label);panel.innerHTML=html;
+ const close=document.createElement('button');close.type='button';close.className='popover-close';close.textContent='Close';close.autofocus=true;close.onclick=()=>panel.hidePopover();panel.append(close);button.popoverTargetElement=panel;
+ panel.addEventListener('toggle',e=>{if(e.newState==='closed'&&panel.contains(document.activeElement))button.focus({preventScroll:true})});host.append(button,panel);return button;
 }

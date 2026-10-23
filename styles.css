@@ -269,3 +269,27 @@ header.navigation-compact .brand{min-height:44px;align-items:center}
 header.navigation-compact .brand small,header.navigation-compact .independent{display:none}
 .skip:focus{position:fixed;z-index:40}
 .about-page>.guide{scroll-margin-top:12px}
+
+/* Phase 4J: let wrapped navigation occupy only its actual rows. */
+.header-inner nav{column-gap:12px}
+@media(max-width:899px){
+ .header-inner{flex-wrap:wrap;row-gap:0;padding-bottom:2px}
+ .header-inner nav{column-gap:12px;row-gap:0}
+ .header-inner nav a{display:inline-flex;align-items:center}
+}
+.activity-controls label{gap:0 4px;min-width:0}
+.activity-controls select,.result-controls .page-preference select{padding-left:2px}
+#activity-period,#calendar-month{padding-left:0}
+.calendar-controls{flex-direction:row;align-items:center}
+.calendar-controls label{gap:0 2px}.calendar-controls select{padding-left:2px}
+.toolbar-info{height:max(44px,calc(1.5em + 10px));line-height:1.5;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;min-height:44px;padding:10px;border:0;background:transparent;color:#17629a}
+.toolbar-popover{position:fixed;inset:0;margin:auto;width:fit-content;max-width:calc(100% - 24px);height:fit-content;max-height:calc(100% - 24px);overflow:auto;border:1px solid var(--line);border-radius:5px;padding:12px;background:white;color:var(--ink);font-size:1rem;box-shadow:0 3px 16px #16374a26}
+.toolbar-popover p{max-width:60ch;margin:0 0 8px}.toolbar-popover .calendar-legend{display:grid;gap:6px;margin:0 0 8px}.popover-close{display:block;margin-left:auto}
+.directory-actions.results-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:0 4px}
+.directory-actions>.result-controls{display:none}.directory-actions>.result-summary{flex:0 1 auto;justify-content:flex-start;text-align:left;gap:0}
+.directory-actions #directory-count{margin:0}.directory-actions>.find-legislators{margin:0 0 0 auto;display:inline-flex;align-items:center;min-height:44px;padding:4px 0;max-width:100%;overflow-wrap:anywhere}
+.directory-actions>.copy-fallback{width:100%}
+.agenda-heading .copy-control{display:flex;align-items:center;flex-direction:row-reverse;gap:0}
+@media(min-width:601px){.legislator-row{grid-template-columns:minmax(0,18rem) minmax(0,12rem) minmax(0,1fr)}}
+
+.agenda-heading .copy-control:has(.copy-results[hidden]){display:flex}
