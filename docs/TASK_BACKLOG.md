@@ -267,6 +267,8 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Source:** [Audit H1](QUALITY_AUDIT.md#h1--calendar-regression-blocked-scheduled-publication--corrected); [workflow](../.github/workflows/pages.yml).
 - **Acceptance:** Record run ID, Calendar acquisition outcome, attempt reports, source provenance, validation, snapshot commit and deployed freshness. Confirm the Calendar refresh passes the corrected regression and publishes verified updates. Record catalog/archive outcomes separately even if retained data deploys. A successful push build is not this evidence; leave any failed acquisition open.
 
+**Phase 4K recheck:** No subsequent schedule exists after 39820847031; TEST-001 remains High/Blocked. Closure must inspect component reports, including archive `partial` outcomes, and publication evidence. [Pipeline/freshness evidence](PHASE4K_VERIFICATION.md). November 4, 2026 is a readiness planning objective, not a release commitment.
+
 **Phase 4D progress:** Manual guarded run [39869478421](https://github.com/utahbug/UtahBills/actions/runs/39869478421) passed Calendar/Catalog/archive acquisition, reconciliation, tests, snapshot commit and deployment. No subsequent cron-triggered run existed at verification; this task remains open for that distinct evidence. DATA-001 is resolved.
 
 ### TEST-002

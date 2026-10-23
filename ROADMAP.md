@@ -164,3 +164,8 @@ Official request/update dates are not established in the saved records, so those
 Implemented compact shared-header spacing and 12px navigation gaps, aligned Activity controls with a visible Category label, compact directory count/Info/Copy/finder and closer columns, and Calendar filters with an accessible six-category Legend beside Copy. Existing sticky navigation, scroll restoration, pointer activation and data safeguards are preserved. This authorized label refinement supersedes Phase 4I's caption-free category control only.
 
 [Verification](VERIFICATION.md#phase-4j--consolidated-ui-polish); UI-004 in the [backlog](docs/TASK_BACKLOG.md#ui-004). The official finder remains an external fallback, not completed on-site lookup. TEST-001, 2027 roster/first-introduction acceptance, physical devices and human review remain open.
+
+
+## Phase 4K — automatic refresh evidence
+
+TEST-001 remains awaiting a subsequent genuine scheduled run. Pipeline safeguards and freshness semantics are reviewed in [Phase 4K verification](docs/PHASE4K_VERIFICATION.md); no acquisition or UI change was justified. Component acquisition reports, validation and deployment must be verified separately. November 4, 2026 remains a readiness planning objective, not a release commitment.
