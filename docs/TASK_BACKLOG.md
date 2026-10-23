@@ -20,8 +20,8 @@ Active inventory: **37 tasks**; **9 completed tasks** retain their IDs in the co
 
 | Status | Count |
 | --- | ---: |
-| In progress | 0 |
-| Approved/Not started | 24 |
+| In progress | 1 |
+| Approved/Not started | 23 |
 | Proposed | 2 |
 | Blocked | 8 |
 | Deferred | 3 |
@@ -153,11 +153,13 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### TRANS-001
 
-**Verify substitutes and late-change histories** — **Medium** · **Approved/Not started**
+**Verify substitutes and late-change histories** — **Medium** · **In progress**
 
 - **Dependencies:** Verified version relationships and publication evidence; reliable timing cannot be inferred from retrieval.
 - **Source:** [Roadmap Stage 1](../ROADMAP.md#stage-1--legislative-data-and-transparency--partly-implemented); [README limitations](../README.md#data-findings-and-limitations).
 - **Acceptance:** Trace substitutes, amendments, late changes and any proposed boxcar characterization to preserved exact versions and defensible timing. Distinguish document/action/retrieval dates, disclose unknown publication times, and test comparisons without motive or unsupported legal-effect claims.
+
+**Phase 4L bounded progress:** Grouped source-verified version/document histories, four additional HB0117 XML documents and deterministic basic-detail comparison, plus successive-snapshot 2027 document observations are implemented. Full publication/late-change timing and broader/live-2027 acceptance remain unfinished. [Evidence and coverage](PHASE4L_VERIFICATION.md).
 
 ### TRANS-002
 

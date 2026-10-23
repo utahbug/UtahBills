@@ -1,13 +1,6 @@
 import json,re,pathlib,xml.etree.ElementTree as ET
 R=pathlib.Path(__file__).resolve().parents[1]
-def text(e,mode):
-    if (mode=='before' and e.get('ea')=='amend') or (mode=='after' and e.get('ea')=='erase'): return ''
-    if e.tag in ['secline','catline']: return ''
-    s=e.text or ''
-    for c in e: s+=text(c,mode)+(c.tail or '')
-    if e.tag in ['ln','tab','display']: s+=' '
-    if e.tag in ['subsection','sectionText']: s+='\n'
-    return s
+from xml_text import text
 summaries={
 'HB0011':('Transportation','The proposal limits when government officials may inspect a vehicle’s fuel tank for dyed diesel. It allows inspections based on probable cause, consent, or specified port-of-entry checks. Driving a diesel vehicle alone would not establish probable cause.','The bill addresses inspection authority; the existing fuel-use prohibitions and penalties remain in the section.'),
 'HB0154':('Water','The proposal directs the Division of Water Resources, with the Division of Drinking Water, to study water losses using public water system data from 2015 through 2024 and recommend improvements. It requires a report by October 31, 2026.','The proposed study provision would be repealed July 1, 2027. This bill did not pass, so its proposed deadlines did not become requirements through this bill.'),

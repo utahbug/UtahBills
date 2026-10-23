@@ -1,6 +1,7 @@
 """Build compact, paged event projections from checksum-verified saved sources."""
 import json,hashlib,re,datetime as dt,collections
 from catalog_model import ROOT,read,derive
+from version_model import document_groups
 
 def calendar_date(value):
  match=re.match(r"^(\d{4}-\d{2}-\d{2})(?:$|[ T])",value or '')
@@ -35,12 +36,11 @@ def events(manifest):
   for a in b['actionHistoryList']:
    raw_actions+=1
    add(dict(**base,date=calendar_date(a.get('actionDate')),sourceOrder=source_order(a.get('actionDate')),kind='Recorded legislative action',text=a['description'],body=a.get('owner',''),dateLabel='Official action date',url='https://le.utah.gov/Session/'+base['session']+'/bills/static/'+base['bill']+'.html'),[key,'action',a])
-  for v in b['billVersionList']:
-   for d in v['billDocs']:
-    if d['fileType'] not in ('Introduced','PubSub','PubAmend','Amended','Enrolled','AmdPages'):continue
-    kind={'PubSub':'Substitute document','PubAmend':'Amendment document','AmdPages':'Amendment document','Amended':'Amended version document','Enrolled':'Enrolled version document','Introduced':'Introduced version document'}[d['fileType']]
-    from urllib.parse import urljoin
-    add(dict(**base,date=calendar_date(d.get('fileDate')),sourceOrder=source_order(d.get('fileDate')),kind=kind,text=v['billNumber']+' · '+(d.get('shortDesc') or d['fileType']),body='',dateLabel='Document record date; publication time unverified',url=urljoin('https://le.utah.gov',d['url'])),[key,'document',v['billNumber'],d['fileType'],d.get('fileDate'),d['fileName'].rsplit('.',1)[0]])
+  for group in document_groups(b):
+   d=group['documents'][0];file_type=group['fileType']
+   kind={'PubSub':'Substitute document','PubAmend':'Amendment document','AmdPages':'Amendment document','Amended':'Amended version document','Enrolled':'Enrolled version document','Introduced':'Introduced version document'}[file_type]
+   # Keep the first existing representation's event ID; PDF/XML pairs share one record.
+   add(dict(**base,date=calendar_date(d['date']),sourceOrder=source_order(d['date']),kind=kind,text=group['version']+' · '+d['label'],body='',dateLabel='Document record date; publication time unverified',url=d['url']),[key,'document',group['version'],file_type,d['date'],d['fileName'].rsplit('.',1)[0]])
  # Retained baseline membership, not acquisition date alone, distinguishes new IDs.
  archive=derive(manifest)['requestArchive2027'];requests={r['trackingID']:r for r in archive}
  snapshots=manifest.get('requestHistory',[]) or [manifest.get('sources',{}).get('requests2027')]
@@ -76,6 +76,21 @@ def events(manifest):
   if ident in requests:
    event.update(relatedHistory='#request/'+ident,relatedLabel='Original public request · '+ident)
   add(event,[key,'first-observed',source.get('retrievedAt')])
+  history=manifest.get('measureHistory',{}).get(key) or [current]
+  if history[-1]['sha256']!=current['sha256']:history=[*history,current]
+  known=set();previous=None
+  for position,snapshot in enumerate(history):
+   revision=json.loads(read(snapshot))
+   assert revision['billNumber']==b['billNumber'] and revision['sessionID']==b['sessionID'] and revision['trackingID']==ident,'Document history identity mismatch'
+   for group in document_groups(revision):
+    if position and group['id'] not in known:
+     doc=group['documents'][0]
+     item=observed(snapshot,bill=b['billNumber'],trackingID=ident,title=revision['shortTitle'],category='documents',kind='New document record observed',text=group['version']+' · '+group['label']+' · Official document date: '+(doc['date'] or 'unavailable')+' (publication time unverified)',url=doc['url'],history='#bill/'+key+'/history')
+     item['previousSource']=previous;item['documentDates']=[d['date'] for d in group['documents']];item['documentType']=group['fileType'];item['version']=group['version']
+     add(item,[key,'document-observed',group['id']])
+    known.add(group['id'])
+   previous=snapshot
+
  return sorted(result,key=lambda e:(e['date'] or '',e['sourceOrder'],e['id']),reverse=True),raw_actions
 
 def build():

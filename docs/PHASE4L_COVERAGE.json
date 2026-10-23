@@ -1,0 +1,31 @@
+{
+  "definition": "Introduced measures only. Official metadata links are not retrieval/validation evidence. Bills and resolutions counted separately; public requests excluded. Known failed retrievals cover only bounded attempted text acquisition, not untested links.",
+  "sessions": {
+    "2026": {
+      "bills": {
+        "measures": 931,
+        "multipleVersionIDs": 551,
+        "linkedText": 931,
+        "noLinkedText": 0,
+        "verifiedLocalText": 5,
+        "linkedButNotValidated": 926,
+        "knownFailedTextRetrievals": 0,
+        "amendmentDocuments": 333,
+        "comparableMeasures": 4
+      },
+      "resolutions": {
+        "measures": 85,
+        "multipleVersionIDs": 27,
+        "linkedText": 85,
+        "noLinkedText": 0,
+        "verifiedLocalText": 0,
+        "linkedButNotValidated": 85,
+        "knownFailedTextRetrievals": 0,
+        "amendmentDocuments": 13,
+        "comparableMeasures": 0
+      }
+    },
+    "2027": {}
+  },
+  "textSources": 13
+}

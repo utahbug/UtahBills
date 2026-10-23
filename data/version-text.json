@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "session": "2026GS",
+      "bill": "HB0117",
+      "version": "HB0117",
+      "fileType": "Introduced",
+      "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0117.xml",
+      "path": "data/version-raw/3d75f9b9f6c139f34959d30650debf9f0c93889b2679bf869a6772dc8f2d419c.xml",
+      "sha256": "3d75f9b9f6c139f34959d30650debf9f0c93889b2679bf869a6772dc8f2d419c",
+      "retrievedAt": "2026-10-23T05:01:03.720994+00:00",
+      "metadataSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0117.json",
+        "path": "data/catalog-raw/2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07.json",
+        "sha256": "2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07",
+        "retrievedAt": "2026-10-21T03:57:22.670799+00:00",
+        "updatetime": "2026-03-17 09:38:00.0"
+      }
+    },
+    {
+      "session": "2026GS",
+      "bill": "HB0117",
+      "version": "HB0117",
+      "fileType": "Amended",
+      "url": "https://le.utah.gov/Session/2026/bills/amended/AV_HB0117_2026-02-02_11-30-13.xml",
+      "path": "data/version-raw/d3fe1e1695c10bf791618aa162af0282db87c70bd1ae7143e0750c0311c8e8db.xml",
+      "sha256": "d3fe1e1695c10bf791618aa162af0282db87c70bd1ae7143e0750c0311c8e8db",
+      "retrievedAt": "2026-10-23T05:01:03.782975+00:00",
+      "metadataSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0117.json",
+        "path": "data/catalog-raw/2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07.json",
+        "sha256": "2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07",
+        "retrievedAt": "2026-10-21T03:57:22.670799+00:00",
+        "updatetime": "2026-03-17 09:38:00.0"
+      }
+    },
+    {
+      "session": "2026GS",
+      "bill": "HB0117",
+      "version": "HB0117S01",
+      "fileType": "Enrolled",
+      "url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0117.xml",
+      "path": "data/version-raw/17e99aa9b7116f4763acaf4fe7af790510c51a79a69a307f3d945e04cb51d145.xml",
+      "sha256": "17e99aa9b7116f4763acaf4fe7af790510c51a79a69a307f3d945e04cb51d145",
+      "retrievedAt": "2026-10-23T05:01:03.830142+00:00",
+      "metadataSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0117.json",
+        "path": "data/catalog-raw/2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07.json",
+        "sha256": "2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07",
+        "retrievedAt": "2026-10-21T03:57:22.670799+00:00",
+        "updatetime": "2026-03-17 09:38:00.0"
+      }
+    },
+    {
+      "session": "2026GS",
+      "bill": "HB0117",
+      "version": "HB0117S01",
+      "fileType": "PubSub",
+      "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0117S01.xml",
+      "path": "data/version-raw/bedd36ddbe4a3a8ffd3a7f2f6ea33c4cdf0c5c0c55ff495083c96a82b25aeda9.xml",
+      "sha256": "bedd36ddbe4a3a8ffd3a7f2f6ea33c4cdf0c5c0c55ff495083c96a82b25aeda9",
+      "retrievedAt": "2026-10-23T05:01:03.875293+00:00",
+      "metadataSource": {
+        "url": "https://le.utah.gov/data/2026GS/HB0117.json",
+        "path": "data/catalog-raw/2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07.json",
+        "sha256": "2c742c271cd102926b919f0000f00cdeee301676627c919aca5354c831cacb07",
+        "retrievedAt": "2026-10-21T03:57:22.670799+00:00",
+        "updatetime": "2026-03-17 09:38:00.0"
+      }
+    }
+  ]
+}

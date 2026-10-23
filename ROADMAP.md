@@ -169,3 +169,8 @@ Implemented compact shared-header spacing and 12px navigation gaps, aligned Acti
 ## Phase 4K — automatic refresh evidence
 
 TEST-001 remains awaiting a subsequent genuine scheduled run. Pipeline safeguards and freshness semantics are reviewed in [Phase 4K verification](docs/PHASE4K_VERIFICATION.md); no acquisition or UI change was justified. Component acquisition reports, validation and deployment must be verified separately. November 4, 2026 remains a readiness planning objective, not a release commitment.
+
+
+## Phase 4L — bounded version and change transparency
+
+Implemented grouped official versions/amendments and deterministic verified-text comparison on basic details, initially HB0117, while preserving all four enhanced examples. Successive 2027 snapshots can identify newly observed document records without calling retrieval a publication date or counting PDF/XML representations twice. Availability evidence separates official links, validated local text and untested documents; no public counters or bulk historical retrieval were added. [Verification and limitations](docs/PHASE4L_VERIFICATION.md). TRANS-001 remains In progress; publication timing, broader text coverage and live 2027 acceptance remain unfinished. TEST-001 and TRANS-002 are unchanged.

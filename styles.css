@@ -293,3 +293,5 @@ header.navigation-compact .brand small,header.navigation-compact .independent{di
 @media(min-width:601px){.legislator-row{grid-template-columns:minmax(0,18rem) minmax(0,12rem) minmax(0,1fr)}}
 
 .agenda-heading .copy-control:has(.copy-results[hidden]){display:flex}
+
+.version-transparency details{padding:6px 0}.version-transparency summary{min-height:44px;align-content:center}.version-transparency a{overflow-wrap:anywhere}.version-transparency .compare-controls select{width:100%;min-width:0}.version-transparency .version-diff{max-height:460px}
