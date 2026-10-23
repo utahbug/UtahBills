@@ -369,3 +369,7 @@ See [docs/QUALITY_AUDIT.md](docs/QUALITY_AUDIT.md) for source comparisons, categ
 ## Phase 4D — refresh recovery and session readiness
 
 See [Phase 4D verification](docs/PHASE4D_VERIFICATION.md) for the corrected official 268-request/status join, guarded publication of 90 Calendar events, and isolated introduced-session regression matrix. The full browser command now contains 18 suites. A later actual scheduled run, 2027 roster verification, historical vote/identity gaps and human review remain open in the [task backlog](docs/TASK_BACKLOG.md).
+
+## Phase 4E — compact navigation and information pages
+
+Main uses underlined active navigation, a compact request-source icon/dialog, consistent session labels, separate About and FAQ routes, and a minimal shared copyright/disclaimer footer. Legacy guide/source and About section bookmarks still work. Calendar descriptions retain their official wording with regular-weight typography and concise type labels. See [verification](docs/PHASE4E_VERIFICATION.md) and the [task backlog](docs/TASK_BACKLOG.md). Earlier combined-page and Main-footer descriptions record historical designs superseded by this batch.

@@ -121,3 +121,10 @@ Official request/update dates are not established in the saved records, so those
 - **Completed SESSION-001:** isolated 0/1/3/240 introduced-record browser fixtures cover defaults, request conversion, historical access, shared toolbar and all page-size choices. Fixed large-request usability scenarios no longer depend on changing production counts. Runtime selection behavior is unchanged.
 - **Still open TEST-001:** the shared scheduled path recovered under manual dispatch; no later actual scheduled trigger was available to verify. Five tally conflicts, 1,046 unresolved identities, the 2027 roster and human review remain open.
 - See [Phase 4D verification](docs/PHASE4D_VERIFICATION.md) and the [task backlog](docs/TASK_BACKLOG.md). Earlier Phase 4C counts/findings remain dated evidence, not current freshness claims.
+
+## Phase 4E — navigation, source disclosure and information-page polish
+
+- Implemented: normal-weight active navigation with a thin underline; title-case session labels; request provenance in a keyboard/touch accessible source-icon dialog, independently of status Info.
+- Implemented: separate About and FAQ destinations, preserved guide/data explanations and references, compatible legacy routes and section bookmarks, left-aligned FAQ section links, and the approved compact copyright/disclaimer footer. This explicitly supersedes Phase 4B's combined About & FAQ destination and Phase 4A's visible Main footer label.
+- Implemented CAL-001: regular-weight full Calendar descriptions, concise Deadline icon/label, and “Timing: see official wording” without changing official descriptions, exceptions, dates or sources. Continuous grid and D identifiers remain.
+- See [Phase 4E verification](docs/PHASE4E_VERIFICATION.md) and [backlog](docs/TASK_BACKLOG.md). Data, acquisition, unresolved conflicts, identities, roster, manual accessibility/editorial review and subsequent scheduled-run verification remain unchanged. Review remains unconfigured; noindex remains.

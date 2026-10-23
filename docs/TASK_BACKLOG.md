@@ -2,7 +2,7 @@
 
 Updated: October 22, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
 
-Phase 4D maintenance: request freshness and transition-test readiness are complete; the next actual scheduled run remains unverified. See [Phase 4D verification](PHASE4D_VERIFICATION.md) and the completed task ledger.
+Phase 4E maintenance: CAL-001 and UI-002 complete the authorized interface refinements. Phase 4D request freshness and transition-test readiness remain complete; the next actual scheduled run remains unverified. See [Phase 4E verification](PHASE4E_VERIFICATION.md), [Phase 4D verification](PHASE4D_VERIFICATION.md) and the completed task ledger.
 
 ## Baseline and evidence
 
@@ -14,12 +14,12 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **38 tasks**; **2 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **4 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
 | In progress | 0 |
-| Approved/Not started | 28 |
+| Approved/Not started | 27 |
 | Proposed | 2 |
 | Blocked | 5 |
 | Deferred | 3 |
@@ -28,7 +28,7 @@ Active inventory: **38 tasks**; **2 completed tasks** retain their IDs in the co
 | --- | ---: |
 | Critical | 0 |
 | High | 2 |
-| Medium | 30 |
+| Medium | 29 |
 | Low | 6 |
 
 Priority is a planning order, not a new defect-severity finding. Blocked tasks remain approved work whose completion requires the stated evidence/dependency; bounded investigation may continue when separately scoped. No critical defect was established by Phase 4C.
@@ -88,14 +88,6 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Acceptance:** Record devices, browsers, assistive technologies and a WCAG 2.2 AA acceptance matrix. Traverse all routes by keyboard; check focus order/visibility and sticky obstruction, headings/rotor, calendar weekday context, Info, Copy fallback/announcements, long readers/vote tables, actual zoom and reflow. Log and retest failures before closing; automated axe results alone are insufficient.
 
 ## 4. Legislative Calendar
-
-### CAL-001
-
-**Refine deadline typography and milestone labels** — **Medium** · **Approved/Not started**
-
-- **Dependencies:** Preserve official wording, qualifications and date uncertainty; retain completed Phase 4B grid.
-- **Source:** Backlog approval §4 (Calendar refinements); [Phase 4B verification](../VERIFICATION.md).
-- **Acceptance:** Use normal-weight lengthy deadline descriptions and a compact accessible deadline icon/label. Simplify awkward milestone labels without inventing date/time precision. Preserve complete official wording and qualifications; verify keyboard/screen-reader labels and narrow/enlarged-text layouts.
 
 ### CAL-002
 
@@ -363,6 +355,25 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 Stable IDs are retained here and excluded from active counts.
 
+### CAL-001
+
+**Refine deadline typography and milestone labels** — **Medium** · **Completed — October 22, 2026**
+
+- **Dependencies:** Preserve official wording, qualifications and date uncertainty; retain completed Phase 4B grid.
+- **Source:** Backlog approval §4 (Calendar refinements); [Phase 4B verification](../VERIFICATION.md).
+- **Acceptance:** Use normal-weight lengthy deadline descriptions and a compact accessible deadline icon/label. Simplify awkward milestone labels without inventing date/time precision. Preserve complete official wording and qualifications; verify keyboard/screen-reader labels and narrow/enlarged-text layouts.
+
+- **Completion evidence:** [Phase 4E implementation](https://github.com/utahbug/UtahBills/commit/f695b5f9ca88ba960c407b92696c2ddd2f7b4fa0), production build, Python checks and all 19 browser suites; source-driven Calendar wording/typography, reflow and axe checks. Physical/manual acceptance remains UI-001. See [verification](PHASE4E_VERIFICATION.md).
+
+### UI-002
+
+**Phase 4E navigation, request sources, session labels, About/FAQ and footer** — **Medium** · **Completed — October 22, 2026**
+
+- **Source:** Owner's Phase 4E request §§2–6 and 8–12; explicitly supersedes the combined About/FAQ and visible Main footer decisions.
+- **Dependencies:** Preserve Phase 4A–4D behavior, source content, legacy routes and deployment safeguards.
+- **Acceptance:** Normal-weight underlined active navigation without background or added height; independent accessible request-source dialog preserving provenance/history; exact title-case session labels; separate About/FAQ with original explanations/references and legacy bookmarks; approved compact footer and properly scoped copyright. Verify keyboard/touch, nine widths, doubled text, 200% CSS zoom, no overflow and automated accessibility. No data/acquisition or unrelated feature changes.
+- **Completion evidence:** [Phase 4E implementation](https://github.com/utahbug/UtahBills/commit/f695b5f9ca88ba960c407b92696c2ddd2f7b4fa0), all 19 browser suites, production build and Python integrity checks; original explanation fixtures and captured source-panel text/link checks retained. See [verification](PHASE4E_VERIFICATION.md). Physical devices and manual screen readers remain UI-001.
+
 ### DATA-001
 
 **Restore verified 2027 request freshness** — **High** · **Completed — October 22, 2026**
@@ -392,12 +403,14 @@ These batches are completed; their unresolved findings remain in the active inve
 | Phase 4A | Banner/visible prototype-label removal, compact top spacing, Main footer identification; bounded vote/identity investigation without unsupported corrections. | [5a151bc](https://github.com/utahbug/UtahBills/commit/5a151bc08af4361aadc4adfea273d561f0d6d276), byte-preservation follow-ups [283d3a2](https://github.com/utahbug/UtahBills/commit/283d3a2), [13314c4](https://github.com/utahbug/UtahBills/commit/13314c4), reflow correction [8e46916](https://github.com/utahbug/UtahBills/commit/8e469161ce42a33fecac890910dd0ec3358c753f). | [Phase 4A browser checks](../tests/phase4a.mjs), [foundation integrity](../tests/foundation_data.py), production build and 15 browser suites; [verification record](../VERIFICATION.md). |
 | Phase 4B | Compact interface, navigation and Calendar layout; consolidated About & FAQ and contextual guidance. | [1ff2b05](https://github.com/utahbug/UtahBills/commit/1ff2b05dceeab42e1738bbf0a5fa5a41fba1fb7a). | [Phase 4B checks](../tests/phase4b.mjs), production build, integrity tests and 16 browser suites; [verification record](../VERIFICATION.md). |
 | Phase 4C | Corrected Calendar test assumptions and historical completeness condition; route/recovery checks, audit and future-transition documentation. | [3465244](https://github.com/utahbug/UtahBills/commit/34652442a01de2a73d82d95ce4bc5cc080b73052), [af26e78](https://github.com/utahbug/UtahBills/commit/af26e785e5d9f9acca5ee7cb4f2e00bb1b1c9759). | [Quality checks](../tests/quality-audit.mjs), [Calendar browser regressions](../tests/batch2.mjs), [foundation integrity](../tests/foundation_data.py), build and 17 browser suites; [successful workflow](https://github.com/utahbug/UtahBills/actions/runs/39860908975), [audit](QUALITY_AUDIT.md). |
+| Phase 4D | Verified refresh recovery and isolated introduced-session transitions; actual subsequent scheduled observation remains open. | [abfbd5c](https://github.com/utahbug/UtahBills/commit/abfbd5caed21ea189ff204f2105024dbe1b3ea73), [a928825](https://github.com/utahbug/UtahBills/commit/a9288254b0b179275ccaa608f622ca9c2e9c7ab0). | [Phase 4D verification](PHASE4D_VERIFICATION.md), all 18 browser suites and integrity checks. |
+| Phase 4E | Underlined navigation, request-source dialog, title-case labels, separate About/FAQ and compact footer, regular Calendar descriptions. | [f695b5f9ca88ba960c407b92696c2ddd2f7b4fa0](https://github.com/utahbug/UtahBills/commit/f695b5f9ca88ba960c407b92696c2ddd2f7b4fa0). | [Phase 4E verification](PHASE4E_VERIFICATION.md), all 19 browser suites and integrity checks. |
 
 Confirmed completed design decisions, preserved unless a new request reopens them:
 
 - Session selector precedes Search; compact native controls/results minimize unused vertical space.
 - Borderless Copy icons share existing toolbar rows, retaining accessible targets and confirmation.
-- About & FAQ is consolidated, with old guide/source routes preserved.
+- About & FAQ was consolidated in Phase 4B; the explicit Phase 4E request replaces it with separate About and FAQ pages, retaining old guide/source routes and section bookmarks.
 - Raw JSON Contact source links are removed; verified contact data and human-readable biography links remain.
 - Recent Activity has clear Previous page / Next page labels and no unnecessary single-page controls.
 - Calendar is a continuous semantic grid with integrated weekday headings.
@@ -416,6 +429,10 @@ Blue icons, neutral compact design, static `noindex, nofollow`, provenance, hist
 - **Batch completion versus unresolved findings:** Phase 4C H1/M1 code corrections are complete. Phase 4D subsequently resolves H2 under DATA-001 and M4 under SESSION-001. H3, identity/roster gaps, M3 human review and the next actual scheduled-run observation remain open under their task IDs. Phase completion and deployment are not evidence of factual completeness or accessibility certification.
 
 No roadmap item was deleted or silently reclassified. The historical source documents remain available for context; this reconciliation records why the active inventory differs from their older statements.
+
+## Phase 4E decision reconciliation
+
+The owner explicitly replaced the combined About & FAQ destination and visible Main footer label with separate About/FAQ routes and the approved compact disclaimer. Prior phase descriptions remain historical evidence; UI-002 records this authorized replacement. CAL-001 is complete; other Calendar expansion tasks remain open. No acquisition logic or legislative data changed.
 
 ## Next Recommended Batch
 

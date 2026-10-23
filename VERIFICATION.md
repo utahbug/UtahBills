@@ -201,3 +201,7 @@ Local deterministic analysis, production build and Python integrity checks passe
 See [Phase 4D verification](docs/PHASE4D_VERIFICATION.md) for source hashes, independent acquisition/reconciliation outcomes, manual-versus-scheduled limits and published-data comparisons. The upstream missing status row is corrected; guarded run 39869478421 successfully published 268 verified requests and 90 Calendar events. Historical data and conflict safeguards are unchanged.
 
 Deterministic analysis, production build and all Python integrity suites passed; all 18 local browser suites passed, including isolated 0/1/3/240 introduced-record transitions. The guarded refresh separately passed its established 17-suite command on the new official snapshots. The new transition suite and build passed again after syncing those snapshots. Mobile/desktop fixture screenshots and live Main request/Calendar behavior were reviewed. Physical-device/manual screen-reader and human editorial acceptance remain pending. The final readiness push runs all 18 suites through the required workflow.
+
+### Phase 4E — navigation, footer, About/FAQ and Calendar polish
+
+See [Phase 4E verification](docs/PHASE4E_VERIFICATION.md) for scope, compatibility, test coverage and remaining limits. The new authorized design supersedes earlier combined-page and visible Main-footer descriptions without changing data, acquisition, unresolved findings or hosting policy.
