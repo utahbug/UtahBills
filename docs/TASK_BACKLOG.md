@@ -21,9 +21,9 @@ Active inventory: **37 tasks**; **5 completed tasks** retain their IDs in the co
 | Status | Count |
 | --- | ---: |
 | In progress | 0 |
-| Approved/Not started | 26 |
+| Approved/Not started | 24 |
 | Proposed | 2 |
-| Blocked | 6 |
+| Blocked | 8 |
 | Deferred | 3 |
 
 | Priority | Count |
@@ -67,15 +67,15 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 **Verify and publish the official 2027 roster** — **High** · **Blocked**
 
-- **Dependencies:** An authoritative published 2027 session roster, rather than current contacts or request sponsors.
+- **Dependencies:** An authoritative published 2027 session roster, rather than current contacts or request sponsors. Phase 4H found 89 rows from the year=2027 query, no 2027 selector option, and missing chamber/district coverage; no finalized membership was established. [Preserved evidence](PHASE4H_VERIFICATION.md#session-002-blocked-incomplete-roster-evidence-retained).
 - **Source:** [Roadmap Stage 2](../ROADMAP.md#stage-2--legislator-directory--partly-implemented); [Audit M2](QUALITY_AUDIT.md#m2--historical-identity-and-future-roster-remain-incomplete--open).
 - **Acceptance:** Preserve dated membership evidence and stable IDs; verify chamber/district membership and associations; test directory, sponsor and vote links. Preserve 2026 history and separately dated current contacts. Unverified membership remains unavailable.
 
 ### SESSION-003
 
-**Review early-session source completeness** — **High** · **Approved/Not started**
+**Review early-session source completeness** — **High** · **Blocked**
 
-- **Dependencies:** Published early-session sources; DATA-001, SESSION-001 and SESSION-002 constrain the claims that can be made.
+- **Dependencies:** First real introduced 2027 sources and conversions are still absent in both official index and human listing. Phase 4H verified 268 unchanged requests/statuses and corrected a future measure-revision provenance-test failure. Fixture readiness is not live acceptance. DATA-001, SESSION-001 and SESSION-002 constrain claims; [evidence](PHASE4H_VERIFICATION.md).
 - **Source:** [Roadmap Stage 1](../ROADMAP.md#stage-1--legislative-data-and-transparency--partly-implemented).
 - **Acceptance:** Cross-check official index/listing and acquired details, request joins, versions, actions and vote references; document gaps and failure recovery. Verify first real request conversion when available. Empty indexes and incomplete rosters never become completeness claims.
 
@@ -261,7 +261,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### TEST-001
 
-**Verify the next scheduled refresh end-to-end** — **High** · **Approved/Not started**
+**Verify the next scheduled refresh end-to-end** — **High** · **Blocked**
 
 - **Dependencies:** A subsequent scheduled run after the Phase 4C correction; catalog publication depends independently on DATA-001.
 - **Source:** [Audit H1](QUALITY_AUDIT.md#h1--calendar-regression-blocked-scheduled-publication--corrected); [workflow](../.github/workflows/pages.yml).
@@ -452,6 +452,10 @@ Official-finder fallback and priority updates are implemented; LEG-001 remains b
 ## Phase 4G maintenance
 
 ACT-001 records this bounded completion; active task counts and priorities are unchanged. TEST-001 remains open: no subsequent actual cron run was available. SESSION-003 still requires real introduced-session evidence, and TRANS-001 still requires deeper version/timing verification. Keep the 2027 cycle primary; no historical findings or human-review tasks were closed.
+
+## Phase 4H maintenance
+
+TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-run and first-introduction evidence, respectively; neither is complete. This accounts for the two status-count changes. SESSION-002 remains Blocked: the incomplete roster-query response is preserved but not imported. No legislative source bytes or application functionality changed. A reproduced future-revision provenance-test defect was corrected; 21 targeted Python tests passed. [Verification and source evidence](PHASE4H_VERIFICATION.md).
 
 ## Next Recommended Batch
 

@@ -4,6 +4,9 @@ from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import activity_model as model
 from catalog_model import ROOT,read
+def source_inventory(manifest):
+ return {s['sha256']:s for s in [*manifest['records'].values(),*manifest.get('requestHistory',[]),*manifest.get('requestStatusHistory',[]),*(source for history in manifest.get('measureHistory',{}).values() for source in history)]}
+
 class Activity(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
@@ -13,7 +16,7 @@ class Activity(unittest.TestCase):
   self.assertEqual(len({e['id'] for e in self.rows}),len(self.rows));self.assertEqual(sum(e['kind']=='Recorded legislative action' for e in self.rows),len({json.dumps([k,'action',a],sort_keys=True) for k,s in self.manifest['records'].items() for a in json.loads(read(s))['actionHistoryList']}))
   self.assertEqual([e['date'] or '' for e in self.rows],sorted([e['date'] or '' for e in self.rows],reverse=True))
  def test_source_traceability_and_date_labels(self):
-  sources={s['sha256']:s for s in [*self.manifest['records'].values(),*self.manifest['requestHistory'],*self.manifest['requestStatusHistory']]}
+  sources=source_inventory(self.manifest)
   for e in self.rows:
    self.assertTrue(e['retrievedAt']);self.assertTrue(e['history'].startswith(('#bill/','#request/')))
    self.assertEqual(e['sourcePath'],sources[e['sourceSha256']]['path'])
@@ -43,8 +46,8 @@ class Activity(unittest.TestCase):
    fresh=next(e for e in rows if e['kind']=='New public request observed');self.assertEqual(fresh['date'],'2026-10-20');self.assertEqual(fresh['title'],'Original')
    self.assertIn('Original → Revised',[e['text'].removeprefix('Title: ') for e in rows]);self.assertIn('Sponsor ID: A → B',[e['text'] for e in rows])
    intro=next(e for e in rows if e['category']=='introduced');self.assertEqual(intro['relatedHistory'],'#request/NEW');self.assertEqual(intro['history'],'#bill/2027/HJR0001')
-   before=[e['id'] for e in rows];manifest['records']['2027/HJR0001']={**measure,'retrievedAt':'2026-10-24T12:00:00+00:00'}
-   again,_=model.events(manifest);self.assertEqual(before,[e['id'] for e in again])
+   before=[e['id'] for e in rows];later=source('later','2026-10-24T12:00:00+00:00');bodies['later']={**bill,'shortTitle':'Revised resolution'};manifest['records']['2027/HJR0001']=later;manifest['measureHistory']['2027/HJR0001'].append(later)
+   again,_=model.events(manifest);self.assertEqual(before,[e['id'] for e in again]);first=next(e for e in again if e['category']=='introduced');self.assertEqual(first['title'],'Resolution');self.assertEqual(first['sourcePath'],source_inventory(manifest)[first['sourceSha256']]['path'])
    request['history'][0]['observedAt']=None
    missing,_=model.events(manifest);self.assertIsNone(next(e for e in missing if e['kind']=='New public request observed')['date'])
    self.assertEqual(model.observation('2026-10-20T12:00:00'),(None,''))

@@ -1,0 +1,99 @@
+{
+  "index2027": {
+    "url": "https://le.utah.gov/data/2027GS/billlist.json",
+    "finalUrl": "https://le.utah.gov/data/2027GS/billlist.json",
+    "status": 200,
+    "checkedAt": "2026-10-23T01:55:34.854486+00:00",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2,
+    "matchesSaved": true,
+    "preservedPath": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json"
+  },
+  "requests2027": {
+    "url": "https://le.utah.gov/data/2027GS/filelist.json",
+    "finalUrl": "https://le.utah.gov/data/2027GS/filelist.json",
+    "status": 200,
+    "checkedAt": "2026-10-23T01:55:34.908887+00:00",
+    "sha256": "fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a",
+    "bytes": 26049,
+    "matchesSaved": true,
+    "preservedPath": "data/catalog-raw/fbbe2412418f4765410c2e148806f4c8acba61e020cd1bbd09e591097c9df37a.json"
+  },
+  "requestStatuses2027": {
+    "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+    "finalUrl": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+    "status": 200,
+    "checkedAt": "2026-10-23T01:55:35.083395+00:00",
+    "sha256": "539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037",
+    "bytes": 119079,
+    "matchesSaved": true,
+    "preservedPath": "data/catalog-raw/539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037.txt"
+  },
+  "roster2027": {
+    "url": "https://le.utah.gov/asp/roster/roster.asp?year=2027",
+    "finalUrl": "https://le.utah.gov/asp/roster/roster.asp?year=2027",
+    "status": 200,
+    "checkedAt": "2026-10-23T01:55:35.140980+00:00",
+    "sha256": "abfcb8821da4a3bc12e5992d10cfeab0c267c6c56794e9a43c13af54a8c846d7",
+    "bytes": 38881,
+    "matchesSaved": false,
+    "preservedPath": "docs/evidence/phase4h/roster2027-response.html.txt",
+    "year2027Offered": false,
+    "representatives": 65,
+    "senators": 24,
+    "missingHouseDistricts": [
+      13,
+      14,
+      16,
+      17,
+      21,
+      29,
+      34,
+      38,
+      59,
+      67
+    ],
+    "missingSenateDistricts": [
+      5,
+      6,
+      7,
+      13,
+      18
+    ],
+    "acceptedAsSessionRoster": false
+  },
+  "counts": {
+    "introduced": 0,
+    "requests": 268,
+    "statuses": 268,
+    "rosterMembers": 89,
+    "humanListingIntroduced": 0
+  },
+  "scheduledRun": {
+    "id": 39820847031,
+    "event": "schedule",
+    "conclusion": "failure",
+    "createdAt": "2026-10-22T17:14:08Z",
+    "subsequentScheduleFound": false,
+    "calendar": "90 official events; 8 complete months checked",
+    "catalog": {
+      "attemptedAt": "2026-10-22T17:14:32.513104+00:00",
+      "status": "success",
+      "introduced2027": 0,
+      "publicRequests": 267,
+      "requestStatusesVerified": 267,
+      "linkedRequests": 0,
+      "finishedAt": "2026-10-22T17:14:34.157098+00:00"
+    },
+    "archive": {
+      "attemptedAt": "2026-10-22T17:14:34.682147+00:00",
+      "status": "success",
+      "expected": 5672,
+      "retrieved": 5672,
+      "unavailable": []
+    },
+    "testing": "Calendar empty-date assertion timed out; corrected in Phase 4C",
+    "snapshotPreservation": "skipped",
+    "deployment": "skipped"
+  }
+}

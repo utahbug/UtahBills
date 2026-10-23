@@ -142,3 +142,10 @@ Official request/update dates are not established in the saved records, so those
 - Implemented: compact Public requests / Introduced legislation / Legislative actions / Documents and amendments filters, preserving date windows, pagination, Copy and history/source navigation. Initial baseline entries are not manufactured activity.
 - Tested snapshot: 15 new requests plus one title change; no introduced 2027 measures yet. Live first-introduction validation remains SESSION-003. Historical activity and all safeguards remain intact.
 - [Evidence and verification](docs/PHASE4G_VERIFICATION.md); ACT-001 completed in the [backlog](docs/TASK_BACKLOG.md#act-001). TEST-001, TRANS-001, roster verification, historical conflicts and human accessibility review remain open.
+
+## Phase 4H — scheduled refresh and first-introduction readiness
+
+- Rechecked actual cron history: no execution after the previous verification; TEST-001 remains open, explicitly blocked on that evidence. The old scheduled failure acquired/validated data but failed a Calendar test before preservation/deployment; Phase 4C already corrected that test.
+- Official 2027 index, requests and status listing are unchanged: zero introduced measures and 268 reconciled requests. No data refresh or new activity was manufactured. SESSION-003 remains blocked on first real introduced/conversion evidence.
+- SESSION-002 remains blocked: a year=2027 roster query returns incomplete rows without a 2027 year-selector option. Evidence is preserved, but no members were imported or inferred.
+- Corrected a reproduced test-only readiness defect: activity provenance validation now recognizes preserved first measure revisions after later source changes. Runtime, acquisition and Phase 4G behavior remain unchanged. [Phase 4H verification](docs/PHASE4H_VERIFICATION.md).
