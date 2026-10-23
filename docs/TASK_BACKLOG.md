@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **4 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **5 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -357,6 +357,15 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 Stable IDs are retained here and excluded from active counts.
 
+### ACT-001
+
+**2027 Recent Activity observations and categories** — **High** · **Completed — October 22, 2026**
+
+- **Source:** Owner's Phase 4G scoped request; [Roadmap Phase 4G](../ROADMAP.md#phase-4g--2027-activity-and-change-transparency).
+- **Acceptance met:** Exclude initial request baseline; derive later new IDs and previous/new title/sponsor/status observations; preserve exact-ID first introduced-measure relationships, action/document evidence and date distinctions; stable IDs, no unchanged-retrieval duplicates; category/date/page filtering, Copy, source/detail links and honest empty states.
+- **Implementation/tests:** [45f2791](https://github.com/utahbug/UtahBills/commit/45f2791f27ef9612a09eee408556fdbc33faa2d4), [model tests](../tests/activity_data.py), [existing activity tests](../tests/activity.mjs), [Phase 4G regressions](../tests/phase4g.mjs), production build; [verification](PHASE4G_VERIFICATION.md).
+- **Limits:** First real 2027 introduction still awaits SESSION-003; this does not complete TRANS-001 comparisons/late-change verification, roster, new vote interpretation, physical/manual accessibility or TEST-001. Real snapshot supports 16 request events; other 2027 categories are not yet populated.
+
 ### CAL-001
 
 **Refine deadline typography and milestone labels** — **Medium** · **Completed — October 22, 2026**
@@ -439,6 +448,10 @@ The owner explicitly replaced the combined About & FAQ destination and visible M
 ## Phase 4F maintenance
 
 Official-finder fallback and priority updates are implemented; LEG-001 remains blocked, with no new task marked complete. At the October 22 check, latest actual scheduled run was [39820847031](https://github.com/utahbug/UtahBills/actions/runs/39820847031), which failed before the correction. No subsequent cron run was available. Successful manual run 39869478421 and push deployment 39876464781 do not close TEST-001. No acquisition logic or records changed.
+
+## Phase 4G maintenance
+
+ACT-001 records this bounded completion; active task counts and priorities are unchanged. TEST-001 remains open: no subsequent actual cron run was available. SESSION-003 still requires real introduced-session evidence, and TRANS-001 still requires deeper version/timing verification. Keep the 2027 cycle primary; no historical findings or human-review tasks were closed.
 
 ## Next Recommended Batch
 

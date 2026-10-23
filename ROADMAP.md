@@ -135,3 +135,10 @@ Official request/update dates are not established in the saved records, so those
 - Implemented: separate About and FAQ destinations, preserved guide/data explanations and references, compatible legacy routes and section bookmarks, left-aligned FAQ section links, and the approved compact copyright/disclaimer footer. This explicitly supersedes Phase 4B's combined About & FAQ destination and Phase 4A's visible Main footer label.
 - Implemented CAL-001: regular-weight full Calendar descriptions, concise Deadline icon/label, and “Timing: see official wording” without changing official descriptions, exceptions, dates or sources. Continuous grid and D identifiers remain.
 - See [Phase 4E verification](docs/PHASE4E_VERIFICATION.md) and [backlog](docs/TASK_BACKLOG.md). Data, acquisition, unresolved conflicts, identities, roster, manual accessibility/editorial review and subsequent scheduled-run verification remain unchanged. Review remains unconfigured; noindex remains.
+
+## Phase 4G — 2027 activity and change transparency
+
+- Implemented: baseline-aware new-request observations, previous/new title and sponsor-ID changes, previous/new status observations, first saved introduced bills/resolutions and exact-ID original-request links. Dates distinguish observations from official actions and document records.
+- Implemented: compact Public requests / Introduced legislation / Legislative actions / Documents and amendments filters, preserving date windows, pagination, Copy and history/source navigation. Initial baseline entries are not manufactured activity.
+- Tested snapshot: 15 new requests plus one title change; no introduced 2027 measures yet. Live first-introduction validation remains SESSION-003. Historical activity and all safeguards remain intact.
+- [Evidence and verification](docs/PHASE4G_VERIFICATION.md); ACT-001 completed in the [backlog](docs/TASK_BACKLOG.md#act-001). TEST-001, TRANS-001, roster verification, historical conflicts and human accessibility review remain open.
