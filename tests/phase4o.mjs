@@ -19,7 +19,7 @@ try {
   if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom='2');
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
-  await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await page.locator('#activity-category').selectOption('requests');await page.locator('.activity-row').first().waitFor();
+  await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await page.locator('#activity-category').selectOption('requests');await page.waitForFunction(()=>document.querySelector('#activity-count')&&!document.querySelector('#activity-count').textContent.includes('Loading'));await page.locator('.activity-row').first().waitFor();
   await page.locator('.activity-info > summary').click();
   if(partial.status==='partial')assert.ok((await page.locator('#activity-scope').innerText()).includes(`${partial.withheld.length} withheld awaiting status`));
   for(const item of partial.withheld)assert.ok(!(await page.locator('#activity-results').innerText()).includes(item.trackingID));
