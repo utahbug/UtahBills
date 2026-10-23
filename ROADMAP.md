@@ -191,3 +191,7 @@ The owner-authorized policy now permits an explicit independently verified subse
 ## Phase 4P — source observation and verification
 
 Eligible source-observed public requests are discoverable with unconfirmed status, a neutral flag and original-source evidence, logically separate from verified requests. Observation and later verification histories remain distinct without duplicate new-request events. This supersedes Phase 4O's public invisibility only, preserving every acquisition gate. Latest 273/270 evidence exceeds the 1% bound, so the published 271-source/270-verified snapshot remains unchanged. [Evidence and limitations](docs/PHASE4P_VERIFICATION.md). TEST-001, first-real-2027 readiness and all unrelated unfinished tasks remain open.
+
+## Phase 4Q — independent source-observation preservation
+
+Validated missing-first-status observations can be retained and displayed separately when catalog reconciliation fails, using immutable sources, pinned catalog baselines and independent diagnostics. Catalog three/1% limits and introduced/text safeguards remain unchanged. Current evidence has 273 requests/271 statuses; all requests are discoverable with two unconfirmed statuses and preserved recovery history. [Verification and boundaries](docs/PHASE4Q_VERIFICATION.md). TEST-001 and all unfinished 2027/human-validation priorities remain open. Main hosting and the future bills.utahbug.com plan are unchanged.

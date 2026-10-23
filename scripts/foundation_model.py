@@ -1,6 +1,7 @@
 """Reproducible archive audit and on-demand projections. No inferred legal analysis."""
 import json,re,collections,pathlib
 from catalog_model import ROOT,read,Roster,derive
+from supplemental_observations import load as observation_manifest
 from acquire_votes import parse
 from refresh_archive import expected
 
@@ -36,7 +37,7 @@ def project_vote(item,people):
  return base,dict(id=item['id'],url=item['url'],reason=error,state=item['state'])
 
 def build(write=False):
- manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));verification=json.loads((ROOT/'data/session-verification.json').read_text(encoding='utf-8'));archive=json.loads((ROOT/'data/archive.json').read_text(encoding='utf-8'));data=derive(manifest)
+ manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));verification=json.loads((ROOT/'data/session-verification.json').read_text(encoding='utf-8'));archive=json.loads((ROOT/'data/archive.json').read_text(encoding='utf-8'));data=derive(manifest,observation_manifest())
  listing,conflicts=official_listing(verification['sources']['listing2026']);index=json.loads(read(verification['sources']['index2026']));index_ids={r['number'] for r in index};records={};versions=actions=documents=refs=0
  for key,source in manifest['records'].items():
   b=json.loads(read(source));records[key]=b
@@ -66,7 +67,7 @@ def build(write=False):
  rows2027=parse_statuses(read(manifest['sources']['requestStatuses2027']))
  listed2027={m[1] for r in rows2027.values() if (m:=re.fullmatch(r'([HS](?:B|R|JR|CR)\d{3,4})(?:S\d+)?',re.sub(r'[.\s]','',r['officialNumber'])))}
  indexed2027={b['billNumber'] for b in data['measures'] if b['sessionID']=='2027GS'}
- report['sessions']['2027']={**data['coverage']['2027'],'publicRequests':len(data['requests2027']),'requestPublication':data['requestPublication'],'requestsCheckedAt':data['requestCheckedAt'],'humanListingIntroducedCount':len(listed2027),'listingMissingFromIndex':sorted(listed2027-indexed2027),'indexMissingFromListing':sorted(indexed2027-listed2027)}
+ report['sessions']['2027']={**data['coverage']['2027'],'publicRequests':len(data['requests2027']),'verifiedPublicRequests':len(data['requests2027']),'sourceObservedRequests':len(data['sourceObservedRequests2027']),'visiblePublicRequests':len(data['requests2027'])+len(data['sourceObservedRequests2027']),'requestObservationCoverage':data['requestObservationCoverage'],'requestPublication':data['requestPublication'],'requestsCheckedAt':data['requestCheckedAt'],'humanListingIntroducedCount':len(listed2027),'listingMissingFromIndex':sorted(listed2027-indexed2027),'indexMissingFromListing':sorted(indexed2027-listed2027)}
  report['measures']=[dict(session=b['sessionID'],bill=b['billNumber'],versions=[dict(id=v['billNumber'],minorVersion=v['minorVersion'],documentReferences=len(v['billDocs'])) for v in b['billVersionList']],actions=len(b['actionHistoryList']),voteReferences=len(votes.get(b['sessionID']+'/'+b['billNumber'],[])),missingVoteDetails=sum(v['detailState']!='verified' for v in votes.get(b['sessionID']+'/'+b['billNumber'],[])),source=manifest['records'][key]) for key,b in records.items()]
  if write:
   out=ROOT/'dist/data';(out/'archive-votes').mkdir(exist_ok=True);histories=collections.defaultdict(list)

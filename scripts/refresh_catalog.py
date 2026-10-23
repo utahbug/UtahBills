@@ -32,12 +32,19 @@ def append_source(history,source):
     if not history or source_identity(history[-1])!=source_identity(source):history.append(dict(source))
 
 def refresh():
+    attempt=REPORT.with_name('catalog-sources.json')
+    attempt.unlink(missing_ok=True) # Never reuse a stale acquisition after a network failure.
     old=json.loads(TARGET.read_text(encoding='utf-8'))
     cache=json.loads(CACHE.read_text(encoding='utf-8')) if CACHE.exists() else {}
     cache={**cache,**old['records']}; sources=dict(old['sources'])
     for key,file in [('index2027','billlist.json'),('requests2027','filelist.json')]:
         sources[key]=get('https://le.utah.gov/data/2027GS/'+file)
     sources['requestStatuses2027']=get(STATUS_URL)
+    attempt.parent.mkdir(exist_ok=True)
+    attempt.write_text(json.dumps(dict(baseline=old,sources={k:sources[v] for k,v in [('requests','requests2027'),('statuses','requestStatuses2027'),('index','index2027')]})),encoding='utf-8')
+    evidence=attempt.parent/'catalog-attempt-raw';evidence.mkdir(exist_ok=True)
+    for key in ('requests2027','requestStatuses2027','index2027'):
+        source=sources[key];(evidence/pathlib.Path(source['path']).name).write_bytes(read(source))
     # Validate the previous published catalog before using its identities as the trust baseline.
     from catalog_model import derive
     from request_publication import reconcile

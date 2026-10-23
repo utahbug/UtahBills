@@ -25,7 +25,7 @@ def observation(value):
   return stamp.date().isoformat(),stamp.isoformat()
  except (ValueError,TypeError):return None,''
 
-def events(manifest):
+def events(manifest,supplemental=None):
  result=[];seen=set();raw_actions=0
  def add(event,identity):
   ident=hashlib.sha256(json.dumps(identity,sort_keys=True).encode()).hexdigest()
@@ -42,7 +42,7 @@ def events(manifest):
    # Keep the first existing representation's event ID; PDF/XML pairs share one record.
    add(dict(**base,date=calendar_date(d['date']),sourceOrder=source_order(d['date']),kind=kind,text=group['version']+' · '+d['label'],body='',dateLabel='Document record date; publication time unverified',url=d['url']),[key,'document',group['version'],file_type,d['date'],d['fileName'].rsplit('.',1)[0]])
  # Retained baseline membership, not acquisition date alone, distinguishes new IDs.
- projection=derive(manifest)
+ projection=derive(manifest,supplemental)
  archive=projection['requestArchive2027']+projection.get('sourceObservedRequests2027',[])
  observations={r['trackingID']:r for r in projection.get('requestObservations2027',[])}
  archive=[{**r,'history':observations[r['trackingID']]['history'],'verificationHistory':observations[r['trackingID']]['verificationHistory']} if r['trackingID'] in observations else r for r in archive]
@@ -103,10 +103,13 @@ def events(manifest):
  return sorted(result,key=lambda e:(e['date'] or '',e['sourceOrder'],e['id']),reverse=True),raw_actions
 
 def build():
- manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));rows,raw=events(manifest);out=ROOT/'dist/data/activity';out.mkdir(exist_ok=True)
+ from supplemental_observations import load
+ supplemental=load()
+ manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));rows,raw=events(manifest,supplemental);out=ROOT/'dist/data/activity';out.mkdir(exist_ok=True)
  index=dict(schemaVersion=2,rawActions=raw,sessions={})
  baseline=(manifest.get('requestHistory') or [manifest['sources']['requests2027']])[0]
- index['requestPublication']=derive(manifest)['requestPublication']
+ projection=derive(manifest,supplemental)
+ index['requestPublication']=projection['requestObservationCoverage'] or projection['requestPublication']
  index['requestCoverage']=dict(baselineCount=len(json.loads(read(baseline))),baselineObservedAt=baseline['retrievedAt'],checkedAt=manifest['sources']['requests2027']['retrievedAt'])
  for year in ('2026','2027'):
   selected=[e for e in rows if e['session']==year];pages=[]

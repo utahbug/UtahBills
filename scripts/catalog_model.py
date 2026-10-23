@@ -19,7 +19,7 @@ class Roster(HTMLParser):
 
 def namekey(s):return re.sub('[^a-z]','',re.sub(r'^(Rep\.|Sen\.)\s*','',s).lower())
 def clean(s):return html.unescape(re.sub('<[^>]+>',' ',s or '')).strip()
-def derive(manifest):
+def derive(manifest,supplemental=None):
     sources=manifest['sources'];measure=[];names={}
     for key,history in manifest.get('measureHistory',{}).items():
         for source in history:
@@ -123,7 +123,7 @@ def derive(manifest):
         for ident in current:
             archive[ident].update(officialRequestUrl=STATUS_URL+'#'+statuses[ident]['anchor'] if statuses[ident].get('anchor') else None,officialStatus=statuses[ident]['officialStatus'],statusCheckedAt=status_source['retrievedAt'],statusSource=status_source)
     from source_observations import project
-    source_observed, observation_history=project(manifest,archive)
+    source_observed, observation_history, observation_coverage=project(manifest,archive,supplemental)
     request_archive=list(archive.values())
     requests=[r for r in request_archive if r['currentlyListed'] and not r['introducedBill']]
     coverage={}
@@ -131,10 +131,11 @@ def derive(manifest):
         expected={x['number'] for x in json.loads(read(sources['index'+str(year)]))};obtained={b['billNumber'] for b in measure if b['sessionID']==str(year)+'GS'}
         assert obtained<=expected
         coverage[str(year)]={'expected':len(expected),'imported':len(obtained),'complete':bool(expected) and expected==obtained,'emptyIndex':not expected,'missing':sorted(expected-obtained),'sourceUrl':sources['index'+str(year)]['url'],'checkedAt':sources['index'+str(year)]['retrievedAt']}
-    return dict(sourceObservedRequests2027=source_observed,requestObservations2027=observation_history,checkedAt=manifest['checkedAt'],requestPublication=publication,coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),contactPeople=[dict(id=c['id'],name=c['fullName'],house=c.get('house',''),district=c.get('district',''),email=c.get('email',''),phone=c.get('workPhone') or c.get('cell',''),address=c.get('address',''),currentContact=True,contactCheckedAt=sources['contacts']['retrievedAt'],biography=('https://house.utleg.gov/rep/' if c.get('house')=='H' else 'https://senate.utah.gov/sen/')+c['id']) for c in contacts if c.get('house') in ('H','S')],unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing=STATUS_URL,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
+    return dict(requestObservationCoverage=observation_coverage,sourceObservedRequests2027=source_observed,requestObservations2027=observation_history,checkedAt=manifest['checkedAt'],requestPublication=publication,coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),contactPeople=[dict(id=c['id'],name=c['fullName'],house=c.get('house',''),district=c.get('district',''),email=c.get('email',''),phone=c.get('workPhone') or c.get('cell',''),address=c.get('address',''),currentContact=True,contactCheckedAt=sources['contacts']['retrievedAt'],biography=('https://house.utleg.gov/rep/' if c.get('house')=='H' else 'https://senate.utah.gov/sen/')+c['id']) for c in contacts if c.get('house') in ('H','S')],unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing=STATUS_URL,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
 if __name__=='__main__':
     import sys
-    d=derive(json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8')))
+    from supplemental_observations import load
+    d=derive(json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8')),load())
     if '--build' in sys.argv:
         out=ROOT/'dist/data';(out/'measures').mkdir(exist_ok=True)
         for b in d['measures']:

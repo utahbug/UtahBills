@@ -1,0 +1,24 @@
+{
+  "attemptedAt": "2026-10-23T21:03:10.990528+00:00",
+  "status": "partial",
+  "reconciliation": {
+    "status": "partial",
+    "officialTotal": 273,
+    "verifiedTotal": 271,
+    "withheld": [
+      {
+        "trackingID": "DFTEVYMLXT",
+        "reason": "New request awaiting first matching official status"
+      },
+      {
+        "trackingID": "VYQQDPXGUY",
+        "reason": "New request awaiting first matching official status"
+      }
+    ]
+  },
+  "introduced2027": 0,
+  "publicRequests": 271,
+  "requestStatusesVerified": 271,
+  "linkedRequests": 0,
+  "finishedAt": "2026-10-23T21:03:12.404202+00:00"
+}

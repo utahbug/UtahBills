@@ -26,3 +26,6 @@ data/text-2027-raw/* -text -whitespace
 # Preserve Phase 4N official reconciliation response bytes.
 docs/evidence/phase4n/*.json -text -whitespace
 docs/evidence/phase4n/*.html -text -whitespace
+
+# Immutable local catalog baselines used to reproduce supplemental observation validation.
+data/observation-baselines/* -text -whitespace
