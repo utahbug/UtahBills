@@ -17,6 +17,9 @@ class Versions(unittest.TestCase):
   texts={g['fileType']:[s['text'] for s in g['text']['sections']] for g in groups if g['text']};self.assertNotEqual(texts['Introduced'],texts['PubSub']);self.assertNotEqual(texts['Introduced'],texts['Amended']);self.assertEqual(texts['PubSub'],texts['Enrolled'])
  def test_representation_dates_not_new_versions(self):
   groups=v.document_groups(self.bill);amended=next(g for g in groups if g['fileType']=='Amended');self.assertNotEqual(amended['documents'][0]['date'],amended['documents'][1]['date']);self.assertEqual(len({g['version'] for g in groups}),2)
+ def test_successive_amended_documents_keep_distinct_identity(self):
+  b=copy.deepcopy(self.bill);version=b['billVersionList'][0];original=next(d for d in version['billDocs'] if d['fileType']=='Amended' and d['url'].endswith('.xml'));next_doc={**original,'url':original['url'].replace('2026-02-02','2026-02-03'),'fileName':original['fileName'].replace('2026-02-02','2026-02-03')};version['billDocs'].append(next_doc)
+  groups=[g for g in v.document_groups(b) if g['fileType']=='Amended'];self.assertEqual(len(groups),2);self.assertEqual(len({g['id'] for g in groups}),2);self.assertEqual({g['version'] for g in groups},{'HB0117'})
  def test_missing_text_and_unknown_dates(self):
   b=copy.deepcopy(self.bill)
   for x in b['billVersionList']:
