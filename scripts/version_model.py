@@ -42,14 +42,20 @@ def extract(source,b,group):
  assert sections and any(s['text'] for s in sections),'No comparable statutory sections'
  return dict(sections=sections,source=source)
 
-def project(b,metadata,available):
+def project(b,metadata,available,acquisition=None):
  groups=document_groups(b)
  for g in groups:
   g['text']=None;g['availability']='Official links only; text not retrieved and validated for comparison.'
   for d in g['documents']:
-   source=available.get(d['url'])
+   source=available.get((g['id'],d['url']),available.get(d['url']))
    if source and g['fileType'] in TEXT_TYPES:
     g['text']=extract(source,b,g);g['availability']='Verified local text; proposed sections only.';break
+ for g in groups:
+  state=(acquisition or {}).get(b['sessionID'][:4]+'/'+b['billNumber']+'/'+g['id'])
+  if state:
+   g['acquisitionStatus']=state['status']
+   if state['status']!='verified':
+    g['availability']+= ' Latest acquisition: '+state['status']+'. '+(state.get('reason') or '')
  groups.sort(key=lambda g:(int((re.search(r'S(\d+)$',g['version']) or [None,'0'])[1]),{'Introduced':0,'PubSub':0,'PubAmend':1,'AmdPages':2,'Amended':3,'Enrolled':4}[g['fileType']],g['identity'][2]))
  return dict(session=b['sessionID'],bill=b['billNumber'],metadataSource=metadata,groups=groups)
 
@@ -61,18 +67,42 @@ def build():
   matches=[g for g in document_groups(pinned) if g['version']==s['version'] and g['fileType']==s['fileType'] and s['url'] in [d['url'] for d in g['documents']]]
   assert len(matches)==1,'Pinned document relationship mismatch'
   extract(s,pinned,matches[0]);available[s['url']]=s
+ from refresh_text import load,validate_entry
+ acquisition=load()['entries'];automatic={}
+ for key,entry in acquisition.items():
+  validate_entry(entry)
+  if entry.get('verified'):automatic[key]=entry['verified']
  report=dict(definition='Introduced measures only. Official metadata links are not retrieval/validation evidence. Bills and resolutions counted separately; public requests excluded. Known failed retrievals cover only bounded attempted text acquisition, not untested links.',sessions={},textSources=len(available))
  used=set()
  for key,source in manifest['records'].items():
-  b=json.loads(read(source));p=project(b,source,available);year=b['sessionID'][:4];kind='bills' if re.fullmatch(r'[HS]B\d+',b['billNumber']) else 'resolutions'
+  b=json.loads(read(source));local=dict(available)
+  if b['sessionID']=='2027GS':
+   for g in document_groups(b):
+    for d in g['documents']:
+     entry=automatic.get('2027/'+b['billNumber']+'/'+g['id'])
+     if entry and d['url']==entry['url']:local[(g['id'],d['url'])]=entry
+  p=project(b,source,local,acquisition);year=b['sessionID'][:4];kind='bills' if re.fullmatch(r'[HS]B\d+',b['billNumber']) else 'resolutions'
   c=report['sessions'].setdefault(year,{}).setdefault(kind,dict(measures=0,multipleVersionIDs=0,linkedText=0,noLinkedText=0,verifiedLocalText=0,linkedButNotValidated=0,knownFailedTextRetrievals=0,amendmentDocuments=0,comparableMeasures=0))
   c['measures']+=1;c['multipleVersionIDs']+=len({v['billNumber'] for v in b['billVersionList']})>1
   has=any(g['fileType'] in TEXT_TYPES for g in p['groups']);n=sum(bool(g['text']) for g in p['groups']);c['linkedText']+=has;c['noLinkedText']+=not has;c['verifiedLocalText']+=n>0;c['linkedButNotValidated']+=has and not n;c['comparableMeasures']+=n>=2;c['amendmentDocuments']+=any(g['fileType'] in ('PubAmend','AmdPages') for g in p['groups'])
+  counts=c.setdefault('textDocuments',dict(linked=0,verified=0,notRetrieved=0,failed=0,rejected=0,deferred=0,lastAttemptFailed=0,lastAttemptRejected=0))
+  for g in p['groups']:
+   if g['fileType'] not in TEXT_TYPES:continue
+   counts['linked']+=1;counts['verified']+=bool(g['text'])
+   state=acquisition.get(year+'/'+b['billNumber']+'/'+g['id'],{})
+   status=state.get('status','verified' if g['text'] else 'not_retrieved')
+   field={'not_retrieved':'notRetrieved','failed':'failed','rejected':'rejected','deferred':'deferred'}.get(status)
+   if field:counts[field]+=1
+   if state.get('lastOutcome')=='failed':counts['lastAttemptFailed']+=1
+   if state.get('lastOutcome')=='rejected':counts['lastAttemptRejected']+=1
+  c['knownFailedTextRetrievals']+=any(g.get('acquisitionStatus') in ('failed','rejected') for g in p['groups'])
   used.update(g['text']['source']['url'] for g in p['groups'] if g['text'])
   target=ROOT/'dist/data/measures'/b['sessionID']/(b['billNumber']+'.json')
   if target.exists():
    detail=json.loads(target.read_text(encoding='utf-8'));detail['versionTransparency']=p;target.write_text(json.dumps(detail,ensure_ascii=False),encoding='utf-8')
- assert used==set(available),'Text source no longer matches current official catalog; review required'
+ assert set(available)<=used,'Text source no longer matches current official catalog; review required'
+ report['textSources']+=sum(len(e.get('revisions',[])) for e in acquisition.values())
+ report['acquisitionStatus']=load().get('lastRun',{}).get('status','not_run')
  report['sessions'].setdefault('2027',{})
  (ROOT/'dist/data/version-coverage.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('Version text coverage:',report)
  return report

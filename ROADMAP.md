@@ -174,3 +174,8 @@ TEST-001 remains awaiting a subsequent genuine scheduled run. Pipeline safeguard
 ## Phase 4L — bounded version and change transparency
 
 Implemented grouped official versions/amendments and deterministic verified-text comparison on basic details, initially HB0117, while preserving all four enhanced examples. Successive 2027 snapshots can identify newly observed document records without calling retrieval a publication date or counting PDF/XML representations twice. Availability evidence separates official links, validated local text and untested documents; no public counters or bulk historical retrieval were added. [Verification and limitations](docs/PHASE4L_VERIFICATION.md). TRANS-001 remains In progress; publication timing, broader text coverage and live 2027 acceptance remain unfinished. TEST-001 and TRANS-002 are unchanged.
+
+
+## Phase 4M — bounded automatic 2027 text acquisition
+
+Implemented a separate guarded XML acquisition step following validated catalog refresh, with exact official document associations, immutable revisions, bounded retries/rechecks, explicit partial coverage and integration into existing comparisons. This supersedes Phase 4L's manual-only future-2027 text limitation. No UI redesign, historical acquisition or formatted-reader expansion. [Verification and limitations](docs/PHASE4M_VERIFICATION.md). TRANS-001 remains In progress; TRANS-002 and first-real-2027 acceptance remain unfinished. TEST-001 requires genuine scheduled evidence, independently of push deployment.

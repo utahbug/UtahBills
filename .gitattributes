@@ -20,3 +20,5 @@ docs/evidence/phase4h/* -text -whitespace
 
 # Preserve Phase 4L original legislative XML bytes.
 data/version-raw/* -text -whitespace
+
+data/text-2027-raw/* -text -whitespace

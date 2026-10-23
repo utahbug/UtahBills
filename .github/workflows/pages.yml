@@ -22,6 +22,7 @@ jobs:
     outputs:
       calendar_result: ${{ steps.calendar_refresh.outcome }}
       catalog_result: ${{ steps.catalog_refresh.outcome }}
+      text_result: ${{ steps.text_refresh.outcome }}
       archive_result: ${{ steps.archive_refresh.outcome }}
     runs-on: ubuntu-latest
     steps:
@@ -45,6 +46,11 @@ jobs:
         if: github.event_name == 'schedule' || inputs.refresh_data == true
         continue-on-error: true
         run: python3 scripts/refresh_catalog.py
+      - name: Acquire bounded verified 2027 text
+        id: text_refresh
+        if: (github.event_name == 'schedule' || inputs.refresh_data == true) && steps.catalog_refresh.outcome == 'success'
+        continue-on-error: true
+        run: python3 scripts/refresh_text.py
       - name: Refresh official vote records
         id: archive_refresh
         if: (github.event_name == 'schedule' || inputs.refresh_data == true) && steps.catalog_refresh.outcome == 'success'
@@ -56,6 +62,7 @@ jobs:
         with:
           name: refresh-attempt-${{ github.run_id }}
           path: |
+            test-results/text-refresh.json
             test-results/catalog-refresh.json
             test-results/calendar-refresh.log
             test-results/archive-refresh.json
@@ -64,14 +71,18 @@ jobs:
         if: always() && (github.event_name == 'schedule' || inputs.refresh_data == true)
         env:
           CALENDAR_RESULT: ${{ steps.calendar_refresh.outcome }}
+          TEXT_RESULT: ${{ steps.text_refresh.outcome }}
           CATALOG_RESULT: ${{ steps.catalog_refresh.outcome }}
           ARCHIVE_RESULT: ${{ steps.archive_refresh.outcome }}
         run: |
+          if [ -f test-results/text-refresh.json ]; then
+            python3 -c "import json; r=json.load(open('test-results/text-refresh.json')); print('2027 text acquisition:',r['status'],r.get('counts',{}))" >> "$GITHUB_STEP_SUMMARY"
+          fi
           echo "Calendar refresh: $CALENDAR_RESULT" >> "$GITHUB_STEP_SUMMARY"
           echo "2027 catalog refresh: $CATALOG_RESULT" >> "$GITHUB_STEP_SUMMARY"
           echo "Vote archive refresh: $ARCHIVE_RESULT" >> "$GITHUB_STEP_SUMMARY"
           echo 'Failed retrievals retain the previous snapshot. Download refresh-attempt artifacts for diagnostics.' >> "$GITHUB_STEP_SUMMARY"
-          if [ "$CALENDAR_RESULT" = failure ] || [ "$CATALOG_RESULT" = failure ] || [ "$ARCHIVE_RESULT" = failure ]; then
+          if [ "$CALENDAR_RESULT" = failure ] || [ "$CATALOG_RESULT" = failure ] || [ "$ARCHIVE_RESULT" = failure ] || [ "$TEXT_RESULT" = failure ]; then
             echo '::warning::An official-source refresh failed; previous verified data is retained. See refresh reports.'
           fi
       - name: Verify calendar provenance and failure safeguards
@@ -83,6 +94,7 @@ jobs:
           python3 tests/foundation_data.py
           python3 tests/activity_data.py
           python3 tests/version_data.py
+          python3 tests/text_acquisition.py
       - run: npm ci
       - run: npm run build
       - run: npx playwright install --with-deps chromium
@@ -94,6 +106,7 @@ jobs:
       - name: Preserve tested snapshots
         if: github.event_name == 'schedule' || inputs.refresh_data == true
         env:
+          TEXT_RESULT: ${{ steps.text_refresh.outcome }}
           CATALOG_RESULT: ${{ steps.catalog_refresh.outcome }}
           ARCHIVE_RESULT: ${{ steps.archive_refresh.outcome }}
         run: |
@@ -102,6 +115,9 @@ jobs:
           git add data/calendar.json data/verification-report.json
           if [ "$CATALOG_RESULT" = success ]; then
             git add data/catalog.json data/catalog-raw/
+          fi
+          if [ "$TEXT_RESULT" = success ]; then
+            git add data/text-2027.json data/text-2027-raw/
           fi
           if [ "$ARCHIVE_RESULT" = success ]; then
             git add data/archive.json data/archive-raw/
@@ -127,7 +143,7 @@ jobs:
 
   refresh_health:
     needs: build
-    if: always() && (needs.build.outputs.calendar_result == 'failure' || needs.build.outputs.catalog_result == 'failure' || needs.build.outputs.archive_result == 'failure')
+    if: always() && (needs.build.outputs.calendar_result == 'failure' || needs.build.outputs.catalog_result == 'failure' || needs.build.outputs.archive_result == 'failure' || needs.build.outputs.text_result == 'failure')
     runs-on: ubuntu-latest
     steps:
       - name: Flag unsuccessful refresh without blocking the independent valid snapshot

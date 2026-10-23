@@ -1,6 +1,6 @@
 # UtahBills authoritative task backlog
 
-Updated: October 22, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
+Updated: October 23, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
 
 Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 are High priorities alongside TEST-001.
 
@@ -160,6 +160,8 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Acceptance:** Trace substitutes, amendments, late changes and any proposed boxcar characterization to preserved exact versions and defensible timing. Distinguish document/action/retrieval dates, disclose unknown publication times, and test comparisons without motive or unsupported legal-effect claims.
 
 **Phase 4L bounded progress:** Grouped source-verified version/document histories, four additional HB0117 XML documents and deterministic basic-detail comparison, plus successive-snapshot 2027 document observations are implemented. Full publication/late-change timing and broader/live-2027 acceptance remain unfinished. [Evidence and coverage](PHASE4L_VERIFICATION.md).
+
+**Phase 4M bounded progress:** Scheduled catalog success now authorizes bounded 2027 complete-XML acquisition with immutable source revisions, validation, partial/failure reporting, recovery and existing comparison integration. No real introduced 2027 measure was available; first-live validation and publication/late-change timing remain open. [Evidence and limits](PHASE4M_VERIFICATION.md).
 
 ### TRANS-002
 
