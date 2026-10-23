@@ -9,7 +9,7 @@ try {
   await page.setViewportSize({width,height:900});await page.goto(base+'?phase4a='+width+mode+encodeURIComponent(route)+'#'+route);await page.locator('h1').waitFor();
   assert.equal(await page.locator('.notice').count(),0);
   assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'),'noindex, nofollow');
-  assert.equal(await page.locator('footer .environment').innerText(),'Main');
+  assert.equal(await page.locator('footer .environment').count(),0);assert.match(await page.locator('footer').innerText(),/© 2026 UtahBug/);
   assert.doesNotMatch(await page.locator('body').innerText(),/research prototype/i);
   assert.equal(await page.locator('header').evaluate(e=>e.nextElementSibling.id),'main');
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
@@ -22,5 +22,5 @@ try {
  }
  await page.setViewportSize({width:768,height:900});await page.goto(base+'?phase4a-font#bill/HB0011');await page.locator('.stages').waitFor();await page.addStyleTag({content:':root{font-family:Verdana,sans-serif}'});await page.evaluate(()=>document.documentElement.style.zoom=2);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'Detail stages with wide font metrics at 200% zoom');
  await page.goto(base+'?phase4a-keyboard#bills');await page.locator('h1').waitFor();await page.keyboard.press('Tab');assert.equal(await page.locator('.skip').evaluate(e=>e===document.activeElement),true);await page.keyboard.press('Enter');assert.equal(await page.locator('#main').evaluate(e=>e===document.activeElement),true);
- console.log('Phase 4A: banner absent, compact heading geometry, footer environment, static noindex, keyboard, reflow, doubled text, 200% CSS zoom and axe passed.');
+ console.log('Phase 4A: banner absent, compact heading geometry, compact footer, static noindex, keyboard, reflow, doubled text, 200% CSS zoom and axe passed.');
 } finally {await browser.close()}

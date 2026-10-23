@@ -51,10 +51,10 @@ try {
    await page.locator('.bill-row h2 a').click();await page.getByRole('heading',{name:'Official general description',exact:true}).waitFor();
    await page.locator('.votes-section').getByText(/No verified final-passage/).waitFor();
    await page.locator('main>.back').click();assert.equal(await page.locator('#session').inputValue(),'2027');assert.equal(await page.locator('#search').inputValue(),'HB0001');
-   await page.goto(base+'#request/TESTREQUEST0000');await page.locator('.request-sources').waitFor();
+   await page.goto(base+'#request/TESTREQUEST0000');await page.locator('.request-source-trigger').waitFor();
    assert.match(await page.locator('.note').innerText(),/Introduced as HB0001/);
    await page.getByRole('link',{name:'HB0001',exact:true}).click();await page.getByRole('link',{name:'Original drafting request and observed history'}).click();
-   await page.locator('.request-sources').waitFor();assert.ok(page.url().endsWith('#request/TESTREQUEST0000'));
+   await page.locator('.request-source-trigger').waitFor();assert.ok(page.url().endsWith('#request/TESTREQUEST0000'));
    await page.goto(base+'#requests');await page.locator('#search').fill('TESTREQUEST0000');assert.equal(await page.locator('.bill-row').count(),0);
    await page.locator('#clear-search').click();assert.match(await page.locator('#count').innerText(),/^239 of 239 public requests/);
   }

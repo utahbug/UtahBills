@@ -1,0 +1,22 @@
+{
+  "catalogSha256": "641dd5835dec7a5bbe4f3028714ce219a29d2983058add98b1889646aa8de78d",
+  "records": {
+    "LEBLQCNWET": {
+      "text": "Official status: In Process · checked Oct 22, 2026. Status is separate from document availability.Official tracking identifier: LEBLQCNWETLast checked Oct 22, 2026. Public requests may exclude confidential or unpublished proposals. Request sponsorship does not establish the final 2027 roster. Retrieval dates are not publication dates.Technical dataPublic request source (machine-readable JSON)  (opens in a new tab)Preserved official status listing (HTML source as text) (opens in a new tab)Observed status historyOct 21, 2026 · In ProcessFirst observed in our retrieval, not an official status-change date.Observed request historyOct 20, 2026 ·  Multicounty Appraisal Trust Amendments · sponsor ID HARPEWAPreserved technical sourcePreserved source (machine-readable JSON) (opens in a new tab)Oct 21, 2026 · Multicounty Appraisal Trust Amendments · sponsor ID HARPEWAPreserved technical sourcePreserved source (machine-readable JSON) (opens in a new tab)",
+      "links": [
+        "https://le.utah.gov/data/2027GS/filelist.json",
+        "./data/catalog-raw/539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037.txt",
+        "./data/catalog-raw/63c46cff580cc82252a26cea3319cdefa28980419f94ecb00ed3099b47c36800.json",
+        "./data/catalog-raw/d9a335121b60e3501af2ac374bc6d6e2c4cf671284895bedb63acb065436b882.json"
+      ]
+    },
+    "DXYQRODBBU": {
+      "text": "Official status: Bill Abandoned per Sponsor · checked Oct 22, 2026. Status is separate from document availability.Official tracking identifier: DXYQRODBBULast checked Oct 22, 2026. Public requests may exclude confidential or unpublished proposals. Request sponsorship does not establish the final 2027 roster. Retrieval dates are not publication dates.Technical dataPublic request source (machine-readable JSON)  (opens in a new tab)Preserved official status listing (HTML source as text) (opens in a new tab)Observed status historyOct 21, 2026 · Bill Abandoned per SponsorFirst observed in our retrieval, not an official status-change date.Observed request historyOct 20, 2026 ·  Proposal to Amend Utah Constitution -- Legislature · sponsor ID FILLMLPreserved technical sourcePreserved source (machine-readable JSON) (opens in a new tab)",
+      "links": [
+        "https://le.utah.gov/data/2027GS/filelist.json",
+        "./data/catalog-raw/539e88ef5990fdcb850a786208dea3ed9e4af2b40acdf30213ab89d472771037.txt",
+        "./data/catalog-raw/63c46cff580cc82252a26cea3319cdefa28980419f94ecb00ed3099b47c36800.json"
+      ]
+    }
+  }
+}

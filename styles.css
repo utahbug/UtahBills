@@ -230,3 +230,26 @@ main:has(.activity-controls){min-height:0}
  .agenda-heading.results-toolbar>.copy-control{grid-column:2;grid-row:1}
  .calendar-day{padding:2px;min-height:56px}
 }
+
+/* Phase 4E: quiet navigation, compact footer and accessible source dialog. */
+nav a{font-weight:400}
+nav a[aria-current]{background:transparent;color:var(--blue,#17629a);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+header nav a{min-height:44px}
+footer{padding:4px 24px 8px}
+footer nav{align-items:center;justify-content:flex-start;flex-wrap:wrap;width:auto;gap:0 6px;margin:0}
+footer nav a{display:inline-flex;align-items:center;padding:4px 6px;min-height:44px;background:transparent}
+footer p{margin:0}footer p a{margin:0}
+.about-page>nav{flex-direction:column;align-items:flex-start;gap:0;margin:0 0 8px}
+.about-page>nav a{padding:8px 0;background:transparent}
+.request-record-type{display:flex;align-items:center;gap:2px;max-width:100%}
+.request-record-type .eyebrow{margin:0}
+.request-source-trigger{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;min-height:44px;padding:10px;border:0;background:transparent;color:#17629a}
+.request-sources{width:calc(100% - 24px);max-width:720px;max-height:calc(100% - 32px);margin:auto;padding:16px;border:1px solid var(--line);border-radius:6px;overflow:auto;color:var(--ink);background:#fff}
+.request-sources::backdrop{background:rgb(20 35 50 / 35%)}
+.source-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+.source-panel-heading h2{margin:0;font-size:1.2rem}.source-close{flex-shrink:0;min-height:44px}
+.source-panel-content p{margin:8px 0}.source-panel-content h2{font-size:1rem;margin:12px 0 4px}
+.calendar-event h3{font-weight:400}
+.event-type{display:inline-flex;align-items:center;gap:4px;font-weight:600}.event-type svg{flex-shrink:0;color:#17629a}
+
+main:has(.request-heading){min-height:0}
