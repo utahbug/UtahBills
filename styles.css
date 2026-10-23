@@ -86,8 +86,8 @@ button{max-width:100%;overflow-wrap:anywhere}main{overflow-wrap:anywhere}
 /* One disclosure gutter: content starts at the heading text, including nested disclosures. */
 details:not(.catalog-info):not(.calendar-info):not(.type-info){padding-inline-start:1.25rem}
 details:not(.catalog-info):not(.calendar-info):not(.type-info)>summary{position:relative;display:block;list-style:none;padding-inline-start:0;padding-inline-end:0}
-details:not(.catalog-info):not(.calendar-info):not(.type-info)>summary::before{content:'â–¸';position:absolute;inset-inline-start:-1.15rem}
-details[open]:not(.catalog-info):not(.calendar-info):not(.type-info)>summary::before{content:'â–¾'}
+details:not(.catalog-info):not(.calendar-info):not(.type-info)>summary::before{content:'▸';position:absolute;inset-inline-start:-1.15rem}
+details[open]:not(.catalog-info):not(.calendar-info):not(.type-info)>summary::before{content:'▾'}
 summary::-webkit-details-marker{display:none}
 .notice-aligned{padding-inline-start:15px}
 .external-tail{white-space:nowrap}.external-icon{width:.85em;height:.85em;vertical-align:baseline;position:static!important}
