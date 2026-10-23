@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **9 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **10 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -550,3 +550,14 @@ Owner-authorized bounded partial publication is implemented under TEST-001 relia
 ## Phase 4S human acceptance preparation
 
 [Reviewer package](review/README.md) supplies four exact-source editorial packets with pending acceptance records, a proposed owner-approved correction procedure, and a physical-device/AT worksheet with actual-outcome and retest fields. Preparation does not complete RELEASE-001 or UI-001. TEST-001 remains High/Blocked; RELEASE-002 and RELEASE-004 remain open. All 37 active IDs and existing statuses/priorities are retained. The Bills-page information architecture, navigation movement, sponsor sorting and Recent Activity layout requests remain deferred; no cosmetic work is authorized by this preparation. Next actions belong to independent human reviewers and owner channel/device assignments, alongside genuine scheduled evidence.
+
+## Phase 4T maintenance — UI-005
+
+**Records/archive navigation and consolidated UI refinements** — **Medium** · **Completed — October 23, 2026**
+
+- **Source:** Owner's Phase 4T request; explicitly supersedes Phase 4S deferral for this bounded batch.
+- **Dependencies:** Existing catalog, shared navigation, Activity events and Calendar Legend; source records and acquisition safeguards unchanged.
+- **Acceptance:** Two primary 2027 Records choices; responsive Records/Search alignment; separate 2026 archive with preserved filtering, pagination and return navigation; deterministic surname-first Sponsor A–Z with unknowns last; native Activity row navigation with independent source links and date/coverage disclosures; stable compact-header horizontal alignment; adjacent viewport-bounded Legend; accessible compact sponsor controls.
+- **Completion evidence:** [f3daa4e](https://github.com/utahbug/UtahBills/commit/f3daa4e), production build/integrity checks, focused Phase 4T suite, strict shared-header, Phase 4D, Batch 2 and Phase 4G regressions. [Detailed verification and release evidence](PHASE4T_VERIFICATION.md). Mandatory CI remains the publication gate.
+
+Active inventory remains 37, with all unfinished statuses/priorities retained. UI-001 human device/AT acceptance, RELEASE-001/002/004 and TEST-001 remain open. No scheduled evidence newer than 39993137239 was found. This completes only the specifically approved deferred UI work, not unrelated improvements or public-release acceptance.

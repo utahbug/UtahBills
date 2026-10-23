@@ -199,3 +199,7 @@ Validated missing-first-status observations can be retained and displayed separa
 ## November 4 readiness planning
 
 [October 23 assessment](docs/PHASE4R_READINESS.md) separates release acceptance gaps, disclosable source limits and optional work. Latest bounded evidence is 273 requests / 272 verified statuses / one unconfirmed status; DFTEVYMLXT recovered through existing guards. TEST-001 remains High/Blocked with no newer schedule than 39993137239; RELEASE-002 remains open. RELEASE-001, UI-001 and explicit RELEASE-004 approval are still required. No task closes or changes priority/status. Next batch: genuine scheduled-run evidence plus independent human editorial/accessibility acceptance, before cosmetic work. November 4 is a planning target, not launch authorization.
+
+## Phase 4T — Records and shared interface refinements
+
+The owner-authorized [UI-005 batch](docs/PHASE4T_VERIFICATION.md) adds a two-choice 2027 Records selector beside Search, contextual 2026 archive, reliable Sponsor A–Z, native Activity row links and clearer event/source disclosures, stable header alignment, adjacent Calendar Legend and compact sponsor controls. It supersedes Phase 4S deferral only for this scope. Historical data and 2027 safeguards remain unchanged. Human accessibility/editorial acceptance, genuine scheduled refresh evidence and explicit release approval remain priorities; no release dependency closes with this UI batch.
