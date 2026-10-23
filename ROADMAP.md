@@ -179,3 +179,7 @@ Implemented grouped official versions/amendments and deterministic verified-text
 ## Phase 4M — bounded automatic 2027 text acquisition
 
 Implemented a separate guarded XML acquisition step following validated catalog refresh, with exact official document associations, immutable revisions, bounded retries/rechecks, explicit partial coverage and integration into existing comparisons. This supersedes Phase 4L's manual-only future-2027 text limitation. No UI redesign, historical acquisition or formatted-reader expansion. [Verification and limitations](docs/PHASE4M_VERIFICATION.md). TRANS-001 remains In progress; TRANS-002 and first-real-2027 acceptance remain unfinished. TEST-001 requires genuine scheduled evidence, independently of push deployment.
+
+## Phase 4N — source reconciliation review
+
+The October 23 official feed has 271 requests but only 270 status rows; DYVEPWTRCQ is absent from the original human-listing HTML. The validated 268-request snapshot remains published. No parser or workflow correction is justified. Prioritize authoritative source convergence, the next genuine fully verified scheduled refresh, and first-real-2027 introduction/text validation. Both current introduced sources remain empty. TEST-001 and SESSION-003 remain blocked; Phase 4M acquisition is fixture-verified, not live-2027 demonstrated. [Evidence and limitations](docs/PHASE4N_VERIFICATION.md). November 4 remains a readiness planning target, not a guaranteed public-release date.

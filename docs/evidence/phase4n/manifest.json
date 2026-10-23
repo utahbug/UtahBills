@@ -1,0 +1,98 @@
+{
+  "sources": {
+    "requests": {
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "finalUrl": "https://le.utah.gov/data/2027GS/filelist.json",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-23T18:09:23.392017+00:00",
+      "sha256": "10c4a2f46c7965393d5d578c7b4799da199ad8384246ac5c64fcedd6a6b72e91",
+      "path": "docs/evidence/phase4n/10c4a2f46c7965393d5d578c7b4799da199ad8384246ac5c64fcedd6a6b72e91.json"
+    },
+    "statuses": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "finalUrl": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-23T18:09:23.554959+00:00",
+      "sha256": "b245391eb24910586689a0be015256084252d7b2bd6e0c4365f611df2eb03753",
+      "path": "docs/evidence/phase4n/b245391eb24910586689a0be015256084252d7b2bd6e0c4365f611df2eb03753.html"
+    },
+    "index": {
+      "url": "https://le.utah.gov/data/2027GS/billlist.json",
+      "finalUrl": "https://le.utah.gov/data/2027GS/billlist.json",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-23T18:09:23.569404+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "docs/evidence/phase4n/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json"
+    }
+  },
+  "requests": 271,
+  "statusRows": 270,
+  "indexMeasures": 0,
+  "numberedStatusRows": [],
+  "missingStatusIDs": [
+    "DYVEPWTRCQ"
+  ],
+  "extraStatusIDs": [],
+  "rawStatusIDCount": 270,
+  "rawParserIDDifference": [],
+  "titleMismatches": [],
+  "targetRequest": [
+    {
+      "trackingID": "DYVEPWTRCQ",
+      "shortTitle": "Health Insurance Amendments",
+      "sponsor": ""
+    }
+  ],
+  "targetLiteralInHTML": false,
+  "validation": "Official status listing missing request DYVEPWTRCQ",
+  "savedRequests": 268,
+  "newIDs": [
+    "BSDHEWBYIL",
+    "DYVEPWTRCQ",
+    "TFEMJWKJCF"
+  ],
+  "removedIDs": [],
+  "catalogSha256": "003e64ec12b16d4352a0d38047af2d796608118df5181209c4eab1487fc94e90",
+  "officialNumberValues": [
+    "Not Numbered"
+  ],
+  "newRequests": [
+    {
+      "trackingID": "BSDHEWBYIL",
+      "shortTitle": "Water Rights Restricted Account Amendments",
+      "sponsor": "ALBRECR"
+    },
+    {
+      "trackingID": "DYVEPWTRCQ",
+      "shortTitle": "Health Insurance Amendments",
+      "sponsor": ""
+    },
+    {
+      "trackingID": "TFEMJWKJCF",
+      "shortTitle": "Transfer of Water Interests",
+      "sponsor": "OWENSDO"
+    }
+  ],
+  "changedSavedRequests": [
+    {
+      "previous": {
+        "trackingID": "ECMJQIXCHM",
+        "shortTitle": "Judicial Performance Conduct Commission Amendments",
+        "sponsor": ""
+      },
+      "current": {
+        "trackingID": "ECMJQIXCHM",
+        "shortTitle": "Judicial Performance Evaluation Commission Modifications",
+        "sponsor": ""
+      }
+    }
+  ],
+  "changedSavedStatuses": [],
+  "guardedReplay": {
+    "attemptedAt": "2026-10-23T18:09:55.004006+00:00",
+    "status": "failed",
+    "error": "Official status listing missing request DYVEPWTRCQ",
+    "finishedAt": "2026-10-23T18:09:55.032254+00:00",
+    "retainedCatalogByteIdentical": true
+  }
+}

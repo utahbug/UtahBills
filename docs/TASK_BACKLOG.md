@@ -265,6 +265,8 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### TEST-001
 
+Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 2026-10-23T18:09:23Z finds 271 public requests / 270 status rows, with DYVEPWTRCQ absent from raw HTML. The verified 268-request catalog is retained. No newer genuine scheduled run than failed 39993137239 exists at this review; text/archive were skipped, while independent Calendar publication succeeded. TEST-001 remains High / Blocked pending complete authoritative reconciliation and qualifying scheduled evidence.
+
 **Verify the next scheduled refresh end-to-end** — **High** · **Blocked**
 
 - **Dependencies:** A subsequent scheduled run after the Phase 4C correction; catalog publication depends independently on DATA-001.
@@ -491,7 +493,7 @@ TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-
 
 ## Next Recommended Batch
 
-**Recommended, not started:** verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
+**Recommended, not started:** first establish authoritative convergence for DYVEPWTRCQ and the complete request/status set ([Phase 4N evidence](PHASE4N_VERIFICATION.md)); retain the verified catalog until then. Verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
 
 Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. Preserve Recent Activity, legislative changes/substitutes/votes, Calendar coverage and refresh reliability as current-cycle work. Historical DATA-002/DATA-003 remain open below these priorities unless current-session defects emerge. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
 
@@ -524,3 +526,7 @@ ACT-003 and UI-003 complete the authorized activity refinements and shared-heade
 - **Completion evidence:** [6ab21ed](https://github.com/utahbug/UtahBills/commit/6ab21ed), production build/integrity checks, new Phase 4J matrix and existing header, Batch 2, toolbar, Phase 4F and Phase 4G regressions. [Detailed verification](../VERIFICATION.md#phase-4j--consolidated-ui-polish).
 
 Active inventory remains 37 with unchanged statuses/priorities. TEST-001 remains blocked on a subsequent genuine scheduled run. LEG-001 is not completed by relocating its official-link fallback. All unfinished historical, 2027 roster/introduction, Calendar expansion, human accessibility and editorial-review IDs remain open. Phase 4J explicitly restores a visible Category label after Phase 4I's caption-free treatment; accessible naming remains unchanged.
+
+## Phase 4N maintenance
+
+Bounded investigation complete; upstream omission remains unresolved. No parser/workflow defect or new introduced 2027 measure was established. Three new feed requests and one revised title were preserved as diagnostic evidence, not imported into the verified catalog. TEST-001, SESSION-002, SESSION-003 and TRANS-001 remain open in their existing statuses; TRANS-002 is not started. Active inventory remains 37, with unchanged counts/priorities. [Findings, preserved sources and targeted verification](PHASE4N_VERIFICATION.md). November 4 remains a planning target, not a promised release.
