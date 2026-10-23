@@ -29,3 +29,7 @@ Implementation commit: [f3daa4e](https://github.com/utahbug/UtahBills/commit/f3d
 The latest genuine scheduled execution remains [39993137239](https://github.com/utahbug/UtahBills/actions/runs/39993137239), with failure already documented. No newer qualifying scheduled evidence was found. TEST-001 remains High/Blocked. A successful push run does not close it. No manual refresh was triggered. Check again for active scheduled runs immediately before pushing.
 
 All 37 unfinished backlog IDs retain their status. RELEASE-001/002/004, UI-001, first-real-2027 validation, roster verification, source discrepancies and historical limitations remain open. This batch is not public-release authorization.
+
+## CI accessibility diagnostic
+
+Runs 40036922590 and 40037768906 stopped before deployment on the foundation suite's resized, scrolled bill page. Detailed axe evidence identified an unfocused `.history-target > summary` partially obscured by the sticky header (19.7px visible height), rather than a genuinely undersized source control. Local Edge and Chromium foundation runs passed. The foundation test now follows the existing toolbar protocol for axe-core #3720: explicitly focus and hit-test the active disclosure below the sticky header at every width, require at least the WCAG 2.2 AA 24px target dimensions, then perform the complete unchanged WCAG rule audit at the page top. No rule or violation is filtered out. Strict shared-header scrolling/focus/pointer tests remain mandatory.
