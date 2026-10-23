@@ -157,3 +157,10 @@ Official request/update dates are not established in the saved records, so those
 - Implemented: title-only public-request activity headings, compact verified identifiers and assigned/unassigned bill metadata, accessible caption-free date/category controls and contextual official bill search. Existing request navigation recovery and legislative distinctions remain intact.
 - Implemented: one sticky navigation header at every viewport width, compact while scrolled and restored at the top, preserving all primary destinations, wrapping, touch targets, route transitions and measured anchor/focus offsets. This supersedes the older wide-screen-only sticky policy.
 - [Verification](docs/PHASE4I_VERIFICATION.md); completed ACT-003 and UI-003 in the [backlog](docs/TASK_BACKLOG.md). TEST-001, actual 2027 introduction/roster verification and human accessibility review remain open. No acquisition, source records or deployment environment changed.
+
+
+## Phase 4J — consolidated UI polish
+
+Implemented compact shared-header spacing and 12px navigation gaps, aligned Activity controls with a visible Category label, compact directory count/Info/Copy/finder and closer columns, and Calendar filters with an accessible six-category Legend beside Copy. Existing sticky navigation, scroll restoration, pointer activation and data safeguards are preserved. This authorized label refinement supersedes Phase 4I's caption-free category control only.
+
+[Verification](VERIFICATION.md#phase-4j--consolidated-ui-polish); UI-004 in the [backlog](docs/TASK_BACKLOG.md#ui-004). The official finder remains an external fallback, not completed on-site lookup. TEST-001, 2027 roster/first-introduction acceptance, physical devices and human review remain open.

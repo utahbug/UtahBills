@@ -205,3 +205,24 @@ Deterministic analysis, production build and all Python integrity suites passed;
 ### Phase 4E — navigation, footer, About/FAQ and Calendar polish
 
 See [Phase 4E verification](docs/PHASE4E_VERIFICATION.md) for scope, compatibility, test coverage and remaining limits. The new authorized design supersedes earlier combined-page and visible Main-footer descriptions without changing data, acquisition, unresolved findings or hosting policy.
+
+
+## Phase 4J — consolidated UI polish
+
+Verified October 22, 2026 (America/Denver). Fetched clean `main`/`origin/main` at `4a02256201b9502c0709cc9fffc95bdd4d9854ed`; prior Main push [39893271086](https://github.com/utahbug/UtahBills/actions/runs/39893271086) succeeded. No intervening scheduled data commit. [Implementation 6ab21ed](https://github.com/utahbug/UtahBills/commit/6ab21ed).
+
+- Header: overlapping breakpoint rules retained desktop bottom padding and row gaps after navigation wrapped. Shared narrow layout now uses content-height flex rows, zero row gap and 2px bottom padding; navigation columns have 12px gaps with natural wrapping. No negative margins, font reduction or removed destinations. Phase 4I scroll thresholds, ResizeObserver offsets, pointer guard and exact scroll restoration are unchanged.
+- Recent Activity: date select aligns with heading/results, native select left padding is reduced, Per page label/value spacing is tighter, and visible `Category:` restores context while both accessible names remain intact. Titles, metadata, chronology, category/date behavior and Copy remain unchanged.
+- Legislators: dynamic count, Info and Copy share the existing toolbar with an external Find My Legislators link. Info retains imported-count qualifications, official-service address privacy and unverified-2027 warnings. The directory remains 2026 historical data, and the 2027 unavailable state is preserved. Content-sized 18rem/12rem desktop column limits bring chamber/district information closer to names; narrow rows still stack. No address form, persistence or new lookup was introduced; LEG-001 remains blocked.
+- Calendar: accessible caption-free month control, compact `Event:` label and Legend beside Copy. The native auto popover reuses the six category definitions and styling, provides Close/Escape/outside dismissal and focus return, stays within the viewport and scrolls if needed. It remains available for an empty month even when Copy is hidden. General Calendar Info and all source wording remain intact.
+
+### Phase 4J verification evidence
+
+- Final production build passed source hashes/session/version/summary validation, the three Python vote-integrity checks, catalog/foundation projections and activity generation. No source data, acquisition logic, refresh schedule or deployment policy changed.
+- New `tests/phase4j.mjs`: Activity/Legislators/Calendar at 320, 375, 390, 430, 600, 768, 1024 and 1280 CSS pixels, normal/doubled text/200% CSS zoom. Checked filter names/alignment, dynamic count, finder destination, Legend category identity, Copy, Escape/focus return, Close, overflow and axe WCAG 2.2 A/AA tags. Additional isolated empty-Calendar fixture verifies touch/outside dismissal and Legend visibility without Copy.
+- Existing `tests/header.mjs`, `tests/batch2.mjs`, `tests/toolbar.mjs`, `tests/phase4f.mjs` and `tests/phase4g.mjs` pass. This retains strict exact list-return positioning, pointer activation, nine-route sticky-header behavior, keyboard/anchor offsets, privacy, directory navigation, membership limits, activity filtering/pagination and clipboard coverage.
+- Only obsolete presentation assertions were updated: Phase 4F opens the relocated Info instead of the removed finder disclosure; the directory toolbar asserts Copy immediately beside Info and the finder to its right or wrapped below, as explicitly requested. Bill and Calendar toolbar placement assertions remain strict. No accessibility rule was disabled.
+- Inspected 390px phone and 1280px desktop screenshots plus the 375px Legend popover. These are browser emulations, not physical-device or manual screen-reader certification. Physical iPhone/iPad and VoiceOver/NVDA review remain UI-001.
+- Full mandatory Actions pipeline now includes 24 browser suites, with Phase 4J added. Publication must pass that pipeline; the final report records the resulting SHA/run and live asset comparison.
+
+TEST-001 remains Blocked: latest actual cron remains failed run [39820847031](https://github.com/utahbug/UtahBills/actions/runs/39820847031), October 22 17:14 UTC. No artificial scheduled run was created. SESSION-002/003, historical vote/identity findings and human editorial/accessibility review remain open. Main only; Review remains unconfigured and static noindex/nofollow remains.

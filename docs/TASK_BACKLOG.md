@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **8 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **9 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -502,3 +502,17 @@ Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001
 ## Phase 4I maintenance
 
 ACT-003 and UI-003 complete the authorized activity refinements and shared-header correction. Active counts remain unchanged. TEST-001 is still Blocked pending a subsequent successful actual cron run; no unrelated task was closed. [Evidence](PHASE4I_VERIFICATION.md).
+
+
+## Phase 4J maintenance
+
+### UI-004
+
+**Consolidated compact interface polish** — **Medium** · **Completed — October 22, 2026**
+
+- **Source:** Owner's Phase 4J request; shared UI-003/ACT-003 behavior remains protected.
+- **Dependencies:** Existing shared header, result toolbars, official district-finder fallback and Calendar category definitions.
+- **Acceptance:** Compact wrapped navigation with 12–16px gaps where space permits; aligned Activity controls; dynamic directory count/Info/Copy and compact official finder; closer directory columns; compact Calendar filters and accessible six-category Legend. Preserve strict scrolling/pointer tests, privacy, source safeguards, 320–1280px reflow, doubled text and 200% CSS zoom.
+- **Completion evidence:** [6ab21ed](https://github.com/utahbug/UtahBills/commit/6ab21ed), production build/integrity checks, new Phase 4J matrix and existing header, Batch 2, toolbar, Phase 4F and Phase 4G regressions. [Detailed verification](../VERIFICATION.md#phase-4j--consolidated-ui-polish).
+
+Active inventory remains 37 with unchanged statuses/priorities. TEST-001 remains blocked on a subsequent genuine scheduled run. LEG-001 is not completed by relocating its official-link fallback. All unfinished historical, 2027 roster/introduction, Calendar expansion, human accessibility and editorial-review IDs remain open. Phase 4J explicitly restores a visible Category label after Phase 4I's caption-free treatment; accessible naming remains unchanged.
