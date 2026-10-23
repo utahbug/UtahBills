@@ -546,3 +546,7 @@ Owner-authorized bounded partial publication is implemented under TEST-001 relia
 ## Phase 4R readiness assessment
 
 [October 23 assessment](PHASE4R_READINESS.md) separates release acceptance gaps, disclosable source limits and optional work. Latest bounded evidence is 273 requests / 272 verified statuses / one unconfirmed status; DFTEVYMLXT recovered through existing guards. TEST-001 remains High/Blocked with no newer schedule than 39993137239; RELEASE-002 remains open. RELEASE-001, UI-001 and explicit RELEASE-004 approval are still required. No task closes or changes priority/status. Next batch: genuine scheduled-run evidence plus independent human editorial/accessibility acceptance, before cosmetic work. November 4 is a planning target, not launch authorization.
+
+## Phase 4S human acceptance preparation
+
+[Reviewer package](review/README.md) supplies four exact-source editorial packets with pending acceptance records, a proposed owner-approved correction procedure, and a physical-device/AT worksheet with actual-outcome and retest fields. Preparation does not complete RELEASE-001 or UI-001. TEST-001 remains High/Blocked; RELEASE-002 and RELEASE-004 remain open. All 37 active IDs and existing statuses/priorities are retained. The Bills-page information architecture, navigation movement, sponsor sorting and Recent Activity layout requests remain deferred; no cosmetic work is authorized by this preparation. Next actions belong to independent human reviewers and owner channel/device assignments, alongside genuine scheduled evidence.
