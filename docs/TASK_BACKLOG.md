@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **5 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **6 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -357,6 +357,14 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 Stable IDs are retained here and excluded from active counts.
 
+### ACT-002
+
+**Recover Recent Activity request details across snapshot updates** — **High** · **Completed — October 22, 2026**
+
+- **Source:** Owner's additional Phase 4H report for XKUCMCIIHJ; [investigation](PHASE4H_VERIFICATION.md#additional-reported-navigation-defect--act-002).
+- **Acceptance met:** Verify saved identity and generated link, reproduce older-catalog/newer-activity failure, preserve baseline routes, refresh the guarded published catalog on a missing exact ID, retain honest retry/unknown states, prevent delayed route replacement, and validate actual details/provenance for all current activity request links.
+- **Implementation/tests:** [9d0f79f](https://github.com/utahbug/UtahBills/commit/9d0f79fc1c43ba6d09e29de91edab0137fa7a817); [focused navigation tests](../tests/phase4h.mjs), [existing navigation regressions](../tests/navigation.mjs), production build. No acquisition safeguards relaxed or legislative data changed.
+
 ### ACT-001
 
 **2027 Recent Activity observations and categories** — **High** · **Completed — October 22, 2026**
@@ -455,7 +463,7 @@ ACT-001 records this bounded completion; active task counts and priorities are u
 
 ## Phase 4H maintenance
 
-TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-run and first-introduction evidence, respectively; neither is complete. This accounts for the two status-count changes. SESSION-002 remains Blocked: the incomplete roster-query response is preserved but not imported. No legislative source bytes or application functionality changed. A reproduced future-revision provenance-test defect was corrected; 21 targeted Python tests passed. [Verification and source evidence](PHASE4H_VERIFICATION.md).
+TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-run and first-introduction evidence, respectively; neither is complete. This accounts for the two status-count changes. SESSION-002 remains Blocked: the incomplete roster-query response is preserved but not imported. No legislative source data changed. A reproduced future-revision provenance-test defect was corrected; 21 targeted Python tests passed. The additional reported request-link defect is corrected under ACT-002; targeted browser tests and build passed. [Verification and source evidence](PHASE4H_VERIFICATION.md).
 
 ## Next Recommended Batch
 
