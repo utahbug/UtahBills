@@ -262,3 +262,10 @@ main:has(.request-heading){min-height:0}
 .activity-metadata-item+ .activity-metadata-item::before{content:"|\00a0";white-space:nowrap}
 .activity-tracking{font-size:calc(1em - 1px);font-weight:400}
 .request-search-source{font-size:.875rem;margin:4px 0 0}
+
+/* One sticky header across routes and viewport sizes. Keep every navigation link. */
+header.navigation-compact .header-inner{padding-block:3px;row-gap:0}
+header.navigation-compact .brand{min-height:44px;align-items:center}
+header.navigation-compact .brand small,header.navigation-compact .independent{display:none}
+.skip:focus{position:fixed;z-index:40}
+.about-page>.guide{scroll-margin-top:12px}

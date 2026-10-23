@@ -1,5 +1,5 @@
 import {resultsPerPage,pagePreference,copyResults,copyText,navigationTools} from './ui.js';
-navigationTools();
+const syncNavigation=navigationTools();
 import {showActivity,revealHistory} from './activity.js';
 import {showVerification} from './foundation.js';
 import {infoIcon} from './info.js';
@@ -107,6 +107,7 @@ function route(focus=true){let hash=location.hash.slice(1)||'bills';
  const section=hash==='faq'||hash==='guide'||hash.startsWith('faq/')||['about/process','about/faq'].includes(hash)?'faq':['sources','about'].includes(hash)||hash.startsWith('about/')?'about':hash.startsWith('bill/')||hash.startsWith('request/')?'bills':hash.startsWith('legislator/')?'legislators':hash;
  document.querySelectorAll('header nav a,footer nav a').forEach(a=>{a.removeAttribute('aria-current');if(a.hash==='#'+section)a.setAttribute('aria-current','page')});icon();activeRoute=hash;secondaryRawLinks($('#main'));
  if(focus){if(hash==='bills'&&returnBill){const a=document.querySelector(`.bill-row a[href="${returnBill}"]`);(a||$('#main')).focus({preventScroll:true});window.scrollTo(0,listScroll)}else{$('#main').focus({preventScroll:true});window.scrollTo(0,0)}}
+ syncNavigation();
  if(hash.endsWith('/history'))revealHistory($('#main'));
  const aboutTarget=hash==='guide'?'process':hash==='sources'?'data':hash.startsWith('about/')?hash.split('/')[1]:hash==='faq/process'?'process':hash==='faq/questions'?'faq':null;if(aboutTarget){const target=$('#about-'+aboutTarget);if(target){target.scrollIntoView({block:'start'});if(focus)target.focus({preventScroll:true})}}
 }
