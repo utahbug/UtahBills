@@ -1,0 +1,6 @@
+{
+  "attemptedAt": "2026-10-23T20:24:16.702731+00:00",
+  "status": "failed",
+  "error": "Missing statuses exceed bounded partial-publication limit",
+  "finishedAt": "2026-10-23T20:24:17.454594+00:00"
+}

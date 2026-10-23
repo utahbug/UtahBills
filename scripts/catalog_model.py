@@ -103,7 +103,7 @@ def derive(manifest):
                 assert normalized(row['shortTitle'])==normalized(b['shortTitle']), 'Introduced listing title mismatch during partial publication'
     publication={k:verification[k] for k in ('status','officialTotal','verifiedTotal','withheld')} if verification else dict(status='success',officialTotal=len(current),verifiedTotal=len(current),withheld=[])
     for ident,r in archive.items():
-        r['introducedBill']=introduced.get(ident);r['currentlyListed']=ident in current
+        r['verificationState']='status-verified';r['introducedBill']=introduced.get(ident);r['currentlyListed']=ident in current
         if r['currentlyListed']:r['lastSeenAt']=sources['requests2027']['retrievedAt']
         r['sponsorName']=byid.get(r['sponsor'],{}).get('fullName') or next((p['name'] for p in people if p['id']==r['sponsor']),r['sponsor'])
     # Status is a separately sourced fact, never inferred from document availability.
@@ -122,6 +122,8 @@ def derive(manifest):
         statuses=validate_statuses(read(status_source),checked_requests(sources['requests2027']))
         for ident in current:
             archive[ident].update(officialRequestUrl=STATUS_URL+'#'+statuses[ident]['anchor'] if statuses[ident].get('anchor') else None,officialStatus=statuses[ident]['officialStatus'],statusCheckedAt=status_source['retrievedAt'],statusSource=status_source)
+    from source_observations import project
+    source_observed, observation_history=project(manifest,archive)
     request_archive=list(archive.values())
     requests=[r for r in request_archive if r['currentlyListed'] and not r['introducedBill']]
     coverage={}
@@ -129,7 +131,7 @@ def derive(manifest):
         expected={x['number'] for x in json.loads(read(sources['index'+str(year)]))};obtained={b['billNumber'] for b in measure if b['sessionID']==str(year)+'GS'}
         assert obtained<=expected
         coverage[str(year)]={'expected':len(expected),'imported':len(obtained),'complete':bool(expected) and expected==obtained,'emptyIndex':not expected,'missing':sorted(expected-obtained),'sourceUrl':sources['index'+str(year)]['url'],'checkedAt':sources['index'+str(year)]['retrievedAt']}
-    return dict(checkedAt=manifest['checkedAt'],requestPublication=publication,coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),contactPeople=[dict(id=c['id'],name=c['fullName'],house=c.get('house',''),district=c.get('district',''),email=c.get('email',''),phone=c.get('workPhone') or c.get('cell',''),address=c.get('address',''),currentContact=True,contactCheckedAt=sources['contacts']['retrievedAt'],biography=('https://house.utleg.gov/rep/' if c.get('house')=='H' else 'https://senate.utah.gov/sen/')+c['id']) for c in contacts if c.get('house') in ('H','S')],unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing=STATUS_URL,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
+    return dict(sourceObservedRequests2027=source_observed,requestObservations2027=observation_history,checkedAt=manifest['checkedAt'],requestPublication=publication,coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),contactPeople=[dict(id=c['id'],name=c['fullName'],house=c.get('house',''),district=c.get('district',''),email=c.get('email',''),phone=c.get('workPhone') or c.get('cell',''),address=c.get('address',''),currentContact=True,contactCheckedAt=sources['contacts']['retrievedAt'],biography=('https://house.utleg.gov/rep/' if c.get('house')=='H' else 'https://senate.utah.gov/sen/')+c['id']) for c in contacts if c.get('house') in ('H','S')],unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing=STATUS_URL,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
 if __name__=='__main__':
     import sys
     d=derive(json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8')))

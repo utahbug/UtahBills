@@ -12,7 +12,7 @@ async function activity(page){await page.goto(base+'#activity');await page.locat
 try{
  const fresh=await browser.newPage({viewport:{width:390,height:844}});await activity(fresh);
  const hrefs=[...new Set(await fresh.locator('.activity-row h2 a[href^="#request/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href'))))];assert.ok(hrefs.includes('#request/'+id));
- for(const href of hrefs){await fresh.locator(`.activity-row h2 a[href="${href}"]`).first().click();await detail(fresh,catalog.requestArchive2027.find(r=>r.trackingID===href.split('/')[1]));await fresh.goBack();await fresh.locator('.activity-row').first().waitFor()}
+ for(const href of hrefs){await fresh.locator(`.activity-row h2 a[href="${href}"]`).first().click();await detail(fresh,[...catalog.requestArchive2027,...(catalog.sourceObservedRequests2027||[])].find(r=>r.trackingID===href.split('/')[1]));await fresh.goBack();await fresh.locator('.activity-row').first().waitFor()}
  await fresh.goto(base+'#request/'+id);await detail(fresh,record);await fresh.close();
  const page=await browser.newPage({viewport:{width:390,height:844}});let calls=0;
  await page.route('**/data/catalog-ui.json',r=>r.fulfill({json:++calls===1?stale:catalog}));await activity(page);

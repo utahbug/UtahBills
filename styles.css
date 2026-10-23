@@ -297,3 +297,7 @@ header.navigation-compact .brand small,header.navigation-compact .independent{di
 .version-transparency details{padding:6px 0}.version-transparency summary{min-height:44px;align-content:center}.version-transparency a{overflow-wrap:anywhere}.version-transparency .compare-controls select{width:100%;min-width:0}.version-transparency .version-diff{max-height:460px}
 
 .version-record{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;border-top:1px solid var(--line)}.version-document{display:inline-flex;align-items:center;min-height:44px;padding:4px 0;flex:1;min-width:0}.version-record>details{border:0;padding:0}.version-record>details[open]{flex-basis:100%}
+
+.source-discrepancy{color:#496579;font-weight:400}.source-discrepancy svg{vertical-align:-2px;flex-shrink:0}.source-discrepancy-details{font-size:.875rem}.source-discrepancy-details summary{min-height:24px}.source-hash{overflow-wrap:anywhere}
+
+.note.source-observed-note{background:none;border:0;padding:0}

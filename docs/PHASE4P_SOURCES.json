@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "requests": {
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "path": "data/catalog-raw/72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4.json",
+      "sha256": "72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4",
+      "retrievedAt": "2026-10-23T20:22:26.840738+00:00"
+    },
+    "statuses": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "path": "data/catalog-raw/b245391eb24910586689a0be015256084252d7b2bd6e0c4365f611df2eb03753.txt",
+      "sha256": "b245391eb24910586689a0be015256084252d7b2bd6e0c4365f611df2eb03753",
+      "retrievedAt": "2026-10-23T20:22:27.228168+00:00"
+    },
+    "index": {
+      "url": "https://le.utah.gov/data/2027GS/billlist.json",
+      "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "retrievedAt": "2026-10-23T20:22:27.510253+00:00"
+    }
+  },
+  "requestCount": 273,
+  "statusCount": 270,
+  "introducedCount": 0,
+  "missing": [
+    "DFTEVYMLXT",
+    "DYVEPWTRCQ",
+    "VYQQDPXGUY"
+  ]
+}

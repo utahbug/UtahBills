@@ -24,15 +24,21 @@ class PartialPublication(Updates):
   self.assertEqual(json.loads(r.REPORT.read_text())['status'],'partial')
   self.assertEqual(len(r.requests(current['sources']['requests2027'])),len(self.base)+1)
   self.assertEqual(len(m.derive(current)['requests2027']),len(self.base))
-  self.assertEqual(self.events(),before)
-  r.run();self.assertEqual(self.events(),before)
+  observed=self.events();new=[e for e in observed if e['trackingID']=='ISOLATEDNEW']
+  self.assertEqual(len(new),1);self.assertTrue(new[0]['sourceObserved'])
+  self.assertEqual([e for e in observed if e['trackingID']!='ISOLATEDNEW'],before)
+  self.assertEqual(len(m.derive(current)['sourceObservedRequests2027']),1)
+  r.run();self.assertEqual(self.events(),observed)
   self.statuses(self.base+[self.added]);r.run()
   recovery=self.events();new=[e for e in recovery if e['trackingID']=='ISOLATEDNEW']
   self.assertEqual(len(new),1);self.assertEqual(new[0]['kind'],'New public request observed')
-  self.assertEqual(new[0]['retrievedAt'],self.current()['sources']['requests2027']['retrievedAt'])
+  self.assertEqual(new[0]['id'],next(e['id'] for e in observed if e['trackingID']=='ISOLATEDNEW'))
+  self.assertEqual(len(m.derive(self.current())['sourceObservedRequests2027']),0)
   entry=next(x for x in m.derive(self.current())['requests2027'] if x['trackingID']=='ISOLATEDNEW')
-  self.assertEqual(new[0]['observedAt'],entry['history'][0]['observedAt'])
-  self.assertIn('Verified observation date',new[0]['dateLabel'])
+  history=m.derive(self.current())['requestObservations2027'][0]
+  self.assertEqual([h['state'] for h in history['verificationHistory']],['source-observed','status-verified'])
+  self.assertEqual(new[0]['retrievedAt'],history['history'][0]['source']['retrievedAt'])
+  self.assertIn('Retrieval observation date',new[0]['dateLabel'])
   self.assertEqual(json.loads(r.REPORT.read_text())['status'],'success')
   r.run();self.assertEqual(self.events(),recovery)
   self.assertEqual(len(m.derive(self.current())['requests2027']),len(self.base)+1)
@@ -73,11 +79,11 @@ class PartialPublication(Updates):
   self.statuses([{**self.base[0],'officialNumber':'HB0999'}]+self.base[1:])
   with self.assertRaisesRegex(AssertionError,'Unreconciled numbered listing'):r.run()
   self.assertEqual(before,self.target.read_bytes())
- def test_matching_changes_publish_without_withheld_activity(self):
+ def test_matching_changes_publish_with_qualified_observation(self):
   self.partial();changed=[{**self.base[0],'shortTitle':'Isolated verified title change'},*self.base[1:]]
   self.requests(changed+[self.added]);self.statuses(changed);r.run()
   self.assertEqual(m.derive(self.current())['requestPublication']['verifiedTotal'],200)
-  self.assertFalse(any(e['trackingID']=='ISOLATEDNEW' for e in self.events()))
+  self.assertTrue(all(e.get('sourceObserved') for e in self.events() if e['trackingID']=='ISOLATEDNEW'))
   self.assertTrue(any(e['kind']=='Request title change observed' for e in self.events()))
  def test_subset_tampering_and_source_checksum_fail(self):
   self.partial();r.run();manifest=self.current();s=manifest['sources']['requests2027']
@@ -87,6 +93,17 @@ class PartialPublication(Updates):
   with self.assertRaisesRegex(AssertionError,'baseline'):m.derive(manifest)
   manifest=self.current();manifest['sources']['requests2027']['requestVerification']['statusSource']['sha256']='0'*64
   with self.assertRaisesRegex(AssertionError,'Checksum'):m.derive(manifest)
+ def test_malformed_duplicate_and_changed_source_observation(self):
+  self.partial();r.run();before=self.target.read_bytes()
+  for bad in [[*self.base,self.added,self.added],[*self.base,{**self.added,'trackingID':'bad-id'}],[*self.base,{**self.added,'shortTitle':''}]]:
+   self.requests(bad);self.statuses(self.base)
+   with self.assertRaises(AssertionError):r.run()
+   self.assertEqual(before,self.target.read_bytes())
+  self.requests([*self.base,{**self.added,'shortTitle':'Revised source title'}]);self.statuses(self.base);r.run()
+  events=[e for e in self.events() if e['trackingID']=='ISOLATEDNEW']
+  self.assertEqual(len(events),2);self.assertTrue(all(e['sourceObserved'] for e in events))
+  self.assertEqual(sum(e['kind']=='New public request observed' for e in events),1)
+  r.run();self.assertEqual(events,[e for e in self.events() if e['trackingID']=='ISOLATEDNEW'])
  def test_real_phase4n_evidence(self):
   report=json.loads((r.ROOT/'docs/evidence/phase4n/manifest.json').read_text())
   raw=json.loads((r.ROOT/report['sources']['requests']['path']).read_bytes());body=(r.ROOT/report['sources']['statuses']['path']).read_bytes()

@@ -17,7 +17,7 @@ export function sessionFixture(saved, count=0, requestCount=240) {
  });
  if(count) requests[0].introducedBill=introduced[0].billNumber;
  data.measures=[...data.measures.filter(b=>b.sessionID!=='2027GS'),...introduced];
- data.requestArchive2027=requests;data.requests2027=requests.filter(r=>!r.introducedBill);
+ data.sourceObservedRequests2027=[];data.requestObservations2027=[];data.requestArchive2027=requests;data.requests2027=requests.filter(r=>!r.introducedBill);
  data.coverage['2027']={...data.coverage['2027'],expected:count,imported:count,emptyIndex:!count,complete:!!count};
  return data;
 }

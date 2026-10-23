@@ -42,7 +42,11 @@ def events(manifest):
    # Keep the first existing representation's event ID; PDF/XML pairs share one record.
    add(dict(**base,date=calendar_date(d['date']),sourceOrder=source_order(d['date']),kind=kind,text=group['version']+' · '+d['label'],body='',dateLabel='Document record date; publication time unverified',url=d['url']),[key,'document',group['version'],file_type,d['date'],d['fileName'].rsplit('.',1)[0]])
  # Retained baseline membership, not acquisition date alone, distinguishes new IDs.
- archive=derive(manifest)['requestArchive2027'];requests={r['trackingID']:r for r in archive}
+ projection=derive(manifest)
+ archive=projection['requestArchive2027']+projection.get('sourceObservedRequests2027',[])
+ observations={r['trackingID']:r for r in projection.get('requestObservations2027',[])}
+ archive=[{**r,'history':observations[r['trackingID']]['history'],'verificationHistory':observations[r['trackingID']]['verificationHistory']} if r['trackingID'] in observations else r for r in archive]
+ requests={r['trackingID']:r for r in archive}
  snapshots=manifest.get('requestHistory',[]) or [manifest.get('sources',{}).get('requests2027')]
  baseline={r['trackingID'] for r in json.loads(read(snapshots[0]))} if snapshots[0] else set()
  def observed(source,**fields):
@@ -56,6 +60,8 @@ def events(manifest):
    event['retrievedAt']=h['source'].get('retrievedAt') or ''
    if h.get('observedAt')!=h['source'].get('retrievedAt'):
     event.update(observedAt=h.get('observedAt'),dateLabel='Verified observation date; official change/publication date unknown')
+   if h.get('verificationState')=='source-observed':
+    event.update(sourceObserved=True,statusListingUrl=manifest['sources']['requestStatuses2027']['url'],url=h['source']['url'])
    if previous:event['previousSource']=previous['source']
    add(event,['request',ident,*identity])
   if history and snapshots[0] and ident not in baseline:
