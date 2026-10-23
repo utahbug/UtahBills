@@ -14,3 +14,6 @@ docs/audit-sources/* -text -whitespace
 
 # Preserve Phase 4D official investigation bytes.
 docs/phase4d-sources/* -text -whitespace
+
+# Preserve Phase 4H official roster response bytes.
+docs/evidence/phase4h/* -text -whitespace
