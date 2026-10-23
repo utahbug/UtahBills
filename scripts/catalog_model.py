@@ -63,15 +63,21 @@ def derive(manifest):
     assert len(people)>=104 and len({p['id'] for p in people})==len(people),'Incomplete/duplicate roster'
     ids={p['id'] for p in people};unmatched=sorted({b[k] for b in measure if b['sessionID']=='2026GS' for k in ('primeSponsor','floorSponsor') if b[k] and b[k] not in ids})
     # Preserve every observed request revision; reconcile only an exact official tracking ID.
-    from refresh_catalog import requests as checked_requests
+    from request_publication import published_requests as checked_requests, source_identity
     snapshots=list(manifest.get('requestHistory',[]))
-    if not snapshots or snapshots[-1]['sha256']!=sources['requests2027']['sha256']:snapshots.append(sources['requests2027'])
+    if not snapshots or source_identity(snapshots[-1])!=source_identity(sources['requests2027']):snapshots.append(sources['requests2027'])
     archive={}
     for source in snapshots:
+        verification=source.get('requestVerification')
+        if verification:
+            assert set(verification['previouslyVerifiedIDs'])==set(archive), 'Request verification baseline does not match preserved history'
+            assert not set(archive).intersection(x['trackingID'] for x in verification['withheld']), 'Previously verified request withheld in history'
+        observed=verification['verifiedAt'] if verification else source['retrievedAt']
+        provenance={k:v for k,v in source.items() if k!='requestVerification'}
         for r in checked_requests(source):
-            entry=archive.setdefault(r['trackingID'],dict(r,history=[],firstSeenAt=source['retrievedAt']))
+            entry=archive.setdefault(r['trackingID'],dict(r,history=[],firstSeenAt=observed))
             if not entry['history'] or any(entry[k]!=r[k] for k in ('shortTitle','sponsor')):
-                entry['history'].append(dict(shortTitle=r['shortTitle'],sponsor=r['sponsor'],observedAt=source['retrievedAt'],source=source))
+                entry['history'].append(dict(shortTitle=r['shortTitle'],sponsor=r['sponsor'],observedAt=observed,source=provenance))
             entry.update(r);entry['lastSeenAt']=source['retrievedAt']
     introduced={}
     for b in measure:
@@ -79,6 +85,23 @@ def derive(manifest):
             assert b['trackingID'] not in introduced,'Ambiguous tracking identifier'
             introduced[b['trackingID']]=b['billNumber']
     current={r['trackingID'] for r in checked_requests(sources['requests2027'])}
+    verification=sources['requests2027'].get('requestVerification')
+    if verification:
+        assert verification['statusSource']==sources['requestStatuses2027'], 'Request verification uses stale status source'
+        assert not set(introduced).intersection(x['trackingID'] for x in verification['withheld']), 'Introduced relationship withheld'
+        if verification['status']=='partial':
+            from request_status import parse_statuses, normalized
+            rows=parse_statuses(read(sources['requestStatuses2027']))
+            for ident,row in rows.items():
+                if row['officialNumber']=='Not Numbered':continue
+                number=re.sub(r'S\d+$','',re.sub(r'[.\s]','',row['officialNumber']))
+                assert re.fullmatch(r'[HS](?:B|R|JR|CR)\d{3,4}',number) and introduced.get(ident)==number, 'Unreconciled numbered listing during partial publication'
+            for b in measure:
+                if b['sessionID']!='2027GS':continue
+                row=rows.get(b['trackingID'])
+                assert row and re.sub(r'S\d+$','',re.sub(r'[.\s]','',row['officialNumber']))==b['billNumber'], 'Partial publication requires verified introduced listing identity'
+                assert normalized(row['shortTitle'])==normalized(b['shortTitle']), 'Introduced listing title mismatch during partial publication'
+    publication={k:verification[k] for k in ('status','officialTotal','verifiedTotal','withheld')} if verification else dict(status='success',officialTotal=len(current),verifiedTotal=len(current),withheld=[])
     for ident,r in archive.items():
         r['introducedBill']=introduced.get(ident);r['currentlyListed']=ident in current
         if r['currentlyListed']:r['lastSeenAt']=sources['requests2027']['retrievedAt']
@@ -106,7 +129,7 @@ def derive(manifest):
         expected={x['number'] for x in json.loads(read(sources['index'+str(year)]))};obtained={b['billNumber'] for b in measure if b['sessionID']==str(year)+'GS'}
         assert obtained<=expected
         coverage[str(year)]={'expected':len(expected),'imported':len(obtained),'complete':bool(expected) and expected==obtained,'emptyIndex':not expected,'missing':sorted(expected-obtained),'sourceUrl':sources['index'+str(year)]['url'],'checkedAt':sources['index'+str(year)]['retrievedAt']}
-    return dict(checkedAt=manifest['checkedAt'],coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),contactPeople=[dict(id=c['id'],name=c['fullName'],house=c.get('house',''),district=c.get('district',''),email=c.get('email',''),phone=c.get('workPhone') or c.get('cell',''),address=c.get('address',''),currentContact=True,contactCheckedAt=sources['contacts']['retrievedAt'],biography=('https://house.utleg.gov/rep/' if c.get('house')=='H' else 'https://senate.utah.gov/sen/')+c['id']) for c in contacts if c.get('house') in ('H','S')],unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing=STATUS_URL,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
+    return dict(checkedAt=manifest['checkedAt'],requestPublication=publication,coverage=coverage,measures=measure,legislators=sorted(people,key=lambda p:p['name']),contactPeople=[dict(id=c['id'],name=c['fullName'],house=c.get('house',''),district=c.get('district',''),email=c.get('email',''),phone=c.get('workPhone') or c.get('cell',''),address=c.get('address',''),currentContact=True,contactCheckedAt=sources['contacts']['retrievedAt'],biography=('https://house.utleg.gov/rep/' if c.get('house')=='H' else 'https://senate.utah.gov/sen/')+c['id']) for c in contacts if c.get('house') in ('H','S')],unmatchedSponsors=unmatched,requests2027=requests,requestArchive2027=request_archive,requestListing=STATUS_URL,requestSource=sources['requests2027']['url'],requestCheckedAt=sources['requests2027']['retrievedAt'],rosterSource=sources['roster2026']['url'],contactSource=sources['contacts']['url'])
 if __name__=='__main__':
     import sys
     d=derive(json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8')))

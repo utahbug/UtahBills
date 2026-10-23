@@ -39,7 +39,11 @@ class CatalogTests(unittest.TestCase):
   b=next(b for b in self.data['measures'] if b['billNumber']=='HB0034');self.assertIn('IVORYK',b['cosponsors'])
  def test_requests_are_not_introduced_and_no_final_2027_roster(self):
   raw={r['trackingID'] for r in json.loads(model.read(self.manifest['sources']['requests2027']))};introduced={b['trackingID'] for b in self.data['measures'] if b['sessionID']=='2027GS'}
-  self.assertEqual({r['trackingID'] for r in self.data['requests2027']},raw-introduced)
+  withheld={r['trackingID'] for r in self.data['requestPublication']['withheld']}
+  self.assertEqual({r['trackingID'] for r in self.data['requests2027']},raw-introduced-withheld)
+  self.assertFalse(withheld & {r['trackingID'] for r in self.data['requestArchive2027']})
+  self.assertEqual(self.data['requestPublication']['officialTotal'],len(raw))
+  self.assertEqual(self.data['requestPublication']['verifiedTotal'],len(raw-withheld))
   self.assertTrue(all(p['session']=='2026GS' for p in self.data['legislators']))
   self.assertTrue(all('billNumber' not in r for r in self.data['requests2027']))
  def test_failure_preserves_published_manifest(self):
@@ -70,7 +74,10 @@ class CatalogTests(unittest.TestCase):
     refresh.refresh();self.assertEqual(getter.call_count,3)
  def test_official_request_status_coverage_and_example(self):
   from request_status import validate_statuses,parse_statuses
-  source=self.manifest['sources']['requestStatuses2027'];rows=validate_statuses(model.read(source),json.loads(model.read(self.manifest['sources']['requests2027'])))
+  source=self.manifest['sources']['requestStatuses2027'];rows=validate_statuses(model.read(source),self.data['requests2027'])
+  if self.data['requestPublication']['withheld']:
+   with self.assertRaisesRegex(AssertionError,'missing request'):
+    validate_statuses(model.read(source),json.loads(model.read(self.manifest['sources']['requests2027'])))
   for request in self.data['requests2027']:
    self.assertEqual(request['officialStatus'],rows[request['trackingID']]['officialStatus']);self.assertEqual(request['statusCheckedAt'],source['retrievedAt'])
   # Preserved initial official fixture: 253 identities, including six abandoned requests.

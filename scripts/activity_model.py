@@ -97,6 +97,7 @@ def build():
  manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));rows,raw=events(manifest);out=ROOT/'dist/data/activity';out.mkdir(exist_ok=True)
  index=dict(schemaVersion=2,rawActions=raw,sessions={})
  baseline=(manifest.get('requestHistory') or [manifest['sources']['requests2027']])[0]
+ index['requestPublication']=derive(manifest)['requestPublication']
  index['requestCoverage']=dict(baselineCount=len(json.loads(read(baseline))),baselineObservedAt=baseline['retrievedAt'],checkedAt=manifest['sources']['requests2027']['retrievedAt'])
  for year in ('2026','2027'):
   selected=[e for e in rows if e['session']==year];pages=[]

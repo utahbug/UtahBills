@@ -66,7 +66,7 @@ def build(write=False):
  rows2027=parse_statuses(read(manifest['sources']['requestStatuses2027']))
  listed2027={m[1] for r in rows2027.values() if (m:=re.fullmatch(r'([HS](?:B|R|JR|CR)\d{3,4})(?:S\d+)?',re.sub(r'[.\s]','',r['officialNumber'])))}
  indexed2027={b['billNumber'] for b in data['measures'] if b['sessionID']=='2027GS'}
- report['sessions']['2027']={**data['coverage']['2027'],'publicRequests':len(data['requests2027']),'requestsCheckedAt':data['requestCheckedAt'],'humanListingIntroducedCount':len(listed2027),'listingMissingFromIndex':sorted(listed2027-indexed2027),'indexMissingFromListing':sorted(indexed2027-listed2027)}
+ report['sessions']['2027']={**data['coverage']['2027'],'publicRequests':len(data['requests2027']),'requestPublication':data['requestPublication'],'requestsCheckedAt':data['requestCheckedAt'],'humanListingIntroducedCount':len(listed2027),'listingMissingFromIndex':sorted(listed2027-indexed2027),'indexMissingFromListing':sorted(indexed2027-listed2027)}
  report['measures']=[dict(session=b['sessionID'],bill=b['billNumber'],versions=[dict(id=v['billNumber'],minorVersion=v['minorVersion'],documentReferences=len(v['billDocs'])) for v in b['billVersionList']],actions=len(b['actionHistoryList']),voteReferences=len(votes.get(b['sessionID']+'/'+b['billNumber'],[])),missingVoteDetails=sum(v['detailState']!='verified' for v in votes.get(b['sessionID']+'/'+b['billNumber'],[])),source=manifest['records'][key]) for key,b in records.items()]
  if write:
   out=ROOT/'dist/data';(out/'archive-votes').mkdir(exist_ok=True);histories=collections.defaultdict(list)

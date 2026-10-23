@@ -75,11 +75,15 @@ jobs:
           CATALOG_RESULT: ${{ steps.catalog_refresh.outcome }}
           ARCHIVE_RESULT: ${{ steps.archive_refresh.outcome }}
         run: |
+          if [ -f test-results/catalog-refresh.json ]; then
+            python3 -c "import json; r=json.load(open('test-results/catalog-refresh.json')); print('Catalog reconciliation:',r['status'],r.get('reconciliation',{}))" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "2027 text acquisition step: $TEXT_RESULT" >> "$GITHUB_STEP_SUMMARY"
           if [ -f test-results/text-refresh.json ]; then
             python3 -c "import json; r=json.load(open('test-results/text-refresh.json')); print('2027 text acquisition:',r['status'],r.get('counts',{}))" >> "$GITHUB_STEP_SUMMARY"
           fi
           echo "Calendar refresh: $CALENDAR_RESULT" >> "$GITHUB_STEP_SUMMARY"
-          echo "2027 catalog refresh: $CATALOG_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          echo "2027 catalog step (publishable snapshot, not full reconciliation): $CATALOG_RESULT" >> "$GITHUB_STEP_SUMMARY"
           echo "Vote archive refresh: $ARCHIVE_RESULT" >> "$GITHUB_STEP_SUMMARY"
           echo 'Failed retrievals retain the previous snapshot. Download refresh-attempt artifacts for diagnostics.' >> "$GITHUB_STEP_SUMMARY"
           if [ "$CALENDAR_RESULT" = failure ] || [ "$CATALOG_RESULT" = failure ] || [ "$ARCHIVE_RESULT" = failure ] || [ "$TEXT_RESULT" = failure ]; then
@@ -91,6 +95,7 @@ jobs:
         run: |
           python3 tests/catalog_data.py
           python3 tests/catalog_updates.py
+          python3 tests/request_publication.py
           python3 tests/foundation_data.py
           python3 tests/activity_data.py
           python3 tests/version_data.py

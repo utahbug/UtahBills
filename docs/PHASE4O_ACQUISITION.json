@@ -1,0 +1,20 @@
+{
+  "attemptedAt": "2026-10-23T19:37:16.467276+00:00",
+  "status": "partial",
+  "reconciliation": {
+    "status": "partial",
+    "officialTotal": 271,
+    "verifiedTotal": 270,
+    "withheld": [
+      {
+        "trackingID": "DYVEPWTRCQ",
+        "reason": "New request awaiting first matching official status"
+      }
+    ]
+  },
+  "introduced2027": 0,
+  "publicRequests": 270,
+  "requestStatusesVerified": 270,
+  "linkedRequests": 0,
+  "finishedAt": "2026-10-23T19:37:17.977756+00:00"
+}

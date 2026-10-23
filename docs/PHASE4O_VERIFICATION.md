@@ -1,0 +1,50 @@
+# Phase 4O — bounded partial reconciliation and publication resilience
+
+Baseline: clean fetched `main` at `ee6fda27d44fcc2c85c7af0123f452a34e9190a5`, successful push deployment [40001235860](https://github.com/utahbug/UtahBills/actions/runs/40001235860). The latest genuine schedule remains failed [39993137239](https://github.com/utahbug/UtahBills/actions/runs/39993137239); no later scheduled execution was present at investigation. Phase 4K–4N records and the authoritative backlog were reviewed. This phase changes the owner's previously all-or-nothing request policy only within the bounded conditions below.
+
+## Once-retrieved official evidence
+
+[Source manifest](PHASE4O_SOURCES.json) preserves exact URLs, timestamps and hashes for the original responses in `data/catalog-raw/`. Acquisition at 2026-10-23T19:32:32–19:32:33Z found **271 public requests, 270 status rows and zero introduced measures**. Bytes match Phase 4N. DYVEPWTRCQ remains absent from the raw status HTML. No status was invented and no repeated live fetch/manual workflow dispatch occurred. The tested guarded process used these exact responses as its acquisition input.
+
+[Acquisition report](PHASE4O_ACQUISITION.json) explicitly records **partial**, 270 verified of 271 source records, and DYVEPWTRCQ withheld because its first matching official status is unavailable. The two independently reconciled new requests BSDHEWBYIL and TFEMJWKJCF and the matched ECMJQIXCHM title revision are included. Historical 2026 measure/source records, Calendar, votes and text manifests are unchanged. Introduced 2027 coverage remains zero; no live 2027 text acquisition or roster validation is claimed.
+
+## Alternatives and selected architecture
+
+1. **Retain the entire last fully matched snapshot:** strongest simple completeness gate, but one unrelated new omission freezes independently agreed records and blocks downstream introduced acquisition. This was the correct Phase 4N policy before the owner's new authorization.
+2. **Publish the raw feed with unknown/inferred statuses:** rejected. It would blur verified facts and unresolved source entries and allow unsupported histories/events.
+3. **Merge individual new rows into an edited synthetic source:** rejected. A filtered file must not masquerade as original official bytes, and ad hoc merges obscure disappearance checks and provenance.
+4. **Preserve full sources with a reproducible verified publication subset:** implemented. A source-bound `requestVerification` record stores accepted IDs, withheld IDs/reasons, complete status-source provenance, the prior verified identity set, introduced identities, counts, status and verification time. Projection recomputes the subset from the preserved bytes and rejects mismatched declarations. The raw source and its hash remain unchanged.
+
+## Bounded policy and hard failures
+
+- Only requests missing their **first** matching status may be withheld. A previously verified baseline is mandatory. At most **three IDs and at most 1% of raw feed records** may be withheld; both conservative limits apply. Exceeding either limit requires investigation, not automatic expansion. No tracking ID is hardcoded.
+- Exact tracking IDs, schema/session checks, duplicate/conflicting identity detection and all accepted title/status checks remain mandatory. The original `validate_statuses` remains strict and still rejects the complete 271-row feed.
+- Any missing previously verified status, contradictory title, malformed listing/feed, unexplained extra listing identity during partial reconciliation, or request disappearance without an exact introduced relationship blocks atomic replacement. Existing suspicious-growth, index-loss, measure identity, version/action-loss, hash and revision guards remain enabled. Even an earlier withheld raw ID cannot silently disappear.
+- A withheld identity cannot be an introduced measure's tracking ID. During partial publication, every introduced measure additionally needs exact tracking-ID, normalized official bill-number and title agreement with the human listing. Numbered listing rows must also agree with the introduced index in the reverse direction. Its index/detail/session and history guards still apply. Thus unrelated pending requests can coexist with validated introduced acquisition; unresolved related identities cannot bypass the gate.
+- Complete raw files and status/request histories are retained. Previously accepted histories are never filtered out. Any fatal validation failure preserves the existing catalog byte-for-byte. Atomic file replacement occurs only after candidate projection succeeds; CI tests still precede snapshot publication.
+
+The bounded subset is not proof of overall legislative-source completeness. If discrepancies spread, affect previously verified records or touch the introduced relationship, publication remains fail-closed. The 1%/three-record bounds are operational safety limits, not a claim about official feed correctness.
+
+## History, recovery and public meaning
+
+Request history source identity now includes its pinned status hash and accepted identity set. A later status arrival can therefore create a new verified history checkpoint even when the request-feed bytes have not changed. Repeated unchanged pairs do not create duplicate changes. Histories retain original acquisition timestamps separately from the first eligible verification observation; that observation is not an official submission/publication date. Original source records remain accessible.
+
+Withheld requests are absent from the public request archive and Recent Activity. They are reconsidered against fresh complete feeds on every normal scheduled acquisition. Later exact reconciliation admits them normally, once; a first status is not a status-change event. The actual candidate has **270 public requests and 19 Activity observations**, adding two newly verified requests and one title change to the prior 16 observations. No DYVEPWTRCQ event exists.
+
+Minimal Bills and Recent Activity disclosures distinguish verified count, official-source total and withheld count. Contextual Info explains the qualification. The verification report also carries the partition. Raw counts include any introduced-linked requests; the existing public unintroduced-request count continues to exclude converted records. No new layout, filter, feature, frequency or hosting change was made.
+
+## Automatic publication and TEST-001
+
+The catalog process exits normally only for a publishable validated candidate, including an explicitly partial one. It emits a warning and `status: partial` report with exact withheld identities/reasons. Workflow summaries show reconciliation separately from the step's publication-safety outcome. Dependent text/archive steps may proceed only after this candidate validation; partial introduced relationships have the additional listing guard above. Existing text/archive partial reports and fatal refresh-health reporting are retained. A green step or deployment does not mean complete source reconciliation.
+
+The mandatory pipeline remains integrity checks, production build, all existing browser suites plus the focused Phase 4O suite, snapshot preservation and Main deployment. No schedule was changed or manually dispatched. An active schedule must be checked before push to avoid shared-concurrency cancellation.
+
+**TEST-001 remains High / Blocked.** The earlier schedule had Calendar success, catalog failure, skipped text/archive, passed tests and independent Calendar deployment. This local preserved-source acquisition and subsequent push cannot close it. A later genuine scheduled execution must be evaluated from its actual reports; partial reconciliation cannot be labeled complete or silently satisfy the existing full-reconciliation acceptance criteria.
+
+## Verification
+
+- Ten new isolated policy tests cover bounded one/two omissions, broader-loss rejection, missing previously verified statuses, conflicting titles/duplicate statuses, withheld disappearance, later recovery, unchanged repetition, independent introduced conversion, unresolved or mismatched introduced-listing rejection, tampered subsets/checksums, matching title changes without withheld events, and the preserved real 271/270 response pair.
+- Existing catalog integrity (10), guarded-update (6), Activity (5), text-acquisition (17), and version (8) tests passed. Production build passed source validation and three vote-integrity tests. Two targeted recovery/tampering tests were rerun after the final baseline-history assertion. Final catalog projection equals the tested build. These verify retained identity/history behavior. Partition assertions now check the exact raw = verified + withheld identity sets, and independently assert that the unchanged strict validator rejects the full unreconciled source.
+- New Phase 4O browser checks passed at 320/1280px with doubled text, 200% CSS zoom, keyboard detail navigation and axe WCAG 2.2 A/AA tags. Existing Phase 4G integration passed category/date/pagination boundaries, Copy, source/detail navigation, empty/undated cases, seven widths, text/zoom and axe. Coverage in Activity remains in its established accessible Info disclosure. No full local browser-suite repetition. Required CI validation remains mandatory; no physical-device or manual screen-reader claim.
+
+TRANS-001 and first-real-2027 validation remain unfinished; TRANS-002 and unrelated UI enhancements are outside scope. Next priority: observe a genuine scheduled use of this policy, authoritative resolution of withheld identities, and first-real-introduction/text verification. November 4 remains a readiness planning target, not a release guarantee. Main only; Review unconfigured; noindex/nofollow retained.

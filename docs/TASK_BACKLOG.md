@@ -493,7 +493,7 @@ TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-
 
 ## Next Recommended Batch
 
-**Recommended, not started:** first establish authoritative convergence for DYVEPWTRCQ and the complete request/status set ([Phase 4N evidence](PHASE4N_VERIFICATION.md)); retain the verified catalog until then. Verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
+**Recommended, not started:** observe the next genuine scheduled use of the bounded Phase 4O publication policy and seek authoritative convergence for withheld DYVEPWTRCQ ([Phase 4O evidence](PHASE4O_VERIFICATION.md)). The verified subset may advance under the new guards; partial reconciliation does not close TEST-001. Verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
 
 Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. Preserve Recent Activity, legislative changes/substitutes/votes, Calendar coverage and refresh reliability as current-cycle work. Historical DATA-002/DATA-003 remain open below these priorities unless current-session defects emerge. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
 
@@ -530,3 +530,7 @@ Active inventory remains 37 with unchanged statuses/priorities. TEST-001 remains
 ## Phase 4N maintenance
 
 Bounded investigation complete; upstream omission remains unresolved. No parser/workflow defect or new introduced 2027 measure was established. Three new feed requests and one revised title were preserved as diagnostic evidence, not imported into the verified catalog. TEST-001, SESSION-002, SESSION-003 and TRANS-001 remain open in their existing statuses; TRANS-002 is not started. Active inventory remains 37, with unchanged counts/priorities. [Findings, preserved sources and targeted verification](PHASE4N_VERIFICATION.md). November 4 remains a planning target, not a promised release.
+
+## Phase 4O maintenance
+
+Owner-authorized bounded partial publication is implemented under TEST-001 reliability work: 270 verified requests of 271 raw records; DYVEPWTRCQ remains explicitly withheld. Complete raw evidence and all historical guards remain; a missing previously verified status still fails publication. [Policy, alternatives, recovery tests and limitations](PHASE4O_VERIFICATION.md). This supersedes Phase 4N’s all-or-nothing policy only for bounded first-status omissions. TEST-001 remains High/Blocked pending genuine scheduled evidence and full acceptance; no task is prematurely closed. Active counts/priorities remain unchanged. SESSION-002/003, TRANS-001/002 and all historical/human-review dependencies remain open.

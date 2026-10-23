@@ -5,7 +5,7 @@ RAW=ROOT/'data/catalog-raw'; TARGET=ROOT/'data/catalog.json'; CACHE=ROOT/'test-r
 REPORT=ROOT/'test-results/catalog-refresh.json'
 # Conservative daily growth guard. Change only after reviewing official evidence.
 MAX_NEW_RECORDS=250
-from request_status import STATUS_URL,validate_statuses
+from request_status import STATUS_URL
 
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
 def get(url):
@@ -28,7 +28,8 @@ def requests(source):
     return rows
 
 def append_source(history,source):
-    if not history or history[-1]['sha256']!=source['sha256']:history.append(dict(source))
+    from request_publication import source_identity
+    if not history or source_identity(history[-1])!=source_identity(source):history.append(dict(source))
 
 def refresh():
     old=json.loads(TARGET.read_text(encoding='utf-8'))
@@ -37,7 +38,12 @@ def refresh():
     for key,file in [('index2027','billlist.json'),('requests2027','filelist.json')]:
         sources[key]=get('https://le.utah.gov/data/2027GS/'+file)
     sources['requestStatuses2027']=get(STATUS_URL)
-    validate_statuses(read(sources['requestStatuses2027']),requests(sources['requests2027']))
+    # Validate the previous published catalog before using its identities as the trust baseline.
+    from catalog_model import derive
+    from request_publication import reconcile
+    previous_data=derive(old)
+    previously_verified={r['trackingID'] for r in previous_data['requestArchive2027']}
+    raw_requests=requests(sources['requests2027'])
     index=json.loads(read(sources['index2027']));assert isinstance(index,list),'Index must be an array'
     for item in index:
         assert isinstance(item,dict) and re.fullmatch(r'[HS](?:B|R|JR|CR)\d{3,4}',item.get('number','')),'Invalid base measure'
@@ -67,6 +73,9 @@ def refresh():
     current={r['trackingID'] for r in requests(sources['requests2027'])}
     introduced=[json.loads(read(r))['trackingID'] for k,r in records.items() if k.startswith('2027/')]
     assert len(introduced)==len(set(introduced)),'Ambiguous request-to-bill identity'
+    reconciliation=reconcile(read(sources['requestStatuses2027']),raw_requests,previously_verified,introduced)
+    if reconciliation['withheld'] or old['sources']['requests2027'].get('requestVerification'):
+        sources['requests2027']['requestVerification']={**reconciliation,'statusSource':sources['requestStatuses2027'],'previouslyVerifiedIDs':sorted(previously_verified),'introducedIDs':sorted(introduced),'verifiedAt':now()}
     assert previous<=current|set(introduced),'Public requests disappeared without introduced records; review required'
     assert len(current-previous)<=MAX_NEW_RECORDS,'Major increase in request count; review required'
     history=list(old.get('requestHistory',[]));append_source(history,old['sources']['requests2027']);append_source(history,sources['requests2027'])
@@ -78,12 +87,13 @@ def refresh():
     data=derive(candidate)
     assert data['coverage']['2027']['imported']==len(index),'Incomplete projection'
     temp=TARGET.with_suffix('.candidate');temp.write_text(json.dumps(candidate,indent=2)+'\n',encoding='utf-8');os.replace(temp,TARGET)
-    return {'introduced2027':len(index),'publicRequests':len(data['requests2027']),'requestStatusesVerified':sum(bool(r.get('officialStatus')) for r in data['requests2027']),'linkedRequests':sum(bool(r['introducedBill']) for r in data['requestArchive2027'])}
+    return {'reconciliation':{k:v for k,v in reconciliation.items() if k!='acceptedIDs'},'introduced2027':len(index),'publicRequests':len(data['requests2027']),'requestStatusesVerified':sum(bool(r.get('officialStatus')) for r in data['requests2027']),'linkedRequests':sum(bool(r['introducedBill']) for r in data['requestArchive2027'])}
 
 def run():
     report={'attemptedAt':now(),'status':'failed'}
     try:
-        report.update(refresh());report['status']='success'
+        report.update(refresh());report['status']=report['reconciliation']['status']
+        if report['status']=='partial':print('::warning::Partial request reconciliation; independently verified records published, withheld identities remain unresolved. See catalog-refresh.json.',flush=True)
     except Exception as error:
         report['error']=str(error);raise
     finally:

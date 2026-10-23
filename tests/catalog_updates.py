@@ -21,7 +21,7 @@ class Updates(unittest.TestCase):
   source=dict(path=str(path),url=url,sha256=sha,retrievedAt=r.now());self.feeds[url]=source;return source
  def statuses(self,rows):
   from html import escape
-  cells=''.join('<tr><td><input data-trackingid="'+escape(x.get('trackingID','MISSING'))+'"></td><td>Not Numbered</td><td>'+escape(x.get('shortTitle','Test'))+'</td><td>Test sponsor</td><td></td><td>'+escape(x.get('officialStatus','In Process'))+'</td></tr>' for x in (rows or [dict(trackingID='UNRELATED',shortTitle='Synthetic unrelated row')]))
+  cells=''.join('<tr><td><input data-trackingid="'+escape(x.get('trackingID','MISSING'))+'"></td><td>'+escape(x.get('officialNumber','Not Numbered'))+'</td><td>'+escape(x.get('shortTitle','Test'))+'</td><td>Test sponsor</td><td></td><td>'+escape(x.get('officialStatus','In Process'))+'</td></tr>' for x in (rows or [dict(trackingID='UNRELATED',shortTitle='Synthetic unrelated row')]))
   body=('<h1>2027GS</h1><table id="resultTbl"><tr><th>Tracking</th><th>Bill#</th><th>ShortTitle</th><th>Sponsor</th><th>FloorSponsor</th><th>Status</th></tr>'+cells+'</table>').encode()
   self.source(body,r.STATUS_URL)
  def requests(self,rows):
