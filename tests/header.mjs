@@ -55,6 +55,11 @@ try{
   assert.ok(await page.locator('.about-page>nav').evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('header').getBoundingClientRect().bottom),'section navigation clear of sticky header');
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
  }
+ // A Calendar cell scrolled behind the sticky header must be fully revealed on focus.
+ await page.setViewportSize({width:768,height:900});await page.goto(base+'#calendar');await page.reload();await ready('#calendar');
+ const day=page.locator('.calendar-day').nth(10);await day.evaluate(e=>{const header=document.querySelector('header');window.scrollTo(0,e.getBoundingClientRect().top+scrollY-header.offsetHeight/2)});await page.waitForTimeout(100);
+ await page.keyboard.press('Tab');await day.focus();
+ assert.ok(await day.evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('header').getBoundingClientRect().bottom),'focused day clear of header');
  await page.goto(base+'#faq/questions');await page.locator('#about-faq').waitFor();await page.waitForTimeout(100);
  assert.ok(await page.locator('#about-faq h2').evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('header').getBoundingClientRect().bottom),'section heading clear of header');
  await page.locator('.skip').focus();assert.ok(await page.locator('.skip').evaluate(e=>e.getBoundingClientRect().top>=0));
