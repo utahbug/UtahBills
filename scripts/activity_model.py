@@ -31,7 +31,7 @@ def events(manifest):
   if ident in seen:return
   seen.add(ident);event.setdefault('category','documents' if 'document' in event['kind'] else 'actions');result.append(dict(id=ident,**event))
  for key,source in manifest['records'].items():
-  b=json.loads(read(source));base=dict(session=b['sessionID'][:4],bill=b['billNumber'],title=b['shortTitle'],retrievedAt=source['retrievedAt'],sourceUrl=source['url'],sourcePath=source['path'],sourceSha256=source['sha256'],history='#bill/'+key+'/history')
+  b=json.loads(read(source));base=dict(session=b['sessionID'][:4],bill=b['billNumber'],trackingID=b.get('trackingID') or '',title=b['shortTitle'],retrievedAt=source['retrievedAt'],sourceUrl=source['url'],sourcePath=source['path'],sourceSha256=source['sha256'],history='#bill/'+key+'/history')
   for a in b['actionHistoryList']:
    raw_actions+=1
    add(dict(**base,date=calendar_date(a.get('actionDate')),sourceOrder=source_order(a.get('actionDate')),kind='Recorded legislative action',text=a['description'],body=a.get('owner',''),dateLabel='Official action date',url='https://le.utah.gov/Session/'+base['session']+'/bills/static/'+base['bill']+'.html'),[key,'action',a])
@@ -52,7 +52,7 @@ def events(manifest):
   ident=r['trackingID'];history=r.get('history',[])
   def request_event(h,kind,text,identity,previous=None):
    source={**h['source'],'retrievedAt':h.get('observedAt')}
-   event=observed(source,bill='Public request · '+ident,title=h.get('shortTitle',r['shortTitle']),category='requests',kind=kind,text=text,url=r.get('officialRequestUrl') or source['url'],history='#request/'+ident)
+   event=observed(source,bill='Public request · '+ident,trackingID=ident,introducedBill=r.get('introducedBill'),title=h.get('shortTitle',r['shortTitle']),category='requests',kind=kind,text=text,url=r.get('officialRequestUrl') or source['url'],history='#request/'+ident)
    if previous:event['previousSource']=previous['source']
    add(event,['request',ident,*identity])
   if history and snapshots[0] and ident not in baseline:
@@ -72,7 +72,7 @@ def events(manifest):
   source=(manifest.get('measureHistory',{}).get(key) or [current])[0]
   b=json.loads(read(source));assert key=='2027/'+b['billNumber'] and b['sessionID']=='2027GS','Measure history identity mismatch'
   latest=json.loads(read(current));assert latest['trackingID']==b['trackingID'],'Measure history tracking identity mismatch'
-  ident=b['trackingID'];event=observed(source,bill=b['billNumber'],title=b['shortTitle'],category='introduced',kind='Introduced legislation first observed',text='',url='https://le.utah.gov/Session/2027/bills/static/'+b['billNumber']+'.html',history='#bill/'+key)
+  ident=b['trackingID'];event=observed(source,bill=b['billNumber'],trackingID=ident,title=b['shortTitle'],category='introduced',kind='Introduced legislation first observed',text='',url='https://le.utah.gov/Session/2027/bills/static/'+b['billNumber']+'.html',history='#bill/'+key)
   if ident in requests:
    event.update(relatedHistory='#request/'+ident,relatedLabel='Original public request · '+ident)
   add(event,[key,'first-observed',source.get('retrievedAt')])

@@ -255,3 +255,10 @@ footer p{margin:0}footer p a{margin:0}
 main:has(.request-heading){min-height:0}
 
 .find-legislators{margin:0 0 .5rem}.find-legislators summary{min-height:44px;align-content:center;color:var(--blue,#175b91);width:fit-content}.find-legislators p{margin:.35rem 0;max-width:65rem}.find-legislators a{display:inline-block;min-height:44px;align-content:center}
+
+/* Source metadata wraps as groups; separators stay attached to their labels. */
+.activity-metadata{display:flex;flex-wrap:wrap;gap:0 10px;font-size:.875rem;font-weight:400}
+.activity-metadata-item{max-width:100%}
+.activity-metadata-item+ .activity-metadata-item::before{content:"|\00a0";white-space:nowrap}
+.activity-tracking{font-size:calc(1em - 1px);font-weight:400}
+.request-search-source{font-size:.875rem;margin:4px 0 0}
