@@ -53,6 +53,9 @@ def events(manifest):
   def request_event(h,kind,text,identity,previous=None):
    source={**h['source'],'retrievedAt':h.get('observedAt')}
    event=observed(source,bill='Public request · '+ident,trackingID=ident,introducedBill=r.get('introducedBill'),title=h.get('shortTitle',r['shortTitle']),category='requests',kind=kind,text=text,url=r.get('officialRequestUrl') or source['url'],history='#request/'+ident)
+   event['retrievedAt']=h['source'].get('retrievedAt') or ''
+   if h.get('observedAt')!=h['source'].get('retrievedAt'):
+    event.update(observedAt=h.get('observedAt'),dateLabel='Verified observation date; official change/publication date unknown')
    if previous:event['previousSource']=previous['source']
    add(event,['request',ident,*identity])
   if history and snapshots[0] and ident not in baseline:

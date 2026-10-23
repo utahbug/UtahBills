@@ -29,6 +29,10 @@ class PartialPublication(Updates):
   self.statuses(self.base+[self.added]);r.run()
   recovery=self.events();new=[e for e in recovery if e['trackingID']=='ISOLATEDNEW']
   self.assertEqual(len(new),1);self.assertEqual(new[0]['kind'],'New public request observed')
+  self.assertEqual(new[0]['retrievedAt'],self.current()['sources']['requests2027']['retrievedAt'])
+  entry=next(x for x in m.derive(self.current())['requests2027'] if x['trackingID']=='ISOLATEDNEW')
+  self.assertEqual(new[0]['observedAt'],entry['history'][0]['observedAt'])
+  self.assertIn('Verified observation date',new[0]['dateLabel'])
   self.assertEqual(json.loads(r.REPORT.read_text())['status'],'success')
   r.run();self.assertEqual(self.events(),recovery)
   self.assertEqual(len(m.derive(self.current())['requests2027']),len(self.base)+1)
