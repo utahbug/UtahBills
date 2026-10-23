@@ -295,3 +295,5 @@ header.navigation-compact .brand small,header.navigation-compact .independent{di
 .agenda-heading .copy-control:has(.copy-results[hidden]){display:flex}
 
 .version-transparency details{padding:6px 0}.version-transparency summary{min-height:44px;align-content:center}.version-transparency a{overflow-wrap:anywhere}.version-transparency .compare-controls select{width:100%;min-width:0}.version-transparency .version-diff{max-height:460px}
+
+.version-record{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;border-top:1px solid var(--line)}.version-document{display:inline-flex;align-items:center;min-height:44px;padding:4px 0;flex:1;min-width:0}.version-record>details{border:0;padding:0}.version-record>details[open]{flex-basis:100%}
