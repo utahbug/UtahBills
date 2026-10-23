@@ -17,3 +17,6 @@ docs/phase4d-sources/* -text -whitespace
 
 # Preserve Phase 4H official roster response bytes.
 docs/evidence/phase4h/* -text -whitespace
+
+# Preserve Phase 4L original legislative XML bytes.
+data/version-raw/* -text -whitespace
