@@ -2,6 +2,8 @@
 
 Updated: October 22, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
 
+Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 are High priorities alongside TEST-001.
+
 Phase 4E maintenance: CAL-001 and UI-002 complete the authorized interface refinements. Phase 4D request freshness and transition-test readiness remain complete; the next actual scheduled run remains unverified. See [Phase 4E verification](PHASE4E_VERIFICATION.md), [Phase 4D verification](PHASE4D_VERIFICATION.md) and the completed task ledger.
 
 ## Baseline and evidence
@@ -19,17 +21,17 @@ Active inventory: **37 tasks**; **4 completed tasks** retain their IDs in the co
 | Status | Count |
 | --- | ---: |
 | In progress | 0 |
-| Approved/Not started | 27 |
+| Approved/Not started | 26 |
 | Proposed | 2 |
-| Blocked | 5 |
+| Blocked | 6 |
 | Deferred | 3 |
 
 | Priority | Count |
 | --- | ---: |
 | Critical | 0 |
-| High | 2 |
-| Medium | 29 |
-| Low | 6 |
+| High | 4 |
+| Medium | 25 |
+| Low | 8 |
 
 Priority is a planning order, not a new defect-severity finding. Blocked tasks remain approved work whose completion requires the stated evidence/dependency; bounded investigation may continue when separately scoped. No critical defect was established by Phase 4C.
 
@@ -37,7 +39,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### DATA-002
 
-**Resolve five official vote conflicts** — **High** · **Blocked**
+**Resolve five official vote conflicts** — **Low** · **Blocked**
 
 - **Dependencies:** Authoritative clarification or corrected, preserved official evidence.
 - **Source:** [Audit H3](QUALITY_AUDIT.md#h3--five-contradictory-official-vote-totals--open-preserved); [Phase 4A evidence](../data/phase4a-evidence.json).
@@ -45,7 +47,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### DATA-003
 
-**Verify historical voter identities** — **Medium** · **Blocked**
+**Verify historical voter identities** — **Low** · **Blocked**
 
 - **Dependencies:** Authoritative historical alias evidence applicable to the affected records.
 - **Source:** [Audit M2](QUALITY_AUDIT.md#m2--historical-identity-and-future-roster-remain-incomplete--open); [Phase 4A verification](../VERIFICATION.md).
@@ -63,7 +65,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### SESSION-002
 
-**Verify and publish the official 2027 roster** — **Medium** · **Blocked**
+**Verify and publish the official 2027 roster** — **High** · **Blocked**
 
 - **Dependencies:** An authoritative published 2027 session roster, rather than current contacts or request sponsors.
 - **Source:** [Roadmap Stage 2](../ROADMAP.md#stage-2--legislator-directory--partly-implemented); [Audit M2](QUALITY_AUDIT.md#m2--historical-identity-and-future-roster-remain-incomplete--open).
@@ -71,7 +73,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### SESSION-003
 
-**Review early-session source completeness** — **Medium** · **Approved/Not started**
+**Review early-session source completeness** — **High** · **Approved/Not started**
 
 - **Dependencies:** Published early-session sources; DATA-001, SESSION-001 and SESSION-002 constrain the claims that can be made.
 - **Source:** [Roadmap Stage 1](../ROADMAP.md#stage-1--legislative-data-and-transparency--partly-implemented).
@@ -133,9 +135,9 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### LEG-001
 
-**Find My Legislators by address** — **Medium** · **Approved/Not started**
+**Find My Legislators by address** — **High** · **Blocked**
 
-- **Dependencies:** Verified authoritative legislative district boundaries/lookup, applicable dates, matching roster and defined address privacy handling; SESSION-002 for 2027 claims.
+- **Dependencies:** A supported geocoder that keeps submitted addresses out of URLs/logs and provides documented retention controls; authoritative boundary accuracy/ambiguity validation; independently matched, dated members; SESSION-002 for 2027 claims. Phase 4F verified state district sources but found URL-based upstream geocoding and permitted temporary parameter retention. See [source investigation](PHASE4F_VERIFICATION.md). The external link is a fallback only.
 - **Source:** Backlog approval §4 (Find My Legislators); [existing directory scope](../README.md#batch-2b--expanded-discovery).
 - **Acceptance:** Return the user's Utah House representative and state senator from authoritative address/district evidence. Test boundary, ambiguous, invalid and out-of-state addresses with clear source/date/error disclosures. Exclude voter registration, party affiliation and voting instructions; never guess a district or member.
 
@@ -434,11 +436,15 @@ No roadmap item was deleted or silently reclassified. The historical source docu
 
 The owner explicitly replaced the combined About & FAQ destination and visible Main footer label with separate About/FAQ routes and the approved compact disclaimer. Prior phase descriptions remain historical evidence; UI-002 records this authorized replacement. CAL-001 is complete; other Calendar expansion tasks remain open. No acquisition logic or legislative data changed.
 
+## Phase 4F maintenance
+
+Official-finder fallback and priority updates are implemented; LEG-001 remains blocked, with no new task marked complete. At the October 22 check, latest actual scheduled run was [39820847031](https://github.com/utahbug/UtahBills/actions/runs/39820847031), which failed before the correction. No subsequent cron run was available. Successful manual run 39869478421 and push deployment 39876464781 do not close TEST-001. No acquisition logic or records changed.
+
 ## Next Recommended Batch
 
 **Recommended, not started:** verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
 
-Separately scope authoritative evidence for [DATA-002](#data-002) and [DATA-003](#data-003), and arrange [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
+Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. Preserve Recent Activity, legislative changes/substitutes/votes, Calendar coverage and refresh reliability as current-cycle work. Historical DATA-002/DATA-003 remain open below these priorities unless current-session defects emerge. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
 
 ## Maintenance rules
 

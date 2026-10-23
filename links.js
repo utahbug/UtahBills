@@ -4,7 +4,7 @@ export function watchExternalLinks(){
  const seen=new WeakSet();
  function decorate(root){for(const a of root.querySelectorAll('a[href]')){
   if(seen.has(a))continue;const u=new URL(a.href,location.href);if(!/^https?:$/.test(u.protocol)||u.origin===location.origin)continue;seen.add(a);
-  a.target='_blank';a.rel='noopener';a.setAttribute('aria-description','External website; opens in a new tab');
+  a.target='_blank';a.relList.add('noopener');a.setAttribute('aria-description','External website; opens in a new tab');
   if(a.closest('footer'))continue; // The approved shared footer uses plain text links.
   const walker=document.createTreeWalker(a,NodeFilter.SHOW_TEXT);let n,last;while(n=walker.nextNode()){if(!n.parentElement.closest('.sr-only')&&n.textContent.trim())last=n}
   const tail=document.createElement('span');tail.className='external-tail';

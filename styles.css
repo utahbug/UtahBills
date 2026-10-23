@@ -253,3 +253,5 @@ footer p{margin:0}footer p a{margin:0}
 .event-type{display:inline-flex;align-items:center;gap:4px;font-weight:600}.event-type svg{flex-shrink:0;color:#17629a}
 
 main:has(.request-heading){min-height:0}
+
+.find-legislators{margin:0 0 .5rem}.find-legislators summary{min-height:44px;align-content:center;color:var(--blue,#175b91);width:fit-content}.find-legislators p{margin:.35rem 0;max-width:65rem}.find-legislators a{display:inline-block;min-height:44px;align-content:center}

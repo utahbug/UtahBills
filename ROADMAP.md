@@ -1,5 +1,12 @@
 # UtahBills development roadmap
 
+## Current priority — 2027 legislative cycle
+
+Owner decision, Phase 4F: prioritize useful, accurate, accessible coverage from October 2026 through April 2027. Focus on 2027 requests and introduced legislation, Recent Activity, changes/substitutes/votes, Calendar coverage, guarded refresh verification, verified membership and accessibility. Preserve historical 2026 records and safeguards. Historical vote conflicts and voter identities remain unresolved lower-priority reference work; investigate promptly if they expose defects affecting 2027 accuracy.
+
+Find My Legislators now offers a compact official-finder link. Direct address lookup remains blocked under [LEG-001](docs/TASK_BACKLOG.md#leg-001), not completed: investigated geocoders do not meet the requested address privacy constraints. See [Phase 4F evidence](docs/PHASE4F_VERIFICATION.md).
+
+
 Actionable task IDs, priorities, dependencies and acceptance criteria are maintained in the [authoritative task backlog](docs/TASK_BACKLOG.md). This roadmap remains the high-level strategy; completed phases do not close unresolved backlog findings.
 
 Status: **Implemented** = available in the research prototype; **Planned** = approved direction for a later batch, not a delivery date; **Deferred** = revisit after core coverage and review. Priorities run from Stage 1 to Stage 6. Each stage needs a bounded batch and source verification before implementation.
@@ -29,7 +36,7 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
 - **Batch 2C implemented:** guarded daily 2027 metadata/request refresh, exact tracking-ID reconciliation, preserved request/measure revisions, independent refresh reports and retained 2026 history.
-- **Next bounded batch:** reconcile reported official vote-source discrepancies, verify unresolved historical voter identities, then verify and connect the official 2027 session roster when published, and review early-session source completeness. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
+- **Next bounded batch:** verify subsequent scheduled acquisition and early 2027 source completeness, then connect the authoritative 2027 roster when published. Historical vote discrepancies and voter identities remain lower priority unless they affect current-session accuracy. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
 - **Implemented:** separately labeled public requests and introduced measures; counts derive from each verified snapshot. The initial Batch 2C snapshot has 253 pending requests and an empty introduced index; neither count is fixed in the application.
 - **Batch 2C implemented:** compact status/Info disclosure and corrected shared request template, human-readable official listing, optional source/history details.
 - Substitutes, late changes and boxcar-bill histories using verifiable version/publication evidence.
