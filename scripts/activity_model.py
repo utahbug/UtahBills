@@ -14,12 +14,22 @@ def source_order(value):
  try:return dt.datetime.fromisoformat(value).isoformat()
  except ValueError:return calendar_date(value)
 
+def observation(value):
+ # A missing/naive timestamp cannot establish a Mountain calendar day.
+ from zoneinfo import ZoneInfo
+ try:
+  stamp=dt.datetime.fromisoformat(value)
+  if stamp.tzinfo is None:return None,''
+  stamp=stamp.astimezone(ZoneInfo('America/Denver'))
+  return stamp.date().isoformat(),stamp.isoformat()
+ except (ValueError,TypeError):return None,''
+
 def events(manifest):
  result=[];seen=set();raw_actions=0
  def add(event,identity):
   ident=hashlib.sha256(json.dumps(identity,sort_keys=True).encode()).hexdigest()
   if ident in seen:return
-  seen.add(ident);result.append(dict(id=ident,**event))
+  seen.add(ident);event.setdefault('category','documents' if 'document' in event['kind'] else 'actions');result.append(dict(id=ident,**event))
  for key,source in manifest['records'].items():
   b=json.loads(read(source));base=dict(session=b['sessionID'][:4],bill=b['billNumber'],title=b['shortTitle'],retrievedAt=source['retrievedAt'],sourceUrl=source['url'],sourcePath=source['path'],sourceSha256=source['sha256'],history='#bill/'+key+'/history')
   for a in b['actionHistoryList']:
@@ -31,23 +41,53 @@ def events(manifest):
     kind={'PubSub':'Substitute document','PubAmend':'Amendment document','AmdPages':'Amendment document','Amended':'Amended version document','Enrolled':'Enrolled version document','Introduced':'Introduced version document'}[d['fileType']]
     from urllib.parse import urljoin
     add(dict(**base,date=calendar_date(d.get('fileDate')),sourceOrder=source_order(d.get('fileDate')),kind=kind,text=v['billNumber']+' · '+(d.get('shortDesc') or d['fileType']),body='',dateLabel='Document record date; publication time unverified',url=urljoin('https://le.utah.gov',d['url'])),[key,'document',v['billNumber'],d['fileType'],d.get('fileDate'),d['fileName'].rsplit('.',1)[0]])
- # The first observation is not evidence of a status change. Later observations are
- # retrieval dates, never asserted to be the official date the status changed.
- from zoneinfo import ZoneInfo
- for r in derive(manifest)['requestArchive2027']:
-  for h in r.get('statusHistory',[])[1:]:
-   date=dt.datetime.fromisoformat(h['observedAt']).astimezone(ZoneInfo('America/Denver')).date().isoformat()
-   source=h['source'];add(dict(session='2027',bill='Public request',title=r['shortTitle'],date=date,sourceOrder=dt.datetime.fromisoformat(h['observedAt']).astimezone(ZoneInfo('America/Denver')).isoformat(),kind='Request status change observed',text=h['officialStatus'],body='',dateLabel='Retrieval observation date; official change date unknown',retrievedAt=h['observedAt'],sourceUrl=source['url'],sourcePath=source['path'],sourceSha256=source['sha256'],url=r.get('officialRequestUrl') or source['url'],history='#request/'+r['trackingID']),['request',r['trackingID'],h['observedAt'],h['officialStatus']])
+ # Retained baseline membership, not acquisition date alone, distinguishes new IDs.
+ archive=derive(manifest)['requestArchive2027'];requests={r['trackingID']:r for r in archive}
+ snapshots=manifest.get('requestHistory',[]) or [manifest.get('sources',{}).get('requests2027')]
+ baseline={r['trackingID'] for r in json.loads(read(snapshots[0]))} if snapshots[0] else set()
+ def observed(source,**fields):
+  date,order=observation(source.get('retrievedAt'))
+  return dict(session='2027',date=date,sourceOrder=order,retrievedAt=source.get('retrievedAt') or '',sourceUrl=source['url'],sourcePath=source['path'],sourceSha256=source['sha256'],dateLabel='Retrieval observation date; official change/publication date unknown',body='',**fields)
+ for r in archive:
+  ident=r['trackingID'];history=r.get('history',[])
+  def request_event(h,kind,text,identity,previous=None):
+   source={**h['source'],'retrievedAt':h.get('observedAt')}
+   event=observed(source,bill='Public request · '+ident,title=h.get('shortTitle',r['shortTitle']),category='requests',kind=kind,text=text,url=r.get('officialRequestUrl') or source['url'],history='#request/'+ident)
+   if previous:event['previousSource']=previous['source']
+   add(event,['request',ident,*identity])
+  if history and snapshots[0] and ident not in baseline:
+   h=history[0];request_event(h,'New public request observed','',['new',h.get('observedAt')])
+  for previous,h in zip(history,history[1:]):
+   for field,label in [('shortTitle','Title'),('sponsor','Sponsor ID')]:
+    if previous.get(field)!=h.get(field):
+     text=label+': '+(previous.get(field) or 'Not identified')+' → '+(h.get(field) or 'Not identified')
+     request_event(h,'Request '+('title' if field=='shortTitle' else 'sponsor')+' change observed',text,[field,h.get('observedAt'),previous.get(field),h.get(field)],previous)
+  statuses=r.get('statusHistory',[])
+  for previous,h in zip(statuses,statuses[1:]):
+   if previous['officialStatus']==h['officialStatus']:continue
+   # Keep the pre-existing status event identity stable.
+   request_event(h,'Request status change observed',previous['officialStatus']+' → '+h['officialStatus'],[h.get('observedAt'),h['officialStatus']],previous)
+ for key,current in manifest['records'].items():
+  if not key.startswith('2027/'):continue
+  source=(manifest.get('measureHistory',{}).get(key) or [current])[0]
+  b=json.loads(read(source));assert key=='2027/'+b['billNumber'] and b['sessionID']=='2027GS','Measure history identity mismatch'
+  latest=json.loads(read(current));assert latest['trackingID']==b['trackingID'],'Measure history tracking identity mismatch'
+  ident=b['trackingID'];event=observed(source,bill=b['billNumber'],title=b['shortTitle'],category='introduced',kind='Introduced legislation first observed',text='',url='https://le.utah.gov/Session/2027/bills/static/'+b['billNumber']+'.html',history='#bill/'+key)
+  if ident in requests:
+   event.update(relatedHistory='#request/'+ident,relatedLabel='Original public request · '+ident)
+  add(event,[key,'first-observed',source.get('retrievedAt')])
  return sorted(result,key=lambda e:(e['date'] or '',e['sourceOrder'],e['id']),reverse=True),raw_actions
 
 def build():
  manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));rows,raw=events(manifest);out=ROOT/'dist/data/activity';out.mkdir(exist_ok=True)
- index=dict(schemaVersion=1,rawActions=raw,sessions={})
+ index=dict(schemaVersion=2,rawActions=raw,sessions={})
+ baseline=(manifest.get('requestHistory') or [manifest['sources']['requests2027']])[0]
+ index['requestCoverage']=dict(baselineCount=len(json.loads(read(baseline))),baselineObservedAt=baseline['retrievedAt'],checkedAt=manifest['sources']['requests2027']['retrievedAt'])
  for year in ('2026','2027'):
   selected=[e for e in rows if e['session']==year];pages=[]
   for start in range(0,len(selected),100):
    chunk=selected[start:start+100];name=year+'-'+str(start//100)+'.json';(out/name).write_text(json.dumps(chunk,ensure_ascii=False),encoding='utf-8');dates=[e['date'] for e in chunk if e['date']]
    pages.append(dict(file=name,count=len(chunk),first=max(dates) if dates else None,last=min(dates) if dates else None))
-  index['sessions'][year]=dict(count=len(selected),undated=sum(not e['date'] for e in selected),types=dict(collections.Counter(e['kind'] for e in selected)),checkedAt=manifest['sources']['index'+year]['retrievedAt'],pages=pages)
+  index['sessions'][year]=dict(count=len(selected),undated=sum(not e['date'] for e in selected),types=dict(collections.Counter(e['kind'] for e in selected)),categories=dict(collections.Counter(e['category'] for e in selected)),checkedAt=manifest['sources']['index'+year]['retrievedAt'],pages=pages)
  (out/'index.json').write_text(json.dumps(index,ensure_ascii=False),encoding='utf-8');print('Activity:',{y:s['count'] for y,s in index['sessions'].items()},'from',raw,'official actions')
 if __name__=='__main__':build()
