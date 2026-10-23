@@ -68,3 +68,5 @@ TRANS-001 remains **In progress**. Remaining acceptance requires broader justifi
 ## Publication-gate correction
 
 Run [39904612907](https://github.com/utahbug/UtahBills/actions/runs/39904612907) passed integrity/build checks and the first four browser suites, then the existing Batch 2B assertion found that the new collapsed groups hid the direct introduced-document link. Main was not replaced. Grouped records now retain a visible official readable-document link using the established XML-to-PDF mapping, with original representations/provenance in adjacent Details. The strict existing assertion is unchanged; Batch 2B and the Phase 4L responsive/accessibility matrix verify the correction.
+
+Run [39905417605](https://github.com/utahbug/UtahBills/actions/runs/39905417605) verified that correction, then encountered the refinement suite's obsolete section-heading expectation. The expectation now uses the approved Versions and amendments heading; its visible readable-PDF and collapsed technical-XML assertions remain intact. No other test references the former heading.
