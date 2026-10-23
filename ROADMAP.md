@@ -195,3 +195,7 @@ Eligible source-observed public requests are discoverable with unconfirmed statu
 ## Phase 4Q — independent source-observation preservation
 
 Validated missing-first-status observations can be retained and displayed separately when catalog reconciliation fails, using immutable sources, pinned catalog baselines and independent diagnostics. Catalog three/1% limits and introduced/text safeguards remain unchanged. Current evidence has 273 requests/271 statuses; all requests are discoverable with two unconfirmed statuses and preserved recovery history. [Verification and boundaries](docs/PHASE4Q_VERIFICATION.md). TEST-001 and all unfinished 2027/human-validation priorities remain open. Main hosting and the future bills.utahbug.com plan are unchanged.
+
+## November 4 readiness planning
+
+[October 23 assessment](docs/PHASE4R_READINESS.md) separates release acceptance gaps, disclosable source limits and optional work. Latest bounded evidence is 273 requests / 272 verified statuses / one unconfirmed status; DFTEVYMLXT recovered through existing guards. TEST-001 remains High/Blocked with no newer schedule than 39993137239; RELEASE-002 remains open. RELEASE-001, UI-001 and explicit RELEASE-004 approval are still required. No task closes or changes priority/status. Next batch: genuine scheduled-run evidence plus independent human editorial/accessibility acceptance, before cosmetic work. November 4 is a planning target, not launch authorization.

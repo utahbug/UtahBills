@@ -542,3 +542,7 @@ Owner-authorized bounded partial publication is implemented under TEST-001 relia
 ## Phase 4Q maintenance
 
 [Independent observations and safeguards](PHASE4Q_VERIFICATION.md) separate source existence from catalog acceptance. The preserved 273/270 pair remains rejected by the unchanged catalog limits, but its validated missing-first-status observations can be published independently. Latest evidence is 273/271: DYVEPWTRCQ is now verified In Process; two requests remain explicitly unconfirmed. All 273 are discoverable with separate counts/provenance and preserved observation history. Workflow reporting and refresh-health failure remain independent. TEST-001 stays High/Blocked pending genuine scheduled evidence; active inventory remains 37 with unchanged task statuses/priorities. No unrelated task is closed.
+
+## Phase 4R readiness assessment
+
+[October 23 assessment](PHASE4R_READINESS.md) separates release acceptance gaps, disclosable source limits and optional work. Latest bounded evidence is 273 requests / 272 verified statuses / one unconfirmed status; DFTEVYMLXT recovered through existing guards. TEST-001 remains High/Blocked with no newer schedule than 39993137239; RELEASE-002 remains open. RELEASE-001, UI-001 and explicit RELEASE-004 approval are still required. No task closes or changes priority/status. Next batch: genuine scheduled-run evidence plus independent human editorial/accessibility acceptance, before cosmetic work. November 4 is a planning target, not launch authorization.

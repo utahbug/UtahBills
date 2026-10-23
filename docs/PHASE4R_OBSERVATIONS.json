@@ -1,0 +1,11 @@
+{
+  "attemptedAt": "2026-10-23T21:37:47.456317+00:00",
+  "status": "success",
+  "officialTotal": 273,
+  "matchedStatuses": 272,
+  "missingIDs": [
+    "VYQQDPXGUY"
+  ],
+  "scope": "Source observations only; not full catalog reconciliation",
+  "finishedAt": "2026-10-23T21:37:52.019667+00:00"
+}
