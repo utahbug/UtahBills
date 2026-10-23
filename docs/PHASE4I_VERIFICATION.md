@@ -16,7 +16,7 @@ Date/category captions are removed visually, with native controls named “Activ
 
 One shared implementation now keeps the header sticky at all widths. Beyond 48px of scrolling it reduces padding and hides only the brand subtitle and independence descriptor; all four primary navigation destinations remain visible. At the top it restores the normal header. Separate entry/exit thresholds avoid oscillation from the height change. Route transitions synchronously update the header after the existing scroll reset/restoration; saved bill-list positions remain supported.
 
-ResizeObserver maintains the actual header height for root scroll padding. Keyboard-focus correction accounts for CSS zoom; section offsets no longer double-count header height. The focused skip link stays above the sticky header. The wordmark, normal-weight active underline, 44px primary links and narrow-screen wrapped alignment are preserved. No menu destination, route or source disclosure was removed.
+ResizeObserver maintains the actual header height for root scroll padding. Keyboard-focus correction accounts for CSS zoom; section offsets no longer double-count header height. The focused skip link stays above the sticky header. The shared section-scroll helper retains immediately preceding section navigation when opening its first section, so those links are not partially covered. The wordmark, normal-weight active underline, 44px primary links and narrow-screen wrapped alignment are preserved. No menu destination, route or source disclosure was removed.
 
 ## Focused local verification
 
@@ -28,6 +28,7 @@ ResizeObserver maintains the actual header height for root scroll padding. Keybo
 - `tests/header.mjs`: nine routes (Bills, Activity, Calendar, Legislators, About, FAQ, request, bill and legislator details), top/middle/bottom/return; seven widths, doubled text and CSS zoom; scrolled mouse/keyboard route transitions, touch targets, containment, no overlaps/overflow, visible focus, FAQ section heading offsets and axe pass. Short pages are not artificially padded to manufacture scrolling.
 - Existing `tests/usability.mjs`: Back to top, preserved browsing and responsive behavior pass. Its obsolete expectation of a static mobile header now expects sticky positioning.
 - Existing `tests/phase4b.mjs`: wrapped wordmark alignment, legacy links, compact layouts and accessibility pass.
+- `tests/qa.mjs`: existing route/accessibility checks pass at all six widths after correcting the Guide anchor issue below.
 - Representative 390px and 1280px activity/header screenshots inspected locally. Screenshots are local test artifacts, not new published environments.
 
 The complete mandatory GitHub Actions integrity/build checks and browser suites remain required, including the new header suite (23 total). Publication outcome is reported with the final deployment run. Physical iPhone/iPad and manual VoiceOver/NVDA review were not performed; automated checks are not WCAG certification.
@@ -37,3 +38,7 @@ The complete mandatory GitHub Actions integrity/build checks and browser suites 
 TEST-001 remains open/Blocked: latest actual scheduled run is still [39820847031](https://github.com/utahbug/UtahBills/actions/runs/39820847031), the previously investigated failed cron execution. No new manual refresh was triggered. Successful push publication cannot close scheduled acquisition acceptance.
 
 Saved coverage remains 268 requests, 16 observed request events and zero introduced 2027 measures. Assigned/introduced cases are isolated fixtures until real official evidence exists. SESSION-002, SESSION-003, LEG-001, historical conflicts/identities, manual accessibility and editorial review remain open. The October 2026–April 2027 priority, static noindex/nofollow and Main-only deployment remain intact; Review is unconfigured.
+
+## Publication-gate correction
+
+Initial push run [39890359399](https://github.com/utahbug/UtahBills/actions/runs/39890359399) passed integrity/build checks but blocked deployment on a `target-size` violation at the legacy Guide route, 768px. Reproduction showed a preceding FAQ navigation link partially covered by the newly sticky header after section scrolling. The shared section-scroll helper now keeps immediately preceding section navigation visible; the destination heading also remains clear. The focused header suite now checks that legacy route at phone/tablet/desktop widths with axe, and the existing QA suite passes. No test or deployment gate was disabled. Main retained the previous verified version during the failed run.

@@ -1,4 +1,4 @@
-import {resultsPerPage,pagePreference,copyResults,copyText,navigationTools} from './ui.js';
+import {resultsPerPage,pagePreference,copyResults,copyText,navigationTools,scrollSectionIntoView} from './ui.js';
 const syncNavigation=navigationTools();
 import {showActivity,revealHistory} from './activity.js';
 import {showVerification} from './foundation.js';
@@ -109,7 +109,7 @@ function route(focus=true){let hash=location.hash.slice(1)||'bills';
  if(focus){if(hash==='bills'&&returnBill){const a=document.querySelector(`.bill-row a[href="${returnBill}"]`);(a||$('#main')).focus({preventScroll:true});window.scrollTo(0,listScroll)}else{$('#main').focus({preventScroll:true});window.scrollTo(0,0)}}
  syncNavigation();
  if(hash.endsWith('/history'))revealHistory($('#main'));
- const aboutTarget=hash==='guide'?'process':hash==='sources'?'data':hash.startsWith('about/')?hash.split('/')[1]:hash==='faq/process'?'process':hash==='faq/questions'?'faq':null;if(aboutTarget){const target=$('#about-'+aboutTarget);if(target){target.scrollIntoView({block:'start'});if(focus)target.focus({preventScroll:true})}}
+ const aboutTarget=hash==='guide'?'process':hash==='sources'?'data':hash.startsWith('about/')?hash.split('/')[1]:hash==='faq/process'?'process':hash==='faq/questions'?'faq':null;if(aboutTarget){const target=$('#about-'+aboutTarget);if(target){scrollSectionIntoView(target);if(focus)target.focus({preventScroll:true})}}
 }
 function installCatalog(next){
  if(!Array.isArray(next?.measures)||!Array.isArray(next?.legislators)||!Array.isArray(next?.requests2027)||(next.requestArchive2027!==undefined&&!Array.isArray(next.requestArchive2027)))throw Error('Invalid saved catalog');

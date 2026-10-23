@@ -50,6 +50,11 @@ try{
   await page.keyboard.press('Enter');await ready('#calendar');await page.waitForFunction(()=>scrollY===0);await check();
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
  }
+ for(const width of [320,768,1280]){
+  await page.setViewportSize({width,height:900});await page.goto(base+'#guide');await page.reload();await page.locator('#about-process').waitFor();await page.waitForTimeout(100);
+  assert.ok(await page.locator('.about-page>nav').evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('header').getBoundingClientRect().bottom),'section navigation clear of sticky header');
+  await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
+ }
  await page.goto(base+'#faq/questions');await page.locator('#about-faq').waitFor();await page.waitForTimeout(100);
  assert.ok(await page.locator('#about-faq h2').evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('header').getBoundingClientRect().bottom),'section heading clear of header');
  await page.locator('.skip').focus();assert.ok(await page.locator('.skip').evaluate(e=>e.getBoundingClientRect().top>=0));
