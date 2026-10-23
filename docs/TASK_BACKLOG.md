@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **6 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **8 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -357,6 +357,22 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 Stable IDs are retained here and excluded from active counts.
 
+### ACT-003
+
+**Compact Recent Activity request titles and metadata** — **Medium** · **Completed — October 22, 2026**
+
+- **Source:** Owner's Phase 4I request; [verification](PHASE4I_VERIFICATION.md#activity-refinements--act-003).
+- **Acceptance met:** Title-only request headings; verified tracking/assigned-bill metadata with explicit unassigned state; exact detail/source links; accessible compact filters; contextual official bill search; narrow wrapping and preserved filtering/Copy/navigation.
+- **Implementation/tests:** [7c16b75](https://github.com/utahbug/UtahBills/commit/7c16b750b074798d4eba465f9d87960cd8ab523c); extended activity model and Phase 4G regressions, Phase 4H navigation, historical activity suite and production build. No source/acquisition changes.
+
+### UI-003
+
+**Consistent shared sticky and compact navigation** — **Medium** · **Completed — October 22, 2026**
+
+- **Source:** Owner's additional Phase 4I sticky-header requirement; [cause and verification](PHASE4I_VERIFICATION.md#shared-header-correction--ui-003).
+- **Acceptance met:** Shared all-width sticky header; compact scrolled state and normal top state; all primary links retained; synchronized route state, measured anchor/focus offsets, responsive wrapping and keyboard access.
+- **Implementation/tests:** [6daf52d](https://github.com/utahbug/UtahBills/commit/6daf52d936c8cd618a869c165aafe86321fb97ee); [focused header regression](../tests/header.mjs), existing usability checks and build. Physical-device/manual assistive technology review remains UI-001.
+
 ### ACT-002
 
 **Recover Recent Activity request details across snapshot updates** — **High** · **Completed — October 22, 2026**
@@ -482,3 +498,7 @@ Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001
 - Keep ROADMAP strategic and cross-linked; investigate discrepancies and document the evidence rather than silently changing either source's status.
 - Never treat successful deployment as proof of factual completeness, successful scheduled acquisition or accessibility certification.
 - Preserve Main-only workflow checks, official source/provenance/history safeguards, current design decisions and explicit public-release approval requirements. Do not automatically implement backlog tasks or create monitoring schedules from this inventory.
+
+## Phase 4I maintenance
+
+ACT-003 and UI-003 complete the authorized activity refinements and shared-header correction. Active counts remain unchanged. TEST-001 is still Blocked pending a subsequent successful actual cron run; no unrelated task was closed. [Evidence](PHASE4I_VERIFICATION.md).
