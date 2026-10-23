@@ -1,3 +1,4 @@
+import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium,webkit} from 'playwright';import {readFile,mkdir,writeFile} from 'node:fs/promises';import assert from 'node:assert/strict';
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true});
 const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -6,10 +7,10 @@ const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 await page.addInitScript(()=>localStorage.setItem('utahbills-results-per-page','25'));
 try{
 await page.goto(base);await page.getByRole('heading',{name:'Find a bill. Understand its impact.'}).waitFor();
-await page.locator('#session').selectOption('2026');await page.locator('#search').fill('HB 154');assert.equal(await page.locator('.bill-row').count(),1);await page.locator('#clear-search').click();
+await openArchive(page);await page.locator('#search').fill('HB 154');assert.equal(await page.locator('.bill-row').count(),1);await page.locator('#clear-search').click();
 await page.locator('.advanced-search>summary').click();await page.locator('#status').selectOption('Signed');assert.equal(await page.locator('.bill-row').count(),25);await page.locator('#chamber').selectOption('Senate');assert.equal(await page.locator('.bill-row').count(),25);await page.locator('#clear').click();
 await page.locator('#search').fill('no-such-bill');await page.getByRole('heading',{name:'No matching measures'}).waitFor();await page.locator('#empty-clear').click();
-await page.locator('#session').selectOption('2027');const current=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8'));assert.match(await page.locator('#count').innerText(),current.coverage['2027'].imported?new RegExp('^'+current.coverage['2027'].imported+' of'):/2027 · Checked/);await page.locator('#session').selectOption('2026');
+await page.locator('#session').selectOption('2027');const current=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8'));assert.match(await page.locator('#count').innerText(),current.coverage['2027'].imported?new RegExp('^'+current.coverage['2027'].imported+' of'):/2027 · Checked/);await openArchive(page);
 checks.push('Search normalization, combined filters, empty state, and 2027 non-live state passed');
 await page.goto(base+'#bill/HB0011');await page.locator('#law-text').waitFor();assert.match(await page.locator('#law-text').innerText(),/probable cause/);await page.getByRole('button',{name:'Law before proposal',exact:true}).click();assert.doesNotMatch(await page.locator('#law-text').innerText(),/probable cause/);await page.getByRole('button',{name:'Resulting text',exact:true}).click();assert.match(await page.locator('#law-text').innerText(),/probable cause/);
 await page.goto(base+'#bill/SB0069');await page.locator('#law-text').waitFor();await page.getByRole('button',{name:'Resulting text',exact:true}).click();assert.match(await page.locator('#law-text').innerText(),/written opt-out request/);assert.doesNotMatch(await page.locator('#law-text').innerText(),/"Classroom hours" means/);await page.locator('#from-version').selectOption('0');await page.locator('#to-version').selectOption('0');assert.match(await page.locator('#version-diff').innerText(),/No differences/);

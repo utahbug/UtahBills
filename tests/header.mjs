@@ -15,7 +15,7 @@ async function ready(route){
  if(route==='#legislators')await page.locator('.legislator-row').first().waitFor();
 }
 async function check(){
- assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'page overflow');
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,JSON.stringify(await page.evaluate(()=>({width:innerWidth,zoom:getComputedStyle(document.documentElement).zoom,route:location.hash,overflow:[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1).slice(0,12).map(e=>({tag:e.tagName,cls:e.className,text:e.textContent.slice(0,60),right:e.getBoundingClientRect().right}))}))));
  const result=await page.locator('header').evaluate(header=>{
   const box=header.getBoundingClientRect(),links=[...header.querySelectorAll('nav a')],brand=header.querySelector('.brand').getBoundingClientRect();
   return {top:box.top,position:getComputedStyle(header).position,links:links.map(a=>{const r=a.getBoundingClientRect();return {href:a.hash,height:r.height,inside:r.left>=box.left&&r.right<=box.right+1&&r.top>=box.top&&r.bottom<=box.bottom+1,overlap:r.left<brand.right&&r.right>brand.left&&r.top<brand.bottom&&r.bottom>brand.top}})};

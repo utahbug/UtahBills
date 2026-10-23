@@ -21,5 +21,19 @@ export function toolbarInfo(host,{id,label,html,legend=false}){
  const button=document.createElement('button');button.type='button';button.className='toolbar-info';button.setAttribute('aria-label',label);button.title=label;button.append(createElement(legend?List:Info,{'aria-hidden':'true'}));
  const panel=document.createElement('div');panel.id=id;panel.className='toolbar-popover';panel.popover='auto';panel.setAttribute('role','region');panel.setAttribute('aria-label',label);panel.innerHTML=html;
  const close=document.createElement('button');close.type='button';close.className='popover-close';close.textContent='Close';close.autofocus=true;close.onclick=()=>panel.hidePopover();panel.append(close);button.popoverTargetElement=panel;
- panel.addEventListener('toggle',e=>{if(e.newState==='closed'&&panel.contains(document.activeElement))button.focus({preventScroll:true})});host.append(button,panel);return button;
+ panel.addEventListener('toggle',e=>{if(e.newState==='closed'&&panel.contains(document.activeElement))button.focus({preventScroll:true})});host.append(button,panel);
+ if(legend){
+  const place=()=>{if(!panel.isConnected||!panel.matches(':popover-open'))return;const r=button.getBoundingClientRect(),v=window.visualViewport,left=v?.offsetLeft||0,top=v?.offsetTop||0,width=v?.width||innerWidth,height=v?.height||innerHeight,scale=r.width/button.offsetWidth||1;panel.style.margin='0';panel.style.inset='auto';panel.style.maxWidth=((width-16)/scale)+'px';panel.style.maxHeight=((height-16)/scale)+'px';const box=panel.getBoundingClientRect();panel.style.left=(Math.max(left+8,Math.min(r.right-box.width,left+width-box.width-8))/scale)+'px';panel.style.top=(Math.max(top+8,Math.min(r.bottom+4,top+height-box.height-8))/scale)+'px'};
+  let controller;panel.addEventListener('toggle',e=>{controller?.abort();if(e.newState==='open'){place();controller=new AbortController();for(const target of [window,window.visualViewport].filter(Boolean))for(const event of ['resize','scroll'])target.addEventListener(event,place,{passive:true,signal:controller.signal})}});
+ }
+ return button;
+}
+
+// Reuse the native stretched-link pattern, lifting only selectable text and
+// independent controls above it. Blank-space modified clicks keep browser semantics.
+export function stretchActivityRows(root){
+ for(const row of root.querySelectorAll('.activity-row')){
+  const walker=document.createTreeWalker(row,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())if(walker.currentNode.textContent.trim())nodes.push(walker.currentNode);
+  for(const node of nodes){const span=document.createElement('span');span.className='row-text';node.replaceWith(span);span.append(node)}
+ }
 }

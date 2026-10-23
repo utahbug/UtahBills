@@ -1,3 +1,4 @@
+import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';
 import {readFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -58,7 +59,7 @@ try {
    await page.goto(base+'#requests');await page.locator('#search').fill('TESTREQUEST0000');assert.equal(await page.locator('.bill-row').count(),0);
    await page.locator('#clear-search').click();assert.match(await page.locator('#count').innerText(),/^239 of 239 public requests/);
   }
-  await page.locator('#session').selectOption('2026');await page.locator('#search').fill('');
+  await openArchive(page);await page.locator('#search').fill('');
   assert.match(await page.locator('.historical-label').innerText(),/2026/);assert.equal(await page.locator('.bill-row').count(),25);
   await page.goto(base+'?fresh-default#bills');await page.locator('#session').waitFor();
   assert.equal(await page.locator('#session').inputValue(),count?'2027':'2027-requests');
