@@ -4,6 +4,7 @@ import {chromium} from 'playwright';import assert from 'node:assert/strict';impo
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage({reducedMotion:'reduce'}),axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
 assert.match(comparisonHTML({sections:[{number:'1',text:'A : test.'}]},{sections:[{number:'1',text:'A:  test.'}]}),/No differences/);
 await mkdir('test-results/phase4l',{recursive:true});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.clock.setFixedTime(new Date('2027-01-21T18:00:00Z'));
 try{
  for(const width of [320,390,768,1280])for(const mode of ['normal','text','zoom']){
   await page.setViewportSize({width,height:1000});await page.goto(base+'?versions='+width+mode+'#bill/HB0117');await page.locator('.version-comparison>summary').click();

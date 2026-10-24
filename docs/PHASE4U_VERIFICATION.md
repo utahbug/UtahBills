@@ -40,3 +40,5 @@ Main-only workflow, mandatory checks, noindex/nofollow, future bills.utahbug.com
 ## CI follow-up
 
 Push run [40140871564](https://github.com/utahbug/UtahBills/actions/runs/40140871564) passed provenance, production build and the first 15 browser suites, then stopped at Phase 4B's obsolete exact date-option array (`today/yesterday/five/all`). That expectation is updated to the owner-approved five choices (`today/yesterday/five/thirty/prior`); the complete Phase 4B suite is rerun before publication. No source, layout or accessibility assertion is removed. Earlier push run 40140845501 was superseded before deployment while exact original evidence line endings were restored and verified against all nine hashes.
+
+The retained Phase 4L document-observation fixture explicitly pins its browser clock to January 21, 2027, matching its saved synthetic event. This keeps its document/detail-link assertion meaningful under bounded date windows; it does not put fictional events in production or bypass date filtering.
