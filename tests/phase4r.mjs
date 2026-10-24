@@ -1,3 +1,4 @@
+import {sessionFixture} from './fixtures/session-transition.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {chromium} from 'playwright';
@@ -8,7 +9,7 @@ try {
  const page=await browser.newPage({viewport:{width:375,height:850}});
  await page.goto(base+'#requests');await page.locator('.bill-row').first().waitFor();
  const publication=catalog.requestPublication;
- assert.match(await page.locator('#count').innerText(),new RegExp(`${publication.officialTotal} source requests.*${publication.verifiedTotal} statuses verified`));
+ assert.match(await page.locator('#count-info').textContent(),new RegExp(`${publication.officialTotal} source requests.*${publication.verifiedTotal} statuses verified`));
  for(const id of ['DFTEVYMLXT','VYQQDPXGUY']) {
   const record=[...catalog.requests2027,...catalog.sourceObservedRequests2027].find(r=>r.trackingID===id);assert.ok(record);
   await page.goto(base+'#request/'+id);await page.getByRole('heading',{name:record.shortTitle,exact:true,level:1}).waitFor();
@@ -17,6 +18,11 @@ try {
   assert.ok((await page.locator('.request-sources').innerText()).includes('Source observed'));
   await page.keyboard.press('Escape');
  }
+ // Scheduled recovery: fully reconciled counts must remain inspectable even without a discrepancy.
+ const full=sessionFixture(catalog,0,273);full.requestPublication={status:'complete',officialTotal:273,verifiedTotal:273,withheld:[]};full.requestObservationCoverage=null;
+ await page.route('**/data/catalog-ui.json',r=>r.fulfill({json:full}));await page.goto(base+'?full-reconciliation#requests');await page.locator('.bill-row').first().waitFor();
+ assert.equal(await page.locator('#count').innerText(),'273 public requests');assert.match(await page.locator('#count-info').textContent(),/273 source requests.*273 statuses verified.*0 awaiting status verification/);
+ await page.unroute('**/data/catalog-ui.json');
  await page.goto(base+'#about');await page.getByRole('heading',{name:'About',exact:true,level:1}).waitFor();
  const text=await page.locator('#main').innerText();assert.match(text,/Analyzed examples retrieved/);assert.match(text,/scheduled daily at 12:17 UTC/);assert.match(text,/successful deployment does not mean every source refreshed successfully/);assert.match(text,/Independent human editorial review is pending/);
  assert.equal(await page.getByRole('link',{name:'Refresh attempts and component reports',exact:true}).getAttribute('href'),'https://github.com/utahbug/UtahBills/actions/workflows/pages.yml');

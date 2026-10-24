@@ -1,3 +1,4 @@
+import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -12,14 +13,14 @@ try {
  for(const width of [320,1280])for(const mode of ['normal','text','zoom']){
   const page=await browser.newPage({viewport:{width,height:900}});
   await page.goto(base+'#requests');await page.locator('.bill-row').first().waitFor();
-  if(partial.status==='partial')assert.ok((await page.locator('#count').innerText()).includes(`${partial.officialTotal} source requests · ${partial.verifiedTotal} statuses verified`));
+  if(partial.status==='partial')assert.ok((await page.locator('#count-info').textContent()).includes(`${partial.officialTotal} source requests · ${partial.verifiedTotal} statuses verified`));
   for(const item of partial.withheld){await page.locator('#search').fill(item.trackingID);assert.equal(await page.locator('.bill-row').count(),1);assert.match(await page.locator('.bill-row').innerText(),/Official status not confirmed/)}
   await page.locator('#search').fill('');
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
   if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom='2');
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
-  await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await page.locator('#activity-category').selectOption('requests');await page.waitForFunction(()=>document.querySelector('#activity-count')&&!document.querySelector('#activity-count').textContent.includes('Loading'));await page.locator('.activity-row').first().waitFor();
+  await page.goto(base+'#activity');await showSavedActivity(page);await page.locator('#activity-category').selectOption('requests');await page.waitForFunction(()=>document.querySelector('#activity-count')&&!document.querySelector('#activity-count').textContent.includes('Loading'));await page.locator('.activity-row').first().waitFor();
   await page.locator('.activity-info > summary').click();
   if(partial.status==='partial')assert.ok((await page.locator('#activity-scope').innerText()).includes(`${partial.withheld.length} awaiting status verification`));
   for(const item of partial.withheld)assert.ok(saved.sourceObservedRequests2027.some(r=>r.trackingID===item.trackingID));

@@ -27,7 +27,7 @@ try {
   const icon=await page.locator('.copy-results').boundingBox(),bar=await page.locator('.results-toolbar').boundingBox();
   assert.ok(icon.width>=44&&icon.height>=44);assert.ok(Math.abs(icon.x+icon.width-bar.x-bar.width)<2);
   await page.locator('.copy-results').focus();await page.keyboard.press('Enter');
-  assert.equal((await page.evaluate(()=>window.copied)).split('\n\n').length,Math.min(count||240,width<900?50:100));
+  assert.equal((await page.evaluate(()=>window.copied)).split('\n\n').length,count||240);
   assert.equal(await page.locator('.copy-status').innerText(),'Copied');
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
@@ -57,7 +57,7 @@ try {
    await page.getByRole('link',{name:'HB0001',exact:true}).click();await page.getByRole('link',{name:'Original drafting request and observed history'}).click();
    await page.locator('.request-source-trigger').waitFor();assert.ok(page.url().endsWith('#request/TESTREQUEST0000'));
    await page.goto(base+'#requests');await page.locator('#search').fill('TESTREQUEST0000');assert.equal(await page.locator('.bill-row').count(),0);
-   await page.locator('#clear-search').click();assert.match(await page.locator('#count').innerText(),/^239 of 239 public requests/);
+   await page.locator('#clear-search').click();assert.match(await page.locator('#count').innerText(),/^239 public requests/);
   }
   await openArchive(page);await page.locator('#search').fill('');
   assert.match(await page.locator('.historical-label').innerText(),/2026/);assert.equal(await page.locator('.bill-row').count(),25);

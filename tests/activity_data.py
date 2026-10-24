@@ -11,6 +11,13 @@ class Activity(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.manifest=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));cls.rows,cls.raw=model.events(cls.manifest)
+ def test_page_filter_counts_match_saved_events(self):
+  for start in range(0,len(self.rows),100):
+   rows=self.rows[start:start+100];groups=model.page_groups(rows)
+   expected=model.collections.Counter((e['date'],e['category']) for e in rows)
+   self.assertEqual({(g['date'],g['category']):g['count'] for g in groups},dict(expected))
+   self.assertEqual(sum(g['count'] for g in groups),len(rows))
+  self.assertEqual(model.page_groups([{'date':None,'category':'actions'}]),[{'date':None,'category':'actions','count':1}])
  def test_every_official_action_and_unique_identity(self):
   self.assertEqual(self.raw,sum(len(json.loads(read(s))['actionHistoryList']) for s in self.manifest['records'].values()))
   self.assertEqual(len({e['id'] for e in self.rows}),len(self.rows));self.assertEqual(sum(e['kind']=='Recorded legislative action' for e in self.rows),len({json.dumps([k,'action',a],sort_keys=True) for k,s in self.manifest['records'].items() for a in json.loads(read(s))['actionHistoryList']}))

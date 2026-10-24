@@ -1,3 +1,4 @@
+import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -10,7 +11,7 @@ try {for(const record of saved.sourceObservedRequests2027)for(const width of [32
  await page.goto(base+'#requests');await page.locator('#search').fill(record.trackingID);
  await page.locator('.bill-row').waitFor();assert.equal(await page.locator('.bill-row').count(),1);
  assert.ok((await page.locator('#count').innerText()).includes(`1 of ${saved.requests2027.length+saved.sourceObservedRequests2027.length} public requests`));
- assert.ok((await page.locator('#count').innerText()).includes(`${saved.requestPublication.officialTotal} source requests · ${saved.requestPublication.verifiedTotal} statuses verified · ${saved.sourceObservedRequests2027.length} awaiting status verification`));
+ assert.ok((await page.locator('#count-info').textContent()).includes(`${saved.requestPublication.officialTotal} source requests · ${saved.requestPublication.verifiedTotal} statuses verified · ${saved.sourceObservedRequests2027.length} awaiting status verification`));
  assert.match(await page.locator('.bill-row').innerText(),/Official status not confirmed/);
  assert.equal(await page.getByRole('img',{name:'Source discrepancy'}).count(),1);
  await page.getByRole('button',{name:'Copy results.',exact:true}).click();copied=await page.evaluate(()=>window.copied);
@@ -26,7 +27,7 @@ try {for(const record of saved.sourceObservedRequests2027)for(const width of [32
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
  }
- await page.goto(base+'?activity#activity');await page.locator('#activity-period').selectOption('all');await page.locator('#activity-category').selectOption('requests');
+ await page.goto(base+'?activity#activity');await showSavedActivity(page);await page.locator('#activity-category').selectOption('requests');
  const event=page.locator('.activity-row').filter({has:page.locator(`a[href="#request/${record.trackingID}"]`)});await event.waitFor();assert.match(await event.innerText(),/Retrieval observation date/);assert.match(await event.innerText(),/Official status not confirmed/);
  await event.locator('h2 a').click();await page.locator('.request-heading').waitFor();
  if(width===390)await page.screenshot({path:'test-results/phase4p-phone.png',fullPage:true});

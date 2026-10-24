@@ -1,3 +1,4 @@
+import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -13,8 +14,8 @@ try{for(const width of [320,1280]){
  await page.route('**/data/activity/index.json',r=>r.fulfill({json:{schemaVersion:2,requestPublication:coverage,sessions:{2027:session,2026:{...session,count:0,pages:[]}}}}));
  await page.route('**/data/activity/2027-0.json',r=>r.fulfill({json:events}));
  await page.goto(base+'#requests');await page.locator('.bill-row').first().waitFor();
- assert.match(await page.locator('#count').innerText(),/273 source requests · 270 statuses verified · 3 awaiting status verification/);
- assert.match(await page.locator('#count').innerText(),/Source observed/);
+ assert.match(await page.locator('#count-info').textContent(),/273 source requests · 270 statuses verified · 3 awaiting status verification/);
+ assert.match(await page.locator('#count-info').textContent(),/Source observed/);
  for(const record of data.sourceObservedRequests2027){
   await page.locator('#search').fill(record.trackingID);assert.equal(await page.locator('.bill-row').count(),1);
   await page.getByRole('button',{name:'Copy results.',exact:true}).click();const copied=await page.evaluate(()=>window.copied);
@@ -24,7 +25,7 @@ try{for(const width of [320,1280]){
   await page.getByRole('button',{name:'Source details',exact:true}).click();assert.ok((await page.locator('dialog').textContent()).includes(record.history[0].source.sha256));await page.keyboard.press('Escape');
   await page.goto(base+'#requests');await page.locator('#search').waitFor();
  }
- await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await page.locator('#activity-category').selectOption('requests');
+ await page.goto(base+'#activity');await showSavedActivity(page);await page.locator('#activity-category').selectOption('requests');
  for(const record of data.sourceObservedRequests2027){const row=page.locator('.activity-row').filter({has:page.locator(`a[href="#request/${record.trackingID}"]`)});await row.waitFor();assert.match(await row.innerText(),/Official status not confirmed/);assert.match(await row.innerText(),/Retrieval observation date/)}
  for(const mode of ['normal','text','zoom']){if(mode==='text')await page.evaluate(()=>document.documentElement.style.fontSize='200%');if(mode==='zoom')await page.evaluate(()=>{document.documentElement.style.fontSize='';document.documentElement.style.zoom='2'});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[])}
  if(width===320){

@@ -1,3 +1,4 @@
+import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -8,7 +9,7 @@ const stale={...catalog,requests2027:catalog.requests2027.filter(r=>baseline.has
 const id='XKUCMCIIHJ',record=catalog.requestArchive2027.find(r=>r.trackingID===id);assert.ok(record);assert.ok(!baseline.has(id));
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true});
 async function detail(page,request){await page.getByRole('heading',{name:request.shortTitle,exact:true,level:1}).waitFor();await page.getByRole('button',{name:'Source details',exact:true}).click();assert.equal(await page.locator('.tracking-id').innerText(),request.trackingID);await page.keyboard.press('Escape');assert.equal(await page.getByRole('heading',{name:/Request unavailable/}).count(),0)}
-async function activity(page){await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await page.locator('.activity-row').first().waitFor()}
+async function activity(page){await page.goto(base+'#activity');await showSavedActivity(page);await page.locator('.activity-row').first().waitFor()}
 try{
  const fresh=await browser.newPage({viewport:{width:390,height:844}});await activity(fresh);
  const hrefs=[...new Set(await fresh.locator('.activity-row h2 a[href^="#request/"]').evaluateAll(es=>es.map(e=>e.getAttribute('href'))))];assert.ok(hrefs.includes('#request/'+id));

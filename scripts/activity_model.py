@@ -102,6 +102,9 @@ def events(manifest,supplemental=None):
 
  return sorted(result,key=lambda e:(e['date'] or '',e['sourceOrder'],e['id']),reverse=True),raw_actions
 
+def page_groups(rows):
+ return [dict(date=date,category=category,count=count) for (date,category),count in collections.Counter((e['date'],e['category']) for e in rows).items()]
+
 def build():
  from supplemental_observations import load
  supplemental=load()
@@ -115,7 +118,7 @@ def build():
   selected=[e for e in rows if e['session']==year];pages=[]
   for start in range(0,len(selected),100):
    chunk=selected[start:start+100];name=year+'-'+str(start//100)+'.json';(out/name).write_text(json.dumps(chunk,ensure_ascii=False),encoding='utf-8');dates=[e['date'] for e in chunk if e['date']]
-   pages.append(dict(file=name,count=len(chunk),first=max(dates) if dates else None,last=min(dates) if dates else None))
+   pages.append(dict(file=name,count=len(chunk),first=max(dates) if dates else None,last=min(dates) if dates else None, groups=page_groups(chunk)))
   index['sessions'][year]=dict(count=len(selected),undated=sum(not e['date'] for e in selected),types=dict(collections.Counter(e['kind'] for e in selected)),categories=dict(collections.Counter(e['category'] for e in selected)),checkedAt=manifest['sources']['index'+year]['retrievedAt'],pages=pages)
  (out/'index.json').write_text(json.dumps(index,ensure_ascii=False),encoding='utf-8');print('Activity:',{y:s['count'] for y,s in index['sessions'].items()},'from',raw,'official actions')
 if __name__=='__main__':build()

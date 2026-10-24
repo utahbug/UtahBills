@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {csvCell,csvText} from '../csv.js';
+import {range,inRange,mountainDay} from '../activity.js';
+assert.equal(csvCell('a,"b"\nc'),'"a,""b""\nc"');
+for(const value of ['=1+1',' +1','-2','@SUM(A1)','\t=2','\rplain','\nplain','\uFEFF=1'])assert.ok(csvCell(value).startsWith('"\''),JSON.stringify(value));
+assert.equal(csvCell('HB0011'),'"HB0011"');assert.equal(csvCell(null),'""');
+let yielded=false;setTimeout(()=>yielded=true,0);const csv=await csvText(['ID','Title'],Array.from({length:1200},(_,i)=>['ID'+i,'Text, '+i]));assert.ok(yielded);assert.ok(csv.startsWith('\uFEFF"ID","Title"\r\n'));assert.ok(csv.endsWith('"ID1199","Text, 1199"\r\n'));
+assert.equal(mountainDay(new Date('2026-10-25T05:59:00Z')),'2026-10-24');
+const now=new Date('2026-10-24T18:00:00Z');assert.deepEqual(range('thirty',now),['2026-09-25','2026-10-24']);assert.deepEqual(range('prior',now),['','2026-09-24']);assert.equal(inRange({date:'2026-09-25'},range('prior',now)),false);assert.equal(inRange({date:'2026-09-24'},range('prior',now)),true);assert.equal(inRange({date:null},range('prior',now)),false);assert.equal(inRange({date:null},range('undated',now)),true);
+assert.deepEqual(range('thirty',new Date('2026-03-09T18:00:00Z')),['2026-02-08','2026-03-09']);assert.deepEqual(range('yesterday',new Date('2027-01-01T18:00:00Z')),['2026-12-31','2026-12-31']);
+console.log('CSV quoting/injection/BOM/chunk yielding and Mountain date boundaries/DST/undated separation passed.');

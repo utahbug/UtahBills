@@ -1,3 +1,4 @@
+import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -10,9 +11,9 @@ const ready=()=>page.waitForFunction(()=>document.querySelector('#activity-count
 await mkdir('test-results/phase4g',{recursive:true});
 try{
  await page.addInitScript(()=>{localStorage.setItem('utahbills-results-per-page','25');Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>window.copied=text}})});
- await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await ready();
+ await page.goto(base+'#activity');await showSavedActivity(page);await ready();
  assert.equal(await page.locator('.activity-row').count(),Math.min(25,saved.length));
- if(saved.length){assert.equal(await page.locator('.activity-row h2 a').first().getAttribute('href'),saved[0].history);await page.locator('.copy-results').click();assert.ok((await page.evaluate(()=>window.copied)).includes(saved[0].dateLabel));await page.locator('.activity-row h2 a').first().click();await page.locator('h1').waitFor();assert.equal(await page.getByRole('heading',{name:/Request unavailable|Measure unavailable/}).count(),0);assert.equal(new URL(page.url()).hash,saved[0].history);await page.goBack();await ready()}
+ if(saved.length){assert.equal(await page.locator('.activity-row h2 a').first().getAttribute('href'),saved[0].history);await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.ok((await page.evaluate(()=>window.copied)).includes(saved[0].dateLabel));await page.locator('.activity-row h2 a').first().click();await page.locator('h1').waitFor();assert.equal(await page.getByRole('heading',{name:/Request unavailable|Measure unavailable/}).count(),0);assert.equal(new URL(page.url()).hash,saved[0].history);await page.goBack();await ready()}
  // Phase 4I: real request headings and verified metadata, accessible filter names.
  assert.equal(await page.getByRole('combobox',{name:'Activity date range',exact:true}).count(),1);
  assert.equal(await page.getByRole('combobox',{name:'Activity category',exact:true}).count(),1);
@@ -27,23 +28,24 @@ try{
  }
  await page.goto(base+'#requests');const official=page.getByRole('link',{name:'Official 2027 bill search',exact:true});await official.waitFor();
  assert.equal(await official.getAttribute('href'),'https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all');assert.equal(await official.getAttribute('target'),'_blank');assert.equal(await official.locator('svg').count(),1);
- await page.goto(base+'#activity');await page.locator('#activity-period').selectOption('all');await ready();
+ await page.goto(base+'#activity');await showSavedActivity(page);await ready();
  // Isolated browser fixtures are never written to production data.
  const events=Array.from({length:130},(_,i)=>({id:'fixture-'+i,session:'2027',bill:i===128?'HJR0001':'TEST '+i,trackingID:i<100||i===128?'FIXTUREID'+i:undefined,introducedBill:i===0?'HJR0001':null,title:'Fixture activity',category:i<100?'requests':i<128?'documents':i===128?'introduced':'actions',kind:i<100?'Request title change observed':i<128?'Substitute document':i===128?'Introduced legislation first observed':'Recorded legislative action',text:'Fixture previous → revised '+i,body:'',date:i<100?'2027-01-03':i<128?'2026-12-30':i===128?'2026-12-29':null,dateLabel:'Retrieval observation date; official change/publication date unknown',retrievedAt:'2027-01-03T18:00:00Z',history:'#request/DXYQRODBBU',url:'https://le.utah.gov/Session/2027/bills/static/HB0001.html'}));
  const fixture={sessions:{'2027':{count:130,undated:1,checkedAt:'2027-01-03T18:00:00Z',pages:[{file:'fixture-0.json',first:'2027-01-03',last:'2027-01-03'},{file:'fixture-1.json',first:'2026-12-30',last:'2026-12-29'}]}},requestCoverage:index.requestCoverage};
+ for (const [i,p] of fixture.sessions['2027'].pages.entries()){const rows=i===0?events.slice(0,100):events.slice(100);p.count=rows.length;p.groups=Object.values(rows.reduce((a,e)=>{const k=e.date+'|'+e.category;a[k]??={date:e.date,category:e.category,count:0};a[k].count++;return a},{}))}
  await page.route('**/data/activity/index.json',r=>r.fulfill({json:fixture}));await page.route('**/data/activity/fixture-*.json',r=>r.fulfill({json:r.request().url().includes('fixture-0')?events.slice(0,100):events.slice(100)}));
- await page.clock.setFixedTime(new Date('2027-01-03T18:00:00Z'));await page.reload();await page.locator('#activity-period').selectOption('all');await ready();
+ await page.clock.setFixedTime(new Date('2027-01-03T18:00:00Z'));await page.reload();await showSavedActivity(page);await ready();
  assert.equal(await page.locator('.activity-row h2 a').first().innerText(),'Fixture activity');
  const assigned=page.locator('.activity-row').first().locator('.activity-metadata a[href="#bill/2027/HJR0001"]');assert.equal(await assigned.innerText(),'HJR0001');
  assert.match(await page.locator('.activity-row').nth(1).locator('.activity-metadata').innerText(),/Bill number: Not assigned/);
- await page.locator('#activity-category').selectOption('documents');await ready();assert.equal(await page.locator('.activity-row').count(),25);assert.match(await page.locator('#activity-count').innerText(),/1–25 of 28/);
- await page.locator('#activity-next').click();await ready();assert.equal(await page.locator('.activity-row').count(),3);assert.match(await page.locator('#activity-count').innerText(),/26–28/);await page.locator('.copy-results').click();assert.equal((await page.evaluate(()=>window.copied)).split('\n\n').length,3);
+ await page.locator('#activity-category').selectOption('documents');await ready();assert.equal(await page.locator('.activity-row').count(),25);assert.match(await page.locator('#activity-count').innerText(),/28 recorded events/);
+ await page.locator('#activity-next').click();await ready();assert.equal(await page.locator('.activity-row').count(),3);assert.match(await page.locator('#activity-count').innerText(),/28 recorded events/);await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.equal((await page.evaluate(()=>window.copied)).split('\n\n').length,28);
  await page.locator('#activity-period').selectOption('five');await ready();assert.equal(await page.locator('.activity-row').count(),25);await page.locator('#activity-category').selectOption('introduced');await ready();assert.equal(await page.locator('.activity-row').count(),0);assert.match(await page.locator('.activity-empty').innerText(),/does not mean no legislative work/);
- await page.locator('#activity-period').selectOption('all');await ready();assert.equal(await page.locator('.activity-row').count(),1);assert.match(await page.locator('.activity-row h2').innerText(),/^HJR0001/);assert.equal(await page.locator('.activity-tracking').innerText(),'FIXTUREID128');await page.locator('#activity-category').selectOption('actions');await ready();assert.equal(await page.locator('.activity-row').count(),1);assert.match(await page.locator('.activity-row').last().innerText(),/Date unavailable/);
+ await showSavedActivity(page);await ready();assert.equal(await page.locator('.activity-row').count(),1);assert.match(await page.locator('.activity-row h2').innerText(),/^HJR0001/);assert.equal(await page.locator('.activity-tracking').innerText(),'FIXTUREID128');await page.locator('#activity-category').selectOption('actions');await ready();await page.locator('.activity-info summary').click();await page.locator('#activity-undated').click();await ready();assert.equal(await page.locator('.activity-row').count(),1);assert.match(await page.locator('.activity-row').last().innerText(),/Date unavailable/);
  await page.locator('#activity-category').selectOption('requests');await page.locator('#activity-period').selectOption('today');await ready();assert.equal(await page.locator('.activity-row').count(),25);await page.locator('#activity-period').selectOption('yesterday');await ready();assert.equal(await page.locator('.activity-row').count(),0);
- await page.locator('#activity-period').selectOption('all');await ready();await page.locator('#activity-category').focus();await page.keyboard.press('Home');await page.keyboard.press('Enter');await ready();assert.equal(await page.locator('#activity-category').inputValue(),'all');
+ await showSavedActivity(page);await ready();await page.locator('#activity-category').focus();await page.keyboard.press('Home');await page.keyboard.press('Enter');await ready();assert.equal(await page.locator('#activity-category').inputValue(),'all');
  for(const width of [320,375,390,430,600,768,1280])for(const mode of ['normal','text','zoom']){
-  await page.setViewportSize({width,height:900});await page.reload();await page.locator('#activity-period').selectOption('all');await ready();
+  await page.setViewportSize({width,height:900});await page.reload();await showSavedActivity(page);await ready();
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${width} ${mode}`);
   for(const select of await page.locator('.activity-controls select').all())assert.ok((await select.boundingBox()).height>=44);

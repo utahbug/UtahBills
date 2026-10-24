@@ -27,7 +27,7 @@ try{
    if(route==='calendar'){assert.deepEqual(await panel.locator('.calendar-key').allTextContents(),['M','F','S','D','C','O']);assert.match(await panel.innerText(),/Committee \/ commission/)}else assert.match(await panel.innerText(),/Counts cover all imported index records/);
    await page.keyboard.press('Escape');await panel.waitFor({state:'hidden'});assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
    await trigger.click();await panel.locator('.popover-close').click();await panel.waitFor({state:'hidden'});
-   await page.locator('.copy-results').click();assert.ok(await page.evaluate(()=>window.copied?.length>0));
+   await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.ok(await page.evaluate(()=>window.copied?.length>0));
   }
   await page.evaluate(()=>scrollTo(0,0));await page.waitForFunction(()=>scrollY===0&&!document.querySelector('header.navigation-compact'));
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[],`${route} ${width} ${mode}`);
