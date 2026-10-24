@@ -35,3 +35,8 @@ Implementation commit: [abb811937584c0e5c112ecab959309a653be1d68](https://github
 ## Publication and remaining work
 
 Main-only workflow, mandatory checks, noindex/nofollow, future bills.utahbug.com plan and all source/atomic-retention safeguards remain. No scheduled workflow was active at the initial and pre-publication inspections; recheck immediately before push. Release SHA, CI result and published-asset verification accompany delivery. UI-001, TEST-001, RELEASE-001/002/004, first-real-2027/roster validation and historical source limitations remain open. Next priority: a genuine complete scheduled refresh plus human retesting of these corrections and independent editorial acceptance.
+
+
+## CI follow-up
+
+Push run [40140871564](https://github.com/utahbug/UtahBills/actions/runs/40140871564) passed provenance, production build and the first 15 browser suites, then stopped at Phase 4B's obsolete exact date-option array (`today/yesterday/five/all`). That expectation is updated to the owner-approved five choices (`today/yesterday/five/thirty/prior`); the complete Phase 4B suite is rerun before publication. No source, layout or accessibility assertion is removed. Earlier push run 40140845501 was superseded before deployment while exact original evidence line endings were restored and verified against all nine hashes.
