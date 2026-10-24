@@ -203,3 +203,8 @@ Validated missing-first-status observations can be retained and displayed separa
 ## Phase 4T — Records and shared interface refinements
 
 The owner-authorized [UI-005 batch](docs/PHASE4T_VERIFICATION.md) adds a two-choice 2027 Records selector beside Search, contextual 2026 archive, reliable Sponsor A–Z, native Activity row links and clearer event/source disclosures, stable header alignment, adjacent Calendar Legend and compact sponsor controls. It supersedes Phase 4S deferral only for this scope. Historical data and 2027 safeguards remain unchanged. Human accessibility/editorial acceptance, genuine scheduled refresh evidence and explicit release approval remain priorities; no release dependency closes with this UI batch.
+
+
+## Phase 4U — reported iPhone usability corrections
+
+The owner-authorized [UI-006 batch](docs/PHASE4U_VERIFICATION.md) restores the archive as Records' third option, adds complete matching Copy/CSV, compact valid pagination, Mountain 30-day/prior Activity windows with separate undated access, concise count disclosures and narrow navigation with scrolling branding. It supersedes Phase 4T's separate contextual archive entry. Source records and acquisition safeguards remain unchanged. The October 24 scheduled run acquired successfully but stopped on an outdated count test before preservation/deployment; TEST-001 remains open after the test correction. Human retesting, independent editorial acceptance and genuine scheduled publication remain priorities; no public release is authorized.

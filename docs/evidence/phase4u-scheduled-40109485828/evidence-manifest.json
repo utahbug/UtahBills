@@ -1,0 +1,19 @@
+{
+  "run": 40109485828,
+  "event": "schedule",
+  "commit": "790f3cd6ea45564125b9497eb958d3584219d929",
+  "artifactID": 12565886798,
+  "artifactName": "refresh-attempt-40109485828",
+  "published": false,
+  "files": {
+    "archive-refresh.json": "61d1fe16561abbd0e95e311172944b8238d96adf6f86c2b95dc911aea0057699",
+    "calendar-refresh.log": "9dc384d606558556043ef6b85c5234b4ee51f11790da381b0326820ceb66d315",
+    "catalog-refresh.json": "4cea9757d42352857ca21d021b86d8b2b5136a644d4270def161453c3980a9c0",
+    "catalog-sources.json": "fd6b32030c9011acffdbd664ce587b9c3daa3c557de0aa9c55ed2691a0005a42",
+    "observation-refresh.json": "975a3b8bc54bc9ed4ab478f598d282abfb27935913116103f8c5c1d2f0db2375",
+    "text-refresh.json": "f3efb33568d2d2012f44b159c29ff00c9c8d764ef402db1377ff77993fbe65b4",
+    "catalog-attempt-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "catalog-attempt-raw/72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4.json": "72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4",
+    "catalog-attempt-raw/cc7a2261be3e6becbcf18a59158c665f25d391f38ce98b1af38eaac179c20fdb.txt": "cc7a2261be3e6becbcf18a59158c665f25d391f38ce98b1af38eaac179c20fdb"
+  }
+}

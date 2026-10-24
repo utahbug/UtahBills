@@ -1,0 +1,15 @@
+{
+  "attemptedAt": "2026-10-24T16:00:08.734954+00:00",
+  "status": "success",
+  "reconciliation": {
+    "status": "success",
+    "officialTotal": 273,
+    "verifiedTotal": 273,
+    "withheld": []
+  },
+  "introduced2027": 0,
+  "publicRequests": 273,
+  "requestStatusesVerified": 273,
+  "linkedRequests": 0,
+  "finishedAt": "2026-10-24T16:00:12.147017+00:00"
+}

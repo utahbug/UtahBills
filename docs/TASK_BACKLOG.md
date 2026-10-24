@@ -1,6 +1,6 @@
 # UtahBills authoritative task backlog
 
-Updated: October 23, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
+Updated: October 24, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
 
 Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 are High priorities alongside TEST-001.
 
@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **10 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **11 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -561,3 +561,15 @@ Owner-authorized bounded partial publication is implemented under TEST-001 relia
 - **Completion evidence:** [f3daa4e](https://github.com/utahbug/UtahBills/commit/f3daa4e), production build/integrity checks, focused Phase 4T suite, strict shared-header, Phase 4D, Batch 2 and Phase 4G regressions. [Detailed verification and release evidence](PHASE4T_VERIFICATION.md). Mandatory CI remains the publication gate.
 
 Active inventory remains 37, with all unfinished statuses/priorities retained. UI-001 human device/AT acceptance, RELEASE-001/002/004 and TEST-001 remain open. No scheduled evidence newer than 39993137239 was found. This completes only the specifically approved deferred UI work, not unrelated improvements or public-release acceptance.
+
+
+## Phase 4U maintenance — UI-006
+
+**Physical-device UI acceptance corrections** — **Medium** · **Completed implementation — October 24, 2026**
+
+- **Source:** Owner's Phase 4U request and reported iPhone usability findings. Supersedes UI-005's two-option Records/contextual archive design only where explicitly requested.
+- **Dependencies:** Existing verified catalog, supplemental observations, saved Activity pages and shared navigation. No source acquisition change.
+- **Acceptance:** Valid compact pagination; complete sorted/filtered Copy and safe UTF-8 CSV; lazy Activity browsing with exact counts and complete-copy loading; Mountain 30-day/prior windows and separate undated access; compact phone controls/count Info; stable narrow sticky navigation; restored archive selector and historical identification; aligned discrepancy disclosure; removal of redundant Bills support content; targeted accessibility/navigation regressions and mandatory publication checks.
+- **Evidence:** Implementation [abb8119](https://github.com/utahbug/UtahBills/commit/abb811937584c0e5c112ecab959309a653be1d68); [Phase 4U verification](PHASE4U_VERIFICATION.md), six Python Activity tests, CSV/date unit tests, Phase 4U and retained header/toolbar/4T/4G/4D/4P/4Q/4R browser checks. Publication remains gated on all mandatory CI checks; release commit evidence is recorded with delivery.
+
+Active inventory remains **37**, with every unfinished ID/status/priority retained. Scheduled run [40109485828](https://github.com/utahbug/UtahBills/actions/runs/40109485828) acquired and built successfully but failed an outdated full-reconciliation count assertion before snapshot preservation/deployment. That assumption is corrected with full/partial fixtures. **TEST-001 remains High/Blocked**, pending a subsequent genuinely scheduled end-to-end success. Its unpublished 273/273 candidate does not replace the retained 273-visible/272-verified snapshot. UI-001 remains pending actual human device/assistive-technology retesting; this correction batch is not acceptance certification. RELEASE-001/002/004 and all legislative readiness work remain open.

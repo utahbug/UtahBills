@@ -1,0 +1,9 @@
+{
+  "attemptedAt": "2026-10-24T16:00:12.232027+00:00",
+  "status": "success",
+  "officialTotal": 273,
+  "matchedStatuses": 273,
+  "missingIDs": [],
+  "scope": "Source observations only; not full catalog reconciliation",
+  "finishedAt": "2026-10-24T16:00:19.343087+00:00"
+}
