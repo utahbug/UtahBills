@@ -16,7 +16,7 @@ try{
  'bill/HB0011','bill/HB0117','request/'+catalog.requestArchive2027[0].trackingID,'legislator/'+catalog.legislators[0].id];
  for(const route of routes){
   await page.goto(base+'#'+route);await page.locator('main h1').waitFor();
-  assert.equal(await footer().count(),1);assert.equal(await page.locator('header a[href="#contact"]').count(),0);
+  assert.equal(await footer().count(),1);assert.equal(await page.locator('header a[href="#contact"]').count(),1);
   await footer().click();await contact();assert.equal(await footer().getAttribute('aria-current'),'page');
   assert.equal(await page.locator('main').evaluate(e=>e===document.activeElement),true);
  }
@@ -51,5 +51,28 @@ try{
    await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
   }
  }
- assert.deepEqual(errors,[]);console.log('Phase 5B: Contact route families, history, email URL/selection, keyboard focus, 21 responsive combinations and accessibility passed. No email sent.');
+
+ // Shared envelope: no extra row/height, 44px target, no overlapping nav and sticky visibility.
+ const headerContact=page.getByRole('link',{name:'Contact UtahBug',exact:true});
+ for(const width of [320,375,390,430,768,1024,1280])for(const mode of ['normal','text']){
+  await page.setViewportSize({width,height:844});await page.goto(base+'#requests');await page.reload();await page.locator('.bill-row').first().waitFor();
+  if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
+  await page.evaluate(()=>{window.contactLink=document.querySelector('.header-contact');contactLink.remove()});await page.waitForTimeout(80);
+  const baseline=await page.locator('header').evaluate(e=>e.getBoundingClientRect().height);
+  await page.evaluate(()=>document.querySelector('.header-inner').append(contactLink));await page.waitForTimeout(80);
+  if(mode==='normal')assert.ok((await page.locator('header').boundingBox()).height<=baseline+1,`No added header height ${width}`);
+  assert.equal(await headerContact.getAttribute('title'),'Contact UtahBug');assert.equal(await headerContact.getAttribute('href'),'#contact');assert.equal(await headerContact.locator('svg.lucide-mail[aria-hidden="true"]').count(),1);
+  for(const position of [0,500,1200]){
+   await page.evaluate(y=>scrollTo(0,y),position);await page.waitForTimeout(80);
+   const r=await headerContact.boundingBox();assert.ok(r.width>=44&&r.height>=44);assert.ok(r.x>=0&&r.x+r.width<=width+1&&r.y>=0&&r.y+r.height<=844,`Visible envelope ${width} ${mode}`);
+   assert.equal(await headerContact.evaluate(e=>{const r=e.getBoundingClientRect();return [...document.querySelectorAll('header nav a,header .brand,header .independent')].some(a=>{const s=getComputedStyle(a),b=a.getBoundingClientRect();return s.visibility!=='hidden'&&b.width&&r.left<b.right&&r.right>b.left&&r.top<b.bottom&&r.bottom>b.top})}),false,`No envelope overlap ${width} ${mode}`);
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+  }
+  await headerContact.focus();await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');assert.equal(await headerContact.evaluate(e=>e.matches(':focus-visible')),true);
+  await page.keyboard.press('Enter');await contact();assert.equal(await page.locator('main').evaluate(e=>e===document.activeElement),true);await page.waitForFunction(()=>scrollY===0);
+ }
+ const touch=await browser.newContext({viewport:{width:375,height:812},isMobile:true,hasTouch:true});
+ const phone=await touch.newPage();await phone.goto(base+'#requests');await phone.locator('.bill-row').first().waitFor();await phone.evaluate(()=>scrollTo(0,600));await phone.waitForTimeout(80);
+ await phone.getByRole('link',{name:'Contact UtahBug',exact:true}).tap();await phone.getByRole('heading',{name:'Contact UtahBug',exact:true}).waitFor();assert.equal(await phone.locator('footer a[href="#contact"]').count(),1);await touch.close();
+ assert.deepEqual(errors,[]);console.log('Phase 5B: Contact route families, history, email URL/selection, keyboard focus, 21 responsive combinations, 14 header cases, touch activation and accessibility passed. No email sent.');
 }finally{await browser.close()}

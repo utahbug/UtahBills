@@ -377,3 +377,13 @@ footer nav a{font:inherit;color:inherit;text-decoration:underline;margin:0;paddi
 /* Plain footer links wrap without orphaned separators. */
 footer nav{column-gap:14px}
 .contact-page .guide ul{margin:4px 0 8px}.contact-page .guide li{margin:2px 0}
+
+/* Header contact stays beside existing navigation, including collapsed branding. */
+.header-inner:has(.header-contact){position:relative;padding-right:76px}
+.header-contact{position:absolute;right:24px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;color:#155c79;text-decoration:none}
+.header-contact svg{width:18px;height:18px;stroke-width:2}
+@media(max-width:760px){
+ .header-inner:has(.header-contact){padding-right:16px}
+ .header-inner:has(.header-contact) nav{max-width:calc(100% - 81px);column-gap:8px}
+ .header-contact{right:16px;top:auto;bottom:8px;transform:none}
+}

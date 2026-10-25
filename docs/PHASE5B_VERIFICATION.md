@@ -36,3 +36,12 @@ Focused tests retain route/history/focus/axe and 21 responsive combinations, wit
 Follow-up local results: changed UI assets bundled with the existing production esbuild settings against the previously validated local data; focused Contact suite passed route/history/focus, exact email values, 21 responsive combinations and automated WCAG checks. Relative documentation links and whitespace checks passed. Full data/build/browser validation remains mandatory in CI; no redundant local data rebuild was needed.
 
 The protected genuine schedule [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281) completed successfully (build and deployment) and preserved snapshot commit `1fcba42`. Main was fast-forwarded to retain that automatic update before the follow-up commit; no data files are edited by this UI batch. This confirms the run outcome, not the full component-evidence acceptance review required to close TEST-001. No active or queued workflow remained before push.
+
+
+## Shared header Contact icon
+
+The owner added a Lucide Mail envelope linking internally to #contact, with accessible name/title “Contact UtahBug” and a 44 × 44 CSS-pixel target. The shared header reserves space for it; on narrow screens it sits alongside the existing navigation and remains visible when the branding scrolls away. No floating Site links tab, extra destination in the primary text navigation, or removed footer Contact link.
+
+Focused checks compare default header height with/without the envelope at 320, 375, 390, 430, 768, 1024 and 1280 pixels. Default height does not increase. Doubled text retains full labels and controlled reflow rather than shrinking labels or allowing overlap; extra wrapping is necessary at the narrowest enlarged-text widths. Target size, viewport containment, no overlap with wordmark/navigation, sticky scroll positions, visible keyboard focus, internal activation/main focus, and touch activation are checked. Existing sticky-header route/history/zoom checks remain mandatory. Physical-device/VoiceOver/NVDA acceptance is not claimed.
+
+Header local results: focused Contact checks passed, including 14 normal/enlarged-text header cases and a separate scrolled touch activation. The existing header suite passed nine routes at top/middle/bottom, seven widths, doubled text, 200% CSS zoom, scrolled navigation, focus, anchor offsets and axe. Phone/desktop screenshots were inspected. No physical-device or manual assistive-technology acceptance was performed.

@@ -13,14 +13,14 @@ import {directory,profile,basicDetail,requestDetail,sponsored,catalogNotice,spon
 import {showCalendar} from './calendar.js';
 import {renderGuide} from './guide.js';
 import {formattedReader,renderLegislativeNode} from './reader.js';
-import {createIcons,Landmark,Search} from 'lucide';
+import {createIcons,Landmark,Search,Mail} from 'lucide';
 import {diffWordsWithSpace} from 'diff';
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=(url,label)=>`<a href="${esc(url)}" ${/\.(xml|json|txt)(?:[?#]|$)/i.test(url)?'target="_blank" rel="noopener"':''}>${esc(label)}${/\.(xml|json|txt)(?:[?#]|$)/i.test(url)?'<span class="sr-only"> (opens in a new tab)</span>':''}</a>`;
 const day=s=>s?.slice(0,10)||'Date unavailable';
 const date=s=>s ? new Date(s.slice(0,10)+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}):'Date unavailable';
 let advancedOpen=false;let bills=[],requests=[],catalog,examples=[];let pageNumber=1,listScroll=0,activeRoute='',returnBill='';let pageSize=resultsPerPage();const searchIndex=new Map();history.scrollRestoration='manual';const filters={q:'',status:'',chamber:'',committee:'',topic:'',sort:'title',session:'',kind:'',sponsor:'',role:'chief'};
-const icon=()=>createIcons({icons:{Landmark,Search},attrs:{'aria-hidden':'true'}});
+const icon=()=>createIcons({icons:{Landmark,Search,Mail},attrs:{'aria-hidden':'true'}});
 const badge=b=>b.verificationState==='source-observed'?discrepancyFlag():`<span class="tag ${b.status==='Signed'?'':'closed'}">${esc(b.status)}</span>`;
 const opts=(values,value)=>values.map(x=>`<option value="${esc(x)}" ${x===value?'selected':''}>${esc(x)}</option>`).join('');
 const latest=b=>b.actionHistoryList.at(-1);
