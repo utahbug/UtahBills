@@ -384,7 +384,7 @@ footer nav{column-gap:14px}
 .header-contact svg{width:18px;height:18px;stroke-width:2}
 @media(max-width:760px){
  .header-inner:has(.header-contact){padding-right:16px}
- .header-inner:has(.header-contact) nav{max-width:calc(100% - 69px);column-gap:2px}
+ .header-inner:has(.header-contact) nav{max-width:calc(100% - 69px);column-gap:1px}
  .header-contact{right:4px;top:auto;bottom:8px;transform:none}
  .header-contact:focus-visible{outline-offset:0}
 }
