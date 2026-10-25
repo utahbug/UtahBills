@@ -41,7 +41,7 @@ try {
    await page.locator('#session').selectOption('2027');
    assert.equal(await page.locator('.bill-row').count(),0);
    assert.match(await page.locator('#search-info').textContent(),/This does not confirm that none exist/);
-   await page.locator('#show-requests').click();assert.equal(await page.locator('#session').inputValue(),'2027-requests');
+   await page.locator('#show-requests').click();await page.waitForURL(url=>url.hash==='#requests');await page.waitForFunction(()=>document.querySelector('#session')?.value==='2027-requests');assert.equal(await page.locator('#session').inputValue(),'2027-requests');
   }else{
    await page.locator('.advanced-search>summary').click();await page.locator('#chamber').selectOption('House');
    assert.equal(await page.locator('.bill-row').count(),Math.min(25,Math.ceil(count/2)));
