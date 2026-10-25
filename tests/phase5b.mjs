@@ -61,7 +61,10 @@ try{
   await page.evaluate(()=>{window.contactLink=document.querySelector('.header-contact');contactLink.remove()});await page.waitForTimeout(80);
   const baseline=await page.locator('header').evaluate(e=>e.getBoundingClientRect().height);
   await page.evaluate(()=>document.querySelector('.header-inner').append(contactLink));await page.waitForTimeout(80);
-  if(mode!=='text')assert.ok((await page.locator('header').boundingBox()).height<=baseline+1,`No added header height ${width} ${mode}`);
+  if(mode!=='text'){
+   const geometry=await page.locator('header').evaluate(e=>({height:e.getBoundingClientRect().height,scrollY,classes:e.className,children:[...e.querySelectorAll('.header-inner,.brand,nav,nav a,.header-contact')].map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a);return {text:a.textContent,x:r.x,y:r.y,width:r.width,height:r.height,font:s.font,padding:s.padding,gap:s.gap,margin:s.margin}})}));
+   assert.ok(geometry.height<=baseline+1,`No added header height ${width} ${mode}: ${JSON.stringify({baseline,...geometry})}`);
+  }
   assert.equal(await headerContact.getAttribute('title'),'Contact UtahBug');assert.equal(await headerContact.getAttribute('href'),'#contact');assert.equal(await headerContact.locator('svg.lucide-mail[aria-hidden="true"]').count(),1);
   for(const position of [0,500,1200]){
    await page.evaluate(y=>scrollTo(0,y),position);await page.waitForTimeout(80);
