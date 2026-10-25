@@ -388,3 +388,12 @@ footer nav{column-gap:14px}
  .header-contact{right:4px;top:auto;bottom:8px;transform:none}
  .header-contact:focus-visible{outline-offset:0}
 }
+
+/* Mobile Bills results: More at left; count Info immediately before Copy. */
+@media(max-width:700px){
+ .bill-toolbar.results-toolbar{min-width:132px;column-gap:0}
+ .bill-toolbar .count-summary .export-menu{flex-shrink:0}
+ .bill-toolbar>.copy-control{align-self:center}
+ .bill-toolbar>.copy-control:has(.copy-results[hidden]){display:flex}
+ .bill-toolbar .export-panel{left:0;right:auto}
+}
