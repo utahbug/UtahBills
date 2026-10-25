@@ -15,8 +15,8 @@
       "retrievedAt": "2026-10-21T15:44:19.925740+00:00"
     }
   },
-  "catalogCheckedAt": "2026-10-23T21:37:46.644411+00:00",
-  "voteAcquisitionCheckedAt": "2026-10-22T23:05:58.092360+00:00",
+  "catalogCheckedAt": "2026-10-25T16:27:50.644023+00:00",
+  "voteAcquisitionCheckedAt": "2026-10-25T16:28:00.732774+00:00",
   "sessions": {
     "2026": {
       "expected": 1016,
@@ -38,24 +38,19 @@
       "emptyIndex": true,
       "missing": [],
       "sourceUrl": "https://le.utah.gov/data/2027GS/billlist.json",
-      "checkedAt": "2026-10-23T21:37:27.624315+00:00",
-      "publicRequests": 272,
-      "verifiedPublicRequests": 272,
-      "sourceObservedRequests": 1,
+      "checkedAt": "2026-10-25T16:27:48.822368+00:00",
+      "publicRequests": 273,
+      "verifiedPublicRequests": 273,
+      "sourceObservedRequests": 0,
       "visiblePublicRequests": 273,
       "requestObservationCoverage": null,
       "requestPublication": {
-        "status": "partial",
+        "status": "success",
         "officialTotal": 273,
-        "verifiedTotal": 272,
-        "withheld": [
-          {
-            "trackingID": "VYQQDPXGUY",
-            "reason": "New request awaiting first matching official status"
-          }
-        ]
+        "verifiedTotal": 273,
+        "withheld": []
       },
-      "requestsCheckedAt": "2026-10-23T21:37:27.418777+00:00",
+      "requestsCheckedAt": "2026-10-25T16:27:49.179318+00:00",
       "humanListingIntroducedCount": 0,
       "listingMissingFromIndex": [],
       "indexMissingFromListing": []

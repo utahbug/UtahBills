@@ -1,1 +1,25 @@
-{"schemaVersion":1,"entries":{}}
+{
+  "schemaVersion": 1,
+  "entries": {},
+  "lastRun": {
+    "attemptedAt": "2026-10-25T16:28:00.229085+00:00",
+    "status": "success",
+    "attemptedDocuments": 0,
+    "limits": {
+      "documents": 12,
+      "seconds": 240,
+      "bytesPerDocument": 4194304,
+      "timeoutSeconds": 15,
+      "attemptsPerDocument": 2,
+      "recheckDays": 7
+    },
+    "counts": {
+      "verified": 0,
+      "not_retrieved": 0,
+      "failed": 0,
+      "rejected": 0,
+      "deferred": 0
+    },
+    "documents": []
+  }
+}
