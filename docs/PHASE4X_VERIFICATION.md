@@ -34,4 +34,4 @@ Local assets use the production esbuild bundle configuration and copied styleshe
 
 ## CI portability correction
 
-Initial run 40160875200 passed all pre-existing suites, then the new full-sort-label assertion caught insufficient room under Linux Chromium at 200% CSS zoom. The select now explicitly inherits its compact label font and uses 2px inline padding, preserving its 44px height and the unchanged complete-label assertion. This resolves platform-dependent native-control font sizing without weakening accessibility checks.
+Initial run 40160875200 passed all pre-existing suites, then the new full-sort-label assertion caught insufficient room under Linux Chromium at 200% CSS zoom. The select now explicitly inherits its compact label font and uses 2px inline padding, preserving its 44px height and the unchanged complete-label assertion. A second CI run (40162107560) demonstrated that font/padding alone was insufficient. The select also receives an explicit 14rem preferred width, constrained to its available container, instead of relying on platform-specific native intrinsic sizing. The unchanged fit threshold now reports measured dimensions for diagnosis.
