@@ -21,3 +21,9 @@ Existing Phase 4G and 4W regressions remain enabled; only assertions for explici
 ## Boundaries and pending acceptance
 
 No legislative records, provenance, acquisition logic, refresh schedule, reconciliation, historical distinction, Contact recipient/subject, domain or deployment environment changes. Main only and noindex/nofollow remain. TEST-001, independent editorial review, physical iPhone/iPad, VoiceOver/NVDA, native browser zoom and release authorization remain open. CSS zoom and automated browser checks do not constitute physical-device or manual accessibility acceptance.
+
+## CI assertion reconciliation
+
+Initial run [40228259320](https://github.com/utahbug/UtahBills/actions/runs/40228259320) passed integrity/build checks, the new Phase 5C suite and preceding browser suites, then stopped at Phase 4V's old 450–550px directory-field assertion. The owner explicitly superseded that range with 400–440px. The retained test now asserts the new bounds; all its alignment, source-link, filtering and accessibility checks remain. This was an outdated design expectation, not a relaxed accessibility or data check. No deployment occurred from that failed run.
+
+The corrected Phase 4V suite passed locally in full: bounded search geometry, 2027/historical sponsorship separation, filters/history, Calendar selection, seven widths, enlarged text/CSS zoom and automated WCAG checks. Application assets are unchanged by this assertion correction.

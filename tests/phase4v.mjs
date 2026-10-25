@@ -31,7 +31,7 @@ try{
  for(const width of [390,1280,1920]){
   await page.setViewportSize({width,height:900});await page.goto(base+'?search-bound='+width+'#legislators');await ready();
   const field=await page.locator('#directory-search').boundingBox(),finder=await page.locator('.find-legislators').boundingBox(),results=await page.locator('.legislator-row').first().boundingBox();assert.ok(Math.abs(finder.x+finder.width-field.x-field.width)<2);assert.ok(finder.y+finder.height<=field.y+1);
-  if(width>700){assert.ok(field.width>=450&&field.width<=550);assert.ok(results.width>field.width+100)}else assert.ok(Math.abs(field.width-width+32)<2);
+  if(width>700){assert.ok(field.width>=400&&field.width<=440);assert.ok(results.width>field.width+100)}else assert.ok(Math.abs(field.width-width+32)<2);
  }
  // Shared footer archive entry: keyboard, historical deep links and current-record return.
  for(const width of [390,1280]){
