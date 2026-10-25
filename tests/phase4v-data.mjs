@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {sponsorCounts,sortLegislators} from '../discovery.js';
+import {nextEventDate} from '../calendar.js';
+const bill=(number,year='2027',extra={})=>({billNumber:number,sessionID:year+'GS',kind:'Bill',primeSponsor:'A',floorSponsor:'B',cosponsors:{C:['introduced']},...extra});
+const data={measures:[bill('HB0001'),bill('HB0001S01'),bill('SB0002'),bill('HB0001'),bill('HB0003','2026'),bill('HJR0001','2027',{kind:'Joint resolution'}),bill('REQ','2027',{kind:'Request'})]};
+assert.deepEqual(sponsorCounts(data,'A'),{chief:2,floor:0,cosponsor:0});assert.equal(sponsorCounts(data,'B').floor,2);assert.equal(sponsorCounts(data,'C').cosponsor,2);assert.equal(sponsorCounts(data,'A','2026').chief,1);assert.equal(sponsorCounts(data,'UNKNOWN').chief,0);
+const people=[{id:'S2',name:'Adams, B',house:'S',district:2},{id:'H10',name:'Jones, A',house:'H',district:10},{id:'H2',name:'Adams, A',house:'H',district:2},{id:'H1',name:'Adams, A',house:'H',district:1}];
+const ids=(key,direction='ascending')=>sortLegislators(people,data,key,direction).map(p=>p.id);
+assert.deepEqual(ids('district'),['H1','H2','H10','S2']);assert.deepEqual(ids('district','descending'),['S2','H10','H2','H1']);assert.deepEqual(ids('name'),['H1','H2','S2','H10']);assert.deepEqual(ids('name','descending'),ids('name').reverse());assert.deepEqual(sortLegislators(people.filter(p=>p.house==='H'),data,'district').map(p=>p.district),[1,2,10]);
+const events=[{date:'2026-10-23',category:'meeting'},{date:'2026-11-02',category:'meeting'},{date:'2026-10-24',category:'deadline'},{date:'2027-01-19',category:'session'}];
+assert.equal(nextEventDate(events,'2026-10-24'),'2026-10-24');assert.equal(nextEventDate(events,'2026-10-24','meeting'),'2026-11-02');assert.equal(nextEventDate(events,'2026-10-25','session'),'2027-01-19');assert.equal(nextEventDate(events,'2027-06-01'),'');assert.equal(nextEventDate(events,'2026-10-24','floor'),'');
+console.log('Phase 4V models: session-specific bill counts/roles/deduplication, numeric chamber ordering, surname ties, reverse sorts, and next-date coverage boundaries passed.');

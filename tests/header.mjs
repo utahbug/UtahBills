@@ -1,3 +1,4 @@
+import {openCalendar} from './fixtures/calendar-navigation.mjs';
 import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
@@ -12,7 +13,7 @@ async function ready(route){
  await page.locator('main h1').waitFor();
  if(route==='#requests')await page.locator('.bill-row').first().waitFor();
  if(route==='#activity'){await showSavedActivity(page);await page.locator('.activity-row').first().waitFor()}
- if(route==='#calendar')await page.locator('.calendar-day').first().waitFor();
+ if(route==='#calendar')await openCalendar(page);
  if(route==='#legislators')await page.locator('.legislator-row').first().waitFor();
 }
 async function check(){

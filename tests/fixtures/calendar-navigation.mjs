@@ -1,0 +1,1 @@
+export async function openCalendar(page){const toggle=page.locator('#calendar-toggle');await toggle.waitFor();if(await toggle.getAttribute('aria-expanded')==='false')await toggle.click();await page.locator('#calendar-grid').waitFor()}

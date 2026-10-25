@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **11 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **12 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -573,3 +573,14 @@ Active inventory remains 37, with all unfinished statuses/priorities retained. U
 - **Evidence:** Implementation [abb8119](https://github.com/utahbug/UtahBills/commit/abb811937584c0e5c112ecab959309a653be1d68); [Phase 4U verification](PHASE4U_VERIFICATION.md), six Python Activity tests, CSV/date unit tests, Phase 4U and retained header/toolbar/4T/4G/4D/4P/4Q/4R browser checks. Publication remains gated on all mandatory CI checks; release commit evidence is recorded with delivery.
 
 Active inventory remains **37**, with every unfinished ID/status/priority retained. Scheduled run [40109485828](https://github.com/utahbug/UtahBills/actions/runs/40109485828) acquired and built successfully but failed an outdated full-reconciliation count assertion before snapshot preservation/deployment. That assumption is corrected with full/partial fixtures. **TEST-001 remains High/Blocked**, pending a subsequent genuinely scheduled end-to-end success. Its unpublished 273/273 candidate does not replace the retained 273-visible/272-verified snapshot. UI-001 remains pending actual human device/assistive-technology retesting; this correction batch is not acceptance certification. RELEASE-001/002/004 and all legislative readiness work remain open.
+
+## Phase 4V maintenance — UI-007
+
+**Legislative clarity, compact search and Calendar refinement** — **Medium** · **Completed implementation — October 24, 2026**
+
+- **Source:** Owner Phase 4V request, archive/footer amendment and 520px desktop search clarification. Explicitly supersedes UI-006’s third Records option; no unrelated deferred work is reopened.
+- **Dependencies:** Existing verified session/roster identities, saved Calendar and shared navigation. Source records and acquisition remain unchanged.
+- **Acceptance:** Dynamic distinct 2027 HB/SB counts and correct role links; primary 2027 profile activity with explicitly separate 2026 archive/contact evidence; compact directory columns and stable name/district/count sorts; desktop search bounded to 520px with its official link aligned inside that width and full-width phone behavior; all five Advanced search filters and history retained; stronger slate archive identification; official search link above its field; collapsed Calendar with Mountain today/next-event selection across saved coverage and preserved manual browsing; two current Records choices, shared plain archive footer link, harmonious About/FAQ typography and no Records selector on archive views.
+- **Completion commit:** `Clarify session navigation and refine discovery, archive and Calendar layouts` ([commit history for the verification record](https://github.com/utahbug/UtahBills/commits/main/docs/PHASE4V_VERIFICATION.md)). Evidence: [Phase 4V verification](PHASE4V_VERIFICATION.md), production integrity/build checks, focused model/browser matrix, retained directory and Records suites, historical navigation and Calendar regressions. Publication remains subject to every mandatory CI gate.
+
+Active inventory remains **37**; every unfinished task ID/status/priority remains unchanged. TEST-001 remains High/Blocked: no newer genuine schedule than 40109485828 was found, and no acquisition is active. UI-001 physical-device/manual assistive-technology acceptance, RELEASE-001/002/004 and first-real-2027 readiness remain open. This UI batch does not authorize public release or certify human acceptance.

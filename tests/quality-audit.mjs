@@ -1,3 +1,4 @@
+import {openCalendar} from './fixtures/calendar-navigation.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
@@ -20,7 +21,7 @@ try{
  assert.equal(await page.locator('.bill-row').count(),200);
  await page.locator('#search').fill('HB0011');await page.locator('.bill-row h2 a').click();await page.locator('#formatted-reader').waitFor();await page.goBack();await page.locator('#search').waitFor();assert.equal(await page.locator('#search').inputValue(),'HB0011');await page.goForward();await page.locator('#formatted-reader').waitFor();assert.ok(page.url().endsWith('#bill/HB0011'));
  const routes=[['requests','.bill-row'],['request/DXYQRODBBU','.request-source-trigger'],['legislators','.legislator-row'],['legislator/WALTER/2026','.history-search'],['activity','.activity-empty, .activity-row'],['calendar','.calendar-day'],['about','.verification details'],['guide','#about-process'],['sources','#about-data'],['bill/HB0001','.archive-metadata'],['bill/2026/HB0011/history','.history-target[open]']];
- for(const [route,selector] of routes){const t=performance.now();await page.goto(base+'?quality#'+route);await page.locator(selector).first().waitFor();output.routes.push({route,readyMs:performance.now()-t,title:await page.title(),h1:await page.locator('h1').count()});assert.equal(await page.locator('h1').count(),1);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);}
+ for(const [route,selector] of routes){const t=performance.now();await page.goto(base+'?quality#'+route);if(route==='calendar')await openCalendar(page);await page.locator(selector).first().waitFor();output.routes.push({route,readyMs:performance.now()-t,title:await page.title(),h1:await page.locator('h1').count()});assert.equal(await page.locator('h1').count(),1);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);}
  // A delayed request must never replace the route selected while it was loading.
  let release,started;const gate=new Promise(r=>release=r),begun=new Promise(r=>started=r);
  await page.route('**/data/measures/2026GS/HB0001.json',async r=>{started();await gate;await r.continue()});
