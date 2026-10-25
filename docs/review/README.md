@@ -6,7 +6,7 @@ Prepared October 23, 2026. **All human reviews are pending.** Codex's source ext
 
 1. Owner assigns independent editorial reviewers and device/assistive-technology reviewers, supplies devices and agrees on the supported browser scope.
 2. Editorial reviewer opens a packet below, confirms the exact source hash/version, reads the verbatim existing explanation, compares the mapped statements and full section views with original XML, then fills its acceptance record. Review proposed wording separately from outcome/current-law claims. Do not replace an older explanation's source with later enrolled text.
-3. Owner approves and staffs the [correction procedure](CORRECTIONS.md), selecting an intake channel and public correction-log location. This package creates neither.
+3. Owner completes real send/receipt testing and staffing for the approved temporary Contact email under the [correction procedure](CORRECTIONS.md). The [correction log](CORRECTION_LOG.md) is prepared without invented entries.
 4. Device reviewers copy an [environment run record](ACCESSIBILITY.md#run-record--copy-for-each-environment), execute assigned task cards and record actual outcomes, failures and retests. Unexecuted rows stay N/pending.
 5. Return completed records through the owner-designated arrangement. Preserve review dates, commits, evidence and unresolved findings; do not edit pending results into “passed” based on automated checks.
 
@@ -44,7 +44,7 @@ No code correction is justified by newly reproduced evidence in this phase. No a
 ## Human and owner decisions still required
 
 - Choose independent reviewer(s), record relevant expertise and independence from authoring, and schedule all four explanation reviews.
-- Approve the correction intake, maintainer/backup, reviewer/approval responsibilities, service targets, privacy handling and material correction-log/notification arrangements. No invented address or public service is activated.
+- Verify delivery to the approved temporary contact address and assign monitoring, maintainer/backup and reviewer responsibilities. Approve any response targets and notification arrangements; none is promised.
 - Supply physical iPhone/iPad and desktop/AT environments; assign all task cards, evaluate remaining WCAG scope and sign acceptance after corrections/retests.
 - Assess the next qualifying schedule and first real 2027 introduction/roster evidence when available; accept disclosed limitations explicitly without inventing missing evidence.
 - Keep RELEASE-001, UI-001, TEST-001, RELEASE-002 and RELEASE-004 open until their real criteria are satisfied. Only the owner can explicitly authorize public release after dependencies; preparation is not approval.

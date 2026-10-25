@@ -321,6 +321,8 @@ Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 
 - **Source:** [Audit M3](QUALITY_AUDIT.md#m3--human-accessibility-and-editorial-review-remain-unperformed--open-validation-gap); [Roadmap Stage 6](../ROADMAP.md#stage-6--public-release-preparation--planned).
 - **Acceptance:** Review HB0011, HB0154, HB0155 and SB0069 explanations against their pinned versions (SB0069 explanation is second substitute). Record findings, reviewer/date and resolved corrections; define a transparent reporting, verification and correction-history process. Do not relabel agent review as independent human approval.
 
+- **Phase 5B partial progress (October 25):** Contact route and owner-approved temporary email, documented correction procedure and empty substantive correction log prepared; see [verification](PHASE5B_VERIFICATION.md). Real email send/receipt and monitoring assignments remain owner acceptance. All four independent editorial reviews remain pending; RELEASE-001 is not complete.
+
 ### RELEASE-002
 
 **Verify release data completeness and freshness** — **Medium** · **Approved/Not started**
