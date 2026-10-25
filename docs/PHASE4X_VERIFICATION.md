@@ -31,3 +31,7 @@ Physical iPhone/iPad, VoiceOver/NVDA and native browser-zoom acceptance remain h
 The focused Phase 4X suite, retained Phase 4V directory/archive suite, Phase 4J popover/keyboard/Copy suite and Phase 4V model tests passed. The final narrow toolbar keeps Info/Copy adjacent even at CSS zoom; a measured long-option regression verifies the complete selected sort label fits. At exceptionally narrow effective widths only the redundant visual Sort label is hidden; the native select retains its accessible name.
 
 Local assets use the production esbuild bundle configuration and copied stylesheet over the unchanged verified Phase 4W data projections. No historical source reprocessing or acquisition was necessary for this UI-only phase. The full production build and every mandatory integrity/browser check remain enforced in CI. Screenshot inspection confirms compact phone rows and restrained historical parchment; native browser zoom and physical/AT acceptance remain unperformed.
+
+## CI portability correction
+
+Initial run 40160875200 passed all pre-existing suites, then the new full-sort-label assertion caught insufficient room under Linux Chromium at 200% CSS zoom. The select now explicitly inherits its compact label font and uses 2px inline padding, preserving its 44px height and the unchanged complete-label assertion. This resolves platform-dependent native-control font sizing without weakening accessibility checks.
