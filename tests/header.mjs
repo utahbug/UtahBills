@@ -13,7 +13,7 @@ async function ready(route){
  await page.locator('main h1').waitFor();
  if(route==='#requests')await page.locator('.bill-row').first().waitFor();
  if(route==='#activity'){await showSavedActivity(page);await page.locator('.activity-row').first().waitFor()}
- if(route==='#calendar')await openCalendar(page);
+ if(route==='#calendar')await page.locator('#calendar-toggle').waitFor();
  if(route==='#legislators')await page.locator('.legislator-row').first().waitFor();
 }
 async function check(){
@@ -60,7 +60,7 @@ try{
  // Scrolled-away narrow branding must be revealed when reached by reverse keyboard navigation.
  await page.setViewportSize({width:390,height:844});await page.goto(base+'#requests');await page.reload();await ready('#requests');await page.evaluate(()=>scrollTo(0,1500));await page.locator('header nav a').first().focus();await page.keyboard.press('Shift+Tab');await page.waitForFunction(()=>scrollY===0);assert.equal(await page.locator('.brand').evaluate(e=>e===document.activeElement&&e.getBoundingClientRect().top>=0),true);
  // A Calendar cell scrolled behind the sticky header must be fully revealed on focus.
- await page.setViewportSize({width:768,height:900});await page.goto(base+'#calendar');await page.reload();await ready('#calendar');
+ await page.setViewportSize({width:768,height:900});await page.goto(base+'#calendar');await page.reload();await ready('#calendar');await openCalendar(page);
  const day=page.locator('.calendar-day').nth(10);await day.evaluate(e=>{const header=document.querySelector('header');window.scrollTo(0,e.getBoundingClientRect().top+scrollY-header.offsetHeight/2)});await page.waitForTimeout(100);
  await page.keyboard.press('Tab');await day.focus();
  assert.ok(await day.evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('header').getBoundingClientRect().bottom),'focused day clear of header');
