@@ -28,7 +28,7 @@ try {
  assert.equal(await page.getByRole('link',{name:'Refresh attempts and component reports',exact:true}).getAttribute('href'),'https://github.com/utahbug/UtahBills/actions/workflows/pages.yml');
  for(const href of ['./data/text-2027.json','./data/archive.json']){assert.equal(await page.locator(`a[href="${href}"]`).count(),1);assert.ok((await page.request.get(new URL(href,base).href)).ok())}
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
- await page.goto(base+'#calendar');await page.locator('.calendar-info > summary').click();assert.match(await page.locator('.calendar-info').innerText(),/Deployment success alone does not establish a successful Calendar check/);
+ await page.goto(base+'#calendar');await page.locator('.calendar-info > summary').click();assert.match(await page.locator('.calendar-info').innerText(),/Scheduled updates.*Not live/);
  assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'),'noindex, nofollow');
  console.log('Phase 4R: current request counts, recovered/unconfirmed details and history, freshness qualification/source links, phone overflow and noindex passed.');
 } finally {await browser.close()}

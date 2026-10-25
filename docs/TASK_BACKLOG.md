@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **12 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **37 tasks**; **13 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -584,3 +584,14 @@ Active inventory remains **37**, with every unfinished ID/status/priority retain
 - **Completion commit:** [7c535059b5c1203f23d6416eb7d7b439027edbf8](https://github.com/utahbug/UtahBills/commit/7c535059b5c1203f23d6416eb7d7b439027edbf8), `Clarify session navigation and refine discovery, archive and Calendar layouts`. Evidence: [Phase 4V verification](PHASE4V_VERIFICATION.md), production integrity/build checks, focused model/browser matrix, retained directory and Records suites, historical navigation and Calendar regressions. Publication remains subject to every mandatory CI gate.
 
 Active inventory remains **37**; every unfinished task ID/status/priority remains unchanged. TEST-001 remains High/Blocked: no newer genuine schedule than 40109485828 was found, and no acquisition is active. UI-001 physical-device/manual assistive-technology acceptance, RELEASE-001/002/004 and first-real-2027 readiness remain open. This UI batch does not authorize public release or certify human acceptance.
+
+## Phase 4W maintenance — UI-008
+
+**iPhone usability and Info/Calendar cleanup** — **Medium** · **Completed implementation — October 24, 2026**
+
+- **Source:** Owner Phase 4W request. Supersedes the phone-only control placement and verbose Info presentation; Phase 4V desktop/archive decisions remain intact.
+- **Dependencies:** Existing saved projections, shared More/Copy/CSV controls, Calendar and exact source dates. No acquisition or source-data changes.
+- **Acceptance:** Dynamic phone Records totals and aligned official link; Sort/Per page in the existing More disclosure with stable supported sorting and complete Copy/CSV; concise empty-index versus filter-empty results; seven reviewed Info panels with qualified dates/counts, undated Activity and separate Legend preserved; Calendar current/upcoming route entry, active browsing retained, date grouping and accessible Upcoming/toggle controls; no overflow or new automated WCAG violations at tested phone/tablet/desktop widths and enlarged text/CSS zoom.
+- **Evidence:** [Phase 4W verification](PHASE4W_VERIFICATION.md), `tests/phase4w.mjs` and affected retained regressions. Implementation commit is the commit introducing this record; resolve with `git log -1 --format=%H -- docs/PHASE4W_VERIFICATION.md`. Mandatory CI/deployment and final SHA are recorded with delivery. No human acceptance is implied.
+
+All **37 active tasks** retain their IDs, priorities and statuses. TEST-001 remains High/Blocked; UI-001 and RELEASE-001/002/004 remain unfinished. This bounded refinement does not authorize public release or unrelated backlog implementation.

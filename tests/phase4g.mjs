@@ -26,7 +26,7 @@ try{
    assert.equal(await row.getByRole('link',{name:'Official record',exact:true}).getAttribute('href'),event.url);
   }
  }
- await page.goto(base+'#requests');const official=page.getByRole('link',{name:'Official 2027 bill search',exact:true});await official.waitFor();
+ await page.goto(base+'#requests');const official=page.getByRole('link',{name:'Official 2027 Bill Search',exact:true});await official.waitFor();
  assert.equal(await official.getAttribute('href'),'https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all');assert.equal(await official.getAttribute('target'),'_blank');assert.equal(await official.locator('svg').count(),1);
  await page.goto(base+'#activity');await showSavedActivity(page);await ready();
  // Isolated browser fixtures are never written to production data.

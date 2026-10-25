@@ -1,3 +1,4 @@
+import {billOptions} from './fixtures/bill-options.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -32,19 +33,19 @@ try {
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
   for(const size of [25,50,100,200]){
-   await page.getByLabel('Results per page').selectOption(String(size));
+   await billOptions(page);await page.getByLabel('Results per page').selectOption(String(size));
    assert.equal(await page.locator('.bill-row').count(),Math.min(count||240,size));
   }
-  await page.getByLabel('Results per page').selectOption('25');
+  await billOptions(page);await page.getByLabel('Results per page').selectOption('25');
   if(count===0){
    await page.locator('#session').selectOption('2027');
    assert.equal(await page.locator('.bill-row').count(),0);
-   assert.match(await page.locator('#results').innerText(),/does not establish that no legislation exists/);
+   assert.match(await page.locator('#search-info').textContent(),/This does not confirm that none exist/);
    await page.locator('#show-requests').click();assert.equal(await page.locator('#session').inputValue(),'2027-requests');
   }else{
    await page.locator('.advanced-search>summary').click();await page.locator('#chamber').selectOption('House');
    assert.equal(await page.locator('.bill-row').count(),Math.min(25,Math.ceil(count/2)));
-   await page.locator('#clear').click();await page.locator('#sort').selectOption('number');
+   await page.locator('#clear').click();await billOptions(page);await page.locator('#sort').selectOption('number');
    const expected=fixture.measures.filter(b=>b.sessionID==='2027GS').sort((a,b)=>a.billNumber.localeCompare(b.billNumber));
    assert.equal(await page.locator('.bill-row h2 a').first().getAttribute('href'),'#bill/2027/'+expected[0].billNumber);
    if(count>25){await page.locator('#next-page').click();assert.match(await page.locator('.pagination').innerText(),/Page 2/);await page.locator('#previous-page').click();}

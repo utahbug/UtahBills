@@ -51,3 +51,17 @@ export function stretchActivityRows(root){
   for(const node of nodes){const span=document.createElement('span');span.className='row-text';node.replaceWith(span);span.append(node)}
  }
 }
+
+// Reuse the existing export disclosure; move the same controls, never duplicate state.
+let disposeBillLayout=()=>{};
+export function billToolbarLayout(host,{source,searchHeading,records,requestTotal,measureTotal}){
+ disposeBillLayout();const media=matchMedia('(max-width:700px)'),menu=host.querySelector('.export-menu'),summary=menu.querySelector('summary'),panel=document.createElement('div'),controls=host.querySelector('.result-controls'),sort=host.querySelector('#sort').closest('label'),size=host.querySelector('.page-preference');
+ panel.className='export-panel';panel.append(menu.querySelector('button'));menu.append(panel);host.classList.add('bill-toolbar');summary.setAttribute('aria-label','More results options');summary.title='More results options';sort.querySelector('select').setAttribute('aria-label','Sort results by');
+ let heading;if(records){heading=document.createElement('div');heading.className='records-heading search-heading';records.prepend(heading);heading.append(records.querySelector('label'))}
+ let last;const update=()=>{if(!host.isConnected||last===media.matches)return;last=media.matches;const active=document.activeElement;const focusMoved=sort.contains(active)||size.contains(active)||active===source;
+  if(last){panel.prepend(sort,size);sort.firstChild.textContent='Sort results by ';size.firstChild.textContent='Results per page ';if(heading)heading.append(source)}else{controls.append(sort,size);sort.firstChild.textContent='Sort ';size.firstChild.textContent='Per page ';searchHeading.append(source)}
+  if(records){records.querySelector('option[value="2027-requests"]').textContent=last?`2027 Public Bill Requests (${requestTotal})`:'2027 Public bill requests';records.querySelector('option[value="2027"]').textContent=last?`2027 Bills and resolutions (${measureTotal})`:'2027 Bills and resolutions'}
+  if(focusMoved){if(last&&(sort.contains(active)||size.contains(active)))menu.open=true;active.focus({preventScroll:true})}
+ };media.addEventListener('change',update);const dismiss=e=>{if(menu.open&&!menu.contains(e.target))menu.open=false};document.addEventListener('pointerdown',dismiss);document.addEventListener('focusin',dismiss);disposeBillLayout=()=>{media.removeEventListener('change',update);document.removeEventListener('pointerdown',dismiss);document.removeEventListener('focusin',dismiss)};update();
+ menu.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();menu.open=false;summary.focus()}});
+}

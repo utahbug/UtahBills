@@ -1,3 +1,4 @@
+import {billOptions} from './fixtures/bill-options.mjs';
 import {openCalendar} from './fixtures/calendar-navigation.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';
@@ -16,7 +17,7 @@ try{
  output.initialResources=await page.evaluate(()=>performance.getEntriesByType('resource').map(r=>({name:new URL(r.name).pathname,transferSize:r.transferSize,decodedBodySize:r.decodedBodySize,duration:r.duration})));
  assert.ok(!requests.some(u=>/data\/(archive-votes|voting-history|examples)\//.test(u)),'Initial listing does not fetch detail/history payloads');
  const payloads=await Promise.all(['app.js','styles.css','data/catalog-ui.json','data/examples-ui.json'].map(p=>readFile('dist/'+p)));output.initialPayload={rawBytes:payloads.reduce((n,b)=>n+b.length,0),gzipEquivalentBytes:payloads.reduce((n,b)=>n+gzipSync(b).length,0)};
- await openArchive(page);await page.getByLabel('Results per page').selectOption('200');
+ await openArchive(page);await billOptions(page);await page.getByLabel('Results per page').selectOption('200');
  for(const q of ['water','tax','school','HB0011','']){output.searchMs.push(await page.locator('#search').evaluate((el,q)=>{const t=performance.now();el.value=q;el.dispatchEvent(new Event('input',{bubbles:true}));return {query:q,ms:performance.now()-t,rows:document.querySelectorAll('.bill-row').length}},q));}
  assert.equal(await page.locator('.bill-row').count(),200);
  await page.locator('#search').fill('HB0011');await page.locator('.bill-row h2 a').click();await page.locator('#formatted-reader').waitFor();await page.goBack();await page.locator('#search').waitFor();assert.equal(await page.locator('#search').inputValue(),'HB0011');await page.goForward();await page.locator('#formatted-reader').waitFor();assert.ok(page.url().endsWith('#bill/HB0011'));

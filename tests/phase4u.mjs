@@ -1,3 +1,4 @@
+import {billOptions} from './fixtures/bill-options.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -11,18 +12,18 @@ await page.clock.setFixedTime(new Date('2026-10-24T18:00:00Z'));
 await page.addInitScript(()=>{localStorage.setItem('utahbills-results-per-page','25');Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>{if(window.denyCopy)throw Error('denied');window.copied=text}}})});
 const ready=()=>page.waitForFunction(()=>document.querySelector('#activity-count')&&!document.querySelector('#activity-count').textContent.includes('Loading'));
 const copy=async()=>{await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled)};
-const csv=async()=>{await page.locator('.export-menu summary').click();const download=page.waitForEvent('download');await page.getByRole('button',{name:'Export CSV',exact:true}).click();const d=await download;assert.match(d.suggestedFilename(),/^utahbills-.*-\d{4}-\d{2}-\d{2}\.csv$/);return readFile(await d.path(),'utf8')};
+const csv=async()=>{if(await page.locator('.export-menu').getAttribute('open')===null)await page.locator('.export-menu summary').click();const download=page.waitForEvent('download');await page.getByRole('button',{name:'Export CSV',exact:true}).click();const d=await download;assert.match(d.suggestedFilename(),/^utahbills-.*-\d{4}-\d{2}-\d{2}\.csv$/);return readFile(await d.path(),'utf8')};
 await mkdir('test-results/phase4u',{recursive:true});
 try{
  await page.goto(base+'#requests/all');await page.locator('.bill-row').first().waitFor();
- assert.deepEqual(await page.locator('#session option').allTextContents(),['2027 Bills and resolutions','2027 Public bill requests']);
+ assert.deepEqual(await page.locator('#session option').evaluateAll(es=>es.map(e=>e.value)),['2027','2027-requests']);
  assert.equal(await page.locator('.support').count(),0);
  const total=await page.locator('.bill-row').count();assert.equal(total,25);
  assert.equal(await page.locator('#previous-page').isVisible(),false);assert.equal(await page.locator('#next-page').isVisible(),true);
  await copy();const all=await page.evaluate(()=>window.copied);assert.equal(all.split('\n\n').length,matching.length);
- await page.locator('#sort').selectOption('number');await copy();assert.deepEqual((await page.evaluate(()=>window.copied)).split('\n\n').map(s=>s.match(/Tracking ID: ([A-Z]+)/)[1]),matching.map(r=>r.trackingID).sort((a,b)=>a.localeCompare(b)));
+ await billOptions(page);await page.locator('#sort').selectOption('number');await copy();assert.deepEqual((await page.evaluate(()=>window.copied)).split('\n\n').map(s=>s.match(/Tracking ID: ([A-Z]+)/)[1]),matching.map(r=>r.trackingID).sort((a,b)=>a.localeCompare(b)));
  const exported=await csv();assert.ok(exported.startsWith('\uFEFF'));assert.equal(exported.split('\r\n').length,matching.length+2);assert.ok(exported.includes('Tracking ID'));
- await page.locator('.page-preference select').selectOption('100');for(let n=1;n<Math.ceil(matching.length/100);n++){await page.locator('#next-page').click();assert.equal(await page.locator('#previous-page').isVisible(),true)}assert.equal(await page.locator('#next-page').isVisible(),false);assert.ok((await page.locator('.pagination').innerText()).includes('Page '+Math.ceil(matching.length/100)+' of '+Math.ceil(matching.length/100)));
+ await billOptions(page);await page.locator('.page-preference select').selectOption('100');for(let n=1;n<Math.ceil(matching.length/100);n++){await page.locator('#next-page').click();assert.equal(await page.locator('#previous-page').isVisible(),true)}assert.equal(await page.locator('#next-page').isVisible(),false);assert.ok((await page.locator('.pagination').innerText()).includes('Page '+Math.ceil(matching.length/100)+' of '+Math.ceil(matching.length/100)));
  await page.locator('#search').fill(sample.trackingID);assert.equal(await page.locator('.pagination').isVisible(),false);await copy();assert.equal((await page.evaluate(()=>window.copied)).split('\n\n').length,1);assert.ok((await page.evaluate(()=>window.copied)).includes(sample.trackingID));
  await page.getByRole('button',{name:'Info about result counts',exact:true}).click();assert.ok((await page.locator('#count-info').innerText()).includes(saved.requestPublication.verifiedTotal+' statuses verified'));await page.keyboard.press('Escape');
  await page.evaluate(()=>window.denyCopy=true);await copy();assert.ok((await page.locator('.copy-fallback').inputValue()).includes(sample.trackingID));await page.evaluate(()=>window.denyCopy=false);

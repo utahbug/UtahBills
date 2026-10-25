@@ -1,3 +1,4 @@
+import {billOptions} from './fixtures/bill-options.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import assert from 'node:assert/strict';
@@ -18,16 +19,16 @@ try{
  await visit('requests');await page.locator('.bill-row').first().waitFor();
  assert.deepEqual(await page.locator('#session option').allTextContents(),['2027 Bills and resolutions','2027 Public bill requests']);assert.equal(await page.getByLabel('Records',{exact:true}).inputValue(),'2027-requests');
  assert.equal(await page.getByLabel('Search public requests',{exact:true}).getAttribute('placeholder'),'Tracking ID, title, keyword, or sponsor');
- await page.locator('#sort').selectOption('sponsor');
+ await billOptions(page);await page.locator('#sort').selectOption('sponsor');
  const expected=[...(saved.requestArchive2027||saved.requests2027),...(saved.sourceObservedRequests2027||[])].filter(r=>!r.introducedBill&&r.currentlyListed!==false).map(r=>({...r,primeSponsor:r.sponsor,primeSponsorName:r.sponsorName})).sort((a,b)=>compareSponsors(a,b,saved));
  const hrefs=await page.locator('.bill-row h2 a').evaluateAll(es=>es.map(e=>e.hash));assert.deepEqual(hrefs,expected.slice(0,hrefs.length).map(r=>'#request/'+r.trackingID));
  await openArchive(page);await page.getByRole('heading',{name:'2026 Legislative Archive',exact:true}).waitFor();assert.match(await page.locator('#count').innerText(),/^1016 introduced measures$/);
- await page.locator('#sort').selectOption('sponsor');const historical=saved.measures.filter(b=>b.sessionID==='2026GS').sort((a,b)=>compareSponsors(a,b,saved));assert.equal(await page.locator('.bill-row h2 a').first().getAttribute('href'),'#bill/'+historical[0].billNumber);
+ await billOptions(page);await page.locator('#sort').selectOption('sponsor');const historical=saved.measures.filter(b=>b.sessionID==='2026GS').sort((a,b)=>compareSponsors(a,b,saved));assert.equal(await page.locator('.bill-row h2 a').first().getAttribute('href'),'#bill/'+historical[0].billNumber);
  await page.locator('#search').fill('HB0011');await page.locator('.bill-row h2 a').click();await page.locator('.back').click();assert.equal(await page.locator('#search').inputValue(),'HB0011');assert.equal(await page.locator('h1').innerText(),'2026 Legislative Archive');
  await page.locator('header nav a[href="#bills"]').click();await page.waitForFunction(()=>document.querySelector('#session')?.value!=='2026');assert.equal(await page.locator('#session').inputValue(),saved.measures.some(b=>b.sessionID==='2027GS')?'2027':'2027-requests');
  await page.goBack();await page.getByRole('heading',{name:'2026 Legislative Archive',exact:true}).waitFor();await page.goForward();await page.waitForFunction(()=>document.querySelector('#session')?.value!=='2026');
  // First introduced records reuse the same sort and primary Records layout.
- const fixture=sessionFixture(saved,3);await interceptSession(page,fixture);await visit('bills');assert.equal(await page.locator('#session').inputValue(),'2027');await page.locator('#sort').selectOption('sponsor');assert.equal(await page.locator('.bill-row').count(),3);assert.match(await page.locator('#search').getAttribute('placeholder'),/^Bill number/);await page.unroute('**/data/catalog-ui.json');
+ const fixture=sessionFixture(saved,3);await interceptSession(page,fixture);await visit('bills');assert.equal(await page.locator('#session').inputValue(),'2027');await billOptions(page);await page.locator('#sort').selectOption('sponsor');assert.equal(await page.locator('.bill-row').count(),3);assert.match(await page.locator('#search').getAttribute('placeholder'),/^Bill number/);await page.unroute('**/data/catalog-ui.json');
  // Sponsor controls retain role filtering, accessible name and clear action.
  await visit('sponsor/'+saved.legislators[0].id+'/chief/2026/all');await page.getByLabel('Sponsorship role',{exact:true}).waitFor();assert.doesNotMatch(await page.locator('.sponsor-filter').innerText(),/Sponsorship role/);await page.keyboard.press('Tab');await page.locator('#sponsor-role').focus();assert.equal(await page.locator('#sponsor-role').evaluate(e=>e.matches(':focus-visible')&&parseFloat(getComputedStyle(e).outlineWidth)>=2&&e.getBoundingClientRect().height>=44),true);await page.locator('#remove-sponsor').click();assert.equal(await page.locator('.sponsor-filter').count(),0);
  // Activity blank-space target is a native link; independent links and text stay on top.
@@ -37,8 +38,8 @@ try{
  await row.locator('.row-text').first().evaluate(e=>{const r=document.createRange();r.selectNodeContents(e);getSelection().removeAllRanges();getSelection().addRange(r)});assert.ok(await page.evaluate(()=>getSelection().toString().length));await page.evaluate(()=>getSelection().removeAllRanges());
  const popupPromise=page.context().waitForEvent('page');await page.mouse.move(point.x,point.y);await page.keyboard.down('Control');await page.mouse.click(point.x,point.y);await page.keyboard.up('Control');const popup=await popupPromise;await popup.waitForURL(url=>url.hash===target);await popup.waitForLoadState();assert.ok(popup.url().endsWith(target));await popup.close();assert.ok(page.url().endsWith('#activity'));
  await page.mouse.click(point.x,point.y);await page.waitForURL(url=>url.hash===target);await page.goBack();await page.locator('.activity-row').first().waitFor();
- await page.locator('.activity-info summary').click();assert.deepEqual(await page.locator('.activity-info h2').allTextContents(),['What is included','Events are not every request','What dates mean','Scheduled checks','Saved checks and coverage','Source verification and incomplete records']);assert.match(await page.locator('.activity-info').innerText(),/12:17 UTC/);
- await page.getByRole('link',{name:'Browse all visible public requests'}).click();await page.locator('#search').waitFor();assert.equal(await page.locator('#search').inputValue(),'');
+ await page.locator('.activity-info summary').click();assert.deepEqual(await page.locator('.activity-info h2').allTextContents(),['Recent Activity']);assert.match(await page.locator('.activity-info').innerText(),/Scheduled daily.*Not live/);
+ await page.getByRole('link',{name:'Browse public requests'}).click();await page.locator('#search').waitFor();assert.equal(await page.locator('#search').inputValue(),'');
  // Representative widths, doubled text and CSS zoom/reflow. Physical browser/AT acceptance is separate.
  for(const [width,mode] of [[320,'normal'],[375,'normal'],[390,'normal'],[430,'normal'],[768,'normal'],[1024,'normal'],[1280,'normal'],[390,'text'],[768,'text'],[390,'zoom'],[1280,'zoom']]){
   await page.setViewportSize({width,height:900});await visit('requests');await page.locator('.bill-row').first().waitFor();

@@ -212,3 +212,7 @@ The owner-authorized [UI-006 batch](docs/PHASE4U_VERIFICATION.md) restores the a
 ## Phase 4V — session clarity and compact discovery
 
 The owner-authorized [UI-007 batch](docs/PHASE4V_VERIFICATION.md) separates 2027 bill counts/activity from the verified 2026 roster and archive, adds compact directory sorting/search, refines Advanced search and slate historical treatment, and makes Calendar optional with next-event selection across saved coverage. The amendment moves archive navigation to the shared footer and leaves only two 2027 Records choices; archive views omit that selector. This supersedes UI-006’s third archive option, preserving historical routes and profile archive activity. No acquisition or source-record changes. Human acceptance, scheduled publication and first-real-2027 validation remain priorities; no release authorization is implied.
+
+## Phase 4W presentation refinement
+
+Phone Records totals and official-source placement are compact; Sort and Per page reuse the existing More menu while desktop controls stay visible. Principal Info panels link to retained About Data methodology. Calendar returns to current/upcoming saved activity on route entry, preserves active browsing, and groups events by date. This supersedes the earlier permanent Show all month / return-to-date controls with month/date browsing and a contextual Upcoming action. See [Phase 4W verification](docs/PHASE4W_VERIFICATION.md) and UI-008; no data pipeline, source records or unfinished readiness priority changes.

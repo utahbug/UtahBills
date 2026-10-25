@@ -13,7 +13,7 @@ try{
  const summary=page.locator('.directory-actions .toolbar-info');await summary.focus();await page.keyboard.press('Enter');
  const finder=page.locator('#directory-info'),link=page.locator('a.find-legislators');
  assert.equal(await link.getAttribute('href'),'https://le.utah.gov/GIS/findDistrict.jsp');assert.equal(await link.getAttribute('target'),'_blank');assert.match(await link.getAttribute('rel'),/noreferrer/);
- assert.match(await finder.innerText(),/UtahBug does not receive it/);assert.match(await finder.innerText(),/verified 2027 membership is unavailable/);
+ assert.match(await finder.innerText(),/Addresses entered there are not sent to UtahBug/);assert.match(await finder.innerText(),/final 2027 membership is not verified/);
  assert.equal(await finder.locator('input,textarea,form,iframe').count(),0);
  await page.keyboard.press('Escape');
  // Intercept the external navigation: no address is sent; remote service results are not simulated.

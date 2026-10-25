@@ -1,3 +1,4 @@
+import {billOptions} from './fixtures/bill-options.mjs';
 import {openCalendar} from './fixtures/calendar-navigation.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {monthDays} from '../calendar.js';
@@ -9,7 +10,7 @@ try{
  assert.deepEqual(monthDays('2026-10'),{offset:4,count:31});assert.deepEqual(monthDays('2027-02'),{offset:1,count:28});assert.deepEqual(monthDays('2028-02'),{offset:2,count:29});
  await page.goto(base+'#calendar');await openCalendar(page);await openCalendar(page);await page.locator('#calendar-month').selectOption('2026-10');
  assert.equal(await page.locator('.calendar-day').count(),31);await page.locator('[data-date="2026-10-21"]').focus();await page.keyboard.press('Enter');assert.match(await page.locator('#day-events').innerText(),/Transportation Interim/);assert.match(await page.locator('#day-events').innerText(),/8:30 AM MDT/);
- await page.locator('#all-month').click();assert.equal(await page.locator('.calendar-day').count(),31);assert.equal(await page.locator('[data-date][aria-pressed=true]').count(),0);const dates=await page.locator('.calendar-event time').evaluateAll(es=>es.map(e=>e.dateTime));assert.deepEqual(dates,[...dates].sort());
+ await page.locator('#calendar-month').selectOption('2026-11');await page.locator('#calendar-month').selectOption('2026-10');assert.equal(await page.locator('.calendar-day').count(),31);assert.equal(await page.locator('[data-date][aria-pressed=true]').count(),0);const dates=await page.locator('.calendar-event time').evaluateAll(es=>es.map(e=>e.dateTime));assert.deepEqual(dates,[...dates].sort());
  const snapshot=JSON.parse(await readFile('data/calendar.json','utf8'));
  const ids=()=>page.locator('.calendar-event').evaluateAll(es=>es.map(e=>e.dataset.event));
  const expected=(month,start='',type='')=>snapshot.events.filter(e=>e.date.startsWith(month)&&e.date>=start&&(!type||e.category===type)).map(e=>e.id);
@@ -18,7 +19,7 @@ try{
  assert.equal(await page.locator('[data-date="2026-10-21"]').getAttribute('aria-pressed'),'true');
  await page.locator('[data-date="2026-10-23"]').click();assert.deepEqual(await ids(),expected('2026-10','2026-10-23'));
  await page.locator('[data-date="2026-10-31"]').click();assert.deepEqual(await ids(),expected('2026-10','2026-10-31'));
- await page.locator('#all-month').click();assert.deepEqual(await ids(),expected('2026-10'));
+ await page.locator('#calendar-month').selectOption('2026-11');await page.locator('#calendar-month').selectOption('2026-10');assert.deepEqual(await ids(),expected('2026-10'));
  await page.locator('#calendar-month').selectOption('2027-04');assert.deepEqual(await ids(),expected('2027-04'));
  await openCalendar(page);await page.locator('#calendar-month').selectOption('2026-10');assert.deepEqual(await ids(),expected('2026-10'));
  assert.equal(await page.locator('#month-view,#list-view').count(),0);
@@ -49,7 +50,7 @@ try{
  // Synthetic collection stays in this intercepted test response, never in production data.
  const originals=JSON.parse(await readFile('data/bills.json','utf8'));const generated=Array.from({length:1200},(_,i)=>({...originals[i%4],versions:[{...originals[i%4].versions[0],formatted:[],sections:[{...originals[i%4].versions[0].sections[0],before:'Test text',after:'Test text'}]}],billVersionList:[],agendaList:[],actionHistoryList:originals[i%4].actionHistoryList.slice(-1),billNumber:'HB'+String(i+1).padStart(4,'0'),billNumberShort:'H.B. '+(i+1),shortTitle:'Generated test bill '+String(i+1).padStart(4,'0')}));
  await page.route('**/data/examples-ui.json',r=>r.fulfill({json:generated}));const catalogFixture=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8'));await page.route('**/data/catalog-ui.json',r=>r.fulfill({json:{...catalogFixture,measures:generated.map(b=>({...b,kind:'Bill',sessionID:'2026GS'}))}}));await page.setViewportSize({width:390,height:800});await page.goto(base+'?large-test#bills');await openArchive(page);await page.locator('.bill-row').first().waitFor();assert.equal(await page.locator('.bill-row').count(),25);assert.equal(await page.locator('.bill-row h2 a').count(),25);
- await page.locator('.advanced-search>summary').click();await page.locator('#sort').selectOption('number');await page.locator('#next-page').click();assert.match(await page.locator('.bill-row').first().innerText(),/H.B. 26/);
+ await page.locator('.advanced-search>summary').click();await billOptions(page);await page.locator('#sort').selectOption('number');await page.locator('#next-page').click();assert.match(await page.locator('.bill-row').first().innerText(),/H.B. 26/);
  await page.locator('#search').fill('Generated test');await page.locator('#topic').selectOption(originals[0].topic);await page.locator('#next-page').click();
  const row=page.locator('.bill-row').nth(4);await row.scrollIntoViewIfNeeded();const scroll=await page.evaluate(()=>scrollY);const href=await row.locator('h2 a').getAttribute('href');
  // Click padding, not the link text: stretched link must activate.
