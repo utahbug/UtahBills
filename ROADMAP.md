@@ -54,6 +54,7 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 - **Implemented:** linked bill counts/listings by stable ID; chief, floor and version-specific cosponsor roles stay separate.
 - **Planned:** establish 2027 membership from official session records; historical contact snapshots when verified.
 - **Deferred:** public financial disclosures, after source and interpretation review.
+- **Deferred — LEG-003:** factual 2027 sponsorship comparison once real introduced bills make it useful. Distinguish chief-sponsored bills from distinct bills sponsored across chief/floor/cosponsor roles, without duplicate roles/versions or performance scoring. Optional total-sponsored sorting/column and role labels require a separate scoped batch.
 
 ## Stage 3 — Calendar and activity · Partly implemented
 
@@ -216,3 +217,7 @@ The owner-authorized [UI-007 batch](docs/PHASE4V_VERIFICATION.md) separates 2027
 ## Phase 4W presentation refinement
 
 Phone Records totals and official-source placement are compact; Sort and Per page reuse the existing More menu while desktop controls stay visible. Principal Info panels link to retained About Data methodology. Calendar returns to current/upcoming saved activity on route entry, preserves active browsing, and groups events by date. This supersedes the earlier permanent Show all month / return-to-date controls with month/date browsing and a contextual Upcoming action. See [Phase 4W verification](docs/PHASE4W_VERIFICATION.md) and UI-008; no data pipeline, source records or unfinished readiness priority changes.
+
+## Phase 4X responsive directory and historical appearance
+
+Directory column controls and stacked records share one container-width transition; narrow views use a six-choice dropdown backed by the existing sort state. Desktop bill-count sorting starts most first, with alphabetical ties. Row years remain accessible and in Copy; only the redundant desktop visual year is omitted. Historical headings and records use restrained parchment, with current contact panels unchanged. See [Phase 4X verification](docs/PHASE4X_VERIFICATION.md). LEG-003 remains deferred; Phase 4W Bills/Activity/Calendar behavior and all source safeguards are preserved.

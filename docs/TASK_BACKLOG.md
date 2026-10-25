@@ -16,7 +16,7 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **37 tasks**; **13 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Active inventory: **38 tasks**; **14 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
 
 | Status | Count |
 | --- | ---: |
@@ -24,13 +24,13 @@ Active inventory: **37 tasks**; **13 completed tasks** retain their IDs in the c
 | Approved/Not started | 23 |
 | Proposed | 2 |
 | Blocked | 8 |
-| Deferred | 3 |
+| Deferred | 4 |
 
 | Priority | Count |
 | --- | ---: |
 | Critical | 0 |
 | High | 4 |
-| Medium | 25 |
+| Medium | 26 |
 | Low | 8 |
 
 Priority is a planning order, not a new defect-severity finding. Blocked tasks remain approved work whose completion requires the stated evidence/dependency; bounded investigation may continue when separately scoped. No critical defect was established by Phase 4C.
@@ -148,6 +148,14 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Dependencies:** Dated official historical contact records.
 - **Source:** [Roadmap Stage 2](../ROADMAP.md#stage-2--legislator-directory--partly-implemented).
 - **Acceptance:** Preserve historical source dates and stable-ID associations; distinguish historical contacts from current contacts in display and tests. Keep unavailable records explicit, including BURTOJS, CLANCT, GWYNNM and LEETA where evidence remains absent; never substitute a successor.
+
+### LEG-003
+
+**Compare verified 2027 sponsorship activity** — **Medium** · **Deferred**
+
+- **Dependencies:** Real introduced 2027 legislation sufficient to make comparison useful; exact session/bill/sponsor identities and a separately approved implementation batch. No implementation is authorized by Phase 4X.
+- **Source:** Owner Phase 4X §5; [Roadmap Stage 2](../ROADMAP.md#stage-2--legislator-directory--partly-implemented).
+- **Acceptance:** Distinguish chief-sponsored **Bills introduced** from **Total bills sponsored**, the distinct union of chief, opposite-chamber floor and cosponsor roles. Deduplicate exact base-bill identities across roles and versions; exclude requests and resolutions from bill counts. Preserve role labels, source/session context and unavailable/partial evidence. Test overlapping roles, duplicate versions, zero counts, stable most/fewest ordering and House/Senate scopes. Consider an optional fourth directory column, total-sponsored sorting and compact role labels only in the future scoped design. Present factual activity, never a performance score or an inference of support for every version.
 
 ## 6. Additional bill transparency and legal resources
 
@@ -595,3 +603,13 @@ Active inventory remains **37**; every unfinished task ID/status/priority remain
 - **Evidence:** [Phase 4W verification](PHASE4W_VERIFICATION.md), `tests/phase4w.mjs` and affected retained regressions. Implementation commit is the commit introducing this record; resolve with `git log -1 --format=%H -- docs/PHASE4W_VERIFICATION.md`. Mandatory CI/deployment and final SHA are recorded with delivery. No human acceptance is implied.
 
 All **37 active tasks** retain their IDs, priorities and statuses. TEST-001 remains High/Blocked; UI-001 and RELEASE-001/002/004 remain unfinished. This bounded refinement does not authorize public release or unrelated backlog implementation.
+
+## Phase 4X maintenance — UI-009
+
+**Responsive directory sorting and historical parchment appearance** — **Medium** · **Completed implementation — October 24, 2026**
+
+- **Source:** Owner Phase 4X §§1–4; replaces only the specified narrow directory layout and archive palette.
+- **Acceptance:** A shared content-width breakpoint synchronizes stacked entries with the six-choice Sort dropdown; desktop headings and the dropdown use one sort state. First desktop bill-count selection sorts most first; numeric ties retain alphabetical order. Desktop row years are visually omitted but accessible names and Copy retain 2027; stacked rows retain the visible year. Compact separated rows preserve links. Parchment applies to archive headings/results/details/sponsorship and historical profile identification while separately dated contact panels remain untinted.
+- **Evidence:** [Phase 4X verification](PHASE4X_VERIFICATION.md), focused `tests/phase4x.mjs` and affected directory/popover regressions. Implementation commit is the commit introducing this record (`git log -1 --format=%H -- docs/PHASE4X_VERIFICATION.md`); final CI/deployment evidence accompanies delivery.
+
+There are **38 active tasks** after adding only deferred LEG-003. All prior unfinished IDs/statuses/priorities remain unchanged. TEST-001, UI-001 and release acceptance remain open. No source acquisition, pipeline, hosting or domain change is included.
