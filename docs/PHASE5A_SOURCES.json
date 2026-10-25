@@ -1,0 +1,38 @@
+{
+  "sources": {
+    "requests": {
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "path": "data/catalog-raw/72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4.json",
+      "sha256": "72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4",
+      "retrievedAt": "2026-10-25T05:38:55.303458+00:00"
+    },
+    "statuses": {
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "path": "docs/evidence/phase4u-scheduled-40109485828/catalog-attempt-raw/cc7a2261be3e6becbcf18a59158c665f25d391f38ce98b1af38eaac179c20fdb.txt",
+      "sha256": "cc7a2261be3e6becbcf18a59158c665f25d391f38ce98b1af38eaac179c20fdb",
+      "retrievedAt": "2026-10-25T05:38:55.714842+00:00"
+    },
+    "index": {
+      "url": "https://le.utah.gov/data/2027GS/billlist.json",
+      "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "retrievedAt": "2026-10-25T05:38:55.992234+00:00"
+    },
+    "roster": {
+      "url": "https://le.utah.gov/asp/roster/roster.asp?year=2027",
+      "path": "data/catalog-raw/abfcb8821da4a3bc12e5992d10cfeab0c267c6c56794e9a43c13af54a8c846d7.txt",
+      "sha256": "abfcb8821da4a3bc12e5992d10cfeab0c267c6c56794e9a43c13af54a8c846d7",
+      "retrievedAt": "2026-10-25T05:38:56.318650+00:00"
+    }
+  },
+  "requestCount": 273,
+  "statusCount": 273,
+  "introducedIndexCount": 0,
+  "missing": [],
+  "reconciliation": {
+    "status": "success",
+    "officialTotal": 273,
+    "verifiedTotal": 273,
+    "withheld": []
+  }
+}

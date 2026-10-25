@@ -21,14 +21,26 @@ class Updates(unittest.TestCase):
   source=dict(path=str(path),url=url,sha256=sha,retrievedAt=r.now());self.feeds[url]=source;return source
  def statuses(self,rows):
   from html import escape
+  self.statusrows=copy.deepcopy(rows)
+  rows=copy.deepcopy(rows)
+  # Complete fixtures include the same independently numbered listing required in production.
+  index=self.feeds.get('https://le.utah.gov/data/2027GS/billlist.json')
+  for item in json.loads(m.read(index)) if index else []:
+   record=json.loads(m.read(self.feeds['https://le.utah.gov/data/2027GS/'+item['number']+'.json']))
+   row=next((x for x in rows if x['trackingID']==item['trackingID']),None)
+   if row is None:
+    row=dict(trackingID=item['trackingID'],shortTitle=record['shortTitle']);rows.append(row)
+   row.setdefault('officialNumber',item['number'])
   cells=''.join('<tr><td><input data-trackingid="'+escape(x.get('trackingID','MISSING'))+'"></td><td>'+escape(x.get('officialNumber','Not Numbered'))+'</td><td>'+escape(x.get('shortTitle','Test'))+'</td><td>Test sponsor</td><td></td><td>'+escape(x.get('officialStatus','In Process'))+'</td></tr>' for x in (rows or [dict(trackingID='UNRELATED',shortTitle='Synthetic unrelated row')]))
   body=('<h1>2027GS</h1><table id="resultTbl"><tr><th>Tracking</th><th>Bill#</th><th>ShortTitle</th><th>Sponsor</th><th>FloorSponsor</th><th>Status</th></tr>'+cells+'</table>').encode()
   self.source(body,r.STATUS_URL)
  def requests(self,rows):
   self.source(rows,'https://le.utah.gov/data/2027GS/filelist.json');self.statuses(rows)
- def bill(self,tracking='TESTREQUEST',number='HB0001',marker='2027-01-01 12:00:00'):
+ def bill(self,tracking='TESTREQUEST',number='HB0001',marker='2027-01-01 12:00:00',listing=True):
   bill=copy.deepcopy(self.realBill);bill.update(sessionID='2027GS',year=2027,billNumber=number,trackingID=tracking,shortTitle='SYNTHETIC TEST ONLY')
-  self.source(bill,'https://le.utah.gov/data/2027GS/'+number+'.json');self.source([dict(number=number,trackingID=tracking,updatetime=marker,lastActionTime=marker)],'https://le.utah.gov/data/2027GS/billlist.json');return bill
+  self.source(bill,'https://le.utah.gov/data/2027GS/'+number+'.json');self.source([dict(number=number,trackingID=tracking,updatetime=marker,lastActionTime=marker)],'https://le.utah.gov/data/2027GS/billlist.json')
+  if listing:self.statuses(self.statusrows)
+  return bill
  def current(self):return json.loads(self.target.read_text(encoding='utf-8'))
  def test_new_changed_reconciled_history_and_recovery(self):
   request=dict(trackingID='TESTREQUEST',shortTitle='SYNTHETIC TEST ONLY',sponsor='GRICIS');self.requests([request]);r.run()
@@ -64,6 +76,20 @@ class Updates(unittest.TestCase):
   b=self.bill();r.run();before=self.target.read_bytes();b=self.bill(marker='2027-01-02 12:00:00');b['actionHistoryList']=[];self.source(b,'https://le.utah.gov/data/2027GS/HB0001.json')
   with self.assertRaisesRegex(AssertionError,'actions disappeared'):r.run()
   self.assertEqual(before,self.target.read_bytes())
+ def test_full_reconciliation_rejects_contradictory_introduced_listing(self):
+  request=dict(trackingID='TESTREQUEST',shortTitle='SYNTHETIC TEST ONLY',sponsor='GRICIS')
+  self.requests([request]);r.run();before=self.target.read_bytes();self.bill()
+  for number in ('HB9999','Not Numbered'):
+   self.statuses([{**request,'officialNumber':number}])
+   with self.assertRaisesRegex(AssertionError,'listing'):r.run()
+   self.assertEqual(self.target.read_bytes(),before)
+  self.statuses([{**request,'officialNumber':'HB0001'}]);r.run()
+  d=m.derive(self.current());self.assertEqual(d['requestArchive2027'][0]['introducedBill'],'HB0001')
+  self.assertEqual(d['requests2027'],[])
+  # A numbered official row without a matching acquired measure must also fail closed.
+  stable=self.target.read_bytes();self.statuses([{**request,'officialNumber':'HB0001'},dict(trackingID='UNACQUIRED',shortTitle='Unacquired',officialNumber='SB0001')])
+  with self.assertRaisesRegex(AssertionError,'Unreconciled numbered listing'):r.run()
+  self.assertEqual(self.target.read_bytes(),stable)
  def test_status_only_changes_and_failed_listing_preserves_snapshot(self):
   request=dict(trackingID='TESTREQUEST',shortTitle='SYNTHETIC TEST ONLY',sponsor='GRICIS');self.requests([request]);r.run();old=self.current();original=old['sources']['requests2027']
   self.statuses([{**request,'officialStatus':'Bill Abandoned per Sponsor'}]);r.run();d=m.derive(self.current());entry=d['requests2027'][0]

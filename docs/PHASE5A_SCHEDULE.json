@@ -1,0 +1,118 @@
+{
+  "conclusion": "failure",
+  "createdAt": "2026-10-24T15:59:42Z",
+  "databaseId": 40109485828,
+  "event": "schedule",
+  "headSha": "790f3cd6ea45564125b9497eb958d3584219d929",
+  "updatedAt": "2026-10-24T16:19:22Z",
+  "jobs": [
+    {
+      "name": "build",
+      "conclusion": "failure",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify reproducible UTF-8 source analysis",
+          "conclusion": "success"
+        },
+        {
+          "name": "Refresh official calendar",
+          "conclusion": "success"
+        },
+        {
+          "name": "Refresh 2027 legislation and requests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve independent request observations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Acquire bounded verified 2027 text",
+          "conclusion": "success"
+        },
+        {
+          "name": "Refresh official vote records",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve refresh attempt reports",
+          "conclusion": "success"
+        },
+        {
+          "name": "Report independent refresh outcomes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify calendar provenance and failure safeguards",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify bill catalog provenance and associations",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm ci",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run build",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "conclusion": "success"
+        },
+        {
+          "name": "Functional and accessibility checks",
+          "conclusion": "failure"
+        },
+        {
+          "name": "Preserve tested snapshots",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Run actions/configure-pages@v5",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Run actions/upload-pages-artifact@v3",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "refresh_health",
+      "conclusion": "skipped",
+      "steps": []
+    },
+    {
+      "name": "deploy",
+      "conclusion": "skipped",
+      "steps": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "attemptedAt": "2026-10-25T05:44:20.229232+00:00",
+  "status": "success",
+  "reconciliation": {
+    "status": "success",
+    "officialTotal": 273,
+    "verifiedTotal": 273,
+    "withheld": []
+  },
+  "introduced2027": 0,
+  "publicRequests": 273,
+  "requestStatusesVerified": 273,
+  "linkedRequests": 0,
+  "finishedAt": "2026-10-25T05:44:21.977469+00:00",
+  "publication": "Validated isolated candidate only; data/catalog.json and Main unchanged."
+}

@@ -501,7 +501,7 @@ TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-
 
 ## Next Recommended Batch
 
-**Recommended, not started:** verify a genuine scheduled use of the independent observation channel and seek authoritative convergence for the remaining two missing statuses ([Phase 4Q evidence](PHASE4Q_VERIFICATION.md)). Latest accepted coverage is 273 source requests, 271 verified statuses and two explicitly unconfirmed observations; failed catalog acceptance must remain distinct from supplemental success. The verified subset may advance under the new guards; partial reconciliation does not close TEST-001. Verify the next actual scheduled refresh under [TEST-001](#test-001), retaining separate acquisition, reconciliation, tests, commit and deployment evidence. The manual recovery path is now verified; no automatic monitoring has been created.
+**Recommended, not started:** verify publication of the [Phase 5A identity correction and audit](PHASE5A_READINESS.md), then evaluate the next genuine scheduled end-to-end refresh under [TEST-001](#test-001). The bounded October 24 Mountain-time check finds 273/273 official agreement, but Main still retains its older 273-visible/272-verified snapshot. The isolated guarded candidate is not scheduled or published acceptance. Keep acquisition, tests, preservation, deployment and refresh-health evidence separate; do not dispatch a manual run to simulate a schedule.
 
 Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. Preserve Recent Activity, legislative changes/substitutes/votes, Calendar coverage and refresh reliability as current-cycle work. Historical DATA-002/DATA-003 remain open below these priorities unless current-session defects emerge. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
 
@@ -613,3 +613,9 @@ All **37 active tasks** retain their IDs, priorities and statuses. TEST-001 rema
 - **Evidence:** [Phase 4X verification](PHASE4X_VERIFICATION.md), focused `tests/phase4x.mjs` and affected directory/popover regressions. Implementation commit is the commit introducing this record (`git log -1 --format=%H -- docs/PHASE4X_VERIFICATION.md`); final CI/deployment evidence accompanies delivery.
 
 There are **38 active tasks** after adding only deferred LEG-003. All prior unfinished IDs/statuses/priorities remain unchanged. TEST-001, UI-001 and release acceptance remain open. No source acquisition, pipeline, hosting or domain change is included.
+
+## Phase 5A readiness audit
+
+[Assessment and reproducible evidence](PHASE5A_READINESS.md): every published request and saved title/sponsor/status history was checked, all 273 were searchable, and complete/abandoned CSV exports matched source records. One bounded comparison finds all 273 official statuses now matched; an isolated guarded candidate passes, while production records remain unchanged. A reproduced future first-introduction defect in full reconciliation is corrected by applying the existing numbered-listing identity guard to complete as well as partial catalogs. Mandatory publication checks remain required.
+
+TEST-001 remains High/Blocked: no genuine schedule newer than failed 40109485828. SESSION-002/003, RELEASE-001/002/004 and UI-001 remain open; all 38 active task IDs/statuses/priorities are retained. Existing editorial pins and human acceptance records remain pending. The stale Next Recommended Batch counts are replaced with dated published-versus-observed distinctions; earlier phase sections remain historical evidence. No deferred feature is started.

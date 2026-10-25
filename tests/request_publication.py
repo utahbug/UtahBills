@@ -62,13 +62,13 @@ class PartialPublication(Updates):
   self.partial();b=self.bill(tracking=self.base[0]['trackingID']);b['shortTitle']=self.base[0]['shortTitle'];self.source(b,'https://le.utah.gov/data/2027GS/HB0001.json');self.statuses([{**self.base[0],'officialNumber':'HB0001'}]+self.base[1:]);r.run()
   result=m.derive(self.current());self.assertEqual(result['coverage']['2027']['imported'],1)
   self.assertEqual(next(x for x in result['requestArchive2027'] if x['trackingID']==self.base[0]['trackingID'])['introducedBill'],'HB0001')
-  before=self.target.read_bytes();self.bill(tracking='ISOLATEDNEW',number='HB0002')
+  before=self.target.read_bytes();self.bill(tracking='ISOLATEDNEW',number='HB0002',listing=False)
   # Preserve first bill in the index so the targeted missing-status relationship is reached.
   self.source([dict(number=n,trackingID=t,updatetime='2027-01-01 12:00:00') for n,t in [('HB0001',self.base[0]['trackingID']),('HB0002','ISOLATEDNEW')]],'https://le.utah.gov/data/2027GS/billlist.json')
   with self.assertRaisesRegex(AssertionError,'Introduced relationship'):r.run()
   self.assertEqual(before,self.target.read_bytes())
  def test_partial_requires_matching_introduced_listing(self):
-  self.partial();self.bill(tracking=self.base[0]['trackingID']);before=self.target.read_bytes()
+  self.partial();self.bill(tracking=self.base[0]['trackingID'],listing=False);before=self.target.read_bytes()
   with self.assertRaisesRegex(AssertionError,'introduced listing identity'):r.run()
   self.assertEqual(before,self.target.read_bytes())
  def test_unexplained_listing_identity_or_number_blocks(self):

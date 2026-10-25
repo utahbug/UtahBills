@@ -221,3 +221,7 @@ Phone Records totals and official-source placement are compact; Sort and Per pag
 ## Phase 4X responsive directory and historical appearance
 
 Directory column controls and stacked records share one container-width transition; narrow views use a six-choice dropdown backed by the existing sort state. Desktop bill-count sorting starts most first, with alphabetical ties. Row years remain accessible and in Copy; only the redundant desktop visual year is omitted. Historical headings and records use restrained parchment, with current contact panels unchanged. See [Phase 4X verification](docs/PHASE4X_VERIFICATION.md). LEG-003 remains deferred; Phase 4W Bills/Activity/Calendar behavior and all source safeguards are preserved.
+
+## Phase 5A — readiness audit
+
+The [comprehensive assessment](docs/PHASE5A_READINESS.md) verifies all saved requests/search/export and separates Main's 272 verified statuses plus one observation from newly checked 273/273 agreement. An isolated guarded candidate is not scheduled publication evidence. A reproduced full-reconciliation introduced-number contradiction is corrected; publication retains all mandatory checks and owner release boundaries. Next: genuine scheduled publication, independent editorial/device acceptance, then actual 2027 introduction/roster validation. TEST-001, SESSION-002/003 and release dependencies remain open; no deferred sponsorship comparison or visual redesign is included.

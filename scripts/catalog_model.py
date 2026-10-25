@@ -89,18 +89,19 @@ def derive(manifest,supplemental=None):
     if verification:
         assert verification['statusSource']==sources['requestStatuses2027'], 'Request verification uses stale status source'
         assert not set(introduced).intersection(x['trackingID'] for x in verification['withheld']), 'Introduced relationship withheld'
-        if verification['status']=='partial':
-            from request_status import parse_statuses, normalized
-            rows=parse_statuses(read(sources['requestStatuses2027']))
-            for ident,row in rows.items():
-                if row['officialNumber']=='Not Numbered':continue
-                number=re.sub(r'S\d+$','',re.sub(r'[.\s]','',row['officialNumber']))
-                assert re.fullmatch(r'[HS](?:B|R|JR|CR)\d{3,4}',number) and introduced.get(ident)==number, 'Unreconciled numbered listing during partial publication'
-            for b in measure:
-                if b['sessionID']!='2027GS':continue
-                row=rows.get(b['trackingID'])
-                assert row and re.sub(r'S\d+$','',re.sub(r'[.\s]','',row['officialNumber']))==b['billNumber'], 'Partial publication requires verified introduced listing identity'
-                assert normalized(row['shortTitle'])==normalized(b['shortTitle']), 'Introduced listing title mismatch during partial publication'
+    # Numbered listing relationships must agree even when every request has a status.
+    if sources.get('requestStatuses2027'):
+        from request_status import parse_statuses, normalized
+        rows=parse_statuses(read(sources['requestStatuses2027']))
+        for ident,row in rows.items():
+            if row['officialNumber']=='Not Numbered':continue
+            number=re.sub(r'S\d+$','',re.sub(r'[.\s]','',row['officialNumber']))
+            assert re.fullmatch(r'[HS](?:B|R|JR|CR)\d{3,4}',number) and introduced.get(ident)==number, 'Unreconciled numbered listing'
+        for b in measure:
+            if b['sessionID']!='2027GS':continue
+            row=rows.get(b['trackingID'])
+            assert row and re.sub(r'S\d+$','',re.sub(r'[.\s]','',row['officialNumber']))==b['billNumber'], 'Publication requires verified introduced listing identity'
+            assert normalized(row['shortTitle'])==normalized(b['shortTitle']), 'Introduced listing title mismatch'
     publication={k:verification[k] for k in ('status','officialTotal','verifiedTotal','withheld')} if verification else dict(status='success',officialTotal=len(current),verifiedTotal=len(current),withheld=[])
     for ident,r in archive.items():
         r['verificationState']='status-verified';r['introducedBill']=introduced.get(ident);r['currentlyListed']=ident in current
