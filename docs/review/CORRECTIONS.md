@@ -1,10 +1,10 @@
 # Correction-management procedure
 
-Updated October 25, 2026 for RELEASE-001 / Phase 5B. The owner approved **kenroberts@live.com** as the initial contact address for testing, displayed on [Contact](https://utahbug.github.io/UtahBills/#contact). Actual email send/receipt testing remains **pending owner acceptance**. This channel is not independent editorial approval or public-release authorization. [Review package](README.md).
+Updated October 25, 2026 for RELEASE-001 / Phase 5B. The owner approved **kenroberts@live.com** as the actual mailto recipient for testing on [Contact](https://utahbug.github.io/UtahBills/#contact). Actual email send/receipt testing remains **pending owner acceptance**. This channel is not independent editorial approval or public-release authorization. [Review package](README.md).
 
 ## Approved channel and remaining owner decisions
 
-The application value is centralized in [contact-config.js](../../contact-config.js). The future contact@utahbug.com address is inactive until the owner confirms configuration, testing and approval. No form, submission database or new service is created. No DNS, routing or hosting changes are authorized.
+The application values are centralized in [contact-config.js](../../contact-config.js). **Outstanding pre-release correction:** at the owner’s temporary testing request, Contact displays contact@utahbug.com while its mailto recipient remains kenroberts@live.com. The subject is “Utah Legislation - Comments, questions or corrections”. The displayed branded mailbox is not claimed operational; copying that displayed address does not use the tested mailto recipient. Before release, the owner must confirm configuration and real send/receipt testing, approve activation and align the displayed address and recipient. Keep this mismatch open until then. No form, submission database or new service is created. No DNS, routing or hosting changes are authorized.
 
 The owner must send and receive a real test message, confirm monitoring, name an intake maintainer/backup and independent editorial reviewer, and assign approval responsibilities. No response-time commitment is approved. The initial substantive public record is [CORRECTION_LOG.md](CORRECTION_LOG.md); no entries or past approvals are invented. Reporter identities and private correspondence must not be published without permission. Store private intake correspondence in the approved mailbox, not GitHub; public evidence must be redacted and limited to what establishes the correction.
 

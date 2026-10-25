@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {contactEmail} from '../contact-config.js';
+import {contactEmail,contactDisplayEmail,contactSubject} from '../contact-config.js';
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 const catalog=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8'));
 const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
@@ -21,13 +21,18 @@ try{
   assert.equal(await page.locator('main').evaluate(e=>e===document.activeElement),true);
  }
  await page.goto(base+'#contact');await page.reload();await contact();assert.equal(await page.title(),'Contact · UtahBug');
- const email=page.locator('.contact-email');assert.equal(await email.innerText(),contactEmail);
- const url=new URL(await email.getAttribute('href'));assert.equal(url.protocol,'mailto:');assert.equal(url.pathname,'kenroberts@live.com');assert.equal(url.searchParams.get('subject'),'UtahBills — Question or Correction');
- assert.ok((await email.getAttribute('href')).includes('%E2%80%94'));assert.equal(await email.getAttribute('target'),null);
+ const email=page.locator('.contact-email');assert.equal(await email.innerText(),contactDisplayEmail);
+ const url=new URL(await email.getAttribute('href'));assert.equal(url.protocol,'mailto:');assert.equal(url.pathname,contactEmail);assert.equal(url.searchParams.get('subject'),'Utah Legislation - Comments, questions or corrections');
+ assert.ok((await email.getAttribute('href')).endsWith(encodeURIComponent(contactSubject)));assert.equal(contactDisplayEmail,'contact@utahbug.com');assert.equal(contactEmail,'kenroberts@live.com');assert.equal(await email.getAttribute('target'),null);
  assert.equal(await page.locator('main input,main textarea,main form').count(),0);
- assert.ok((await page.locator('main').innerText()).includes('copy this address into your email service'));
+ assert.equal((await page.locator('main').innerText()).includes('If no email application opens'),false);
+ assert.deepEqual(await page.locator('.contact-page li').allTextContents(),['Page URL','Bill number or tracking ID','Description of the problem','Official source or supporting information, if available']);
+ assert.ok((await page.locator('.contact-page > :last-child').innerText()).includes('independent, nonpartisan'));
+ assert.deepEqual(await page.locator('footer nav a').allTextContents(),['About','FAQ','2026 Legislative Archive','Contact']);
+ assert.equal(await page.locator('footer nav > :not(a)').count(),0,'No orphanable separator nodes');
+ assert.ok((await page.locator('footer p').innerText()).startsWith('© 2026 UtahBug. Unofficial, independent site.'));
  await email.evaluate(e=>{const r=document.createRange();r.selectNodeContents(e);getSelection().removeAllRanges();getSelection().addRange(r)});
- assert.equal(await page.evaluate(()=>getSelection().toString()),contactEmail); // Visible selection works without opening a mail client.
+ assert.equal(await page.evaluate(()=>getSelection().toString()),contactDisplayEmail); // Visible selection works without opening a mail client.
  await page.locator('footer a[href="#faq"]').click();await page.locator('h1').filter({hasText:/^FAQ$/}).waitFor();
  await page.goBack();await contact();await page.goForward();await page.locator('h1').filter({hasText:/^FAQ$/}).waitFor();
  await footer().focus();await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');

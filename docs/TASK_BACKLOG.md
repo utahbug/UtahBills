@@ -287,6 +287,8 @@ Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 
 
 **Phase 4D progress:** Manual guarded run [39869478421](https://github.com/utahbug/UtahBills/actions/runs/39869478421) passed Calendar/Catalog/archive acquisition, reconciliation, tests, snapshot commit and deployment. No subsequent cron-triggered run existed at verification; this task remains open for that distinct evidence. DATA-001 is resolved.
 
+**Phase 5B follow-up:** Genuine schedule [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281) completed with successful build/deployment and snapshot commit `1fcba42`. It was allowed to finish before the UI push. TEST-001 remains open pending its full component-report, preservation and deployed-freshness acceptance review; this bounded footer/Contact refinement does not perform that audit.
+
 ### TEST-002
 
 **Review tests when official historical records change** — **Medium** · **Approved/Not started**
@@ -321,7 +323,7 @@ Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 
 - **Source:** [Audit M3](QUALITY_AUDIT.md#m3--human-accessibility-and-editorial-review-remain-unperformed--open-validation-gap); [Roadmap Stage 6](../ROADMAP.md#stage-6--public-release-preparation--planned).
 - **Acceptance:** Review HB0011, HB0154, HB0155 and SB0069 explanations against their pinned versions (SB0069 explanation is second substitute). Record findings, reviewer/date and resolved corrections; define a transparent reporting, verification and correction-history process. Do not relabel agent review as independent human approval.
 
-- **Phase 5B partial progress (October 25):** Contact route and owner-approved temporary email, documented correction procedure and empty substantive correction log prepared; see [verification](PHASE5B_VERIFICATION.md). Real email send/receipt and monitoring assignments remain owner acceptance. All four independent editorial reviews remain pending; RELEASE-001 is not complete.
+- **Phase 5B partial progress (October 25):** Contact route and owner-approved temporary email, documented correction procedure and empty substantive correction log prepared; see [verification](PHASE5B_VERIFICATION.md). Real email send/receipt and monitoring assignments remain owner acceptance. All four independent editorial reviews remain pending; RELEASE-001 is not complete. **Follow-up pre-release correction:** the owner requested displaying contact@utahbug.com while mailto still targets kenroberts@live.com during testing. Branded mailbox operation is unverified; owner configuration, real delivery testing and approval must precede aligning/activating it. This mismatch remains open.
 
 ### RELEASE-002
 

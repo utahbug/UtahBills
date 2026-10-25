@@ -373,3 +373,7 @@ footer nav a{font:inherit;color:inherit;text-decoration:underline;margin:0;paddi
 
 /* Visible email remains copyable and reflows at enlarged text sizes. */
 .contact-email{display:inline-block;min-height:44px;padding:8px 0;overflow-wrap:anywhere;max-width:100%}
+
+/* Plain footer links wrap without orphaned separators. */
+footer nav{column-gap:14px}
+.contact-page .guide ul{margin:4px 0 8px}.contact-page .guide li{margin:2px 0}

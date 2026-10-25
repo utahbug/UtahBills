@@ -1,4 +1,4 @@
-import {contactEmail} from './contact-config.js';
+import {contactEmail,contactDisplayEmail,contactSubject} from './contact-config.js';
 import {resultsPerPage,pagePreference,billToolbarLayout,copyResults,copyText,copyRows,exportResults,paginationIcon,toolbarInfo,navigationTools,scrollSectionIntoView} from './ui.js';
 const syncNavigation=navigationTools();
 import {compareSponsors} from './sponsor-sort.js';
@@ -107,8 +107,8 @@ function about(){
 }
 function contact(){
  document.title='Contact · UtahBug';
- const mailto='mailto:'+contactEmail+'?subject='+encodeURIComponent('UtahBills — Question or Correction');
- $('#main').innerHTML=`<div class="about-page contact-page"><h1>Contact UtahBug</h1><p>Questions, corrections, and suggestions about UtahBills are welcome.</p><p>UtahBills is an independent, nonpartisan legislative-information resource, not affiliated with the Utah Legislature.</p><p><a class="contact-email" href="${esc(mailto)}">${esc(contactEmail)}</a></p><p>If no email application opens, copy this address into your email service.</p><section class="guide"><h2>Reporting a problem</h2><p>Helpful details include the page URL or bill/tracking ID, a brief description of the suspected problem, the correct information if known, and an official source link when available. Send what you have; none of these details is required.</p><p>Please do not send sensitive personal information.</p></section><section class="guide"><h2>Corrections</h2><p>Reported inaccuracies are checked against authoritative sources. When a significant UtahBills error is confirmed, the correction and its supporting evidence are documented. Changes to official legislative records are distinguished from errors in UtahBills.</p><p>Unresolved discrepancies between official sources remain identified as unconfirmed; a report does not by itself establish an error.</p></section></div>`;
+ const mailto='mailto:'+contactEmail+'?subject='+encodeURIComponent(contactSubject);
+ $('#main').innerHTML=`<div class="about-page contact-page"><h1>Contact UtahBug</h1><p>Questions, corrections, and suggestions about UtahBills are welcome.</p><p><a class="contact-email" href="${esc(mailto)}">${esc(contactDisplayEmail)}</a></p><section class="guide"><h2>Reporting a problem</h2><p>Optional details:</p><ul><li>Page URL</li><li>Bill number or tracking ID</li><li>Description of the problem</li><li>Official source or supporting information, if available</li></ul><p>Please do not send sensitive personal information.</p></section><section class="guide"><h2>Corrections</h2><p>Reported inaccuracies are checked against authoritative sources. When a significant UtahBills error is confirmed, the correction and its supporting evidence are documented. Changes to official legislative records are distinguished from errors in UtahBills.</p><p>Unresolved discrepancies between official sources remain identified as unconfirmed; a report does not by itself establish an error.</p></section><p>UtahBills is an independent, nonpartisan legislative-information resource, not affiliated with the Utah Legislature.</p></div>`;
 }
 function faq(){
  document.title='FAQ · UtahBug';
