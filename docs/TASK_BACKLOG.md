@@ -627,3 +627,11 @@ TEST-001 remains High/Blocked: no genuine schedule newer than failed 40109485828
 ## Mobile Bills toolbar refinement
 
 The approved mobile-only More/Info exchange reuses existing controls and keeps Copy rightmost, with viewport-contained menu placement and unchanged search Info/desktop behavior. [Focused verification](MOBILE_TOOLBAR_VERIFICATION.md) records request/introduced/archive coverage and accessibility checks. All unfinished task IDs and acceptance requirements remain unchanged; this does not complete human accessibility or release approval.
+
+## Phase 5C — UI-010
+
+**Consolidated interface alignment and spacing** — **Medium** · **Completed implementation — October 25, 2026**
+
+- **Source:** Owner Phase 5C request and responsive clarification. Replaces only the earlier mobile official-link placement and specified control/spacing treatments.
+- **Acceptance:** Shared label/input geometry, 440px desktop directory search, official search link associated with Search at every width, selected-value native selectors, Calendar divider/category alignment, concise Activity empty states and single final boundary, compact pagination and discreet accessible Contact icon. Preserve source records, navigation, filtering, Copy/CSV and all human/release acceptance requirements.
+- **Evidence:** [Phase 5C verification](PHASE5C_VERIFICATION.md), `tests/phase5c.mjs` and affected retained regressions. Implementation commit is the commit introducing that record (`git log -1 --format=%H -- docs/PHASE5C_VERIFICATION.md`); final CI/deployment accompanies delivery. All unfinished task IDs and statuses remain unchanged.

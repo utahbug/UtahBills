@@ -63,9 +63,18 @@ export function billToolbarLayout(host,{source,searchHeading,records,requestTota
  let heading;if(records){heading=document.createElement('div');heading.className='records-heading search-heading';records.prepend(heading);heading.append(records.querySelector('label'))}
  let last;const update=()=>{if(!host.isConnected||last===media.matches)return;last=media.matches;const active=document.activeElement;const focusMoved=sort.contains(active)||size.contains(active)||active===source||menu.contains(active)||active===countInfo;
   for(const name of ['left','right','top','max-width','max-height'])panel.style.removeProperty(name);
-  if(last){countGroup.prepend(menu);copyGroup.prepend(countInfo);panel.prepend(sort,size);sort.firstChild.textContent='Sort results by ';size.firstChild.textContent='Results per page ';if(heading)heading.append(source)}else{copyGroup.prepend(menu);countGroup.append(countInfo);controls.append(sort,size);sort.firstChild.textContent='Sort ';size.firstChild.textContent='Per page ';searchHeading.append(source)}
+  if(last){countGroup.prepend(menu);copyGroup.prepend(countInfo);panel.prepend(sort,size);sort.firstChild.textContent='Sort results by ';size.firstChild.textContent='Results per page ';searchHeading.append(source)}else{copyGroup.prepend(menu);countGroup.append(countInfo);controls.append(sort,size);sort.firstChild.textContent='Sort ';size.firstChild.textContent='Per page ';searchHeading.append(source)}
+  const fullSourceLabel='Official '+(records?'2027':'2026')+' Bill Search';source.setAttribute('aria-label',fullSourceLabel);const tail=source.querySelector('.external-tail');if(tail){source.firstChild.textContent=last?'Official ':fullSourceLabel.slice(0,-6);tail.firstChild.textContent=last?'search':'Search'}else source.textContent=last?'Official search':fullSourceLabel;
   if(records){records.querySelector('option[value="2027-requests"]').textContent=last?`2027 Public Bill Requests (${requestTotal})`:'2027 Public bill requests';records.querySelector('option[value="2027"]').textContent=last?`2027 Bills and resolutions (${measureTotal})`:'2027 Bills and resolutions'}
   if(focusMoved){if(last&&(sort.contains(active)||size.contains(active)))menu.open=true;active.focus({preventScroll:true})}placeMenu();
  };media.addEventListener('change',update);const dismiss=e=>{if(menu.open&&!menu.contains(e.target))menu.open=false};document.addEventListener('pointerdown',dismiss);document.addEventListener('focusin',dismiss);disposeBillLayout=()=>{positionController.abort();media.removeEventListener('change',update);document.removeEventListener('pointerdown',dismiss);document.removeEventListener('focusin',dismiss)};update();
  menu.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();menu.open=false;summary.focus()}});
+}
+
+// Keep the native select for interaction; its selected caption can reflow at large text sizes.
+let disposeCompactSelects=()=>{};
+export function compactSelects(root){
+ disposeCompactSelects();const pairs=[...root.querySelectorAll('select')].map(select=>{const display=document.createElement('span'),value=document.createElement('span');display.className='select-display';value.className='selected-value';value.setAttribute('aria-hidden','true');select.before(display);select.classList.add('compact-select');display.append(value,select);return {select,value}});
+ const update=()=>{for(const {select,value} of pairs)value.textContent=select.selectedOptions[0]?.textContent||''};
+ const observer=new MutationObserver(update);for(const {select} of pairs)observer.observe(select,{childList:true,subtree:true});root.addEventListener('change',update);update();disposeCompactSelects=()=>{observer.disconnect();root.removeEventListener('change',update)};
 }
