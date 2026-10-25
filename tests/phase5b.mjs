@@ -54,13 +54,14 @@ try{
 
  // Shared envelope: no extra row/height, 44px target, no overlapping nav and sticky visibility.
  const headerContact=page.getByRole('link',{name:'Contact UtahBug',exact:true});
- for(const width of [320,375,390,430,768,1024,1280])for(const mode of ['normal','text']){
+ for(const width of [320,375,390,430,768,1024,1280])for(const mode of ['normal','text',...(width===375?['arial','verdana']:[])]){
   await page.setViewportSize({width,height:844});await page.goto(base+'#requests');await page.reload();await page.locator('.bill-row').first().waitFor();
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
+  if(mode==='arial'||mode==='verdana')await page.evaluate(f=>document.documentElement.style.fontFamily=f,mode);
   await page.evaluate(()=>{window.contactLink=document.querySelector('.header-contact');contactLink.remove()});await page.waitForTimeout(80);
   const baseline=await page.locator('header').evaluate(e=>e.getBoundingClientRect().height);
   await page.evaluate(()=>document.querySelector('.header-inner').append(contactLink));await page.waitForTimeout(80);
-  if(mode==='normal')assert.ok((await page.locator('header').boundingBox()).height<=baseline+1,`No added header height ${width}`);
+  if(mode!=='text')assert.ok((await page.locator('header').boundingBox()).height<=baseline+1,`No added header height ${width} ${mode}`);
   assert.equal(await headerContact.getAttribute('title'),'Contact UtahBug');assert.equal(await headerContact.getAttribute('href'),'#contact');assert.equal(await headerContact.locator('svg.lucide-mail[aria-hidden="true"]').count(),1);
   for(const position of [0,500,1200]){
    await page.evaluate(y=>scrollTo(0,y),position);await page.waitForTimeout(80);
@@ -74,5 +75,5 @@ try{
  const touch=await browser.newContext({viewport:{width:375,height:812},isMobile:true,hasTouch:true});
  const phone=await touch.newPage();await phone.goto(base+'#requests');await phone.locator('.bill-row').first().waitFor();await phone.evaluate(()=>scrollTo(0,600));await phone.waitForTimeout(80);
  await phone.getByRole('link',{name:'Contact UtahBug',exact:true}).tap();await phone.getByRole('heading',{name:'Contact UtahBug',exact:true}).waitFor();assert.equal(await phone.locator('footer a[href="#contact"]').count(),1);await touch.close();
- assert.deepEqual(errors,[]);console.log('Phase 5B: Contact route families, history, email URL/selection, keyboard focus, 21 responsive combinations, 14 header cases, touch activation and accessibility passed. No email sent.');
+ assert.deepEqual(errors,[]);console.log('Phase 5B: Contact route families, history, email URL/selection, keyboard focus, 21 responsive combinations, 16 header cases, touch activation and accessibility passed. No email sent.');
 }finally{await browser.close()}
