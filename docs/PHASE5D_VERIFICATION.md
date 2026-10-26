@@ -48,3 +48,7 @@ The production build passed source/session/version/summary checksum validation, 
 ## Pending acceptance and unchanged safeguards
 
 No data, raw source, review packet, acquisition pipeline, refresh frequency, Contact configuration, hosting or domain changes. Main only; static noindex/nofollow retained. TEST-001 remains open; latest listed genuine scheduled run is [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281), reported successful before this baseline. This presentation batch does not re-audit its component reports against all TEST-001 criteria or treat that overall conclusion as closure. Five historical vote conflicts, unresolved identities, first-real-2027 acceptance, independent human editorial review, physical iPhone/iPad, manual VoiceOver/NVDA, native browser zoom and release approval remain unfinished. Automated checks and CSS zoom do not certify those human tasks.
+
+## CI correction
+
+Initial push run [40249895833](https://github.com/utahbug/UtahBills/actions/runs/40249895833) passed source-integrity/build gates and the new Phase 5D suite, then stopped in `tests/batch2b.mjs` because the basic-record qualification no longer used its established wording. The original explicit “No reviewed plain-English explanation or reconstructed statutory comparison…” qualification is restored. The unchanged `tests/batch2b.mjs` suite passes locally after restoration; deployment was skipped for that failed run. The corrected commit receives the complete mandatory workflow.
