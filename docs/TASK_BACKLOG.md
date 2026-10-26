@@ -645,3 +645,13 @@ The approved mobile-only More/Info exchange reuses existing controls and keeps C
 - **Evidence:** [Phase 5D verification](PHASE5D_VERIFICATION.md), `tests/phase5d.mjs`, strict nine-version reader conservation and affected retained regressions. Commit introducing this record is the implementation reference (`git log -1 --format=%H -- docs/PHASE5D_VERIFICATION.md`); required CI/Main deployment accompanies delivery.
 
 All unfinished task IDs/statuses remain unchanged. TEST-001, independent editorial review, human device/assistive-technology/native-zoom acceptance and release approval remain open. No legislative acquisition or raw-record changes are included.
+
+## Phase 5E — UI-012
+
+**Bill detail consolidation and visual refinement** — **Medium** · **Completed implementation — October 25, 2026**
+
+- **Source:** Owner Phase 5E request; bounded refinement of Phase 5D.
+- **Acceptance:** Combined Bill Summary preserves pinned wording and nested official provisions; discreet internal reader link; shared disclosure inset and readable compact native selectors; compact vote/supporting groups; consolidated Documents & sources without lost destinations; scoped historical event-date treatment; source-supported filed wording; preserved vote/text/source safeguards and 44px targets.
+- **Evidence:** [Phase 5E verification](PHASE5E_VERIFICATION.md), `tests/phase5e.mjs`, retained Phase 5D and strict reader/version/vote regressions. Implementation commit is the commit introducing that record (`git log -1 --format=%H -- docs/PHASE5E_VERIFICATION.md`); mandatory CI/Main publication accompanies delivery.
+
+All unfinished task IDs, priorities and statuses remain unchanged. This refinement does not complete TEST-001, human editorial/device/assistive-technology/native-zoom acceptance or public-release approval.

@@ -6,8 +6,8 @@
 .bill-row :is(h2,p,a,.tag){overflow-wrap:anywhere}
 .header-inner{gap:16px;padding-block:9px}header nav{margin-left:auto}
 footer nav{gap:4px;margin-bottom:8px}footer nav a{margin-left:0;min-height:44px}
-.reader-version-label{display:block;font-weight:600;margin-top:12px}
-#reader-version{max-width:100%;width:100%;margin:5px 0}
+.reader-version-label{display:block;font-weight:400;margin:0 0 4px}
+#reader-version{max-width:100%;width:100%;margin:0}
 .formatted-bill{font-family:Georgia,"Times New Roman",serif;font-size:1.0625rem;line-height:1.75;overflow-wrap:anywhere;max-width:75ch;margin:16px auto;color:#233547}
 .formatted-bill h3{font-family:system-ui,sans-serif;font-size:1.05em;margin:20px 0 8px}
 .formatted-bill h4{font-size:1em;margin:8px 0}.bill-section{border-top:1px solid var(--line);margin-top:20px}
@@ -428,6 +428,35 @@ footer nav{column-gap:14px}
 main:has(>#results){padding-bottom:10px}
 #results>.pagination,.activity-controls~.pagination{margin:10px 0 0}
 
-/* Phase 5D: one reading order, with complete evidence progressively disclosed. */
-.bill-detail{max-width:900px;overflow-wrap:anywhere}.bill-detail .heading{margin-bottom:10px}.bill-detail>section,.bill-detail>.vote-slot{margin-top:22px}.bill-detail p{margin:6px 0 10px}.bill-detail h2{margin-bottom:8px}.bill-detail h3{font-weight:600}.bill-detail .explanation-version,.bill-detail .comparison-qualification,.bill-detail .compact-source{font-size:.85rem;color:var(--muted)}.bill-current-status .recorded-location{display:block}.highlighted-provisions ul{padding-left:1.4em;margin:6px 0}.highlighted-provisions li{margin:4px 0;font-weight:400}.comparison-heading{display:flex;align-items:center;gap:8px}.comparison-heading h2{margin:0}.bill-detail .tabs{margin-bottom:6px}.bill-detail .change-legend{margin:5px 0}.bill-detail .supporting-record{border:0;padding:4px 0}.bill-detail summary{font-weight:400;min-height:44px;padding-top:10px;padding-bottom:10px}.bill-detail details> :not(summary){margin-left:1.25rem}.bill-detail .supporting-records{border-top:1px solid var(--line);padding-top:16px}.bill-detail .panel{background:transparent;border:0;padding:0}.bill-detail .vote-record{padding:12px 0}.bill-detail .vote-decision{font-size:.85rem;color:var(--muted)}.bill-detail .vote-tally{font-size:1rem}.bill-detail .key-actions ol{padding-left:1.4em}.bill-detail .key-actions li{margin:6px 0}.bill-detail .technical-source{padding:0;border:0}.bill-detail .document-version{margin-bottom:10px}.bill-detail .open-reader{display:inline-block;padding:10px 0;min-height:44px}.bill-detail .bill-label{font-weight:400}.bill-detail .bill-source-group{margin-top:.4em}.bill-detail .bill-source-group:has(>.bill-paragraph){font-weight:400}.bill-detail .bill-section h3,.bill-detail .bill-section h4{font-weight:600}.historical-view .bill-detail>.heading{background:var(--archive-paper);border-left:3px solid var(--archive-border);padding:6px 8px;border-radius:3px}.bill-detail .summary-review>a{display:block}.bill-detail .version-transparency{margin:12px 0}.bill-detail #compare-sources{display:block}.bill-detail .law{max-width:100%}
-@media(max-width:760px){.bill-detail>section,.bill-detail>.vote-slot{margin-top:18px}.bill-detail .compare-controls label{min-width:0;flex-basis:150px}.bill-detail details> :not(summary){margin-left:1rem}}
+/* Bill details: shared content inset, compact disclosures, full-width legal text. */
+.bill-detail{max-width:900px;overflow-wrap:anywhere}
+.bill-detail .heading{margin-bottom:8px}
+.bill-detail>section,.bill-detail>.vote-slot{margin-top:14px}
+.bill-detail p{margin:6px 0 8px}.bill-detail h2{margin-bottom:6px}.bill-detail h3{font-weight:600}
+.bill-detail .explanation-version,.bill-detail .comparison-qualification,.bill-detail .compact-source,.bill-detail .open-reader{font-size:.85rem;color:var(--muted)}
+.bill-current-status .recorded-location{display:block}
+.highlighted-provisions ul{padding-left:1.4em;margin:6px 0}.highlighted-provisions li{margin:3px 0;font-weight:400}
+.comparison-heading{display:flex;align-items:center;gap:8px}.comparison-heading h2{margin:0}
+.bill-detail .tabs{margin:8px 0 6px}.bill-detail .change-legend{margin:4px 0}
+.bill-detail details{padding-block:0;border:0;margin-block:0}
+.bill-detail summary{font-size:.875rem;font-weight:400;min-height:44px;align-content:center;padding-block:8px}
+.bill-detail .supporting-records{border-top:1px solid var(--line);padding-top:10px}
+.bill-detail .panel{background:transparent;border:0;padding:0;margin-bottom:0}
+.bill-detail .vote-record{padding:8px 0}.bill-detail .vote-record:first-of-type{border-top:0}
+.bill-detail .vote-decision{font-size:.85rem;color:var(--muted)}.bill-detail .vote-tally{font-size:1rem}
+.bill-detail .key-actions ol{padding-left:1.4em;margin-block:6px}.bill-detail .key-actions li{margin:4px 0}
+.bill-detail .document-version{margin-bottom:8px}.bill-detail .document-version>small{display:block}
+.bill-detail .open-reader{display:inline-block;padding:10px 0;min-height:44px;color:#155c79}
+.bill-detail .bill-label{font-weight:400}.bill-detail .bill-source-group{margin-top:.4em}
+.bill-detail .bill-source-group:has(>.bill-paragraph){font-weight:400}.bill-detail .bill-section h3,.bill-detail .bill-section h4{font-weight:600}
+.historical-view .bill-detail>.heading{background:var(--archive-paper);border-left:3px solid var(--archive-border);padding:6px 8px;border-radius:3px}
+.bill-detail .historical-date{background:var(--archive-year);color:var(--ink);padding:0 3px;border-radius:2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bill-detail .timeline time{display:inline}
+.bill-detail .version-transparency{margin:8px 0}.bill-detail #compare-sources{display:block}.bill-detail .law{max-width:100%}
+.bill-detail .documents-sources h3{margin:12px 0 4px;font-size:.9rem}
+.bill-detail .compare-controls{max-width:36rem;gap:8px}.bill-detail .compare-controls label{flex:1;min-width:0}
+.bill-detail .reader-field{max-width:22rem;font-size:.875rem;margin-block:8px}
+.bill-detail .select-display{width:100%;font-size:inherit}
+.bill-detail .selected-value{background-color:white;border-color:#8295a2;padding:8px 28px 8px 12px}
+.bill-detail select.compact-select{position:absolute;inset:0;width:100%;height:100%;min-width:44px;margin:0;opacity:0}
+@media(max-width:760px){.bill-detail .compare-controls{max-width:100%}.bill-detail .compare-controls label{flex-basis:150px}.bill-detail .reader-field{max-width:100%}}

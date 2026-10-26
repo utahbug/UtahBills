@@ -20,7 +20,7 @@ try {
   assert.equal(await page.locator('#law-version').inputValue(),b.summaryVersion);
   assert.equal(await page.locator('[data-law="diff"]').getAttribute('aria-pressed'),'true');
   assert.equal(await page.locator('.tabs').evaluate(e=>e.nextElementSibling.id),'law-text');
-  assert.equal(await page.locator('.highlighted-provisions').evaluate(e=>e.textContent.replace(/Highlighted provisions|Official metadata wording.|\s/g,'')),b.highlightedProvisions.replace(/<[^>]+>|\s/g,''));
+  assert.equal(await page.locator('.highlighted-provisions').evaluate(e=>e.textContent.replace(/Highlighted provisions|Official metadata wording.|\s/g,'')),b.highlightedProvisions.replace(/^This bill:/,'').replace(/<[^>]+>|\s/g,''));
   assert.equal(await page.locator('.history-target>summary').textContent(),'View all '+b.actionHistoryList.length+' actions');
   assert.equal(await page.locator('.history-target').getAttribute('open'),null);
   assert.equal(await page.locator('.full-history .timeline>li').count(),b.actionHistoryList.length);
