@@ -474,7 +474,7 @@ main:has(>#results){padding-bottom:10px}
 @media(max-width:760px){.bill-detail .compare-controls{max-width:100%}.bill-detail .compare-controls label{flex-basis:150px}.bill-detail .reader-field{max-width:100%}}
 
 /* Enhanced bill overview and independent major disclosures. */
-.enhanced-detail .summary-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.enhanced-detail .summary-heading{display:flex;align-items:center;justify-content:flex-start;gap:11px;flex-wrap:wrap}
 .enhanced-detail .summary-heading h2{margin:0}
 .enhanced-detail .summary-source{font-size:.85rem;color:var(--muted)}
 .enhanced-detail .summary-source a{display:inline-block;min-height:44px;align-content:center}
@@ -507,3 +507,7 @@ main:has(>#results){padding-bottom:10px}
 .enhanced-detail .key-actions>.compact-source{grid-column:2;margin:0;padding-inline-start:var(--detail-date-padding)}
 .enhanced-detail .key-actions>.compact-source>a{display:inline-block;min-height:44px}
 .enhanced-detail .historical-date{padding-inline:var(--detail-date-padding)}
+
+.enhanced-detail .historical-context{display:flex;align-items:center;flex-wrap:wrap;column-gap:10px;row-gap:0}
+.enhanced-detail .archive-context-link{display:inline-flex;align-items:center;min-height:44px;min-width:44px;font-size:.75rem;color:var(--ink);text-decoration:underline}
+.enhanced-detail .archive-context-link>span{background:var(--archive-year);border-radius:3px;padding:2px 5px}

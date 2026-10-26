@@ -739,3 +739,13 @@ Human/editorial/release acceptance and TEST-001 remain open. These follow-ups do
 - **Evidence:** [Phase 5I verification](PHASE5I_VERIFICATION.md), `tests/phase5i.mjs`, retained Phase 5G/source-text and vote-integrity checks. Resolve the implementation commit with `git log -1 --format=%H -- docs/PHASE5I_VERIFICATION.md`; required CI/Main verification accompanies delivery.
 
 All unfinished task IDs and human/editorial/release acceptance remain unchanged. TEST-001 remains open. No further archive feature work is authorized by this batch; return to separately scoped 2027 readiness work.
+
+## Phase 5J — UI-017
+
+**Final archive badge and contextual navigation alignment** — **Medium** · **Completed implementation — October 26, 2026; owner acceptance pending**
+
+- **Source:** Owner Phase 5J, exactly two visual changes to the four enhanced 2026 details.
+- **Acceptance:** Existing source-derived badge beside Bill Summary with 10–12px gap; distinct parchment archive link beside historical identification with 8–12px gap, natural wrapping, accessible target/focus and unchanged title, divider and All bills navigation. No unrelated application changes.
+- **Evidence:** [Phase 5J verification](PHASE5J_VERIFICATION.md), `tests/phase5j.mjs`, retained mandatory regression/CI gates. Resolve the implementation commit with `git log -1 --format=%H -- docs/PHASE5J_VERIFICATION.md`; publication verification accompanies delivery.
+
+Following successful owner review, routine 2026 archive interface development is complete; demonstrated defects remain eligible for correction. Owner review is pending. All unfinished IDs and human/editorial/release acceptance remain unchanged; TEST-001 remains open. Future work returns to separately scoped 2027 readiness priorities.
