@@ -72,6 +72,10 @@ try{
  for(const width of [320,375,390,430]){
   await visit('bill/SB0069',width);await openEnhancedSections(page);await page.locator('#formatted-reader > summary').click();await page.locator('#reader-version').selectOption({label:'SB0069S02 · Substitute #2'});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+  // Audit the full expanded document from a stable top position: selectOption can
+  // leave an unrelated disclosure partly behind the sticky header. Focus/anchor
+  // clearance is checked separately by the navigation and enhanced-detail suites.
+  await page.evaluate(()=>scrollTo(0,0));await page.waitForFunction(()=>scrollY===0&&!document.querySelector('header.navigation-compact'));
   await page.evaluate(axe);
   const a=await page.evaluate(async()=>await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}}));
   assert.deepEqual(a.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[],`Expanded reader accessibility at ${width}`);

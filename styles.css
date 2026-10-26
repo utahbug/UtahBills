@@ -479,8 +479,9 @@ main:has(>#results){padding-bottom:10px}
 .enhanced-detail .summary-source{font-size:.85rem;color:var(--muted)}
 .enhanced-detail .summary-source a{display:inline-block;min-height:44px;align-content:center}
 .enhanced-detail>.major-detail{margin-top:6px;padding:0;border:0}
-.enhanced-detail>.major-detail>summary{font-size:1rem;font-weight:400}
-.enhanced-detail .vote-overview-list{padding-left:1.4em;margin:6px 0;font:inherit}
+.enhanced-detail>.major-detail>summary{font-size:19px;font-weight:700;color:var(--ink);line-height:1.5}
+.enhanced-detail>.major-detail>summary>h2{display:inline;font:inherit;color:inherit;margin:0}
+.enhanced-detail .vote-overview-list{padding-left:var(--detail-list-inset);margin:6px 0;font:inherit}
 .enhanced-detail .vote-overview-row{margin:6px 0;font-weight:400}
 .enhanced-detail .vote-overview-description{font:inherit;font-weight:400}
 .enhanced-detail .vote-overview-support{display:block;font-size:.9em;font-weight:400;color:var(--muted);margin-top:2px}
@@ -493,3 +494,16 @@ main:has(>#results){padding-bottom:10px}
 .official-summary-dialog .bill-label{font-weight:500;margin-top:12px}
 .official-summary-dialog .bill-paragraph{margin:5px 0}
 .official-summary-dialog button{min-height:44px}
+
+/* Shared list tracks align links with text, including the historical date's inner padding. */
+.enhanced-detail{--detail-list-inset:1.4em;--detail-date-padding:3px}
+.enhanced-detail>.bill-explanation{border-top:1px solid var(--line);padding-top:11px;margin-top:10px}
+.enhanced-detail .vote-overview,.enhanced-detail .key-actions{display:grid;grid-template-columns:var(--detail-list-inset) minmax(0,1fr)}
+.enhanced-detail .vote-overview>h2,.enhanced-detail .vote-overview-content{grid-column:1/-1}
+.enhanced-detail .vote-overview>.open-detail{grid-column:2;justify-self:start}
+.enhanced-detail .key-actions{row-gap:10px}
+.enhanced-detail .key-actions>ol{grid-column:1/-1;padding-inline-start:var(--detail-list-inset);margin-bottom:0}
+.enhanced-detail .key-actions>ol>li:last-child{margin-bottom:0}
+.enhanced-detail .key-actions>.compact-source{grid-column:2;margin:0;padding-inline-start:var(--detail-date-padding)}
+.enhanced-detail .key-actions>.compact-source>a{display:inline-block;min-height:44px}
+.enhanced-detail .historical-date{padding-inline:var(--detail-date-padding)}

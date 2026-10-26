@@ -729,3 +729,13 @@ These five future tasks are recorded without implementation. Prior unfinished ID
 - **Acceptance:** Assess real activity volume, freshness, empty states and source reliability; record a recommendation and owner decision. Retain Bills/request access and all bookmarks. A future default-route change requires its own navigation, accessibility and release checks; this evaluation does not authorize changing the landing page now.
 
 Human/editorial/release acceptance and TEST-001 remain open. These follow-ups do not change the Main-only environment, future domain plan, source safeguards or indexing restriction.
+
+## Phase 5I — UI-016
+
+**Final enhanced 2026 detail polish** — **Medium** · **Completed implementation — October 26, 2026**
+
+- **Source:** Owner Phase 5I §§1–8; four scoped refinements of UI-014/UI-015.
+- **Acceptance:** Subtle summary divider with 10–12px inner gap; voting-record link aligned to bullet text; action-history link aligned to date text with 8–12px gap; four semantic disclosure headings match the overview and remain closed initially. Preserve 44px targets, keyboard/source navigation, pinned summaries, exact dates, vote evidence and all supporting material.
+- **Evidence:** [Phase 5I verification](PHASE5I_VERIFICATION.md), `tests/phase5i.mjs`, retained Phase 5G/source-text and vote-integrity checks. Resolve the implementation commit with `git log -1 --format=%H -- docs/PHASE5I_VERIFICATION.md`; required CI/Main verification accompanies delivery.
+
+All unfinished task IDs and human/editorial/release acceptance remain unchanged. TEST-001 remains open. No further archive feature work is authorized by this batch; return to separately scoped 2027 readiness work.
