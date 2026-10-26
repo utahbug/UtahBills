@@ -15,8 +15,8 @@
       "retrievedAt": "2026-10-21T15:44:19.925740+00:00"
     }
   },
-  "catalogCheckedAt": "2026-10-25T16:27:50.644023+00:00",
-  "voteAcquisitionCheckedAt": "2026-10-25T16:28:00.732774+00:00",
+  "catalogCheckedAt": "2026-10-26T18:44:09.140553+00:00",
+  "voteAcquisitionCheckedAt": "2026-10-26T18:44:22.078623+00:00",
   "sessions": {
     "2026": {
       "expected": 1016,
@@ -38,19 +38,24 @@
       "emptyIndex": true,
       "missing": [],
       "sourceUrl": "https://le.utah.gov/data/2027GS/billlist.json",
-      "checkedAt": "2026-10-25T16:27:48.822368+00:00",
+      "checkedAt": "2026-10-26T18:44:07.163168+00:00",
       "publicRequests": 273,
       "verifiedPublicRequests": 273,
-      "sourceObservedRequests": 0,
-      "visiblePublicRequests": 273,
+      "sourceObservedRequests": 1,
+      "visiblePublicRequests": 274,
       "requestObservationCoverage": null,
       "requestPublication": {
-        "status": "success",
-        "officialTotal": 273,
+        "status": "partial",
+        "officialTotal": 274,
         "verifiedTotal": 273,
-        "withheld": []
+        "withheld": [
+          {
+            "trackingID": "KECAYMBVUG",
+            "reason": "New request awaiting first matching official status"
+          }
+        ]
       },
-      "requestsCheckedAt": "2026-10-25T16:27:49.179318+00:00",
+      "requestsCheckedAt": "2026-10-26T18:44:07.525531+00:00",
       "humanListingIntroducedCount": 0,
       "listingMissingFromIndex": [],
       "indexMissingFromListing": []
