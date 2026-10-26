@@ -20,7 +20,7 @@ try {
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
   if(mode==='normal'&&['bills','calendar','legislators','activity'].includes(route)&&[390,1280].includes(width))await page.screenshot({path:'test-results/phase4a-'+route+'-'+width+'.png'});
  }
- await page.setViewportSize({width:768,height:900});await page.goto(base+'?phase4a-font#bill/HB0011');await page.locator('.stages').waitFor();await page.addStyleTag({content:':root{font-family:Verdana,sans-serif}'});await page.evaluate(()=>document.documentElement.style.zoom=2);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'Detail stages with wide font metrics at 200% zoom');
+ await page.setViewportSize({width:768,height:900});await page.goto(base+'?phase4a-font#bill/HB0011');await page.locator('.key-actions').waitFor();await page.addStyleTag({content:':root{font-family:Verdana,sans-serif}'});await page.evaluate(()=>document.documentElement.style.zoom=2);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'Detail key actions with wide font metrics at 200% zoom');
  await page.goto(base+'?phase4a-keyboard#bills');await page.locator('h1').waitFor();await page.keyboard.press('Tab');assert.equal(await page.locator('.skip').evaluate(e=>e===document.activeElement),true);await page.keyboard.press('Enter');assert.equal(await page.locator('#main').evaluate(e=>e===document.activeElement),true);
  console.log('Phase 4A: banner absent, compact heading geometry, compact footer, static noindex, keyboard, reflow, doubled text, 200% CSS zoom and axe passed.');
 } finally {await browser.close()}

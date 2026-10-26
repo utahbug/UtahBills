@@ -52,3 +52,7 @@ No data, raw source, review packet, acquisition pipeline, refresh frequency, Con
 ## CI correction
 
 Initial push run [40249895833](https://github.com/utahbug/UtahBills/actions/runs/40249895833) passed source-integrity/build gates and the new Phase 5D suite, then stopped in `tests/batch2b.mjs` because the basic-record qualification no longer used its established wording. The original explicit “No reviewed plain-English explanation or reconstructed statutory comparison…” qualification is restored. The unchanged `tests/batch2b.mjs` suite passes locally after restoration; deployment was skipped for that failed run. The corrected commit receives the complete mandatory workflow.
+
+Run [40250907700](https://github.com/utahbug/UtahBills/actions/runs/40250907700) then passed through the restored qualification and vote regressions, but `tests/navigation.mjs` still waited for the removed Sponsorship sidebar. Its readiness locator now targets the primary heading and asserts both exact, session-qualified chief/floor sponsor profile URLs, rather than merely counting sidebar links. No application change or navigation safeguard was removed.
+
+A related pre-push selector review also found Phase 4A waiting for the old `.stages` graphic. It now checks the replacement `.key-actions` section under the same Verdana/200% CSS zoom overflow assertion. The navigation and Phase 4A suites passed locally, including exact sponsor URLs, wide-font reflow, keyboard, enlarged text/CSS zoom and axe assertions.
