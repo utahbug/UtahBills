@@ -1,3 +1,4 @@
+import {decorateExternalLinks} from './links.js';
 import {createElement,Copy,ArrowUpToLine,Info,List,ArrowLeft,ArrowRight,Ellipsis} from 'lucide';
 const key='utahbills-results-per-page';
 export function resultsPerPage(){try{const n=Number(localStorage.getItem(key));if([25,50,100,200].includes(n))return n}catch{}return matchMedia('(min-width:900px)').matches?100:50}
@@ -68,6 +69,8 @@ export function billToolbarLayout(host,{source,searchHeading,records,requestTota
   if(last){sortMenu.hidden=sort.hidden;pairs[0].panel.append(sort,size);sort.firstChild.textContent='Sort results by ';size.firstChild.textContent='Results per page ';(heading||searchHeading).append(source)}else{controls.append(sort,size);sort.firstChild.textContent='Sort ';size.firstChild.textContent='Per page ';searchHeading.append(source);sortMenu.open=false;sortMenu.hidden=true}
   const fullSourceLabel='Official '+(records?'2027':'2026')+' Bill Search';source.setAttribute('aria-label',fullSourceLabel);const tail=source.querySelector('.external-tail');if(tail){source.firstChild.textContent=last?'Official ':fullSourceLabel.slice(0,-6);tail.firstChild.textContent=last?'search':'Search'}else source.textContent=last?'Official search':fullSourceLabel;
   if(records){records.querySelector('option[value="2027-requests"]').textContent=last?`2027 Public Bill Requests (${requestTotal})`:'2027 Public bill requests';records.querySelector('option[value="2027"]').textContent=last?`2027 Bills and resolutions (${measureTotal})`:'2027 Bills and resolutions'}
+  // Settle the link's icon/word wrapping before restoring route scroll or focus.
+  decorateExternalLinks(source.parentElement);
   if(moved){if(last&&(sort.contains(active)||size.contains(active)))sortMenu.open=true;(active===pairs[0].trigger&&!last?sort.querySelector('select'):active).focus({preventScroll:true})}placeMenus();
  };media.addEventListener('change',update);const dismiss=e=>{for(const {disclosure} of pairs)if(disclosure.open&&!disclosure.contains(e.target))disclosure.open=false};document.addEventListener('pointerdown',dismiss,{signal:controller.signal});document.addEventListener('focusin',dismiss,{signal:controller.signal});disposeBillLayout=()=>{controller.abort();media.removeEventListener('change',update)};update();
 }

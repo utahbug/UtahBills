@@ -30,3 +30,9 @@ The scheduled-run check found completed run 40211750281 and no active acquisitio
 Initial [run 40370112032](https://github.com/utahbug/UtahBills/actions/runs/40370112032) passed integrity/build gates, then the new responsive suite caught a Linux-font-dependent minimum-width defect: at 320px and 200% CSS zoom, the short official link measured 158.78 physical pixels against a 152px Search input. Its inline-flex text fragments could not wrap independently enough. No deployment occurred.
 
 The Bills official link now uses normal text wrapping within the same heading grid; the external icon stays with its final word and the target remains at least 44px high. The exact input-edge assertion is retained, with added Arial/Verdana/Georgia zoom cases. The focused Phase 5F matrix is rerun; unrelated local suites are not repeated. Mandatory CI remains required for the corrective commit.
+
+## CI return-navigation correction
+
+Run [40371008274](https://github.com/utahbug/UtahBills/actions/runs/40371008274) passed the new Phase 5F matrix, Phase 5E/5D detail checks, Phase 5C, mobile toolbar, Contact, QA, enlarged text and strict reader conservation, then failed the existing archive return-position assertion in `batch2`.
+
+An isolated reproduction with Verdana established the cause: the existing observer added the official link's external icon after route scroll restoration. Wider font metrics caused that heading to wrap, shifting scroll from **1428 to 1472px**. The existing external-link decorator is now reusable synchronously; Bills calls it for its source heading before restoring focus/scroll. Other routes retain the same observer and decoration behavior. No history or bill-detail logic is changed. The reproduced return remains **1428px** after correction. `batch2` retains its less-than-5px assertion and now runs the 1,200-bill return sequence with both normal and wider-font metrics. No valid assertion was relaxed.
