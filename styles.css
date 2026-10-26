@@ -102,7 +102,7 @@ summary::-webkit-details-marker{display:none}
 .archive-metadata .profile-records > li > small{display:block}
 
 /* Phase 3: one compact search disclosure and incremental activity rows. */
-.advanced-search{margin-top:8px}.advanced-search>summary,.activity-info>summary{min-height:44px;padding-block:10px}.advanced-search>label{display:block;max-width:260px}.advanced-search .filters{margin-block:8px}.activity-controls{display:flex;gap:12px;flex-wrap:wrap}.activity-controls label{flex:1;min-width:120px;max-width:260px}.activity-controls select{width:100%;min-height:44px}.activity-row{border-bottom:1px solid #d7e1e8;padding:12px 0;overflow-wrap:anywhere}.activity-row h2{font-size:1.05rem;margin:4px 0}.activity-row p{margin:5px 0}.activity-row small{display:block}.activity-row a{display:inline-block;min-height:24px}.activity-info{margin-block:8px}.history-target{scroll-margin-top:12px}
+.advanced-search>summary,.activity-info>summary{min-height:44px;padding-block:10px}.advanced-search>label{display:block;max-width:260px}.advanced-search .filters{margin-block:8px}.activity-controls{display:flex;gap:12px;flex-wrap:wrap}.activity-controls label{flex:1;min-width:120px;max-width:260px}.activity-controls select{width:100%;min-height:44px}.activity-row{border-bottom:1px solid #d7e1e8;padding:12px 0;overflow-wrap:anywhere}.activity-row h2{font-size:1.05rem;margin:4px 0}.activity-row p{margin:5px 0}.activity-row small{display:block}.activity-row a{display:inline-block;min-height:24px}.activity-info{margin-block:8px}.history-target{scroll-margin-top:12px}
 @media(max-width:600px){.header-inner nav{display:flex;flex-wrap:wrap;gap:2px 8px}.header-inner nav a{padding:6px 3px;min-height:44px}.header-inner{gap:4px}}
 
 /* Shared compact result tools and navigation */
@@ -142,8 +142,6 @@ footer{padding-bottom:80px}
 .request-info{border:0;padding:0!important}.request-info>summary::before{display:none!important}.request-status-tools .request-info>summary{position:absolute!important;padding:10px!important}.request-status-tools .request-info[open]{padding-left:15px!important}
 .kind-control{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:end}.kind-control:has(details[open]){padding-bottom:0}.kind-control .type-info[open]{grid-column:1/-1}.kind-control .type-info[open]>summary{position:absolute;right:0;top:20px}.kind-control .type-info p{position:static;width:auto;border:0;padding:4px 0;box-shadow:none}
 .skip{z-index:40}
-/* Search controls share the session/search/results inset. */
-.advanced-search{padding-inline-start:0!important}.advanced-search>summary{padding-inline-start:1.25rem!important}.advanced-search>summary::before{inset-inline-start:0!important}
 .calendar-title{width:fit-content;max-width:100%}
 /* Counts fit narrow cells even with platform font differences at 200% zoom. */
 .calendar-day{container-type:inline-size;grid-template-columns:minmax(0,1fr)}
@@ -171,7 +169,7 @@ footer{padding-bottom:80px}
 .bills-heading .session{display:flex;align-items:center;flex-wrap:wrap;gap:0 8px;margin-top:2px}
 .bills-heading .session label{margin:0}.bills-heading .session select{margin:0;width:auto;max-width:100%}
 .bills-heading{margin-bottom:4px}.search-label{margin-bottom:3px}
-.panel[aria-label="Find bills"]{margin-bottom:4px}.advanced-search{margin-top:2px}
+.panel[aria-label="Find bills"]{margin-bottom:4px}
 .results-toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:2px 8px;margin:4px 0}
 .result-controls{grid-column:1;grid-row:1;align-items:center;gap:2px 8px}
 .result-controls label{display:flex;align-items:center;flex-wrap:nowrap;gap:4px}
@@ -179,9 +177,9 @@ footer{padding-bottom:80px}
 .copy-control{grid-column:3;grid-row:1}
 .result-controls select,.copy-control .copy-results{border-color:transparent;border-radius:3px;background-color:transparent}
 .result-controls select:hover,.copy-control .copy-results:hover{background-color:#eaf1f3}
-.results-toolbar:has(>.result-controls:empty){grid-template-columns:minmax(0,1fr) auto}
-.results-toolbar:has(>.result-controls:empty)>.result-summary{grid-column:1;justify-content:flex-start;text-align:left}
-.results-toolbar:has(>.result-controls:empty)>.copy-control{grid-column:2}
+.results-toolbar:not(.bill-toolbar):has(>.result-controls:empty){grid-template-columns:minmax(0,1fr) auto}
+.results-toolbar:not(.bill-toolbar):has(>.result-controls:empty)>.result-summary{grid-column:1;justify-content:flex-start;text-align:left}
+.results-toolbar:not(.bill-toolbar):has(>.result-controls:empty)>.copy-control{grid-column:2}
 .bill-row{grid-template-columns:90px minmax(0,1fr) fit-content(240px);column-gap:9px;padding:12px 16px}
 .bill-state{max-width:240px;overflow-wrap:anywhere}.bill-state .tag{max-width:100%;overflow-wrap:anywhere}
 .field-label,.sidebar dt{font-weight:600}
@@ -222,7 +220,7 @@ main:has(.activity-controls){min-height:0}
 @media(max-width:700px){
  .results-toolbar{grid-template-columns:minmax(0,1fr) auto}.result-controls{grid-column:1;grid-row:1}.copy-control{grid-column:2;grid-row:1}
  .result-summary{grid-column:1/-1;grid-row:2;justify-content:flex-start;text-align:left}
- .results-toolbar:has(>.result-controls:empty)>.result-summary{grid-row:1}
+ .results-toolbar:not(.bill-toolbar):has(>.result-controls:empty)>.result-summary{grid-row:1}
  .bills-heading .session{width:auto}.bills-heading .session select{width:auto}
  .agenda-heading.results-toolbar{grid-template-columns:minmax(0,1fr) auto}
  .agenda-heading.results-toolbar>.result-summary{grid-column:1;grid-row:1}
@@ -306,15 +304,15 @@ header.navigation-compact .brand small,header.navigation-compact .independent{di
 header.navigation-compact .independent{display:block;visibility:hidden}
 header.navigation-compact .brand small{display:block;visibility:hidden;height:0;margin-top:0;overflow:hidden}
 @media(max-width:760px){header.navigation-compact .independent{display:none}}
-.records-search{display:flex;flex-wrap:wrap;align-items:start;gap:12px;max-width:1000px}
-.records-search .session{flex:0 1 300px;max-width:none;min-width:0;font-size:14px}
+.records-search{max-width:1000px}
+.records-search .session{max-width:none;min-width:0;font-size:14px}
 .records-search .session label,.records-search .search-label{display:block;font-size:14px;font-weight:650;margin:0 0 3px}
 .records-search .session select{width:100%;min-width:0;margin:0;border:1px solid #b3c1ca}
-.search-group{flex:1 1 300px;min-width:0}.records-search .search-tools{max-width:100%}
+.search-group{min-width:0}.records-search .search-tools{max-width:100%}
 .archive-navigation{font-size:.875rem;margin:0}.archive-navigation a{display:inline-flex;align-items:center;min-height:44px}
 .sponsor-filter{align-items:center;gap:4px 12px}.sponsor-filter select{border:1px solid #b3c1ca;max-width:100%}
 #remove-sponsor{border:0;background:transparent;padding:4px 6px;min-height:44px;text-decoration:underline}
-@media(max-width:700px){.records-search{gap:6px}.records-search .session,.records-search .search-group{flex-basis:100%}.sponsor-filter{align-items:center}}
+@media(max-width:700px){.sponsor-filter{align-items:center}}
 .activity-row:first-child{border-top:1px solid var(--line)}
 .activity-row:hover,.activity-row:focus-within{background:#f0f5f7}
 .activity-info h2{font-size:1rem;margin:12px 0 4px}.activity-info p{margin:4px 0 8px}
@@ -328,7 +326,7 @@ header.navigation-compact .brand small{display:block;visibility:hidden;height:0;
 /* Phase 4U: compact result controls and explicit historical presentation. */
 .page-direction{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;border:0;background:transparent;color:#155c79;padding:4px 8px;font-weight:400}.page-direction svg{width:16px;height:16px;stroke-width:1.5}.pagination{align-items:center;gap:6px 12px;flex-wrap:wrap;font-size:.875rem}
 .count-summary{display:inline-flex;align-items:center;gap:2px;max-width:100%;text-align:left}.count-summary .toolbar-info{flex-shrink:0}.count-summary #count{min-width:0}
-.export-menu{position:relative;border:0;padding:0!important;margin:0!important}.export-menu>summary{display:flex!important;align-items:center;justify-content:center;padding:0!important;min-width:44px;min-height:44px;color:#155c79}.export-menu>summary:before{display:none!important}.export-menu>button{position:absolute;right:0;top:100%;z-index:25;min-width:120px;white-space:nowrap;box-shadow:0 2px 5px #23354722}
+:is(.export-menu,.sort-menu){position:relative;border:0;padding:0!important;margin:0!important}:is(.export-menu,.sort-menu)>summary{display:flex!important;align-items:center;justify-content:center;padding:0!important;min-width:44px;min-height:44px;color:#155c79}:is(.export-menu,.sort-menu)>summary:before{display:none!important}.export-menu>button{position:absolute;right:0;top:100%;z-index:25;min-width:120px;white-space:nowrap;box-shadow:0 2px 5px #23354722}
 .activity-controls{gap:4px 8px;flex-wrap:nowrap;margin-bottom:0}.activity-controls label{min-width:0;flex:0 1 auto}.activity-controls select{width:100%;min-width:0;padding:4px 18px 4px 2px;font-size:.875rem}
 .activity-actions.results-toolbar{grid-template-columns:minmax(0,1fr) auto;gap:0 6px;margin:0}.activity-actions>.result-summary{grid-column:1;grid-row:1;justify-content:flex-start;text-align:left}.activity-actions>.copy-control{grid-column:2;grid-row:1}.activity-actions>.result-controls{grid-column:1/-1;grid-row:2}.activity-actions>.result-controls:has(.page-preference[hidden]){display:none}.activity-row:first-child{margin-top:0}.activity-metadata{margin-top:8px}
 .panel[aria-label="Find bills"]:has(.advanced-search:not([open])){padding-bottom:0;margin-bottom:0}.advanced-search:not([open]){padding-bottom:0}.advanced-search[open]{padding-bottom:8px}
@@ -344,21 +342,21 @@ header.navigation-compact .brand small{display:block;visibility:hidden;height:0;
 }
 
 /* Phase 4V: bounded desktop grouping with narrow-screen reflow. */
-.search-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0 10px;margin:0;max-width:100%}.search-heading label{margin:0;font-size:.875rem}.search-heading .request-search-source,.search-heading .find-legislators{display:inline-flex;align-items:center;gap:3px;min-height:44px;margin:0;font-size:.8125rem;max-width:100%;overflow-wrap:anywhere}.search-group .search-heading{margin-right:44px}.search-heading .external-icon{flex-shrink:0}
+.search-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0 10px;margin:0;max-width:100%}.search-heading label{margin:0;font-size:.875rem}.search-heading .request-search-source,.search-heading .find-legislators{display:inline-flex;align-items:center;gap:3px;min-height:44px;margin:0;font-size:.8125rem;max-width:100%;overflow-wrap:anywhere}.search-heading .external-icon{flex-shrink:0}
 .directory-controls{gap:4px 12px;margin:4px 0 0;align-items:end}.directory-controls>label{flex:0 1 auto;min-width:100px;font-size:.875rem}.directory-controls .directory-search-area{flex:1 1 300px;min-width:0;max-width:440px}.directory-search-area input{width:100%}.directory-search-area .search-heading>label{min-width:0;flex:none}.directory-actions.results-toolbar{margin:0 0 2px}.directory-columns,.legislator-row{display:grid;grid-template-columns:minmax(0,18rem) minmax(0,11rem) minmax(0,16rem);column-gap:16px;max-width:49rem}.directory-columns{padding:0 12px}.directory-columns button{display:flex;align-items:center;gap:4px;text-align:left;border:0;background:transparent;padding:4px 0;min-height:44px;font-size:.8125rem;font-weight:400;color:#536573}.sort-direction{display:inline-flex;flex-shrink:0}.sort-direction svg{width:14px;height:14px}.directory-columns button[aria-pressed=true]{color:#233547}.legislator-row a{min-height:44px;display:inline-block;padding:10px 0}.profile-archive{border-top:1px solid var(--line);padding-top:12px;margin-top:20px}.profile-archive h2{font-size:1rem;font-weight:400;margin-bottom:0}.profile-archive a{display:inline-flex;align-items:center;min-height:44px}
-.advanced-search{border:0;margin:0;padding:0!important}.advanced-search>summary{font-size:.875rem;font-weight:400;display:flex;align-items:center;min-height:44px;padding-block:0!important}.advanced-search>summary:before{font-weight:400;font-size:.8rem}.advanced-search .filters{display:flex;align-items:end;gap:4px 12px;margin:0 0 4px}.advanced-search .filters label{flex:0 1 11rem;min-width:0;max-width:100%;gap:0;font-size:.8125rem}.advanced-search .filters select{font-size:.875rem;border-color:transparent;background:transparent;max-width:100%;padding:6px 20px 6px 2px}.advanced-search .filters select:focus-visible{border-color:#8295a2}.advanced-search .filters select:not(:has(option:checked[value=""])){background:#e5eef4}.advanced-search .kind-control{flex:0 1 12rem;min-width:0;max-width:100%;display:flex;align-items:end;gap:2px}.advanced-search .kind-control label{flex:1;min-width:0}.advanced-search .type-info{flex:0 0 44px}.advanced-search .type-info>summary{min-width:44px}.advanced-search #clear{background:transparent;border:0;font-size:.8125rem}.sponsor-filter{display:flex;align-items:center;flex-wrap:wrap;gap:2px 8px;margin:4px 0;font-size:.875rem}.sponsor-filter strong{font-weight:400}.sponsor-filter select{width:auto;max-width:100%;border:0;background:transparent;padding:6px 18px 6px 4px}.sponsor-filter button{border:0;background:transparent;padding:6px 4px}
+.advanced-search{border:0;margin:8px 0 0;padding:0 0 0 1.25rem!important}.advanced-search>summary{padding-inline-start:0!important;font-size:.875rem;font-weight:400;display:flex;align-items:center;min-height:44px;padding-block:0!important}.advanced-search>summary:before{font-weight:400;font-size:.8rem}.advanced-search .filters{display:flex;align-items:end;gap:4px 12px;margin:0 0 4px}.advanced-search .filters label{flex:0 1 11rem;min-width:0;max-width:100%;gap:0;font-size:.8125rem}.advanced-search .filters select{font-size:.875rem;border-color:transparent;background:transparent;max-width:100%;padding:6px 20px 6px 2px}.advanced-search .filters select:focus-visible{border-color:#8295a2}.advanced-search .filters select:not(:has(option:checked[value=""])){background:#e5eef4}.advanced-search .kind-control{flex:0 1 12rem;min-width:0;max-width:100%;display:flex;align-items:end;gap:2px}.advanced-search .kind-control label{flex:1;min-width:0}.advanced-search .type-info{flex:0 0 44px}.advanced-search .type-info>summary{min-width:44px}.advanced-search #clear{background:transparent;border:0;font-size:.8125rem}.sponsor-filter{display:flex;align-items:center;flex-wrap:wrap;gap:2px 8px;margin:4px 0;font-size:.875rem}.sponsor-filter strong{font-weight:400}.sponsor-filter select{width:auto;max-width:100%;border:0;background:transparent;padding:6px 18px 6px 4px}.sponsor-filter button{border:0;background:transparent;padding:6px 4px}
 .bill-row.historical-row{background:#e2eaf0;border-left:3px solid #8299aa}.bill-row.historical-row:hover,.bill-row.historical-row:focus-within{background:#d7e3eb}.historical-row .archive-designation,.historical-view .eyebrow{display:inline-block;background:#d0dee8;color:#294657;border-radius:3px;padding:2px 5px;font-weight:400;letter-spacing:.3px}.historical-row .archive-designation{margin-top:3px}.historical-view>h1,.historical-view>.heading{background:#e2eaf0;border-left:3px solid #8299aa}.historical-view .sponsor-filter{padding-left:8px;border-left:3px solid #8299aa}
 #calendar-toggle{display:flex;align-items:center;gap:5px;border:0;background:transparent;padding:4px 0;min-height:44px;font-size:.875rem;font-weight:400}#calendar-toggle:before{content:'›';display:inline-block;transform:rotate(0deg)}#calendar-toggle[aria-expanded=true]:before{transform:rotate(90deg)}.event-type,.event-status.revised{font-weight:400}.event-status.significant{font-weight:600}#calendar-grid .month-grid{margin-top:4px}
-@media(max-width:700px){.directory-controls{align-items:end}.directory-controls .directory-search-area{flex-basis:100%;max-width:none}.directory-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.legislator-row{grid-template-columns:1fr;gap:0}.directory-columns button{overflow-wrap:anywhere;align-items:center}.advanced-search .filters label{flex:1 1 120px}.advanced-search .kind-control{flex:1 1 160px}.sponsor-filter select{flex:0 1 auto;min-width:0}.search-group .search-heading{margin-right:0}}
+@media(max-width:700px){.directory-controls{align-items:end}.directory-controls .directory-search-area{flex-basis:100%;max-width:none}.directory-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.legislator-row{grid-template-columns:1fr;gap:0}.directory-columns button{overflow-wrap:anywhere;align-items:center}.advanced-search .filters label{flex:1 1 120px}.advanced-search .kind-control{flex:1 1 160px}.sponsor-filter select{flex:0 1 auto;min-width:0}}
 
 /* Phase 4V amendment: shared archive navigation and consistent footer typography. */
 footer nav a{font:inherit;color:inherit;text-decoration:underline;margin:0;padding:4px 2px;border-radius:0;background:transparent}footer nav a:hover{color:#155c79;background:transparent}footer nav a[aria-current]{color:inherit;background:transparent;text-decoration:underline}
 
-.records-search{align-items:end}
 
-/* Phase 4W: one responsive results menu; concise evidence disclosures. */
+
+/* Bills menu panels retain native controls and viewport-aware positioning. */
 .bill-toolbar .export-panel{position:absolute;right:0;top:100%;z-index:30;background:white;box-shadow:0 2px 8px #23354733;padding:8px;min-width:150px;max-width:calc(100vw - 32px);border:1px solid var(--line);border-radius:4px;max-height:65vh;overflow:auto}.bill-toolbar .export-panel label{display:grid;gap:2px;text-align:left;font-size:.875rem;margin:0 0 8px}.bill-toolbar .export-panel select{width:100%;max-width:100%;min-width:0}.bill-toolbar .export-panel>button{white-space:normal;width:100%;text-align:left}.records-heading{width:100%}.records-heading label{margin:0}.empty-index{padding:12px 8px;text-align:left;border:0;background:transparent}.empty-index p{margin:0 0 4px;font-weight:400}.empty-index a{display:inline-flex;align-items:center;min-height:44px;font-size:.875rem}.catalog-info h2,.calendar-info h2,.activity-info h2,.toolbar-popover h2{font-size:1rem;font-weight:500;margin:8px 0}.catalog-info p,.calendar-info p,.activity-info p{margin:8px 0}.calendar-date-group{margin-top:16px}.calendar-date-group>h3{font-size:1rem;font-weight:550;margin:0 0 4px}.calendar-event h4{font-size:1rem;font-weight:400;margin:0 0 6px;color:var(--ink)}.calendar-date-group .calendar-event{border:0;padding-top:6px;padding-bottom:6px}.calendar-date-group .event-type,.calendar-date-group .event-status.revised{font-weight:400}#calendar-toggle:before{display:none}#calendar-toggle svg{width:16px;height:16px;flex-shrink:0}.agenda-heading #calendar-upcoming{min-height:44px}.agenda-heading.results-toolbar>.result-controls:empty{display:none}
-@media(max-width:700px){.bill-toolbar>.result-controls{display:none!important}.bill-toolbar.results-toolbar{grid-template-columns:minmax(0,1fr) auto}.bill-toolbar>.result-summary,.bill-toolbar>.copy-control{grid-row:1!important}.bill-toolbar.unfiltered-current #count{display:none}.bill-toolbar .export-panel{width:240px}.records-heading .request-search-source{font-size:.8125rem}.records-search .session select{font-size:.875rem}.agenda-heading.results-toolbar>.result-controls:has(#calendar-upcoming:not([hidden])){grid-row:1;grid-column:2}.agenda-heading.results-toolbar:has(#calendar-upcoming:not([hidden])){grid-template-columns:minmax(0,1fr) auto auto}.agenda-heading.results-toolbar:has(#calendar-upcoming:not([hidden]))>.copy-control{grid-column:3}}
+@media(max-width:700px){.bill-toolbar.unfiltered-current #count{display:none}.records-heading .request-search-source{font-size:.8125rem}.records-search .session select{font-size:.875rem}.agenda-heading.results-toolbar>.result-controls:has(#calendar-upcoming:not([hidden])){grid-row:1;grid-column:2}.agenda-heading.results-toolbar:has(#calendar-upcoming:not([hidden])){grid-template-columns:minmax(0,1fr) auto auto}.agenda-heading.results-toolbar:has(#calendar-upcoming:not([hidden]))>.copy-control{grid-column:3}}
 
 /* Phase 4X: one content-width transition for directory controls and records. */
 .directory-layout{container:directory / inline-size}.directory-columns,.legislator-row{grid-template-columns:minmax(0,18rem) minmax(0,11rem) minmax(0,16rem);column-gap:16px}.directory-compact-sort,.directory-year{display:none}.directory-compact-sort{font-size:.875rem;min-width:0;align-items:center;gap:6px}.directory-compact-sort select{font:inherit;width:14rem;min-width:0;max-width:100%;padding-inline:2px}
@@ -366,7 +364,7 @@ footer nav a{font:inherit;color:inherit;text-decoration:underline;margin:0;paddi
 /* Historical evidence is parchment; separately dated contact panels stay white. */
 :root{--archive-paper:#f7f1e6;--archive-hover:#f0e5d3;--archive-year:#eadcc4;--archive-border:#cdbd9e}.bill-row.historical-row{background:var(--archive-paper);border-left-color:var(--archive-border);border-top-color:var(--archive-border)}.bill-row.historical-row:hover,.bill-row.historical-row:focus-within{background:var(--archive-hover)}.historical-row .archive-designation,.historical-view .eyebrow{background:var(--archive-year);color:var(--ink)}.historical-view>h1,.historical-view>.heading{background:var(--archive-paper);border-left-color:var(--archive-border)}.historical-view .sponsor-filter{background:var(--archive-paper);border-left-color:var(--archive-border)}
 
-@container directory (max-width:34em){.directory-actions.results-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0}.directory-compact-sort{grid-column:1/-1;grid-row:1;justify-self:start;max-width:100%}.directory-actions.results-toolbar:has(>.result-controls:empty)>.result-summary{grid-column:1;grid-row:2;margin-left:0;justify-self:end}.directory-actions .copy-control{grid-column:2;grid-row:2;justify-self:end}}
+@container directory (max-width:34em){.directory-actions.results-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0}.directory-compact-sort{grid-column:1/-1;grid-row:1;justify-self:start;max-width:100%}.directory-actions.results-toolbar:not(.bill-toolbar):has(>.result-controls:empty)>.result-summary{grid-column:1;grid-row:2;margin-left:0;justify-self:end}.directory-actions .copy-control{grid-column:2;grid-row:2;justify-self:end}}
 
 @container directory (max-width:14em){.directory-compact-sort{width:100%}.directory-compact-sort>span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.directory-compact-sort select{width:100%;font-size:.8125rem}}
 
@@ -380,21 +378,12 @@ footer nav{column-gap:14px}
 /* Header contact stays beside existing navigation, including collapsed branding. */
 .header-inner:has(.header-contact){position:relative;padding-right:76px}
 .header-contact{position:absolute;right:24px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;color:#155c79;text-decoration:none}
-.header-contact svg{width:16px;height:16px;stroke-width:1.5;color:var(--muted)}
+.header-contact svg{box-sizing:content-box;width:16px;height:16px;padding:5px;border:1px solid currentColor;border-radius:50%;stroke-width:1.5;color:var(--muted)}
 @media(max-width:760px){
  .header-inner:has(.header-contact){padding-right:16px}
  .header-inner:has(.header-contact) nav{max-width:calc(100% - 69px);column-gap:1px}
  .header-contact{right:4px;top:auto;bottom:8px;transform:none}
  .header-contact:focus-visible{outline-offset:0}
-}
-
-/* Mobile Bills results: More at left; count Info immediately before Copy. */
-@media(max-width:700px){
- .bill-toolbar.results-toolbar{min-width:132px;column-gap:0}
- .bill-toolbar .count-summary .export-menu{flex-shrink:0}
- .bill-toolbar>.copy-control{align-self:center}
- .bill-toolbar>.copy-control:has(.copy-results[hidden]){display:flex}
- .bill-toolbar .export-panel{left:0;right:auto}
 }
 
 /* Phase 5C: shared heading rows, selected-value controls and compact boundaries. */
@@ -408,9 +397,6 @@ footer nav{column-gap:14px}
 .records-heading{min-height:44px}
 .records-search .records-heading label{margin:0;font:inherit}
 @media(min-width:701px){
- .records-search{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);grid-template-rows:minmax(44px,auto) auto;column-gap:12px;row-gap:0;align-items:stretch}
- .records-search>.session,.records-search>.search-group{display:grid;grid-template-rows:subgrid;grid-row:span 2}
- .records-search:not(:has(.session)){grid-template-columns:minmax(0,1fr)}
  .directory-controls{display:grid;grid-template-columns:minmax(0,max-content) minmax(0,max-content) minmax(0,440px);grid-template-rows:minmax(44px,auto) auto;gap:0 12px;align-items:stretch}
  .directory-controls>label,.directory-controls>.directory-search-area{display:grid;grid-template-rows:subgrid;grid-row:span 2;min-width:0}
 }
@@ -427,6 +413,31 @@ footer nav{column-gap:14px}
 .activity-row:last-child{border-bottom:0}
 main:has(>#results){padding-bottom:10px}
 #results>.pagination,.activity-controls~.pagination{margin:10px 0 0}
+
+/* Bills search and toolbar: one 700px transition, one official link, one Info. */
+.records-search{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);grid-template-rows:minmax(44px,auto) auto;gap:0 12px;align-items:stretch}
+.records-search>.session,.records-search>.search-group{display:grid;grid-template-rows:subgrid;grid-row:span 2}
+.records-search:not(:has(.session)){grid-template-columns:minmax(0,1fr)}
+.records-search .search-heading{margin:0 52px 0 0;align-items:center}
+.records-search .records-heading{margin-right:0}
+.records-search .search-heading label{align-self:start}
+.bill-toolbar.results-toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:2px 8px}
+.bill-toolbar>.result-controls{grid-column:1;grid-row:1}
+.bill-toolbar>.result-summary{grid-column:2;grid-row:1;justify-content:flex-end}
+.bill-toolbar>.copy-control{grid-column:3;grid-row:1;align-self:start}
+.bill-toolbar .export-panel{width:240px;text-align:left}
+@media(max-width:700px){
+ .records-search{grid-template-columns:minmax(0,1fr);gap:6px 0}
+ .records-search>.session,.records-search>.search-group{grid-template-rows:auto auto;grid-row:auto}
+ .records-search:has(.session) .search-group .search-heading{min-height:0}
+ .records-search:has(.session) .search-label{min-height:0}
+ .records-search .records-heading{margin-right:52px;width:auto}
+ .bill-toolbar.results-toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:0;min-width:132px}
+ .bill-toolbar>.sort-menu:not([hidden]){display:block;grid-column:1;grid-row:1;justify-self:start}
+ .bill-toolbar>.result-summary{grid-column:2;grid-row:1!important;padding-inline:4px}
+ .bill-toolbar>.copy-control{grid-column:3;grid-row:1!important;align-self:center}
+ .bill-toolbar>.sort-menu>summary{padding-inline:4px!important;font-size:inherit;font-weight:400}
+}
 
 /* Bill details: shared content inset, compact disclosures, full-width legal text. */
 .bill-detail{max-width:900px;overflow-wrap:anywhere}

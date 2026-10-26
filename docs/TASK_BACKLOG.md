@@ -655,3 +655,13 @@ All unfinished task IDs/statuses remain unchanged. TEST-001, independent editori
 - **Evidence:** [Phase 5E verification](PHASE5E_VERIFICATION.md), `tests/phase5e.mjs`, retained Phase 5D and strict reader/version/vote regressions. Implementation commit is the commit introducing that record (`git log -1 --format=%H -- docs/PHASE5E_VERIFICATION.md`); mandatory CI/Main publication accompanies delivery.
 
 All unfinished task IDs, priorities and statuses remain unchanged. This refinement does not complete TEST-001, human editorial/device/assistive-technology/native-zoom acceptance or public-release approval.
+
+## Phase 5F — UI-013
+
+**Bills responsive search, controls and Contact icon** — **Medium** · **Completed implementation — October 26, 2026**
+
+- **Source:** Owner Phase 5F request; supersedes only the specified responsive link/menu/Info placements and Contact artwork.
+- **Acceptance:** One link aligned with Search input; shared desktop heading rows and narrow Records placement; consolidated Search Info preserving unique count/freshness facts; separate mobile Sort and CSV menus with Copy rightmost; preserved controls/state/export/history; aligned five-filter archive disclosure; circled envelope with unchanged Contact route/configuration; focus, target-size, source and responsive accessibility checks.
+- **Evidence:** [Phase 5F verification](PHASE5F_VERIFICATION.md), `tests/phase5f.mjs`, expanded `tests/mobile-toolbar.mjs` and affected retained regressions. The commit introducing this record is the implementation reference (`git log -1 --format=%H -- docs/PHASE5F_VERIFICATION.md`); mandatory CI/Main publication accompanies delivery.
+
+All unfinished IDs, priorities and statuses remain unchanged. TEST-001, human editorial/device/assistive-technology/native-zoom acceptance and public-release approval remain open. Broader 2026 content/access questions are reserved for the second batch; no bill-detail or legislative-data changes are included.
