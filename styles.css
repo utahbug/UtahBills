@@ -420,6 +420,7 @@ main:has(>#results){padding-bottom:10px}
 .records-search:not(:has(.session)){grid-template-columns:minmax(0,1fr)}
 .records-search .search-heading{margin:0 52px 0 0;align-items:center}
 .records-search .records-heading{margin-right:0}
+.records-search .request-search-source{display:block;text-align:right;align-content:center;min-width:0}
 .records-search .search-heading label{align-self:start}
 .bill-toolbar.results-toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:2px 8px}
 .bill-toolbar>.result-controls{grid-column:1;grid-row:1}

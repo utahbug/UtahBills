@@ -24,3 +24,9 @@ October 26, 2026 (Mountain). Baseline: clean synchronized Main `183b35d76bae979a
 No individual bill-detail code/content, Bill Summary, legal comparison, votes, original records, reconciliation/acquisition, Calendar/Legislators functionality, Contact recipient/subject, hosting/DNS/domain or indexing changes. Main remains the sole deployment, with noindex/nofollow.
 
 The scheduled-run check found completed run 40211750281 and no active acquisition; this batch does not reclassify its acceptance evidence or close TEST-001. Independent editorial review, physical iPhone/iPad, manual VoiceOver/NVDA, native browser zoom and release approval remain open. Automated CSS zoom is not native-browser or physical-device acceptance. Broader 2026 content/access questions remain deferred to the separately requested second batch. Every unfinished backlog task is retained.
+
+## CI font-metric correction
+
+Initial [run 40370112032](https://github.com/utahbug/UtahBills/actions/runs/40370112032) passed integrity/build gates, then the new responsive suite caught a Linux-font-dependent minimum-width defect: at 320px and 200% CSS zoom, the short official link measured 158.78 physical pixels against a 152px Search input. Its inline-flex text fragments could not wrap independently enough. No deployment occurred.
+
+The Bills official link now uses normal text wrapping within the same heading grid; the external icon stays with its final word and the target remains at least 44px high. The exact input-edge assertion is retained, with added Arial/Verdana/Georgia zoom cases. The focused Phase 5F matrix is rerun; unrelated local suites are not repeated. Mandatory CI remains required for the corrective commit.
