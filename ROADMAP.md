@@ -36,7 +36,7 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 - **Implemented:** all 1,016 indexed 2026 measures as basic official records (931 bills, 85 resolutions); four examples retain reviewed explanations and comparisons.
 - **Batch 2C implemented:** guarded daily 2027 metadata/request refresh, exact tracking-ID reconciliation, preserved request/measure revisions, independent refresh reports and retained 2026 history.
-- **Next bounded batch:** verify subsequent scheduled acquisition and early 2027 source completeness, then connect the authoritative 2027 roster when published. Historical vote discrepancies and voter identities remain lower priority unless they affect current-session accuracy. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
+- **Next bounded batch:** verify first-real-2027 source completeness and connect the authoritative 2027 roster when published; scheduled end-to-end acceptance is complete under Phase 6A. Historical vote discrepancies and voter identities remain lower priority unless they affect current-session accuracy. Expand verified vote coverage with explicit identity and source checks; broader XML analysis remains separate later work.
 - **Implemented:** separately labeled public requests and introduced measures; counts derive from each verified snapshot. The initial Batch 2C snapshot has 253 pending requests and an empty introduced index; neither count is fixed in the application.
 - **Batch 2C implemented:** compact status/Info disclosure and corrected shared request template, human-readable official listing, optional source/history details.
 - Substitutes, late changes and boxcar-bill histories using verifiable version/publication evidence.
@@ -225,3 +225,7 @@ Directory column controls and stacked records share one container-width transiti
 ## Phase 5A — readiness audit
 
 The [comprehensive assessment](docs/PHASE5A_READINESS.md) verifies all saved requests/search/export and separates Main's 272 verified statuses plus one observation from newly checked 273/273 agreement. An isolated guarded candidate is not scheduled publication evidence. A reproduced full-reconciliation introduced-number contradiction is corrected; publication retains all mandatory checks and owner release boundaries. Next: genuine scheduled publication, independent editorial/device acceptance, then actual 2027 introduction/roster validation. TEST-001, SESSION-002/003 and release dependencies remain open; no deferred sponsorship comparison or visual redesign is included.
+
+## Phase 6A — Scheduled acceptance complete; real introductions still pending
+
+[TEST-001 acceptance](docs/PHASE6A_VERIFICATION.md) verifies genuine October 25/26 schedules, component reports, source hashes, required tests, snapshot commits and deployed freshness. Approved partial reconciliation remains explicitly partial: 274 observed requests, 273 verified statuses, one unconfirmed source observation. This supersedes older scheduled-acceptance-pending notes only. SESSION-003 remains blocked until real introduced legislation/conversions can be validated; SESSION-002 awaits verified membership. Independent editorial, human accessibility, broader release review and owner authorization remain open. No application, data, pipeline or hosting changes.

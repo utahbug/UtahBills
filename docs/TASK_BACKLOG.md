@@ -1,8 +1,8 @@
 # UtahBills authoritative task backlog
 
-Updated: October 24, 2026. Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
+Updated: October 26, 2026 (Phase 6A). Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation.
 
-Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 are High priorities alongside TEST-001.
+Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 remain High priorities; TEST-001 completed in Phase 6A.
 
 Phase 4E maintenance: CAL-001 and UI-002 complete the authorized interface refinements. Phase 4D request freshness and transition-test readiness remain complete; the next actual scheduled run remains unverified. See [Phase 4E verification](PHASE4E_VERIFICATION.md), [Phase 4D verification](PHASE4D_VERIFICATION.md) and the completed task ledger.
 
@@ -16,20 +16,20 @@ Read [AGENTS.md](../AGENTS.md), [ROADMAP.md](../ROADMAP.md), [README.md](../READ
 
 ## Status and priority
 
-Active inventory: **38 tasks**; **14 completed tasks** retain their IDs in the completion ledger. Completed tasks and batches are excluded from active counts.
+Historical core-inventory tally (later phase additions are recorded separately below), adjusted for Phase 6A TEST-001 closure: **37 active tasks**; **15 completed tasks**. Completed tasks and batches are excluded. This table is not an aggregate of all later phase additions.
 
 | Status | Count |
 | --- | ---: |
 | In progress | 1 |
 | Approved/Not started | 23 |
 | Proposed | 2 |
-| Blocked | 8 |
+| Blocked | 7 |
 | Deferred | 4 |
 
 | Priority | Count |
 | --- | ---: |
 | Critical | 0 |
-| High | 4 |
+| High | 3 |
 | Medium | 26 |
 | Low | 8 |
 
@@ -271,23 +271,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ## 8. Testing, reliability, and deployment
 
-### TEST-001
-
-Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 2026-10-23T18:09:23Z finds 271 public requests / 270 status rows, with DYVEPWTRCQ absent from raw HTML. The verified 268-request catalog is retained. No newer genuine scheduled run than failed 39993137239 exists at this review; text/archive were skipped, while independent Calendar publication succeeded. TEST-001 remains High / Blocked pending complete authoritative reconciliation and qualifying scheduled evidence.
-
-**Verify the next scheduled refresh end-to-end** — **High** · **Blocked**
-
-- **Dependencies:** A subsequent scheduled run after the Phase 4C correction; catalog publication depends independently on DATA-001.
-- **Source:** [Audit H1](QUALITY_AUDIT.md#h1--calendar-regression-blocked-scheduled-publication--corrected); [workflow](../.github/workflows/pages.yml).
-- **Acceptance:** Record run ID, Calendar acquisition outcome, attempt reports, source provenance, validation, snapshot commit and deployed freshness. Confirm the Calendar refresh passes the corrected regression and publishes verified updates. Record catalog/archive outcomes separately even if retained data deploys. A successful push build is not this evidence; leave any failed acquisition open.
-
-**Phase 4M scheduled evidence:** Genuine schedule [39993137239](https://github.com/utahbug/UtahBills/actions/runs/39993137239) acquired 90 Calendar events, but catalog reconciliation failed because official status data lacked DYVEPWTRCQ. The 268-request snapshot was retained and dependent text/archive acquisition skipped. All mandatory tests and Calendar deployment passed (snapshot commit `4e6ef34`); independent refresh health correctly failed. TEST-001 remains Blocked on successful subsequent acquisition and publication; DATA-001's earlier resolved discrepancy is not erased or reused for this new ID. [Evidence](PHASE4M_VERIFICATION.md#genuine-scheduled-execution-during-publication).
-
-**Phase 4K recheck:** No subsequent schedule exists after 39820847031; TEST-001 remains High/Blocked. Closure must inspect component reports, including archive `partial` outcomes, and publication evidence. [Pipeline/freshness evidence](PHASE4K_VERIFICATION.md). November 4, 2026 is a readiness planning objective, not a release commitment.
-
-**Phase 4D progress:** Manual guarded run [39869478421](https://github.com/utahbug/UtahBills/actions/runs/39869478421) passed Calendar/Catalog/archive acquisition, reconciliation, tests, snapshot commit and deployment. No subsequent cron-triggered run existed at verification; this task remains open for that distinct evidence. DATA-001 is resolved.
-
-**Phase 5B follow-up:** Genuine schedule [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281) completed with successful build/deployment and snapshot commit `1fcba42`. It was allowed to finish before the UI push. TEST-001 remains open pending its full component-report, preservation and deployed-freshness acceptance review; this bounded footer/Contact refinement does not perform that audit.
+TEST-001 is complete under the [Phase 6A acceptance decision](#test-001); its criterion and historical evidence are retained in the completed ledger.
 
 ### TEST-002
 
@@ -378,6 +362,34 @@ Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 
 ## Completed tasks
 
 Stable IDs are retained here and excluded from active counts.
+
+### TEST-001
+
+**Verify the next scheduled refresh end-to-end** — **High** · **Completed October 26, 2026**
+
+- **Acceptance retained:** Record genuine run ID, Calendar acquisition, attempt reports, source provenance, validation, snapshot commit and deployed freshness. Record catalog/archive outcomes independently; a push build is insufficient and failed acquisition must remain visible.
+- **Evidence:** [Phase 6A verification](PHASE6A_VERIFICATION.md) and [component/source evidence](evidence/PHASE6A_SCHEDULED.json). Genuine schedules [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281) and [40380145137](https://github.com/utahbug/UtahBills/actions/runs/40380145137) completed acquisition, all required checks, snapshot commits `1fcba42` / `6d6b349` and Main deployment. October 26 artifact/current Main comparison confirms ten identical data assets and their acquisition dates.
+- **Decision:** Full October 25 reconciliation and policy-compliant October 26 partial reconciliation satisfy scheduled acceptance. October 26 retains 274 source requests, 273 verified statuses and one explicitly unconfirmed source observation. This is not an application failure or full-source-completeness claim. Zero eligible text/introduced records and cached historical votes are explicitly limited evidence.
+- **Still open:** SESSION-003 first real introduced measure/conversion/text/vote acceptance; SESSION-002 membership; source discrepancy KECAYMBVUG; RELEASE-002's broader release assessment, human/editorial/accessibility and owner authorization. No unrelated task closes.
+- **Review commit:** `git log -1 --format=%H -- docs/PHASE6A_VERIFICATION.md`; required CI/publication accompanies delivery. Prior stricter reconciliation language below is superseded by approved Phase 4O–4Q policy and this evidence-based review, not silently erased.
+
+#### TEST-001 prior dated evidence
+
+Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 2026-10-23T18:09:23Z finds 271 public requests / 270 status rows, with DYVEPWTRCQ absent from raw HTML. The verified 268-request catalog is retained. No newer genuine scheduled run than failed 39993137239 exists at this review; text/archive were skipped, while independent Calendar publication succeeded. TEST-001 remains High / Blocked pending complete authoritative reconciliation and qualifying scheduled evidence.
+
+**Verify the next scheduled refresh end-to-end** — **High** · **Blocked**
+
+- **Dependencies:** A subsequent scheduled run after the Phase 4C correction; catalog publication depends independently on DATA-001.
+- **Source:** [Audit H1](QUALITY_AUDIT.md#h1--calendar-regression-blocked-scheduled-publication--corrected); [workflow](../.github/workflows/pages.yml).
+- **Acceptance:** Record run ID, Calendar acquisition outcome, attempt reports, source provenance, validation, snapshot commit and deployed freshness. Confirm the Calendar refresh passes the corrected regression and publishes verified updates. Record catalog/archive outcomes separately even if retained data deploys. A successful push build is not this evidence; leave any failed acquisition open.
+
+**Phase 4M scheduled evidence:** Genuine schedule [39993137239](https://github.com/utahbug/UtahBills/actions/runs/39993137239) acquired 90 Calendar events, but catalog reconciliation failed because official status data lacked DYVEPWTRCQ. The 268-request snapshot was retained and dependent text/archive acquisition skipped. All mandatory tests and Calendar deployment passed (snapshot commit `4e6ef34`); independent refresh health correctly failed. TEST-001 remains Blocked on successful subsequent acquisition and publication; DATA-001's earlier resolved discrepancy is not erased or reused for this new ID. [Evidence](PHASE4M_VERIFICATION.md#genuine-scheduled-execution-during-publication).
+
+**Phase 4K recheck:** No subsequent schedule exists after 39820847031; TEST-001 remains High/Blocked. Closure must inspect component reports, including archive `partial` outcomes, and publication evidence. [Pipeline/freshness evidence](PHASE4K_VERIFICATION.md). November 4, 2026 is a readiness planning objective, not a release commitment.
+
+**Phase 4D progress:** Manual guarded run [39869478421](https://github.com/utahbug/UtahBills/actions/runs/39869478421) passed Calendar/Catalog/archive acquisition, reconciliation, tests, snapshot commit and deployment. No subsequent cron-triggered run existed at verification; this task remains open for that distinct evidence. DATA-001 is resolved.
+
+**Phase 5B follow-up:** Genuine schedule [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281) completed with successful build/deployment and snapshot commit `1fcba42`. It was allowed to finish before the UI push. TEST-001 remains open pending its full component-report, preservation and deployed-freshness acceptance review; this bounded footer/Contact refinement does not perform that audit.
 
 ### ACT-003
 
@@ -505,7 +517,7 @@ TEST-001 and SESSION-003 are explicitly **Blocked** on missing actual scheduled-
 
 ## Next Recommended Batch
 
-**Recommended, not started:** verify publication of the [Phase 5A identity correction and audit](PHASE5A_READINESS.md), then evaluate the next genuine scheduled end-to-end refresh under [TEST-001](#test-001). The bounded October 24 Mountain-time check finds 273/273 official agreement, but Main still retains its older 273-visible/272-verified snapshot. The isolated guarded candidate is not scheduled or published acceptance. Keep acquisition, tests, preservation, deployment and refresh-health evidence separate; do not dispatch a manual run to simulate a schedule.
+**Recommended, not started:** SESSION-003 acceptance when the first real 2027 introduced sources/conversions appear, plus SESSION-002 when an authoritative roster is available. TEST-001 is now complete under [Phase 6A](PHASE6A_VERIFICATION.md). Do not manufacture scheduled evidence or treat successful empty text acquisition as real-bill acceptance. Continue independent editorial and human accessibility acceptance while waiting for official evidence.
 
 Prioritize 2027 early-session coverage, verified membership and [UI-001](#ui-001) / [RELEASE-001](#release-001) human review. Preserve Recent Activity, legislative changes/substitutes/votes, Calendar coverage and refresh reliability as current-cycle work. Historical DATA-002/DATA-003 remain open below these priorities unless current-session defects emerge. The first real introduced-session observation and roster verification remain under SESSION-003 / SESSION-002. Do not automatically start feature expansion.
 
@@ -749,3 +761,7 @@ All unfinished task IDs and human/editorial/release acceptance remain unchanged.
 - **Evidence:** [Phase 5J verification](PHASE5J_VERIFICATION.md), `tests/phase5j.mjs`, retained mandatory regression/CI gates. Resolve the implementation commit with `git log -1 --format=%H -- docs/PHASE5J_VERIFICATION.md`; publication verification accompanies delivery.
 
 Following successful owner review, routine 2026 archive interface development is complete; demonstrated defects remain eligible for correction. Owner review is pending. All unfinished IDs and human/editorial/release acceptance remain unchanged; TEST-001 remains open. Future work returns to separately scoped 2027 readiness priorities.
+
+## Phase 6A maintenance
+
+TEST-001 alone closes after formal scheduled acceptance; [verification](PHASE6A_VERIFICATION.md). All earlier statements that it remained open are dated historical evidence, superseded by this review. SESSION-003 remains blocked on real introduced sources; SESSION-002 and all human/release tasks remain unfinished. No application or source-data changes.

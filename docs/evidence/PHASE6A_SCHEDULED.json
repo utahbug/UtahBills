@@ -1,0 +1,561 @@
+{
+  "reviewedAt": "2026-10-26",
+  "runs": [
+    {
+      "runId": "40211750281",
+      "event": "schedule",
+      "startedAt": "2026-10-25T16:27:23Z",
+      "headSha": "0bfde24f8fc35cc5a5e74ed846e9cf9453fd9a88",
+      "snapshotCommit": "1fcba42fee16917ed07150e3a4df999b6dbc8d56",
+      "jobs": [
+        {
+          "name": "build",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:28Z"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:30Z"
+            },
+            {
+              "name": "Run actions/setup-node@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:33Z"
+            },
+            {
+              "name": "Verify reproducible UTF-8 source analysis",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:33Z"
+            },
+            {
+              "name": "Refresh official calendar",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:48Z"
+            },
+            {
+              "name": "Refresh 2027 legislation and requests",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:51Z"
+            },
+            {
+              "name": "Preserve independent request observations",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:27:59Z"
+            },
+            {
+              "name": "Acquire bounded verified 2027 text",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:28:00Z"
+            },
+            {
+              "name": "Refresh official vote records",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:28:00Z"
+            },
+            {
+              "name": "Preserve refresh attempt reports",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:28:02Z"
+            },
+            {
+              "name": "Report independent refresh outcomes",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:28:02Z"
+            },
+            {
+              "name": "Verify calendar provenance and failure safeguards",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:28:02Z"
+            },
+            {
+              "name": "Verify bill catalog provenance and associations",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:30:32Z"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:30:35Z"
+            },
+            {
+              "name": "Run npm run build",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:31:08Z"
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:31:30Z"
+            },
+            {
+              "name": "Functional and accessibility checks",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:48Z"
+            },
+            {
+              "name": "Preserve tested snapshots",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:52Z"
+            },
+            {
+              "name": "Run actions/configure-pages@v5",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:52Z"
+            },
+            {
+              "name": "Run actions/upload-pages-artifact@v3",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:57Z"
+            },
+            {
+              "name": "Post Run actions/setup-node@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:57Z"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:58Z"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:51:58Z"
+            }
+          ]
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:52:05Z"
+            },
+            {
+              "name": "Deploy",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:52:11Z"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success",
+              "completedAt": "2026-10-25T16:52:11Z"
+            }
+          ]
+        },
+        {
+          "name": "refresh_health",
+          "conclusion": "skipped",
+          "steps": []
+        }
+      ],
+      "reports": {
+        "catalog-refresh": {
+          "attemptedAt": "2026-10-25T16:27:48.451574+00:00",
+          "status": "success",
+          "reconciliation": {
+            "status": "success",
+            "officialTotal": 273,
+            "verifiedTotal": 273,
+            "withheld": []
+          },
+          "introduced2027": 0,
+          "publicRequests": 273,
+          "requestStatusesVerified": 273,
+          "linkedRequests": 0,
+          "finishedAt": "2026-10-25T16:27:51.704621+00:00"
+        },
+        "observation-refresh": {
+          "attemptedAt": "2026-10-25T16:27:51.791646+00:00",
+          "status": "success",
+          "officialTotal": 273,
+          "matchedStatuses": 273,
+          "missingIDs": [],
+          "scope": "Source observations only; not full catalog reconciliation",
+          "finishedAt": "2026-10-25T16:27:59.090153+00:00"
+        },
+        "text-refresh": {
+          "attemptedAt": "2026-10-25T16:28:00.229085+00:00",
+          "status": "success",
+          "attemptedDocuments": 0,
+          "limits": {
+            "documents": 12,
+            "seconds": 240,
+            "bytesPerDocument": 4194304,
+            "timeoutSeconds": 15,
+            "attemptsPerDocument": 2,
+            "recheckDays": 7
+          },
+          "counts": {
+            "verified": 0,
+            "not_retrieved": 0,
+            "failed": 0,
+            "rejected": 0,
+            "deferred": 0
+          },
+          "documents": []
+        },
+        "archive-refresh": {
+          "attemptedAt": "2026-10-25T16:28:00.732774+00:00",
+          "status": "success",
+          "expected": 5672,
+          "retrieved": 5672,
+          "unavailable": []
+        }
+      },
+      "calendar": {
+        "checkedAt": "2026-10-25T16:27:48.320041+00:00",
+        "coverageStart": "2026-10-01",
+        "coverageEnd": "2027-05-31"
+      },
+      "calendarEvents": 90,
+      "calendarMonths": 8,
+      "catalogCheckedAt": "2026-10-25T16:27:50.644023+00:00",
+      "sources": {
+        "requests": {
+          "url": "https://le.utah.gov/data/2027GS/filelist.json",
+          "path": "data/catalog-raw/72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4.json",
+          "sha256": "72216143d1e9d18c8ba155490a5d78f87fec38e43cba4854d8db23ce599df5a4",
+          "retrievedAt": "2026-10-25T16:27:49.179318+00:00"
+        },
+        "statuses": {
+          "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+          "path": "data/catalog-raw/cc7a2261be3e6becbcf18a59158c665f25d391f38ce98b1af38eaac179c20fdb.txt",
+          "sha256": "cc7a2261be3e6becbcf18a59158c665f25d391f38ce98b1af38eaac179c20fdb",
+          "retrievedAt": "2026-10-25T16:27:49.669934+00:00"
+        },
+        "index": {
+          "url": "https://le.utah.gov/data/2027GS/billlist.json",
+          "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "retrievedAt": "2026-10-25T16:27:48.822368+00:00"
+        }
+      },
+      "sourceVerification": {
+        "uniquePinnedFilesChecked": 6711,
+        "embeddedSourcesChecked": 34,
+        "allHashesMatched": true
+      },
+      "introducedCount": 0,
+      "verifiedRequestCount": 273,
+      "artifactReportHashes": {
+        "archive-refresh.json": "546c2601cd4289b40cf54e482d0475a4572fdd6e7f67b5f6b7e0508c773c809a",
+        "calendar-refresh.log": "9dc384d606558556043ef6b85c5234b4ee51f11790da381b0326820ceb66d315",
+        "catalog-refresh.json": "9ff6eb8912511e7b6c173dbdb4a42c80dec0d7e2bb6f7a155b42afa97004f065",
+        "catalog-sources.json": "b5dea5fea5febf658b883819839660a862631987c0069d8bf8d4524917d0c0ab",
+        "observation-refresh.json": "36cc9ff447ba20c92b0dcd20d4db82f0a4e1f5ddcd4dd999b1d7de5c76d01999",
+        "text-refresh.json": "648b2446569ceee4c389250b64f8c0cbf0438f438fd69f8b5f7f76c1a19bc0b5"
+      }
+    },
+    {
+      "runId": "40380145137",
+      "event": "schedule",
+      "startedAt": "2026-10-26T18:42:40Z",
+      "headSha": "d0b43b83c99635ffea0b610cdd96ecf0f5d62d91",
+      "snapshotCommit": "6d6b349fe9f57f96052bdf307754e5313f2d390b",
+      "jobs": [
+        {
+          "name": "build",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:43:46Z"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:43:49Z"
+            },
+            {
+              "name": "Run actions/setup-node@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:43:52Z"
+            },
+            {
+              "name": "Verify reproducible UTF-8 source analysis",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:43:52Z"
+            },
+            {
+              "name": "Refresh official calendar",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:06Z"
+            },
+            {
+              "name": "Refresh 2027 legislation and requests",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:10Z"
+            },
+            {
+              "name": "Preserve independent request observations",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:20Z"
+            },
+            {
+              "name": "Acquire bounded verified 2027 text",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:21Z"
+            },
+            {
+              "name": "Refresh official vote records",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:22Z"
+            },
+            {
+              "name": "Preserve refresh attempt reports",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:23Z"
+            },
+            {
+              "name": "Report independent refresh outcomes",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:23Z"
+            },
+            {
+              "name": "Verify calendar provenance and failure safeguards",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:44:24Z"
+            },
+            {
+              "name": "Verify bill catalog provenance and associations",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:47:00Z"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:47:03Z"
+            },
+            {
+              "name": "Run npm run build",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T18:47:41Z"
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:01:34Z"
+            },
+            {
+              "name": "Functional and accessibility checks",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:11Z"
+            },
+            {
+              "name": "Preserve tested snapshots",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:15Z"
+            },
+            {
+              "name": "Run actions/configure-pages@v5",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:16Z"
+            },
+            {
+              "name": "Run actions/upload-pages-artifact@v3",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:20Z"
+            },
+            {
+              "name": "Post Run actions/setup-node@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:21Z"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:21Z"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:21Z"
+            }
+          ]
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:29Z"
+            },
+            {
+              "name": "Deploy",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:51Z"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success",
+              "completedAt": "2026-10-26T19:25:51Z"
+            }
+          ]
+        },
+        {
+          "name": "refresh_health",
+          "conclusion": "skipped",
+          "steps": []
+        }
+      ],
+      "reports": {
+        "catalog-refresh": {
+          "attemptedAt": "2026-10-26T18:44:06.817473+00:00",
+          "status": "partial",
+          "reconciliation": {
+            "status": "partial",
+            "officialTotal": 274,
+            "verifiedTotal": 273,
+            "withheld": [
+              {
+                "trackingID": "KECAYMBVUG",
+                "reason": "New request awaiting first matching official status"
+              }
+            ]
+          },
+          "introduced2027": 0,
+          "publicRequests": 273,
+          "requestStatusesVerified": 273,
+          "linkedRequests": 0,
+          "finishedAt": "2026-10-26T18:44:10.351186+00:00"
+        },
+        "observation-refresh": {
+          "attemptedAt": "2026-10-26T18:44:10.443185+00:00",
+          "status": "success",
+          "officialTotal": 274,
+          "matchedStatuses": 273,
+          "missingIDs": [
+            "KECAYMBVUG"
+          ],
+          "scope": "Source observations only; not full catalog reconciliation",
+          "finishedAt": "2026-10-26T18:44:20.256581+00:00"
+        },
+        "text-refresh": {
+          "attemptedAt": "2026-10-26T18:44:21.564791+00:00",
+          "status": "success",
+          "attemptedDocuments": 0,
+          "limits": {
+            "documents": 12,
+            "seconds": 240,
+            "bytesPerDocument": 4194304,
+            "timeoutSeconds": 15,
+            "attemptsPerDocument": 2,
+            "recheckDays": 7
+          },
+          "counts": {
+            "verified": 0,
+            "not_retrieved": 0,
+            "failed": 0,
+            "rejected": 0,
+            "deferred": 0
+          },
+          "documents": []
+        },
+        "archive-refresh": {
+          "attemptedAt": "2026-10-26T18:44:22.078623+00:00",
+          "status": "success",
+          "expected": 5672,
+          "retrieved": 5672,
+          "unavailable": []
+        }
+      },
+      "calendar": {
+        "checkedAt": "2026-10-26T18:44:06.684759+00:00",
+        "coverageStart": "2026-10-01",
+        "coverageEnd": "2027-05-31"
+      },
+      "calendarEvents": 90,
+      "calendarMonths": 8,
+      "catalogCheckedAt": "2026-10-26T18:44:09.140553+00:00",
+      "sources": {
+        "requests": {
+          "url": "https://le.utah.gov/data/2027GS/filelist.json",
+          "path": "data/catalog-raw/1de35043163c051593549849ad890662339b65c1c6a5b6663a2065ea76c226d5.json",
+          "sha256": "1de35043163c051593549849ad890662339b65c1c6a5b6663a2065ea76c226d5",
+          "retrievedAt": "2026-10-26T18:44:07.525531+00:00"
+        },
+        "statuses": {
+          "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+          "path": "data/catalog-raw/3c4ca8068745d07e3f98c7ec6901920b0b304d9bb9c98d6321c2cebb24be5ed9.txt",
+          "sha256": "3c4ca8068745d07e3f98c7ec6901920b0b304d9bb9c98d6321c2cebb24be5ed9",
+          "retrievedAt": "2026-10-26T18:44:08.029806+00:00"
+        },
+        "index": {
+          "url": "https://le.utah.gov/data/2027GS/billlist.json",
+          "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "retrievedAt": "2026-10-26T18:44:07.163168+00:00"
+        }
+      },
+      "sourceVerification": {
+        "uniquePinnedFilesChecked": 6714,
+        "embeddedSourcesChecked": 32,
+        "allHashesMatched": true
+      },
+      "introducedCount": 0,
+      "verifiedRequestCount": 273,
+      "artifactReportHashes": {
+        "archive-refresh.json": "693832c4d7d9574ede9448dbc6bd6df7d695380c42cedec0a9cf9a19b0b32c78",
+        "calendar-refresh.log": "9dc384d606558556043ef6b85c5234b4ee51f11790da381b0326820ceb66d315",
+        "catalog-refresh.json": "2c0092edb107805a1a60423a40ae396411747e7ee9cb72f63c0377273a0eb3d3",
+        "catalog-sources.json": "45b822424541168c4977cba5419d654d695edd43b59c8b1e0f175affe121572a",
+        "observation-refresh.json": "c43de84750211391de5d13e9e00e84971876c434322a9143c91dc880604fa2c3",
+        "text-refresh.json": "1b662995a4c1845f7f10cca540690fa042a0afa978b17218fbb3c36455a96f65"
+      }
+    }
+  ],
+  "publishedOctober26AndCurrentMain": [
+    {
+      "file": "data/catalog.json",
+      "sha256": "a5672bca2c24e9b7c0ce5c93c0328f5c658bf3efe42f0e628c2f92a771264d66"
+    },
+    {
+      "file": "data/calendar.json",
+      "sha256": "15ffdae56ca11b1f5b861de716c2ac69b089d363c35778bd53d35f0dff718ad3"
+    },
+    {
+      "file": "data/request-observations.json",
+      "sha256": "aedcc7abba44d196e284759541cb3edd5761ec4f1e5efedc62f158b9cb080adc"
+    },
+    {
+      "file": "data/text-2027.json",
+      "sha256": "974c83dcd28e9dfedec3ac04c33762e50600db3afac8af043ac7c812281e9f7a"
+    },
+    {
+      "file": "data/archive.json",
+      "sha256": "e0a4bfa813d611fb15cc52f297f0c2be6fdc45d5507b775672a3082a2b7bb0e1"
+    },
+    {
+      "file": "data/catalog-ui.json",
+      "sha256": "86aa6e411188a346f3e1aa7c42284d20780bf6894a87c20b702754b9367341a9"
+    },
+    {
+      "file": "data/calendar-ui.json",
+      "sha256": "f69cac375d60c8e3ef878aff3d56bb40a55cceea69c16a1e1d7100e26e5d231e"
+    },
+    {
+      "file": "data/verification-summary.json",
+      "sha256": "ac62f609a5a87fa8882bd8fd308ef9ee51a7b1575e78eff635efead671e661e3"
+    },
+    {
+      "file": "data/version-coverage.json",
+      "sha256": "9461f8e87cd85c94be0d1fcba619b0a76b5268d932455072f6856b215ec2e17c"
+    },
+    {
+      "file": "data/activity/index.json",
+      "sha256": "8b8fa8f11e7843b7e4e6f773e4b84574acca1b56fdb2d33f0dcc62cd8c717459"
+    }
+  ],
+  "october25PagesArtifact": "No longer listed/available; deployment job/log and immutable snapshot remain. No claim of independent historical asset-byte verification."
+}
