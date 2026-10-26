@@ -480,9 +480,10 @@ main:has(>#results){padding-bottom:10px}
 .enhanced-detail .summary-source a{display:inline-block;min-height:44px;align-content:center}
 .enhanced-detail>.major-detail{margin-top:6px;padding:0;border:0}
 .enhanced-detail>.major-detail>summary{font-size:1rem;font-weight:400}
-.enhanced-detail .vote-overview-row{margin:10px 0}
-.enhanced-detail .vote-overview-row h3{font-size:1rem;font-weight:500;margin:0}
-.enhanced-detail .vote-overview-row p{margin:2px 0}
+.enhanced-detail .vote-overview-list{padding-left:1.4em;margin:6px 0;font:inherit}
+.enhanced-detail .vote-overview-row{margin:6px 0;font-weight:400}
+.enhanced-detail .vote-overview-description{font:inherit;font-weight:400}
+.enhanced-detail .vote-overview-support{display:block;font-size:.9em;font-weight:400;color:var(--muted);margin-top:2px}
 .enhanced-detail .open-detail{display:inline-block;min-height:44px;align-content:center}
 .enhanced-detail #reader-heading{font-size:1.05rem;margin-bottom:4px}
 .enhanced-detail #reader-version-heading{font-size:.9rem;margin-top:0}

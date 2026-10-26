@@ -675,3 +675,57 @@ All unfinished IDs, priorities and statuses remain unchanged. TEST-001, human ed
 - **Evidence:** [Phase 5G verification](PHASE5G_VERIFICATION.md), `tests/phase5g.mjs`, retained Phase 5D/5E and strict nine-version reader/vote/comparison/navigation checks. The implementation commit introduces this record (`git log -1 --format=%H -- docs/PHASE5G_VERIFICATION.md`); mandatory CI and Main asset checks accompany delivery.
 
 All unfinished IDs, priorities and statuses remain unchanged. TEST-001 remains open: successful scheduled publication 40380145137 is separate from its partial request reconciliation and full acceptance review. Independent editorial review, physical-device/manual assistive-technology/native-zoom acceptance and public-release authorization remain unfinished. No original data, review packet, acquisition, search, Contact or hosting changes are included.
+
+## Phase 5H — UI-015
+
+**Compact semantic legislative-vote overview** — **Medium** · **Completed implementation — October 26, 2026**
+
+- **Source:** Owner Phase 5H §§1–5; presentation-only refinement of UI-014.
+- **Acceptance:** Native bullets with body-sized regular descriptions and smaller supporting totals; only one overview heading; technical dates/names/links/qualifications retained in expanded Votes; duplicate inner heading absent in loading/success/error on enhanced pages; exact vote selection, tallies, individual records and source links preserved; default hierarchy and direct disclosure navigation unchanged.
+- **Evidence:** [Phase 5H verification](PHASE5H_VERIFICATION.md), `tests/phase5h.mjs`, retained Phase 5G and source/vote integrity checks. The implementation commit introduces this record (`git log -1 --format=%H -- docs/PHASE5H_VERIFICATION.md`); required CI/Main verification accompanies delivery.
+
+## Phase 5H follow-up decisions — documentation only
+
+These five future tasks are recorded without implementation. Prior unfinished IDs, priorities and statuses remain unchanged. No backlog entry authorizes automatic implementation.
+
+### SHARE-001
+
+**Copy titles with links** — **Medium** · **Approved/Not started** · **Important pre-session enhancement**
+
+- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
+- **Dependencies:** Existing complete-matching-set Copy/CSV, stable request and introduced-measure routes, and a scoped implementation batch.
+- **Acceptance:** Add Copy titles with links to the existing Bills and Recent Activity More menus alongside Export CSV. Each matching title is immediately followed by its full valid UtahBills URL, with a blank line between records. Include the entire filtered set in its established order, loading additional matching saved Activity pages on demand. Verify request and introduced-bill links without inventing identities or conversions. Supply plain text suitable for X, email and documents; offer rich-text clickable titles where supported, with explicit plain-text URL fallback. Retain existing detailed Copy, CSV, denied-clipboard handling and accessible confirmation. Test multi-page filtered results, links and fallback without sending messages or adding social-media integration.
+
+### LEG-004
+
+**Compact Legislators directory spacing and search alignment** — **Medium** · **Approved/Not started**
+
+- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only). Separate from LEG-003's deferred sponsorship comparison.
+- **Dependencies:** Preserve current responsive directory, sorting, source distinctions and shared input geometry; separate scoped implementation.
+- **Acceptance:** Reduce excess Name-to-District width and row height moderately; shorten desktop Find a legislator search; move its existing Info immediately right of the field. Keep Session, Chamber and search inputs exactly aligned while leaving established label heights/baselines unchanged. Verify desktop/narrow reflow, sorting, keyboard focus and accessible targets without changing membership or sponsorship data.
+
+### ACT-004
+
+**Discreet Recent Activity discrepancy typography** — **Low** · **Deferred**
+
+- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
+- **Dependencies:** Separate scoped UI request; retain the neutral discrepancy explanation and source evidence.
+- **Acceptance:** Make the flag/status typography smaller and discreet, with a regular-weight Source discrepancy details heading. Preserve accessible identification, target sizes, focus, responsive alignment, factual qualifications and all evidence links.
+
+### ACT-005
+
+**Optional Recent Activity search** — **Low** · **Deferred**
+
+- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
+- **Dependencies:** A separately approved scope, reliable saved-event coverage and bounded loading of paginated events.
+- **Acceptance:** Before implementation, establish useful title/bill-number/tracking-ID search behavior across matching saved events. Any implementation must preserve date/category filters, accurate counts, undated access, pagination, Copy/CSV, exact routes and observed-versus-official date qualifications, with targeted correctness/accessibility tests. Do not fabricate activity or identity associations.
+
+### ACT-006
+
+**Evaluate Recent Activity as the 2027 session landing page** — **Low** · **Deferred**
+
+- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
+- **Dependencies:** Actual session activity volume, reliable refresh evidence (TEST-001), coverage review and explicit owner decision before changing the default route.
+- **Acceptance:** Assess real activity volume, freshness, empty states and source reliability; record a recommendation and owner decision. Retain Bills/request access and all bookmarks. A future default-route change requires its own navigation, accessibility and release checks; this evaluation does not authorize changing the landing page now.
+
+Human/editorial/release acceptance and TEST-001 remain open. These follow-ups do not change the Main-only environment, future domain plan, source safeguards or indexing restriction.
