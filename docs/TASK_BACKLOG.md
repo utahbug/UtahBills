@@ -635,3 +635,13 @@ The approved mobile-only More/Info exchange reuses existing controls and keeps C
 - **Source:** Owner Phase 5C request and responsive clarification. Replaces only the earlier mobile official-link placement and specified control/spacing treatments.
 - **Acceptance:** Shared label/input geometry, 440px desktop directory search, official search link associated with Search at every width, selected-value native selectors, Calendar divider/category alignment, concise Activity empty states and single final boundary, compact pagination and discreet accessible Contact icon. Preserve source records, navigation, filtering, Copy/CSV and all human/release acceptance requirements.
 - **Evidence:** [Phase 5C verification](PHASE5C_VERIFICATION.md), `tests/phase5c.mjs` and affected retained regressions. Implementation commit is the commit introducing that record (`git log -1 --format=%H -- docs/PHASE5C_VERIFICATION.md`); final CI/deployment accompanies delivery. All unfinished task IDs and statuses remain unchanged.
+
+## Phase 5D — UI-011
+
+**Bill detail readability and progressive disclosure** — **Medium** · **Completed implementation — October 25, 2026**
+
+- **Source:** Owner Phase 5D request; preserve all source-pinned explanations and original evidence.
+- **Acceptance:** Primary explanation/provisions/comparison before supporting records; exact nested metadata lists; adjacent comparison results and contextual baseline qualification; readable internal reader with effective-date boundaries; separate committee/floor tallies and original motion in Source details; source-code-backed key actions plus complete dynamic history; compact committee/document/provenance disclosures; preserved historical identity and future-session fixture behavior.
+- **Evidence:** [Phase 5D verification](PHASE5D_VERIFICATION.md), `tests/phase5d.mjs`, strict nine-version reader conservation and affected retained regressions. Commit introducing this record is the implementation reference (`git log -1 --format=%H -- docs/PHASE5D_VERIFICATION.md`); required CI/Main deployment accompanies delivery.
+
+All unfinished task IDs/statuses remain unchanged. TEST-001, independent editorial review, human device/assistive-technology/native-zoom acceptance and release approval remain open. No legislative acquisition or raw-record changes are included.
