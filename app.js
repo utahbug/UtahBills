@@ -1,3 +1,4 @@
+import {revealDetail} from './detail-navigation.js';
 import {enhancedLayout} from './enhanced-detail.js';
 import {contactEmail,contactDisplayEmail,contactSubject} from './contact-config.js';
 import {compactSelects,resultsPerPage,pagePreference,billToolbarLayout,copyResults,copyText,copyRows,exportResults,paginationIcon,toolbarInfo,navigationTools,scrollSectionIntoView} from './ui.js';
@@ -76,6 +77,7 @@ async function analyzedDetail(b){
  try{if(!analyzedCache.has(b.billNumber)){const r=await fetch('./data/examples/'+b.billNumber+'.json');if(!r.ok)throw Error();analyzedCache.set(b.billNumber,await r.json())}if(location.hash===current){detail({...b,...analyzedCache.get(b.billNumber)});secondaryRawLinks($('#main'));revealHistory($('#main'))}}
  catch{if(location.hash===current)$('#main').innerHTML=`<h1>Saved explanation unavailable</h1><p>${link(b.officialUrl,'Read the official bill record')}</p>`}
 }
+function readableVersion(v){const n=v.label.match(/^Substitute #(\d+)$/);return n?({1:'First',2:'Second',3:'Third'}[n[1]]||n[1]+'th')+' Substitute':v.label}
 function detail(b){
  document.title=`${b.billNumberShort} · ${b.shortTitle} · UtahBug`;
  const sponsors=`<div class="meta"><span><span class="field-label">Chief sponsor:</span> ${sponsorLink(catalog,b.primeSponsor,b.primeSponsorName,b.sessionID)}</span><span><span class="field-label">Opposite-chamber floor sponsor:</span> ${sponsorLink(catalog,b.floorSponsor,b.floorSponsorName||'Not recorded',b.sessionID)}</span></div>`;
@@ -83,9 +85,13 @@ function detail(b){
  toolbarInfo($('#comparison-info-anchor'),{id:'comparison-info',label:'Info about the statutory comparison',html:'<h2>About this comparison</h2><p>The historical baseline is reconstructed from this bill’s official addition/deletion markup. It has not been independently verified against the historical Utah Code.</p><p>Resulting text reflects this proposal alone, not other legislation or current law.</p><p><a href="#about/data">Methodology and sources</a></p>'});
  attachVotes($('#main'),b);
  const readerSelect=$('#reader-version');readerSelect.value=b.versions.findIndex(v=>v.id===b.summaryVersion);
- function readVersion(){const v=b.versions[readerSelect.value];$('#reader-source').innerHTML=`<strong>${esc(v.id)} · ${esc(v.label)}</strong> · ${documentLinks(v)}`;$('#reader-body').innerHTML=v.formatted.map(n=>renderLegislativeNode(n)).join('');}
+ function readVersion(){const v=b.versions[readerSelect.value];$('#reader-version-heading').textContent=readableVersion(v)+' · '+v.id;$('#reader-source').innerHTML=`<strong>${esc(v.id)} · ${esc(v.label)}</strong> · ${documentLinks(v)}`;$('#reader-body').innerHTML=v.formatted.map(n=>renderLegislativeNode(n)).join('');}
  readerSelect.onchange=readVersion;readVersion();
- $('#main').querySelectorAll('.open-reader').forEach(control=>control.onclick=e=>{e.preventDefault();if(control.dataset.readerVersion){readerSelect.value=b.versions.findIndex(v=>v.id===control.dataset.readerVersion);readerSelect.dispatchEvent(new Event('change',{bubbles:true}))}$('#formatted-reader').open=true;$('#formatted-reader > summary').focus();$('#formatted-reader').scrollIntoView({block:'start'})});secondaryRawLinks($('#main'));
+ $('#main').querySelectorAll('.open-reader').forEach(control=>control.onclick=e=>{e.preventDefault();if(control.dataset.readerVersion){readerSelect.value=b.versions.findIndex(v=>v.id===control.dataset.readerVersion);readerSelect.dispatchEvent(new Event('change',{bubbles:true}))}revealDetail($('#reader-heading'))});secondaryRawLinks($('#main'));
+ $('#main .enhanced-detail').addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.matches('.open-reader,.open-official-summary'))return;const id=a.getAttribute('href').slice(1),target=document.getElementById(id);if(target?.closest('.enhanced-detail')){e.preventDefault();revealDetail(target)}});
+ const pinned=b.versions.find(v=>v.id===b.summaryVersion),longTitle=pinned.formatted.find(n=>n.tag==='lt'),official=(longTitle?.children||[]).filter(n=>['gdhead','gd','hphead','hp'].includes(n.tag));
+ const officialLink=$('.open-official-summary');if(!official.some(n=>n.tag==='hp'))officialLink.textContent='Official general description';
+ const dialog=document.createElement('dialog');dialog.className='official-summary-dialog';dialog.setAttribute('aria-labelledby','official-summary-heading');dialog.innerHTML=`<h2 id="official-summary-heading">${esc(officialLink.textContent)} — ${esc(b.billNumberShort)}</h2><p>${esc(readableVersion(pinned))} · ${esc(pinned.id)}</p><div class="official-summary-text">${official.length?official.map(n=>renderLegislativeNode(n)).join(''):'<p>No general description is available in this preserved version.</p>'}</div><p>${documentLinks(pinned)}</p><form method="dialog"><button>Close</button></form>`;$('#main').append(dialog);officialLink.onclick=e=>{e.preventDefault();dialog.showModal()};secondaryRawLinks(dialog);
  let mode='diff'; const proposalVersions=b.versions.filter(v=>v.label!=='Enrolled');$('#law-version').value=b.summaryVersion;
  const getVersion=()=>b.versions.find(v=>v.id===$('#law-version').value);
  function law(){const v=getVersion(),s=v.sections[Number($('#law-section').value)];$('#law-source').innerHTML=`<small>${link(v.url,v.id+' · section '+s.number+' · source line '+s.line+' · official XML')} · ${esc(s.type)}</small>`;const before=s.type==='enact'?'':s.before;$('#law-text').innerHTML=mode==='before'?(before?esc(before):'This section is newly proposed; no prior text appears in this bill.'):mode==='after'?esc(s.after):diff(before,s.after);}

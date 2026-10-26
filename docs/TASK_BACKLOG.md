@@ -665,3 +665,13 @@ All unfinished task IDs, priorities and statuses remain unchanged. This refineme
 - **Evidence:** [Phase 5F verification](PHASE5F_VERIFICATION.md), `tests/phase5f.mjs`, expanded `tests/mobile-toolbar.mjs` and affected retained regressions. The commit introducing this record is the implementation reference (`git log -1 --format=%H -- docs/PHASE5F_VERIFICATION.md`); mandatory CI/Main publication accompanies delivery.
 
 All unfinished IDs, priorities and statuses remain unchanged. TEST-001, human editorial/device/assistive-technology/native-zoom acceptance and public-release approval remain open. Broader 2026 content/access questions are reserved for the second batch; no bill-detail or legislative-data changes are included.
+
+## Phase 5G — UI-014
+
+**Enhanced bill summary, voting overview and progressive disclosure** — **Medium** · **Completed implementation — October 26, 2026**
+
+- **Source:** Owner Phase 5G request; bounded reading-order refinement for the four enhanced 2026 measures.
+- **Acceptance:** Always-visible exact pinned summary/provisions and verified stage-specific voting overview; one outcome beside Bill Summary; readable exact-version official summary; four independently collapsed major sections; retained proposed-change default and all source/text/vote evidence; ancestor-opening reader/vote/history links with clear version headings and retained reader choice; keyboard, sticky focus, responsive and automated accessibility checks.
+- **Evidence:** [Phase 5G verification](PHASE5G_VERIFICATION.md), `tests/phase5g.mjs`, retained Phase 5D/5E and strict nine-version reader/vote/comparison/navigation checks. The implementation commit introduces this record (`git log -1 --format=%H -- docs/PHASE5G_VERIFICATION.md`); mandatory CI and Main asset checks accompany delivery.
+
+All unfinished IDs, priorities and statuses remain unchanged. TEST-001 remains open: successful scheduled publication 40380145137 is separate from its partial request reconciliation and full acceptance review. Independent editorial review, physical-device/manual assistive-technology/native-zoom acceptance and public-release authorization remain unfinished. No original data, review packet, acquisition, search, Contact or hosting changes are included.

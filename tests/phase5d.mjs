@@ -1,3 +1,4 @@
+import {openEnhancedSections} from './fixtures/enhanced-sections.mjs';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
 import {chromium} from 'playwright';
@@ -15,7 +16,7 @@ assert.match(highlightedProvisions('<ltbullet><script>alert(1)</script>'),/&lt;s
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage({reducedMotion:'reduce'}),errors=[];page.on('pageerror',e=>errors.push(e.message));await mkdir('test-results/phase5d',{recursive:true});
 try {
  for(const b of bills){
-  await page.goto(base+'?phase5d='+b.billNumber+'#bill/'+b.billNumber);await page.locator('#law-text').waitFor();await page.locator('.votes-section small').waitFor();
+  await page.goto(base+'?phase5d='+b.billNumber+'#bill/'+b.billNumber);await openEnhancedSections(page);await page.locator('#law-text').waitFor();await openEnhancedSections(page);await page.locator('.votes-section small').waitFor();
   assert.equal(await page.locator('.pinned-summary').textContent(),b.summary);assert.equal(await page.locator('.pinned-extra').textContent(),b.extra);
   assert.equal(await page.locator('#law-version').inputValue(),b.summaryVersion);
   assert.equal(await page.locator('[data-law="diff"]').getAttribute('aria-pressed'),'true');
@@ -44,13 +45,13 @@ try {
   for(const view of ['before','diff','after']){await page.locator('[data-law="'+view+'"]').click();assert.equal(await page.locator('[data-law="'+view+'"]').getAttribute('aria-pressed'),'true');assert.ok((await page.locator('#law-text').textContent()).length)}
  }
  for(const width of [320,375,390,430,768,1024,1280]){
-  await page.setViewportSize({width,height:900});await page.goto(base+'?width='+width+'#bill/HB0154');await page.locator('.votes-section>.vote-record').first().waitFor();
+  await page.setViewportSize({width,height:900});await page.goto(base+'?width='+width+'#bill/HB0154');await openEnhancedSections(page);await page.locator('.votes-section>.vote-record').first().waitFor();
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,width+' normal overflow');
   if([390,1280].includes(width)){await page.screenshot({path:'test-results/phase5d/detail-'+width+'.png',fullPage:true});await page.locator('.votes-section').scrollIntoViewIfNeeded();await page.screenshot({path:'test-results/phase5d/votes-'+width+'.png'})}
   await page.evaluate(()=>scrollTo(0,0));await page.waitForFunction(()=>scrollY===0&&!document.querySelector("header.navigation-compact"));await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[],String(width));
  }
  for(const mode of ['text','zoom']){
-  await page.setViewportSize({width:390,height:900});await page.goto(base+'?mode='+mode+'#bill/SB0069');await page.locator('#law-text').waitFor();
+  await page.setViewportSize({width:390,height:900});await page.goto(base+'?mode='+mode+'#bill/SB0069');await openEnhancedSections(page);await page.locator('#law-text').waitFor();
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});else await page.evaluate(()=>document.documentElement.style.zoom=2);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,mode+' overflow');
   const info=page.getByRole('button',{name:'Info about the statutory comparison',exact:true});await info.focus();await page.keyboard.press('Enter');await page.locator('#comparison-info:popover-open').waitFor();await page.keyboard.press('Escape');assert.equal(await info.evaluate(e=>e===document.activeElement),true);

@@ -1,3 +1,4 @@
+import {openEnhancedSections} from './fixtures/enhanced-sections.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import assert from 'node:assert/strict';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
@@ -37,7 +38,7 @@ try{
   notes.push(`Listing text rectangles: no overlap at ${width}px, normal / doubled text / 200% CSS zoom`);
  }
  for(const b of bills){
-  await visit('bill/'+b.billNumber);await page.locator('#formatted-reader > summary').click();
+  await visit('bill/'+b.billNumber);await openEnhancedSections(page);await page.locator('#formatted-reader > summary').click();
   for(let i=0;i<b.versions.length;i++){
    const version=b.versions[i];await page.locator('#reader-version').selectOption(String(i));
    assert.equal(await page.locator('#reader-source a').first().getAttribute('href'),version.url.replace(/\.xml$/,'.pdf'));assert.equal(await page.locator('#reader-source a').last().getAttribute('href'),version.url);
@@ -69,7 +70,7 @@ try{
  notes.push('All nine versions: every non-whitespace source character, change state, section count, and official version link preserved');
  await visit('bill/HB0011');assert.match(await page.locator('main').innerText(),/vehicle’s/);assert.doesNotMatch(await page.locator('main').innerText(),/vehicleâ/);
  for(const width of [320,375,390,430]){
-  await visit('bill/SB0069',width);await page.locator('#formatted-reader > summary').click();await page.locator('#reader-version').selectOption({label:'SB0069S02 · Substitute #2'});
+  await visit('bill/SB0069',width);await openEnhancedSections(page);await page.locator('#formatted-reader > summary').click();await page.locator('#reader-version').selectOption({label:'SB0069S02 · Substitute #2'});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
   await page.evaluate(axe);
   const a=await page.evaluate(async()=>await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}}));

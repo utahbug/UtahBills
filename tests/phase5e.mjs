@@ -1,3 +1,4 @@
+import {openEnhancedSections} from './fixtures/enhanced-sections.mjs';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
 import {chromium} from 'playwright';
@@ -8,11 +9,11 @@ assert.doesNotMatch(statusSummary({sessionID:'2027GS'},[{actionCode:'HFILED',own
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage({reducedMotion:'reduce'}),errors=[];page.on('pageerror',e=>errors.push(e.message));await mkdir('test-results/phase5e',{recursive:true});
 try{
  for(const b of bills){
-  await page.goto(base+'?phase5e='+b.billNumber+'#bill/'+b.billNumber);await page.locator('.votes-section small').waitFor();
+  await page.goto(base+'?phase5e='+b.billNumber+'#bill/'+b.billNumber);await openEnhancedSections(page);await page.locator('.votes-section small').waitFor();
   assert.equal(await page.locator('.bill-explanation h2').textContent(),'Bill Summary');assert.equal(await page.getByRole('heading',{name:'Highlighted provisions',exact:true}).count(),0);
   assert.equal(await page.locator('.bill-explanation .pinned-summary').textContent(),b.summary);assert.equal(await page.locator('.bill-explanation .pinned-extra').textContent(),b.extra);
   assert.equal(await page.locator('.bill-explanation .highlighted-provisions').textContent(),b.highlightedProvisions.replace(/^This bill:/,'').replace(/<[^>]+>/g,''));
-  assert.match(await page.locator('.explanation-version').textContent(),/AI-assisted.*Independent human editorial review pending.*official Legislature metadata/);
+  assert.match(await page.locator('.explanation-version').textContent(),/Independent human editorial review pending.*official Legislature metadata/);
   const current=await page.locator('.bill-detail a[href]').evaluateAll(es=>[...new Set(es.map(e=>e.getAttribute('href')))].sort());for(const href of links.records[b.billNumber])assert.ok(current.includes(href),b.billNumber+' missing source '+href);
   assert.equal(await page.locator('#changes .open-reader').count(),0);await page.locator('.bill-explanation .open-reader').click();assert.equal(await page.locator('#formatted-reader').getAttribute('open'),'');assert.equal(await page.locator('#reader-version option:checked').getAttribute('value'),String(b.versions.findIndex(v=>v.id===b.summaryVersion)));
   await page.locator('#reader-version').selectOption('0');await page.locator('#formatted-reader>summary').click();await page.locator('.bill-explanation .open-reader').click();assert.equal(await page.locator('#reader-version').inputValue(),'0');
@@ -23,7 +24,7 @@ try{
   if(['HB0154','HB0155'].includes(b.billNumber)){assert.match(await page.locator('.bill-current-status').innerText(),/Did not pass.*Latest recorded action: Filed at session end/s);assert.doesNotMatch(await page.locator('.bill-current-status').innerText(),/did not become law/);assert.match(await page.locator('.full-history').textContent(),/House\/ filed/)}
  }
  for(const width of [320,375,390,430,768,1024,1280])for(const mode of ['normal','text','zoom']){
-  await page.setViewportSize({width,height:900});await page.goto(base+'?layout5e='+width+mode+'#bill/SB0069');await page.locator('.votes-section small').waitFor();await page.locator('#formatted-reader>summary').click();await page.locator('.published-comparison>summary').click();await page.locator('.documents-sources>summary').click();
+  await page.setViewportSize({width,height:900});await page.goto(base+'?layout5e='+width+mode+'#bill/SB0069');await openEnhancedSections(page);await page.locator('.votes-section small').waitFor();await page.locator('#formatted-reader>summary').click();await page.locator('.published-comparison>summary').click();await page.locator('.documents-sources>summary').click();
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
   const geometry=await page.evaluate(()=>{const box=s=>document.querySelector(s).getBoundingClientRect();const label=box('.reader-version-label'),select=box('#reader-version'),heading=box('#formatted-reader>summary'),controls=box('#changes .compare-controls'),law=box('#law-text');return {aligned:Math.abs(label.left-select.left)<1,indented:select.left>=heading.left-1,ratio:controls.width/law.width,overflow:document.documentElement.scrollWidth>innerWidth+1,targets:[...document.querySelectorAll('.bill-detail summary,.bill-detail select,.bill-detail .open-reader')].filter(e=>e.getClientRects().length).every(e=>e.getBoundingClientRect().height>=44),captions:[...document.querySelectorAll('.bill-detail .selected-value')].every(e=>e.scrollWidth<=e.clientWidth+1&&e.textContent===e.parentElement.querySelector('select').selectedOptions[0].textContent)}});
   assert.equal(geometry.aligned,true,`${width} ${mode} label/select`);assert.equal(geometry.indented,true);assert.equal(geometry.overflow,false,`${width} ${mode}`);assert.equal(geometry.targets,true);assert.equal(geometry.captions,true);

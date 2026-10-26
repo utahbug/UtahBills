@@ -1,9 +1,10 @@
+import {openEnhancedSections} from './fixtures/enhanced-sections.mjs';
 import {openCalendar} from './fixtures/calendar-navigation.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',data=JSON.parse(await readFile('dist/data/catalog-ui.json','utf8')),axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage();let n=0;const errors=[];page.on('pageerror',e=>errors.push(e.message));
-const visit=async hash=>{await page.goto(base+'?batch2d='+ ++n+'#'+hash);await page.locator('h1').waitFor()};
+const visit=async hash=>{await page.goto(base+'?batch2d='+ ++n+'#'+hash);await page.locator('h1').waitFor();if(/^bill\/(HB0011|HB0154|HB0155|SB0069)$/.test(hash))await openEnhancedSections(page)};
 try{
  await visit('bills');assert.equal(await page.locator('#session').inputValue(),data.measures.some(b=>b.sessionID==='2027GS')?'2027':'2027-requests');
  await openArchive(page);await page.locator('.advanced-search>summary').click();await page.locator('#chamber').selectOption('House');await page.locator('#search').fill('HB2');await page.locator('#clear-search').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#search').inputValue(),'');assert.equal(await page.locator('#chamber').inputValue(),'House');await page.locator('#clear').click();assert.equal(await page.locator('#chamber').inputValue(),'');
