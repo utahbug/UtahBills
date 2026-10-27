@@ -562,3 +562,8 @@ header{container:site-header / inline-size}
  #appearance-trigger{left:auto;right:48px;bottom:4px;top:auto;transform:none}
  .header-contact{right:4px;bottom:4px;top:auto;transform:none}
 }
+
+#appearance-panel::backdrop{background:rgb(20 35 50 / 35%)}
+
+/* Keep native-dialog text composited with its surface in Edge. */
+#appearance-panel{transform:translateZ(0)}
