@@ -712,11 +712,12 @@ These five future tasks are recorded without implementation. Prior unfinished ID
 
 ### SHARE-001
 
-**Copy titles with links** — **Medium** · **Completed implementation — October 26, 2026 (Phase 6D)**
+**Copy titles with links** — **Medium** · **Completed implementation — revised October 27, 2026 (Phase 6E)**
 
 - **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
 - **Dependencies:** Existing complete-matching-set Copy/CSV, stable request and introduced-measure routes, and a scoped implementation batch.
-- **Acceptance:** Add Copy titles with links to the existing Bills and Recent Activity More menus alongside Export CSV. Each matching title is immediately followed by its full valid UtahBills URL, with a blank line between records. Include the entire filtered set in its established order, loading additional matching saved Activity pages on demand. Verify request and introduced-bill links without inventing identities or conversions. Supply plain text suitable for X, email and documents; offer rich-text clickable titles where supported, with explicit plain-text URL fallback. Retain existing detailed Copy, CSV, denied-clipboard handling and accessible confirmation. Test multi-page filtered results, links and fallback without sending messages or adding social-media integration.
+- **Acceptance (owner-revised Phase 6E):** The primary Bills and Recent Activity Copy icon copies every matching saved title followed by its exact absolute HTTPS UtahBills URL, with a blank line between records. Existing More contains exactly Copy titles only and Export CSV. Titles-only retains every matching title, including duplicate activity titles, one per line. Both actions preserve filtering, ordering, pagination-independent scope, truthful counts and complete manual fallback; Activity loads additional pages on demand without partial copying on failure. Rich HTML and plain text use the Phase 6D portable application base. CSV retains all detailed fields and source qualifications. More fits its two actions, ordinarily 200–240px, with viewport-safe enlarged text, 44px targets and unchanged closed toolbar/Sort behavior. Calendar and Legislators Copy remain unchanged. Test exact identities, nine/all matching results, multiple pages, dates/categories, denied clipboard, menu focus and alternate HTTPS hosting without sending messages or changing hosting.
+- **Evidence:** [Phase 6D implementation](PHASE6D_VERIFICATION.md) and [Phase 6E revision](PHASE6E_VERIFICATION.md). The revised owner decision supersedes the earlier placement in More and detailed primary Copy only on Bills/Activity. Actual iPhone/iPad clipboard and recipient-application acceptance remains pending.
 
 ### ACT-004
 
@@ -784,3 +785,9 @@ Phase 6C improves only the requested Info boundaries and desktop Bills/Archive S
 [Verification](PHASE6D_VERIFICATION.md): the existing Bills and Recent Activity More menus now offer Copy titles with links and Export CSV. Sharing uses the complete existing filtered/sorted set, exact established routes, plain text and safely escaped HTML, with plain-text/manual fallback and truthful count/error announcements. All prior detailed Copy/CSV functionality remains. Representative fixtures verify introduced measures and exact request conversion without production data changes.
 
 SHARE-001 implementation is complete after focused tests; mandatory CI/Main publication evidence accompanies delivery. The implementation commit introduces `docs/PHASE6D_VERIFICATION.md` (`git log -1 --format=%H -- docs/PHASE6D_VERIFICATION.md`). TOPIC-001 is unchanged and unimplemented; no other unfinished task closes. Physical-device, manual assistive-technology/native-zoom, independent editorial and owner release acceptance remain open. Clipboard HTML support in recipient applications requires actual-device acceptance; no external messages are sent.
+
+## Phase 6E — revised SHARE-001 actions
+
+[Verification](PHASE6E_VERIFICATION.md): primary Copy now shares titles with links; More contains Copy titles only and unchanged Export CSV. Compact open-menu positioning preserves closed controls and avoids partly obscuring result targets. Clipboard writes begin during activation with promised complete data. No legislative, sorting, acquisition, hosting or unrelated page changes. Phase 6D records remain historical evidence of its earlier arrangement.
+
+All unfinished IDs remain open. TEST-001 remains completed under Phase 6A. Physical-device clipboard, VoiceOver/NVDA, native browser zoom, independent editorial and owner public-release approval remain pending. Resolve this implementation with `git log -1 --format=%H -- docs/PHASE6E_VERIFICATION.md`; the corresponding mandatory workflow and publication outcome accompany delivery.

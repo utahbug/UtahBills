@@ -18,8 +18,10 @@ try{for(const width of [320,1280]){
  assert.match(await page.locator('#count-info').textContent(),/Source observed/);
  for(const record of data.sourceObservedRequests2027){
   await page.locator('#search').fill(record.trackingID);assert.equal(await page.locator('.bill-row').count(),1);
-  await page.getByRole('button',{name:'Copy results.',exact:true}).click();const copied=await page.evaluate(()=>window.copied);
-  assert.ok(copied.includes(record.trackingID)&&copied.includes('Official status not confirmed')&&copied.includes(data.requestSource));
+  await page.getByRole('button',{name:'Copy titles with links',exact:true}).click();await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled);const copied=await page.evaluate(()=>window.copied);
+  assert.ok(copied.includes('#request/'+record.trackingID)&&copied.includes(record.shortTitle));
+  // Detailed status/source qualifications remain in CSV, not title-only sharing.
+  await page.locator('.export-menu>summary').click();const download=page.waitForEvent('download',{timeout:15000});await page.getByRole('button',{name:'Export CSV',exact:true}).click();const csv=await readFile(await(await download).path(),'utf8');assert.ok(csv.includes(record.trackingID)&&csv.includes('Official status not confirmed')&&csv.includes(data.requestSource));
   await page.locator('.bill-row h2 a').click();await page.locator('.request-heading').waitFor();assert.equal(await page.getByRole('img',{name:'Source discrepancy'}).count(),1);
   await page.locator('.source-discrepancy-details summary').focus();await page.keyboard.press('Enter');assert.match(await page.locator('main').innerText(),/reason has not been independently established/);
   await page.getByRole('button',{name:'Source details',exact:true}).click();assert.ok((await page.locator('dialog').textContent()).includes(record.history[0].source.sha256));await page.keyboard.press('Escape');

@@ -14,8 +14,10 @@ try {for(const record of saved.sourceObservedRequests2027)for(const width of [32
  assert.ok((await page.locator('#count-info').textContent()).includes(`${saved.requestPublication.officialTotal} source requests · ${saved.requestPublication.verifiedTotal} statuses verified · ${saved.sourceObservedRequests2027.length} awaiting status verification`));
  assert.match(await page.locator('.bill-row').innerText(),/Official status not confirmed/);
  assert.equal(await page.getByRole('img',{name:'Source discrepancy'}).count(),1);
- await page.getByRole('button',{name:'Copy results.',exact:true}).click();copied=await page.evaluate(()=>window.copied);
- assert.ok(copied.includes(record.trackingID)&&copied.includes(record.shortTitle)&&copied.includes('Official status not confirmed')&&copied.includes(saved.requestSource));
+ await page.getByRole('button',{name:'Copy titles with links',exact:true}).click();await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled);copied=await page.evaluate(()=>window.copied);
+ assert.ok(copied.includes('#request/'+record.trackingID)&&copied.includes(record.shortTitle));
+  // Detailed status/source qualifications remain in CSV, not title-only sharing.
+  await page.locator('.export-menu>summary').click();const download=page.waitForEvent('download',{timeout:15000});await page.getByRole('button',{name:'Export CSV',exact:true}).click();const csv=await readFile(await(await download).path(),'utf8');assert.ok(csv.includes(record.trackingID)&&csv.includes('Official status not confirmed')&&csv.includes(saved.requestSource));
  await page.locator('.bill-row h2 a').focus();await page.keyboard.press('Enter');await page.locator('.request-heading').waitFor();
  await page.locator('.source-discrepancy-details summary').click();assert.match(await page.locator('main').innerText(),/reason has not been independently established/);
  assert.ok(await page.locator(`a[href="${saved.requestSource}"]`).count());

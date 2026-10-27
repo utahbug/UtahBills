@@ -2,7 +2,7 @@
 export function sessionFixture(saved, count=0, requestCount=240) {
  const data=structuredClone(saved), template=data.measures.find(b=>b.sessionID==='2026GS'&&!b.detailed);
  const requests=Array.from({length:requestCount},(_,i)=>({
-  ...structuredClone(saved.requestArchive2027[0]),trackingID:'TESTREQUEST'+String(i).padStart(4,'0'),
+  ...structuredClone(saved.requestArchive2027[0]),trackingID:'ZZZZZZZZ'+String.fromCharCode(65+Math.floor(i/26))+String.fromCharCode(65+i%26),
   shortTitle:'SYNTHETIC REQUEST '+String(i).padStart(4,'0'),introducedBill:null,currentlyListed:true,
   officialStatus:'In Process',history:[],statusHistory:[]
  }));

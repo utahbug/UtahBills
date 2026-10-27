@@ -19,3 +19,27 @@ export async function titleLinks(rows,href,onProgress=()=>{}){
  }
  return {count:rows.length,plain:plain.join('\n\n'),html:html.join('')};
 }
+export async function titlesOnly(rows,onProgress=()=>{}){
+ const titles=[];
+ for(let i=0;i<rows.length;i++){
+  if(typeof rows[i].title!=='string'||!rows[i].title.trim())throw Error('Missing saved title');
+  titles.push(rows[i].title);
+  if((i+1)%250===0){onProgress(i+1,rows.length);await new Promise(r=>setTimeout(r,0))}
+ }
+ return {count:rows.length,plain:titles.join('\n')};
+}
+
+// Start the browser write during the click, before fetching/formatting finishes.
+// Promised ClipboardItem data preserves the user-activation opportunity in Safari.
+export async function copyPrepared(prepared,{rich=true,clipboard=globalThis.navigator?.clipboard,Item=globalThis.ClipboardItem}={}){
+ let writing;
+ if(clipboard?.write&&Item){
+  const types=['text/plain',...(rich?['text/html']:[])],data={};
+  for(const type of types){data[type]=prepared.then(result=>{if(!result.count)throw Error('No matching records');return new Blob([type==='text/html'?result.html:result.plain],{type})});data[type].catch(()=>{})}
+  try{writing=Promise.resolve(clipboard.write([new Item(data)])).then(()=>true,()=>false)}catch{}
+ }
+ const result=await prepared;
+ if(!result.count)return {result,copied:false};
+ if(writing&&await writing)return {result,copied:true};
+ try{await clipboard.writeText(result.plain);return {result,copied:true}}catch{return {result,copied:false}}
+}

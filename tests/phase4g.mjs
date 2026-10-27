@@ -6,14 +6,16 @@ const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 const index=JSON.parse(await readFile('dist/data/activity/index.json','utf8')),saved=[];
 for(const p of index.sessions['2027'].pages)saved.push(...JSON.parse(await readFile('dist/data/activity/'+p.file,'utf8')));
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage(),errors=[];
-page.on('pageerror',e=>errors.push(e.message));const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
+page.setDefaultTimeout(15000);page.on('pageerror',e=>errors.push(e.message));const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
 const ready=()=>page.waitForFunction(()=>document.querySelector('#activity-count')&&!document.querySelector('#activity-count').textContent.includes('Loading'));
 await mkdir('test-results/phase4g',{recursive:true});
 try{
+ // Install before CSV schedules object-URL cleanup; do not replace live timers mid-test.
+ await page.clock.setFixedTime(new Date('2027-01-03T18:00:00Z'));
  await page.addInitScript(()=>{localStorage.setItem('utahbills-results-per-page','25');Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>window.copied=text}})});
  await page.goto(base+'#activity');await showSavedActivity(page);await ready();
  assert.equal(await page.locator('.activity-row').count(),Math.min(25,saved.length));
- if(saved.length){assert.equal(await page.locator('.activity-row h2 a').first().getAttribute('href'),saved[0].history);await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.ok((await page.evaluate(()=>window.copied)).includes(saved[0].dateLabel));await page.locator('.activity-row h2 a').first().click();await page.locator('h1').waitFor();assert.equal(await page.getByRole('heading',{name:/Request unavailable|Measure unavailable/}).count(),0);assert.equal(new URL(page.url()).hash,saved[0].history);await page.goBack();await ready()}
+ if(saved.length){assert.equal(await page.locator('.activity-row h2 a').first().getAttribute('href'),saved[0].history);await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.ok((await page.evaluate(()=>window.copied)).includes(saved[0].history));await page.locator('.export-menu>summary').click();const download=page.waitForEvent('download',{timeout:15000});await page.getByRole('button',{name:'Export CSV',exact:true}).click();assert.ok((await readFile(await(await download).path(),'utf8')).includes(saved[0].dateLabel));await page.locator('.activity-row h2 a').first().click();await page.locator('h1').waitFor();assert.equal(await page.getByRole('heading',{name:/Request unavailable|Measure unavailable/}).count(),0);assert.equal(new URL(page.url()).hash,saved[0].history);await page.goBack();await ready()}
  // Phase 4I: real request headings and verified metadata, accessible filter names.
  assert.equal(await page.getByRole('combobox',{name:'Activity date range',exact:true}).count(),1);
  assert.equal(await page.getByRole('combobox',{name:'Activity category',exact:true}).count(),1);
@@ -34,7 +36,7 @@ try{
  const fixture={sessions:{'2027':{count:130,undated:1,checkedAt:'2027-01-03T18:00:00Z',pages:[{file:'fixture-0.json',first:'2027-01-03',last:'2027-01-03'},{file:'fixture-1.json',first:'2026-12-30',last:'2026-12-29'}]}},requestCoverage:index.requestCoverage};
  for (const [i,p] of fixture.sessions['2027'].pages.entries()){const rows=i===0?events.slice(0,100):events.slice(100);p.count=rows.length;p.groups=Object.values(rows.reduce((a,e)=>{const k=e.date+'|'+e.category;a[k]??={date:e.date,category:e.category,count:0};a[k].count++;return a},{}))}
  await page.route('**/data/activity/index.json',r=>r.fulfill({json:fixture}));await page.route('**/data/activity/fixture-*.json',r=>r.fulfill({json:r.request().url().includes('fixture-0')?events.slice(0,100):events.slice(100)}));
- await page.clock.setFixedTime(new Date('2027-01-03T18:00:00Z'));await page.reload();await showSavedActivity(page);await ready();
+ await page.reload();await showSavedActivity(page);await ready();
  assert.equal(await page.locator('.activity-row h2 a').first().innerText(),'Fixture activity');
  const assigned=page.locator('.activity-row').first().locator('.activity-metadata a[href="#bill/2027/HJR0001"]');assert.equal(await assigned.innerText(),'HJR0001');
  assert.match(await page.locator('.activity-row').nth(1).locator('.activity-metadata').innerText(),/Bill number: Not assigned/);
