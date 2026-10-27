@@ -513,3 +513,13 @@ main:has(>#results){padding-bottom:10px}
 .enhanced-detail .archive-context-link>span{background:var(--archive-year);border-radius:3px;padding:2px 5px}
 
 .directory-search-tools{display:flex;align-items:center;gap:6px;min-width:0}.directory-search-tools input{flex:1 1 0;min-width:0}.directory-search-tools>.toolbar-info{flex:0 0 44px}
+
+/* Phase 6C: evidence panels and the same native Sort inside a disclosure. */
+#directory-info,.catalog-info-content{border:1px solid #8295a2;border-radius:5px;padding:12px;background:#fff;box-shadow:0 3px 16px #16374a26;color:var(--ink)}
+.catalog-info-content{overflow-wrap:anywhere;min-width:0}
+.catalog-info-content>:first-child{margin-top:0}.catalog-info-content>:last-child{margin-bottom:0}
+@media(min-width:701px){
+ .bill-toolbar .sort-menu>summary{gap:4px;font-weight:400;font-size:inherit}
+ .bill-toolbar .sort-menu>summary::after{content:'▾';font-size:.8em}
+}
+.records-search:has(.catalog-info[open]) #session{align-self:start}

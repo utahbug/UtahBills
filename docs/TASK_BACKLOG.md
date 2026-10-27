@@ -767,3 +767,14 @@ Following successful owner review, routine 2026 archive interface development is
 ## Phase 6A maintenance
 
 TEST-001 alone closes after formal scheduled acceptance; [verification](PHASE6A_VERIFICATION.md). All earlier statements that it remained open are dated historical evidence, superseded by this review. SESSION-003 remains blocked on real introduced sources; SESSION-002 and all human/release tasks remain unfinished. No application or source-data changes.
+## Phase 6C planning and maintenance
+
+### TOPIC-001
+
+**Topic classification, sorting, and filtering** — **Medium** · **Approved/Not started**
+
+- **Source:** Owner Phase 6C §4; documentation only in this batch.
+- **Dependencies:** Reliable 2027 subject information, documented classification provenance and a separately scoped implementation request.
+- **Acceptance:** Establish meaningful classifications using official subjects where available, distinguishing official classifications from UtahBills editorial classifications. Add Bills Topic A–Z/Z–A sorting only when reliable topics exist; preserve Advanced Search Topic filtering and unknown/unclassified records. Evaluate a compact Recent Activity topic filter alongside date/category filters while retaining chronological event order. The generic historical “Official record” designation is not a meaningful topic. Verify classifications, unknowns, filtering and stable ordering without unsupported inference.
+
+Phase 6C improves only the requested Info boundaries and desktop Bills/Archive Sort disclosure. [Verification](PHASE6C_VERIFICATION.md). SHARE-001 remains approved and unimplemented. All prior unfinished IDs and human/release requirements are retained. TEST-001 remains completed by Phase 6A; SESSION-002/003 and human acceptance remain open. Resolve the implementation commit with `git log -1 --format=%H -- docs/PHASE6C_VERIFICATION.md`; mandatory CI and publication evidence accompany delivery.
