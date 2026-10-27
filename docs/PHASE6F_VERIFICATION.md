@@ -42,3 +42,7 @@ Preserved manifests are unchanged:
 Resolve the implementation with `git log -1 --format=%H -- docs/PHASE6F_VERIFICATION.md`; required Main workflow and published-asset/live checks accompany delivery. Check for active scheduled acquisition before pushing. No additional environment, hosting/domain, refresh-frequency, legislative data or `noindex, nofollow` change.
 
 This is only the owner-authorized Public Requests portion of LEG-003. Total-sponsored union counts, floor/cosponsor columns, optional display columns, committee filters and broader comparison remain deferred. SESSION-002/003 still require authoritative membership/real introduced records. TEST-001 remains completed under Phase 6A. Physical iPhone/iPad, VoiceOver/NVDA, native browser zoom, independent editorial and explicit public-release approval remain outstanding; automated checks are not human acceptance.
+
+## CI wording assertion correction
+
+Initial run [40517245403](https://github.com/utahbug/UtahBills/actions/runs/40517245403) passed integrity/build and preceding browser suites, then stopped at the retained Phase 4J Info wording assertion. It expected “Saved 2027 House/Senate bills” without the newly explicit “General Session” reporting period. The assertion now requires the full approved wording; it is not removed or broadened. Only this test and verification record change in the follow-up commit. Main was not deployed by the failed run; the affected suite is checked locally before another mandatory CI run.
