@@ -391,6 +391,16 @@ Phase 4N evidence: [official reconciliation review](PHASE4N_VERIFICATION.md) at 
 
 **Phase 5B follow-up:** Genuine schedule [40211750281](https://github.com/utahbug/UtahBills/actions/runs/40211750281) completed with successful build/deployment and snapshot commit `1fcba42`. It was allowed to finish before the UI push. TEST-001 remains open pending its full component-report, preservation and deployed-freshness acceptance review; this bounded footer/Contact refinement does not perform that audit.
 
+### LEG-004
+
+**Compact Legislators directory spacing and search alignment** — **Medium** · **Completed implementation — October 26, 2026**
+
+- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only). Separate from LEG-003's deferred sponsorship comparison.
+- **Implementation:** Owner Phase 6B authorizes this bounded task. Shared 15rem Name column, modest row-padding reduction, 350px desktop search with relocated sole Info, and selected-value-sized native mobile Sort. No data or sorting calculation changes.
+- **Acceptance:** Reduce excess Name-to-District width and row height moderately; shorten desktop Find a legislator search; move its existing Info immediately right of the field. Keep Session, Chamber and search inputs exactly aligned while leaving established label heights/baselines unchanged. Verify desktop/narrow reflow, sorting, keyboard focus and accessible targets without changing membership or sponsorship data.
+
+- **Verification:** [Phase 6B](PHASE6B_VERIFICATION.md), `tests/phase6b.mjs`, retained directory/finder regressions, actual before/after geometry and filtered Copy checks. Required CI/Main outcomes accompany delivery; commit: `git log -1 --format=%H -- docs/PHASE6B_VERIFICATION.md`. Field tops and label baselines remain unchanged. Human accessibility acceptance remains open.
+
 ### ACT-003
 
 **Compact Recent Activity request titles and metadata** — **Medium** · **Completed — October 22, 2026**
@@ -707,14 +717,6 @@ These five future tasks are recorded without implementation. Prior unfinished ID
 - **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
 - **Dependencies:** Existing complete-matching-set Copy/CSV, stable request and introduced-measure routes, and a scoped implementation batch.
 - **Acceptance:** Add Copy titles with links to the existing Bills and Recent Activity More menus alongside Export CSV. Each matching title is immediately followed by its full valid UtahBills URL, with a blank line between records. Include the entire filtered set in its established order, loading additional matching saved Activity pages on demand. Verify request and introduced-bill links without inventing identities or conversions. Supply plain text suitable for X, email and documents; offer rich-text clickable titles where supported, with explicit plain-text URL fallback. Retain existing detailed Copy, CSV, denied-clipboard handling and accessible confirmation. Test multi-page filtered results, links and fallback without sending messages or adding social-media integration.
-
-### LEG-004
-
-**Compact Legislators directory spacing and search alignment** — **Medium** · **Approved/Not started**
-
-- **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only). Separate from LEG-003's deferred sponsorship comparison.
-- **Dependencies:** Preserve current responsive directory, sorting, source distinctions and shared input geometry; separate scoped implementation.
-- **Acceptance:** Reduce excess Name-to-District width and row height moderately; shorten desktop Find a legislator search; move its existing Info immediately right of the field. Keep Session, Chamber and search inputs exactly aligned while leaving established label heights/baselines unchanged. Verify desktop/narrow reflow, sorting, keyboard focus and accessible targets without changing membership or sponsorship data.
 
 ### ACT-004
 

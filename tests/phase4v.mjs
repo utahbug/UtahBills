@@ -31,8 +31,8 @@ try{
  // Desktop search is bounded independently of the directory; phones use available width.
  for(const width of [390,1280,1920]){
   await page.setViewportSize({width,height:900});await page.goto(base+'?search-bound='+width+'#legislators');await ready();
-  const field=await page.locator('#directory-search').boundingBox(),finder=await page.locator('.find-legislators').boundingBox(),results=await page.locator('.legislator-row').first().boundingBox();assert.ok(Math.abs(finder.x+finder.width-field.x-field.width)<2);assert.ok(finder.y+finder.height<=field.y+1);
-  if(width>700){assert.ok(field.width>=400&&field.width<=440);assert.ok(results.width>field.width+100)}else assert.ok(Math.abs(field.width-width+32)<2);
+  const field=await page.locator('#directory-search').boundingBox(),finder=await page.locator('.find-legislators').boundingBox(),results=await page.locator('.legislator-row').first().boundingBox();assert.ok(Math.abs(finder.x+finder.width-(await page.locator('.directory-search-area').boundingBox()).x-(await page.locator('.directory-search-area').boundingBox()).width)<2);assert.ok(finder.y+finder.height<=field.y+1);
+  if(width>700){assert.ok(field.width>=340&&field.width<=360);assert.ok(results.width>field.width+100)}else assert.ok(Math.abs(field.width+50-width+32)<2);
  }
  // Shared footer archive entry: keyboard, historical deep links and current-record return.
  for(const width of [390,1280]){

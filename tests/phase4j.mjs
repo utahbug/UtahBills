@@ -22,7 +22,7 @@ try{
    const copy=await page.locator('.copy-results').boundingBox(),legend=await page.getByRole('button',{name:'Calendar Legend',exact:true}).boundingBox();assert.ok(Math.abs(copy.y-legend.y)<2);assert.ok(Math.abs(legend.x+legend.width-copy.x)<2);
   }
   if(route!=='activity'){
-   const trigger=page.locator(route==='calendar'?'.agenda-heading .toolbar-info':'.directory-actions .toolbar-info'),panel=page.locator(route==='calendar'?'#calendar-category-legend':'#directory-info');
+   const trigger=page.locator(route==='calendar'?'.agenda-heading .toolbar-info':'.directory-search-tools .toolbar-info'),panel=page.locator(route==='calendar'?'#calendar-category-legend':'#directory-info');
    await trigger.focus();await page.keyboard.press('Enter');await panel.waitFor({state:'visible'});const rect=await panel.boundingBox();assert.ok(rect.x>=0&&rect.x+rect.width<=width+1&&rect.y>=0);
    if(route==='calendar'){assert.deepEqual(await panel.locator('.calendar-key').allTextContents(),['M','F','S','D','C','O']);assert.match(await panel.innerText(),/Committee \/ commission/)}else{assert.match(await panel.innerText(),/Introduced bills: Saved 2027 House\/Senate bills/);assert.match(await panel.innerText(),/not requests, resolutions or additional versions/);assert.match(await panel.innerText(),/sponsorship does not establish membership/);assert.match(await panel.innerText(),/Verified 2026 records/)}
    await page.keyboard.press('Escape');await panel.waitFor({state:'hidden'});assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
