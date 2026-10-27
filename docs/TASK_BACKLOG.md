@@ -798,3 +798,8 @@ All unfinished IDs remain open. TEST-001 remains completed under Phase 6A. Physi
 The owner-authorized [bounded implementation](PHASE6F_VERIFICATION.md) adds 2027 public-request counts to the verified 2026 directory, replacing the visible District column while retaining district sorting, profiles and the official finder. The same request projection supplies counts and profile lists; all saved unmatched IDs remain disclosed. Name, introduced-count and request-count sorting use stable alphabetical ties. Desktop heading sorting and the existing compact Sort retain District access; phone entries keep both count links accessible.
 
 LEG-003 is partially implemented, not complete. Total-sponsored unions, floor/cosponsor columns, optional columns and committee filtering remain deferred; no finalized 2027 membership is inferred. All other unfinished IDs and physical-device/editorial/release acceptance remain open. TEST-001 remains completed under Phase 6A. Resolve the implementation with `git log -1 --format=%H -- docs/PHASE6F_VERIFICATION.md`; mandatory Main CI/publication evidence accompanies delivery.
+
+
+## Contact destination correction - October 27, 2026
+
+The owner authorized aligning the Contact mailto recipient with the unchanged visible contact@utahbug.com address. This supersedes the temporary testing mismatch above. The existing subject and all visible page text remain unchanged. Header, footer and About Contact links share this route. Real email send/receipt, monitoring assignments and independent editorial/public-release acceptance remain unverified; this URL correction does not establish mailbox delivery or change DNS/hosting.

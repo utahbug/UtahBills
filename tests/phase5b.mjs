@@ -23,7 +23,7 @@ try{
  await page.goto(base+'#contact');await page.reload();await contact();assert.equal(await page.title(),'Contact · UtahBug');
  const email=page.locator('.contact-email');assert.equal(await email.innerText(),contactDisplayEmail);
  const url=new URL(await email.getAttribute('href'));assert.equal(url.protocol,'mailto:');assert.equal(url.pathname,contactEmail);assert.equal(url.searchParams.get('subject'),'Utah Legislation - Comments, questions or corrections');
- assert.ok((await email.getAttribute('href')).endsWith(encodeURIComponent(contactSubject)));assert.equal(contactDisplayEmail,'contact@utahbug.com');assert.equal(contactEmail,'kenroberts@live.com');assert.equal(await email.getAttribute('target'),null);
+ assert.ok((await email.getAttribute('href')).endsWith(encodeURIComponent(contactSubject)));assert.equal(contactDisplayEmail,'contact@utahbug.com');assert.equal(contactEmail,'contact@utahbug.com');assert.equal(await email.getAttribute('target'),null);
  assert.equal(await page.locator('main input,main textarea,main form').count(),0);
  assert.equal((await page.locator('main').innerText()).includes('If no email application opens'),false);
  assert.deepEqual(await page.locator('.contact-page li').allTextContents(),['Page URL','Bill number or tracking ID','Description of the problem','Official source or supporting information, if available']);

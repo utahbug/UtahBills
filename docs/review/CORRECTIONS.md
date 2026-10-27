@@ -50,3 +50,8 @@ Severity is separate from class: **Critical** = confirmed material error causing
 | Disposition / closure or reason still open | Pending |
 
 Allowed states: received, investigating, awaiting evidence, correction approved, implemented awaiting verification, resolved, or not substantiated with reasons. None is preselected as resolved.
+
+
+## Contact destination correction - October 27, 2026
+
+The owner authorized aligning the Contact mailto recipient with the unchanged visible contact@utahbug.com address. This supersedes the temporary testing mismatch above. The existing subject and all visible page text remain unchanged. Header, footer and About Contact links share this route. Real email send/receipt, monitoring assignments and independent editorial/public-release acceptance remain unverified; this URL correction does not establish mailbox delivery or change DNS/hosting.

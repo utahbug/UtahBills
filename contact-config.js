@@ -1,4 +1,4 @@
-// Owner-approved testing mismatch; align these only after branded-mailbox testing and approval.
+// Owner-approved Contact destination; keep visible text and email subject unchanged.
 export const contactDisplayEmail = "contact@utahbug.com";
-export const contactEmail = "kenroberts@live.com";
+export const contactEmail = "contact@utahbug.com";
 export const contactSubject = "Utah Legislation - Comments, questions or corrections";

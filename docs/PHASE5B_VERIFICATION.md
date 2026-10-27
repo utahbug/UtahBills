@@ -56,3 +56,10 @@ Run 40217193114 again failed the new 375px default-height assertion after all pr
 Exact geometry from diagnostic run 40218753764: Linux label widths 30.53125, 101.6875, 62.46875 and 74.40625px total 269.09375px; three 2px gaps require 275.09375px in a 274px region. A 1px gap fits without moving the wordmark or reducing text/target sizes. Those measured widths now form an additional focused local fixture; the default-height assertion is unchanged.
 
 Local Linux-font reproduction: the official [DejaVu release](https://dejavu-fonts.github.io/Download.html) archive SHA-256 `7576310b219e04159d35ff61dd4a4ec4cdba4f35c00e002a136f00e96a908b0a` was verified; regular/bold fonts were used only under ignored test-results, not installed or shipped. Their browser metrics exactly match the CI failure. All seven default-width height comparisons passed, then the complete focused Contact/header suite passed with that font: 21 responsive combinations, 17 header cases, keyboard/touch and axe. No additional broad local suite was repeated.
+
+
+## Contact destination correction - October 27, 2026
+
+The owner authorized aligning the Contact mailto recipient with the unchanged visible contact@utahbug.com address. This supersedes the temporary testing mismatch above. The existing subject and all visible page text remain unchanged. Header, footer and About Contact links share this route. Real email send/receipt, monitoring assignments and independent editorial/public-release acceptance remain unverified; this URL correction does not establish mailbox delivery or change DNS/hosting.
+
+Focused correction validation: production-settings esbuild bundle and existing Phase 5B/5C browser suites passed, including exact recipient/subject, shared Contact navigation, responsive/keyboard/touch and automated accessibility checks. Static noindex, nofollow is preserved. Mandatory CI and published Main verification accompany delivery; native mail-client composition and actual send/receipt were not tested.
