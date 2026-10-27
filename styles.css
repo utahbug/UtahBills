@@ -567,3 +567,33 @@ header{container:site-header / inline-size}
 
 /* Keep native-dialog text composited with its surface in Edge. */
 #appearance-panel{transform:translateZ(0)}
+
+/* Phase 7B: one native interaction for desktop sorting; current value on focus/hover. */
+#appearance-trigger svg{width:22px;height:22px}
+.header-contact svg{width:14px;height:14px;padding:3px}
+.direct-sort,.directory-compact-sort{position:relative;display:inline-flex;align-items:center;min-height:44px;gap:0;cursor:pointer}
+.direct-sort>.select-display,.directory-compact-sort>.select-display{position:static;width:22px;min-width:22px;min-height:44px;display:inline-flex;align-items:center}
+.direct-sort>.select-display::after,.directory-compact-sort>.select-display::after{content:"⌄";padding-left:5px}
+.direct-sort select.compact-select,.directory-compact-sort select.compact-select{position:absolute;inset:0;width:100%;height:100%;min-height:44px;opacity:0;cursor:pointer}
+.direct-sort .selected-value,.directory-compact-sort .selected-value{display:none;position:absolute;z-index:12;left:0;top:100%;width:max-content;max-width:min(18rem,calc(100vw - 40px));min-height:0;padding:6px 10px;border:1px solid var(--line);border-radius:4px;background:var(--appearance-surface,white);color:var(--ink);white-space:normal;overflow-wrap:anywhere;pointer-events:none}
+.direct-sort:focus-within,.directory-compact-sort:focus-within{outline:2px solid var(--teal);outline-offset:2px;border-radius:3px}
+.direct-sort:hover .selected-value,.direct-sort:focus-within .selected-value,.directory-compact-sort:hover .selected-value,.directory-compact-sort:focus-within .selected-value{display:block}
+.directory-order-controls{display:flex;align-items:center;flex-wrap:wrap;gap:4px 16px;min-width:0;max-width:100%;margin-right:0}
+.directory-order-controls>label:has(#directory-chamber){display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:.875rem;min-width:0;max-width:100%}
+.directory-order-controls select{min-width:0;max-width:100%}
+.directory-actions.results-toolbar{display:flex;flex-wrap:wrap;gap:4px 24px}
+.directory-actions>.result-summary{margin-left:0}
+.directory-search-area .search-heading{margin-right:50px;flex-wrap:wrap;justify-content:space-between}
+.directory-search-area .find-legislators{margin-left:auto}
+.directory-columns button:not(:first-child){justify-content:center;text-align:center}
+.legislator-row .directory-counts>a{min-width:44px;text-align:center;justify-self:center}
+@media(min-width:701px){.directory-controls{grid-template-columns:minmax(0,max-content) minmax(0,400px)}}
+@container directory (max-width:46em){.legislator-row .directory-counts>a{text-align:left;justify-self:start}}
+@container directory (max-width:34em){.directory-actions.results-toolbar{display:flex}.directory-actions .result-summary{margin-left:0}}
+@container directory (max-width:14em){.directory-compact-sort{width:auto}.directory-compact-sort>span{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal}}
+
+.sort-menu .select-display{display:block;width:auto}
+.sort-menu .selected-value{display:none}
+.direct-sort>.select-display:has(select:focus-visible),.directory-compact-sort>.select-display:has(select:focus-visible){outline:none}
+.direct-sort .selected-value,.directory-compact-sort .selected-value{left:var(--sort-tip-left,0px);pointer-events:auto}
+.direct-sort[data-caption-dismissed] .selected-value,.directory-compact-sort[data-caption-dismissed] .selected-value{display:none}

@@ -60,7 +60,7 @@ export function stretchActivityRows(root){
 let disposeBillLayout=()=>{};
 export function billToolbarLayout(host,{source,searchHeading,records,requestTotal,measureTotal}){
  disposeBillLayout();const media=matchMedia('(max-width:700px)'),menu=host.querySelector('.export-menu'),controls=host.querySelector('.result-controls'),sort=host.querySelector('#sort').closest('label'),size=host.querySelector('.page-preference');
- host.classList.add('bill-toolbar');menu.querySelector('summary').setAttribute('aria-label','More results options');menu.querySelector('summary').title='More results options';sort.querySelector('select').setAttribute('aria-label','Sort results by');
+ host.classList.add('bill-toolbar');menu.querySelector('summary').setAttribute('aria-label','More results options');menu.querySelector('summary').title='More results options';sort.querySelector('select').setAttribute('aria-label','Sort results by');compactSelects(sort);
  const sortMenu=document.createElement('details');sortMenu.className='sort-menu';sortMenu.innerHTML='<summary>Sort</summary>';sortMenu.hidden=sort.hidden;host.prepend(sortMenu);menu.classList.add('more-menu');
  const pairs=[sortMenu,menu].map(disclosure=>{const panel=disclosure===menu?menu.querySelector('.export-panel'):document.createElement('div');panel.className='export-panel';disclosure.append(panel);return {disclosure,panel,trigger:disclosure.querySelector('summary')}});
  const controller=new AbortController();
@@ -69,13 +69,13 @@ export function billToolbarLayout(host,{source,searchHeading,records,requestTota
  for(const target of [window,window.visualViewport].filter(Boolean))for(const event of ['resize','scroll'])target.addEventListener(event,placeMenus,{passive:true,signal:controller.signal});
  let heading;if(records){heading=document.createElement('div');heading.className='records-heading search-heading';records.prepend(heading);heading.append(records.querySelector('label'))}
  let last;const update=()=>{if(!host.isConnected||last===media.matches)return;last=media.matches;const active=document.activeElement,moved=sort.contains(active)||size.contains(active)||active===source||sortMenu.contains(active);
-  sortMenu.hidden=sort.hidden;pairs[0].panel.append(sort);sort.firstChild.textContent='Sort results by ';
-  if(last){host.prepend(sortMenu);pairs[0].panel.append(size);sort.firstChild.textContent='Sort results by ';size.firstChild.textContent='Results per page ';(heading||searchHeading).append(source)}else{controls.prepend(sortMenu);controls.append(size);size.firstChild.textContent='Per page ';searchHeading.append(source)}
+  sortMenu.hidden=!last||sort.hidden;sort.classList.toggle('direct-sort',!last);sortMenu.open=false;pairs[0].panel.append(sort);sort.firstChild.textContent='Sort results by ';
+  if(last){host.prepend(sortMenu);pairs[0].panel.append(size);sort.firstChild.textContent='Sort results by ';size.firstChild.textContent='Results per page ';(heading||searchHeading).append(source)}else{controls.prepend(sort);sort.firstChild.textContent='Sort ';controls.append(size);size.firstChild.textContent='Per page ';searchHeading.append(source)}
   const fullSourceLabel='Official '+(records?'2027':'2026')+' Bill Search';source.setAttribute('aria-label',fullSourceLabel);const tail=source.querySelector('.external-tail');if(tail){source.firstChild.textContent=last?'Official ':fullSourceLabel.slice(0,-6);tail.firstChild.textContent=last?'search':'Search'}else source.textContent=last?'Official search':fullSourceLabel;
   if(records){records.querySelector('option[value="2027-requests"]').textContent=last?`2027 Public Bill Requests (${requestTotal})`:'2027 Public bill requests';records.querySelector('option[value="2027"]').textContent=last?`2027 Bills and resolutions (${measureTotal})`:'2027 Bills and resolutions'}
   // Settle the link's icon/word wrapping before restoring route scroll or focus.
   decorateExternalLinks(source.parentElement);
-  if(moved){if(sort.contains(active)||(last&&size.contains(active)))sortMenu.open=true;active.focus({preventScroll:true})}placeMenus();
+  if(moved){if(last&&(sort.contains(active)||size.contains(active)))sortMenu.open=true;(active===pairs[0].trigger&&!last?sort.querySelector('select'):active).focus({preventScroll:true})}placeMenus();
  };media.addEventListener('change',update);const dismiss=e=>{for(const {disclosure} of pairs)if(disclosure.open&&!disclosure.contains(e.target))disclosure.open=false};document.addEventListener('pointerdown',dismiss,{signal:controller.signal});document.addEventListener('focusin',dismiss,{signal:controller.signal});disposeBillLayout=()=>{controller.abort();media.removeEventListener('change',update)};update();
 }
 
@@ -83,6 +83,8 @@ export function billToolbarLayout(host,{source,searchHeading,records,requestTota
 let disposeCompactSelects=()=>{};
 export function compactSelects(root){
  disposeCompactSelects();const pairs=[...root.querySelectorAll('select')].map(select=>{const display=document.createElement('span'),value=document.createElement('span');display.className='select-display';value.className='selected-value';value.setAttribute('aria-hidden','true');select.before(display);select.classList.add('compact-select');display.append(value,select);return {select,value}});
- const update=()=>{for(const {select,value} of pairs)value.textContent=select.selectedOptions[0]?.textContent||''};
+ // Compact Sort captions remain available on hover/focus, fit the viewport and dismiss with Escape.
+ for(const {select,value} of pairs){const label=select.closest('label');if(!label||!['sort','directory-sort'].includes(select.id))continue;const show=()=>{delete label.dataset.captionDismissed;requestAnimationFrame(()=>{if(!label.matches('.direct-sort,.directory-compact-sort'))return;const r=label.getBoundingClientRect(),scale=r.width/label.offsetWidth||1;value.style.maxWidth=(innerWidth-24)/scale+'px';const width=value.getBoundingClientRect().width;label.style.setProperty('--sort-tip-left',(Math.max(12,Math.min(r.left,innerWidth-width-12))-r.left)/scale+'px')})};label.addEventListener('mouseenter',show);select.addEventListener('focus',show);select.addEventListener('change',show);label.addEventListener('keydown',e=>{if(e.key==='Escape')label.dataset.captionDismissed=''})}
+ const update=()=>{for(const {select,value} of pairs){value.textContent=select.selectedOptions[0]?.textContent||'';if(['sort','directory-sort'].includes(select.id))select.title='Current selection: '+value.textContent}};
  const observer=new MutationObserver(update);for(const {select} of pairs)observer.observe(select,{childList:true,subtree:true});root.addEventListener('change',update);update();disposeCompactSelects=()=>{observer.disconnect();root.removeEventListener('change',update)};
 }

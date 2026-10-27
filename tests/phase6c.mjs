@@ -21,11 +21,11 @@ try{
   if(!directory){const input=await page.locator('#search').boundingBox(),r=await page.locator(panel).boundingBox();assert.ok(r.y>=input.y+input.height,'Flow content follows input');assert.ok(await page.locator(panel+' a').count()>=3);if(await page.locator('#session').count()){const a=await page.locator('#session').boundingBox();assert.ok(a.height<=input.height+2,'Records retains field height when Info expands')}}
   await page.keyboard.press('Escape');assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
   if(route==='requests'||route==='archive/2026'){
-   assert.equal(await page.locator('#sort').isVisible(),false);assert.equal(await page.locator('.sort-menu>summary').innerText(),'Sort');
+   assert.equal(await page.locator('#sort').isVisible(),width>700);assert.equal(await page.locator('.sort-menu>summary').innerText(),'Sort');
    assert.equal(await page.locator('.page-preference select').isVisible(),width>700);
-   await billOptions(page);await bounds('.sort-menu .export-panel');assert.equal(await page.locator('#sort').isVisible(),true);
+   await billOptions(page);await bounds(width<=700?'.sort-menu .export-panel':'.direct-sort');assert.equal(await page.locator('#sort').isVisible(),true);
    assert.equal(await page.locator('.sort-menu .page-preference').count(),width<=700?1:0);
-   await page.locator('#sort').focus();await page.keyboard.press('Escape');assert.equal(await page.locator('.sort-menu>summary').evaluate(e=>e===document.activeElement),true);
+   await page.locator('#sort').focus();await page.keyboard.press('Escape');assert.equal(await page.locator(width<=700?'.sort-menu>summary':'#sort').evaluate(e=>e===document.activeElement),true);
   }
   if(mode==='normal'&&[390,1280].includes(width)){await trigger.click();await page.screenshot({path:`test-results/phase6c/${route.replace('/','-')}-${width}.png`});await page.keyboard.press('Escape')}
  }
