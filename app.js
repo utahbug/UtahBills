@@ -1,3 +1,4 @@
+import './appearance.js';
 import {revealDetail} from './detail-navigation.js';
 import {enhancedLayout} from './enhanced-detail.js';
 import {contactEmail,contactDisplayEmail,contactSubject} from './contact-config.js';

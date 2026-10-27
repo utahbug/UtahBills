@@ -231,3 +231,8 @@ The [comprehensive assessment](docs/PHASE5A_READINESS.md) verifies all saved req
 ## Phase 6A — Scheduled acceptance complete; real introductions still pending
 
 [TEST-001 acceptance](docs/PHASE6A_VERIFICATION.md) verifies genuine October 25/26 schedules, component reports, source hashes, required tests, snapshot commits and deployed freshness. Approved partial reconciliation remains explicitly partial: 274 observed requests, 273 verified statuses, one unconfirmed source observation. This supersedes older scheduled-acceptance-pending notes only. SESSION-003 remains blocked until real introduced legislation/conversions can be validated; SESSION-002 awaits verified membership. Independent editorial, human accessibility, broader release review and owner authorization remain open. No application, data, pipeline or hosting changes.
+
+## Phase 7A - Global Appearance
+
+- Implemented Device default / Light / Dark in the shared header, locally saved per browser with device-change and same-origin-tab synchronization. Early head initialization prevents a delayed light appearance; semantic dark colors cover all shared surfaces while retaining existing light fallbacks.
+- [Verification](docs/PHASE7A_VERIFICATION.md) records responsive/keyboard/contrast, loading/persistence and retained navigation checks. Physical-device/manual accessibility, editorial and public-release acceptance remain open; noindex/nofollow and existing data/acquisition safeguards remain.

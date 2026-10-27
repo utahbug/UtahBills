@@ -1,0 +1,48 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {readFile,mkdir} from 'node:fs/promises';
+const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
+const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true});
+const context=await browser.newContext({colorScheme:'light',viewport:{width:390,height:844}});
+const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
+await mkdir('test-results/phase7a',{recursive:true});
+const theme=async value=>page.waitForFunction(v=>document.documentElement.dataset.theme===v,value);
+async function choose(value){await page.locator('#appearance-trigger').click();await page.locator(`input[name="appearance"][value="${value}"]`).check();await page.keyboard.press('Escape')}
+async function visit(route){await page.goto(base+'#'+route);await page.locator('main h1').waitFor();await page.waitForLoadState('networkidle');await page.evaluate(()=>document.fonts.ready)}
+async function audit(label,contrastOnly=false){await page.evaluate(axe);const result=await page.evaluate(only=>axe.run(document,{runOnly:only?{type:'rule',values:['color-contrast']}:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}),contrastOnly);assert.deepEqual(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})),[],label)}
+async function geometry(label){assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,label+' overflow');const result=await page.evaluate(()=>{const controls=[...document.querySelectorAll('header nav a,#appearance-trigger,.header-contact')];return controls.map(e=>{const r=e.getBoundingClientRect();return {name:e.getAttribute('aria-label')||e.textContent,width:r.width,height:r.height,inside:r.left>=0&&r.right<=innerWidth+1&&r.top>=0,overlaps:controls.filter(other=>other!==e).some(other=>{const b=other.getBoundingClientRect();return r.left<b.right-.5&&r.right>b.left+.5&&r.top<b.bottom-.5&&r.bottom>b.top+.5})}})});for(const item of result){assert.ok(item.width>=24&&item.height>=44,label+JSON.stringify(item));assert.ok(item.inside&&!item.overlaps,label+JSON.stringify(item))}}
+try{
+ await visit('requests');await theme('light');assert.equal(await page.locator('html').getAttribute('data-appearance'),'device');
+ await page.emulateMedia({colorScheme:'dark'});await theme('dark');await choose('light');await theme('light');await page.reload();await theme('light');
+ await page.emulateMedia({colorScheme:'light'});await choose('dark');await theme('dark');await page.reload();await theme('dark');
+ await choose('device');await theme('light');await page.emulateMedia({colorScheme:'dark'});await theme('dark');await page.reload();await theme('dark');
+ // Same-origin browser tabs stay synchronized without accounts or network writes.
+ const other=await context.newPage();await other.goto(base+'#contact');await other.locator('main h1').waitFor();await choose('light');await other.waitForFunction(()=>document.documentElement.dataset.theme==='light');await other.close();
+ // Keyboard radio interaction, checked state, Escape and focus return.
+ await page.locator('#appearance-trigger').focus();await page.keyboard.press('Enter');await page.locator('#appearance-panel:popover-open').waitFor();assert.equal(await page.locator('input[value="light"]').isChecked(),true);await page.waitForFunction(()=>document.activeElement===document.querySelector('input[value="light"]'));await page.keyboard.press('ArrowDown');await theme('dark');await page.keyboard.press('Escape');assert.equal(await page.locator('#appearance-trigger').evaluate(e=>e===document.activeElement),true);
+ const routes=['requests','bills/2027','archive/2026','activity','calendar','legislators','about','faq','contact','bill/HB0011','bill/HB0117','request/KECAYMBVUG','legislator/PETERVL/2027'];
+ for(const route of routes){await visit(route);await theme('dark');await audit(route);if(route==='calendar'){await page.locator('#calendar-toggle').click();await audit('open calendar')}if(route==='bill/HB0011'){for(const detail of await page.locator('main details').all())await detail.evaluate(e=>e.open=true);await audit('expanded bill details',true)}}
+ // Exercise actual dark menus, evidence dialogs, expanded Info, and copy fallback.
+ await visit('requests');await page.locator('.sort-menu>summary').click();await audit('Sort menu');await page.keyboard.press('Escape');await page.locator('.more-menu>summary').click();await audit('More menu');await page.keyboard.press('Escape');
+ await page.locator('.catalog-info>summary').click();await audit('Search Info');
+ await visit('request/KECAYMBVUG');await page.locator('.request-source-trigger').click();await audit('request source dialog');await page.keyboard.press('Escape');
+ await visit('bill/HB0011');await page.locator('.open-official-summary').click();await audit('official summary dialog');await page.keyboard.press('Escape');
+ await visit('legislators');await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}}));await page.locator('.copy-results').click();await page.locator('.copy-fallback').waitFor();await audit('copy fallback');
+ // Explicit palette ratios supplement axe for non-text control boundaries and focus.
+ const palette=await page.locator('html').evaluate(e=>Object.fromEntries(['page','surface','text','heading','muted','link','control-border','focus','positive-bg','positive-text','negative-bg','negative-text','warning-bg','warning-text','purple-bg','purple-text','paper','paper-year'].map(k=>[k,getComputedStyle(e).getPropertyValue('--appearance-'+k).trim()])));
+ const luminance=hex=>{const rgb=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722};
+ const ratios=[];for(const [fg,bg,min] of [['text','page',4.5],['text','surface',4.5],['muted','surface',4.5],['heading','surface',4.5],['link','surface',4.5],['text','paper',4.5],['heading','paper-year',4.5],['positive-text','positive-bg',4.5],['negative-text','negative-bg',4.5],['warning-text','warning-bg',4.5],['purple-text','purple-bg',4.5],['control-border','surface',3],['focus','surface',3]]){const a=luminance(palette[fg]),b=luminance(palette[bg]),ratio=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);assert.ok(ratio>=min,fg+'/'+bg+' '+ratio);ratios.push({fg,bg,ratio})}console.log('Dark contrast ratios: '+JSON.stringify(ratios));
+ for(const width of [320,375,390,430,700,768,1024,1280])for(const mode of ['normal','text','zoom']){
+  await page.setViewportSize({width,height:900});await visit('requests');await page.reload();await page.locator('.bill-row').first().waitFor();
+  if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
+  if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
+  await geometry(width+' '+mode);await page.evaluate(()=>scrollTo(0,800));await page.waitForTimeout(100);await geometry(width+' '+mode+' scrolled');
+  await page.locator('#appearance-trigger').click();const panel=await page.locator('#appearance-panel').boundingBox();assert.ok(panel.x>=0&&panel.x+panel.width<=width+1&&panel.y>=0&&panel.y+panel.height<=900,width+' '+mode+' panel');await audit(width+' '+mode+' appearance');await page.keyboard.press('Escape');
+  if(mode==='normal'&&[390,1280].includes(width))await page.screenshot({path:`test-results/phase7a/dark-${width}.png`});
+ }
+ // Appearance is present even when the application bundle has not arrived.
+ for(const saved of ['device','light','dark','invalid']){const early=await browser.newContext({colorScheme:'dark'});await early.addInitScript(value=>localStorage.setItem('utahbills-appearance',value),saved);const p=await early.newPage();await p.route('**/app.js',r=>r.abort());await p.route('**/styles.css',r=>r.abort());await p.goto(base,{waitUntil:'domcontentloaded'});assert.equal(await p.locator('html').getAttribute('data-theme'),saved==='light'?'light':'dark');assert.equal(await p.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor),saved==='light'?'rgb(245, 247, 248)':'rgb(24, 33, 43)');await early.close()}
+ const denied=await browser.newContext({colorScheme:'dark'});await denied.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new DOMException('blocked','SecurityError')}})});const p=await denied.newPage();await p.goto(base+'#contact');await p.locator('#appearance-trigger').click();await p.locator('input[value="light"]').check();assert.equal(await p.locator('html').getAttribute('data-theme'),'light');assert.match(await p.locator('#appearance-status').innerText(),/could not save/);await denied.close();
+ assert.deepEqual(errors,[]);console.log('Phase 7A: three modes, reload/device changes, cross-tab and denied storage, pre-bundle loading palette, route/expanded-content contrast, keyboard/radios/Escape and 24 responsive/text/zoom cases passed.');
+}finally{await browser.close()}

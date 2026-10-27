@@ -803,3 +803,12 @@ LEG-003 is partially implemented, not complete. Total-sponsored unions, floor/co
 ## Contact destination correction - October 27, 2026
 
 The owner authorized aligning the Contact mailto recipient with the unchanged visible contact@utahbug.com address. This supersedes the temporary testing mismatch above. The existing subject and all visible page text remain unchanged. Header, footer and About Contact links share this route. Real email send/receipt, monitoring assignments and independent editorial/public-release acceptance remain unverified; this URL correction does not establish mailbox delivery or change DNS/hosting.
+
+## Phase 7A - APPEARANCE-001
+
+**Global appearance preference** - **Completed implementation; human/device acceptance pending**
+
+- **Source:** Owner Phase 7A request, October 27, 2026.
+- **Acceptance:** Shared accessible Device default/Light/Dark control, local persistence, live device-preference updates, early loading without a light flash, consistent comfortable dark surfaces and AA contrast, compact mobile navigation and preserved functionality/data/disclosures/noindex.
+- **Evidence:** [Phase 7A verification](PHASE7A_VERIFICATION.md), `tests/phase7a.mjs`, retained Contact/header regressions and mandatory CI/Main publication checks. Resolve the implementation commit through the verification record's Git history.
+- **Remaining:** Physical-device/Safari, manual assistive-technology/native-zoom acceptance remains under UI-001. Fully expanded enhanced-bill technical-source links need follow-up target-spacing review; this phase tests their dark contrast and does not close broader human accessibility acceptance. Scheduled run 40556193085 retained prior data after Calendar lost-link and request/status title mismatch PVKQFINLWR safeguards; acquisition investigation remains separately scoped. TEST-001's historical Phase 6A completion and all other unfinished tasks remain unchanged.
