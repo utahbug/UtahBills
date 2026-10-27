@@ -151,9 +151,10 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### LEG-003
 
-**Compare verified 2027 sponsorship activity** — **Medium** · **Deferred**
+**Compare verified 2027 sponsorship activity** — **Medium** · **In progress — Public Requests portion implemented; broader comparison deferred**
 
-- **Dependencies:** Real introduced 2027 legislation sufficient to make comparison useful; exact session/bill/sponsor identities and a separately approved implementation batch. No implementation is authorized by Phase 4X.
+- **Phase 6F:** Owner explicitly advanced Public Requests independently of final 2027 roster verification. The directory now shows Name, Introduced bills and Public requests. Exact-ID, unique active-request counts link to the corresponding existing profile request list. Source-observed requests remain qualified; missing/unmatched sponsor IDs are explicitly accounted for. [Verification](PHASE6F_VERIFICATION.md). Remaining acceptance below is not closed.
+- **Dependencies (remaining scope):** Real introduced 2027 legislation sufficient to make comparison useful; exact session/bill/sponsor identities and a separately approved implementation batch. No implementation is authorized by Phase 4X.
 - **Source:** Owner Phase 4X §5; [Roadmap Stage 2](../ROADMAP.md#stage-2--legislator-directory--partly-implemented).
 - **Acceptance:** Distinguish chief-sponsored **Bills introduced** from **Total bills sponsored**, the distinct union of chief, opposite-chamber floor and cosponsor roles. Deduplicate exact base-bill identities across roles and versions; exclude requests and resolutions from bill counts. Preserve role labels, source/session context and unavailable/partial evidence. Test overlapping roles, duplicate versions, zero counts, stable most/fewest ordering and House/Senate scopes. Consider an optional fourth directory column, total-sponsored sorting and compact role labels only in the future scoped design. Present factual activity, never a performance score or an inference of support for every version.
 
@@ -791,3 +792,9 @@ SHARE-001 implementation is complete after focused tests; mandatory CI/Main publ
 [Verification](PHASE6E_VERIFICATION.md): primary Copy now shares titles with links; More contains Copy titles only and unchanged Export CSV. Compact open-menu positioning preserves closed controls and avoids partly obscuring result targets. Clipboard writes begin during activation with promised complete data. No legislative, sorting, acquisition, hosting or unrelated page changes. Phase 6D records remain historical evidence of its earlier arrangement.
 
 All unfinished IDs remain open. TEST-001 remains completed under Phase 6A. Physical-device clipboard, VoiceOver/NVDA, native browser zoom, independent editorial and owner public-release approval remain pending. Resolve this implementation with `git log -1 --format=%H -- docs/PHASE6E_VERIFICATION.md`; the corresponding mandatory workflow and publication outcome accompany delivery.
+
+## Phase 6F — LEG-003 Public Requests portion
+
+The owner-authorized [bounded implementation](PHASE6F_VERIFICATION.md) adds 2027 public-request counts to the verified 2026 directory, replacing the visible District column while retaining district sorting, profiles and the official finder. The same request projection supplies counts and profile lists; all saved unmatched IDs remain disclosed. Name, introduced-count and request-count sorting use stable alphabetical ties. Desktop heading sorting and the existing compact Sort retain District access; phone entries keep both count links accessible.
+
+LEG-003 is partially implemented, not complete. Total-sponsored unions, floor/cosponsor columns, optional columns and committee filtering remain deferred; no finalized 2027 membership is inferred. All other unfinished IDs and physical-device/editorial/release acceptance remain open. TEST-001 remains completed under Phase 6A. Resolve the implementation with `git log -1 --format=%H -- docs/PHASE6F_VERIFICATION.md`; mandatory Main CI/publication evidence accompanies delivery.

@@ -49,6 +49,8 @@ Status: **Implemented** = available in the research prototype; **Planned** = app
 
 ## Stage 2 — Legislator directory · Partly implemented
 
+- **Phase 6F implemented — LEG-003 Public Requests portion:** Compact Name / Introduced bills / Public requests directory. Unique currently listed, unconverted 2027 requests use exact saved sponsor IDs, include qualified source observations and link to matching profile lists. Missing/unmatched IDs are explicitly disclosed. Membership remains the verified 2026 roster; broader sponsorship comparison and optional columns remain deferred. [Verification](docs/PHASE6F_VERIFICATION.md).
+
 - **Implemented:** 104-member 2026 year roster, chamber/name filters and suggested spelling matches, profiles and separately dated current contact records. Four former members have no matched current contact record.
 - **Implemented:** district-specific official Census maps for 2022 state legislative boundaries.
 - **Implemented:** linked bill counts/listings by stable ID; chief, floor and version-specific cosponsor roles stay separate.
