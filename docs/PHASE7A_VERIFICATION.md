@@ -30,3 +30,9 @@ Initial run [40568653149](https://github.com/utahbug/UtahBills/actions/runs/4056
 The Linux-font sweep also exposed partially obscured background toolbar targets behind the initially nonmodal Appearance panel. Appearance now uses a native modal dialog, making the background inert while choices are open. Escape, Close and backdrop dismissal restore the trigger; the dialog is removed on close so existing route-specific source dialogs and their assertions remain unchanged. Full-page accessibility assertions remain enabled.
 
 Correction validation passed the complete Phase 7A sweep with verified Linux fonts and pinned Chromium, the retained shared-header suite, and the final Edge Appearance suite. Close/backdrop dismissal, native modal background focus exclusion (while allowing browser chrome), and return focus passed. The dynamically created dialog is explicitly text-enlarged in the eight-width matrix. An Edge headless paint issue hid otherwise correctly styled dialog labels; compositing this small surface with translateZ(0) restored visible labels, verified in screenshots, without changing its layout or colors. No redundant full local suite was run; mandatory CI remains required.
+
+## Retained document-structure correction
+
+Run [40570243373](https://github.com/utahbug/UtahBills/actions/runs/40570243373) passed the new Appearance suite, production/source checks and all preceding retained suites through toolbar verification. Phase 4A then caught the inert Appearance template between header and main; its original immediate-sibling assertion is retained. The template now sits at the end of the document before the module script, keeping header directly followed by main. This changes neither visible layout nor dialog behavior. The failed run did not deploy.
+
+The unchanged Phase 4A suite passed locally after moving the template, including compact layout, noindex, keyboard, text/zoom and axe; native Appearance Close/backdrop/focus checks also passed.
