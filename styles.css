@@ -523,3 +523,7 @@ main:has(>#results){padding-bottom:10px}
  .bill-toolbar .sort-menu>summary::after{content:'▾';font-size:.8em}
 }
 .records-search:has(.catalog-info[open]) #session{align-self:start}
+
+/* Existing More menu: two actions, with unchanged toolbar targets. */
+.activity-actions .export-panel{position:absolute;right:0;top:100%;z-index:30;width:240px;min-width:150px;max-width:calc(100vw - 32px);max-height:65vh;overflow:auto;padding:8px;border:1px solid var(--line);border-radius:4px;background:white;box-shadow:0 2px 8px #23354733;text-align:left}
+.activity-actions .export-panel>button,.bill-toolbar .export-panel>button{display:block;min-height:44px;white-space:normal;width:100%;text-align:left}

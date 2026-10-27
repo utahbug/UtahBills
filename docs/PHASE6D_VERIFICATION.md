@@ -1,0 +1,28 @@
+# Phase 6D — SHARE-001: Copy titles with links
+
+October 26, 2026 (Mountain). Implementation began only after Phase 6C commit `78bc5b9692f5b5e87041a4d4206d96d8d059949e` passed all required checks and Main deployment in [run 40434589610](https://github.com/utahbug/UtahBills/actions/runs/40434589610). Its three published application assets matched the tested build, eight real phone/desktop route checks passed, and Main was clean/synchronized.
+
+## Implementation and evidence boundaries
+
+- Existing More menus contain **Copy titles with links** followed by **Export CSV**. The main detailed Copy action is unchanged. Bills uses `matchingRows`; Activity uses its existing `completeRows()` saved-page loader and current filters. Browsing remains incremental. A later-page failure prevents any partial clipboard write; retry can recover.
+- Each record yields its saved title, a newline, its absolute UtahBills detail/history URL, and one blank line between records. Activity preserves repeated titles/events and each original `history` destination; no deduplication or invented association. Introduced and converted identities continue to come from the existing catalog projection, not title matching.
+- Rich clipboard offers both `text/plain` and escaped `text/html`, with a clickable title and readable URL. Unsupported/denied rich writing falls back to `writeText`; complete clipboard denial provides a focused, selected textarea and explicit manual-copy guidance. Only a successful clipboard call announces the actual copied count. Empty sets and retrieval/format failures have separate announcements.
+- `sharing.js` accepts only established request/bill/history hash routes: ten-letter tracking IDs, four-digit HB/SB/HR/SR identifiers, three-digit joint/concurrent resolutions, and existing session-qualified routes. It does not resolve or infer new identities. All 274 visible requests and all 1,016 historical measure destinations are compared with saved identities in focused tests.
+- Public HTTPS deployments derive their base from the actual application URL, removing query/hash components. Local/nonpublic and recognized preview contexts use the single explicitly documented `publishedBaseUrl` in `site-config.js`. An approved custom domain automatically uses its actual HTTPS base; no hosting/domain change is made here. Local hosts and temporary query parameters are absent from copied links.
+- Formatting yields every 250 records and reports progress; an isolated 5,000-record test verifies no truncation. Activity loading already yields between saved pages. This is copying only: no social posting, email sending, user accounts or external service is introduced.
+- The taller two-action menu initially reproduced an automated target-size failure where upward placement partly obscured Records on iPhone. Both menus now prefer available space below their trigger, retaining the viewport-constrained upward fallback. Original accessibility assertions remain. Toolbar rows, controls and targets remain unchanged; native Escape, outside dismissal and focus restoration are preserved.
+
+## Verification
+
+- `tests/sharing.mjs`: exact plain format, escaped HTML, Unicode/punctuation, duplicate titles, empty sets, all permitted identifier forms, rejected unsafe/malformed destinations, clean custom-domain/local/preview bases, and asynchronous 5,000-record formatting.
+- `tests/phase6d.mjs`: complete 274-request and 1,016-measure output against saved identities, filtered/sorted requests, single/no matches, representative real navigation, 40 isolated introduced fixtures and exact conversion exclusion, 155 events across eight saved pages, repeated titles, category filtering, incremental browsing, failed-page retention/recovery, rich/plain/denied clipboard, unchanged detailed Copy/CSV, truthful announcements and keyboard focus. Fixtures never enter `data/` or production.
+- More menu checks at 320/390/700/701/1280px with normal/doubled text and 200% CSS zoom; minimum 44px actions, viewport containment and no horizontal overflow. Representative phone/desktop screenshots and automated WCAG A/AA checks cover Bills and Activity.
+- Retained mobile-toolbar and Phase 4U checks protect detailed Copy, CSV contents, pagination, date boundaries, fallback, filtering and accessibility. Production build verifies original checksums, source/session/version identities, summary evidence, three Python vote-integrity tests and deterministic projections. Mandatory CI retains the full existing chain plus the new focused tests.
+
+Final CI/deployment and tested-versus-published checks accompany delivery. Resolve the implementation SHA with `git log -1 --format=%H -- docs/PHASE6D_VERIFICATION.md`; [workflow history](https://github.com/utahbug/UtahBills/actions/workflows/pages.yml) records required gates. No full redundant local suite is run.
+
+## Remaining acceptance
+
+Automated clipboard stubs verify supplied MIME content and fallbacks, not the behavior of every recipient application. Physical iPhone/iPad paste, VoiceOver/NVDA, native browser zoom and independent editorial/release approval remain unperformed human acceptance. HTML may be discarded by X or other applications; plain text always includes the URL. First-real-2027 introduced acceptance remains blocked on official records. TEST-001 remains completed under Phase 6A. TOPIC-001 and unrelated deferred features remain untouched.
+
+No legislative records, acquisition/reconciliation, source status logic, Bills sorting/filtering algorithms, Activity date/category definitions, bill details, Legislators, Calendar, Contact, DNS/Cloudflare or hosting changes. Main-only and noindex/nofollow are preserved.

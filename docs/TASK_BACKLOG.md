@@ -712,7 +712,7 @@ These five future tasks are recorded without implementation. Prior unfinished ID
 
 ### SHARE-001
 
-**Copy titles with links** — **Medium** · **Approved/Not started** · **Important pre-session enhancement**
+**Copy titles with links** — **Medium** · **Completed implementation — October 26, 2026 (Phase 6D)**
 
 - **Source:** Owner Phase 5H §6; [decision record](PHASE5H_VERIFICATION.md#follow-up-decisions-recorded-only).
 - **Dependencies:** Existing complete-matching-set Copy/CSV, stable request and introduced-measure routes, and a scoped implementation batch.
@@ -778,3 +778,9 @@ TEST-001 alone closes after formal scheduled acceptance; [verification](PHASE6A_
 - **Acceptance:** Establish meaningful classifications using official subjects where available, distinguishing official classifications from UtahBills editorial classifications. Add Bills Topic A–Z/Z–A sorting only when reliable topics exist; preserve Advanced Search Topic filtering and unknown/unclassified records. Evaluate a compact Recent Activity topic filter alongside date/category filters while retaining chronological event order. The generic historical “Official record” designation is not a meaningful topic. Verify classifications, unknowns, filtering and stable ordering without unsupported inference.
 
 Phase 6C improves only the requested Info boundaries and desktop Bills/Archive Sort disclosure. [Verification](PHASE6C_VERIFICATION.md). SHARE-001 remains approved and unimplemented. All prior unfinished IDs and human/release requirements are retained. TEST-001 remains completed by Phase 6A; SESSION-002/003 and human acceptance remain open. Resolve the implementation commit with `git log -1 --format=%H -- docs/PHASE6C_VERIFICATION.md`; mandatory CI and publication evidence accompany delivery.
+
+## Phase 6D — SHARE-001 completion
+
+[Verification](PHASE6D_VERIFICATION.md): the existing Bills and Recent Activity More menus now offer Copy titles with links and Export CSV. Sharing uses the complete existing filtered/sorted set, exact established routes, plain text and safely escaped HTML, with plain-text/manual fallback and truthful count/error announcements. All prior detailed Copy/CSV functionality remains. Representative fixtures verify introduced measures and exact request conversion without production data changes.
+
+SHARE-001 implementation is complete after focused tests; mandatory CI/Main publication evidence accompanies delivery. The implementation commit introduces `docs/PHASE6D_VERIFICATION.md` (`git log -1 --format=%H -- docs/PHASE6D_VERIFICATION.md`). TOPIC-001 is unchanged and unimplemented; no other unfinished task closes. Physical-device, manual assistive-technology/native-zoom, independent editorial and owner release acceptance remain open. Clipboard HTML support in recipient applications requires actual-device acceptance; no external messages are sent.
