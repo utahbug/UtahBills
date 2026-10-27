@@ -26,3 +26,7 @@ Final CI/deployment and tested-versus-published checks accompany delivery. Resol
 Automated clipboard stubs verify supplied MIME content and fallbacks, not the behavior of every recipient application. Physical iPhone/iPad paste, VoiceOver/NVDA, native browser zoom and independent editorial/release approval remain unperformed human acceptance. HTML may be discarded by X or other applications; plain text always includes the URL. First-real-2027 introduced acceptance remains blocked on official records. TEST-001 remains completed under Phase 6A. TOPIC-001 and unrelated deferred features remain untouched.
 
 No legislative records, acquisition/reconciliation, source status logic, Bills sorting/filtering algorithms, Activity date/category definitions, bill details, Legislators, Calendar, Contact, DNS/Cloudflare or hosting changes. Main-only and noindex/nofollow are preserved.
+
+## CI loading-state correction
+
+Initial run [40438716998](https://github.com/utahbug/UtahBills/actions/runs/40438716998) passed integrity/build and the pure sharing checks, then the new introduced-detail test read the legitimate “Loading official record…” heading before its asynchronous fixture response completed. No deployment occurred. The test now waits for the exact source-fixture title and asserts exact equality instead of testing the first visible heading. Application code/assets are unchanged; the targeted suite is rerun with pinned Chromium. No valid identity, navigation or accessibility assertion is relaxed.
