@@ -4,7 +4,7 @@ export function requestSponsorship(data){
  for(const r of [...(data.requests2027||[]),...(data.sourceObservedRequests2027||[])]){
   if(!grouped.has(r.trackingID))grouped.set(r.trackingID,[]);grouped.get(r.trackingID).push(r);
  }
- const roster=new Set(data.legislators.map(p=>p.id));
+ const roster=new Set((data.legislators||[]).map(p=>p.id));
  for(const [id,versions] of grouped){
   if(versions.some(r=>r.introducedBill||r.currentlyListed===false))continue;
   const r=versions[0];records.push(r);

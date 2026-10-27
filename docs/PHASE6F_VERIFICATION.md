@@ -46,3 +46,7 @@ This is only the owner-authorized Public Requests portion of LEG-003. Total-spon
 ## CI wording assertion correction
 
 Initial run [40517245403](https://github.com/utahbug/UtahBills/actions/runs/40517245403) passed integrity/build and preceding browser suites, then stopped at the retained Phase 4J Info wording assertion. It expected “Saved 2027 House/Senate bills” without the newly explicit “General Session” reporting period. The assertion now requires the full approved wording; it is not removed or broadened. Only this test and verification record change in the follow-up commit. Main was not deployed by the failed run; the affected suite is checked locally before another mandatory CI run.
+
+## Minimal-data sorting compatibility correction
+
+Run [40521959427](https://github.com/utahbug/UtahBills/actions/runs/40521959427) passed the corrected Info test and subsequent browser suites, then the existing `phase4v-data.mjs` model test exposed an unnecessary dependency: every sort called request projection even when its input intentionally contained only bill-count data and supplied rows. Request projection now runs only for request-count sorting. An absent roster is explicitly treated as unavailable (all supplied request sponsor IDs remain unmatched to a roster), without inventing membership or changing exact-ID counts. The original minimal-data sorting test remains unchanged; focused empty/missing-roster assertions are added. Source data and acquisition remain unchanged, and the failed run did not deploy Main.
