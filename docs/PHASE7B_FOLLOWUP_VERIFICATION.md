@@ -19,6 +19,8 @@ Focused local checks passed: `tests/phase7b-followup.mjs`, `tests/phase7a.mjs`, 
 
 The new floating geometry uses document layout coordinates for no-shift assertions, separating actual reflow from browser scrolling necessary to reach enlarged controls. The retained count-gap check caught a spacing regression; the existing 24px separation was restored. The mobile Info assertion now checks the visible floating content rather than the zero-layout-height details container. The existing Bills toolbar had reset the export panel class list; preserving the floating class fixes the discovered zoom placement issue.
 
+The first CI run, 40712206678, passed the new follow-up and retained Phase 7B suites but stopped in the adapted Phase 7A audit at 430px normal size: its arbitrary 800px scroll left 13px of Sort/Copy visible behind the sticky header on Linux. The previous appearance modal excluded those background targets from axe. The direct-toggle test now retains scrolled header geometry, toggle and focus checks, then returns to the top before auditing fully visible controls. No target-size rule or assertion is disabled; dedicated toolbar size/spacing checks remain. Deployment was correctly blocked by this failed run.
+
 ## Publication and remaining limitations
 
 Resolve the implementation commit with `git log --diff-filter=A --format=%H -- docs/PHASE7B_FOLLOWUP_VERIFICATION.md`. Final CI, deployment and exact published HTML/JS/CSS hash comparison accompany delivery. All mandatory source/build/browser gates remain enabled. No successful deployment is claimed before it completes.

@@ -39,7 +39,8 @@ try{
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
   if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
   await geometry(width+' '+mode);await page.evaluate(()=>scrollTo(0,800));await page.waitForTimeout(100);await geometry(width+' '+mode+' scrolled');
-  await page.locator('#appearance-trigger').click();await theme('light');await audit(width+' '+mode+' toggle');assert.equal(await page.locator('#appearance-trigger').evaluate(e=>e===document.activeElement),true);await page.locator('#appearance-trigger').click();await theme('dark');
+  // Keep the scrolled header/toggle checks, then audit fully visible controls. An arbitrary scroll offset can clip a 44px toolbar target behind the sticky header; the former modal excluded that background from axe.
+  await page.locator('#appearance-trigger').click();await theme('light');assert.equal(await page.locator('#appearance-trigger').evaluate(e=>e===document.activeElement),true);await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(100);await audit(width+' '+mode+' toggle');await page.locator('#appearance-trigger').click();await theme('dark');
   if(mode==='normal'&&[390,1280].includes(width))await page.screenshot({path:`test-results/phase7a/dark-${width}.png`});
  }
  // Fractional font metrics must not scroll the first navigation row above the viewport.
