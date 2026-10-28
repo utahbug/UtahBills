@@ -627,3 +627,19 @@ header{container:site-header / inline-size}
 #search-info .catalog-info[open],.activity-info.context-info[open]{margin:0!important;padding:0!important}
 .directory-compact-sort .selected-value,.direct-sort .selected-value{background-image:none}
 @media(forced-colors:active){.direct-sort>.select-display::after,.directory-compact-sort>.select-display::after{background:none;border-right:2px solid ButtonText;border-bottom:2px solid ButtonText;width:8px;height:8px;transform:rotate(45deg)}.page-preference select{appearance:auto}}
+
+/* Owner acceptance: independent directory Columns/Copy, native sort breathing room. */
+.directory-copy,.directory-columns-menu{padding:0!important;margin:0}
+.directory-copy>summary,.directory-columns-menu>summary{display:flex!important;align-items:center;justify-content:center;gap:3px;width:44px;min-height:44px;padding:6px!important;list-style:none}
+.directory-copy>summary::before,.directory-columns-menu>summary::before{display:none!important}
+.directory-copy>summary svg,.directory-columns-menu>summary svg{width:18px;height:18px}
+.directory-copy>summary .copy-chevron{width:10px;height:10px}
+.directory-copy .export-panel>button,.directory-columns-menu .export-panel>button{display:block;width:100%;min-height:44px;border:0;background:transparent;text-align:left;padding:8px;border-radius:3px}
+.directory-columns-menu .directory-column-options{margin:0;border-top:0;padding-top:0}
+#directory-sort{padding-right:32px}#directory-sort option{padding-right:20px}
+.bill-toolbar>.result-controls{column-gap:20px}
+.bill-row .bill-id.request-classification{font-weight:500;font-size:.9375rem;line-height:1.6}
+@container directory (max-width:46em){.directory-order-controls{gap:0 8px}.directory-actions.results-toolbar{column-gap:12px}.directory-order-controls>label:has(#directory-chamber){font-size:inherit;gap:2px}.directory-actions>.copy-control{margin-left:auto}}
+.directory-actions>.result-controls:empty{display:none}
+.directory-columns-menu{border:0}
+@container directory (max-width:28rem){.directory-order-controls{flex-basis:100%}.directory-actions>.result-summary{margin-left:0}}

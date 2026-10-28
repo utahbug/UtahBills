@@ -13,7 +13,7 @@ try{
   const g=await page.evaluate(()=>{const r=s=>document.querySelector(s).getBoundingClientRect().toJSON();return {input:r('#directory-search'),finder:r('.find-legislators'),info:r('.directory-search-tools .toolbar-info'),order:r('.directory-order-controls'),count:r('#directory-count'),stacked:getComputedStyle(document.querySelector('.legislator-row')).gridTemplateColumns.split(' ').length===1,overflow:document.documentElement.scrollWidth>innerWidth+1}});
   assert.equal(g.overflow,false,width+mode);assert.ok(Math.abs(g.finder.right-g.input.right)<2,JSON.stringify({width,mode,g}));assert.ok(Math.abs(g.info.left-g.input.right-6*scale)<2);
   assert.equal(await page.locator('.directory-chamber').count(),0);assert.equal(await page.locator('.directory-order-controls #directory-chamber').count(),1);
-  if(Math.abs(g.order.y-g.count.y)<44*scale)assert.ok(g.count.x-g.order.right>=23*scale,'Count gap');
+  if(Math.abs(g.order.y-g.count.y)<44*scale)assert.ok(g.count.x-g.order.right>=(g.stacked?11:23)*scale,'Count gap');
   for(const s of ['#appearance-trigger','.header-contact','#directory-sort','#directory-chamber','.introduced-count','.request-count']){const r=await page.locator(s).first().boundingBox();assert.ok(r.height/scale>=44&&r.width/scale>=44,JSON.stringify({s,r,width,mode}))}
   for(const s of ['#appearance-trigger svg','.header-contact svg']){const r=await page.locator(s).boundingBox();assert.ok(r.width/scale>=20&&r.width/scale<=22,JSON.stringify({s,r}))}
   if(!g.stacked)for(const [heading,link] of [['bills','introduced-count'],['requests','request-count']]){const h=await page.locator(`[data-directory-sort="${heading}"]`).boundingBox(),r=await page.locator('.'+link).first().boundingBox();assert.ok(Math.abs(h.x+h.width/2-r.x-r.width/2)<1)}

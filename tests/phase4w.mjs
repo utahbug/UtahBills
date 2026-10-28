@@ -1,3 +1,4 @@
+import {copyResults} from './fixtures/copy-results.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -23,7 +24,7 @@ try{
   await billOptions(page);await page.locator('#sort').selectOption(sort);
   const expected=[...records].sort((a,b)=>(sort==='number'?a.trackingID.localeCompare(b.trackingID):sort==='sponsor'?compareSponsors(a,b,catalog):sort==='status'?(a.status.localeCompare(b.status)||a.shortTitle.trim().localeCompare(b.shortTitle.trim())):sort==='title-desc'?b.shortTitle.trim().localeCompare(a.shortTitle.trim()):a.shortTitle.trim().localeCompare(b.shortTitle.trim()))||a.trackingID.localeCompare(b.trackingID));
   const links=await page.locator('.bill-row h2 a').evaluateAll(es=>es.map(e=>e.hash));assert.deepEqual(links,expected.slice(0,links.length).map(r=>'#request/'+r.trackingID),sort);
-  await page.keyboard.press('Escape');await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled);assert.deepEqual((await page.evaluate(()=>window.copied)).split('\n\n').map(s=>s.match(/#request\/([A-Z]+)/)[1]),expected.map(r=>r.trackingID),sort+' complete copy');
+  await page.keyboard.press('Escape');await copyResults(page);await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled);assert.deepEqual((await page.evaluate(()=>window.copied)).split('\n\n').map(s=>s.match(/#request\/([A-Z]+)/)[1]),expected.map(r=>r.trackingID),sort+' complete copy');
  }
  await page.locator('#search').fill(records[0].trackingID);assert.equal(await page.locator('#count').isVisible(),true);assert.equal(await page.locator('.bill-row').count(),1);await page.locator('#clear-search').click();
  await billOptions(page);await page.getByLabel('Results per page').selectOption('25');await page.keyboard.press('Escape');assert.equal(await page.locator('.bill-row').count(),25);await page.locator('.bill-row h2 a').first().click();await page.goBack();await ready();assert.equal(await page.locator('#sort').inputValue(),'status');assert.equal(await page.getByLabel('Results per page').inputValue(),'25');

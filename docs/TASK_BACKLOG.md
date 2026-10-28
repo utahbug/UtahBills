@@ -832,3 +832,9 @@ Shared suitable Info/More panels float without moving results, with bounded opaq
 ## UI-021 — Review typography comparison
 
 Owner-authorized October 28, 2026. Limited listing weights on Review: primary Bills/Activity titles and legislator names 600; record classification/identification labels 500. Shared sizes, spacing, colors and controls are unchanged. Main retains its current appearance. Main and Review are packaged together with identical verified data on every normal/scheduled deployment. Awaiting owner visual acceptance; no promotion is authorized. See [verification](REVIEW_TYPOGRAPHY_VERIFICATION.md).
+
+## Phase 7B final owner corrections
+
+The owner supersedes the earlier directory More design: Sort precedes Chamber:, followed by count and adjacent Columns/Copy dropdown icons. The independent Columns menu retains all three saved basic choices and adds Restore defaults; verified District values identify House/Senate. Copy contains full information, names only and contextual CSV. Stable acceptance IDs UI-018B–E and SHARE-001 remain in use; UI-022 tracks only the authorized Main Bill request label (15px/500, unchanged line box).
+
+UI-021 remains undecided: the owner prefers original typography on iPhone and lighter typography on PC. Broader Review weights remain isolated and unpromoted. Political Party, total-sponsored unions, floor sponsorship, cosponsorship and committee filtering remain deferred under LEG-003 until appropriately verified data and separate authorization. Bookmark tracking and Bill Status sorting are not started. All prior unresolved IDs, UI-019, physical-device/AT, editorial and release gates remain open. Main and Review continue as one complete artifact with identical verified data and noindex, nofollow; Cloudflare is unchanged. See [verification](PHASE7B_OWNER_ACCEPTANCE_VERIFICATION.md).

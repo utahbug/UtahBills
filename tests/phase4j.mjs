@@ -1,3 +1,4 @@
+import {copyResults} from './fixtures/copy-results.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -7,7 +8,7 @@ await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:
 await mkdir('test-results/phase4j',{recursive:true});
 try{
  for(const width of [320,375,390,430,600,768,1024,1280])for(const mode of ['normal','text','zoom'])for(const route of ['activity','legislators','calendar']){
-  await page.setViewportSize({width,height:1000});await page.goto(base+'?polish='+width+mode+route+'#'+route);await page.locator('.copy-results').waitFor();
+  await page.setViewportSize({width,height:1000});await page.goto(base+'?polish='+width+mode+route+'#'+route);await page.locator(route==='legislators'?'.directory-copy>summary':'.copy-results').waitFor();
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
   if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${route} ${width} ${mode}`);
@@ -27,7 +28,7 @@ try{
    if(route==='calendar'){assert.deepEqual(await panel.locator('.calendar-key').allTextContents(),['M','F','S','D','C','O']);assert.match(await panel.innerText(),/Committee \/ commission/)}else{assert.match(await panel.innerText(),/Introduced bills: Saved 2027 General Session House\/Senate bills/);assert.match(await panel.innerText(),/not requests, resolutions or additional versions/);assert.match(await panel.innerText(),/sponsorship does not establish membership/);assert.match(await panel.innerText(),/Verified 2026 records/)}
    await page.keyboard.press('Escape');await panel.waitFor({state:'hidden'});assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
    await trigger.click();await panel.locator('.popover-close').click();await panel.waitFor({state:'hidden'});
-   await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.ok(await page.evaluate(()=>window.copied?.length>0));
+   await copyResults(page);await page.waitForFunction(()=>!document.querySelector('.copy-results')?.disabled);assert.ok(await page.evaluate(()=>window.copied?.length>0));
   }
   await page.evaluate(()=>scrollTo(0,0));await page.waitForFunction(()=>scrollY===0&&!document.querySelector('header.navigation-compact'));
   await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[],`${route} ${width} ${mode}`);

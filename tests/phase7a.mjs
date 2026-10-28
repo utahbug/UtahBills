@@ -1,3 +1,4 @@
+import {copyResults} from './fixtures/copy-results.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -29,7 +30,7 @@ try{
  await page.locator('.catalog-info>summary').click();await audit('Search Info');
  await visit('request/KECAYMBVUG');await page.locator('.request-source-trigger').click();await audit('request source dialog');await page.keyboard.press('Escape');
  await visit('bill/HB0011');await page.locator('.open-official-summary').click();await audit('official summary dialog');await page.keyboard.press('Escape');
- await visit('legislators');await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}}));await page.locator('.copy-results').click();await page.locator('.copy-fallback').waitFor();await audit('copy fallback');
+ await visit('legislators');await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}}));await copyResults(page);await page.locator('.copy-fallback').waitFor();await audit('copy fallback');
  // Explicit palette ratios supplement axe for non-text control boundaries and focus.
  const palette=await page.locator('html').evaluate(e=>Object.fromEntries(['page','surface','text','heading','muted','link','control-border','focus','positive-bg','positive-text','negative-bg','negative-text','warning-bg','warning-text','purple-bg','purple-text','paper','paper-year'].map(k=>[k,getComputedStyle(e).getPropertyValue('--appearance-'+k).trim()])));
  const luminance=hex=>{const rgb=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722};

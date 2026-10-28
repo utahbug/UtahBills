@@ -1,0 +1,1 @@
+export async function copyResults(page){const trigger=page.locator('.directory-copy>summary');if(await trigger.count()){await trigger.click();await page.locator('.directory-copy .floating-panel:popover-open').waitFor()}await page.locator('.copy-results').click()}
