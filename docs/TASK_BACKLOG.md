@@ -828,3 +828,7 @@ The October 28 owner request supersedes only the relevant earlier UI decisions: 
 LEG-003 now includes the explicitly advanced basic-column portion. Total-sponsored unions, Floor-sponsored, Cosponsored and committee filtering remain deferred and are not implemented. The historical sections above retain earlier scope decisions; this follow-up is the current authorization for the three basic optional columns only.
 
 Shared suitable Info/More panels float without moving results, with bounded opaque surfaces, scrolling, focus and dismissal. [UI acceptance checklist](UI_ACCEPTANCE_CHECKLIST.md) updates existing stable IDs and adds UI-020 for this shared panel behavior. [Follow-up verification](PHASE7B_FOLLOWUP_VERIFICATION.md) records tests and limitations. Implementation and automated verification do not imply owner or physical-device acceptance. UI-019, UI-001, editorial/release gates and unrelated unfinished tasks remain open. No acquisition, Cloudflare, indexing or legislative-data changes are included.
+
+## UI-021 — Review typography comparison
+
+Owner-authorized October 28, 2026. Limited listing weights on Review: primary Bills/Activity titles and legislator names 600; record classification/identification labels 500. Shared sizes, spacing, colors and controls are unchanged. Main retains its current appearance. Main and Review are packaged together with identical verified data on every normal/scheduled deployment. Awaiting owner visual acceptance; no promotion is authorized. See [verification](REVIEW_TYPOGRAPHY_VERIFICATION.md).

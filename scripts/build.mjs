@@ -27,4 +27,5 @@ await cp('assets','dist/assets',{recursive:true});
 await copyFile('node_modules/lucide/LICENSE','dist/LUCIDE-LICENSE.txt');
 console.log('Built static site in dist; all assets use relative URLs.');
 
-
+// Every normal or scheduled publication includes both permanent environments.
+await import('./package-review.mjs');

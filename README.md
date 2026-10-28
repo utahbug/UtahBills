@@ -64,7 +64,7 @@ If source hashes change, review the source, revise explanations if necessary, an
 
 ## GitHub Pages preparation
 
-The local project is independent. No other application or repository is used or modified. Main is published at https://utahbug.github.io/UtahBills/. Review remains unconfigured and undeployed.
+The local project is independent. No other application or repository is used or modified. Main is published at https://utahbug.github.io/UtahBills/. Review uses the permanent `/UtahBills/review/` address for the owner-authorized typography experiment; final publication evidence is in `docs/REVIEW_TYPOGRAPHY_VERIFICATION.md`.
 
 The existing `utahbug/UtahBills` repository deploys updates pushed to `main` through GitHub Actions. The included Pages workflow builds, checks provenance, runs browser/accessibility tests, and deploys `dist/`. All navigation stays below the permanent `/UtahBills/` URL. No Sites hosting or external backend is required.
 
@@ -83,11 +83,11 @@ Only these two published environment addresses are permitted:
 | Main | https://utahbug.github.io/UtahBills/ | Normal updates and stable development |
 | Review | https://utahbug.github.io/UtahBills/review/ | Experimental or disruptive changes, only when needed |
 
-These addresses are planned; this documentation does not confirm deployment. Both must be reachable publicly from iPhone and PC. Clearly label Main versus Review in the interface and handoffs. No additional preview hosts, temporary sites, or per-branch deployment URLs.
+These are the only permitted published environments. Identify comparisons by their Main/Review URLs and labeled screenshots; preserve the compact interface without adding a Main footer label. Both must remain publicly reachable from iPhone and PC. No additional preview hosts, temporary sites, or per-branch deployment URLs.
 
 Use one local instance at http://127.0.0.1:4173/UtahBills/ and reuse its browser tab. A second local instance is allowed only for necessary side-by-side testing and should be stopped afterward.
 
-Before the first Review deployment, extend the Pages packaging workflow to preserve both environments in the same artifact. A Review-only upload would replace the entire Pages deployment and must never be used. Until that packaging exists, the included workflow supports Main only. Assess disruptive changes for Review before replacing working Main.
+Every `npm run build` packages Main and Review together. `scripts/package-review.mjs` copies the complete verified Main output into `review/`, then adds only the Review typography stylesheet to its HTML. Both copies use identical data/assets. Artifact checks verify file hashes, isolated weights and both noindex directives. The single Pages upload remains `dist/`; never publish only `dist/review/`. Normal and scheduled builds retain the experiment until explicitly changed. Concurrency queues deployments instead of cancelling active work. Existing full CI remains required, with additional combined-artifact and Review checks. Owner visual acceptance and explicit promotion authorization are required before applying experimental weights to Main.
 
 See `AGENTS.md` for the persistent development policy.
 

@@ -1,0 +1,3 @@
+/* Review-only experiment: weight changes only; shared layout and colors remain intact. */
+.bill-row h2,.activity-row h2,.legislator-row h2{font-weight:600}
+.bill-row .bill-id{font-weight:500}
