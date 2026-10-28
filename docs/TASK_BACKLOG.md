@@ -848,3 +848,5 @@ Owner-authorized flexible Bills/Public Requests/archive search uses AND words, c
 SHARE-001 now uses one Copy dropdown on Bills and Recent Activity: Copy titles with links, Copy titles only and full-detail CSV. Complete matching sets, lazy Activity loading, rich/plain clipboard/fallback and source qualifications remain protected. Legislator Columns/Copy remains intact.
 
 TRANS-006's simple save/remove/view portion is implemented; advanced change tracking and notifications remain deferred. UI-023 (search/sorting) and UI-024 (bookmarks) extend the continuing checklist; SHARE-001 retains its ID. Broader Review typography remains unpromoted, both environments retain identical verified data/noindex and one combined artifact. All unrelated unfinished work and human acceptance remain open. [Verification](PHASE7B_SEARCH_BOOKMARKS_VERIFICATION.md).
+
+SHARE-001 follow-up: Copy titles + sponsors is implemented for Bills and Recent Activity with compact plain text, verified rich links and full matching-set/event-order preservation. Existing Copy/CSV choices remain. [Verification and remaining acceptance](PHASE7B_COPY_SPONSORS_VERIFICATION.md).

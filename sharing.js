@@ -2,8 +2,8 @@ import {publishedBaseUrl} from './site-config.js';
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function sharingBase(href){
  const url=new URL(href),host=url.hostname;
- const temporary=url.protocol!=='https:'||host==='localhost'||host.endsWith('.localhost')||host.endsWith('.local')||host.includes(':')||/^\d+(?:\.\d+){3}$/.test(host)||/\.(pages\.dev|vercel\.app|netlify\.app)$/.test(host)||/\/(review|preview)(\/|$)/i.test(url.pathname);
- const base=temporary?new URL(publishedBaseUrl):new URL('.',url);base.search='';base.hash='';return base;
+ const temporary=url.protocol!=='https:'||host==='localhost'||host.endsWith('.localhost')||host.endsWith('.local')||host.includes(':')||/^\d+(?:\.\d+){3}$/.test(host)||/\.(pages\.dev|vercel\.app|netlify\.app)$/.test(host);
+ url.pathname=url.pathname.replace(/\/(review|preview)(\/.*)?$/i,'/');const base=temporary?new URL(publishedBaseUrl):new URL('.',url);base.search='';base.hash='';return base;
 }
 export function shareUrl(route,base){
  // Only existing request and session-qualified/legacy bill detail/history routes.
@@ -42,4 +42,19 @@ export async function copyPrepared(prepared,{rich=true,clipboard=globalThis.navi
  if(!result.count)return {result,copied:false};
  if(writing&&await writing)return {result,copied:true};
  try{await clipboard.writeText(result.plain);return {result,copied:true}}catch{return {result,copied:false}}
+}
+
+// Compact clipboard entries preserve words while removing source line wrapping.
+const oneLine=value=>String(value||'').replace(/\s+/gu,' ').trim();
+export async function titlesSponsors(rows,href,onProgress=()=>{}){
+ const base=sharingBase(href),plain=[],html=[];
+ for(let i=0;i<rows.length;i++){
+  const row=rows[i],title=oneLine(row.title);if(!title)throw Error('Missing saved title');
+  const url=shareUrl(row.route,base),name=oneLine(row.sponsorName)||'Unavailable',prefix=row.number?oneLine(row.number)+' — ':'';
+  let sponsor=escape(name);
+  if(row.sponsorRoute){if(!/^#legislator\/[A-Z0-9]+\/20\d{2}$/.test(row.sponsorRoute))throw Error('Unsupported sponsor destination');sponsor='<a href="'+escape(new URL(row.sponsorRoute,base).href)+'">'+sponsor+'</a>'}
+  plain.push(prefix+title+' — Sponsor: '+name);html.push(escape(prefix)+'<a href="'+escape(url)+'">'+escape(title)+'</a> — Sponsor: '+sponsor);
+  if((i+1)%250===0){onProgress(i+1,rows.length);await new Promise(r=>setTimeout(r,0))}
+ }
+ return {count:rows.length,plain:plain.join('\n'),html:html.join('<br>')};
 }
