@@ -1,21 +1,9 @@
-// The tiny head bootstrap owns the same preference before first paint.
-const appearance=window.utahAppearance;
-const trigger=document.querySelector('#appearance-trigger');
-let panel;
-function sync(){for(const radio of panel?.querySelectorAll('input[name="appearance"]')||[])radio.checked=radio.value===appearance.get()}
-trigger.addEventListener('click',()=>{
- if(panel)return;
- panel=document.querySelector('#appearance-template').content.firstElementChild.cloneNode(true);
- document.body.append(panel);sync();
- panel.addEventListener('change',event=>{
-  if(event.target.name!=='appearance')return;
-  appearance.set(event.target.value);sync();let saved=true;
-  try{saved=localStorage.getItem('utahbills-appearance')===appearance.get()}catch{saved=false}
-  panel.querySelector('#appearance-status').textContent=saved?'':'Your choice applies for this visit. This browser could not save it.';
- });
- panel.querySelector('.appearance-close').onclick=()=>panel.close();
- panel.addEventListener('click',event=>{const r=panel.getBoundingClientRect();if(event.target===panel&&(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom))panel.close()});
- panel.addEventListener('close',()=>{panel.remove();panel=undefined;trigger.focus({preventScroll:true})},{once:true});
- panel.showModal();panel.querySelector('input:checked').focus();
-});
-addEventListener('storage',event=>{if(event.key==='utahbills-appearance'||event.key===null){appearance.sync(event.newValue);sync()}});
+// The head bootstrap continues to resolve the preference before first paint.
+const appearance=window.utahAppearance,trigger=document.querySelector('#appearance-trigger');
+const status=document.createElement('span');status.id='appearance-status';status.className='sr-only';status.setAttribute('role','status');document.body.append(status);
+function sync(){const dark=document.documentElement.dataset.theme==='dark';trigger.setAttribute('aria-label','Appearance: switch to '+(dark?'Light':'Dark'));trigger.title='Switch to '+(dark?'Light':'Dark');trigger.setAttribute('aria-pressed',String(dark));const setting=document.querySelector('#appearance-default');if(setting)setting.checked=appearance.get()==='device'}
+function save(value){appearance.set(value);sync();let saved=false;try{saved=localStorage.getItem('utahbills-appearance')===value}catch{}status.textContent=saved?(value==='device'?'Appearance follows device default.':value==='dark'?'Dark appearance.':'Light appearance.'):'Your choice applies for this visit. This browser could not save it.'}
+trigger.onclick=()=>save(document.documentElement.dataset.theme==='dark'?'light':'dark');
+export function appearanceSettings(host){const section=document.createElement('section');section.className='appearance-settings guide';section.innerHTML='<h2>Appearance</h2><label><input id="appearance-default" type="checkbox"> Use Device Default</label><p>Follow this device’s light or dark preference. The header button switches appearance and saves an override for this browser.</p>';section.querySelector('input').onchange=e=>save(e.target.checked?'device':document.documentElement.dataset.theme);host.append(section);sync()}
+new MutationObserver(sync).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme','data-appearance']});
+addEventListener('storage',event=>{if(event.key==='utahbills-appearance'||event.key===null){appearance.sync(event.newValue);sync()}});sync();

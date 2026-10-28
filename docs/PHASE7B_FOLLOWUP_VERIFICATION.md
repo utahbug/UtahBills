@@ -1,0 +1,26 @@
+# Phase 7B follow-up verification
+
+## Scope and preparation
+
+October 28, 2026. Read AGENTS.md, the continuing UI acceptance checklist, authoritative backlog and Phase 7B verification before editing. Fetched Main at 71e7570f4e333e564632e8b61805e74388845d41; clean and synchronized. Its full CI/Pages run 40598960573 succeeded. No active scheduled acquisition was found; recheck before pushing. Only utahbug/UtahBills is used. This bounded owner-requested follow-up targets Main, not a new Review environment or Cloudflare.
+
+## Changes
+
+- Direct accessible header Light/Dark toggle, tilted 22px half-light/half-dark artwork and 44px target. Explicit choices persist locally. Initial Device Default, live OS changes, early paint and cross-tab preference behavior are retained. About has a discreet Use Device Default checkbox. Storage denial is announced without preventing use. Contact remains separate and unchanged.
+- Sort, Per page and Chamber share a 12px stroked downward chevron. Chamber retains its label and native selection without a prominent border. Sort remains compact and directly accessible.
+- Directory toolbar groups Chamber, Sort, result count, flexible space, More and Copy in that order; More is immediately left of Copy. A single bottom divider separates the toolbar from headings/results. Finder alignment, centered numbers and responsive wrapping remain protected.
+- More offers complete matching names-only Copy with Rep / Sen prefixes based on verified 2026 chamber identity; full display names and current filter/sort order are preserved. Counts, live confirmation and complete clipboard fallback are provided. Primary full-information Copy is unchanged. CSV reuses the existing quoted UTF-8 exporter and explicitly labels 2026 roster versus saved 2027 counts, including uncertainty qualifications.
+- More > Columns provides persistent Introduced bills, Public requests and District checkboxes; Name is fixed. Defaults remain Name / Introduced bills / Public requests. Sorting remains active when its column is hidden. All counts use the existing exact-ID projections. Total-sponsored, floor/cosponsor and committee columns/filtering remain deferred.
+- Shared suitable Info/More panels retain native disclosure triggers while rendering bounded native auto popovers in the top layer. Panels have opaque surfaces, borders/padding, viewport-aware placement and internal scrolling. Results do not move when they open. Escape, repeated trigger and outside dismissal preserve usable focus. Existing unrelated evidence dialogs are retained.
+
+## Verification
+
+Focused local checks passed: `tests/phase7b-followup.mjs`, `tests/phase7a.mjs`, `tests/phase7b.mjs`, `tests/phase6f.mjs`, `tests/phase6d.mjs`, `tests/phase6c.mjs`, `tests/phase6b.mjs` and `tests/mobile-toolbar.mjs`. No full local suite was repeated. An additional focused Edge check confirmed all 104 names use verified Rep / Sen identities in visible sort order, the three chevrons share the same 12px design, Chamber has a transparent border, invalid column preferences restore defaults, and denied storage permits visit-only changes without falsely claiming persistence. New tests cover exact filtered names/CSV/fallback, all eight column combinations, persistence, retained sorting/counts, header/numeric alignment, seven widths, enlarged text/CSS zoom and both appearances; they also check stationary results, bounded shared panels and dismissal. Existing appearance, Info, sharing, directory and toolbar suites remain in mandatory CI, with assertions changed only where the owner explicitly superseded prior behavior. Screenshot inspection supplements geometric and behavioral assertions; it is not owner acceptance.
+
+The new floating geometry uses document layout coordinates for no-shift assertions, separating actual reflow from browser scrolling necessary to reach enlarged controls. The retained count-gap check caught a spacing regression; the existing 24px separation was restored. The mobile Info assertion now checks the visible floating content rather than the zero-layout-height details container. The existing Bills toolbar had reset the export panel class list; preserving the floating class fixes the discovered zoom placement issue.
+
+## Publication and remaining limitations
+
+Resolve the implementation commit with `git log --diff-filter=A --format=%H -- docs/PHASE7B_FOLLOWUP_VERIFICATION.md`. Final CI, deployment and exact published HTML/JS/CSS hash comparison accompany delivery. All mandatory source/build/browser gates remain enabled. No successful deployment is claimed before it completes.
+
+Physical iPhone/iPad/Safari, VoiceOver/NVDA, native browser zoom, actual clipboard recipient applications and owner visual acceptance remain pending. Mailto configuration is preserved; actual email delivery/monitoring is not verified here. UI-019 expanded technical-source target spacing remains tracked. Broader sponsorship columns, authoritative 2027 roster/introduced evidence, editorial/release acceptance and unrelated backlog work remain outstanding. No legislative data or acquisition logic is changed. Static noindex, nofollow and the existing Main hosting configuration remain intact.

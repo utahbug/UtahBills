@@ -1,4 +1,5 @@
-import './appearance.js';
+import {appearanceSettings} from './appearance.js';
+import {floatingDisclosure} from './floating-disclosure.js';
 import {revealDetail} from './detail-navigation.js';
 import {enhancedLayout} from './enhanced-detail.js';
 import {contactEmail,contactDisplayEmail,contactSubject} from './contact-config.js';
@@ -37,7 +38,7 @@ function listing(){
  pagePreference($('.list-top'),n=>{pageSize=n;pageNumber=1;results()});copyResults($('.list-top'),()=>copyRows(matchingRows.map(copyFields)));exportResults($('.list-top'),()=>({headers:['Record type','Session','Tracking ID','Bill number','Title','Sponsor','Status','Latest action date','Latest action','Official URL'],rows:matchingRows.map(b=>[b.kind,filters.session.slice(0,4),b.trackingID||(requests?b.billNumber:''),requests?'':b.billNumber,b.shortTitle,b.primeSponsorName,b.status,b.lastActionDate,b.lastAction,b.officialRequestUrl||b.officialUrl||catalog.requestListing])}),()=>filters.session==='2027-requests'?'utahbills-public-requests':filters.session==='2026'?'utahbills-2026-archive':'utahbills-2027-legislation',()=>matchingRows.map(b=>({title:b.shortTitle,route:b.href})));
  const countGroup=document.createElement('span');countGroup.className='count-summary';$('#count').before(countGroup);countGroup.append($('#count'));if(archive){$('.eyebrow').textContent='Historical · 2026';$('.eyebrow').classList.add('historical-label')}
  if($('#kind')){const group=document.createElement('div');group.className='kind-control';$('#kind').closest('label').before(group);group.append($('#kind').closest('label'),$('.type-info'))}
- const infoContent=document.createElement('div');infoContent.className='catalog-info-content';const info=$('.catalog-info');infoContent.append(...[...info.children].filter(e=>e.tagName!=='SUMMARY'));info.append(infoContent);$('#search-info').append(info);$('.catalog-info').addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();$('.catalog-info').open=false;$('.catalog-info>summary').focus()}});secondaryRawLinks($('#main'));
+ const infoContent=document.createElement('div');infoContent.className='catalog-info-content';const info=$('.catalog-info');infoContent.append(...[...info.children].filter(e=>e.tagName!=='SUMMARY'));info.append(infoContent);$('#search-info').append(info);floatingDisclosure(info,infoContent);$('.catalog-info').addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();$('.catalog-info').open=false;$('.catalog-info>summary').focus()}});secondaryRawLinks($('#main'));
  $('#clear-search').onclick=()=>{filters.q='';$('#search').value='';pageNumber=1;results();$('#search').focus()};
  for(const key of ['session','sort'])if($('#'+key))$('#'+key).value=filters[key];
  $('#search').oninput=e=>{filters.q=e.target.value;pageNumber=1;results()};
@@ -109,7 +110,7 @@ const infoSection=(html,id)=>html.replace('<div class="guide">',`<section class=
 function about(){
  document.title='About · UtahBug';
  $('#main').innerHTML=`<div class="about-page"><h1>About</h1><p>UtahBills is the independent, nonpartisan legislative-information application branded UtahBug. It helps readers explore legislation and its official sources. It is not affiliated with the Utah Legislature.</p>${infoSection(sourceContent(),'about-data')}<section class="guide"><h2>Source verification and corrections</h2><p>Corrections must be supported by preserved official evidence. Conflicting records and unresolved identities remain disclosed until that evidence supports a correction. Independent factual review remains pending. <a href="#contact">Report a suspected error or learn how corrections are handled.</a></p></section><section class="guide"><h2>Copyright</h2><p>© 2026 UtahBug. Copyright in original website content and presentation belongs to UtahBug. Official legislative records and third-party materials remain attributed to their sources; UtahBug does not claim ownership of those materials.</p></section></div>`;
- showVerification($('#about-data'));
+ showVerification($('#about-data'));appearanceSettings($('.about-page'));
 }
 function contact(){
  document.title='Contact · UtahBug';

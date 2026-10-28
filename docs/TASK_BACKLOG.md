@@ -1,6 +1,6 @@
 # UtahBills authoritative task backlog
 
-Updated: October 27, 2026 (Phase 7B). Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation. [UI_ACCEPTANCE_CHECKLIST.md](UI_ACCEPTANCE_CHECKLIST.md) tracks continuing UI observations, regression evidence and separate human acceptance.
+Updated: October 28, 2026 (Phase 7B follow-up). Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation. [UI_ACCEPTANCE_CHECKLIST.md](UI_ACCEPTANCE_CHECKLIST.md) tracks continuing UI observations, regression evidence and separate human acceptance.
 
 Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 remain High priorities; TEST-001 completed in Phase 6A.
 
@@ -151,7 +151,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### LEG-003
 
-**Compare verified 2027 sponsorship activity** — **Medium** · **In progress — Public Requests portion implemented; broader comparison deferred**
+**Compare verified 2027 sponsorship activity** — **Medium** · **In progress — Public Requests and basic optional columns implemented; broader comparison deferred**
 
 - **Phase 6F:** Owner explicitly advanced Public Requests independently of final 2027 roster verification. The directory now shows Name, Introduced bills and Public requests. Exact-ID, unique active-request counts link to the corresponding existing profile request list. Source-observed requests remain qualified; missing/unmatched sponsor IDs are explicitly accounted for. [Verification](PHASE6F_VERIFICATION.md). Remaining acceptance below is not closed.
 - **Dependencies (remaining scope):** Real introduced 2027 legislation sufficient to make comparison useful; exact session/bill/sponsor identities and a separately approved implementation batch. No implementation is authorized by Phase 4X.
@@ -820,3 +820,11 @@ The owner authorized compact header artwork, direct desktop Bills sorting, consi
 Implementation and verification are distinct from human acceptance. No item becomes Accepted solely because automated checks pass. [Phase 7B verification](PHASE7B_VERIFICATION.md) records evidence and limitations. UI-019 tracks the previously observed expanded technical-source target-spacing issue; no fix is claimed here.
 
 LEG-003 future design is retained without implementation: compact More with optional District, Total bills sponsored (deduplicated chief/floor/cosponsor union), Floor-sponsored bills and Cosponsored bills. Keep Name / Introduced bills / Public requests as default. Preserve exact identities, evidence qualifications and factual activity without scoring. All other unfinished IDs and human/editorial/release gates remain open; TEST-001 remains historically completed under Phase 6A.
+
+## Phase 7B follow-up — owner-authorized toolbar and basic-column refinement
+
+The October 28 owner request supersedes only the relevant earlier UI decisions: direct Light/Dark toggle with Device Default restored on About; consistent selector chevrons; borderless Chamber; ordered directory toolbar and one divider; More immediately before Copy; complete filtered/sorted names-only Copy (verified Rep / Sen prefixes only in copied text), contextual UTF-8 CSV; and persistent Introduced bills/Public requests/District column checkboxes with Name fixed. The existing primary directory Copy, exact identities/counts, visible names, finder alignment, numeric centering and sorting remain protected.
+
+LEG-003 now includes the explicitly advanced basic-column portion. Total-sponsored unions, Floor-sponsored, Cosponsored and committee filtering remain deferred and are not implemented. The historical sections above retain earlier scope decisions; this follow-up is the current authorization for the three basic optional columns only.
+
+Shared suitable Info/More panels float without moving results, with bounded opaque surfaces, scrolling, focus and dismissal. [UI acceptance checklist](UI_ACCEPTANCE_CHECKLIST.md) updates existing stable IDs and adds UI-020 for this shared panel behavior. [Follow-up verification](PHASE7B_FOLLOWUP_VERIFICATION.md) records tests and limitations. Implementation and automated verification do not imply owner or physical-device acceptance. UI-019, UI-001, editorial/release gates and unrelated unfinished tasks remain open. No acquisition, Cloudflare, indexing or legislative-data changes are included.

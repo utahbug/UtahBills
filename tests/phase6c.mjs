@@ -18,7 +18,7 @@ try{
   const directory=route==='legislators',trigger=page.locator(directory?'.directory-search-tools .toolbar-info':'.catalog-info>summary');
   await trigger.focus();await page.keyboard.press('Enter');const panel=directory?'#directory-info':'.catalog-info-content';await page.locator(panel).waitFor({state:'visible'});await bounds(panel);
   assert.deepEqual(await page.locator(panel).evaluate(e=>{const s=getComputedStyle(e);return [s.borderTopWidth,s.borderTopColor,s.backgroundColor,s.paddingTop]}),['1px','rgb(130, 149, 162)','rgb(255, 255, 255)','12px']);
-  if(!directory){const input=await page.locator('#search').boundingBox(),r=await page.locator(panel).boundingBox();assert.ok(r.y>=input.y+input.height,'Flow content follows input');assert.ok(await page.locator(panel+' a').count()>=3);if(await page.locator('#session').count()){const a=await page.locator('#session').boundingBox();assert.ok(a.height<=input.height+2,'Records retains field height when Info expands')}}
+  if(!directory){const input=await page.locator('#search').boundingBox(),r=await page.locator(panel).boundingBox();assert.equal(await page.locator(panel).evaluate(e=>e.matches(':popover-open')),true,'Info floats in the top layer');assert.ok(await page.locator(panel+' a').count()>=3);if(await page.locator('#session').count()){const a=await page.locator('#session').boundingBox();assert.ok(a.height<=input.height+2,'Records retains field height when Info expands')}}
   await page.keyboard.press('Escape');assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
   if(route==='requests'||route==='archive/2026'){
    assert.equal(await page.locator('#sort').isVisible(),width>700);assert.equal(await page.locator('.sort-menu>summary').innerText(),'Sort');

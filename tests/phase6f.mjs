@@ -14,7 +14,7 @@ const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',ax
 const visit=async()=>{await page.goto(base+'?6f#legislators');await page.reload();await page.locator('.legislator-row').first().waitFor()};
 const ids=()=>page.locator('.legislator-row h2 a').evaluateAll(es=>es.map(e=>e.hash.split('/')[1]));
 try{
- await visit();assert.deepEqual(await page.locator('.directory-columns button').allTextContents(),['Name ','Introduced bills ','Public requests ']);
+ await visit();assert.deepEqual(await page.locator('.directory-columns button:visible').allTextContents(),['Name ','Introduced bills ','Public requests ']);
  const rows=await page.locator('.legislator-row').evaluateAll(es=>es.map(e=>({id:e.querySelector('h2 a').hash.split('/')[1],count:Number(e.querySelector('.request-count').textContent.replace('Requests: ','')),href:e.querySelector('.request-count').hash})));
  for(const row of rows){assert.equal(row.count,expected.get(row.id)?.size||0);assert.equal(row.href,'#legislator/'+row.id+'/2027')}
  // Every real sponsor count opens the same exact unique saved request identities.
