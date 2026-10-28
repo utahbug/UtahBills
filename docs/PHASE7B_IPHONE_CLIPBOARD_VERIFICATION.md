@@ -23,3 +23,5 @@ Main/Review remain one complete artifact with identical verified data and the se
 ## Remaining physical acceptance
 
 Owner testing on the affected iPhone remains required: copy a sentinel in Notes, use each Bills/Activity Copy choice for one and hundreds of results, paste back into Notes and a rich-text app, and verify the new content and links. Where permission is denied, confirm the explicit failure message and fresh-action/manual-copy path. Check portrait counts and announcements, landscape, and VoiceOver. Browser automation does not certify Safari's native clipboard or receiving-app behavior. Existing unrelated source/UI/release limitations remain open.
+
+Initial CI run 40780002314 passed the new clipboard suite and earlier regressions, then stopped on a legacy phone count-label assertion in refinement.mjs. Four retained phone count assertions now require the authorized compact wording at their tested viewport, preserving exact numerical/source reconciliation checks. No application or source-data change was needed for this correction.

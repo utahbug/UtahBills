@@ -11,7 +11,7 @@ try {for(const record of saved.sourceObservedRequests2027)for(const width of [32
  await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>{window.copied=text}}}));
  await page.goto(base+'#requests');await page.locator('#search').fill(record.trackingID);
  await page.locator('.bill-row').waitFor();assert.equal(await page.locator('.bill-row').count(),1);
- assert.ok((await page.locator('#count').innerText()).includes(`1 of ${saved.requests2027.length+saved.sourceObservedRequests2027.length} public requests`));
+ assert.ok((await page.locator('#count').innerText()).includes(`1 of ${saved.requests2027.length+saved.sourceObservedRequests2027.length} ${width<=700?'requests':'public requests'}`));
  assert.ok((await page.locator('#count-info').textContent()).includes(`${saved.requestPublication.officialTotal} source requests · ${saved.requestPublication.verifiedTotal} statuses verified · ${saved.sourceObservedRequests2027.length} awaiting status verification`));
  assert.match(await page.locator('.bill-row').innerText(),/Official status not confirmed/);
  assert.equal(await page.getByRole('img',{name:'Source discrepancy'}).count(),1);

@@ -21,7 +21,7 @@ try {
  // Scheduled recovery: fully reconciled counts must remain inspectable even without a discrepancy.
  const full=sessionFixture(catalog,0,273);full.requestPublication={status:'complete',officialTotal:273,verifiedTotal:273,withheld:[]};full.requestObservationCoverage=null;
  await page.route('**/data/catalog-ui.json',r=>r.fulfill({json:full}));await page.goto(base+'?full-reconciliation#requests');await page.locator('.bill-row').first().waitFor();
- assert.equal(await page.locator('#count').innerText(),'273 public requests');assert.match(await page.locator('#count-info').textContent(),/273 source requests.*273 statuses verified.*0 awaiting status verification/);
+ assert.equal(await page.locator('#count').innerText(),'273 requests');assert.match(await page.locator('#count-info').textContent(),/273 source requests.*273 statuses verified.*0 awaiting status verification/);
  await page.unroute('**/data/catalog-ui.json');
  await page.goto(base+'#about');await page.getByRole('heading',{name:'About',exact:true,level:1}).waitFor();
  const text=await page.locator('#main').innerText();assert.match(text,/Analyzed examples retrieved/);assert.match(text,/scheduled daily at 12:17 UTC/);assert.match(text,/successful deployment does not mean every source refreshed successfully/);assert.match(text,/Independent human editorial review is pending/);

@@ -59,7 +59,7 @@ try {
    await page.getByRole('link',{name:'HB0001',exact:true}).click();await page.getByRole('link',{name:'Original drafting request and observed history'}).click();
    await page.locator('.request-source-trigger').waitFor();assert.ok(page.url().endsWith('#request/ZZZZZZZZAA'));
    await page.goto(base+'#requests');await page.locator('#search').fill('ZZZZZZZZAA');assert.equal(await page.locator('.bill-row').count(),0);
-   await page.locator('#clear-search').click();assert.match(await page.locator('#count').innerText(),/^239 public requests/);
+   await page.locator('#clear-search').click();assert.match(await page.locator('#count').innerText(),new RegExp('^239 '+(width<=700?'requests':'public requests')));
   }
   await openArchive(page);await page.locator('#search').fill('');
   assert.match(await page.locator('.historical-label').innerText(),/2026/);assert.equal(await page.locator('.bill-row').count(),25);
