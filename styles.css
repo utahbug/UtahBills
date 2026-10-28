@@ -643,3 +643,20 @@ header{container:site-header / inline-size}
 .directory-actions>.result-controls:empty{display:none}
 .directory-columns-menu{border:0}
 @container directory (max-width:28rem){.directory-order-controls{flex-basis:100%}.directory-actions>.result-summary{margin-left:0}}
+/* Compact shared saved-record and Copy controls. */
+.unified-copy>summary{display:flex!important;align-items:center;justify-content:center;gap:3px;width:44px;min-height:44px;padding:6px!important;list-style:none}
+.unified-copy>summary::before{display:none!important}.unified-copy>summary svg{width:18px;height:18px}.unified-copy>summary .copy-chevron{width:10px;height:10px}
+.unified-copy .export-panel>button{display:block;width:100%;min-height:44px;border:0;background:transparent;text-align:left;padding:8px;border-radius:3px}
+.record-bookmark,.saved-filter{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:10px;border:0;background:transparent;color:var(--appearance-link,#155c79);border-radius:3px;flex-shrink:0}
+.record-bookmark svg,.saved-filter svg{width:18px;height:18px}.saved-filter[aria-pressed="true"]{background:var(--appearance-selected,#dbe9f1)}
+.bill-state .record-bookmark{position:relative;z-index:2;float:right}.bill-row .bill-state{min-width:0}.bill-row .record-bookmark:hover,.record-bookmark:focus-visible,.saved-filter:focus-visible{outline:2px solid currentColor;outline-offset:-2px}
+.activity-row>.record-bookmark{position:absolute;right:0;top:4px;z-index:2}.activity-row:has(>.record-bookmark){padding-right:48px}
+.detail-bookmark{margin:0 0 8px}.saved-manager{margin-top:16px}.saved-manager li{display:flex;gap:8px;align-items:center;justify-content:space-between}.saved-manager a{overflow-wrap:anywhere}
+.search-recovery{font-size:.875rem;margin:6px 0}.search-recovery button{min-height:44px}.bill-toolbar .copy-control,.activity-actions .copy-control{gap:0;display:flex;align-items:center}
+@media(max-width:450px){.bill-toolbar:not(.unfiltered-current)>.result-summary{grid-column:1/-1;grid-row:2!important;justify-content:flex-start;padding:0}.bill-toolbar:not(.unfiltered-current)>.copy-control{grid-column:3;grid-row:1!important}}
+/* Save targets sit above stretched links without adding a row to each result. */
+.bill-row{position:relative}.bill-state .record-bookmark{position:absolute;right:4px;top:4px;float:none}.bill-state{padding-right:36px}
+@media(max-width:700px){.bill-state{padding-right:0}.bill-row>div:first-child{padding-right:40px}}
+.bill-toolbar .copy-control:has(.saved-filter),.activity-actions .copy-control:has(.saved-filter){display:flex}
+.unified-copy>summary{border:1px solid transparent;border-radius:3px}
+.unified-copy>summary,.saved-filter{min-height:max(44px,calc(1.5em + 10px))}

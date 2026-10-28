@@ -206,9 +206,11 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### TRANS-006
 
-**Follow bills and show changes since previous visits** — **Medium** · **Approved/Not started**
+**Follow bills and show changes since previous visits** — **Medium** · **Simple bookmarks implemented; advanced tracking deferred**
 
-- **Dependencies:** Explicit storage/privacy and retention decisions before implementation.
+- **Implemented scope (owner Phase 7B Search, Bookmarks, and Sharing):** Save/remove individual request and session-qualified bill identities in browser local storage; saved-only listing/Activity filters; verified request-to-bill associations; removable unavailable IDs. No account or external storage. Browser clearing can remove bookmarks; GitHub/Cloudflare do not synchronize them.
+- **Deferred scope:** Changes since previous visits, monitoring, notifications and cross-device synchronization require a separate owner decision. No baseline/change-monitoring implementation is claimed.
+- **Dependencies:** Future tracking requires explicit baseline, retention, notification and privacy decisions.
 - **Source:** [Roadmap Stage 4](../ROADMAP.md#stage-4--additional-bill-information--planned).
 - **Acceptance:** Define follow/unfollow, storage clearing and first-visit behavior; show only verifiable changes since the stored baseline with source dates; test unavailable storage, stale snapshots and request-to-bill transitions.
 
@@ -838,3 +840,11 @@ Owner-authorized October 28, 2026. Limited listing weights on Review: primary Bi
 The owner supersedes the earlier directory More design: Sort precedes Chamber:, followed by count and adjacent Columns/Copy dropdown icons. The independent Columns menu retains all three saved basic choices and adds Restore defaults; verified District values identify House/Senate. Copy contains full information, names only and contextual CSV. Stable acceptance IDs UI-018B–E and SHARE-001 remain in use; UI-022 tracks only the authorized Main Bill request label (15px/500, unchanged line box).
 
 UI-021 remains undecided: the owner prefers original typography on iPhone and lighter typography on PC. Broader Review weights remain isolated and unpromoted. Political Party, total-sponsored unions, floor sponsorship, cosponsorship and committee filtering remain deferred under LEG-003 until appropriately verified data and separate authorization. Bookmark tracking and Bill Status sorting are not started. All prior unresolved IDs, UI-019, physical-device/AT, editorial and release gates remain open. Main and Review continue as one complete artifact with identical verified data and noindex, nofollow; Cloudflare is unchanged. See [verification](PHASE7B_OWNER_ACCEPTANCE_VERIFICATION.md).
+
+## Phase 7B — Search, Bookmarks, and Sharing
+
+Owner-authorized flexible Bills/Public Requests/archive search uses AND words, comma-separated OR groups and quoted phrases within a field. Zero-result multi-term searches offer explicit broader matching without changing other filters; no synonyms or inferred topic associations are added. Sponsor Z–A and alphabetical Status A–Z/Z–A preserve displayed qualifications and deterministic ties.
+
+SHARE-001 now uses one Copy dropdown on Bills and Recent Activity: Copy titles with links, Copy titles only and full-detail CSV. Complete matching sets, lazy Activity loading, rich/plain clipboard/fallback and source qualifications remain protected. Legislator Columns/Copy remains intact.
+
+TRANS-006's simple save/remove/view portion is implemented; advanced change tracking and notifications remain deferred. UI-023 (search/sorting) and UI-024 (bookmarks) extend the continuing checklist; SHARE-001 retains its ID. Broader Review typography remains unpromoted, both environments retain identical verified data/noindex and one combined artifact. All unrelated unfinished work and human acceptance remain open. [Verification](PHASE7B_SEARCH_BOOKMARKS_VERIFICATION.md).

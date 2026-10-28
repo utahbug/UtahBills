@@ -1,4 +1,4 @@
-import {copyResults} from './fixtures/copy-results.mjs';
+import {copyResults,copyControl} from './fixtures/copy-results.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -8,7 +8,7 @@ await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:
 await mkdir('test-results/phase4j',{recursive:true});
 try{
  for(const width of [320,375,390,430,600,768,1024,1280])for(const mode of ['normal','text','zoom'])for(const route of ['activity','legislators','calendar']){
-  await page.setViewportSize({width,height:1000});await page.goto(base+'?polish='+width+mode+route+'#'+route);await page.locator(route==='legislators'?'.directory-copy>summary':'.copy-results').waitFor();
+  await page.setViewportSize({width,height:1000});await page.goto(base+'?polish='+width+mode+route+'#'+route);await copyControl(page).waitFor();
   if(mode==='text')await page.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
   if(mode==='zoom')await page.evaluate(()=>document.documentElement.style.zoom=2);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${route} ${width} ${mode}`);
@@ -20,7 +20,7 @@ try{
    await page.locator('#directory-chamber').selectOption('S');assert.equal(await page.locator('#directory-count').innerText(),(await page.locator('.legislator-row').count())+' legislators');await page.locator('#directory-chamber').selectOption('');
   }else{
    assert.equal(await page.locator('#calendar-month').getAttribute('aria-label'),'Calendar month');assert.match(await page.locator('label:has(#calendar-type)').innerText(),/^Event:/);
-   const copy=await page.locator('.copy-results').boundingBox(),legend=await page.getByRole('button',{name:'Calendar Legend',exact:true}).boundingBox();assert.ok(Math.abs(copy.y-legend.y)<2);assert.ok(Math.abs(legend.x+legend.width-copy.x)<2);
+   const copy=await copyControl(page).boundingBox(),legend=await page.getByRole('button',{name:'Calendar Legend',exact:true}).boundingBox();assert.ok(Math.abs(copy.y-legend.y)<2);assert.ok(Math.abs(legend.x+legend.width-copy.x)<2);
   }
   if(route!=='activity'){
    const trigger=page.locator(route==='calendar'?'.agenda-heading .toolbar-info':'.directory-search-tools .toolbar-info'),panel=page.locator(route==='calendar'?'#calendar-category-legend':'#directory-info');

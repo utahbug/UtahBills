@@ -60,7 +60,7 @@ export function stretchActivityRows(root){
 let disposeBillLayout=()=>{};
 export function billToolbarLayout(host,{source,searchHeading,records,requestTotal,measureTotal}){
  disposeBillLayout();const media=matchMedia('(max-width:700px)'),menu=host.querySelector('.export-menu'),controls=host.querySelector('.result-controls'),sort=host.querySelector('#sort').closest('label'),size=host.querySelector('.page-preference');
- host.classList.add('bill-toolbar');menu.querySelector('summary').setAttribute('aria-label','More results options');menu.querySelector('summary').title='More results options';sort.querySelector('select').setAttribute('aria-label','Sort results by');compactSelects(sort);
+ host.classList.add('bill-toolbar');sort.querySelector('select').setAttribute('aria-label','Sort results by');compactSelects(sort);
  const sortMenu=document.createElement('details');sortMenu.className='sort-menu';sortMenu.innerHTML='<summary>Sort</summary>';sortMenu.hidden=sort.hidden;host.prepend(sortMenu);menu.classList.add('more-menu');
  const pairs=[sortMenu,menu].map(disclosure=>{const panel=disclosure===menu?menu.querySelector('.export-panel'):document.createElement('div');panel.classList.add('export-panel');disclosure.append(panel);return {disclosure,panel,trigger:disclosure.querySelector('summary')}});
  const controller=new AbortController();

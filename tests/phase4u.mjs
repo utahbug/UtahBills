@@ -1,3 +1,4 @@
+import {copyResults} from './fixtures/copy-results.mjs';
 import {billOptions} from './fixtures/bill-options.mjs';
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
@@ -11,7 +12,7 @@ page.setDefaultTimeout(15000);
 await page.clock.setFixedTime(new Date('2026-10-24T18:00:00Z'));
 await page.addInitScript(()=>{localStorage.setItem('utahbills-results-per-page','25');Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>{if(window.denyCopy)throw Error('denied');window.copied=text}}})});
 const ready=()=>page.waitForFunction(()=>document.querySelector('#activity-count')&&!document.querySelector('#activity-count').textContent.includes('Loading'));
-const copy=async()=>{await page.locator('.copy-results').click();await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled)};
+const copy=async()=>{await copyResults(page);await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled)};
 const csv=async()=>{if(await page.locator('.export-menu').getAttribute('open')===null)await page.locator('.export-menu summary').click();const download=page.waitForEvent('download');await page.getByRole('button',{name:'Export CSV',exact:true}).click();const d=await download;assert.match(d.suggestedFilename(),/^utahbills-.*-\d{4}-\d{2}-\d{2}\.csv$/);return readFile(await d.path(),'utf8')};
 await mkdir('test-results/phase4u',{recursive:true});
 try{

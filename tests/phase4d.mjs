@@ -1,3 +1,4 @@
+import {copyControl,keyboardCopy} from './fixtures/copy-results.mjs';
 import {billOptions} from './fixtures/bill-options.mjs';
 import {openArchive} from './fixtures/archive-navigation.mjs';
 import {chromium} from 'playwright';
@@ -25,9 +26,9 @@ try {
   assert.equal(await page.locator('#sort').inputValue(),'title');
   await page.screenshot({path:'test-results/phase4d/'+width+'-'+count+'.png',fullPage:false});
   // Shared toolbar semantics remain valid even for a one-row introduced index.
-  const icon=await page.locator('.copy-results').boundingBox(),bar=await page.locator('.results-toolbar').boundingBox();
+  const icon=await copyControl(page).boundingBox(),bar=await page.locator('.results-toolbar').boundingBox();
   assert.ok(icon.width>=44&&icon.height>=44);assert.ok(Math.abs(icon.x+icon.width-bar.x-bar.width)<2);
-  await page.locator('.copy-results').focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled);
+  await keyboardCopy(page);await page.waitForFunction(()=>!document.querySelector('.copy-results').disabled);
   assert.equal((await page.evaluate(()=>window.copied)).split('\n\n').length,count||240);
   assert.equal(await page.locator('.copy-status').innerText(),`Copied ${count||240} titles with links.`);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
