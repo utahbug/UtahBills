@@ -12,7 +12,7 @@ const copying=copyPrepared(prepared,{clipboard,Item});assert.equal(started,true)
 const rows=[{title:'Duplicate “Water” & land',route:'#request/XKUCMCIIHJ'},{title:'Duplicate “Water” & land',route:'#bill/2027/HB0001/history'}];
 const expected=await titleLinks(rows,'https://bills.example.test/application/#requests');resolve(expected);assert.equal((await copying).copied,true);assert.equal(written['text/plain'],expected.plain);assert.ok(written['text/plain'].includes('https://bills.example.test/application/#request/XKUCMCIIHJ'));assert.equal(written['text/html'],expected.html);
 const only=await titlesOnly(rows);assert.equal(only.plain,rows.map(r=>r.title).join('\n'));
-let plain;assert.equal((await copyPrepared(Promise.resolve(expected),{Item,clipboard:{write:async()=>{throw Error('rich denied')},writeText:async text=>plain=text}})).copied,true);assert.equal(plain,expected.plain);
+let plain;assert.equal((await copyPrepared(Promise.resolve(expected),{Item,clipboard:{write:async()=>{throw Error('rich denied')},writeText:async text=>plain=text}})).copied,false);assert.equal(plain,undefined);assert.equal((await copyPrepared(expected,{rich:false,Item,clipboard:{writeText:async text=>plain=text}})).copied,true);assert.equal(plain,expected.plain);
 assert.deepEqual(await copyPrepared(Promise.resolve(only),{rich:false,Item,clipboard:{write:async()=>{throw Error('denied')},writeText:async()=>{throw Error('denied')}}}),{result:only,copied:false});
 let writes=0;const preserving={write:async items=>{await Promise.all(Object.values(items[0].data));writes++},writeText:async()=>writes++};
 await assert.rejects(copyPrepared(Promise.reject(Error('missing page')),{Item,clipboard:preserving}),/missing page/);assert.equal(writes,0);

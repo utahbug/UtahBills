@@ -1,0 +1,25 @@
+# Phase 7B — iPhone clipboard and results-count corrections
+
+Baseline: `9d83c2ac7210e9968ee08f5dcf212eae34725787`. The preceding sponsor-copy batch completed mandatory CI/Pages before this work. Fetched Main and checked active acquisition/deployment; no remote changes or active runs at preparation. Read AGENTS and current UI/clipboard verification records.
+
+## Findings and correction
+
+The previous Bills/Activity fallback awaited prepared rows and then attempted writeText after a missing/rejected ClipboardItem write. Safari can reject clipboard writes outside the original user gesture ([WebKit guidance](https://webkit.org/blog/10855/async-clipboard-api/), [WebKit issue 222262](https://bugs.webkit.org/show_bug.cgi?id=222262)). That fallback could leave the old clipboard untouched; its floating status also overlapped toolbar content. Physical reproduction remains the owner's evidence; automation establishes the corrected call ordering, not physical iPhone acceptance.
+
+Bills now prepares the complete matching set synchronously and begins ready plain-text writeText or rich ClipboardItem writes in the click handler, before disabling the triggering control. Formats, filters, ordering, pagination-independent completeness, HTTPS links and sponsor associations are unchanged. Formatting remains bounded by the saved result set and does not fetch or await before a ready write. Recent Activity still loads complete matches asynchronously and begins its promised ClipboardItem write within the original gesture. No delayed writeText fallback starts after preparation or permission rejection.
+
+When automatic copying fails, feedback explicitly says Nothing new was copied. The complete readonly selectable field is accompanied by Copy prepared text (a fresh writeText gesture) and Select all text, with instructions to use the device's Copy command. A rejected retry retains the field and truthful failure message. Success appears only after a resolved write; no clipboard reads or unrelated content inspection are introduced. Rich HTML and approved plain formats remain available. Directory names uses the ready-data path; existing full Legislators and Calendar behavior remains unchanged.
+
+Unfiltered Bills counts are no longer hidden below 700px. Compact phone wording uses requests/measures, with matching totals, filtered totals and zero counts preserved. Hidden alternate wording is excluded from the accessibility tree; the existing live status semantics remain. At narrow widths, counts have an intentional row below controls. Bills/Activity copy/export announcements now occupy their own in-flow row instead of overlaying counts or controls. No new permanent toolbar controls.
+
+## Verification
+
+`tests/iphone-clipboard.mjs` covers ready writes before microtasks, delayed data with no invalid fallback, rich/text-only/rejected/unavailable APIs, preserved previous clipboard on failure, explicit fresh-action/manual selection, all three Copy modes, 301 requests/300 Activity events, one record, complete pagination-independent output, portrait 320/375/390/430, landscape 844 and desktop 1280, Light/Dark, count/status/control non-overlap, selection/focus and axe. Native browser clipboard read-back additionally verifies all three formats over 301 requests, including HTML availability; only OS CRLF/LF line-ending normalization is allowed in that assertion. Added to mandatory CI without removing existing suites.
+
+Retained sharing tests now explicitly exercise a fresh recovery click where their browser stub exposes only writeText for lazy data. The old unit expectation of an automatic delayed fallback is replaced with an assertion that it does not write until a new action. The toolbar status-location assertion now requires a separate row. Data-integrity and remaining regression assertions are retained. Focused permission-model checks passed in pinned Chromium. Retained sharing, Phase 6D/6E, toolbar and sponsor-copy checks passed, including existing Legislators/Calendar copying and enlarged-text/zoom/axe. The full focused matrix also passed in Windows Edge, including native clipboard read-back for all formats over 301 requests. Mandatory CI/Pages/live outcomes accompany delivery.
+
+Main/Review remain one complete artifact with identical verified data and the separate Review-only typography stylesheet. Both retain noindex, nofollow. No legislative data, snapshot, acquisition, Cloudflare or DNS changes.
+
+## Remaining physical acceptance
+
+Owner testing on the affected iPhone remains required: copy a sentinel in Notes, use each Bills/Activity Copy choice for one and hundreds of results, paste back into Notes and a rich-text app, and verify the new content and links. Where permission is denied, confirm the explicit failure message and fresh-action/manual-copy path. Check portrait counts and announcements, landscape, and VoiceOver. Browser automation does not certify Safari's native clipboard or receiving-app behavior. Existing unrelated source/UI/release limitations remain open.
