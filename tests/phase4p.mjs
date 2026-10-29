@@ -23,7 +23,7 @@ try {for(const record of saved.sourceObservedRequests2027)for(const width of [32
  await page.locator('.source-discrepancy-details summary').click();assert.match(await page.locator('main').innerText(),/reason has not been independently established/);
  assert.ok(await page.locator(`a[href="${saved.requestSource}"]`).count());
  await page.getByRole('button',{name:'Source details',exact:true}).click();assert.equal(await page.locator('.tracking-id').innerText(),record.trackingID);
- assert.ok((await page.locator('dialog').textContent()).includes(record.history[0].source.sha256));await page.keyboard.press('Escape');
+ assert.ok((await page.getByRole('dialog',{name:'Source details'}).textContent()).includes(record.history[0].source.sha256));await page.keyboard.press('Escape');
  for(const mode of ['normal','text','zoom']){
  if(mode==='text')await page.evaluate(()=>document.documentElement.style.fontSize='200%');
  if(mode==='zoom')await page.evaluate(()=>{document.documentElement.style.fontSize='';document.documentElement.style.zoom='2'});
