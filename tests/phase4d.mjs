@@ -46,7 +46,7 @@ try {
   }else{
    await page.locator('.advanced-search>summary').click();await page.locator('#chamber').selectOption('House');
    assert.equal(await page.locator('.bill-row').count(),Math.min(25,Math.ceil(count/2)));
-   await page.locator('#clear').click();await billOptions(page);await page.locator('#sort').selectOption('number');
+   await page.locator('#clear').click();await billOptions(page);await page.locator('#sort').selectOption('number',{force:true});
    const expected=fixture.measures.filter(b=>b.sessionID==='2027GS').sort((a,b)=>a.billNumber.localeCompare(b.billNumber));
    assert.equal(await page.locator('.bill-row h2 a').first().getAttribute('href'),'#bill/2027/'+expected[0].billNumber);
    if(count>25){await page.locator('#next-page').click();assert.match(await page.locator('.pagination').innerText(),/Page 2/);await page.locator('#previous-page').click();}

@@ -665,3 +665,30 @@ header{container:site-header / inline-size}
 .sharing-status{grid-column:1/-1;position:static;max-width:100%;white-space:normal;overflow-wrap:anywhere;padding:4px 0;text-align:left}
 .copy-recovery{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}.copy-recovery button{min-height:44px}.count-compact{display:none}
 @media(max-width:700px){.bill-toolbar .count-full{display:none}.bill-toolbar .count-compact{display:inline}}
+
+/* One Bills content boundary; native disclosures keep filtering out of layout flow. */
+main:has(>#results){max-width:1048px}
+main:has(>#results) .records-search{max-width:none}
+.bill-toolbar.results-toolbar{grid-template-columns:auto auto minmax(0,1fr) auto}
+.bill-toolbar>.sort-menu{grid-column:1;grid-row:1;justify-self:start}
+.bill-toolbar>.result-controls{grid-column:2;grid-row:1}
+.bill-toolbar>.result-summary{grid-column:3;grid-row:1}
+.bill-toolbar>.copy-control{grid-column:4;grid-row:1}
+.bill-toolbar>.sort-menu>summary{font-size:inherit;font-weight:400}
+.bill-toolbar .sort-menu>.bill-sort-panel{width:200px;min-width:0;padding:4px!important}
+.bill-sort-panel .status-submenu{border:0;padding:0!important;margin:0}
+.bill-sort-panel .sort-choices button,.bill-sort-panel .status-submenu>summary{display:flex!important;align-items:center;width:100%;min-height:44px;padding:6px 8px!important;border:0;border-radius:3px;background:transparent;font-weight:400;text-align:left;list-style:none;overflow-wrap:anywhere}
+.bill-sort-panel .status-submenu>summary::before,.bill-sort-panel .status-submenu>summary::marker{display:none;content:''}
+.bill-sort-panel button[aria-pressed=true]{background:var(--appearance-selected,#dbe9f1)}
+.bill-sort-panel button:hover,.bill-sort-panel summary:hover{background:var(--appearance-hover,#eaf1f3)}
+.bill-sort-panel .status-options{padding-left:8px;border-left:1px solid var(--line);margin-left:8px}
+.bill-sort-panel .page-preference{padding:4px 8px;margin:0}
+@media(max-width:700px){
+ .bill-toolbar.results-toolbar{grid-template-columns:auto minmax(0,1fr) auto}
+ .bill-toolbar>.result-controls{display:none}
+ .bill-toolbar>.result-summary{grid-column:2}
+ .bill-toolbar>.copy-control{grid-column:3}
+}
+@media(max-width:450px){.bill-toolbar>.result-summary{grid-column:1/-1;grid-row:2!important}}
+
+.bill-sort-panel :is(button,summary):focus-visible{outline-offset:-3px}

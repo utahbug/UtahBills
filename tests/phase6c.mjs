@@ -21,11 +21,11 @@ try{
   if(!directory){const input=await page.locator('#search').boundingBox(),r=await page.locator(panel).boundingBox();assert.equal(await page.locator(panel).evaluate(e=>e.matches(':popover-open')),true,'Info floats in the top layer');assert.ok(await page.locator(panel+' a').count()>=3);if(await page.locator('#session').count()){const a=await page.locator('#session').boundingBox();assert.ok(a.height<=input.height+2,'Records retains field height when Info expands')}}
   await page.keyboard.press('Escape');assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
   if(route==='requests'||route==='archive/2026'){
-   assert.equal(await page.locator('#sort').isVisible(),width>700);assert.equal(await page.locator('.sort-menu>summary').innerText(),'Sort');
+   assert.equal(await page.locator('.sort-menu>summary').isVisible(),true);assert.equal(await page.locator('.sort-menu>summary').innerText(),'Sort');
    assert.equal(await page.locator('.page-preference select').isVisible(),width>700);
-   await billOptions(page);await bounds(width<=700?'.sort-menu .export-panel':'.direct-sort');assert.equal(await page.locator('#sort').isVisible(),true);
+   await billOptions(page);await bounds('.sort-menu .export-panel');assert.equal(await page.locator('[data-sort=title]').isVisible(),true);
    assert.equal(await page.locator('.sort-menu .page-preference').count(),width<=700?1:0);
-   await page.locator('#sort').focus();await page.keyboard.press('Escape');assert.equal(await page.locator(width<=700?'.sort-menu>summary':'#sort').evaluate(e=>e===document.activeElement),true);
+   await page.locator('[data-sort=number]').focus();await page.keyboard.press('Escape');assert.equal(await page.locator('.sort-menu>summary').evaluate(e=>e===document.activeElement),true);
   }
   if(mode==='normal'&&[390,1280].includes(width)){await trigger.click();await page.screenshot({path:`test-results/phase6c/${route.replace('/','-')}-${width}.png`});await page.keyboard.press('Escape')}
  }
@@ -34,10 +34,10 @@ try{
  for(const route of ['requests','archive/2026','bills/2027']){
   await page.setViewportSize({width:1280,height:1000});await visit(route);await billOptions(page);
   const options=await page.locator('#sort option').evaluateAll(es=>es.map(e=>e.value));
-  for(const value of options){await page.locator('#sort').selectOption(value);assert.equal(await page.locator('#sort option:checked').getAttribute('value'),value);assert.ok(await page.locator('.bill-row').count()>0)}
-  await page.locator('#sort').selectOption('number');await page.locator('#sort').focus();await page.setViewportSize({width:700,height:1000});await page.waitForFunction(()=>!!document.querySelector('.sort-menu .page-preference'));
-  assert.equal(await page.locator('#sort').evaluate(e=>e===document.activeElement),true);assert.equal(await page.locator('#sort').inputValue(),'number');
-  await page.setViewportSize({width:701,height:1000});await page.waitForFunction(()=>!document.querySelector('.sort-menu .page-preference'));assert.equal(await page.locator('#sort').evaluate(e=>e===document.activeElement),true);
+  for(const value of options){await page.locator('#sort').selectOption(value,{force:true});assert.equal(await page.locator('#sort option:checked').getAttribute('value'),value);assert.ok(await page.locator('.bill-row').count()>0)}
+  await page.locator('#sort').selectOption('number',{force:true});await page.locator('[data-sort=number]').focus();await page.setViewportSize({width:700,height:1000});await page.waitForFunction(()=>!!document.querySelector('.sort-menu .page-preference'));
+  assert.equal(await page.locator('[data-sort=number]').evaluate(e=>e===document.activeElement),true);assert.equal(await page.locator('#sort').inputValue(),'number');
+  await page.setViewportSize({width:701,height:1000});await page.waitForFunction(()=>!document.querySelector('.sort-menu .page-preference'));assert.equal(await page.locator('[data-sort=number]').evaluate(e=>e===document.activeElement),true);
   await page.keyboard.press('Escape');await page.locator('.page-preference select').selectOption('25');assert.equal(await page.locator('.bill-row').count(),25);assert.equal(await page.locator('.sort-menu').getAttribute('open'),null);
   await billOptions(page);await page.locator('#search').click();assert.equal(await page.locator('.sort-menu').getAttribute('open'),null);
   await billOptions(page);await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);

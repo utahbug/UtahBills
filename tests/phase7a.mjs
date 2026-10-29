@@ -26,7 +26,7 @@ try{
  const routes=['requests','bills/2027','archive/2026','activity','calendar','legislators','about','faq','contact','bill/HB0011','bill/HB0117','request/KECAYMBVUG','legislator/PETERVL/2027'];
  for(const route of routes){await visit(route);await theme('dark');await audit(route);if(route==='calendar'){await page.locator('#calendar-toggle').click();await audit('open calendar')}if(route==='bill/HB0011'){for(const detail of await page.locator('main details').all())await detail.evaluate(e=>e.open=true);await audit('expanded bill details',true)}}
  // Exercise actual dark menus, evidence dialogs, expanded Info, and copy fallback.
- await visit('requests');await page.locator('.sort-menu>summary').click();await audit('Sort menu');await page.keyboard.press('Escape');await page.locator('.more-menu>summary').click();await audit('More menu');await page.keyboard.press('Escape');
+ await visit('requests');await page.locator('.sort-menu>summary').click();await audit('Sort menu');await page.keyboard.press('Escape');await page.locator('.unified-copy>summary').click();await audit('More menu');await page.keyboard.press('Escape');
  await page.locator('.catalog-info>summary').click();await audit('Search Info');
  await visit('request/KECAYMBVUG');await page.locator('.request-source-trigger').click();await audit('request source dialog');await page.keyboard.press('Escape');
  await visit('bill/HB0011');await page.locator('.open-official-summary').click();await audit('official summary dialog');await page.keyboard.press('Escape');
