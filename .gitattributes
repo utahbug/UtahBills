@@ -32,3 +32,6 @@ data/observation-baselines/* -text -whitespace
 
 # Preserve the downloaded Phase 4U scheduled evidence byte-for-byte.
 docs/evidence/phase4u-scheduled-40109485828/** -text
+
+# Preserve Phase 7H contradictory official status evidence byte-for-byte.
+docs/evidence/phase7h/status-listing.txt -text -whitespace

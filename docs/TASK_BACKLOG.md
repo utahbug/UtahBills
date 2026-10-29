@@ -868,3 +868,7 @@ The prior Phase 7C candidate and evidence are retained. A new production-only ca
 ## Phase 7G — search-readiness preparation
 
 Production-only static current-request pages, conditional actual introduced-2027 pages, self-canonicals, homepage sharing metadata and a real-document sitemap are implemented by the existing release packager. All noindex/header restrictions remain; no Cloudflare upload or indexing activation. [Focused verification and remaining gates](PHASE7G_SEARCH_VERIFICATION.md). UI-025 records owner-reported physical iPhone navigation acceptance; broader UI-001, editorial, operational and public-release gates remain open. Archive/legislator SEO pages and any larger routing/SEO framework are deferred. Existing Phase 7E Calendar evidence is preserved; no acquisition repair is included.
+
+## Phase 7H — bounded acquisition repair
+
+Calendar agenda-to-minutes transitions now retain exact historical document/calendar evidence, with strict same-event checks and separately qualified display. Isolated official acquisition succeeds; a genuine post-repair schedule remains pending. JNAUIKTYPJ still has contradictory official JSON/listing titles, so request/catalog observation safeguards intentionally retain the verified baseline. [Verification and source pins](PHASE7H_ACQUISITION_VERIFICATION.md). No unrelated task is reopened and no Cloudflare data update or other phase is started.

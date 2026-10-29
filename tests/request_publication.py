@@ -1,5 +1,5 @@
 """Phase 4O: isolated publication/recovery against preserved official source shapes."""
-import sys,pathlib,json,copy,tempfile,unittest
+import sys,pathlib,json,copy,tempfile,unittest,hashlib
 from unittest.mock import patch
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/'scripts'))
 import refresh_catalog as r, catalog_model as m, activity_model as a
@@ -110,6 +110,16 @@ class PartialPublication(Updates):
   result=reconcile(body,raw,{x['trackingID'] for x in self.base})
   self.assertEqual((result['officialTotal'],result['verifiedTotal']),(271,270))
   self.assertEqual([x['trackingID'] for x in result['withheld']],['DYVEPWTRCQ'])
+
+ def test_real_phase7h_conflicting_titles_remain_blocked(self):
+  evidence=json.loads((r.ROOT/'docs/evidence/phase7h/verification.json').read_text())
+  body=(r.ROOT/evidence['preservedStatusPath']).read_bytes()
+  self.assertEqual(hashlib.sha256(body).hexdigest(),next(s['sha256'] for s in evidence['sources'] if s['name']=='statuses'))
+  requests=json.loads((r.ROOT/evidence['preservedRequestPath']).read_bytes())
+  baseline=parse_statuses((r.ROOT/evidence['baselineStatusSource']).read_bytes())
+  self.assertEqual(baseline['JNAUIKTYPJ']['shortTitle'],next(x['shortTitle'] for x in requests if x['trackingID']=='JNAUIKTYPJ'))
+  with self.assertRaisesRegex(AssertionError,'Request/status title mismatch for JNAUIKTYPJ'):
+   reconcile(body,requests,set(baseline))
 
 def load_tests(loader, tests, pattern):
  return unittest.TestSuite(PartialPublication(name) for name in PartialPublication.__dict__ if name.startswith('test_'))

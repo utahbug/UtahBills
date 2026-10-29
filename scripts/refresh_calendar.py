@@ -1,6 +1,7 @@
 """Transactional calendar snapshots from the public endpoint used by le.utah.gov/calendar.html.
 No browser scraping, credentials, inferred cancellations, or publication timestamps.
 """
+import copy
 import calendar, datetime as dt, hashlib, json, os, pathlib, time, urllib.request
 from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
@@ -44,7 +45,48 @@ def normalize(raw, year, month, source):
             out.append(dict(id=ident,date=date,start=stamp if e['time'] else '',time=e['time'],name=name,category=category,location=e.get('location',''),status={'R':'Revised','C':'Canceled'}.get(e['status'],''),sourceUrl=source,officialUrl=official,agenda=url(e.get('agenda')),documentType=e.get('docType',''),media=url(e.get('mediaUrl')),participation=url(e.get('elecMtgLink')),map=url(e.get('mapurl')),end=e.get('endTime','')))
     return out
 
+def agenda_history(previous, candidate):
+    """Carry immutable evidence only for an exact, past meeting's agenda-to-minutes transition."""
+    history=copy.deepcopy(previous.get('historicalAgendas', []))
+    old={e['id']:e for e in previous.get('events', [])}
+    for b in candidate['events']:
+        a=old.get(b['id'])
+        if not a or a['documentType']!='AGENDA' or b['documentType']!='MINUTES': continue
+        assert a['agenda'] and b['agenda'] and a['agenda']!=b['agenda'], 'Ambiguous agenda-to-minutes transition'
+        assert all(a[k]==b[k] for k in ('id','date','name','sourceUrl','officialUrl')), 'Changed meeting identity during transition'
+        assert b['date']<dt.datetime.fromisoformat(candidate['checkedAt']).astimezone(ZoneInfo('America/Denver')).date().isoformat(), 'Future minutes require manual review'
+        assert not b.get('bills'), 'Minutes must not inherit current agenda bill links'
+        source=next((x for x in previous['sources'] if x['url']==a['sourceUrl']),None)
+        agenda=next((x for x in previous['agendas'] if x['url']==a['agenda']),None)
+        assert source and agenda, 'Missing original agenda evidence: manual review required'
+        evidence=dict(eventID=a['id'],date=a['date'],name=a['name'],calendarSource=copy.deepcopy(source),agendaSource=copy.deepcopy(agenda))
+        if evidence not in history: history.append(evidence)
+    validate_history(history, candidate)
+    return history
+
+def validate_history(history, candidate):
+    events={e['id']:e for e in candidate['events']}
+    seen=set()
+    for h in history:
+        source=h['calendarSource'];agenda=h['agendaSource']
+        assert hashlib.sha256(source['body'].encode('utf-8')).hexdigest()==source['sha256'], 'Historical calendar checksum mismatch'
+        assert hashlib.sha256(agenda['body'].encode(agenda['encoding'])).hexdigest()==agenda['sha256'], 'Historical agenda checksum mismatch'
+        assert source['retrievedAt'] and agenda['retrievedAt'], 'Historical retrieval date missing'
+        raw=json.loads(source['body']);rows=normalize(raw,raw['year'],raw['month'],source['url'])
+        matched=[e for e in rows if e['id']==h['eventID']]
+        assert len(matched)==1, 'Historical event identity missing or duplicated'
+        e=matched[0];current=events.get(h['eventID'])
+        assert current and all(e[k]==current[k]==h[k] for k in ('date','name')), 'Historical event identity changed'
+        assert e['documentType']=='AGENDA' and e['agenda']==agenda['url'], 'Historical agenda association mismatch'
+        parser=AgendaLinks(agenda['url']);parser.feed(agenda['body'])
+        assert list(parser.bills.values())==agenda['bills'], 'Historical bill links not reproduced'
+        key=(h['eventID'],agenda['url'],agenda['sha256'])
+        assert key not in seen, 'Duplicate historical agenda';seen.add(key)
+
+
 def guard(previous, candidate):
+    expected=agenda_history(previous,candidate)
+    assert candidate.get('historicalAgendas',[])==expected, 'Historical agenda evidence lost or changed'
     old={e['id']:e for e in previous.get('events',[])}
     new={e['id']:e for e in candidate['events']}
     assert len(new)==len(candidate['events']), 'Duplicate event IDs'
@@ -52,7 +94,8 @@ def guard(previous, candidate):
     for key,a in old.items():
         b=new[key]
         # A cancellation can legitimately remove logistics. Otherwise disappearing details require review.
-        assert not {x['url'] for x in a.get('bills',[])}-{x['url'] for x in b.get('bills',[])}, 'Lost numbered bill links: manual review required'
+        archived={x['url'] for h in expected if h['eventID']==key and h['agendaSource']['url']==a['agenda'] for x in h['agendaSource']['bills']} if a['documentType']=='AGENDA' and b['documentType']=='MINUTES' else set()
+        assert not ({x['url'] for x in a.get('bills',[])}-{x['url'] for x in b.get('bills',[])}-archived), 'Lost numbered bill links: manual review required'
         if b['status']!='Canceled':
             for field in ('start','location','agenda','participation'):
                 assert not a[field] or b[field], f'Lost {field}: manual review required'
@@ -102,6 +145,8 @@ def collect():
         e['bills']=agendas[agenda]['bills']
     candidate=dict(schemaVersion=1,agendas=list(agendas.values()),checkedAt=dt.datetime.now(dt.timezone.utc).isoformat(),coverageStart='2026-10-01',coverageEnd='2027-05-31',sources=sources,events=sorted(events,key=lambda e:(e['date'],e['start'],e['name'])))
     previous=json.loads(TARGET.read_text(encoding='utf-8')) if TARGET.exists() else {}
+    history=agenda_history(previous,candidate)
+    if history: candidate['historicalAgendas']=history
     guard(previous,candidate)
     # All network and validation steps finish before replacing this single snapshot.
     temp=TARGET.with_suffix('.candidate')

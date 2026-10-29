@@ -1,0 +1,146 @@
+{
+  "preserved": {
+    "request": {
+      "trackingID": "JNAUIKTYPJ",
+      "shortTitle": "Concurrent Resolution Regarding Sentencing Guidelines",
+      "sponsor": ""
+    },
+    "status": {
+      "trackingID": "JNAUIKTYPJ",
+      "shortTitle": "Concurrent Resolution Authorizing Adult Sentencing and Supervision Length Guidelines and Juvenile Disposition Guidelines",
+      "officialStatus": "In Process",
+      "officialNumber": "Not Numbered",
+      "anchor": "trkJNAUIKTYPJ"
+    }
+  },
+  "current": {
+    "request": {
+      "trackingID": "JNAUIKTYPJ",
+      "shortTitle": "Concurrent Resolution Regarding Sentencing Guidelines",
+      "sponsor": ""
+    },
+    "status": {
+      "trackingID": "JNAUIKTYPJ",
+      "shortTitle": "Concurrent Resolution Authorizing Adult Sentencing and Supervision Length Guidelines and Juvenile Disposition Guidelines",
+      "officialStatus": "In Process",
+      "officialNumber": "Not Numbered",
+      "anchor": "trkJNAUIKTYPJ"
+    },
+    "calendar": [
+      {
+        "itemType": "I",
+        "itemtime": "2026-10-21T14:30:00.000+00:00",
+        "time": "8:30 AM",
+        "endTime": "",
+        "status": "O",
+        "description": "Transportation Interim Committee",
+        "mtgID": 20656,
+        "docType": "MINUTES",
+        "wasStarted": true,
+        "sortOrder": 10,
+        "electronic": false,
+        "elecMtgLink": "https://us02web.zoom.us/j/86345957105",
+        "mediaUrl": "https://www.utleg.gov/event-streaming/committee/20656",
+        "type": "meeting",
+        "itemUrl": "/committee/committee.jsp?year=2026&com=INTTRA",
+        "agenda": "/interim/2026/html/00003920.htm",
+        "minutes": "",
+        "location": "210 Senate Building",
+        "mapurl": "/maps/map.asp?room=E210&frame=true",
+        "ics": "/ics.jsp?mtgid=20656",
+        "onSite": false,
+        "embedURL": "https://player.vimeo.com/video/1227439000?h=959dfad5ec",
+        "streamID": 776,
+        "dayOfSession": 0,
+        "live": false
+      }
+    ]
+  },
+  "sources": [
+    {
+      "name": "requests",
+      "url": "https://le.utah.gov/data/2027GS/filelist.json",
+      "retrievedAt": "2026-10-29T20:28:18.102913+00:00",
+      "sha256": "5e0a1752fbde4e92c6c1e90c6737d6469e6f76cb8bb59004530ce32654dc1763"
+    },
+    {
+      "name": "statuses",
+      "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+      "retrievedAt": "2026-10-29T20:28:18.292350+00:00",
+      "sha256": "9fd75e224d7fea7af499537353b695354a84645bd69532c8e08f16e396ffdada"
+    },
+    {
+      "name": "october",
+      "url": "https://www.utleg.gov/Calendar/month?month=10&year=2026",
+      "retrievedAt": "2026-10-29T20:28:18.831393+00:00",
+      "sha256": "c919b164f9c77e2fb7deab2b9f87a284d6000fe147f46dd69a3bd2db9fbf5227"
+    }
+  ],
+  "isolatedCalendar": {
+    "checkedAt": "2026-10-29T20:30:40.895489+00:00",
+    "events": 94,
+    "historicalAgendas": [
+      [
+        "meeting-20596",
+        "https://le.utah.gov/Interim/2026/html/00003591.htm",
+        "06615de3e69e0bc001475893524546992497c51d790811dd822b2d930b388e26"
+      ],
+      [
+        "meeting-20715",
+        "https://le.utah.gov/Interim/2026/html/00003594.htm",
+        "e8c1037d9accc18b2b8acd165083836de82d0ac43a57a93b7de27edc9aadc530"
+      ],
+      [
+        "meeting-20680",
+        "https://le.utah.gov/Interim/2026/html/00003607.htm",
+        "6f0c234212414b1cb9fa552d3fd638f98971c26e23fba82680d00e05255e9fb4"
+      ],
+      [
+        "meeting-20656",
+        "https://le.utah.gov/Interim/2026/html/00003587.htm",
+        "d49f6b01f43f7dbbac1591b8241c657d3e9a388109c02686842dd3d914356ad7"
+      ],
+      [
+        "meeting-20638",
+        "https://le.utah.gov/Interim/2026/html/00003638.htm",
+        "9a486d3a2e9674d2a5d04678360c25dc9592a8ae344c71279749efb1c466eac2"
+      ],
+      [
+        "meeting-20688",
+        "https://le.utah.gov/Interim/2026/html/00003603.htm",
+        "f765b3e21ef16018021f8dd383522771ae803d0200a9a1e351946892ea960d21"
+      ],
+      [
+        "meeting-20698",
+        "https://le.utah.gov/Interim/2026/html/00003700.htm",
+        "644ab96903d1eb4248d6ee5e77469c59c93ffca879b03a5c24f3738b78c927ff"
+      ],
+      [
+        "meeting-20662",
+        "https://le.utah.gov/Interim/2026/html/00003623.htm",
+        "5c20944427acd09733ac3de680575c0a89ac5ca33f10ee52dc40cf89ebf2862f"
+      ],
+      [
+        "meeting-20733",
+        "https://le.utah.gov/Interim/2026/html/00003614.htm",
+        "0cc9c6c2ff1ea65f8d09087daf9a44094a634613d5122c1a37653220309be9b2"
+      ],
+      [
+        "meeting-20775",
+        "https://le.utah.gov/Interim/2026/html/00003604.htm",
+        "d4d491777a771cdeef88d617e57f53a7a3e407066f4726ecfe6b2475d79764f6"
+      ],
+      [
+        "meeting-20784",
+        "https://le.utah.gov/Interim/2026/html/00003891.htm",
+        "58bf9979ea1a3ecf091849b905b3a5ecfb33f0a8f968563fc3570fb52a67c876"
+      ]
+    ],
+    "sourceReproduction": true,
+    "repeatedGuard": true,
+    "productionSnapshotChanged": false
+  },
+  "preservedStatusPath": "docs/evidence/phase7h/status-listing.txt",
+  "preservedRequestPath": "data/catalog-raw/5e0a1752fbde4e92c6c1e90c6737d6469e6f76cb8bb59004530ce32654dc1763.json",
+  "baselineStatusSource": "data/catalog-raw/a28a77a584174fd76ab02393a0cebf1ac1f1fea809c7c96d91d0dc28f325eed7.txt"
+}
