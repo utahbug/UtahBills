@@ -704,4 +704,6 @@ main:has(>#results) .records-search{max-width:none}
 .directory-content{width:100%}.directory-content .directory-columns,.directory-content .legislator-row{max-width:none}
 @container directory (min-width:46.01em){.directory-content{width:min(100%,var(--directory-width))}.directory-actions.results-toolbar{padding-inline:12px}.directory-order-controls{column-gap:24px}}
 .profile-request-tools{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px}.profile-request-tools h3{margin:0}.profile-request-tools>.result-summary{display:contents}.profile-request-tools>.result-controls{display:none}.profile-request-tools>.copy-control{margin:0;display:flex;align-items:center}.profile-request-tools>.sharing-status,.profile-request-tools>.copy-fallback,.profile-request-tools>.copy-recovery{flex-basis:100%}
-.enhanced-detail :is(.technical-source,.documents-sources,.comparison-source,.vote-source) a,.enhanced-detail #compare-sources a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding-block:8px;margin:2px 8px 2px 0;overflow-wrap:anywhere}
+.enhanced-detail :is(.technical-source,.documents-sources,.comparison-source,.vote-source) a,.enhanced-detail #compare-sources a{display:inline-block;align-content:center;min-height:44px;max-width:100%;padding-block:8px;margin:2px 8px 2px 0;overflow-wrap:anywhere}
+
+.enhanced-detail :is(.technical-source,.documents-sources,.comparison-source,.vote-source) a .external-tail,.enhanced-detail #compare-sources a .external-tail{white-space:normal}
