@@ -1,6 +1,6 @@
 import {execFileSync} from 'node:child_process';
 import './validate.mjs';
-import {build} from 'esbuild';
+import {build,transform} from 'esbuild';
 import {mkdir,copyFile,cp,rm,readFile,writeFile} from 'node:fs/promises';
 import path from 'node:path';
 execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['tests/vote_data.py'],{stdio:'inherit'});
@@ -9,7 +9,8 @@ if(output!==path.join(project,'dist')||path.dirname(output)!==project)throw Erro
 await rm(output,{recursive:true,force:true});
 await mkdir(output,{recursive:true});
 await build({entryPoints:['app.js'],bundle:true,format:'esm',outfile:'dist/app.js',minify:true});
-for(const f of ['index.html','styles.css']) await copyFile(f,'dist/'+f);
+await copyFile('index.html','dist/index.html');
+await writeFile('dist/styles.css',(await transform(await readFile('styles.css','utf8'),{loader:'css',minifyWhitespace:true})).code);
 await cp('data','dist/data',{recursive:true});
 const examples=JSON.parse(await readFile('data/bills.json','utf8'));
 await mkdir('dist/data/examples',{recursive:true});
