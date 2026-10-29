@@ -118,7 +118,7 @@ jobs:
           python3 tests/text_acquisition.py
       - run: npm ci
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - name: Functional and accessibility checks
         run: |
           npm start > /tmp/utahbills-preview.log 2>&1 &
