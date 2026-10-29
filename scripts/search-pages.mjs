@@ -1,0 +1,33 @@
+// Static production documents from the already source-validated catalog projection.
+export const origin='https://legislation.utahbug.com';
+export const homeTitle='UtahBug · Independent Utah legislation information';
+export const homeDescription='Explore Utah legislation, bills, public bill requests, legislators and legislative activity with saved official sources. Independent and nonpartisan; coverage and source dates are disclosed.';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function official(value){const u=new URL(value);if(u.protocol!=='https:'||u.hostname!=='le.utah.gov'||u.username||u.password)throw Error('Unexpected official source URL');return u.href}
+function date(value){if(!value||!Number.isFinite(Date.parse(value)))throw Error('Missing saved retrieval date');return esc(value)}
+const link=(url,label)=>`<a href="${esc(url)}">${esc(label)}</a>`;
+const field=(label,value)=>`<dt>${label}</dt><dd>${value}</dd>`;
+function document(title,url,description,body){return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>${esc(title)} · UtahBug</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${url}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)} · UtahBug"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${url}"><style>:root{color-scheme:light dark}body{font:1rem/1.6 system-ui,sans-serif;max-width:60rem;margin:auto;padding:1rem;overflow-wrap:anywhere}h1{line-height:1.25}dt{font-weight:600}dd{margin:0 0 .8rem}a{display:inline-block;padding:.5rem 0;text-underline-offset:.18em}a:focus-visible{outline:3px solid currentColor;outline-offset:3px}footer{border-top:1px solid;padding-top:1rem}</style></head><body><header>${link('/','UtahBug — interactive application')} · Independent · Nonpartisan</header><main>${body}</main><footer><p>UtahBug is an independent, unofficial information service, not the Utah Legislature. Saved information may be incomplete or outdated. Consult official sources for authoritative records.</p>${link('https://le.utah.gov/','Utah Legislature')}</footer></body></html>`}
+export async function generateSearchPages(catalog,save){
+ const urls=[],seen=new Set(),people=new Map([...(catalog.legislators||[]),...(catalog.contactPeople||[])].map(p=>[p.id,p]));
+ async function emit(path,title,description,body){if(seen.has(path))throw Error('Duplicate static record identity: '+path);seen.add(path);const url=origin+'/'+path+'/';urls.push(url);await save(path+'/index.html',Buffer.from(document(title,url,description,body)))}
+ const sponsor=(id,name)=>{const p=id&&people.get(id);return esc(name||p?.name||'Not published')+(id?` (recorded sponsor ID: ${esc(id)})`:'')};
+ const requests=[...(catalog.requests2027||[]),...(catalog.sourceObservedRequests2027||[])].sort((a,b)=>a.trackingID.localeCompare(b.trackingID));
+ for(const r of requests){
+  if(!/^[A-Z]{10}$/.test(r.trackingID)||!r.shortTitle)throw Error('Invalid request identity/title');
+  if(r.currentlyListed===false||r.introducedBill)continue;
+  const source=r.history?.at(-1)?.source;if(!source?.sha256||!['status-verified','source-observed'].includes(r.verificationState))throw Error('Unqualified request source');
+  const verified=r.verificationState==='status-verified';if(verified&&(!r.officialStatus||!r.statusSource?.sha256))throw Error('Missing verified status evidence');
+  const status=verified?r.officialStatus:'Official status not confirmed';
+  const sources=field('Title and sponsor source',link(official(source.url),'Official request data')+' — retrieved '+date(source.retrievedAt))+field('Saved source SHA-256',esc(source.sha256))+(r.statusSource?field(verified?'Status source':'Status listing checked; no verified status',link(official(r.statusSource.url),'Official request status listing')+' — retrieved '+date(r.statusSource.retrievedAt)): '');
+  await emit('requests/2027/'+r.trackingID,r.shortTitle+' — '+r.trackingID,`2027 public bill request ${r.trackingID}: ${r.shortTitle}. ${status}. Saved official-source evidence and sponsor information.`,
+   `<p>2027 public bill request</p><h1>${esc(r.shortTitle)}</h1><dl>${field('Tracking ID',esc(r.trackingID))}${field('Sponsor',sponsor(r.sponsor,r.sponsorName))}${field('Saved official status',esc(status))}${field('Last observed in saved request data',date(r.lastSeenAt))}</dl><p>A public bill request is not introduced legislation. No bill number, bill text or legislative outcome is implied. Recorded sponsorship does not establish membership in the 2027 Legislature.</p>${!verified?'<p>This request was observed in official request data, but its status was not confirmed in the saved official status listing.</p>':''}<h2>Saved source evidence</h2><dl>${sources}</dl><p>Retrieval dates describe saved evidence, not a live update or an official legislative action date.</p><p>${link(official(r.officialRequestUrl||source.url),'View official request source')}</p><p>${link('/#request/'+r.trackingID,'Open this request in the interactive application')}</p>`);
+ }
+ let bills=0;
+ for(const b of (catalog.measures||[]).filter(b=>b.sessionID==='2027GS').sort((a,b)=>a.billNumber.localeCompare(b.billNumber))){
+  if(!/^[HS](?:[BR]\d{4}|[JC]R\d{3})$/.test(b.billNumber)||!b.shortTitle||!b.lastAction)throw Error('Incomplete introduced record');
+  await emit('bills/2027/'+b.billNumber,b.billNumber+' — '+b.shortTitle,`2027 ${b.billNumber}: ${b.shortTitle}. Saved official record and source dates.`,`<p>2027 introduced legislation</p><h1>${esc(b.shortTitle)}</h1><dl>${field('Bill number',esc(b.billNumber))}${field('Prime sponsor',sponsor(b.primeSponsor,b.primeSponsorName))}${field('Latest saved official action',esc(b.lastAction))}${field('Source action date',esc(b.sourceLastActionDate||'Not published'))}</dl>${b.generalProvisions?'<h2>Official general provisions</h2><p>'+esc(b.generalProvisions)+'</p>':''}<h2>Saved source evidence</h2><p>${link(official(b.sourceUrl),'Official record data')} — retrieved ${date(b.retrievedAt)}. This is saved evidence, not a live legislative status.</p><p>${link(official(b.officialUrl),'Official bill page')}</p><p>${link('/#bill/2027/'+b.billNumber,'Open this bill in the interactive application')}</p>`);bills++;
+ }
+ await save('sitemap.xml',Buffer.from('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(url=>'<url><loc>'+esc(url)+'</loc></url>').join('')+'</urlset>'));
+ return {requests:urls.length-bills,bills,urls};
+}
