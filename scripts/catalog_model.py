@@ -143,5 +143,5 @@ if __name__=='__main__':
         for b in d['measures']:
             target=out/'measures'/b['sessionID'];target.mkdir(exist_ok=True);(target/(b['billNumber']+'.json')).write_text(json.dumps(b,ensure_ascii=False),encoding='utf-8')
         d['measures']=[{k:v for k,v in b.items() if k not in ('actionHistoryList','versions')}|{'versionCount':len({v['id'] for v in b['versions']})} for b in d['measures']]
-        (out/'catalog-ui.json').write_text(json.dumps(d,ensure_ascii=False),encoding='utf-8')
+        (out/'catalog-ui.json').write_text(json.dumps(d,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     print('Catalog:',{y:v['imported'] for y,v in d['coverage'].items()},'Roster:',len(d['legislators']),'Requests:',len(d['requests2027']),'Unmatched:',d['unmatchedSponsors'])

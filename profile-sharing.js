@@ -1,0 +1,7 @@
+import {copyResults,exportResults} from './ui.js';
+import {sponsorRows} from './sponsor-sharing.js';
+export function profileRequestSharing(section,requests,catalog){
+ const host=document.createElement('div');host.className='profile-request-tools';section.prepend(host);host.append(section.querySelector('h3'));
+ const rows=sponsorRows(requests.map(r=>({title:r.shortTitle,route:'#request/'+r.trackingID})),catalog);
+ copyResults(host,()=> '');exportResults(host,()=>({headers:['Record type','Session','Tracking ID','Title','Sponsor ID','Sponsor','Status','Status qualification','Official URL','Request source URL','Request source retrieved at','Request source SHA-256','Status source URL','Status source retrieved at','Status source SHA-256','Sponsor qualification'],rows:requests.map((r,i)=>{const source=r.history?.at(-1)?.source;return ['Public bill request','2027',r.trackingID,r.shortTitle,r.sponsor||'',rows[i].sponsorName,r.verificationState==='source-observed'?'Official status not confirmed':r.officialStatus||'Status unavailable',r.verificationState||'Status unavailable',r.officialRequestUrl||catalog.requestListing,source?.url||catalog.requestSource,source?.retrievedAt||'',source?.sha256||'',r.statusSource?.url||'',r.statusSource?.retrievedAt||'',r.statusSource?.sha256||'','Exact recorded sponsor ID; request sponsorship does not establish 2027 membership']})}),()=> 'utahbills-sponsor-public-requests',()=>rows);
+}
