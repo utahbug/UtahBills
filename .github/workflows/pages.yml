@@ -108,6 +108,7 @@ jobs:
       - name: Verify bill catalog provenance and associations
         run: |
           python3 tests/catalog_data.py
+          python3 tests/historical_titles.py
           python3 tests/catalog_updates.py
           python3 tests/request_publication.py
           python3 tests/supplemental_requests.py

@@ -20,10 +20,11 @@ class Roster(HTMLParser):
 def namekey(s):return re.sub('[^a-z]','',re.sub(r'^(Rep\.|Sen\.)\s*','',s).lower())
 def clean(s):return html.unescape(re.sub('<[^>]+>',' ',s or '')).strip()
 def derive(manifest,supplemental=None):
-    sources=manifest['sources'];measure=[];names={}
+    sources=manifest['sources'];measure=[];names={};titles={}
     for key,history in manifest.get('measureHistory',{}).items():
         for source in history:
-            old=json.loads(read(source));assert key==old['sessionID'][:4]+'/'+old['billNumber'],'Invalid archived measure identity'
+            old=json.loads(read(source));assert old['sessionID']==key.split('/')[0]+'GS' and old['billNumber']==key.split('/')[1],'Invalid archived measure identity'
+            if old.get('shortTitle'):titles.setdefault(key,[]).append(dict(shortTitle=old['shortTitle'],sessionID=old['sessionID'],billNumber=old['billNumber'],observedAt=source['retrievedAt'],source=source))
     for key,source in sorted(manifest['records'].items()):
         b=json.loads(read(source));year,ident=key.split('/');assert b['sessionID']==year+'GS' and b['billNumber']==ident
         for field in ('primeSponsor','floorSponsor'):
@@ -41,7 +42,7 @@ def derive(manifest,supplemental=None):
                     versions.append(dict(id=v['billNumber'],label={'PubSub':'Substitute','PubAmend':'Published amendment','AmdPages':'Amendment pages','Amended':'Amended text'}.get(d['fileType'],d['fileType']),url=urljoin('https://le.utah.gov',d['url']),date=d['fileDate']))
         committee=sorted({x['committeeName'] for x in b.get('agendaList',[]) if x.get('committeeName')}|{x['name'] for x in b.get('recommendingCommitteeList',[]) if x.get('name')})
         status='Signed' if 'GSIGN' in codes else 'Vetoed' if 'GVETO' in codes else 'Filed' if codes.intersection({'HFILED','SFILED'}) else 'Other recorded action'
-        measure.append(dict(trackingID=b['trackingID'],billNumber=ident,billNumberShort=b['billNumberShort'],shortTitle=b['shortTitle'],sessionID=b['sessionID'],kind='Bill' if re.fullmatch('[HS]B[0-9]+',ident) else 'Joint resolution' if 'JR' in ident else 'Concurrent resolution' if 'CR' in ident else 'Resolution',primeSponsor=b['primeSponsor'],primeSponsorName=b['primeSponsorName'],floorSponsor=b['floorSponsor'],floorSponsorName=b['floorSponsorName'],cosponsors=cosponsors,generalProvisions=clean(b.get('generalProvisions')),committees=committee,topic='Official record',status=status,lastAction=b['lastAction'],lastActionDate=datetime.strptime(b['lastActionDate'],'%m/%d/%Y').date().isoformat() if b['lastActionDate'] else '',sourceLastActionDate=b['lastActionDate'],lastActionOwner=b['lastActionOwner'],versions=versions,actionHistoryList=b['actionHistoryList'],sourceUrl=source['url'],retrievedAt=source['retrievedAt'],officialUrl=f'https://le.utah.gov/~{year}/bills/static/{ident}.html',detailed=False))
+        measure.append(dict(titleHistory=titles.get(key,[]),trackingID=b['trackingID'],billNumber=ident,billNumberShort=b['billNumberShort'],shortTitle=b['shortTitle'],sessionID=b['sessionID'],kind='Bill' if re.fullmatch('[HS]B[0-9]+',ident) else 'Joint resolution' if 'JR' in ident else 'Concurrent resolution' if 'CR' in ident else 'Resolution',primeSponsor=b['primeSponsor'],primeSponsorName=b['primeSponsorName'],floorSponsor=b['floorSponsor'],floorSponsorName=b['floorSponsorName'],cosponsors=cosponsors,generalProvisions=clean(b.get('generalProvisions')),committees=committee,topic='Official record',status=status,lastAction=b['lastAction'],lastActionDate=datetime.strptime(b['lastActionDate'],'%m/%d/%Y').date().isoformat() if b['lastActionDate'] else '',sourceLastActionDate=b['lastActionDate'],lastActionOwner=b['lastActionOwner'],versions=versions,actionHistoryList=b['actionHistoryList'],sourceUrl=source['url'],retrievedAt=source['retrievedAt'],officialUrl=f'https://le.utah.gov/~{year}/bills/static/{ident}.html',detailed=False))
     # Historical year roster determines membership/district; current contact feed is an independently dated layer.
     contacts=json.loads(read(sources['contacts']))['legislators'];byid={x['id']:x for x in contacts}
     for c in contacts:names.setdefault(namekey(c['fullName']),set()).add(c['id'])

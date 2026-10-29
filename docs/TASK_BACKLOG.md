@@ -850,3 +850,11 @@ SHARE-001 now uses one Copy dropdown on Bills and Recent Activity: Copy titles w
 TRANS-006's simple save/remove/view portion is implemented; advanced change tracking and notifications remain deferred. UI-023 (search/sorting) and UI-024 (bookmarks) extend the continuing checklist; SHARE-001 retains its ID. Broader Review typography remains unpromoted, both environments retain identical verified data/noindex and one combined artifact. All unrelated unfinished work and human acceptance remain open. [Verification](PHASE7B_SEARCH_BOOKMARKS_VERIFICATION.md).
 
 SHARE-001 follow-up: Copy titles + sponsors is implemented for Bills and Recent Activity with compact plain text, verified rich links and full matching-set/event-order preservation. Existing Copy/CSV choices remain. [Verification and remaining acceptance](PHASE7B_COPY_SPONSORS_VERIFICATION.md).
+
+## Phase 7C — release preparation, not release acceptance
+
+Owner clarification: omit Morse entirely; retain KSR and provenance. Exact-identity historical-title search and a disableable nonprivileged KSR dialog are implemented. A clean-commit production-only package preparer records checksums/tool/source provenance, excludes Review and preserves noindex; no Cloudflare upload or updater is activated. Review typography remains isolated in combined GitHub artifacts.
+
+RELEASE-002 has a dated saved-source assessment in [Phase 7C readiness](PHASE7C_READINESS.md), including scheduled run 40744457953's Calendar safeguard failure and separately successful Pages deployment. This does not close RELEASE-001–004, UI-001, UI-019, SESSION-002/003 or editorial/device/operational acceptance. Historical TEST-001 completion remains valid. Production refresh code/data separation is documented but not operationally proven; reliable monitored refresh remains a launch limitation. Advanced tracking/notifications remain deferred under TRANS-006.
+
+[Cloudflare preparation and approval gate](CLOUDFLARE_PRELAUNCH.md) and [search/analytics launch checklist](SEARCH_ANALYTICS_LAUNCH_CHECKLIST.md) distinguish unindexed prelaunch from separately approved indexed public release. No production DNS, account configuration, legislative acquisition safeguards, advertising or indexing settings changed. Mandatory CI and live GitHub verification are required before candidate delivery; exact evidence accompanies delivery.
