@@ -11,9 +11,9 @@ p.on('pageerror',e=>errors.push(e.message));await mkdir('test-results/phase7d',{
 const widths=[320,375,390,430,768,1024,1280,1440,1920],run=part=>!process.env.SECTION||process.env.SECTION===part;
 const visit=async(route,selector)=>{await p.goto(base+'#'+route);await p.reload();await p.locator(selector).first().waitFor()};
 const theme=async value=>p.evaluate(v=>window.utahAppearance.set(v),value);
-const overflow=async()=>assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+const overflow=async()=>{const r=await p.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,url:location.hash,zoom:document.documentElement.style.zoom,excess:[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1).slice(0,12).map(e=>({tag:e.tagName,cls:e.className,text:e.textContent.slice(0,70),right:e.getBoundingClientRect().right}))}));assert.ok(r.scroll<=r.width+1,JSON.stringify(r))};
 const audit=async()=>{await p.evaluate(axe);const result=await p.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}));assert.deepEqual(result.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)})),[])};
-const enlarge=async mode=>{if(mode==='text')await p.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});if(mode==='zoom')await p.evaluate(()=>document.documentElement.style.zoom=2)};
+const enlarge=async mode=>{if(mode==='text')await p.evaluate(()=>{const es=[...document.querySelectorAll('body *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});if(mode==='zoom')await p.evaluate(()=>document.documentElement.style.zoom=2);await p.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))))};
 try{
  if(run('search')){
  const data=sessionFixture(saved,4,65),requests=data.requestArchive2027;requests[1].shortTitle='Education program';requests[2].shortTitle='School transportation';requests[3].shortTitle='Education safety';await interceptSession(p,data);
@@ -43,7 +43,7 @@ try{
  }
  if(run('sources')){
  for(const id of ['HB0011','HB0154','HB0155','SB0069']){await visit('bill/'+id,'.enhanced-detail');await p.locator('.vote-overview-content ul').waitFor();for(const width of widths)for(const appearance of ['light','dark']){await p.setViewportSize({width,height:1000});await theme(appearance);await p.locator('main details').evaluateAll(es=>es.forEach(e=>e.open=true));await p.waitForTimeout(50);await overflow();const links=p.locator('.enhanced-detail :is(.technical-source,.documents-sources,.comparison-source,.vote-source) a,.enhanced-detail #compare-sources a');assert.ok(await links.count());for(const a of await links.all()){if(await a.isVisible())assert.ok((await a.boundingBox()).height>=44-1)}if(width===390)await audit()}}
- for(const mode of ['text','zoom'])for(const width of [320,768,1920]){await p.setViewportSize({width,height:1000});await visit('bill/HB0011','.enhanced-detail');await p.locator('main details').evaluateAll(es=>es.forEach(e=>e.open=true));await enlarge(mode);await overflow();await audit()}
+ for(const mode of ['text','zoom'])for(const width of [320,768,1920]){await p.setViewportSize({width,height:1000});await visit('bill/HB0011','.enhanced-detail');await p.locator('.vote-overview-content ul').waitFor();await p.locator('main details').evaluateAll(es=>es.forEach(e=>e.open=true));await enlarge(mode);await overflow();await audit()}
  console.log('Phase 7D UI-019: all four enhanced bills, expanded sources, nine widths, both themes, enlarged text/zoom, touch-target geometry and full axe passed.');
  }
  assert.deepEqual(errors,[]);
