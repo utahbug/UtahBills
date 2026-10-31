@@ -1,4 +1,3 @@
-import {build} from 'esbuild';
 import {cp,readdir,readFile,writeFile,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
@@ -11,12 +10,10 @@ const names=await files(root),before={};for(const name of names)before[name]=dig
 for(const item of await readdir(root))await cp(path.join(root,item),path.join(review,item),{recursive:true});
 const html=await readFile(path.join(review,'index.html'),'utf8');
 if(!html.includes('<meta name="robots" content="noindex, nofollow">'))throw Error('Missing noindex');
-await writeFile(path.join(review,'index.html'),html.replace('width=device-width,initial-scale=1','width=device-width,initial-scale=1,viewport-fit=cover').replace('</head>','<link rel="stylesheet" href="./review-typography.css"><link rel="stylesheet" href="./review-navigation.css"><script type="module" src="./review-navigation.js"></script></head>'));
-await build({entryPoints:['review-navigation.js'],bundle:true,format:'esm',outfile:path.join(review,'review-navigation.js'),minify:true});
-await cp('review-navigation.css',path.join(review,'review-navigation.css'));
+await writeFile(path.join(review,'index.html'),html.replace('</head>','<link rel="stylesheet" href="./review-typography.css"></head>'));
 await cp('review-typography.css',path.join(review,'review-typography.css'));
 for(const name of names){if(digest(await readFile(path.join(root,name)))!==before[name])throw Error('Main changed: '+name);if(name!=='index.html'&&digest(await readFile(path.join(review,name)))!==before[name])throw Error('Review snapshot mismatch: '+name)}
 const bytes=(await Promise.all(names.map(async n=>(await stat(path.join(root,n))).size))).reduce((a,b)=>a+b,0);
 if(bytes*2>=950_000_000)throw Error('Combined artifact approaches Pages size limit; review packaging before publishing');
-await writeFile(path.join(root,'deployment-manifest.json'),JSON.stringify({environments:['Main','Review'],reviewExperiment:'listing-font-weight-and-phone-bottom-navigation',sharedFiles:names.length,mainBytes:bytes,main:before},null,2));
+await writeFile(path.join(root,'deployment-manifest.json'),JSON.stringify({environments:['Main','Review'],reviewExperiment:'listing-font-weight',sharedFiles:names.length,mainBytes:bytes,main:before},null,2));
 console.log(`Packaged Main and Review: ${names.length} identical snapshot files; Main unchanged; approximately ${bytes*2} combined bytes.`);

@@ -876,3 +876,7 @@ Calendar agenda-to-minutes transitions now retain exact historical document/cale
 ## Phase 7I — Review-only phone navigation experiment
 
 UI-026 adds a Review-only bottom bar using the existing four router anchors on phone-sized touch screens. Main and production remain unchanged; Review typography is retained. Owner acceptance/promotion remains pending. [Verification](PHASE7I_NAVIGATION_VERIFICATION.md). No unrelated work is reopened.
+
+## Phase 7J — approved phone navigation and toolbar refinements
+
+UI-026 owner acceptance and GitHub promotion are authorized; shared navigation preserves UI-025. Compact single counts, Record type labeling, checkmarked selections and directory toolbar refinements are implemented. Review typography remains unpromoted, Cloudflare unchanged, and unrelated backlog work deferred. [Verification and manual acceptance](PHASE7J_VERIFICATION.md).

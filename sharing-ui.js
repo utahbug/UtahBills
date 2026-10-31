@@ -2,6 +2,9 @@ import {createElement,Copy,ChevronDown} from 'lucide';
 import {floatingDisclosure} from './floating-disclosure.js';
 import {titleLinks,titlesOnly,titlesSponsors,copyPrepared} from './sharing.js';
 
+// Returning from Copy can change toolbar height at enlarged text/zoom.
+// Reveal only the actual control after the clipboard action, never the route container.
+function focusCopyTarget(target){target.focus({preventScroll:true});if(!target.closest(':popover-open'))target.scrollIntoView({block:'nearest',inline:'nearest'})}
 export function sharingActions(host,menu,readTitles){
  const primary=host.querySelector('.copy-results'),summary=menu.querySelector('summary'),panel=menu.querySelector('.export-panel'),status=host.querySelector('.copy-status');
  status.classList.add('sharing-status');host.append(status);
@@ -25,11 +28,11 @@ export function sharingActions(host,menu,readTitles){
     const box=document.createElement('textarea');box.className='copy-fallback';box.setAttribute('aria-label',withSponsors?'Titles and sponsors to copy':withLinks?'Titles and links to copy':'Titles to copy');box.value=result.plain;box.readOnly=true;host.append(box);
     const recovery=document.createElement('div');recovery.className='copy-recovery';const retry=document.createElement('button'),select=document.createElement('button');retry.type=select.type='button';retry.className='copy-prepared';retry.textContent='Copy prepared text';select.textContent='Select all text';recovery.append(retry,select);host.append(recovery);
     const selectAll=()=>{box.focus();box.select();box.setSelectionRange(0,box.value.length)};select.onclick=selectAll;
-    retry.onclick=async()=>{const writing=copyPrepared(result,{rich:false});retry.disabled=true;try{const {copied}=await writing;if(copied){status.textContent=`Copied ${result.count} titles${withSponsors?' with sponsors':withLinks?' with links':''}.`;box.remove();recovery.remove();summary.focus({preventScroll:true})}else{status.textContent='Clipboard unavailable. Nothing new was copied. Select all text, then use your device’s Copy command.';selectAll()}}finally{retry.disabled=false}};
+    retry.onclick=async()=>{const writing=copyPrepared(result,{rich:false});retry.disabled=true;try{const {copied}=await writing;if(copied){status.textContent=`Copied ${result.count} titles${withSponsors?' with sponsors':withLinks?' with links':''}.`;box.remove();recovery.remove();focusCopyTarget(summary)}else{status.textContent='Clipboard unavailable. Nothing new was copied. Select all text, then use your device’s Copy command.';selectAll()}}finally{retry.disabled=false}};
     selectAll();manual=true;
    }
   }catch{status.textContent='Could not load all matching titles. Please retry.';failed=true}
-  finally{primary.disabled=titles.disabled=sponsors.disabled=false;if(host.isConnected&&!manual)(failed?trigger:summary).focus({preventScroll:true})}
+  finally{primary.disabled=titles.disabled=sponsors.disabled=false;if(host.isConnected&&!manual)focusCopyTarget(failed?trigger:summary)}
  };
  primary.onclick=()=>copy('links');titles.onclick=()=>copy('titles');sponsors.onclick=()=>copy('sponsors');
 }

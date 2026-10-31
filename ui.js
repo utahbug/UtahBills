@@ -72,11 +72,12 @@ export function billToolbarLayout(host,{source,searchHeading,records,requestTota
  statusMenu.addEventListener('toggle',()=>panel.dispatchEvent(new Event('change')));
  statusMenu.addEventListener('keydown',e=>{if(e.key==='Escape'&&statusMenu.open){e.preventDefault();e.stopPropagation();statusMenu.open=false;statusMenu.querySelector('summary').focus()}});
  menu.addEventListener('toggle',()=>{if(!menu.open)statusMenu.open=false});
+ const countGroup=host.querySelector('.count-summary'),countHome=countGroup?.parentElement;
  let heading;if(records){heading=document.createElement('div');heading.className='records-heading search-heading';records.prepend(heading);heading.append(records.querySelector('label'))}
  let last;const update=()=>{if(!host.isConnected||last===media.matches)return;last=media.matches;const active=document.activeElement,moving=size.contains(active);
-  if(last){panel.append(size);size.firstChild.textContent='Results per page ';(heading||searchHeading).append(source)}else{controls.append(size);size.firstChild.textContent='Per page ';searchHeading.append(source)}
+  if(last){panel.append(size);size.firstChild.textContent='Results per page ';searchHeading.append(source)}else{controls.append(size);size.firstChild.textContent='Per page ';searchHeading.append(source)}
   const fullSourceLabel='Official '+(records?'2027':'2026')+' Bill Search';source.setAttribute('aria-label',fullSourceLabel);const tail=source.querySelector('.external-tail');if(tail){source.firstChild.textContent=last?'Official ':fullSourceLabel.slice(0,-6);tail.firstChild.textContent=last?'search':'Search'}else source.textContent=last?'Official search':fullSourceLabel;
-  if(records){records.querySelector('option[value="2027-requests"]').textContent=last?`2027 Public Bill Requests (${requestTotal})`:'2027 Public bill requests';records.querySelector('option[value="2027"]').textContent=last?`2027 Bills and resolutions (${measureTotal})`:'2027 Bills and resolutions'}
+  if(heading&&countGroup)(last?heading:countHome).append(countGroup);
   decorateExternalLinks(source.parentElement);if(active===source)source.focus({preventScroll:true});if(moving){if(last)menu.open=true;active.focus({preventScroll:true})}
  };media.addEventListener('change',update);disposeBillLayout=()=>media.removeEventListener('change',update);update();
 }

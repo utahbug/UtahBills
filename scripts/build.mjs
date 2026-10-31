@@ -10,7 +10,7 @@ await rm(output,{recursive:true,force:true});
 await mkdir(output,{recursive:true});
 await build({entryPoints:['app.js'],bundle:true,format:'esm',outfile:'dist/app.js',minify:true});
 await copyFile('index.html','dist/index.html');
-await writeFile('dist/styles.css',(await transform(await readFile('styles.css','utf8'),{loader:'css',minifyWhitespace:true})).code);
+await writeFile('dist/styles.css',(await transform((await readFile('styles.css','utf8'))+'\n'+(await readFile('phone-navigation.css','utf8')),{loader:'css',minifyWhitespace:true})).code);
 await cp('data','dist/data',{recursive:true});
 const examples=JSON.parse(await readFile('data/bills.json','utf8'));
 await mkdir('dist/data/examples',{recursive:true});

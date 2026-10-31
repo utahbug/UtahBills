@@ -1,8 +1,9 @@
-import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';import {readFile,access} from 'node:fs/promises';import {createHash} from 'node:crypto';
 const digest=b=>createHash('sha256').update(b).digest('hex'),manifest=JSON.parse(await readFile('dist/deployment-manifest.json','utf8')),tag='<link rel="stylesheet" href="./review-typography.css">';assert.deepEqual(manifest.environments,['Main','Review']);
 for(const [name,expected] of Object.entries(manifest.main)){assert.equal(digest(await readFile('dist/'+name)),expected,'Main artifact changed: '+name);if(name!=='index.html')assert.equal(digest(await readFile('dist/review/'+name)),expected,'Review mismatch: '+name)}
-const main=await readFile('dist/index.html','utf8'),review=await readFile('dist/review/index.html','utf8');assert.equal(review.replace(tag,'').replace('<link rel="stylesheet" href="./review-navigation.css"><script type="module" src="./review-navigation.js"></script>','').replace(',viewport-fit=cover',''),main);assert.equal(main.includes('review-typography.css'),false);for(const html of [main,review])assert.ok(html.includes('<meta name="robots" content="noindex, nofollow">'));
+const main=await readFile('dist/index.html','utf8'),review=await readFile('dist/review/index.html','utf8');assert.equal(review.replace(tag,''),main);assert.equal(main.includes('review-typography.css'),false);for(const html of [main,review])assert.ok(html.includes('<meta name="robots" content="noindex, nofollow">'));
 const css=await readFile('dist/review/review-typography.css','utf8');assert.equal(css,await readFile('review-typography.css','utf8'));const declarations=[...css.matchAll(/\{([^}]+)\}/g)].flatMap(m=>m[1].split(';').filter(Boolean));assert.deepEqual(declarations,['font-weight:600','font-weight:500']);console.log(`Combined Pages artifact verified: ${manifest.sharedFiles} Main files unchanged, identical Review assets/data, isolated weight-only CSS and noindex in both.`);
 
-assert.equal(main.includes('review-navigation'),false);
-assert.equal(await readFile('dist/review/review-navigation.css','utf8'),await readFile('review-navigation.css','utf8'));
+assert.ok(main.includes('viewport-fit=cover'));
+
+for(const file of ['review-navigation.js','review-navigation.css'])await assert.rejects(access('dist/review/'+file),{code:'ENOENT'});

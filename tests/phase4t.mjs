@@ -17,7 +17,7 @@ try{
  await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>window.copied=text}}));
  const visit=async route=>{await page.goto(base+'?phase4t='+encodeURIComponent(route)+'#'+route);await page.locator('h1').waitFor()};
  await visit('requests');await page.locator('.bill-row').first().waitFor();
- assert.deepEqual(await page.locator('#session option').allTextContents(),['2027 Bills and resolutions','2027 Public bill requests']);assert.equal(await page.getByLabel('Records',{exact:true}).inputValue(),'2027-requests');
+ assert.deepEqual(await page.locator('#session option').allTextContents(),['2027 Bills and resolutions','2027 Public bill requests']);assert.equal(await page.getByLabel('Record type',{exact:true}).inputValue(),'2027-requests');
  assert.equal(await page.getByLabel('Search public requests',{exact:true}).getAttribute('placeholder'),'Tracking ID, title, keyword, or sponsor');
  await billOptions(page);await page.locator('#sort').selectOption('sponsor',{force:true});
  const expected=[...(saved.requestArchive2027||saved.requests2027),...(saved.sourceObservedRequests2027||[])].filter(r=>!r.introducedBill&&r.currentlyListed!==false).map(r=>({...r,primeSponsor:r.sponsor,primeSponsorName:r.sponsorName})).sort((a,b)=>compareSponsors(a,b,saved));

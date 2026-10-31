@@ -9,7 +9,7 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  const errors=[];p.on('pageerror',e=>errors.push(e.message));
  await p.goto(base+'review/#requests');await p.locator('.bill-row').first().waitFor();
  const active=viewport.width<=700||viewport.height<=500;
- assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('review-phone-navigation')),active);
+ assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('phone-navigation')),active);
  const nav=p.locator('header nav');assert.equal(await nav.locator('a').count(),4);
  if(active){
  assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),'static');
@@ -51,10 +51,10 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  // Controlled visual viewport reduction tests the keyboard branch, not native iOS keyboard behavior.
  await p.evaluate(()=>{document.documentElement.style.fontSize='';const input=document.querySelector('#search');input.focus();Object.defineProperty(visualViewport,'height',{configurable:true,value:innerHeight*.5});visualViewport.dispatchEvent(new Event('resize'))});
  assert.equal(await nav.evaluate(e=>getComputedStyle(e).visibility),'hidden');await p.locator('#search').blur();await p.waitForFunction(()=>getComputedStyle(document.querySelector('header nav')).visibility==='visible');assert.equal(await nav.evaluate(e=>getComputedStyle(e).visibility),'visible');
- }else assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),'sticky');
- const hash=new URL(p.url()).hash;await p.setViewportSize({width:844,height:390});await p.waitForFunction(()=>document.documentElement.classList.contains('review-phone-navigation'));assert.equal(new URL(p.url()).hash,hash);assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('review-phone-navigation')),true);assert.deepEqual(errors,[]);await p.close();
+ }else {assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),'sticky');for(const icon of await nav.locator('.phone-nav-icon').all())assert.equal(await icon.isVisible(),false)}
+ const hash=new URL(p.url()).hash;await p.setViewportSize({width:844,height:390});await p.waitForFunction(()=>document.documentElement.classList.contains('phone-navigation'));assert.equal(new URL(p.url()).hash,hash);assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('phone-navigation')),true);assert.deepEqual(errors,[]);await p.close();
  }
- const main=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});await main.goto(base+'#requests');await main.locator('.bill-row').first().waitFor();assert.equal(await main.locator('header').evaluate(e=>getComputedStyle(e).position),'sticky');assert.equal(await main.locator('.review-nav-icon').count(),0);await main.close();
+ const main=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});await main.goto(base+'#requests');await main.locator('.bill-row').first().waitFor();assert.equal(await main.locator('header').evaluate(e=>getComputedStyle(e).position),'static');assert.equal(await main.locator('.phone-nav-icon').count(),4);await main.close();
  console.log(name+': Review portrait/landscape, tablet/desktop isolation, details, 24 repeated taps, history, saved search, archive return, text/dark/focus/footer/keyboard branch passed');
  }finally{await browser.close()}
 }
