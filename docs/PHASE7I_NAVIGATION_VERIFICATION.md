@@ -1,0 +1,21 @@
+# Phase 7I — Review phone bottom-navigation experiment
+
+Base: 8ea4584 (latest guarded Calendar snapshots fetched before editing). No acquisition changes.
+
+Review packaging adds only review-navigation.js and review-navigation.css, plus their Review HTML references and viewport-fit=cover. The shared app bundle, styles, original Main HTML and verified data are unmodified. Review typography remains separate and unchanged. The complete Pages artifact still contains both environments; all shared-file hashes and noindex directives are checked.
+
+The existing four header anchors become the bottom bar on coarse-pointer screens up to 700px wide, or landscape screens up to 1000px wide and 500px high. This responsive heuristic avoids device-name detection; unusually small tablets may qualify. Existing router handlers, including archive-to-current Bills, active sections, Back/Forward and Phase 7F MAIN focus exclusion, are reused without duplicate links or click handlers. Header brand, Appearance and Contact scroll normally. Lucide icons have visible labels, 44px minimum targets, theme colors and focus indication. ResizeObserver reserves the actual bar height, including wrapped/enlarged labels and safe-area padding. Back-to-top clears the bar; top-layer floating panels remain above it.
+
+A substantially reduced visual viewport while an editable control has focus hides the bar until keyboard dismissal. This is a keyboard heuristic, not a guarantee about every Safari/third-party keyboard. Native iPhone browser chrome, notch/safe-area, keyboard and VoiceOver require physical acceptance.
+
+Focused verification: tests/review-navigation.mjs covers Chromium/WebKit portrait 320/390, landscape 844x390, tablet 768 and desktop 1280; all four destinations, request and legislator details, repeated bill taps, Back/Forward, saved/search state, archive-to-current Bills, Copy-menu dismissal, dark/enlarged text, footer clearance, focus, simulated keyboard viewport reduction and unchanged Main sticky navigation. tests/review-artifact.mjs checks every shared asset/data hash and permits only explicit Review additions. Existing full mandatory CI remains intact and includes the new test.
+
+Owner acceptance required on Review: portrait and landscape; one-handed four-destination taps from listings/details; repeated title/row taps and browser/app Back; search/filter/saved state; all Copy modes/CSV in real recipient apps; Safari toolbar expanded/collapsed; keyboard typing/dismissal; bottom safe area; final pagination/footer reachability; large text, Light/Dark and VoiceOver. Compare Main to confirm original sticky top navigation. No promotion authorized.
+
+Cloudflare is unchanged. No production package, acquisition, indexing, analytics, DNS or automatic update changes. CI/publication outcomes belong in delivery evidence; automated checks do not constitute physical-device acceptance.
+
+Local investigation/retests: initial visual inspection found inherited phone offsets constraining bar width and misplacing Appearance; corrected solely in Review CSS. The first test assertions raced asynchronous routing and retained a saved-only filter when entering an empty archive scope; waits and independent test setup were corrected. Enlarged labels now use two rows when four columns cannot fit comfortably. WebKit resize-observer notification was resolved by deferring Review measurement to animation frames. Final targeted tests include all Copy modes with simulated successful writes, denied-write manual recovery and a real CSV download. Native iPhone clipboard acceptance is still required.
+
+Known unrelated limitation: at 320px with root text doubled to 32px, WebKit reports a 409px document scroll width from the existing Records native select. This reproduces identically on Main; no shared UI repair is included. The new bar itself remains within the viewport and final content clears it. Physical enlarged-text acceptance remains pending.
+
+Final local result: complete combined build and 9,330 shared-file artifact checks passed. Final focused Chromium and WebKit runs passed, including sharing additions and 24 repeated title taps per engine. Shared app.js, ui.js, styles.css, index.html and data files have no changes. Full mandatory CI and live publication verification follow this commit; their actual outcomes are recorded in delivery evidence.

@@ -13,7 +13,7 @@ Application name: UtahBug. Repository: UtahBills. This is an independent applica
 - Use the same environment names and URLs consistently in handoffs. Phase 4E explicitly removes the visible Main footer label; the compact shared footer must not add an environment label.
 - Use one local instance, normally http://127.0.0.1:4173/UtahBills/. Check for and reuse an existing instance before starting a server. Use a second instance only when necessary for side-by-side testing; stop it after testing.
 - Reuse the existing browser tab when practical; avoid accumulating ports and tabs.
-- Review is activated for owner-approved experiments. Every build must package Main and Review together in one complete `dist/` artifact using `scripts/package-review.mjs`. Main remains at the artifact root; Review is under `review/`, with identical verified data and shared application assets plus its isolated experiment stylesheet. Never upload Review alone or omit it from a normal/scheduled deployment.
+- Review is activated for owner-approved experiments. Every build must package Main and Review together in one complete `dist/` artifact using `scripts/package-review.mjs`. Main remains at the artifact root; Review is under `review/`, with identical verified data and shared application assets plus its isolated typography stylesheet and phone-navigation experiment assets. Never upload Review alone or omit it from a normal/scheduled deployment.
 - Typography changes in `review-typography.css` remain Review-only until explicit owner acceptance and promotion authorization. Preserve Main's appearance. Required CI includes the existing full suite and the combined-artifact/Review checks. Deployment concurrency queues new work instead of cancelling an active run.
 
 ## Communication

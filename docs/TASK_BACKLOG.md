@@ -872,3 +872,7 @@ Production-only static current-request pages, conditional actual introduced-2027
 ## Phase 7H — bounded acquisition repair
 
 Calendar agenda-to-minutes transitions now retain exact historical document/calendar evidence, with strict same-event checks and separately qualified display. Isolated official acquisition succeeds; a genuine post-repair schedule remains pending. JNAUIKTYPJ still has contradictory official JSON/listing titles, so request/catalog observation safeguards intentionally retain the verified baseline. [Verification and source pins](PHASE7H_ACQUISITION_VERIFICATION.md). No unrelated task is reopened and no Cloudflare data update or other phase is started.
+
+## Phase 7I — Review-only phone navigation experiment
+
+UI-026 adds a Review-only bottom bar using the existing four router anchors on phone-sized touch screens. Main and production remain unchanged; Review typography is retained. Owner acceptance/promotion remains pending. [Verification](PHASE7I_NAVIGATION_VERIFICATION.md). No unrelated work is reopened.
