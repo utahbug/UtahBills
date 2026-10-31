@@ -42,7 +42,11 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  await p.emulateMedia({colorScheme:'dark'});await p.evaluate(()=>document.documentElement.style.fontSize='32px');
  assert.equal(await nav.evaluate(e=>e.scrollWidth>e.clientWidth+1),false);
  await p.waitForTimeout(100);
- await p.evaluate(()=>scrollTo(0,document.body.scrollHeight));const footer=await p.locator('footer').boundingBox(),bar=await nav.boundingBox();assert.ok(footer.y+footer.height<=bar.y+2,'footer clears navigation');
+ await p.evaluate(()=>scrollTo(0,document.body.scrollHeight));
+ // Scrolling and ResizeObserver/frame-based reserved padding settle asynchronously in WebKit.
+ // Keep the exact clearance requirement; do not sample before the scroll has painted.
+ await p.waitForFunction(()=>{const footer=document.querySelector('footer').getBoundingClientRect(),bar=document.querySelector('header nav').getBoundingClientRect();return footer.bottom<=bar.top+2},null,{timeout:5000});
+ const footer=await p.locator('footer').boundingBox(),bar=await nav.boundingBox();assert.ok(footer.y+footer.height<=bar.y+2,`footer clears navigation: ${name} ${JSON.stringify({viewport,footer,bar})}`);
  await p.keyboard.press('Tab');await nav.locator('a').first().focus();assert.notEqual(await nav.locator('a').first().evaluate(e=>getComputedStyle(e).outlineStyle),'none');
  // Controlled visual viewport reduction tests the keyboard branch, not native iOS keyboard behavior.
  await p.evaluate(()=>{document.documentElement.style.fontSize='';const input=document.querySelector('#search');input.focus();Object.defineProperty(visualViewport,'height',{configurable:true,value:innerHeight*.5});visualViewport.dispatchEvent(new Event('resize'))});
