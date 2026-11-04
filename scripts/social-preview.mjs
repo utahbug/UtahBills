@@ -1,8 +1,8 @@
-export const socialImagePath='assets/social-capitol-512.png';
+export const socialImagePath='assets/social-capitol-2027-v2.png';
 export const socialTitle='UtahBug · Utah Legislation';
 export const socialDescription='2027 Utah bill tracking';
 export const socialOrigin='https://legislation.utahbug.com/';
-export const socialAlt='UtahBug Capitol symbol in white on a navy-blue square';
+export const socialAlt='UtahBug Capitol symbol in white on a blue, purple and red gradient background';
 export function applySocialPreview(html){
  const end=html.indexOf('</head>');if(end<0)throw Error('Missing static HTML head');
  const head=html.slice(0,end),body=html.slice(end);
