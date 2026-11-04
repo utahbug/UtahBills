@@ -5,6 +5,10 @@ import {readFile,mkdir} from 'node:fs/promises';
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 const browser=await chromium.launch(process.env.CI?{headless:true}:{channel:'msedge',headless:true}),page=await browser.newPage({reducedMotion:'reduce'}),axe=await readFile('node_modules/axe-core/axe.min.js','utf8');
 await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:{writeText:async t=>window.copied=t}}));
+// This layout test needs recorded activity, not the wall-clock five-day window.
+const activityIndex=JSON.parse(await readFile('dist/data/activity/index.json','utf8'));
+const fixtureDay=activityIndex.sessions['2027'].pages.map(p=>p.first).filter(Boolean).sort().at(-1);
+assert.match(fixtureDay,/^\d{4}-\d{2}-\d{2}$/);await page.clock.setFixedTime(new Date(fixtureDay+'T18:00:00Z'));
 await mkdir('test-results/phase4j',{recursive:true});
 try{
  for(const width of [320,375,390,430,600,768,1024,1280])for(const mode of ['normal','text','zoom'])for(const route of ['activity','legislators','calendar']){
