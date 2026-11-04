@@ -1,0 +1,11 @@
+# Approved compact X preview — 2026-11-03
+
+Owner explicitly authorizes the compact Summary Card and its Cloudflare publication after verification. Root social title: UtahBug · Utah Legislation. Description: 2027 Utah bill tracking. Canonical and og:url remain https://legislation.utahbug.com/.
+
+The PNG contains only the existing Lucide Landmark header symbol, white on brand navy (#16374a), rendered at 512 × 512. No text, mockup, border or platform UI is embedded. Website fonts and visible application markup are unchanged. The helper emits static twitter:card=summary, title/description/image/alt and matching Open Graph fields, with an absolute HTTPS image URL. The normal production packager uses the same metadata for future candidates; GitHub application HTML stays unchanged.
+
+Production remains based on c366381fa5406d2dd144ae3719950764cdba34eb and its exact source snapshots. The narrow overlay verifies baseline content SHA-256 e9bdf496cad8986ddaea01fe6b643de6072f726129aa631d4615984322b38e65, copies every existing asset, and permits only index.html, the new PNG and release.json provenance to differ. It records the social change commit separately from the original application/data commit. Previous candidate and deployment 2f8c2940-cbc9-49dd-bd68-bb3b49eaf329 remain rollback evidence. No moving Main data or later UI is promoted to production.
+
+Focused checks cover static tags, duplicate replacement, canonical/noindex/body preservation, PNG dimensions, complete immutable-baseline hashes, wrong-baseline rejection, and existing package tamper/extra-file safeguards. Mandatory CI remains unchanged. Final CI, candidate checksums, deployment ID and live crawler-style retrieval evidence are saved in the candidate delivery receipt after successful publication.
+
+Live acceptance checks: HTTPS homepage and image with ordinary and Twitterbot user agents; expected content type/dimensions/hash; static tags without JavaScript; canonical/noindex meta and header; unchanged runtime, data, request documents and sitemap. External retrieval simulates the crawler request but does not prove X has refreshed its cache or displayed a card. Actual X composition/display remains owner acceptance; no post is sent by this task.

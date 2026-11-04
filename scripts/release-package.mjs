@@ -1,3 +1,4 @@
+import {applySocialPreview,socialImagePath,verifySocialImage} from './social-preview.mjs';
 import {generateSearchPages,homeTitle,homeDescription} from './search-pages.mjs';
 import {readFile,writeFile,mkdir,lstat,readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -14,8 +15,9 @@ export async function packageMain(input,output,identity){
  for(const [name,expected] of Object.entries(manifest.main).sort(([a],[b])=>a.localeCompare(b))){if(name.endsWith('/.gitkeep'))continue;if(!allowed(name))throw Error('Unexpected published path: '+name);const file=path.join(source,name);if(!(await lstat(file)).isFile())throw Error('Non-regular asset');let bytes=await readFile(file);if(digest(bytes)!==expected)throw Error('Unverified Main artifact: '+name);
   // Normalize generated/text assets; original official response bytes stay immutable.
   if(/\.(?:html|js|css|json|txt|xml)$/.test(name)&&!/^data\/(?:[^/]*raw|observation-baselines)\//.test(name))bytes=Buffer.from(bytes.toString('utf8').replaceAll('\r\n','\n'));
-  if(name==='index.html'){let html=bytes.toString();if(!html.includes('<meta name="robots" content="noindex, nofollow">')||html.includes('review-typography'))throw Error('Unsafe release head');html=html.replace(/<title>.*?<\/title>/,'<title>'+homeTitle+'</title>').replace(/<meta name="description" content="[^"]*">/,'<meta name="description" content="'+homeDescription+'">');html=html.replace('</head>','<link rel="canonical" href="https://legislation.utahbug.com/"><meta property="og:type" content="website"><meta property="og:title" content="'+homeTitle+'"><meta property="og:description" content="'+homeDescription+'"><meta property="og:url" content="https://legislation.utahbug.com/"></head>');bytes=Buffer.from(html)}await save(name,bytes);
+  if(name==='index.html'){let html=bytes.toString();if(!html.includes('<meta name="robots" content="noindex, nofollow">')||html.includes('review-typography'))throw Error('Unsafe release head');html=html.replace(/<title>.*?<\/title>/,'<title>'+homeTitle+'</title>').replace(/<meta name="description" content="[^"]*">/,'<meta name="description" content="'+homeDescription+'">');html=html.replace('</head>','<link rel="canonical" href="https://legislation.utahbug.com/"><meta property="og:type" content="website"><meta property="og:title" content="'+homeTitle+'"><meta property="og:description" content="'+homeDescription+'"><meta property="og:url" content="https://legislation.utahbug.com/"></head>');bytes=Buffer.from(applySocialPreview(html))}if(name===socialImagePath)verifySocialImage(bytes);await save(name,bytes);
  }
+ if(!files[socialImagePath])throw Error('Missing social preview image in verified build');
  await save('_headers',Buffer.from('/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n  Cache-Control: no-cache\n'));
  const catalog=JSON.parse(await readFile(path.join(site,'data/catalog-ui.json'),'utf8')),calendar=JSON.parse(await readFile(path.join(site,'data/calendar-ui.json'),'utf8'));
  const searchPages=await generateSearchPages(catalog,save);
