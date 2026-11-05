@@ -2,6 +2,10 @@
 
 Application name: UtahBug. Repository: UtahBills. This is an independent application. Do not inspect or modify the existing Utah repository or other applications for this project.
 
+## Start and maintain the project handoff
+
+Read [the permanent project handoff](docs/PROJECT_HANDOFF.md) at the start of new work, then consult the relevant roadmap, authoritative backlog and verification records. Confirm current commits, Actions and release evidence before acting on dated status. After substantial approved development or a production release, update the handoff with what changed, when and why, the verified environment and evidence, and pending owner decisions.
+
 ## Deployment and testing policy
 
 - Use no more than two published environments, always named **Main** and **Review**.
