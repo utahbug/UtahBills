@@ -880,3 +880,23 @@ UI-026 adds a Review-only bottom bar using the existing four router anchors on p
 ## Phase 7J — approved phone navigation and toolbar refinements
 
 UI-026 owner acceptance and GitHub promotion are authorized; shared navigation preserves UI-025. Compact single counts, Record type labeling, checkmarked selections and directory toolbar refinements are implemented. Review typography remains unpromoted, Cloudflare unchanged, and unrelated backlog work deferred. [Verification and manual acceptance](PHASE7J_VERIFICATION.md).
+
+## Proposed navigation experiment — November 5, 2026
+
+All four entries are **Low · Proposed**. The owner requested documentation only. Future implementation requires separate authorization. Evaluate any authorized prototype in the [existing GitHub Review environment](https://utahbug.github.io/UtahBills/review/) and obtain owner acceptance before promotion to Main. Use the existing combined Pages artifact and preserve the Review typography experiment. [Review checklist](UI_ACCEPTANCE_CHECKLIST.md#proposed-navigation-experiment)
+
+### UI-027
+
+**Outlined navigation pills.** Evaluate thin oval borders around the existing Bills, Recent Activity, Calendar and Legislators links. Retain their routes and phone labels. At narrow widths and enlarged text, all four labels must fit or wrap accessibly, with at least 44 × 44 px targets and no horizontal overflow. In Light and Dark, the active section must be distinguishable from an inactive link, and keyboard focus must be independently visible on either.
+
+### UI-028
+
+**Responsive tagline.** Show “Independent · Nonpartisan” when the header has room. On resize, rotation or text enlargement, hide the tagline before it wraps, overlaps controls or crowds navigation. Verify it reappears when space returns. Check both sides of the transition and confirm the public independence and nonpartisanship disclosures remain accessible elsewhere.
+
+### UI-029
+
+**Settings menu.** Evaluate a top-right gear with the accessible name “Settings” and entries for Appearance, Contact, and About & FAQ. Confirm all three appearance choices and their persistence, the Contact page and email action, and access to both About and FAQ. Test keyboard and touch opening, announced expanded state, visible focus, Escape dismissal and focus return to the gear. The menu must stay within the viewport and retain 44 px targets. Keep existing standalone controls available until the owner accepts the replacement.
+
+### UI-030
+
+**iPhone navigation position.** Explore a reversible Top/Bottom preference for the existing four-icon navigation on phone layouts only. A fresh browser defaults to Bottom. Verify switching both ways, persistence after reload on the same device/browser, and usable navigation if storage is unavailable. Exactly one primary bar may be visible, focusable or announced at a time. Check portrait and landscape, safe-area and keyboard clearance, active-section announcements, repeated bill taps and Back/Forward from detail pages. Tablet and desktop retain their established navigation. Preserve UI-025 and UI-026.
