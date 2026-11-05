@@ -98,3 +98,14 @@ Phase 7C development acceptance does not authorize Cloudflare publication. Prese
 UI-026: Review-only phone bottom navigation (Bills, Activity, Calendar, Legislators), scrolling brand/Appearance/Contact header, safe-area/content clearance and keyboard handling. Existing anchors preserve UI-025 and navigation state. Focused Chromium/WebKit and artifact checks supplement mandatory CI. Physical iPhone portrait/landscape, native keyboard/Safari chrome, enlarged text, VoiceOver and owner usability acceptance remain pending. Main's sticky header and Review typography remain unchanged. [Phase 7I](PHASE7I_NAVIGATION_VERIFICATION.md).
 
 Phase 7J: Owner physically tested and approved UI-026 in Review; promotion to Main is authorized and implemented with shared phone-navigation assets. Review typography remains isolated. Record type/count placement, Sort/Status checkmarks and compact directory toolbars refine UI-018/UI-023/SHARE-001 without changing data or action semantics. Focused and retained regressions apply; physical acceptance of these new toolbar refinements, Safari keyboard/safe areas and broader UI-001/VoiceOver remain pending. [Verification](PHASE7J_VERIFICATION.md).
+
+## Proposed navigation experiment
+
+**Low priority · Proposed · Awaiting separate implementation authorization.** These are future checks in [GitHub Review](https://utahbug.github.io/UtahBills/review/). Record test evidence and the owner's visual/device decision here before any Main promotion.
+
+| Backlog entry | Review acceptance check |
+| --- | --- |
+| [UI-027 · Outlined pills](TASK_BACKLOG.md#ui-027) | Compare compactness, 44 × 44 px targets, active section and independent keyboard focus in Light/Dark and enlarged text. |
+| [UI-028 · Responsive tagline](TASK_BACKLOG.md#ui-028) | Resize across the visibility threshold in both directions. Check menu spacing and access to independence and nonpartisanship disclosures. |
+| [UI-029 · Settings menu](TASK_BACKLOG.md#ui-029) | Exercise Appearance, Contact, About and FAQ by keyboard and touch. Check focus return, viewport fit and availability of standalone controls through owner acceptance. |
+| [UI-030 · Phone navigation position](TASK_BACKLOG.md#ui-030) | On iPhone, verify Bottom by default, reversible local persistence and exactly one active bar in both orientations. Recheck UI-025 detail navigation and tablet/desktop behavior. |
