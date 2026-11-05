@@ -61,6 +61,14 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Source:** [Roadmap Stage 1](../ROADMAP.md#stage-1--legislative-data-and-transparency--partly-implemented).
 - **Acceptance:** Define and report the independently verified coverage boundary, preserve newly acquired originals, reproduce classifications/tallies, and disclose missing or conflicting records without claiming every vote is recorded.
 
+### DATA-005
+
+**Record-level verification time on bills and public requests** — **Medium** · **Approved/Not started** (November 5, 2026).
+
+- **Dependencies:** The guarded refresh must retain a successful observation for the exact session-qualified bill or request tracking ID, with its source URL, timestamp and timezone evidence. Coordinate with [TEST-001](#test-001), the current scheduled-refresh investigation and [RELEASE-002](#release-002). A successful Calendar refresh, site build or deployment alone cannot establish request freshness.
+- **Acceptance:** On each bill or public-request detail page, show a compact notice such as “Last verified by UtahBills: [date/time]” and a direct link to the corresponding official legislative record. Use the latest successfully verified observation applicable to the displayed record. Identify the timezone when available, disclose limited precision or unavailable record-specific evidence, and retain qualifications for fields verified at different times. A feed-only source must be identified as such when there is no verified record-specific URL.
+- **Regression evidence:** For each record type, check successful re-observation, a successful unrelated refresh, a rejected or failed acquisition, and a later deployment of the same snapshot. Only a successful check covering this record may advance its verification time. Keep official action and publication dates separately labelled. Where both static and application detail pages exist, require the same underlying timestamp, source, precision and qualification, with accessible link text and readable layout at enlarged text sizes.
+
 ## 2. 2027 legislative-session readiness
 
 ### SESSION-002
@@ -158,6 +166,10 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Source:** Owner Phase 4X §5; [Roadmap Stage 2](../ROADMAP.md#stage-2--legislator-directory--partly-implemented).
 - **Acceptance:** Distinguish chief-sponsored **Bills introduced** from **Total bills sponsored**, the distinct union of chief, opposite-chamber floor and cosponsor roles. Deduplicate exact base-bill identities across roles and versions; exclude requests and resolutions from bill counts. Preserve role labels, source/session context and unavailable/partial evidence. Test overlapping roles, duplicate versions, zero counts, stable most/fewest ordering and House/Senate scopes. Consider an optional fourth directory column, total-sponsored sorting and compact role labels only in the future scoped design. Present factual activity, never a performance score or an inference of support for every version.
 
+**Party column extension (November 5, 2026) · Medium · Approved/Not started.** Offer Party in the Legislators Columns menu, unchecked by default. Preserve the existing default column selection and existing saved choices. This extension has its own evidence dependency: an authoritative affiliation record matched by exact member identity, chamber and session, with applicable dates where membership changes. For 2027 use verified roster evidence under [SESSION-002](#session-002). Current contacts, sponsor names and successor records cannot establish historical affiliation.
+
+**Acceptance:** Toggling Party shows the recorded affiliation or an explicit unavailable value for that member and session. Verify the default, toggle and existing optional-column combinations on desktop and phone, with enlarged text, keyboard access and accessible table headings. Keep counts, profile links and other columns aligned. This directory requirement is separate from the address lookup restrictions in [LEG-001](#leg-001).
+
 ## 6. Additional bill transparency and legal resources
 
 ### TRANS-001
@@ -221,6 +233,14 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Dependencies:** Stable version/section/vote identities and preserved route compatibility.
 - **Source:** [Roadmap Stage 4](../ROADMAP.md#stage-4--additional-bill-information--planned).
 - **Acceptance:** Direct reload and Back/Forward reach the intended version, section or vote with accessible focus/context; invalid or missing targets have clear recovery. Existing bill and history links continue working.
+
+### TRANS-008
+
+**Optional party affiliation on verified roll calls** — **Low** · **Approved/Not started** (November 5, 2026).
+
+- **Dependencies:** Verified vote identity, chamber, roll-call date, individual entries and source totals, plus authoritative affiliation applicable to each exact legislator at that vote. Coordinate with [LEG-003](#leg-003) for affiliation evidence and [DATA-002](#data-002), [DATA-003](#data-003) and [DATA-004](#data-004) for vote conflicts, identities and coverage.
+- **Acceptance:** A reader can optionally view counts for each recorded party by Yes, No and every other category actually recorded in that roll call. Preserve source category labels. Where supported, show the verified party beside an individual voter. Keep unavailable affiliation distinct from a recorded unaffiliated status. Identify unattributable entries separately and reconcile displayed counts to the verified roll call without double counting.
+- **Safeguards:** Test a change of affiliation across dated votes, a missing affiliation, an unresolved voter, and an incomplete or conflicting tally. Preserve warnings and withheld attributions. Withhold a breakdown where the evidence cannot support it. Describe recorded votes only, without inferring party positions, individual motives or missing identities. Provide accessible labels and an equivalent readable presentation on narrow screens.
 
 ### LEGAL-001
 
