@@ -21,6 +21,6 @@ Application name: UtahBug. Repository: UtahBills. This is an independent applica
 End every final summary with exactly: This is the UTAHBILLS Project (CODEX).
 Do not add that line to processing/progress updates.
 
-## Temporary indexing restriction
+## Search indexing
 
-Until public release is explicitly approved, preserve `<meta name="robots" content="noindex, nofollow">` in the static head of every application HTML page. Current hash routes share index.html. Do not block crawling in robots.txt or submit sitemaps during development. Keep direct access, source attribution, snapshot freshness and review-status disclosures. Phase 4A explicitly removes the Research Prototype banner and visible label; Phase 4E subsequently removes Main identification from the footer. At approved public release, remove the directive from all application HTML and verify the deployed source; see README.md.
+GitHub Main and Review always keep static noindex, nofollow. The owner authorized public indexing on legislation.utahbug.com for the homepage and records that pass the frozen production source audit. Prepare that release from the last approved production package using scripts/prepare_public_index.py. Preserve the source dates, provenance, canonical URLs, rollback packages and the existing application. New production code or data requires separate authorization. See docs/PUBLIC_SEARCH_INDEXING.md for release and registration checks.
