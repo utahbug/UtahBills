@@ -19,9 +19,62 @@ try{
  const rows=await page.locator('.legislator-row').evaluateAll(es=>es.map(e=>({id:e.querySelector('h2 a').hash.split('/')[1],count:Number(e.querySelector('.request-count').textContent.replace('Requests: ','')),href:e.querySelector('.request-count').hash})));
  for(const row of rows){assert.equal(row.count,expected.get(row.id)?.size||0);assert.equal(row.href,'#legislator/'+row.id+'/2027')}
  // Every real sponsor count opens the same exact unique saved request identities.
- for(const row of rows){await page.goto(base+row.href);await page.locator('#profile-request-heading').waitFor();assert.equal(await page.locator('.profile-request-record').count(),row.count);assert.deepEqual(await page.locator('.profile-request-record .tracking-id').allTextContents(),[...(expected.get(row.id)?.keys()||[])]);for(const record of await page.locator('.profile-request-record').all()){const id=await record.locator('.tracking-id').innerText();assert.equal(await record.locator('a').getAttribute('href'),'#request/'+id)}}
+ for (const row of rows) {
+  await page.goto(base + row.href);
+  await page.locator('#profile-request-heading').waitFor();
+  const records = page.locator('.profile-request-record');
+  const saved = expected.get(row.id) ?? new Map();
+  assert.equal(await records.count(), row.count);
+  assert.deepEqual(await records.locator('.tracking-id').allTextContents(), [...saved.keys()]);
+  for (const record of await records.all()) {
+   const id = await record.locator('.tracking-id').innerText();
+   assert.equal(await record.locator('a').getAttribute('href'), '#request/' + id);
+   const {verificationState, officialStatus} = saved.get(id);
+   const label = verificationState === 'source-observed' ? 'Official status not confirmed' : officialStatus;
+   assert.ok((await record.innerText()).endsWith(' · ' + label), 'Saved status qualification: ' + id);
+  }
+ }
  for(const {record} of audit.unmatched.filter(x=>data.contactPeople?.some(p=>p.id===x.record.sponsor))){await page.goto(base+'#legislator/'+record.sponsor+'/2027');await page.locator('#profile-request-heading').waitFor();assert.match(await page.locator('main').innerText(),/Current contact snapshot; historical membership unavailable/);assert.ok((await page.locator('.profile-request-record .tracking-id').allTextContents()).includes(record.trackingID))}
- const observed=source.find(r=>r.verificationState==='source-observed'&&data.legislators.some(p=>p.id===r.sponsor));assert.ok(observed);await page.goto(base+'#legislator/'+observed.sponsor+'/2027');await page.locator('#profile-request-heading').waitFor();const observedRow=page.locator('.profile-request-record').filter({has:page.locator(`a[href="#request/${observed.trackingID}"]`)});assert.match(await observedRow.innerText(),/Official status not confirmed/);await observedRow.locator('a').click();await page.locator('.request-heading').waitFor();await page.goBack();await page.locator('#profile-request-heading').waitFor();
+ // A successful reconciliation can leave no source-observed requests. Exercise
+ // both profile states independently of the records present on the test date.
+ for (const includeObserved of [false, true]) {
+  const fixturePage = await browser.newPage();
+  try {
+   const sponsor = {id: 'TESTSPONSOR', name: 'Fixture Sponsor', house: 'H', district: '1'};
+   const verified = make('AAAAAAAAAA', sponsor.id, {
+    shortTitle: 'Verified fixture request', verificationState: 'status-verified', officialStatus: 'In Process'
+   });
+   const observed = make('BBBBBBBBBB', sponsor.id, {
+    shortTitle: 'Observed fixture request', verificationState: 'source-observed'
+   });
+   const catalog = {...data, legislators: [sponsor], contactPeople: [], measures: [],
+    requests2027: [verified], requestArchive2027: [verified], requestObservations2027: [],
+    sourceObservedRequests2027: includeObserved ? [observed] : []};
+   await fixturePage.route('**/data/catalog-ui.json', route => route.fulfill({json: catalog}));
+   await fixturePage.goto(base + '#legislators');
+   const countLink = fixturePage.locator('.legislator-row .request-count');
+   assert.equal(await countLink.getAttribute('href'), '#legislator/' + sponsor.id + '/2027');
+   assert.equal(Number((await countLink.innerText()).replace('Requests: ','')), includeObserved ? 2 : 1);
+   await countLink.click();
+   await fixturePage.locator('#profile-request-heading').waitFor();
+   const rows = fixturePage.locator('.profile-request-record');
+   const expectedIDs = includeObserved ? [verified.trackingID, observed.trackingID] : [verified.trackingID];
+   assert.deepEqual((await rows.locator('.tracking-id').allTextContents()).sort(), expectedIDs);
+   assert.match(await rows.filter({hasText: verified.shortTitle}).innerText(), /In Process/);
+   assert.equal(await rows.filter({hasText: 'Official status not confirmed'}).count(), includeObserved ? 1 : 0);
+   const record = includeObserved ? observed : verified;
+   const recordRow = rows.filter({hasText: record.shortTitle});
+   if (includeObserved) assert.match(await recordRow.innerText(), /Official status not confirmed/);
+   await recordRow.locator('a').click();
+   await fixturePage.locator('.request-heading').waitFor();
+   assert.equal(new URL(fixturePage.url()).hash, '#request/' + record.trackingID);
+   assert.equal(await fixturePage.locator('main h1').innerText(), record.shortTitle);
+   await fixturePage.goBack();
+   await fixturePage.locator('#profile-request-heading').waitFor();
+  } finally {
+   await fixturePage.close();
+  }
+ }
  await visit();await page.locator('.directory-search-tools .toolbar-info').click();await page.locator('.unmatched-requests>summary').click();assert.equal(await page.locator('.unmatched-requests li').count(),audit.unmatched.length);for(const {record,reason} of audit.unmatched)assert.match(await page.locator('.unmatched-requests li').filter({has:page.locator(`a[href="#request/${record.trackingID}"]`)}).innerText(),new RegExp(reason));await page.keyboard.press('Escape');
  for(const chamber of ['','H','S']){await page.locator('#directory-chamber').selectOption(chamber);const pool=data.legislators.filter(p=>!chamber||p.house===chamber);assert.equal(await page.locator('.directory-chamber').count(),0);for(const key of ['name','district','bills','requests'])for(const direction of ['ascending','descending']){await page.locator('#directory-sort').selectOption(key+':'+direction);assert.deepEqual(await ids(),sortLegislators(pool,data,key,direction).map(p=>p.id))}}
  await page.locator('#directory-chamber').selectOption('');await page.locator('#directory-sort').selectOption('name:ascending');await page.locator('[data-directory-sort="requests"]').click();const dir=await page.locator('#directory-sort').inputValue();assert.equal(dir,'requests:descending');await page.locator('[data-directory-sort="requests"]').click();assert.equal(await page.locator('#directory-sort').inputValue(),'requests:ascending');
