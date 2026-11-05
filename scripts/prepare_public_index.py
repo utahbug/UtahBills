@@ -181,6 +181,11 @@ def prepare():
                 f'Retrieval dates and official sources appear on each record.</p>'
                 f'<details><summary>Browse {len(paths)} verified public requests</summary>'
                 f"<ul>{links}</ul></details>The interactive application needs JavaScript.")
+    # Keep the owner's Search Console verification in the static production head.
+    verification = '<meta name="google-site-verification" content="ZKG8lpRJm0pul-p71Sr40uapb_2lLYlN7WmTiBHidqs" />'
+    require(home.count("</head>") == 1 and "google-site-verification" not in home,
+            "Unexpected verification metadata in frozen homepage")
+    home = home.replace("</head>", verification + "</head>", 1)
     changes["index.html"] = home.replace(old, fallback).encode()
     headers = (site / "_headers").read_text()
     restriction = "  X-Robots-Tag: noindex, nofollow\n"
