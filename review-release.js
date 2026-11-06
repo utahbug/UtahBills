@@ -20,3 +20,9 @@ if(!recentLabel()){const observer=new MutationObserver(()=>{if(recentLabel())obs
 
 // Hide duplicates only after replacement setup succeeds; Main never loads this module.
 document.documentElement.classList.add('review-settings-ready');
+
+// Reuse the original rendered envelope node and its existing circular icon styling.
+const headerContact=document.querySelector('header .header-contact');
+const contactIcon=document.createElement('span');contactIcon.className='header-contact review-contact-icon';contactIcon.setAttribute('aria-hidden','true');panel.querySelector('a[href="#contact"]').prepend(contactIcon);
+function moveContactIcon(){const svg=headerContact.querySelector('svg');if(!svg)return false;contactIcon.append(svg);return true}
+if(!moveContactIcon()){const observer=new MutationObserver(()=>{if(moveContactIcon())observer.disconnect()});observer.observe(headerContact,{childList:true,subtree:true})}

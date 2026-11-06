@@ -18,3 +18,8 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 @container site-header (max-width:280px){.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:16px!important;padding-bottom:60px!important}.phone-navigation #review-settings-trigger,.phone-navigation header:has(#review-settings-trigger) .header-contact,.phone-navigation header:has(#review-settings-trigger) #appearance-trigger{top:auto;bottom:4px;transform:none}}
 
 .review-settings-ready header :is(#appearance-trigger,.header-contact){display:none}
+
+/* Shared label column; the original circular envelope occupies its leading icon slot. */
+#review-settings .review-appearance-row,#review-settings a{padding-left:38px}
+#review-settings a{position:relative}
+#review-settings .review-contact-icon.header-contact{position:absolute;left:8px;right:auto;top:50%;bottom:auto;transform:translateY(-50%);width:22px;height:22px;min-width:0;min-height:0}
