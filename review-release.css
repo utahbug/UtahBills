@@ -1,16 +1,20 @@
 /* November 13 Review experiment. Shared typography, density and dark palette remain intact. */
 :root:not([data-theme="dark"]){--appearance-page:#eef3f7;--line:#cddae3}
 #review-settings-trigger{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:44px;height:44px;min-width:44px;padding:10px;border:0;background:transparent;color:var(--appearance-link,#155c79)}
-header .header-inner:has(#review-settings-trigger){padding-right:164px}
+header .header-inner:has(#review-settings-trigger){padding-right:72px}
 header:has(#review-settings-trigger) .header-contact{right:48px}
 header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
-.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:148px!important}
-#review-settings{position:fixed;inset:auto;margin:0;width:17rem;max-width:calc(100vw - 24px);padding:12px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto}
-#review-settings h2{font-size:1rem;margin:0 0 8px}
-#review-settings label{display:block}
-#review-settings select{display:block;width:100%;margin:4px 0 8px}
-#review-settings a,#review-settings summary{display:flex;align-items:center;min-height:44px;padding:8px 4px;font-size:1rem;font-weight:400}
-#review-settings details{padding:0;margin:0;border-top:1px solid var(--line)}
-#review-settings details a{padding-left:12px}
+.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:64px!important}
+#review-settings{position:fixed;inset:auto;margin:0;width:18rem;max-width:calc(100vw - 24px);padding:4px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto}
+#review-settings-trigger svg{width:20px;height:20px}
+#review-settings .review-appearance-row{display:flex;align-items:center;gap:8px;min-height:44px;padding:4px 8px}
+#review-settings label{flex:1;min-width:0;overflow-wrap:anywhere}
+#review-settings select{width:7em;max-width:55%;min-width:0;min-height:44px;margin:0;padding:6px 8px;font:inherit}
+#review-settings a{display:flex;align-items:center;min-height:44px;padding:4px 8px;font-size:1rem;font-weight:400;overflow-wrap:anywhere}
+/* Phone-only flat reading surfaces; reuse white and the existing tint. Desktop/dark stay unchanged. */
+:root.phone-navigation:not([data-theme="dark"]):has(main #activity-results,main .calendar-controls){--appearance-page:#fff}
+:root.phone-navigation:not([data-theme="dark"]) main .month-grid .calendar-blank{background:#eef3f7}
 @media(max-width:700px){header .header-inner:has(#review-settings-trigger){padding-right:16px;padding-bottom:60px}#review-settings-trigger{top:auto;bottom:8px;transform:none}header:has(#review-settings-trigger) .header-contact{right:48px}header:has(#review-settings-trigger) #appearance-trigger{right:92px}.phone-navigation #review-settings-trigger{top:50%;bottom:auto;transform:translateY(-50%)}}
 @container site-header (max-width:280px){.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:16px!important;padding-bottom:60px!important}.phone-navigation #review-settings-trigger,.phone-navigation header:has(#review-settings-trigger) .header-contact,.phone-navigation header:has(#review-settings-trigger) #appearance-trigger{top:auto;bottom:4px;transform:none}}
+
+.review-settings-ready header :is(#appearance-trigger,.header-contact){display:none}
