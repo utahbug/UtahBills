@@ -199,6 +199,37 @@
           "YXDVILQHGE"
         ]
       }
+    },
+    {
+      "sources": {
+        "requests": {
+          "url": "https://le.utah.gov/data/2027GS/filelist.json",
+          "path": "data/catalog-raw/e92959d778e3e3eadb89b85c0b85c6d59d6220060c0157a69ce07870bd1140ad.json",
+          "sha256": "e92959d778e3e3eadb89b85c0b85c6d59d6220060c0157a69ce07870bd1140ad",
+          "retrievedAt": "2026-11-06T19:27:23.869909+00:00"
+        },
+        "statuses": {
+          "url": "https://le.utah.gov/bills/billSearch.jsp?sess=2027GS&disp=all&sub=all",
+          "path": "data/catalog-raw/9d01a16e9bd2d3cce66b82404779c15d1bfb03f7df628d9dd3946ce2159acf56.txt",
+          "sha256": "9d01a16e9bd2d3cce66b82404779c15d1bfb03f7df628d9dd3946ce2159acf56",
+          "retrievedAt": "2026-11-06T19:27:24.406602+00:00"
+        },
+        "index": {
+          "url": "https://le.utah.gov/data/2027GS/billlist.json",
+          "path": "data/catalog-raw/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "retrievedAt": "2026-11-06T19:27:23.426083+00:00"
+        }
+      },
+      "baseline": {
+        "path": "data/observation-baselines/6fbf18322e1e5af32c68e919307bd7029890f2f1b435164e54da6d5d03770bc6.json",
+        "sha256": "6fbf18322e1e5af32c68e919307bd7029890f2f1b435164e54da6d5d03770bc6"
+      },
+      "facts": {
+        "officialTotal": 282,
+        "matchedStatuses": 282,
+        "missingIDs": []
+      }
     }
   ]
 }
