@@ -112,3 +112,7 @@ Phase 7J: Owner physically tested and approved UI-026 in Review; promotion to Ma
 | [UI-028 · Responsive tagline](TASK_BACKLOG.md#ui-028) | Resize across the visibility threshold in both directions. Check menu spacing and access to independence and nonpartisanship disclosures. |
 | [UI-029 · Settings menu](TASK_BACKLOG.md#ui-029) | Exercise Appearance, Contact, About and FAQ by keyboard and touch. Check focus return, viewport fit and availability of standalone controls through owner acceptance. |
 | [UI-030 · Phone navigation position](TASK_BACKLOG.md#ui-030) | On iPhone, verify Bottom by default, reversible local persistence and exactly one active bar in both orientations. Recheck UI-025 detail navigation and tablet/desktop behavior. |
+
+## November 13 Review validation
+
+[UI-029](TASK_BACKLOG.md#ui-029) Settings implementation is now authorized for Review only. Retain standalone Appearance/Contact pending acceptance. [UI-031](TASK_BACKLOG.md#ui-031) covers the restrained color experiment. Check physical iPhone portrait/landscape, keyboard/Safari chrome, native zoom, VoiceOver and owner visual preference; verify original controls and Main behavior remain intact. Automated Chromium/WebKit nine-width, theme, appearance persistence, focus/Escape, enlarged-text/zoom and axe checks passed locally. Publication and mandatory CI must be recorded separately. [Focused evidence and release exclusions](NOVEMBER13_RELEASE_PREPARATION.md).

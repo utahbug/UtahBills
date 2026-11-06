@@ -4,11 +4,12 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from xml.etree import ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from prepare_public_index import (NS, ORIGIN, ROBOTS_META, STATUS_URL, audit_pages,
-                                  digest, index_html, sitemap)
+                                  digest, index_html, sitemap, prepare)
 
 
 class PublicIndexTest(unittest.TestCase):
@@ -80,6 +81,20 @@ class PublicIndexTest(unittest.TestCase):
         (self.site / path).write_bytes(b"[]")
         with self.assertRaisesRegex(ValueError, "Altered source"):
             audit_pages(self.site, self.files)
+
+
+class CandidateGateTest(unittest.TestCase):
+    def test_wrong_checksum_and_commit_stop_before_writing(self):
+        with tempfile.TemporaryDirectory() as folder:
+            base = Path(folder)
+            (base / "release-manifest.json").write_text(json.dumps({
+                "contentSha256": "a" * 64, "commit": "old", "phase": "unindexed-prelaunch-candidate"}))
+            with patch("prepare_public_index.verify_package"), patch("prepare_public_index.subprocess.check_output", side_effect=["", "current"]):
+                with self.assertRaisesRegex(ValueError, "Wrong production baseline"):
+                    prepare(base, "b" * 64, candidate=True)
+                with self.assertRaisesRegex(ValueError, "this exact committed"):
+                    prepare(base, "a" * 64, candidate=True)
+            self.assertEqual([p.name for p in base.iterdir()], ["release-manifest.json"])
 
 
 if __name__ == "__main__":

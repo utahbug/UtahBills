@@ -159,15 +159,18 @@ def sitemap(paths):
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
 
 
-def prepare():
-    verify_package(BASE)
-    prior = json.loads((BASE / "release-manifest.json").read_bytes())
-    require(prior["contentSha256"] == BASE_HASH, "Wrong production baseline")
+def prepare(base=BASE, base_hash=BASE_HASH, candidate=False):
+    verify_package(base)
+    prior = json.loads((base / "release-manifest.json").read_bytes())
+    require(prior["contentSha256"] == base_hash, "Wrong production baseline")
     git = lambda *args: subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
     require(not git("status", "--porcelain"), "Prepare from a clean checkout")
     commit = git("rev-parse", "HEAD")
-    target = ROOT / "release-candidates" / ("public-index-" + commit)
-    site = BASE / "site"
+    target = ROOT / "release-candidates" / (("indexable-candidate-" if candidate else "public-index-") + commit)
+    if candidate:
+        require(prior["commit"] == commit and prior["phase"] == "unindexed-prelaunch-candidate",
+                "Candidate must come from this exact committed production-only build")
+    site = base / "site"
     paths, excluded, catalog = audit_pages(site, prior["files"])
     changes = {p: index_html((site / p).read_text(encoding="utf-8")).encode() for p in paths}
     home = index_html((site / "index.html").read_text(encoding="utf-8"))
@@ -217,8 +220,8 @@ def prepare():
     for path in changes.keys() - prior["files"].keys():
         save(path, changes[path])
     release = json.loads((site / "release.json").read_bytes())
-    release.update(phase="public-search-release", approved=True,
-                   publicIndexing={"changeCommit": commit, "baseContentSha256": BASE_HASH,
+    release.update(phase="indexable-release-candidate" if candidate else "public-search-release", approved=not candidate,
+                   publicIndexing={"changeCommit": commit, "baseContentSha256": base_hash,
                                    "eligibleRequests": len(paths), "eligibleBills": 0,
                                    "excludedSourceObserved": excluded},
                    runtimeCodeSha256=compact_hash({p: h for p, h in files.items()
@@ -240,7 +243,14 @@ def prepare():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--audit", action="store_true")
-    if parser.parse_args().audit:
+    parser.add_argument("--candidate-from", type=Path, help="Prepare only; never upload. Exact current-commit production-only package.")
+    parser.add_argument("--candidate-sha256", help="Expected content checksum of that package")
+    args = parser.parse_args()
+    require(bool(args.candidate_from) == bool(args.candidate_sha256), "Both candidate arguments are required")
+    require(not (args.audit and args.candidate_from), "Audit and candidate preparation are separate")
+    if args.candidate_from:
+        prepare(args.candidate_from.resolve(), args.candidate_sha256, candidate=True)
+    elif args.audit:
         verify_package(BASE)
         manifest = json.loads((BASE / "release-manifest.json").read_bytes())
         require(manifest["contentSha256"] == BASE_HASH, "Unexpected production checksum")

@@ -920,3 +920,11 @@ All four entries are **Low · Proposed**. The owner requested documentation only
 ### UI-030
 
 **iPhone navigation position.** Explore a reversible Top/Bottom preference for the existing four-icon navigation on phone layouts only. A fresh browser defaults to Bottom. Verify switching both ways, persistence after reload on the same device/browser, and usable navigation if storage is unavailable. Exactly one primary bar may be visible, focusable or announced at a time. Check portrait and landscape, safe-area and keyboard clearance, active-section announcements, repeated bill taps and Back/Forward from detail pages. Tablet and desktop retain their established navigation. Preserve UI-025 and UI-026.
+
+## November 13 preparation — November 6 status
+
+The first genuine post-repair schedule passed; see [evidence](NOVEMBER13_RELEASE_PREPARATION.md). TEST-001 scheduled verification is satisfied for this repair, while continuing operational monitoring remains necessary. UI-029 is implemented as a Review-only experiment, pending required CI, publication and owner acceptance. This authorization supersedes only UI-029’s earlier proposed-only implementation restriction. Standalone controls remain. UI-027/028/030 remain deferred. CAL-004/TRANS-002 description publication is excluded for lack of authoritative exact request associations. DATA-005 and RELEASE-001/UI-001 acceptance are not completed by this batch.
+
+### UI-031
+
+**Restrained color refinement · Review experiment · Low priority.** Use existing palette variables for a lightly tinted light-mode page, white records and restrained dividers; preserve dark mode, compact layout, current typography, AA contrast and visible focus. Dependencies: combined artifact isolation and UI-001. Acceptance: matched Main/Review views at phone through wide desktop widths, enlarged text and zoom; no clipping or lost controls; existing lighter typography stays Review-only; owner visual/device acceptance before promotion. [Verification](NOVEMBER13_RELEASE_PREPARATION.md).
