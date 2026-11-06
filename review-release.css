@@ -1,0 +1,16 @@
+/* November 13 Review experiment. Shared typography, density and dark palette remain intact. */
+:root:not([data-theme="dark"]){--appearance-page:#eef3f7;--line:#cddae3}
+#review-settings-trigger{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:44px;height:44px;min-width:44px;padding:10px;border:0;background:transparent;color:var(--appearance-link,#155c79)}
+header .header-inner:has(#review-settings-trigger){padding-right:164px}
+header:has(#review-settings-trigger) .header-contact{right:48px}
+header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
+.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:148px!important}
+#review-settings{position:fixed;inset:auto;margin:0;width:17rem;max-width:calc(100vw - 24px);padding:12px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto}
+#review-settings h2{font-size:1rem;margin:0 0 8px}
+#review-settings label{display:block}
+#review-settings select{display:block;width:100%;margin:4px 0 8px}
+#review-settings a,#review-settings summary{display:flex;align-items:center;min-height:44px;padding:8px 4px;font-size:1rem;font-weight:400}
+#review-settings details{padding:0;margin:0;border-top:1px solid var(--line)}
+#review-settings details a{padding-left:12px}
+@media(max-width:700px){header .header-inner:has(#review-settings-trigger){padding-right:16px;padding-bottom:60px}#review-settings-trigger{top:auto;bottom:8px;transform:none}header:has(#review-settings-trigger) .header-contact{right:48px}header:has(#review-settings-trigger) #appearance-trigger{right:92px}.phone-navigation #review-settings-trigger{top:50%;bottom:auto;transform:translateY(-50%)}}
+@container site-header (max-width:280px){.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:16px!important;padding-bottom:60px!important}.phone-navigation #review-settings-trigger,.phone-navigation header:has(#review-settings-trigger) .header-contact,.phone-navigation header:has(#review-settings-trigger) #appearance-trigger{top:auto;bottom:4px;transform:none}}
