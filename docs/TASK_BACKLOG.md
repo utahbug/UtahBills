@@ -928,3 +928,5 @@ The first genuine post-repair schedule passed; see [evidence](NOVEMBER13_RELEASE
 ### UI-031
 
 **Restrained color refinement · Review experiment · Low priority.** Use existing palette variables for a lightly tinted light-mode page, white records and restrained dividers; preserve dark mode, compact layout, current typography, AA contrast and visible focus. Dependencies: combined artifact isolation and UI-001. Acceptance: matched Main/Review views at phone through wide desktop widths, enlarged text and zoom; no clipping or lost controls; existing lighter typography stays Review-only; owner visual/device acceptance before promotion. [Verification](NOVEMBER13_RELEASE_PREPARATION.md).
+
+November 6 completion: UI-029/UI-031 are published in Review at `d0f77d8383f7028afb56bf681ef73dc406809887`; mandatory [CI/deployment](https://github.com/utahbug/UtahBills/actions/runs/42297176164) and live Chromium/WebKit checks passed. Main hashes/behavior and both noindex directives remain unchanged. Owner visual/physical-device acceptance is still pending; no production promotion occurred. [Evidence](NOVEMBER13_RELEASE_PREPARATION.md).
