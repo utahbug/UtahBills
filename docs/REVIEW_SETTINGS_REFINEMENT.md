@@ -22,3 +22,9 @@ Local visual captures are under `test-results/review-refinement/` and `test-resu
 Physical iPhone visual preference, native zoom, Safari keyboard/chrome and VoiceOver acceptance remain pending. These changes are not promoted to Main or included in the November 13 production candidate without separate owner approval.
 
 Local verification completed: full build and combined-artifact byte checks passed; matched Main/Review typography comparisons passed; nine-width Settings tests, focused route/background/keyboard/axe checks, and the repeated-tap/history/Copy/bookmark phone navigation suite passed in Chromium and WebKit. Published verification remains a separate rollout gate.
+
+## Contact icon follow-up
+
+Owner additionally requested the existing circular envelope inside Settings immediately before Contact. Review moves the original rendered SVG into an aria-hidden icon slot that reuses the existing `.header-contact svg` rules; it does not redraw the icon. All menu labels share one text column. The header link remains hidden in Review after replacement setup; Main retains its original visible icon/link.
+
+Chromium/WebKit checks compare the menu SVG markup and computed size, padding, circular border, stroke and colors with Main's original icon in both themes; they also verify aligned text, keyboard order, 44px link targets, nine widths, enlarged text/zoom, Contact navigation/mailto and axe. All passed locally. The duplicate-control assertion is scoped to the header because the icon styling class is intentionally reused. The popover assertion now waits for its native toggle event before checking aria-expanded. The existing CI run is not cancelled; this follow-up uses the same queued combined-artifact workflow.
