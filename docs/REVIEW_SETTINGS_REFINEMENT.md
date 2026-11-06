@@ -1,0 +1,24 @@
+# Review Settings and mobile surface refinement
+
+November 6, 2026. Owner-authorized Review-only refinement of UI-029/UI-031; no Main or production promotion.
+
+## Changes
+
+- Existing Lucide horizontal-sliders icon replaces the gear. The compact native popover has Appearance beside its Light/Dark/System select, then direct Contact, About UtahBug and Frequently asked questions links. System retains the existing `device` storage value and OS preference behavior. No extra heading or nested disclosure remains.
+- Replacement functions first passed the retained Chromium/WebKit tests while standalone controls were visible. Review now hides its duplicate Appearance/Contact buttons only after replacement initialization succeeds. Main retains both controls. Minimum 44px targets, natural Tab order, visible focus, Escape return and outside dismissal remain.
+- Desktop backgrounds are unchanged. Phone Bills/Legislators retain the current blue-gray page. Activity uses a flat white reading surface with existing dividers. Calendar uses white around the agenda/grid, retaining existing date highlights and the existing tint for blank grid cells. Dark colors remain unchanged; no palette colors were added.
+- Only the phone navigation label changes from Activity to Recent. The original anchor, clock icon, destination, active state and router handlers remain intact. Desktop still says Recent Activity.
+
+## Isolation and checks
+
+Only `review-release.js` and `review-release.css` change presentation. Combined packaging continues to exclude those files from Main and production candidates and to verify identical shared application/data bytes. No acquisition, source records, indexing policy, Cloudflare settings or preserved candidate/rollback package changes are included.
+
+`tests/nov13-review.mjs` retains the nine-width, both-engine/theme, persistence/device change, route, focus, enlarged-text/zoom and axe checks. Its assertions now verify Main's standalone controls and Review's verified replacement. `tests/review-refinement.mjs` adds route-specific phone/desktop backgrounds, portrait/landscape, menu alignment/keyboard order/light dismissal, blocked storage, Recent label/icon/destination/history and visual captures. The existing Review typography/navigation checks remain, with Contact reached through Settings in Review.
+
+Initial test notes: browser innerText included trailing layout whitespace around Recent; the assertion trims that whitespace without changing the label. One local navigation run overlapped artifact rebuilding and timed out loading rows; the unchanged test subsequently passed in Chromium and WebKit against the completed artifact. WebKit’s default Tab preference skipped ordinary links; explicit natural-order tab stops now make all three Settings links reachable. No safeguard or source-integrity assertion was relaxed.
+
+Local visual captures are under `test-results/review-refinement/` and `test-results/nov13/`. Required CI and combined Pages publication gate the rollout. Record the actual published result in the change PR and final report; local checks alone do not establish deployment.
+
+Physical iPhone visual preference, native zoom, Safari keyboard/chrome and VoiceOver acceptance remain pending. These changes are not promoted to Main or included in the November 13 production candidate without separate owner approval.
+
+Local verification completed: full build and combined-artifact byte checks passed; matched Main/Review typography comparisons passed; nine-width Settings tests, focused route/background/keyboard/axe checks, and the repeated-tap/history/Copy/bookmark phone navigation suite passed in Chromium and WebKit. Published verification remains a separate rollout gate.

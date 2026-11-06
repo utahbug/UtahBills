@@ -915,7 +915,7 @@ All four entries are **Low · Proposed**. The owner requested documentation only
 
 ### UI-029
 
-**Settings menu.** Evaluate a top-right gear with the accessible name “Settings” and entries for Appearance, Contact, and About & FAQ. Confirm all three appearance choices and their persistence, the Contact page and email action, and access to both About and FAQ. Test keyboard and touch opening, announced expanded state, visible focus, Escape dismissal and focus return to the gear. The menu must stay within the viewport and retain 44 px targets. Keep existing standalone controls available until the owner accepts the replacement.
+**Settings menu.** Evaluate a top-right horizontal-sliders control with the accessible name “Settings” and entries for Appearance, Contact, and About & FAQ. Confirm all three appearance choices and their persistence, the Contact page and email action, and access to both About and FAQ. Test keyboard and touch opening, announced expanded state, visible focus, Escape dismissal and focus return to the Settings trigger. The menu must stay within the viewport and retain 44 px targets. Main retains its standalone controls. The owner now permits hiding Review duplicates after replacement functionality passes verification; physical acceptance and Main promotion remain separate.
 
 ### UI-030
 
@@ -928,3 +928,5 @@ The first genuine post-repair schedule passed; see [evidence](NOVEMBER13_RELEASE
 ### UI-031
 
 **Restrained color refinement · Review experiment · Low priority.** Use existing palette variables for a lightly tinted light-mode page, white records and restrained dividers; preserve dark mode, compact layout, current typography, AA contrast and visible focus. Dependencies: combined artifact isolation and UI-001. Acceptance: matched Main/Review views at phone through wide desktop widths, enlarged text and zoom; no clipping or lost controls; existing lighter typography stays Review-only; owner visual/device acceptance before promotion. [Verification](NOVEMBER13_RELEASE_PREPARATION.md).
+
+November 6 owner refinement updates UI-029/UI-031 for Review only: horizontal-sliders trigger, compact one-row Appearance/direct links, verified replacement before duplicate-control hiding, and mobile-only Activity/Calendar white surfaces. Bills/Legislators phone tint and all desktop backgrounds remain unchanged. The UI-026 phone label becomes Recent in Review only, preserving the existing anchor/icon. [Checks and acceptance limits](REVIEW_SETTINGS_REFINEMENT.md).

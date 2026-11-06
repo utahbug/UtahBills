@@ -116,3 +116,7 @@ Phase 7J: Owner physically tested and approved UI-026 in Review; promotion to Ma
 ## November 13 Review validation
 
 [UI-029](TASK_BACKLOG.md#ui-029) Settings implementation is now authorized for Review only. Retain standalone Appearance/Contact pending acceptance. [UI-031](TASK_BACKLOG.md#ui-031) covers the restrained color experiment. Check physical iPhone portrait/landscape, keyboard/Safari chrome, native zoom, VoiceOver and owner visual preference; verify original controls and Main behavior remain intact. Automated Chromium/WebKit nine-width, theme, appearance persistence, focus/Escape, enlarged-text/zoom and axe checks passed locally. Publication and mandatory CI must be recorded separately. [Focused evidence and release exclusions](NOVEMBER13_RELEASE_PREPARATION.md).
+
+## Review Settings/mobile refinement
+
+UI-029/UI-031: verify sliders trigger, Appearance/select alignment, Light/Dark/System persistence and device changes, Contact/About/FAQ direct links, keyboard order, Escape/focus, outside dismissal, 44px targets and blocked storage. Duplicates may be hidden only in Review after replacement verification. Confirm desktop backgrounds unchanged; phone Bills/Legislators retain tint; Activity/Calendar use existing white without losing date/active/focus highlights. UI-026: Recent retains its clock icon/destination/active state and history. Physical iPhone/VoiceOver/native zoom acceptance remains pending. [Focused verification](REVIEW_SETTINGS_REFINEMENT.md).
