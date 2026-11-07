@@ -1,9 +1,9 @@
 {
-  "codeCommit": "1500a31bba15fbe36b96bb5c6c539988603b862b",
-  "lastSuccessfulDeploymentCommit": "1500a31bba15fbe36b96bb5c6c539988603b862b",
-  "run": 42336318056,
+  "codeCommit": "f4a2559925b0e444b56899a63204130036ffcb06",
+  "lastSuccessfulDeploymentCommit": "f4a2559925b0e444b56899a63204130036ffcb06",
+  "run": 42401729084,
   "mandatoryTests": "passed attempt 1",
-  "pages": "success 2026-11-06 21:47 MST",
+  "pages": "success 2026-11-07 12:15 MST",
   "artifactId": null,
   "envelopePublished": true,
   "production": "unchanged",
@@ -53,5 +53,7 @@
       "iconContactNavigation": "passed"
     }
   },
-  "liveRefinementSuite": "Chromium/WebKit phone/tablet/desktop Light/Dark three-entry menu, direct touch toggling, persistence/legacy device preference, nine widths, keyboard, enlarged text/zoom, axe passed; screenshots inspected"
+  "liveRefinementSuite": "Chromium/WebKit four direct entries, routes, icons, phone/tablet/desktop Light/Dark, touch toggle, persistence, nine widths, keyboard, enlarged text/zoom and axe passed; screenshots inspected",
+  "ciCompatibility": "Build pinned to previously successful ubuntu-24.04 after ubuntu-latest/26.04 broke Playwright installation; all checks retained",
+  "scheduledRecovery": "pending genuine scheduled run; acquisition not rerun"
 }
