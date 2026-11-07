@@ -1,0 +1,838 @@
+{
+  "scope": "Investigation only; nine October 21-22 meetings, not a statewide census",
+  "checkedDateMountain": "2026-11-05",
+  "requestSnapshot": {
+    "url": "https://le.utah.gov/data/2027GS/filelist.json",
+    "sha256": "85e9f7a95b2fb7ae928199bab3a4bce82f7f9d47e89e4838eeaac17c16813443",
+    "retrievedAt": "2026-11-05T19:59:39.024271+00:00",
+    "count": 281,
+    "scheduledRun": 42099089278,
+    "publication": "Failed before deployment; this is investigation evidence, not production data"
+  },
+  "counts": {
+    "meetings": 9,
+    "draftProposals": 20,
+    "comparisonDocuments": 1,
+    "corroboratedRequestCandidates": 13,
+    "directTrackingIDAssociations": 0,
+    "approvedForPublication": 0
+  },
+  "meetings": [
+    {
+      "event": "Economic Development and Workforce Services Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20650/1234",
+      "sha256": "0a605378ba73360602d2bd1dd351d486b481d94794f986bca0870ee2bb2342ff",
+      "retrievedAt": "2026-11-06T02:53:30.981Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003634.pdf",
+          "description": "2 - National Register Review Committee Sunset Amendments (V003) (Drafter: R. Bailey)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003636.pdf",
+          "description": "3 - Sunset Extension for Service Programs (V005) (Drafter: R. Bailey)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003844.pdf",
+          "description": "4 - UIPA Overview Presentation (Office of Legislative Research and General Counsel)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003641.pdf",
+          "description": "4 - Statutory Purposes Presentation (Utah Inland Port Authority)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003843.pdf",
+          "description": "4 - One Pager Investment Sheet (UIPA)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003845.pdf",
+          "description": "5 - MIDA Overview Presentation (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003846.pdf",
+          "description": "5 - MIDA Presentation (Military Installation Development Authority)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003847.pdf",
+          "description": "6 - POMSLA Overview Presentation (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003820.pdf",
+          "description": "6 - Utah's Epicenter of Innovation Presentation (The Point Utah)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003611.pdf",
+      "minutes": "/interim/2026/pdf/00003950.pdf"
+    },
+    {
+      "event": "Law Enforcement and Criminal Justice Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20680/1234",
+      "sha256": "023958502dd1326ec6147060687d6712706ea1dc1b5444c3f2d829fd22b3cc87",
+      "retrievedAt": "2026-11-06T02:53:31.259Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003836.pdf",
+          "description": "2 - Utah's Insanity Defense - Applicability to Utah State Hospital/Definitions (Department of Health and Human Services (DHHS))"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003854.pdf",
+          "description": "2 - The Insanity Defense in Utah (Statewide Association of Prosecutors and Public Attorneys (SWAPP)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003701.pdf",
+          "description": "3 - Criminal Provision Technical Corrections (V000) (Drafter: S. Larson)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003823.pdf",
+          "description": "4 - Electronic Privacy Presentation (Institute for Justice)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003827.pdf",
+          "description": "4 - Electronic Privacy Presentation (Libertas Institute)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003678.pdf",
+          "description": "5 - Victim Services Commission Study (Victim Services Commission)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003607.pdf",
+      "minutes": "/interim/2026/pdf/00003916.pdf"
+    },
+    {
+      "event": "Natural Resources, Agriculture, and Environment Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20644/1234",
+      "sha256": "4300e07f2a24412697066de6aa3a5a797f07bb635fd06f4a73a58b99bc884338",
+      "retrievedAt": "2026-11-06T02:53:31.515Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003808.pdf",
+          "description": "2 - State Water Policy Review Handout (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003842.pdf",
+          "description": "2 - State Water Policy Review Presentation (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003626.pdf",
+          "description": "3 - Draft Legislation \"Resource Development Coordinating Committee Sunset Extension\" (v001) (Drafter: R. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003625.pdf",
+          "description": "4 - Draft Legislation \"Precipitation Capture and Storage Amendments\" (v008) (Drafter: P. Owen)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003862.pdf",
+          "description": "4 - Handout (Rep. Shelley)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003628.pdf",
+          "description": "5 - Draft Legislation \"Domesticated Elk Advisory Council Sunset Extension\" (v002) (Drafter: R. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003629.pdf",
+          "description": "6 - Draft Legislation \"Land Conservation Board Amendments\" (v002) (Drafter: P. Owen)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003752.pdf",
+          "description": "7 - Landscape-Scale Lands Report (Public Lands Policy Coordinating Office)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003841.pdf",
+          "description": "8 - 2026 Wildfire Update (Division of Forestry, Fire, and State Lands)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003780.pdf",
+          "description": "9 - Water Year Report (Division of Water Resources)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003613.pdf",
+      "minutes": "/interim/2026/pdf/00003914.pdf"
+    },
+    {
+      "event": "Revenue and Taxation Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20668/1234",
+      "sha256": "a6b9105a98253c955e588786bd4312bc42102099641e86bf7ee4caa19692d3bf",
+      "retrievedAt": "2026-11-06T02:53:31.768Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003826.pdf",
+          "description": "1 - Internal Revenue Code Report (State Tax Commission)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003837.pdf",
+          "description": "2 - Draft Legislation \"Tax Amendments\" (V007) (Drafter: A. Arthur)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003856.pdf",
+          "description": "3 - Property Tax Relief for Households (Office of Legislative Research and General Counsel)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003839.pdf",
+          "description": "3 - Property Tax Relief Programs Handout (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003830.pdf",
+          "description": "4 - Property Tax Notice Requirements (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003898.pdf",
+          "description": "4 - Modernizing Utah's Property Valuation Notices (Tooele County Auditor)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003867.pdf",
+          "description": "4 - Salt Lake County Valuation Notice Example (Salt Lake County)"
+        },
+        {
+          "docUrl": "https://www.youtube.com/playlist?app=desktop&list=PLAkrPwEaOjQYn2M5wdaq_MTkT4Q60QNxZ&ra=m",
+          "description": "4 - Property Tax Communication Resources (Utah League and Cities and Towns)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003831.pdf",
+          "description": "5 - STATS Annual Report (Utah Association of Counties)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003832.pdf",
+          "description": "6 - County Appeals Information (State Tax Commission)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003810.pdf",
+          "description": "6 and 7 - State Tax Commission Reports Presentation (State Tax Commission)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003834.pdf",
+          "description": "7 - Entities with Centrally Assessed Value Down 10% (State Tax Commission)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003835.pdf",
+          "description": "8 - Qualifying Increase Report (State Tax Commission)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003869.pdf",
+          "description": "9 - Municipal Telecommunications License Tax Presentation (OLRGC)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003679.pdf",
+      "minutes": "/interim/2026/pdf/00003913.pdf"
+    },
+    {
+      "event": "Transportation Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20656/1234",
+      "sha256": "34078113d4f6b02438e00990e31aed136d33a942ca1b796fd104e9079f4cea93",
+      "retrievedAt": "2026-11-06T02:53:31.784Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003691.pdf",
+          "description": "2 - 3 - Utah Transit Authority Presentation (Utah Transit Authority)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003692.pdf",
+          "description": "2 - 3 - UTA's Strategic Priorities Handout (UTA)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003782.pdf",
+          "description": "4 - FrontRunner 2x Update Presentation (Utah Department of Transportation and UTA)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003783.pdf",
+          "description": "5 - Public Transit Innovation Grants Presentation (UDOT)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003590.pdf",
+          "description": "6 - Draft Legislation \"Motorcycle Amendments\" (V005) (Drafter: K. Gasser)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003592.pdf",
+          "description": "6 - Motorcycle Safety Presentation (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003714.pdf",
+          "description": "7 - Draft Legislation \"Commercial Driver Licenses Amendments\" (V011) (Drafter: R. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003799.pdf",
+          "description": "8 - CLEAR Presentation (CLEAR)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003587.pdf",
+      "minutes": "/interim/2026/pdf/00003920.pdf"
+    },
+    {
+      "event": "Business and Labor Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20638/1234",
+      "sha256": "0dc3d76dd831b1524524bdebf9bc14b33b7dacb28127acc24fa5311da3288761",
+      "retrievedAt": "2026-11-06T02:53:32.045Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003872.pdf",
+          "description": "2 - Proposed Occupations for Review (OPLR)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003817.pdf",
+          "description": "3 - Residence Lien Recovery Fund Report (Department of Commerce)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003756.pdf",
+          "description": "4 - Draft Legislation \"Health Professions Licensing Amendments\" (v007) (Drafter: C. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003873.pdf",
+          "description": "5 - Minor Surgical Procedure Recommendations Handout (OPLR)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003876.pdf",
+          "description": "5 - Draft Legislation \"Professional Licensing Modifications\" (v020) (Drafter: C. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003877.pdf",
+          "description": "5 - Draft Legislation \"Professional Licensing Modifications\" (v019 compared with v020) (Drafter: C. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003639.pdf",
+          "description": "6 - Draft Legislation \"Health Profession Licensing Modifications\" (v006) (Drafter: C. Williams)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003640.pdf",
+          "description": "7 - Draft Legislation \"Property Management Amendments\" (v008) (Drafter: A. Weenig)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003878.pdf",
+          "description": "8 - Health Insurance Policy Review Presentation (Insurance Department)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003638.pdf",
+      "minutes": "/interim/2026/pdf/00003919.pdf"
+    },
+    {
+      "event": "Political Subdivisions Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20718/1234",
+      "sha256": "e36a9783ead5ff814f00b740f70bf5b9311be4fe0a86f87b30fb696fd7ca2ad0",
+      "retrievedAt": "2026-11-06T02:53:32.324Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003635.pdf",
+          "description": "2 - Public Treasurer's Investment Fund and State Auditor Report (Office of the State Auditor)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003883.pdf",
+          "description": "3 - Woods Cross Letter of Opposition to H.B. 501 (Woods Cross City)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003648.pdf",
+          "description": "4 - H.B. 501 \"Water Modifications\" (2026 General Session)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003938.pdf",
+          "description": "4 - Water Infrastructure Fees Projects Study (Utah Rivers Council)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003677.pdf",
+          "description": "5 - Draft Legislation \"Open and Public Meeting Modifications\" (V10) (Drafter: S. Schaefermeyer)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003649.pdf",
+          "description": "6 - Salt Lake City Public Utilities Audit (Office of the Legislative Auditor General)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003650.pdf",
+          "description": "6 - Salt Lake City Public Utilities Audit Presentation (Office of the Legislative Auditor General)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003880.pdf",
+          "description": "7 - Impact Fees Audit Presentation (OLAG)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003616.pdf",
+      "minutes": "/interim/2026/pdf/00003939.pdf"
+    },
+    {
+      "event": "Public Utilities, Energy, and Technology Interim Committee",
+      "date": "2026-10-21",
+      "url": "https://glen.le.utah.gov/committees/meeting/20678/1234",
+      "sha256": "631f7d429b3e9009d0039be0bc637525d776309334e22b5ec20b622190e34d70",
+      "retrievedAt": "2026-11-06T02:53:32.601Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003642.pdf",
+          "description": "2 - Portable Solar Device Amendments (V005) (Drafter: S. Elder)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003821.pdf",
+          "description": "3 - Electricity and Natural Gas Cybersecurity Audit Presentation (Office of the Legislative Auditor General)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003822.pdf",
+          "description": "3 - Electricity and Natural Gas Cybersecurity Audit Report (OLAG)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003897.pdf",
+          "description": "4 - Drinking Water System Security Annual Report (Division of Drinking Water)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003866.pdf",
+          "description": "5 - Statewide Digital Connectivity Plan Report (Utah Broadband Center)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003887.pdf",
+          "description": "6 - Utah Energy Research Board Report Presentation (Utah Energy Research Board)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003605.pdf",
+      "minutes": "/interim/2026/pdf/00003951.pdf"
+    },
+    {
+      "event": "Legislative Water Development Commission",
+      "date": "2026-10-22",
+      "url": "https://glen.le.utah.gov/committees/meeting/20733/1234",
+      "sha256": "aac520466fd1fdc2eabc126381eb396d4a6224cdd51e7ada03b7071b00bba0cb",
+      "retrievedAt": "2026-11-06T02:53:32.872Z",
+      "materials": [
+        {
+          "docUrl": "/interim/2026/pdf/00003630.pdf",
+          "description": "2 - Draft Legislation \"Groundwater Management Amendments\" (v012) (Drafter: P. Owen)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003631.pdf",
+          "description": "3 - Draft Legislation \"Water Rights Restricted Account Amendments\" (v002) (Drafter: P. Owen)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003632.pdf",
+          "description": "4 - Draft Legislation \"Colorado River Authority Membership Amendments\" (v008) (Drafter: P. Owen)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003633.pdf",
+          "description": "5 - Draft Legislation \"Transfer of Water Interests\" (v002) (Drafter: P. Owen)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003850.pdf",
+          "description": "6 - State Water Policy Review Presentation (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003851.pdf",
+          "description": "6 - State Water Policy Review Handout (OLRGC)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003903.pdf",
+          "description": "6 - The Bountiful Sub-Aquifer is in Trouble (South Davis Water District)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003863.pdf",
+          "description": "7 - Great Salt River Handout (Ian Harvey)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003894.pdf",
+          "description": "7 - Great Salt River Presentation (Ian Harvey)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003749.pdf",
+          "description": "8- Trust Progress (Great Salt Lake Watershed Enhancement Trust)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003893.pdf",
+          "description": "8 - Presentation (Great Salt Lake Accounting)"
+        },
+        {
+          "docUrl": "/interim/2026/pdf/00003781.pdf",
+          "description": "9 - Phragmites Removal Coordination (Department of Agriculture and Food)"
+        }
+      ],
+      "agenda": "/Interim/2026/pdf/00003614.pdf",
+      "minutes": "/interim/2026/pdf/00003927.pdf"
+    }
+  ],
+  "documents": [
+    {
+      "docUrl": "/interim/2026/pdf/00003634.pdf",
+      "description": "2 - National Register Review Committee Sunset Amendments (V003) (Drafter: R. Bailey)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003634.pdf",
+      "file": "00003634.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20650/1234",
+      "sha256": "c503c7b4fb8ea49d3fa7fe2d9c033777dc14a044154a8f4174fd06f1b0be5f03",
+      "retrievedAt": "2026-11-06T02:53:50.710Z",
+      "documentTitle": "National Register Review Committee Sunset Amendments",
+      "draftSponsor": "Karen Kwan",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "OWJRIPTDEL",
+      "requestSponsorID": "KWANK",
+      "requestSponsorName": "Kwan, Karen",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003636.pdf",
+      "description": "3 - Sunset Extension for Service Programs (V005) (Drafter: R. Bailey)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003636.pdf",
+      "file": "00003636.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20650/1234",
+      "sha256": "b3eff356091c66501918166f9b7f815403780729d7869ca3810300cb5faf358d",
+      "retrievedAt": "2026-11-06T02:53:50.741Z",
+      "documentTitle": "Sunset Extension for Service Programs",
+      "draftSponsor": "Karen Kwan",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "VVARFIFFUT",
+      "requestSponsorID": "KWANK",
+      "requestSponsorName": "Kwan, Karen",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003701.pdf",
+      "description": "3 - Criminal Provision Technical Corrections (V000) (Drafter: S. Larson)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003701.pdf",
+      "file": "00003701.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20680/1234",
+      "sha256": "2e2a5b9044ab04285f4fad1cd2458c9f667a0cbdf0b846412aeaef9a7d92535d",
+      "retrievedAt": "2026-11-06T02:53:50.778Z",
+      "documentTitle": "Criminal Provision Technical Corrections",
+      "draftSponsor": "Calvin R. Musselman",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "AYWKMFJYRV",
+      "requestSponsorID": "MUSSECR",
+      "requestSponsorName": "Musselman, Calvin R.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003626.pdf",
+      "description": "3 - Draft Legislation \"Resource Development Coordinating Committee Sunset Extension\" (v001) (Drafter: R. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003626.pdf",
+      "file": "00003626.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20644/1234",
+      "sha256": "adbf5d1c7701f42ee2e3fdcd5267c6c3721b3c4468ca7818a2b6e58163eb0eef",
+      "retrievedAt": "2026-11-06T02:53:50.808Z",
+      "documentTitle": "Resource Development Coordinating Committee Amendments",
+      "draftSponsor": "Carl R. Albrecht",
+      "session": "2027GS",
+      "classification": "unresolved-title-discrepancy",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003625.pdf",
+      "description": "4 - Draft Legislation \"Precipitation Capture and Storage Amendments\" (v008) (Drafter: P. Owen)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003625.pdf",
+      "file": "00003625.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20644/1234",
+      "sha256": "16b86779b8dd6dfe5833a1d1a087372ce413bb92415814e27bf7ada0f40b8569",
+      "retrievedAt": "2026-11-06T02:53:50.839Z",
+      "documentTitle": "Precipitation Capture and Storage Amendments",
+      "draftSponsor": "Troy Shelley",
+      "session": "2027GS",
+      "classification": "unmatched-title",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003628.pdf",
+      "description": "5 - Draft Legislation \"Domesticated Elk Advisory Council Sunset Extension\" (v002) (Drafter: R. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003628.pdf",
+      "file": "00003628.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20644/1234",
+      "sha256": "ab5c4bb619592dfbbc6567358054888e6709b0a7fdfd60af2c55a0c6bce1f237",
+      "retrievedAt": "2026-11-06T02:53:50.867Z",
+      "documentTitle": "Domesticated Elk Advisory Council Sunset Extension",
+      "draftSponsor": "Derrin R. Owens",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "NHLSKTLQND",
+      "requestSponsorID": "OWENSD",
+      "requestSponsorName": "Owens, Derrin R.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003629.pdf",
+      "description": "6 - Draft Legislation \"Land Conservation Board Amendments\" (v002) (Drafter: P. Owen)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003629.pdf",
+      "file": "00003629.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20644/1234",
+      "sha256": "926bfb810980a6e9c452114cdee9a49e7a6c59dad8739dd909585f06bb6b8271",
+      "retrievedAt": "2026-11-06T02:53:50.892Z",
+      "documentTitle": "Land Conservation Board Amendments",
+      "draftSponsor": "Rex P. Shipp",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "LMQXRESDLY",
+      "requestSponsorID": "SHIPPRP",
+      "requestSponsorName": "Shipp, Rex P.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003837.pdf",
+      "description": "2 - Draft Legislation \"Tax Amendments\" (V007) (Drafter: A. Arthur)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003837.pdf",
+      "file": "00003837.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20668/1234",
+      "sha256": "f133d0b5f4ee89073ee458c8513cbfa7504f2d8534e8a827fb79785315e549c5",
+      "retrievedAt": "2026-11-06T02:53:50.926Z",
+      "documentTitle": "Tax Amendments",
+      "draftSponsor": "",
+      "session": "2027GS",
+      "classification": "unresolved-no-sponsor",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "OOKJOEVXNM",
+      "requestSponsorID": "",
+      "requestSponsorName": "",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003590.pdf",
+      "description": "6 - Draft Legislation \"Motorcycle Amendments\" (V005) (Drafter: K. Gasser)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003590.pdf",
+      "file": "00003590.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20656/1234",
+      "sha256": "a6fafa449c478d7f81a50fd8998deb63063ba042243f3fbd269c8cfcbbc630ae",
+      "retrievedAt": "2026-11-06T02:53:50.962Z",
+      "documentTitle": "Motorcycle Amendments",
+      "draftSponsor": "Walt Brooks",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "WJBCAUWMWD",
+      "requestSponsorID": "BROOKW",
+      "requestSponsorName": "Brooks, Walt",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003714.pdf",
+      "description": "7 - Draft Legislation \"Commercial Driver Licenses Amendments\" (V011) (Drafter: R. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003714.pdf",
+      "file": "00003714.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20656/1234",
+      "sha256": "76ec7cf98e6121bd83d861002638e2ad284eebfa5e8f0e7db61d9e2fc8a55783",
+      "retrievedAt": "2026-11-06T02:53:51.001Z",
+      "documentTitle": "Commercial Driver Licenses Amendments",
+      "draftSponsor": "Candice B. Pierucci",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "BBGNDHWWWU",
+      "requestSponsorID": "PIERUC",
+      "requestSponsorName": "Pierucci, Candice B.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003756.pdf",
+      "description": "4 - Draft Legislation \"Health Professions Licensing Amendments\" (v007) (Drafter: C. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003756.pdf",
+      "file": "00003756.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20638/1234",
+      "sha256": "ce1620ca133c7b480ccaee988498694c646e25b14e8caf33d550abf6dc447f22",
+      "retrievedAt": "2026-11-06T02:53:51.041Z",
+      "documentTitle": "Health Professions Licensing Amendments",
+      "draftSponsor": "",
+      "session": "2027GS",
+      "classification": "unresolved-no-sponsor",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "QWUGWFWJPU",
+      "requestSponsorID": "",
+      "requestSponsorName": "",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003876.pdf",
+      "description": "5 - Draft Legislation \"Professional Licensing Modifications\" (v020) (Drafter: C. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003876.pdf",
+      "file": "00003876.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20638/1234",
+      "sha256": "36883f1a3c2a0ad2011988f41ca8bc742b9dfa843f5198d5a78495e1d771799a",
+      "retrievedAt": "2026-11-06T02:53:51.082Z",
+      "documentTitle": "Professional Licensing Modifications",
+      "draftSponsor": "Norman K Thurston",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "YQAFXESDQS",
+      "requestSponsorID": "THURSNK",
+      "requestSponsorName": "Thurston, Norman K",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003877.pdf",
+      "description": "5 - Draft Legislation \"Professional Licensing Modifications\" (v019 compared with v020) (Drafter: C. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003877.pdf",
+      "file": "00003877.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20638/1234",
+      "sha256": "a37ed7ab8f40e0ecfbe5a8b2cc01cc66ccfdb965742aa6a04449694b0e2ab9eb",
+      "retrievedAt": "2026-11-06T02:53:51.115Z",
+      "documentTitle": "Professional Licensing Modifications",
+      "draftSponsor": "Norman K Thurston",
+      "session": "2027GS",
+      "classification": "comparison-only",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "YQAFXESDQS",
+      "requestSponsorID": "THURSNK",
+      "requestSponsorName": "Thurston, Norman K",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003639.pdf",
+      "description": "6 - Draft Legislation \"Health Profession Licensing Modifications\" (v006) (Drafter: C. Williams)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003639.pdf",
+      "file": "00003639.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20638/1234",
+      "sha256": "ded9923dd2fa5e118edc5a5b4c5c133750b931cee7fb1e360dfd9001dce70bbf",
+      "retrievedAt": "2026-11-06T02:53:51.164Z",
+      "documentTitle": "Health Profession Licensing Modifications",
+      "draftSponsor": "Raymond P. Ward",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "UNITKLDLTU",
+      "requestSponsorID": "WARDR",
+      "requestSponsorName": "Ward, Raymond P.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003640.pdf",
+      "description": "7 - Draft Legislation \"Property Management Amendments\" (v008) (Drafter: A. Weenig)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003640.pdf",
+      "file": "00003640.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20638/1234",
+      "sha256": "b95b9677608af9428afae9cf5b5c7893b4984c2636021d986e845ab01658f7c5",
+      "retrievedAt": "2026-11-06T02:53:51.197Z",
+      "documentTitle": "Property Management Amendments",
+      "draftSponsor": "",
+      "session": "2027GS",
+      "classification": "unresolved-no-sponsor",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "BXGJYEIWSS",
+      "requestSponsorID": "",
+      "requestSponsorName": "",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003677.pdf",
+      "description": "5 - Draft Legislation \"Open and Public Meeting Modifications\" (V10) (Drafter: S. Schaefermeyer)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003677.pdf",
+      "file": "00003677.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20718/1234",
+      "sha256": "9fa60ee19f87f6cdd5cfbcf4853d5d7af399eb862334c1e4fbe4d21ef9c466ed",
+      "retrievedAt": "2026-11-06T02:53:51.223Z",
+      "documentTitle": "Open and Public Meeting Modifications",
+      "draftSponsor": "",
+      "session": "2027GS",
+      "classification": "unresolved-no-sponsor",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "OCNBFSIKLV",
+      "requestSponsorID": "",
+      "requestSponsorName": "",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003642.pdf",
+      "description": "2 - Portable Solar Device Amendments (V005) (Drafter: S. Elder)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003642.pdf",
+      "file": "00003642.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20678/1234",
+      "sha256": "c7e3a55dbdfc9582ed7951e388a2ada42c0bda985caad8e62e013bde40035365",
+      "retrievedAt": "2026-11-06T02:53:51.255Z",
+      "documentTitle": "Portable Solar Device Amendments",
+      "draftSponsor": "Colin W. Jack",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "ABSFQKHOTI",
+      "requestSponsorID": "JACKC",
+      "requestSponsorName": "Jack, Colin W.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003630.pdf",
+      "description": "2 - Draft Legislation \"Groundwater Management Amendments\" (v012) (Drafter: P. Owen)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003630.pdf",
+      "file": "00003630.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20733/1234",
+      "sha256": "5379c8499a6c6f50761b29e272a4ce981ae1b873c7fed099e6ef7ff9259917e5",
+      "retrievedAt": "2026-11-06T02:53:51.286Z",
+      "documentTitle": "Groundwater Management Amendments",
+      "draftSponsor": "Rex P. Shipp",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "HDVNLOGBLV",
+      "requestSponsorID": "SHIPPRP",
+      "requestSponsorName": "Shipp, Rex P.",
+      "savedOfficialStatus": "Bill Abandoned per Sponsor"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003631.pdf",
+      "description": "3 - Draft Legislation \"Water Rights Restricted Account Amendments\" (v002) (Drafter: P. Owen)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003631.pdf",
+      "file": "00003631.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20733/1234",
+      "sha256": "8ae4916d492bafc86579425b174e3bdfa2b12c368135f8004e66c039f585cb4f",
+      "retrievedAt": "2026-11-06T02:53:51.313Z",
+      "documentTitle": "Water Rights Restricted Account Amendments",
+      "draftSponsor": "Carl R. Albrecht",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "BSDHEWBYIL",
+      "requestSponsorID": "ALBRECR",
+      "requestSponsorName": "Albrecht, Carl R.",
+      "savedOfficialStatus": "In Process"
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003632.pdf",
+      "description": "4 - Draft Legislation \"Colorado River Authority Membership Amendments\" (v008) (Drafter: P. Owen)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003632.pdf",
+      "file": "00003632.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20733/1234",
+      "sha256": "8209548b82edaa3c5eac60fc51a87a69450746e837bf838d5f59b4cdf0afbb69",
+      "retrievedAt": "2026-11-06T02:53:51.347Z",
+      "documentTitle": "Colorado River Authority Membership Amendments",
+      "draftSponsor": "Scott H. Chew",
+      "session": "2027GS",
+      "classification": "unmatched-title",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false
+    },
+    {
+      "docUrl": "/interim/2026/pdf/00003633.pdf",
+      "description": "5 - Draft Legislation \"Transfer of Water Interests\" (v002) (Drafter: P. Owen)",
+      "url": "https://le.utah.gov/interim/2026/pdf/00003633.pdf",
+      "file": "00003633.pdf",
+      "meeting": "https://glen.le.utah.gov/committees/meeting/20733/1234",
+      "sha256": "222cdfbd3a97e51ce919937ecb220c795837af397480c3a0ea6350a8f32d0061",
+      "retrievedAt": "2026-11-06T02:53:51.376Z",
+      "documentTitle": "Transfer of Water Interests",
+      "draftSponsor": "Doug Owens",
+      "session": "2027GS",
+      "classification": "corroborated-candidate",
+      "publicationApproved": false,
+      "directTrackingIDLinkFound": false,
+      "candidateTrackingID": "TFEMJWKJCF",
+      "requestSponsorID": "OWENSDO",
+      "requestSponsorName": "Owens, Doug",
+      "savedOfficialStatus": "In Process"
+    }
+  ]
+}

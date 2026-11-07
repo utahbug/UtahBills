@@ -6,7 +6,7 @@ Last verified **2026-11-05**. UtahBug is the independent, nonpartisan public app
 
 | Environment | Verified release and evidence |
 | --- | --- |
-| [GitHub Main](https://utahbug.github.io/UtahBills/) and [Review](https://utahbug.github.io/UtahBills/review/) | Verified refresh-repair deployment **`cadae55f884b97f26efceb3f5e661f89a325870b`**. Mandatory build and Pages deployment passed. Both use the same development data, shared phone navigation and static `noindex, nofollow`. Only Review adds lighter listing typography. [Actions run](https://github.com/utahbug/UtahBills/actions/runs/42130685251) |
+| [GitHub Main](https://utahbug.github.io/UtahBills/) and [Review](https://utahbug.github.io/UtahBills/review/) | Verified handoff-only PR #5 deployment **`d7a74fb5bc3c97345dcb3ec916a5ab7b39959417`**. Mandatory CI and Pages deployment passed on November 5 Mountain time. Live app/data hashes are unchanged from the verified refresh-repair deployment `cadae55f884b97f26efceb3f5e661f89a325870b`. Both use the same development data, shared phone navigation and static `noindex, nofollow`. Only Review adds lighter listing typography. [Actions run](https://github.com/utahbug/UtahBills/actions/runs/42150258331) |
 | [Cloudflare production](https://legislation.utahbug.com/) | Existing Pages project `utahbills`, branch `main`, deployment **`aa8f3da8-71b6-4959-a0a7-6ae979ab0ecc`**. The public packaging change is `39aa68c649631f87fa3522aba1229fc583e914d8`. Production uses the Phase 7G navigation. The frozen application/data commit is **`c366381fa5406d2dd144ae3719950764cdba34eb`** (Phase 7G). Package content SHA-256 is `5fe44301e1d978bae8762571c6b9dcae1026799b760b42d2a7d99e8e1251c6bf`. [Live release metadata](https://legislation.utahbug.com/release.json) |
 | Immediate production rollback | Previous successful deployment **`a7a92227-5b04-4ae2-ab09-8f1b7c8b8d3a`**, public indexing commit `fe9ae8a51772c0c3b717d026ac63e5ba9d42fdf2`. Its content SHA-256 is `8d8b3f0ccd1a95f7c428cc4f44fc3118c73ee6e65f492e4ba1523909d4c54406`. [Release checks](https://github.com/utahbug/UtahBills/actions/runs/41973532150) |
 
@@ -42,6 +42,14 @@ Use official evidence and neutral wording. Keep requests distinct from introduce
 **November 5 planning merges.** Navigation experiments [PR #2](https://github.com/utahbug/UtahBills/pull/2) (`fa087fd4`) and party/freshness requirements [PR #3](https://github.com/utahbug/UtahBills/pull/3) (`60c84517`) merged as documentation. UI-027–030 remain low-priority Review proposals. The additional LEG-003 scope, TRANS-008 and DATA-005 are future approved directions. Their acceptance criteria are in the [backlog](TASK_BACKLOG.md) and [checklist](UI_ACCEPTANCE_CHECKLIST.md).
 
 **Search registration:** The production [sitemap](https://legislation.utahbug.com/sitemap.xml) advertises 276 eligible URLs: the homepage and 275 verified request pages. Clean Air Fund (`YXDVILQHGE`) retains noindex because its status was unconfirmed in the production snapshot. The owner’s next step is **Verify** in Google Search Console. After ownership confirmation, check prior submissions, submit the sitemap once and request homepage indexing. Bing ownership/import and submission are pending. Actual engine crawling and index inclusion require separate evidence from those accounts.
+
+Post-merge check at approximately 20:16 Mountain on November 5 found no newer genuine scheduled acquisition than run 42099089278. Main and Review still show 276 public requests (275 verified plus one unconfirmed) and 94 Calendar events. Post-repair scheduled publication remains pending; no Cloudflare candidate or upload was performed.
+
+## November 5 investigation recommendations — no implementation
+
+[Search discoverability audit](SEARCH_DISCOVERABILITY_AUDIT.md) verified all 276 eligible production sitemap pages against the accepted package and recommends a clearer, consistent static/rendered homepage title and description. Google/Bing account outcomes remain unconfirmed. No indexing or production changes were made.
+
+[Pre-introduction description investigation](REQUEST_DESCRIPTION_INVESTIGATION.md) found 20 official 2027 drafts in nine October meetings, plus one comparison. Thirteen request candidates have corroborating exact-title/session/sponsor evidence, but zero direct tracking-ID-to-draft links were found and none is approved for publication. Seven other proposals remain unmatched or unresolved. The proposed manual association policy, pilot scope and independent reviewer require owner approval. Reuse CAL-004, TRANS-002, DATA-005 and existing source/editorial gates; preserve scheduled-refresh reliability as the priority. No application, acquisition or published-data change is included.
 
 ## Publication and recovery
 
