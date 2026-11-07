@@ -40,3 +40,11 @@ Final outcome: attempt 3 also timed out in Pages deployment at 2026-11-07 01:00:
 ## Publication recovery — November 6, 7:01 PM MST
 
 The owner authorized one further retry. [Attempt 4](https://github.com/utahbug/UtahBills/actions/runs/42310105510/attempts/4) successfully published `233df74` using the same retained artifact, with no build or acquisition rerun. Live Chromium/WebKit checks passed: original envelope in Settings opens Contact/mailto; Main controls and HTML/app/styles/catalog/Calendar hashes remain unchanged; shared Review app/data bytes match; both retain noindex. The focused refinement suite also passed against the published site (desktop/phone, Light/Dark, icon styling, spacing, keyboard and axe). The earlier publication blocker is resolved. Physical owner acceptance remains pending.
+
+## Final menu typography and spacing — November 6
+
+The owner requested uniform regular-weight menu text without persistent link underlines. Review-only CSS now inherits the application font/size at weight 400 for labels, selector and links, removes menu-link underlines, uses consistent 44px rows, and provides the existing subtle hover surface plus inset visible focus. The original circular envelope and aligned text column remain unchanged. Native select padding is adjusted to keep WebKit rows consistent without replacing the accessible native control. No typography outside the Settings panel changes.
+
+Focused Chromium/WebKit checks passed at 320/390px portrait, 844px landscape and 1280px desktop in Light/Dark: exact font properties, absent underlines, aligned labels, equal row spacing, 44px targets, original icon styling, keyboard/Escape/outside dismissal, blocked storage and axe. Desktop and phone screenshots were visually inspected. The full hosted suite and live publication remain required. Physical iPhone/VoiceOver and owner visual acceptance remain separate.
+
+The preceding envelope release `233df74` successfully published on owner-authorized deployment-only attempt 4 of [run 42310105510](https://github.com/utahbug/UtahBills/actions/runs/42310105510/attempts/4), November 6 at 7:01 PM MST. Live checks confirmed noindex and unchanged Main hashes before this typography refinement.
