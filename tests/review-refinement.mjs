@@ -34,12 +34,12 @@ for(const engine of [chromium,webkit]){
    await p.evaluate(axe);assert.deepEqual((await p.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
    const starts=await p.locator('#review-settings>.review-menu-item').evaluateAll(es=>es.map(e=>{const text=[...e.childNodes].find(n=>n.nodeType===Node.TEXT_NODE&&n.textContent.trim());const range=document.createRange();range.selectNodeContents(text);return range.getBoundingClientRect().x}));assert.ok(Math.max(...starts)-Math.min(...starts)<1,'Aligned labels');
    if([390,1280].includes(viewport.width))await p.screenshot({path:`test-results/review-refinement/${engine.name()}-contact-menu-${viewport.width}-${theme}.png`});
-   assert.deepEqual((await p.locator('#review-settings>.review-menu-item').allTextContents()).map(t=>t.trim()),['Dark/Light','Contact','About & FAQ']);
+   assert.deepEqual((await p.locator('#review-settings>.review-menu-item').allTextContents()).map(t=>t.trim()),['Dark/Light','Contact','About','FAQ']);
    assert.equal(await p.locator('#review-settings select').count(),0);assert.doesNotMatch(await p.locator('#review-settings').innerText(),/Appearance/);
-   assert.equal(await p.locator('#review-settings>.review-menu-item svg').count(),3);
-   await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.getAttribute('href')),'#contact');await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.id),'review-info-toggle');
-   await p.keyboard.press('Enter');assert.equal(await p.locator('#review-info-toggle').getAttribute('aria-expanded'),'true');assert.equal(await p.evaluate(()=>document.activeElement.getAttribute('href')),'#about');await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.getAttribute('href')),'#faq');
-   await p.keyboard.press('Escape');assert.equal(await p.locator('#review-info-options').isVisible(),false);assert.equal(await p.evaluate(()=>document.activeElement.id),'review-info-toggle');
+   assert.equal(await p.locator('#review-settings>.review-menu-item svg').count(),4);
+   assert.equal(await p.locator('#review-info-options,#review-info-toggle,.review-submenu').count(),0);
+   for(const href of ['#contact','#about','#faq']){await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.getAttribute('href')),href)}
+   for(const cls of ['review-info-icon','review-faq-icon']){assert.equal(await p.locator('.'+cls+' svg').evaluate(e=>getComputedStyle(e).strokeWidth),'1.25px');assert.equal(await p.locator('.'+cls).evaluate(e=>getComputedStyle(e).opacity),'0.85')}
    const dark=theme==='dark';assert.equal(await p.locator('#review-theme-toggle').getAttribute('aria-pressed'),String(dark));await p.locator('#review-theme-toggle').click();assert.equal(await p.locator('html').getAttribute('data-theme'),dark?'light':'dark');assert.equal(await p.locator('#review-theme-toggle').getAttribute('aria-pressed'),String(!dark));await p.locator('#review-theme-toggle').focus();await p.keyboard.press('Space');assert.equal(await p.locator('html').getAttribute('data-theme'),theme);
    await p.keyboard.press('Escape');await p.waitForFunction(()=>document.activeElement.id==='review-settings-trigger');
    await trigger.click();await p.locator('main h1').click();await p.waitForFunction(()=>!document.querySelector('#review-settings').matches(':popover-open'));

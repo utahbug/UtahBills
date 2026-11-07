@@ -8,10 +8,7 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 #review-settings{position:fixed;inset:auto;margin:0;width:14rem;max-width:calc(100vw - 24px);padding:4px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto;font:inherit;font-weight:400}
 #review-settings-trigger svg{width:20px;height:20px}
 #review-settings :is(button,a){font:inherit;color:inherit;text-decoration:none}
-#review-settings :is(.review-menu-item,.review-submenu a){position:relative;display:flex;align-items:center;width:100%;min-height:44px;margin:0;padding:6px 8px 6px 38px;border:0;border-radius:3px;background:transparent;text-align:left;overflow-wrap:anywhere}
-#review-settings .review-submenu{padding:0 8px 4px 38px}
-#review-settings .review-submenu[hidden]{display:none}
-#review-settings .review-submenu a{padding:6px 8px}
+#review-settings .review-menu-item{position:relative;display:flex;align-items:center;width:100%;min-height:44px;margin:0;padding:6px 8px 6px 38px;border:0;border-radius:3px;background:transparent;text-align:left;overflow-wrap:anywhere}
 #review-settings .review-menu-icon{position:absolute;left:8px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:22px;height:22px;color:var(--appearance-muted,#536573)}
 #review-settings .review-menu-icon svg{width:22px;height:22px}
 /* Phone-only flat reading surfaces; reuse white and the existing tint. Desktop/dark stay unchanged. */
@@ -30,3 +27,6 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 
 /* Review offers only explicit Light/Dark; keep legacy preferences readable, not selectable. */
 .review-settings-ready .appearance-settings{display:none}
+
+#review-settings :is(.review-info-icon,.review-faq-icon){opacity:.85}
+#review-settings :is(.review-info-icon,.review-faq-icon) svg{stroke-width:1.25}
