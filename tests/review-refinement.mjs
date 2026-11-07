@@ -27,8 +27,13 @@ for(const engine of [chromium,webkit]){
    assert.equal(await p.locator('#review-settings h2,#review-settings details').count(),0);
    const icon=p.locator('#review-settings a[href="#contact"] svg');assert.equal(await icon.count(),1);assert.equal(await p.locator('header .header-contact svg').count(),0);assert.equal(await p.locator('header .header-contact').isVisible(),false);
    assert.deepEqual(await icon.evaluate(e=>{const s=getComputedStyle(e);return {markup:e.outerHTML,width:s.width,height:s.height,padding:s.padding,border:s.border,borderRadius:s.borderRadius,strokeWidth:s.strokeWidth,color:s.color}}),icons[theme]);
+   const typography=await p.locator('#review-settings label,#review-settings select,#review-settings>a').evaluateAll(es=>es.map(e=>{const s=getComputedStyle(e);return {family:s.fontFamily,size:s.fontSize,weight:s.fontWeight,decoration:s.textDecorationLine}}));
+   assert.ok(typography.every(t=>JSON.stringify(t)===JSON.stringify(typography[0])),'Uniform menu typography');assert.equal(typography[0].weight,'400');assert.equal(typography[0].decoration,'none');
+   const rows=await p.locator('#review-settings .review-appearance-row,#review-settings>a').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {y:r.y,height:r.height,width:r.width}}));assert.ok(rows.every(r=>r.height>=44&&r.width>=44));assert.ok(rows.every(r=>Math.abs(r.height-rows[0].height)<1),JSON.stringify({engine:engine.name(),viewport,theme,rows}));
+   for(let i=1;i<rows.length;i++)assert.ok(Math.abs(rows[i].y-rows[i-1].y-rows[i-1].height)<1,'No inconsistent row gaps');
+   await p.evaluate(axe);assert.deepEqual((await p.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
    const starts=await p.locator('#review-settings label,#review-settings>a').evaluateAll(es=>es.map(e=>{const text=[...e.childNodes].find(n=>n.nodeType===Node.TEXT_NODE&&n.textContent.trim());const range=document.createRange();range.selectNodeContents(text);return range.getBoundingClientRect().x}));assert.ok(Math.max(...starts)-Math.min(...starts)<1,'Aligned labels');
-   if(viewport.width===390)await p.screenshot({path:`test-results/review-refinement/${engine.name()}-contact-menu-${theme}.png`});
+   if([390,1280].includes(viewport.width))await p.screenshot({path:`test-results/review-refinement/${engine.name()}-contact-menu-${viewport.width}-${theme}.png`});
    const label=await p.locator('#review-settings label').boundingBox(),select=await p.locator('#review-appearance').boundingBox();assert.ok(label.x+label.width<=select.x);assert.ok(Math.abs(label.y+label.height/2-select.y-select.height/2)<2);
    assert.equal(await p.locator('#review-appearance option[value=device]').innerText(),'System');
    for(const href of ['#contact','#about','#faq']){await p.keyboard.press('Tab');assert.equal(await p.evaluate(()=>document.activeElement.getAttribute('href')),href)}
