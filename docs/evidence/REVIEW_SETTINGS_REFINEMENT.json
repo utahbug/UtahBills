@@ -1,11 +1,11 @@
 {
   "codeCommit": "233df74cc82971ffcf9698ec2983620530d28db4",
-  "lastSuccessfulDeploymentCommit": "507f0ef2052ceb2b00fe68b167de50418c0a7f36",
+  "lastSuccessfulDeploymentCommit": "233df74cc82971ffcf9698ec2983620530d28db4",
   "run": 42310105510,
   "mandatoryTests": "passed attempt 2; unchanged phase5f focus assertion failed attempt 1",
-  "pages": "attempt 2 syncing_files timeout; attempt 3 deployment-only retry timed out with blank status",
+  "pages": "attempt 4 deployment-only retry succeeded 2026-11-06 19:01 MST",
   "artifactId": 13551948458,
-  "envelopePublished": false,
+  "envelopePublished": true,
   "production": "unchanged",
   "liveChecks": {
     "chromium Main": {
@@ -28,7 +28,7 @@
         "data/calendar-ui.json": "eb22b970a606be53dd9eb1b4de937999c924889b2077680516c1f7e4e9ed367c"
       },
       "noindex": true,
-      "iconContactNavigation": "earlier version: text Contact works; envelope not published"
+      "iconContactNavigation": "passed"
     },
     "webkit Main": {
       "hashes": {
@@ -50,7 +50,8 @@
         "data/calendar-ui.json": "eb22b970a606be53dd9eb1b4de937999c924889b2077680516c1f7e4e9ed367c"
       },
       "noindex": true,
-      "iconContactNavigation": "earlier version: text Contact works; envelope not published"
+      "iconContactNavigation": "passed"
     }
-  }
+  },
+  "liveRefinementSuite": "Chromium/WebKit passed"
 }
