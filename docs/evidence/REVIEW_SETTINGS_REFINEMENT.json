@@ -1,10 +1,10 @@
 {
-  "codeCommit": "233df74cc82971ffcf9698ec2983620530d28db4",
-  "lastSuccessfulDeploymentCommit": "233df74cc82971ffcf9698ec2983620530d28db4",
-  "run": 42310105510,
-  "mandatoryTests": "passed attempt 2; unchanged phase5f focus assertion failed attempt 1",
-  "pages": "attempt 4 deployment-only retry succeeded 2026-11-06 19:01 MST",
-  "artifactId": 13551948458,
+  "codeCommit": "ae1a5810501a5b87912cb860f996b317a57b1c52",
+  "lastSuccessfulDeploymentCommit": "ae1a5810501a5b87912cb860f996b317a57b1c52",
+  "run": 42327732642,
+  "mandatoryTests": "passed attempt 1",
+  "pages": "success 2026-11-06 20:00 MST",
+  "artifactId": null,
   "envelopePublished": true,
   "production": "unchanged",
   "liveChecks": {
@@ -53,5 +53,5 @@
       "iconContactNavigation": "passed"
     }
   },
-  "liveRefinementSuite": "Chromium/WebKit passed"
+  "liveRefinementSuite": "Chromium/WebKit desktop/phone Light/Dark typography, spacing, icon, keyboard, axe passed; screenshots inspected"
 }
