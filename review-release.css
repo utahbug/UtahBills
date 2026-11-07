@@ -5,12 +5,15 @@ header .header-inner:has(#review-settings-trigger){padding-right:72px}
 header:has(#review-settings-trigger) .header-contact{right:48px}
 header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 .phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:64px!important}
-#review-settings{position:fixed;inset:auto;margin:0;width:18rem;max-width:calc(100vw - 24px);padding:4px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto;font:inherit;font-weight:400}
+#review-settings{position:fixed;inset:auto;margin:0;width:14rem;max-width:calc(100vw - 24px);padding:4px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto;font:inherit;font-weight:400}
 #review-settings-trigger svg{width:20px;height:20px}
-#review-settings .review-appearance-row{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 8px}
-#review-settings label{font:inherit;flex:1;min-width:0;overflow-wrap:anywhere}
-#review-settings select{width:7em;max-width:55%;min-width:0;min-height:44px;margin:0;padding:5px 8px;font:inherit}
-#review-settings a{display:flex;align-items:center;min-height:44px;padding:0 8px;font:inherit;color:inherit;text-decoration:none;border-radius:3px;overflow-wrap:anywhere}
+#review-settings :is(button,a){font:inherit;color:inherit;text-decoration:none}
+#review-settings :is(.review-menu-item,.review-submenu a){position:relative;display:flex;align-items:center;width:100%;min-height:44px;margin:0;padding:6px 8px 6px 38px;border:0;border-radius:3px;background:transparent;text-align:left;overflow-wrap:anywhere}
+#review-settings .review-submenu{padding:0 8px 4px 38px}
+#review-settings .review-submenu[hidden]{display:none}
+#review-settings .review-submenu a{padding:6px 8px}
+#review-settings .review-menu-icon{position:absolute;left:8px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:22px;height:22px;color:var(--appearance-muted,#536573)}
+#review-settings .review-menu-icon svg{width:22px;height:22px}
 /* Phone-only flat reading surfaces; reuse white and the existing tint. Desktop/dark stay unchanged. */
 :root.phone-navigation:not([data-theme="dark"]):has(main #activity-results,main .calendar-controls){--appearance-page:#fff}
 :root.phone-navigation:not([data-theme="dark"]) main .month-grid .calendar-blank{background:#eef3f7}
@@ -19,11 +22,11 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 
 .review-settings-ready header :is(#appearance-trigger,.header-contact){display:none}
 
-/* Shared label column; the original circular envelope occupies its leading icon slot. */
-#review-settings .review-appearance-row,#review-settings a{padding-left:38px}
-#review-settings a{position:relative}
-#review-settings .review-contact-icon.header-contact{position:absolute;left:8px;right:auto;top:50%;bottom:auto;transform:translateY(-50%);width:22px;height:22px;min-width:0;min-height:0}
+/* Original envelope styling stays intact in the shared icon column. */
+#review-settings .review-contact-icon.header-contact{right:auto;bottom:auto;min-width:0;min-height:0}
+#review-settings .review-contact-icon.header-contact svg{width:14px;height:14px}
+#review-settings :is(button,a):is(:hover,:focus-visible){background:var(--appearance-hover,#eaf1f3);text-decoration:none}
+#review-settings :is(button,a):focus-visible{outline-offset:-3px}
 
-/* Menu-only typography and feedback; keep shared application typography untouched. */
-#review-settings a:hover,#review-settings a:focus-visible{background:var(--appearance-hover,#eaf1f3);text-decoration:none}
-#review-settings :is(a,select):focus-visible{outline-offset:-3px}
+/* Review offers only explicit Light/Dark; keep legacy preferences readable, not selectable. */
+.review-settings-ready .appearance-settings{display:none}
