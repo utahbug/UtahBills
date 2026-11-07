@@ -30,3 +30,9 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 
 #review-settings :is(.review-info-icon,.review-faq-icon){opacity:.85}
 #review-settings :is(.review-info-icon,.review-faq-icon) svg{stroke-width:1.25}
+
+/* UI-027: top-navigation experiment only; the phone bottom bar is untouched. */
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"]{flex-wrap:wrap;min-width:0;max-width:100%;row-gap:6px}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;max-width:100%;padding:6px 10px;border:1px solid var(--appearance-control-border,#8295a2);border-radius:999px;text-align:center;overflow-wrap:anywhere;text-decoration:none}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a[aria-current]{background:var(--appearance-hover,#eaf1f3);border-color:var(--appearance-link,#155c79)}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a:hover{background:var(--appearance-hover,#eaf1f3)}

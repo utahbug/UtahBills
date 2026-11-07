@@ -907,6 +907,8 @@ All four entries are **Low · Proposed**. The owner requested documentation only
 
 ### UI-027
 
+**November 7: Review implementation authorized; owner visual acceptance and Main promotion pending.** This supersedes the proposed-only restriction for UI-027 alone. Top navigation only; phone bottom bar stays unchanged. [Focused verification](REVIEW_OVAL_NAVIGATION.md).
+
 **Outlined navigation pills.** Evaluate thin oval borders around the existing Bills, Recent Activity, Calendar and Legislators links. Retain their routes and phone labels. At narrow widths and enlarged text, all four labels must fit or wrap accessibly, with at least 44 × 44 px targets and no horizontal overflow. In Light and Dark, the active section must be distinguishable from an inactive link, and keyboard focus must be independently visible on either.
 
 ### UI-028
