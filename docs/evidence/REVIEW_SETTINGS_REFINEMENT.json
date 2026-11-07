@@ -1,9 +1,9 @@
 {
-  "codeCommit": "ae1a5810501a5b87912cb860f996b317a57b1c52",
-  "lastSuccessfulDeploymentCommit": "ae1a5810501a5b87912cb860f996b317a57b1c52",
-  "run": 42327732642,
+  "codeCommit": "1500a31bba15fbe36b96bb5c6c539988603b862b",
+  "lastSuccessfulDeploymentCommit": "1500a31bba15fbe36b96bb5c6c539988603b862b",
+  "run": 42336318056,
   "mandatoryTests": "passed attempt 1",
-  "pages": "success 2026-11-06 20:00 MST",
+  "pages": "success 2026-11-06 21:47 MST",
   "artifactId": null,
   "envelopePublished": true,
   "production": "unchanged",
@@ -53,5 +53,5 @@
       "iconContactNavigation": "passed"
     }
   },
-  "liveRefinementSuite": "Chromium/WebKit desktop/phone Light/Dark typography, spacing, icon, keyboard, axe passed; screenshots inspected"
+  "liveRefinementSuite": "Chromium/WebKit phone/tablet/desktop Light/Dark three-entry menu, direct touch toggling, persistence/legacy device preference, nine widths, keyboard, enlarged text/zoom, axe passed; screenshots inspected"
 }
