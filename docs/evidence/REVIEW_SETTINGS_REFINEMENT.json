@@ -1,0 +1,56 @@
+{
+  "codeCommit": "233df74cc82971ffcf9698ec2983620530d28db4",
+  "lastSuccessfulDeploymentCommit": "507f0ef2052ceb2b00fe68b167de50418c0a7f36",
+  "run": 42310105510,
+  "mandatoryTests": "passed attempt 2; unchanged phase5f focus assertion failed attempt 1",
+  "pages": "attempt 2 syncing_files timeout; attempt 3 deployment-only retry timed out with blank status",
+  "artifactId": 13551948458,
+  "envelopePublished": false,
+  "production": "unchanged",
+  "liveChecks": {
+    "chromium Main": {
+      "hashes": {
+        "index.html": "0b66ff1aa2d63ef97c6555d0d73aaf6a13775e12e286b781900053320179ffa1",
+        "app.js": "40b309d0dff60ee81979d063b7abd7177588ea13a20b022b1e88259dba73a040",
+        "styles.css": "280742286974cca8c8901aa726ac2b38f1521b42a0adac7b8fab11a69d98f7db",
+        "data/catalog-ui.json": "698f0ad4efa0b0a99fad46cf151abfeab6d9fef3a876fd05ab0424a443ef3c50",
+        "data/calendar-ui.json": "eb22b970a606be53dd9eb1b4de937999c924889b2077680516c1f7e4e9ed367c"
+      },
+      "noindex": true,
+      "iconContactNavigation": "not exercised; header control retained"
+    },
+    "chromium Review": {
+      "hashes": {
+        "index.html": "4f53d0855aeeb882a82bde16d24439e66bd26ba3c2922e340ad09623a20b54a2",
+        "app.js": "40b309d0dff60ee81979d063b7abd7177588ea13a20b022b1e88259dba73a040",
+        "styles.css": "280742286974cca8c8901aa726ac2b38f1521b42a0adac7b8fab11a69d98f7db",
+        "data/catalog-ui.json": "698f0ad4efa0b0a99fad46cf151abfeab6d9fef3a876fd05ab0424a443ef3c50",
+        "data/calendar-ui.json": "eb22b970a606be53dd9eb1b4de937999c924889b2077680516c1f7e4e9ed367c"
+      },
+      "noindex": true,
+      "iconContactNavigation": "earlier version: text Contact works; envelope not published"
+    },
+    "webkit Main": {
+      "hashes": {
+        "index.html": "0b66ff1aa2d63ef97c6555d0d73aaf6a13775e12e286b781900053320179ffa1",
+        "app.js": "40b309d0dff60ee81979d063b7abd7177588ea13a20b022b1e88259dba73a040",
+        "styles.css": "280742286974cca8c8901aa726ac2b38f1521b42a0adac7b8fab11a69d98f7db",
+        "data/catalog-ui.json": "698f0ad4efa0b0a99fad46cf151abfeab6d9fef3a876fd05ab0424a443ef3c50",
+        "data/calendar-ui.json": "eb22b970a606be53dd9eb1b4de937999c924889b2077680516c1f7e4e9ed367c"
+      },
+      "noindex": true,
+      "iconContactNavigation": "not exercised; header control retained"
+    },
+    "webkit Review": {
+      "hashes": {
+        "index.html": "4f53d0855aeeb882a82bde16d24439e66bd26ba3c2922e340ad09623a20b54a2",
+        "app.js": "40b309d0dff60ee81979d063b7abd7177588ea13a20b022b1e88259dba73a040",
+        "styles.css": "280742286974cca8c8901aa726ac2b38f1521b42a0adac7b8fab11a69d98f7db",
+        "data/catalog-ui.json": "698f0ad4efa0b0a99fad46cf151abfeab6d9fef3a876fd05ab0424a443ef3c50",
+        "data/calendar-ui.json": "eb22b970a606be53dd9eb1b4de937999c924889b2077680516c1f7e4e9ed367c"
+      },
+      "noindex": true,
+      "iconContactNavigation": "earlier version: text Contact works; envelope not published"
+    }
+  }
+}
