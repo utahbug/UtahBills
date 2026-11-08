@@ -12,7 +12,7 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 #review-settings .review-menu-icon{position:absolute;left:8px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:20px;height:20px;color:var(--appearance-muted,#536573)}
 #review-settings .review-menu-icon svg{width:20px;height:20px}
 /* Phone-only flat reading surfaces; reuse white and the existing tint. Desktop/dark stay unchanged. */
-:root.phone-navigation:not([data-theme="dark"]):has(main #activity-results,main .calendar-controls){--appearance-page:#fff}
+
 :root.phone-navigation:not([data-theme="dark"]) main .month-grid .calendar-blank{background:#eef3f7}
 @media(max-width:700px){header .header-inner:has(#review-settings-trigger){padding-right:16px;padding-bottom:60px}#review-settings-trigger{top:auto;bottom:8px;transform:none}header:has(#review-settings-trigger) .header-contact{right:48px}header:has(#review-settings-trigger) #appearance-trigger{right:92px}.phone-navigation #review-settings-trigger{top:50%;bottom:auto;transform:translateY(-50%)}}
 @container site-header (max-width:280px){.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:16px!important;padding-bottom:60px!important}.phone-navigation #review-settings-trigger,.phone-navigation header:has(#review-settings-trigger) .header-contact,.phone-navigation header:has(#review-settings-trigger) #appearance-trigger{top:auto;bottom:4px;transform:none}}
@@ -54,3 +54,27 @@ header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
 
 /* Live announcements must not create a one-pixel overflow or an unnecessary scrollbar. */
 #review-settings>.sr-only{top:0;left:0;margin:0}
+
+/* November 8: bounded spacing/color adjustments and source-qualified Key Dates. */
+main{padding-top:10px}
+:root:not(.phone-navigation):not([data-theme="dark"]){--appearance-page:#e5edf3}
+.header-inner.review-hide-tagline .independent{display:none!important}
+.header-inner .independent{white-space:nowrap}
+.review-selected-range{display:inline-flex;align-items:center;gap:5px;padding:0 7px;border:1px solid var(--appearance-control-border,#8295a2);border-radius:4px;background:var(--appearance-hover,#eaf1f3)}
+.review-event-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#review-key-dates{min-width:44px;min-height:44px;text-decoration:underline;font-weight:400;padding:4px 6px}
+#review-key-dates-dialog{box-sizing:border-box;width:min(34rem,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;padding:16px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;font:inherit}
+#review-key-dates-dialog h2{font-size:1.1rem}
+#review-key-dates-dialog ul{padding-left:20px}
+#review-key-dates-dialog li{margin:8px 0}
+#review-key-dates-dialog p{font-size:.875rem}
+#review-key-dates-dialog a{display:inline-flex;align-items:center;min-height:44px;margin-right:6px}
+#review-key-dates-dialog button{min-width:44px;min-height:44px}
+
+:root:not([data-theme="dark"]) :is(#activity-results,.calendar-agenda,#calendar-grid .month-grid){background:#fff}
+
+/* Wrapped desktop/tablet pills use their actual height, without a reserved Settings row. */
+:root:not(.phone-navigation) header .header-inner:has(#review-settings-trigger){padding-right:64px!important;padding-bottom:4px!important;row-gap:2px}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"]{row-gap:2px;margin-inline:0;max-width:100%;width:auto}
+:root:not(.phone-navigation) #review-settings-trigger{top:8px;bottom:auto;transform:none}
+

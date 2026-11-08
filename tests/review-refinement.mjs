@@ -15,10 +15,10 @@ for(const engine of [chromium,webkit]){
    for(const [route,ready] of [['requests','.bill-row'],['activity','#activity-results'],['calendar','.calendar-controls'],['legislators','.legislator-row']]){
     await p.goto(base+'review/#'+route);await p.locator(ready).first().waitFor();
     if(route==='activity')await p.locator('#activity-period').selectOption('thirty');
-    const expected=theme==='dark'?'rgb(24, 33, 43)':phone&&['activity','calendar'].includes(route)?'rgb(255, 255, 255)':'rgb(238, 243, 247)';
+    const expected=theme==='dark'?'rgb(24, 33, 43)':phone?'rgb(238, 243, 247)':'rgb(229, 237, 243)';
     assert.equal(await p.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor),expected,route+' '+viewport.width+' '+theme);
     assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
-    const link=p.locator('header nav a[href="#activity"]');assert.equal((await link.innerText()).trim(),phone?'Recent':'Recent Activity');
+    const link=p.locator('header nav a[href="#activity"]');assert.equal((await link.innerText()).trim(),'Recent');
     assert.equal(await link.locator('svg').count(),1);assert.equal(await p.locator('header nav a').count(),4);
     await p.evaluate(axe);assert.deepEqual((await p.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)})),[]);
     if(viewport.width===390)await p.screenshot({path:`test-results/review-refinement/${engine.name()}-${route}-${theme}.png`});
