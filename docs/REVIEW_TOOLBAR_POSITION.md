@@ -11,3 +11,5 @@ Focused Chromium/WebKit tests cover default/blocked storage, immediate toggles, 
 Mandatory CI, the combined Main/Review artifact and actual published checks gate delivery. Both development environments retain noindex. No data acquisition, shared application edits, Cloudflare, indexing or analytics changes are included.
 
 Physical acceptance remains required on iPhone Safari: portrait/landscape, native keyboard and browser chrome, top/bottom safe areas, repeated taps while scrolled, switching/reloading, final content and pagination clearance, VoiceOver announcements and enlarged text. Automated WebKit is not physical-device acceptance.
+
+Integration correction: the retained Settings fallback test used a generic status-region selector. UI-030 intentionally adds a second status region for toolbar changes. The assertion now targets `#review-theme-status`, preserving its blocked-storage check; the toolbar status remains separately checked. The unchanged application passed the focused Chromium/WebKit Settings suite with this selector correction. No assertion was removed or weakened.

@@ -48,7 +48,7 @@ for(const engine of [chromium,webkit]){
   }
   const p=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});
   await p.addInitScript(()=>{Storage.prototype.setItem=function(){throw Error('blocked storage')}});
-  await p.goto(base+'review/');await p.locator('.bill-row').first().waitFor();await p.getByRole('button',{name:'Settings',exact:true}).click();await p.locator('#review-theme-toggle').click();assert.equal(await p.locator('html').getAttribute('data-theme'),'dark');assert.match(await p.locator('#review-settings [role=status]').innerText(),/could not save/);await p.close();
+  await p.goto(base+'review/');await p.locator('.bill-row').first().waitFor();await p.getByRole('button',{name:'Settings',exact:true}).click();await p.locator('#review-theme-toggle').click();assert.equal(await p.locator('html').getAttribute('data-theme'),'dark');assert.match(await p.locator('#review-theme-status').innerText(),/could not save/);await p.close();
  }finally{await browser.close()}
 }
 console.log('Review refinement: phone/desktop route-specific backgrounds, unchanged dark palette, Recent destination/icon/history, aligned compact Settings, keyboard order/Escape/light dismissal, blocked storage, screenshots and axe passed in Chromium/WebKit.');
