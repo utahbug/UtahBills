@@ -30,3 +30,9 @@ Focused tests cover device defaults/saved overrides, blocked storage, same toolb
 Matched Main/Review screenshots use the same viewport, theme, route and Activity Last 30 days filter at iPhone, iPad and desktop sizes. Additional intermediate-width pill screenshots and enlarged-text checks cover wrapping and Settings clearance. Required CI and live publication must be recorded separately from local results.
 
 Physical iPhone/iPad Safari, browser chrome/safe areas, native keyboard, VoiceOver, device text sizing and owner visual acceptance remain required. No Main or Cloudflare promotion is authorized.
+
+## Local result
+
+Complete artifact built successfully: 9,335 shared files, identical data and unchanged Main app/styles/data baseline; local index matches the published baseline after Windows CRLF-to-LF normalization, with both noindex directives intact. Focused November 8, toolbar defaults/scrolling, existing Settings/zoom, oval icons/wrapping, Top and Bottom navigation and artifact checks passed in Chromium/WebKit. Matched screenshot gallery: `test-results/review-nov8/comparisons.html`; intermediate-width screenshots: `test-results/review-oval-navigation/`. Screenshots were visually inspected.
+
+Two intermittent WebKit timeouts occurred during concurrent development runs (one toolbar route tap, one landscape bill tap). Targeted pointer tracing did not reproduce them; the 24-tap landscape trace passed on both the unchanged published baseline and the final local artifact. Final retained Top and Bottom suites passed with diagnostics retained and no shared navigation changes or weakened assertions. No proven application cause is claimed. Mandatory hosted CI and live checks remain required; physical Safari acceptance is still open.
