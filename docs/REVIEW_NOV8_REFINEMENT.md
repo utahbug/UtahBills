@@ -40,3 +40,11 @@ Two intermittent WebKit timeouts occurred during concurrent development runs (on
 ## Hosted typography integration correction
 
 Run 42491409856 stopped before deployment because the retained typography comparison required identical Main/Review h1 heights. The owner-approved current 2027 heading is shorter and wraps differently. The test now explicitly verifies both exact headings and all their font/color/spacing/width properties, allowing only their natural height difference on the requests route. Other heading comparisons, listing weights/content/geometry, source assertions and all CI checks remain intact. No application change was needed.
+
+## Verified November 8 publication
+
+Commit `c0f1d77f519b3154c4a2ca12a7d286e2adf61a01` published at 8:47 AM MST (15:47:55 UTC), with [mandatory CI/Pages run 42492109323](https://github.com/utahbug/UtahBills/actions/runs/42492109323) successful on its first attempt. Desktop-icon implementation is separately reviewable at `49f40c6`. Live Chromium/WebKit passed icon/wrapping/theme/enlargement/focus/axe checks, compact toolbar defaults and persistence, and retained Top/Bottom repeated-tap/history/search/bookmark/Copy/CSV checks. Matched four-page screenshots and intermediate-width comparisons were inspected. Main baseline hashes, shared application/data bytes and both noindex directives are unchanged. No Cloudflare or acquisition action occurred.
+
+Two additional live-check timing issues were isolated: a toolbar smoke check observed the previous route before hash navigation completed, and the broader batch asserted native dialog visibility immediately after Escape. Explicit route readiness and a bounded native-close wait passed with unchanged assertions and deployed code. Mandatory hosted CI had already passed; no test or application change was pushed for these diagnostics.
+
+[Machine-readable receipt](evidence/REVIEW_NOV8_REFINEMENT.json). Local comparison gallery: `test-results/review-nov8/comparisons.html`. Owner visual acceptance, physical iPhone/iPad Safari, VoiceOver, safe-area/native-keyboard and device-text acceptance remain pending. Review is not promoted to Main or production.
