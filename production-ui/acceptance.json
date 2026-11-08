@@ -1,0 +1,26 @@
+{
+  "baseline": "e7d17e382cfc01c241164d54e70bfc869570d1cf",
+  "scope": "Owner-approved interface; excludes review-typography.css. Source bytes preserved except relative module import filenames.",
+  "files": {
+    "index.js": {
+      "source": "review-release.js",
+      "sourceSha256": "f03fb1ecdb46c29abf656a3206191b35a1e23613482630b8f5561299f740ddc2",
+      "promotedSha256": "af09988c3800ef57121677d5da511fad61af571d1dce927cb19f62899522e708"
+    },
+    "styles.css": {
+      "source": "review-release.css",
+      "sourceSha256": "ba3c2214066d5fe0c770711c39667928abd2105c68f6376233de7c93d09cc70b",
+      "promotedSha256": "ba3c2214066d5fe0c770711c39667928abd2105c68f6376233de7c93d09cc70b"
+    },
+    "content.js": {
+      "source": "review-content.js",
+      "sourceSha256": "5fe564776fef3759371415cd2f4ab663d1448c493a4b96d3391ebf66034b0180",
+      "promotedSha256": "5fe564776fef3759371415cd2f4ab663d1448c493a4b96d3391ebf66034b0180"
+    },
+    "toolbar-position.js": {
+      "source": "review-toolbar-position.js",
+      "sourceSha256": "a5b931ad4c3b40ce28efcc9eea674a64c362819f4c3ce6c7ba851a3bff5443f0",
+      "promotedSha256": "a5b931ad4c3b40ce28efcc9eea674a64c362819f4c3ce6c7ba851a3bff5443f0"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# November 8 accepted-interface production release
+
+Owner authorization: publish the interface accepted at `e7d17e382cfc01c241164d54e70bfc869570d1cf`, with verified current data, to the existing Cloudflare `utahbills` project and production branch `main`. No new project, DNS change, acquisition automation or unrelated design change is authorized. This supersedes the earlier Review-only promotion gate for the explicitly listed interface, not the separate listing typography experiment.
+
+## Promotion and package gates
+
+`production-ui/` freezes the four accepted interface source files. Only relative module import names differ from the accepted source bytes; `acceptance.json` records both hashes. Internal `review-*` selector/storage names remain for compatibility. Production bundles are named `assets/accepted-ui.js` and `assets/accepted-ui.css`. No Review directory, typography stylesheet or experimental runtime is copied into the package. Main/Review packaging and their visual behavior stay separate.
+
+Use `node scripts/prepare-release.mjs --accepted-ui` from the clean final CI-verified commit, then the existing `prepare_public_index.py --candidate-from ... --candidate-sha256 ...` audit. The approved interface switch is explicit; ordinary candidate preparation remains unchanged. Static request pages and sitemap derive from the accepted source projection and retain exact identities, dates, qualification and official links. Introduced legislation remains guarded: the indexed preparer stops if the verified empty-index assumption changes.
+
+After full package and browser verification, `node scripts/approve-release.mjs SOURCE NEW_OUTPUT SHA256 CI_RUN AUTHORIZATION` makes a separate immutable approved copy. It requires an exact checksum, indexable candidate phase, owner authorization, accepted interface identity, and successful exact-commit build/deployment. Only release metadata changes; every other file hash is preserved. The original candidate remains intact. Reverify the approved package and record its checksum before the documented Wrangler Direct Upload. Do not deploy an `approved:false` package.
+
+## Source checks
+
+Guarded refresh [42531024937](https://github.com/utahbug/UtahBills/actions/runs/42531024937) was requested after checking completed schedules. All five acquisition components succeeded, but complete workflow verification/publication is pending. At November 8 22:36 UTC, official request data listed 283 entries; 282 reconciled with official statuses, and new `YPQWEJNNQR` awaited a matching status. Calendar reported 97 events across eight complete months; introduced coverage remains zero; archive retrieved all 5,672 expected vote references. Preserve qualified source-observed evidence and never promote it to verified status or index eligibility. Final source/page audit and exact data-commit identification remain required.
+
+## Local verification and remaining gates
+
+Accepted-interface package/browser tests passed Chromium and WebKit at iPhone portrait/landscape, iPad portrait/landscape and desktop sizes, both themes, original 700 title weights (lighter Review typography excluded), toolbar defaults/preference, Settings keyboard/focus, search/bookmarks/reload, all Copy modes, complete CSV, Calendar filtering/Key Dates, static/application links and axe. Native dialog close/focus assertions wait for the asynchronous close event. Clipboard APIs are simulated; physical clipboard/VoiceOver acceptance is not claimed. Retained full CI and candidate tests remain mandatory.
+
+Current production rollback is `aa8f3da8-71b6-4959-a0a7-6ae979ab0ecc`, existing project `utahbills`, branch `main`. The immutable indexed package `public-index-39aa68c649631f87fa3522aba1229fc583e914d8` has content SHA-256 `5fe44301e1d978bae8762571c6b9dcae1026799b760b42d2a7d99e8e1251c6bf`; its checksum and live version were checked. Google verification is present. Cloudflare Analytics injection and beacon requests were verified in both browsers; a plain Node HTTP request omits the injected beacon, so that probe alone is insufficient. No Cloudflare configuration was changed.
+
+Rechecked [Direct Upload](https://developers.cloudflare.com/pages/get-started/direct-upload/) and [platform limits](https://developers.cloudflare.com/pages/platform/limits/) on November 8. Retain the pinned Wrangler procedure, file-count/asset-size checks and rollback evidence. Publication and actual custom-domain acceptance have not yet occurred.

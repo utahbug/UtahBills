@@ -1,3 +1,4 @@
+import {approveRelease} from '../scripts/approve-release.mjs';
 import {packageSocialUpdate} from '../scripts/package-social-update.mjs';
 import {applySocialPreview,socialImagePath,verifySocialImage} from '../scripts/social-preview.mjs';
 import assert from 'node:assert/strict';import {readFile,mkdir,writeFile,rm} from 'node:fs/promises';import path from 'node:path';import {packageMain,verifyRelease,digest} from '../scripts/release-package.mjs';import {historicalTitles} from '../historical-titles.js';
@@ -13,4 +14,18 @@ await assert.rejects(packageSocialUpdate(one,path.join(root,'wrong-base'),{expec
 const oldHome=home.replace(/<meta (?:name="twitter:[^"]+"|property="og:image(?::[^"]+)?") content="[^"]*">/g,'').replace('property="og:title" content="UtahBug · Utah Legislation"','property="og:title" content="Previous title"');
 const replaced=applySocialPreview(oldHome);assert.equal(replaced.slice(replaced.indexOf('</head>')),oldHome.slice(oldHome.indexOf('</head>')));assert.ok(replaced.includes('rel="canonical" href="https://legislation.utahbug.com/"'));assert.ok(replaced.includes('property="og:title" content="UtahBug · Utah Legislation"'));assert.ok(!replaced.includes('Previous title'));
 assert.throws(()=>applySocialPreview(oldHome.replace('noindex, nofollow','index, follow')),/Expected unindexed/);
+
+const promoted=path.join(root,'accepted'),accepted=await packageMain(input,promoted,{commit:'accepted-fixture'},{promoteAcceptedUI:true});
+assert.equal(accepted.acceptedInterface.baseline,'e7d17e382cfc01c241164d54e70bfc869570d1cf');
+assert.ok(accepted.files['assets/accepted-ui.js']&&accepted.files['assets/accepted-ui.css']);
+assert.ok(!Object.keys(accepted.files).some(n=>/review/i.test(n)));
+for(const [name,sha]of Object.entries(a.files))if(!['index.html','release.json'].includes(name))assert.equal(accepted.files[name],sha,'Promotion preserves '+name);
+assert.ok(!(await readFile(path.join(promoted,'site/index.html'),'utf8')).includes('review-typography'));
+await assert.rejects(approveRelease(promoted,path.join(root,'unapproved'),{expectedContentSha256:'bad'}),/checksum mismatch/);
+await assert.rejects(approveRelease(promoted,path.join(root,'wrong-phase'),{expectedContentSha256:accepted.contentSha256}),/unapproved indexable/);
+// Isolated approval fixture: no upload or source-data replacement.
+const releasePath=path.join(promoted,'site/release.json'),metadata=JSON.parse(await readFile(releasePath));metadata.phase='indexable-release-candidate';const metadataBytes=Buffer.from(JSON.stringify(metadata,null,2)+'\n');await writeFile(releasePath,metadataBytes);accepted.phase=metadata.phase;accepted.files['release.json']=digest(metadataBytes);accepted.contentSha256=digest(JSON.stringify(accepted.files));const mb=Buffer.from(JSON.stringify(accepted,null,2)+'\n');await writeFile(path.join(promoted,'release-manifest.json'),mb);await writeFile(path.join(promoted,'SHA256SUMS'),digest(mb)+'  release-manifest.json\n');
+const options={expectedContentSha256:accepted.contentSha256,authorization:'Isolated test authorization',ci:{headSha:accepted.commit,conclusion:'success',jobs:[{name:'build',conclusion:'success'},{name:'deploy',conclusion:'success'}],databaseId:1,url:'https://example.invalid/fixture'}};
+await assert.rejects(approveRelease(promoted,path.join(root,'failed-ci'),{...options,ci:{...options.ci,conclusion:'failure'}}),/mandatory CI/);
+const approved=await approveRelease(promoted,path.join(root,'approved'),options);assert.equal(approved.approved,true);assert.equal(approved.phase,'public-search-release');for(const [name,sha]of Object.entries(accepted.files))if(name!=='release.json')assert.equal(approved.files[name],sha);await verifyRelease(promoted);
 await writeFile(path.join(one,'site/app.js'),'tampered');await assert.rejects(verifyRelease(one),/checksum mismatch/);await writeFile(path.join(two,'site/extra.txt'),'extra');await assert.rejects(verifyRelease(two),/Unexpected release files/);await writeFile(path.join(input,'app.js'),'changed');await assert.rejects(packageMain(input,path.join(root,'bad'),{commit:'fixture'}),/Unverified Main artifact/);console.log('Identity-bound historical titles; deterministic production-only package; immutable raw bytes; root metadata/noindex; checksum and extra-file rejection passed.');

@@ -1,0 +1,119 @@
+/* November 13 Review experiment. Shared typography, density and dark palette remain intact. */
+:root:not([data-theme="dark"]){--appearance-page:#f5f5f7;--line:#d8dce2}
+#review-settings-trigger{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:44px;height:44px;min-width:44px;padding:10px;border:0;background:transparent;color:var(--appearance-link,#155c79)}
+header .header-inner:has(#review-settings-trigger){padding-right:72px}
+header:has(#review-settings-trigger) .header-contact{right:48px}
+header:has(#review-settings-trigger) #appearance-trigger{left:auto;right:92px}
+.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:64px!important}
+#review-settings{position:fixed;inset:auto;margin:0;width:14rem;max-width:calc(100vw - 24px);padding:4px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;box-shadow:0 4px 16px #10263833;overflow:auto;font:inherit;font-size:.9375rem;font-weight:400}
+#review-settings-trigger svg{width:20px;height:20px}
+#review-settings :is(button,a){font:inherit;color:inherit;text-decoration:none}
+#review-settings .review-menu-item{position:relative;display:flex;align-items:center;width:100%;min-height:44px;margin:0;padding:4px 8px 4px 36px;border:0;border-radius:3px;background:transparent;text-align:left;overflow-wrap:anywhere}
+#review-settings .review-menu-icon{position:absolute;left:8px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:20px;height:20px;color:var(--appearance-muted,#536573)}
+#review-settings .review-menu-icon svg{width:20px;height:20px}
+/* Neutral blank calendar cells; dark palette remains unchanged. */
+
+:root.phone-navigation:not([data-theme="dark"]) main .month-grid .calendar-blank{background:#f5f5f7}
+@media(max-width:700px){header .header-inner:has(#review-settings-trigger){padding-right:16px;padding-bottom:60px}#review-settings-trigger{top:auto;bottom:8px;transform:none}header:has(#review-settings-trigger) .header-contact{right:48px}header:has(#review-settings-trigger) #appearance-trigger{right:92px}.phone-navigation #review-settings-trigger{top:50%;bottom:auto;transform:translateY(-50%)}}
+@container site-header (max-width:280px){.phone-navigation header .header-inner:has(#review-settings-trigger){padding-right:16px!important;padding-bottom:60px!important}.phone-navigation #review-settings-trigger,.phone-navigation header:has(#review-settings-trigger) .header-contact,.phone-navigation header:has(#review-settings-trigger) #appearance-trigger{top:auto;bottom:4px;transform:none}}
+
+.review-settings-ready header :is(#appearance-trigger,.header-contact){display:none}
+
+/* Original envelope styling stays intact in the shared icon column. */
+#review-settings .review-contact-icon.header-contact{right:auto;bottom:auto;min-width:0;min-height:0}
+#review-settings .review-contact-icon.header-contact svg{width:12px;height:12px}
+#review-settings :is(button,a):is(:hover,:focus-visible){background:var(--appearance-hover,#eaf1f3);text-decoration:none}
+#review-settings :is(button,a):focus-visible{outline-offset:-3px}
+
+/* Review offers only explicit Light/Dark; keep legacy preferences readable, not selectable. */
+.review-settings-ready .appearance-settings{display:none}
+
+#review-settings :is(.review-info-icon,.review-faq-icon){opacity:.85}
+#review-settings :is(.review-info-icon,.review-faq-icon) svg{stroke-width:1.25}
+
+/* UI-027 revision: borderless icon/text navigation inside accessible targets. */
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"]{flex-wrap:wrap;min-width:0;max-width:100%;gap:2px 4px}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:44px;max-width:100%;padding:4px 8px;border:0;border-radius:4px;background:transparent;text-align:center;overflow-wrap:anywhere;text-decoration:none}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a::before{content:"";position:absolute;inset:5px 0;z-index:-1;pointer-events:none;border:0;border-radius:4px;background:transparent}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a[aria-current]::before{background:var(--appearance-hover,#eaf1f3)}
+@media(hover:hover) and (pointer:fine){
+ :root:not(.phone-navigation) header nav[aria-label="Main navigation"] a:hover::before{background:color-mix(in srgb,var(--appearance-link,#155c79) 18%,var(--appearance-surface,#fff))}
+ :root:not(.phone-navigation) header nav[aria-label="Main navigation"] a[aria-current]:hover::before{background:color-mix(in srgb,var(--appearance-link,#155c79) 24%,var(--appearance-surface,#fff))}
+}
+
+/* UI-030: one compact-layout action, preserving the original navigation node. */
+#review-settings #review-toolbar-position{display:none}
+.phone-navigation #review-settings #review-toolbar-position{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:44px;padding:4px 8px;border:0;border-radius:3px;background:transparent;text-align:left}
+#review-toolbar-position svg{width:20px;height:20px}
+.phone-navigation #review-settings{min-width:0}
+.phone-navigation[data-review-toolbar="top"]{scroll-padding-top:calc(var(--phone-nav-height,64px) + env(safe-area-inset-top,0px) + 12px)!important;scroll-padding-bottom:12px}
+.phone-navigation[data-review-toolbar="top"] body{padding-bottom:env(safe-area-inset-bottom,0px)}
+.phone-navigation[data-review-toolbar="top"] header.sticky-navigation{position:sticky;top:calc(0px - var(--review-banner-height,68px))!important}
+.phone-navigation[data-review-toolbar="top"] header>nav{position:static;inset:auto;padding-top:max(4px,env(safe-area-inset-top,0px));padding-bottom:4px;border-bottom:1px solid var(--line)}
+.phone-navigation[data-review-toolbar="top"] #back-to-top{bottom:12px}
+
+/* Live announcements must not create a one-pixel overflow or an unnecessary scrollbar. */
+#review-settings>.sr-only{top:0;left:0;margin:0}
+
+/* November 8: bounded spacing/color adjustments and source-qualified Key Dates. */
+main{padding-top:10px}
+:root:not(.phone-navigation):not([data-theme="dark"]){--appearance-page:#f5f5f7}
+.header-inner.review-hide-tagline .independent{display:none!important}
+.header-inner .independent{white-space:nowrap}
+.review-selected-range{display:inline-flex;align-items:center;gap:5px;padding:0 7px;border:1px solid var(--appearance-control-border,#8295a2);border-radius:4px;background:var(--appearance-hover,#eaf1f3)}
+.review-event-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#review-key-dates{min-width:44px;min-height:44px;text-decoration:none;font-family:inherit;font-style:italic;font-weight:400;padding:4px 6px}
+#review-key-dates-dialog{box-sizing:border-box;width:min(34rem,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;padding:16px;background:var(--appearance-surface,#fff);color:var(--appearance-text,#233547);border:1px solid var(--appearance-control-border,#8295a2);border-radius:5px;font:inherit}
+#review-key-dates-dialog h2{font-size:1.1rem}
+#review-key-dates-dialog ul{padding-left:20px}
+#review-key-dates-dialog li{margin:8px 0}
+#review-key-dates-dialog p{font-size:.875rem}
+#review-key-dates-dialog a{display:inline-flex;align-items:center;min-height:44px;margin-right:6px}
+#review-key-dates-dialog button{min-width:44px;min-height:44px}
+
+:root:not([data-theme="dark"]) :is(#activity-results,.calendar-agenda,#calendar-grid .month-grid){background:#fff}
+
+/* Wrapped desktop/tablet links use their actual height, without a reserved Settings row. */
+:root:not(.phone-navigation) header .header-inner:has(#review-settings-trigger){padding-right:64px!important;padding-bottom:4px!important;row-gap:2px}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"]{row-gap:2px;margin-inline:0;max-width:100%;width:auto}
+:root:not(.phone-navigation) #review-settings-trigger{top:8px;bottom:auto;transform:none}
+
+/* UI-027 desktop icons reuse the same nodes; compact navigation rules are untouched. */
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a{gap:5px;padding-inline:8px}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] .phone-nav-icon{display:block;width:18px;height:18px;flex-shrink:0}
+
+/* The gradient is a non-semantic two-pixel banner accent, never a text surface. */
+:root:not([data-theme="dark"]) header{background-image:linear-gradient(90deg,#35658a,#70618a,#a45e67);background-size:100% 2px;background-position:left bottom;background-repeat:no-repeat}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+#review-key-dates:focus{text-decoration:underline}
+@media(hover:hover){#review-key-dates:hover{text-decoration:underline}}
+
+/* Calendar layout only: preserve control nodes, record spacing and the current palette. */
+.calendar-controls:has(.review-month-controls){flex-direction:column;align-items:flex-start;gap:0;margin-bottom:0}
+.review-month-controls{display:flex;align-items:center;flex-wrap:wrap;gap:0 12px;max-width:100%}
+.review-month-controls>*{min-width:0;max-width:100%}
+.calendar-agenda{margin-top:4px;padding-top:0}
+.calendar-agenda .agenda-heading.results-toolbar{margin:0}
+.calendar-agenda #day-events>.calendar-date-group:first-child{margin-top:4px}
+#calendar-grid .month-grid{margin-bottom:8px}
+
+/* Review link interaction: preserve text and source-diff annotations. */
+:root a[href],:root button.text-control,:root #remove-sponsor,:root #search-guidance button{text-decoration:none!important}
+:root a[href][aria-current],:root a[href]:focus-visible,:root button.text-control:focus-visible,:root #remove-sponsor:focus-visible,:root #search-guidance button:focus-visible{text-decoration:underline!important}
+@media(hover:hover){:root a[href]:hover,:root button.text-control:hover,:root #remove-sponsor:hover,:root #search-guidance button:hover{text-decoration:underline!important}}
+:root a[href]:active,:root button.text-control:active{background-color:var(--appearance-hover,#eaf1f3)}
+/* Inline prose links need a non-color cue; official external indicators stay intact. */
+:is(main,footer) :is(p,li,dd) a[href]::before{content:"";display:inline-block;width:.8em;height:.8em;margin-inline-end:.2em;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' d='m10 13 4-4m-5 6-2 2a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 2 2-2a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0'/%3E%3C/svg%3E") center/contain no-repeat}
+/* Exact legend badge treatment, shared by legend, grid and event listings. */
+:root .calendar-key{background:var(--appearance-subtle,#e8eef3);color:var(--appearance-text,#173650);padding:1px 4px;border-radius:3px;font-family:inherit;font-size:.68rem;font-weight:700;line-height:1.5}
+:root .calendar-key.deadline{background:var(--appearance-warning-bg,#faedce);color:var(--appearance-warning-text,#604400)}
+:root .calendar-key.floor,:root .calendar-key.session{background:var(--appearance-purple-bg,#e9e4f4);color:var(--appearance-purple-text,#49396a)}
+:root .calendar-key.caucus{background:var(--appearance-positive-bg,#dceee8);color:var(--appearance-positive-text,#244d42)}
+/* Shared tracks align both rows; no offsets or reduced interaction targets. */
+.calendar-controls:has(.review-month-controls){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:0 12px;width:fit-content;max-width:100%}
+.calendar-controls :is(.review-month-controls,.review-event-controls){display:contents}
+.calendar-controls :is(.review-month-controls,.review-event-controls)>label{grid-column:1;min-width:0}
+.calendar-controls :is(#calendar-toggle,#review-key-dates){grid-column:2;justify-self:start;max-width:100%;padding-inline:0}
+.calendar-controls #review-key-dates{font-size:.9rem}
+.calendar-controls .review-month-controls .selected-value{padding-left:0}
+@media(max-width:360px){.calendar-controls:has(.review-month-controls){grid-template-columns:minmax(0,1fr)}.calendar-controls :is(#calendar-toggle,#review-key-dates){grid-column:1}}
