@@ -1,21 +1,22 @@
 import assert from 'node:assert/strict';
 import {chromium,webkit} from 'playwright';
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
+const top=process.env.UTAHBILLS_REVIEW_TOOLBAR==='top';
 for(const [name,engine] of Object.entries({chromium,webkit})){
  const browser=await engine.launch();
  try{
  for(const viewport of [{width:320,height:700},{width:390,height:844},{width:844,height:390},{width:768,height:1024},{width:1280,height:800}]){
- const p=await browser.newPage({viewport,hasTouch:true,isMobile:true});p.setDefaultTimeout(15000);
+ const p=await browser.newPage({viewport,hasTouch:true,isMobile:true});p.setDefaultTimeout(15000);if(top)await p.addInitScript(()=>localStorage.setItem('utahbills-review-toolbar-position','top'));
  const errors=[];p.on('pageerror',e=>errors.push(e.message));
  await p.goto(base+'review/#requests');await p.locator('.bill-row').first().waitFor();
  const active=viewport.width<=700||viewport.height<=500;
  assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('phone-navigation')),active);
  const nav=p.locator('header nav');assert.equal(await nav.locator('a').count(),4);
  if(active){
- assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),'static');
+ assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),top?'sticky':'static');
  for(const a of await nav.locator('a').all()){const box=await a.boundingBox();assert.ok(box.width>=44&&box.height>=44)}
  assert.equal(await nav.locator('[aria-current]').getAttribute('href'),'#bills');
- await p.evaluate(()=>scrollTo(0,600));assert.ok((await nav.boundingBox()).y>=viewport.height-150);
+ await p.evaluate(()=>scrollTo(0,600));if(top){const bar=await nav.boundingBox(),head=await p.locator('.header-inner').boundingBox();assert.ok(Math.abs(bar.y-head.y-head.height)<2);assert.ok(bar.y+bar.height<viewport.height)}else assert.ok((await nav.boundingBox()).y>=viewport.height-150);
  for(const [href,ready] of [['#activity','#activity-period'],['#calendar','.calendar'],['#legislators','.legislator-row']]){
  await nav.locator(`[href="${href}"]`).tap();await p.waitForFunction(h=>location.hash===h,href);
  await p.waitForFunction(h=>document.querySelector('header nav [aria-current]')?.getAttribute('href')===h,href);assert.equal(await nav.locator('[aria-current]').getAttribute('href'),href);
@@ -45,8 +46,8 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  await p.evaluate(()=>scrollTo(0,document.body.scrollHeight));
  // Scrolling and ResizeObserver/frame-based reserved padding settle asynchronously in WebKit.
  // Keep the exact clearance requirement; do not sample before the scroll has painted.
- await p.waitForFunction(()=>{const footer=document.querySelector('footer').getBoundingClientRect(),bar=document.querySelector('header nav').getBoundingClientRect();return footer.bottom<=bar.top+2},null,{timeout:5000});
- const footer=await p.locator('footer').boundingBox(),bar=await nav.boundingBox();assert.ok(footer.y+footer.height<=bar.y+2,`footer clears navigation: ${name} ${JSON.stringify({viewport,footer,bar})}`);
+ await p.waitForFunction(top=>{const footer=document.querySelector('footer').getBoundingClientRect(),bar=document.querySelector('header nav').getBoundingClientRect();return top?footer.bottom<=innerHeight+2:footer.bottom<=bar.top+2},top,{timeout:5000});
+ const footer=await p.locator('footer').boundingBox(),bar=await nav.boundingBox();assert.ok(footer.y+footer.height<=(top?viewport.height:bar.y)+2,`footer clears navigation: ${name} ${JSON.stringify({viewport,footer,bar})}`);
  await p.keyboard.press('Tab');await nav.locator('a').first().focus();assert.notEqual(await nav.locator('a').first().evaluate(e=>getComputedStyle(e).outlineStyle),'none');
  // Controlled visual viewport reduction tests the keyboard branch, not native iOS keyboard behavior.
  await p.evaluate(()=>{document.documentElement.style.fontSize='';const input=document.querySelector('#search');input.focus();Object.defineProperty(visualViewport,'height',{configurable:true,value:innerHeight*.5});visualViewport.dispatchEvent(new Event('resize'))});
@@ -55,7 +56,7 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  const hash=new URL(p.url()).hash;await p.setViewportSize({width:844,height:390});await p.waitForFunction(()=>document.documentElement.classList.contains('phone-navigation'));assert.equal(new URL(p.url()).hash,hash);assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('phone-navigation')),true);assert.deepEqual(errors,[]);await p.close();
  }
  const main=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});await main.goto(base+'#requests');await main.locator('.bill-row').first().waitFor();assert.equal(await main.locator('header').evaluate(e=>getComputedStyle(e).position),'static');assert.equal(await main.locator('.phone-nav-icon').count(),4);await main.close();
- console.log(name+': Review portrait/landscape, tablet/desktop isolation, details, 24 repeated taps, history, saved search, archive return, text/dark/focus/footer/keyboard branch passed');
+ console.log(name+': Review '+(top?'Top':'Bottom')+' toolbar; portrait/landscape, tablet/desktop isolation, details, 24 repeated taps, history, saved search, archive return, text/dark/focus/footer/keyboard branch passed');
  }finally{await browser.close()}
 }
 

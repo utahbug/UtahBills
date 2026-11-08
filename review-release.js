@@ -1,3 +1,4 @@
+import {installToolbarPosition} from './review-toolbar-position.js';
 import {createElement,SlidersHorizontal,Info,CircleHelp} from 'lucide';
 // Loaded only by the complete artifact's Review index. Main's app is unchanged.
 const host=document.querySelector('.header-inner');
@@ -30,3 +31,5 @@ const headerContact=document.querySelector('header .header-contact');
 const contactIcon=document.createElement('span');contactIcon.className='header-contact review-contact-icon review-menu-icon';contactIcon.setAttribute('aria-hidden','true');panel.querySelector('a[href="#contact"]').prepend(contactIcon);
 function moveContactIcon(){const svg=headerContact.querySelector('svg');if(!svg)return false;contactIcon.append(svg);return true}
 if(!moveContactIcon()){const observer=new MutationObserver(()=>{if(moveContactIcon())observer.disconnect()});observer.observe(headerContact,{childList:true,subtree:true})}
+
+installToolbarPosition(panel,place);
