@@ -15,7 +15,7 @@ for(const engine of [chromium,webkit]){
    for(const [route,ready] of [['requests','.bill-row'],['activity','#activity-results'],['calendar','.calendar-controls'],['legislators','.legislator-row']]){
     await p.goto(base+'review/#'+route);await p.locator(ready).first().waitFor();
     if(route==='activity')await p.locator('#activity-period').selectOption('thirty');
-    const expected=theme==='dark'?'rgb(24, 33, 43)':phone?'rgb(238, 243, 247)':'rgb(229, 237, 243)';
+    const expected=theme==='dark'?'rgb(24, 33, 43)':'rgb(245, 245, 247)';
     assert.equal(await p.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor),expected,route+' '+viewport.width+' '+theme);
     assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
     const link=p.locator('header nav a[href="#activity"]');assert.equal((await link.innerText()).trim(),'Recent');

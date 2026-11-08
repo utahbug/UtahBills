@@ -17,3 +17,7 @@ Focused Chromium/WebKit checks passed across the existing twelve widths, both th
 ## November 8 desktop icon and wrapping refinement
 
 Review standard navigation reuses the original document, clock, calendar and people SVG nodes at 18px before the labels. Recent keeps its route and page heading. Targets remain at least 44px; the visible 1px ovals, hover/selected/focus distinction and regular spacing remain. Row gaps are 2px and the header no longer reserves an empty Settings row. Compact phone styles are excluded. Chromium/WebKit local checks passed across twelve intermediate/desktop widths, Light/Dark and doubled header text, including visible icon dimensions, Settings separation, no excess bottom row, overflow, routes and axe. [Combined sources, screenshots and publication gates](REVIEW_NOV8_REFINEMENT.md). Owner visual acceptance and promotion remain pending.
+
+## November 8 — owner revision to UI-027/UI-031
+
+Owner supersedes the oval experiment with borderless icon + text banner navigation, and the pale-blue page tint with near-white reading surroundings plus a restrained blue/purple/red accent experiment. Key Dates is italic, with underline only on hover/focus. Review-only implementation preserves UI-030, Settings, heading/filter/dialog behavior, Main and production. [Design and verification](REVIEW_ICON_COLOR_REVISION.md). Publication and owner acceptance remain separate gates.
