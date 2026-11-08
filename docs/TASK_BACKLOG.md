@@ -921,6 +921,8 @@ All four entries are **Low · Proposed**. The owner requested documentation only
 
 ### UI-030
 
+**November 7: implementation authorized for Review only; owner acceptance and Main promotion pending.** [Focused verification](REVIEW_TOOLBAR_POSITION.md).
+
 **iPhone navigation position.** Explore a reversible Top/Bottom preference for the existing four-icon navigation on phone layouts only. A fresh browser defaults to Bottom. Verify switching both ways, persistence after reload on the same device/browser, and usable navigation if storage is unavailable. Exactly one primary bar may be visible, focusable or announced at a time. Check portrait and landscape, safe-area and keyboard clearance, active-section announcements, repeated bill taps and Back/Forward from detail pages. Tablet and desktop retain their established navigation. Preserve UI-025 and UI-026.
 
 ## November 13 preparation — November 6 status
@@ -948,3 +950,5 @@ Three-entry Review Settings published November 6 at 9:47 PM MST, commit `1500a31
 November 7 UI-029 simplification: Review Settings has four direct entries (Dark/Light, Contact, About, FAQ), with lighter information/question icons and no secondary dropdown. Preserve keyboard, 44px targets and existing toggle. The intervening scheduled run failed on Playwright/Ubuntu 26 compatibility; build runner is pinned to the previously verified Ubuntu 24.04 without weakening checks. UI publication and genuine scheduled recovery are separate. [Verification](REVIEW_SETTINGS_REFINEMENT.md).
 
 Four-entry Review menu published November 7 at 12:15 PM MST, commit `f4a2559925b0e444b56899a63204130036ffcb06` ([mandatory CI/Pages passed](https://github.com/utahbug/UtahBills/actions/runs/42401729084), first attempt). Live Chromium/WebKit verified direct About/FAQ routes, thinner muted icons, aligned 44px rows, keyboard/dismissal, Light/Dark, nine widths, enlarged text/zoom, persisted touch toggle and axe; screenshots were inspected. Main hashes/shared data and both noindex directives remain unchanged. The Ubuntu 24.04 build pin restored browser installation without relaxing checks. No acquisition or Cloudflare changes occurred; genuine scheduled-refresh recovery remains pending. Physical iPhone/VoiceOver and owner visual acceptance remain pending.
+
+November 7 UI-027/UI-029 follow-up: owner authorized final Review-only oval shape/hover and compact Settings typography. Focused Chromium/WebKit responsive, enlarged-text, Light/Dark, keyboard and axe checks pass. Publication and owner acceptance are separate gates. See [oval verification](REVIEW_OVAL_NAVIGATION.md) and [Settings verification](REVIEW_SETTINGS_REFINEMENT.md). No Main/production promotion is authorized.

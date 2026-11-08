@@ -140,3 +140,7 @@ Four-entry Review menu published November 7 at 12:15 PM MST, commit `f4a2559925b
 UI-027 Review oval top navigation: verify thin rounded borders, restrained active state, separate focus outline, 44px targets, desktop/tablet/intermediate widths and enlarged text in both themes. Confirm unchanged phone bottom navigation, Settings, fonts and page colors. [Focused verification](REVIEW_OVAL_NAVIGATION.md). Owner visual/device acceptance remains pending.
 
 UI-027 publication verified at `938cee9`: full CI and live Chromium/WebKit passed; owner visual/device acceptance is pending. [Published evidence](REVIEW_OVAL_NAVIGATION.md).
+
+UI-030: verify phone-only Toolbar Bottom/Top buttons, Bottom default, saved/blocked-storage behavior, one original bar, routes/repeated taps/history/bookmarks/Copy, sticky Top clearance, unchanged Bottom, tablet/Main isolation, native keyboard/safe areas and VoiceOver. [Review verification](REVIEW_TOOLBAR_POSITION.md). Physical and owner visual acceptance remain pending.
+
+November 7 visual-polish follow-up: inspect UI-027 shorter visible ovals inside 44px targets, oval Bills, stable hover/selected/focus distinction and touch-hover exclusion. Inspect UI-029 15px regular system text, proportionate 20px icons, aligned compact rows and no scrollbar when content fits; constrained/enlarged content must remain reachable. Retain UI-030 position control. See [oval checks](REVIEW_OVAL_NAVIGATION.md) and [Settings checks](REVIEW_SETTINGS_REFINEMENT.md). Physical/owner acceptance remains pending.
