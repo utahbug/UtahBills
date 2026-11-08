@@ -1,12 +1,12 @@
 # UtahBills project handoff
 
-Last verified **2026-11-05**. UtahBug is the independent, nonpartisan public application for finding Utah legislation, understanding changes and checking the official evidence. The repository is [utahbug/UtahBills](https://github.com/utahbug/UtahBills). The working checkout is `C:\Users\kenro\Documents\UtahBills`. Use this repository only.
+Last verified **2026-11-08**. UtahBug is the independent, nonpartisan public application for finding Utah legislation, understanding changes and checking the official evidence. The repository is [utahbug/UtahBills](https://github.com/utahbug/UtahBills). The working checkout is `C:\Users\kenro\Documents\UtahBills`. Use this repository only.
 
 ## Where each version runs
 
 | Environment | Verified release and evidence |
 | --- | --- |
-| [GitHub Main](https://utahbug.github.io/UtahBills/) and [Review](https://utahbug.github.io/UtahBills/review/) | Verified refresh-repair deployment **`cadae55f884b97f26efceb3f5e661f89a325870b`**. Mandatory build and Pages deployment passed. Both use the same development data, shared phone navigation and static `noindex, nofollow`. Only Review adds lighter listing typography. [Actions run](https://github.com/utahbug/UtahBills/actions/runs/42130685251) |
+| [GitHub Main](https://utahbug.github.io/UtahBills/) and [Review](https://utahbug.github.io/UtahBills/review/) | Last verified publication **`15704bff33aabba98fd4709a2b7814ff0ce4d022`**, [CI/Pages run 42433056391](https://github.com/utahbug/UtahBills/actions/runs/42433056391), attempt 2. Main appearance and shared data unchanged; Review includes the November 7 Settings/oval/toolbar experiments. Both retain noindex. November 8 refinements are locally verified, awaiting hosted publication; see [current batch](REVIEW_NOV8_REFINEMENT.md). |
 | [Cloudflare production](https://legislation.utahbug.com/) | Existing Pages project `utahbills`, branch `main`, deployment **`aa8f3da8-71b6-4959-a0a7-6ae979ab0ecc`**. The public packaging change is `39aa68c649631f87fa3522aba1229fc583e914d8`. Production uses the Phase 7G navigation. The frozen application/data commit is **`c366381fa5406d2dd144ae3719950764cdba34eb`** (Phase 7G). Package content SHA-256 is `5fe44301e1d978bae8762571c6b9dcae1026799b760b42d2a7d99e8e1251c6bf`. [Live release metadata](https://legislation.utahbug.com/release.json) |
 | Immediate production rollback | Previous successful deployment **`a7a92227-5b04-4ae2-ab09-8f1b7c8b8d3a`**, public indexing commit `fe9ae8a51772c0c3b717d026ac63e5ba9d42fdf2`. Its content SHA-256 is `8d8b3f0ccd1a95f7c428cc4f44fc3118c73ee6e65f492e4ba1523909d4c54406`. [Release checks](https://github.com/utahbug/UtahBills/actions/runs/41973532150) |
 
@@ -71,3 +71,7 @@ November 7: owner authorized UI-027 oval borders for Review top navigation only.
 November 7: UI-030 phone-only Toolbar Bottom/Top preference is authorized as an independent Review experiment. Main, shared navigation/router and Cloudflare remain unchanged. [Verification and physical acceptance](REVIEW_TOOLBAR_POSITION.md). The subsequent oval and Settings typography requests remain a separate queued visual-polish batch.
 
 November 7 visual-polish follow-up: UI-027 visible ovals are shorter within 44px targets, Bills is wider, and hover feedback includes the selected link on fine-pointer devices. UI-029 Settings uses 15px regular text and proportionate 20px icons with compact aligned rows and conditional overflow. Focused local Chromium/WebKit checks passed; hosted publication and owner acceptance require separate evidence. This follows UI-030 independently and preserves Main, verified data and Cloudflare. [Oval record](REVIEW_OVAL_NAVIGATION.md) / [Settings record](REVIEW_SETTINGS_REFINEMENT.md).
+
+## November 8 combined Review authorization
+
+UI-027/028/030/031 now cover icon-and-text desktop ovals with compact wrapping, responsive tagline, iPhone Top/iPad Bottom defaults for the compact toolbar, one arrow action and scrolling banner, and consistent pale-page/white-results surfaces. Saved position overrides remain authoritative; desktop standard navigation exposes no preference. Current 2027 heading, Activity selected-range indication, verified Key Dates and simplified KSR presentation are Review-only. This supersedes older Bottom-for-all and full-white Activity/Calendar guidance. [Implementation, sources and verification gates](REVIEW_NOV8_REFINEMENT.md). Owner physical/visual acceptance and any promotion remain pending.
