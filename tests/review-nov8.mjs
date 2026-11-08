@@ -1,0 +1,29 @@
+import assert from 'node:assert/strict';
+import {chromium,webkit,devices} from 'playwright';
+import {readFile,mkdir} from 'node:fs/promises';
+const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/',axe=await readFile('node_modules/axe-core/axe.min.js','utf8');await mkdir('test-results/review-nov8',{recursive:true});
+for(const engine of [chromium,webkit]){const b=await engine.launch();try{
+ for(const [kind,options] of [['iphone',devices['iPhone 13']],['ipad',devices['iPad Mini']],['desktop',{viewport:{width:1280,height:900}}]])for(const theme of ['light','dark']){
+ const p=await b.newPage({...options,colorScheme:theme});
+ for(const [route,ready,surface] of [['requests','.bill-row','.bill-row'],['activity','.activity-controls','#activity-results'],['calendar','.calendar-controls','.calendar-agenda'],['legislators','.legislator-row','.legislator-row']]){
+ await p.goto(base+'review/#'+route);await p.locator(ready).first().waitFor();if(route==='activity')await p.locator('#activity-period').selectOption('thirty');if(route==='calendar')await p.locator('#calendar-toggle').click();
+ assert.equal((await p.locator('header nav a[href="#activity"]').innerText()).trim(),'Recent');
+ const compact=await p.locator('html').evaluate(e=>e.classList.contains('phone-navigation'));
+ assert.equal(await p.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor),theme==='dark'?'rgb(24, 33, 43)':compact?'rgb(238, 243, 247)':'rgb(229, 237, 243)');
+ if(theme==='light')assert.equal(await p.locator(surface).first().evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(255, 255, 255)');
+ assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+ if(route==='requests')assert.equal(await p.locator('main h1').textContent(),'2027 Legislature Bills');
+ if(route==='activity'){assert.ok(await p.locator('.review-selected-range').isVisible());assert.equal(await p.locator('.review-range-check').first().textContent(),'✓');for(const value of ['five','today','thirty']){await p.locator('#activity-period').selectOption(value);assert.equal(await p.locator('#activity-period').inputValue(),value)}}
+ await p.evaluate(axe);assert.deepEqual((await p.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)})),[]);
+ await p.screenshot({path:`test-results/review-nov8/${engine.name()}-${kind}-${route}-${theme}-review.png`});
+ if(route==='calendar'){const key=p.locator('#review-key-dates');assert.equal(await key.count(),1);await key.click();const dialog=p.locator('#review-key-dates-dialog');assert.ok(await dialog.isVisible());assert.equal(await dialog.locator('time').count(),5);assert.match(await dialog.innerText(),/January 29, noon/);assert.equal(await dialog.locator('a').first().getAttribute('href'),'https://le.utah.gov/sessionSchedule/sessdates.jsp');await p.evaluate(axe);assert.deepEqual((await p.evaluate(()=>axe.run(document))).violations.map(v=>v.id),[]);await p.screenshot({path:`test-results/review-nov8/${engine.name()}-${kind}-dates-${theme}.png`});await p.keyboard.press('Escape');await p.waitForFunction(()=>document.activeElement.id==='review-key-dates');assert.equal(await key.evaluate(e=>e===document.activeElement),true)}
+ }
+ await p.goto(base+'review/#archive/2026');await p.locator('.bill-row').first().waitFor();assert.equal(await p.locator('main h1').textContent(),'2026 Legislative Archive');await p.keyboard.type('ksr');await p.locator('.ownership-dialog[open]').waitFor();assert.equal(await p.locator('#ownership-title').textContent(),'Created by Kenneth Roberts');assert.equal(await p.locator('.ownership-dialog p').count(),0);await p.keyboard.press('Escape');assert.equal(await p.locator('.ownership-dialog').isVisible(),false);
+ await p.close();
+ // Matched Main images retain the same viewport, theme, route and Activity filter.
+ const main=await b.newPage({...options,colorScheme:theme});for(const [route,ready] of [['requests','.bill-row'],['activity','.activity-controls'],['calendar','.calendar-controls'],['legislators','.legislator-row']]){await main.goto(base+'#'+route);await main.locator(ready).first().waitFor();if(route==='activity')await main.locator('#activity-period').selectOption('thirty');if(route==='calendar')await main.locator('#calendar-toggle').click();await main.screenshot({path:`test-results/review-nov8/${engine.name()}-${kind}-${route}-${theme}-main.png`});assert.equal(await main.locator('#review-key-dates,#review-settings-trigger').count(),0)}await main.close();
+ }
+ // Tagline hides before crowding and returns when there is room; enlarged layouts remain bounded.
+ const p=await b.newPage();for(const width of [768,1024,1280,1920,960,1920]){await p.setViewportSize({width,height:900});await p.goto(base+'review/');await p.locator('.bill-row').first().waitFor();await p.waitForTimeout(60);const tag=p.locator('.independent');if(await tag.isVisible()){const a=await tag.boundingBox(),n=await p.locator('header nav').boundingBox(),settings=await p.locator('#review-settings-trigger').boundingBox();assert.ok(a.x>=n.x+n.width-1);assert.ok(a.x+a.width<=settings.x+1)}if(width===1920)assert.ok(await tag.isVisible());assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false)}await p.close();
+}finally{await b.close()}}
+console.log('November 8 Review: four-page two-surface/theme comparisons, exact headings/routes, Activity selection, sourced Key Dates/dialog focus, KSR, responsive tagline and Main isolation passed in both engines.');

@@ -18,7 +18,7 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  assert.equal(await nav.locator('[aria-current]').getAttribute('href'),'#bills');
  await p.evaluate(()=>scrollTo(0,600));if(top){const bar=await nav.boundingBox(),head=await p.locator('.header-inner').boundingBox();assert.ok(Math.abs(bar.y-head.y-head.height)<2);assert.ok(bar.y+bar.height<viewport.height)}else assert.ok((await nav.boundingBox()).y>=viewport.height-150);
  for(const [href,ready] of [['#activity','#activity-period'],['#calendar','.calendar'],['#legislators','.legislator-row']]){
- await nav.locator(`[href="${href}"]`).tap();await p.waitForFunction(h=>location.hash===h,href);
+ await nav.locator(`[href="${href}"]`).tap();await p.waitForFunction(h=>location.hash===h,href).catch(async error=>{console.error({engine:name,viewport,expected:href,actual:await p.evaluate(()=>location.hash),nav:await nav.boundingBox(),header:await p.locator('.header-inner').boundingBox()});throw error});
  await p.waitForFunction(h=>document.querySelector('header nav [aria-current]')?.getAttribute('href')===h,href);assert.equal(await nav.locator('[aria-current]').getAttribute('href'),href);
  }
  await p.locator('.legislator-row h2 a').first().tap();await p.waitForFunction(()=>location.hash.startsWith('#legislator/'));assert.equal(await nav.locator('[aria-current]').getAttribute('href'),'#legislators');
@@ -26,7 +26,7 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  await p.locator('#search').fill('At-Home Parent');await p.locator('#search').blur();
  await p.locator('.record-bookmark').tap();await p.locator('.saved-filter').tap();
  for(let i=0;i<8;i++){
- const a=p.locator('.bill-row h2 a').first(),href=await a.getAttribute('href');await a.scrollIntoViewIfNeeded();await p.waitForTimeout(100);await a.tap();await p.waitForFunction(h=>location.hash===h,href);await p.waitForFunction(()=>!document.querySelector('#search'));assert.equal(await nav.locator('[aria-current]').getAttribute('href'),'#bills');await p.goBack();await p.locator('.bill-row').first().waitFor();await p.waitForTimeout(100);
+ const a=p.locator('.bill-row h2 a').first(),href=await a.getAttribute('href');await a.scrollIntoViewIfNeeded();await p.waitForTimeout(100);await a.tap();await p.waitForFunction(h=>location.hash===h,href).catch(async error=>{console.error({engine:name,viewport,expected:href,actual:await p.evaluate(()=>location.hash),nav:await nav.boundingBox(),header:await p.locator('.header-inner').boundingBox()});throw error});await p.waitForFunction(()=>!document.querySelector('#search'));assert.equal(await nav.locator('[aria-current]').getAttribute('href'),'#bills');await p.goBack();await p.locator('.bill-row').first().waitFor();await p.waitForTimeout(100);
  }
  assert.equal(await p.locator('#search').inputValue(),'At-Home Parent');assert.equal(await p.locator('.saved-filter').getAttribute('aria-pressed'),'true');
  await p.goForward();await p.waitForFunction(()=>location.hash.startsWith('#request/')&&!document.querySelector('#search'));await p.goBack();await p.locator('.bill-row').first().waitFor();
@@ -52,7 +52,7 @@ for(const [name,engine] of Object.entries({chromium,webkit})){
  // Controlled visual viewport reduction tests the keyboard branch, not native iOS keyboard behavior.
  await p.evaluate(()=>{document.documentElement.style.fontSize='';const input=document.querySelector('#search');input.focus();Object.defineProperty(visualViewport,'height',{configurable:true,value:innerHeight*.5});visualViewport.dispatchEvent(new Event('resize'))});
  assert.equal(await nav.evaluate(e=>getComputedStyle(e).visibility),'hidden');await p.locator('#search').blur();await p.waitForFunction(()=>getComputedStyle(document.querySelector('header nav')).visibility==='visible');assert.equal(await nav.evaluate(e=>getComputedStyle(e).visibility),'visible');
- }else {assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),'sticky');for(const icon of await nav.locator('.phone-nav-icon').all())assert.equal(await icon.isVisible(),false)}
+ }else {assert.equal(await p.locator('header').evaluate(e=>getComputedStyle(e).position),'sticky');for(const icon of await nav.locator('.phone-nav-icon').all())assert.equal(await icon.isVisible(),true)}
  const hash=new URL(p.url()).hash;await p.setViewportSize({width:844,height:390});await p.waitForFunction(()=>document.documentElement.classList.contains('phone-navigation'));assert.equal(new URL(p.url()).hash,hash);assert.equal(await p.locator('html').evaluate(e=>e.classList.contains('phone-navigation')),true);assert.deepEqual(errors,[]);await p.close();
  }
  const main=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});await main.goto(base+'#requests');await main.locator('.bill-row').first().waitFor();assert.equal(await main.locator('header').evaluate(e=>getComputedStyle(e).position),'static');assert.equal(await main.locator('.phone-nav-icon').count(),4);await main.close();
