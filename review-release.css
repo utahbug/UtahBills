@@ -78,3 +78,6 @@ main{padding-top:10px}
 :root:not(.phone-navigation) header nav[aria-label="Main navigation"]{row-gap:2px;margin-inline:0;max-width:100%;width:auto}
 :root:not(.phone-navigation) #review-settings-trigger{top:8px;bottom:auto;transform:none}
 
+/* UI-027 desktop icons reuse the same nodes; compact navigation rules are untouched. */
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] a{gap:5px;padding-inline:10px}
+:root:not(.phone-navigation) header nav[aria-label="Main navigation"] .phone-nav-icon{display:block;width:18px;height:18px;flex-shrink:0}

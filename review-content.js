@@ -28,7 +28,7 @@ export function installReviewContent(){
  function measure(){
   const hs=getComputedStyle(header),ts=getComputedStyle(tag);context.font=ts.font;const tagWidth=context.measureText(tag.textContent).width;
   const links=[...nav.querySelectorAll('a')],ns=getComputedStyle(nav);let navWidth=(parseFloat(ns.columnGap)||0)*3;
-  for(const a of links){const s=getComputedStyle(a);context.font=s.font;navWidth+=Math.max(72,context.measureText(a.textContent).width+parseFloat(s.paddingLeft)+parseFloat(s.paddingRight))}
+  for(const a of links){const s=getComputedStyle(a);context.font=s.font;navWidth+=Math.max(72,context.measureText(a.textContent).width+23+parseFloat(s.paddingLeft)+parseFloat(s.paddingRight))}
   const available=header.clientWidth-parseFloat(hs.paddingLeft)-parseFloat(hs.paddingRight);
   header.classList.toggle('review-hide-tagline',document.documentElement.classList.contains('phone-navigation')||brand.getBoundingClientRect().width+navWidth+tagWidth+3*(parseFloat(hs.columnGap)||16)>available);
  }
