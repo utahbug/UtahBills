@@ -8,16 +8,32 @@ Review-only CSS adds 1px existing blue-gray control borders with fully rounded c
 
 Local results and actual published results are separate gates. Preserve the complete Main/Review artifact and noindex in both. Physical tablet/iPhone, VoiceOver and owner visual acceptance are not established by browser automation.
 
+## Published result
+
+UI-027 published to Review November 7 at 1:00 PM MST, commit `938cee9f7bac73ece724ad52a35e24cb6fa6dee6` ([mandatory CI/Pages passed](https://github.com/utahbug/UtahBills/actions/runs/42406082887), first attempt). Live Chromium/WebKit checks passed for desktop/tablet/intermediate widths, doubled header text, Light/Dark, active/focus states, routes, target sizes and axe. Computed-style comparisons confirm unchanged phone bottom navigation, Settings, existing typography and page colors; Main baseline hashes/shared data and both noindex directives remain unchanged. Live screenshots were inspected. No acquisition or Cloudflare changes occurred. Owner visual/device acceptance and Main promotion remain pending.
+
+[Machine-readable receipt](evidence/REVIEW_OVAL_NAVIGATION.json).
+
 ## November 7 - final shape and hover refinement
 
 The visible 1px oval border is inset 5px vertically inside the unchanged minimum 44px link target. Bills has a 72px minimum width; all four links retain matched height, typography and compact gaps. A pointer-inert pseudo-element draws the border so hover and selection cannot move adjacent links. Fine-pointer hover-capable devices receive a restrained existing-blue surface mix, including a distinct hover treatment for the selected page. Keyboard focus remains a separate 3px outline. Phone navigation is excluded.
 
 Focused Chromium/WebKit checks passed across the existing twelve widths, both themes and doubled header text, including dimensions before/after hover, selected hover, coarse-pointer exclusion, touch targets, focus, routes and axe. This visual-polish batch follows the independently published UI-030 experiment; it includes the separately requested compact Settings typography. Main, shared application/data and Cloudflare are unchanged. Hosted CI/publication and owner visual acceptance remain pending until recorded.
 
+## Final published verification
+
+Commit `15704bff33aabba98fd4709a2b7814ff0ce4d022` published November 7 at 7:28 PM MST ([mandatory CI/Pages run 42433056391, attempt 2](https://github.com/utahbug/UtahBills/actions/runs/42433056391)). Live Chromium/WebKit passed oval shape/hover/focus, twelve desktop/intermediate widths and doubled header text, compact 15px/400 Settings typography with 20px icons and 44px targets, no unnecessary normal-menu overflow, nine-width responsive/theme/text/zoom checks, routes, persistence/blocked storage, keyboard and axe. Live screenshots were inspected. The compact-layout-only Toolbar setting passed iPad layout transitions and narrow non-touch desktop exclusion; saved preference survives standard navigation.
+
+Main baseline hashes remain unchanged; Review shares the same app/styles/data, both environments retain noindex, and Cloudflare is untouched. Attempt 1 stopped at the unchanged Main Sort resize-focus regression; targeted local runs passed and the exact commit passed one unchanged retry. Physical iPhone/iPad Safari, VoiceOver, safe-area/native-keyboard behavior and owner visual acceptance remain pending. No Main/Cloudflare promotion is authorized. [Receipt](evidence/REVIEW_VISUAL_POLISH.json).
+
 ## November 8 desktop icon and wrapping refinement
 
 Review standard navigation reuses the original document, clock, calendar and people SVG nodes at 18px before the labels. Recent keeps its route and page heading. Targets remain at least 44px; the visible 1px ovals, hover/selected/focus distinction and regular spacing remain. Row gaps are 2px and the header no longer reserves an empty Settings row. Compact phone styles are excluded. Chromium/WebKit local checks passed across twelve intermediate/desktop widths, Light/Dark and doubled header text, including visible icon dimensions, Settings separation, no excess bottom row, overflow, routes and axe. [Combined sources, screenshots and publication gates](REVIEW_NOV8_REFINEMENT.md). Owner visual acceptance and promotion remain pending.
 
+November 8 publication verified at `c0f1d77`: mandatory CI/Pages and live Chromium/WebKit checks passed. Desktop icon commit `49f40c6` preserves compact-toolbar behavior; Main baseline/data and both noindex directives are unchanged. [Publication receipt and timing diagnostics](REVIEW_NOV8_REFINEMENT.md#verified-november-8-publication). Owner visual/device acceptance and Main/production promotion remain pending.
+
 ## November 8 — owner revision to UI-027/UI-031
 
 Owner supersedes the oval experiment with borderless icon + text banner navigation, and the pale-blue page tint with near-white reading surroundings plus a restrained blue/purple/red accent experiment. Key Dates is italic, with underline only on hover/focus. Review-only implementation preserves UI-030, Settings, heading/filter/dialog behavior, Main and production. [Design and verification](REVIEW_ICON_COLOR_REVISION.md). Publication and owner acceptance remain separate gates.
+
+November 8 revised design published at `6c04b0d`; mandatory CI/Pages and live Chromium/WebKit checks passed. UI-027 now uses borderless icon/text navigation; UI-031 uses neutral surroundings and a thin light-mode accent; Key Dates is italic with hover/focus underline. [Receipt and remaining acceptance](REVIEW_ICON_COLOR_REVISION.md#published-verification). Main, shared data, noindex and production restrictions remain intact.

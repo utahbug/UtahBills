@@ -14,6 +14,14 @@ Physical acceptance remains required on iPhone Safari: portrait/landscape, nativ
 
 Integration correction: the retained Settings fallback test used a generic status-region selector. UI-030 intentionally adds a second status region for toolbar changes. The assertion now targets `#review-theme-status`, preserving its blocked-storage check; the toolbar status remains separately checked. The unchanged application passed the focused Chromium/WebKit Settings suite with this selector correction. No assertion was removed or weakened.
 
+## Published verification and layout clarification
+
+UI-030 published independently at `0149b1ce647de1b823a77a1d53ec325a92f204c4`; [mandatory CI and Pages run 42428274498](https://github.com/utahbug/UtahBills/actions/runs/42428274498) succeeded. The preceding run 42427804430 stopped at the ambiguous status-region test documented above and did not deploy. Live Chromium/WebKit verified saved/blocked preferences, the same original bar, Top clearance, repeated bill taps, history, search/bookmarks/Copy, both themes and Main isolation. Main baseline hashes and shared data remain unchanged; both environments retain noindex.
+
+Owner clarification November 7: offer Toolbar Bottom/Top only when the compact four-icon layout is active. This includes an iPad using that layout; standard tablet and desktop navigation never gain a position option. Hide the setting automatically when standard navigation returns and preserve the saved choice. Existing implementation already follows the shared layout class, without device-name detection. Targeted local and live Chromium/WebKit checks passed for an iPad switching 600px compact to 1024px standard and back, and a narrow non-touch desktop with no setting. Physical iPhone/iPad and VoiceOver acceptance remains pending.
+
+[Machine-readable receipt](evidence/REVIEW_TOOLBAR_POSITION.json).
+
 ## November 8 owner revision
 
 Review now defaults to Top for iPhone identity plus coarse-pointer capability and Bottom for iPad/other devices. The shared compact-layout state alone controls whether the preference is offered. Valid saved selections override defaults; storage failure supports the visit. One Toolbar arrow button announces its destination and changes immediately. In Top mode the banner scrolls away while the original bar stays at the top, with measured banner height and safe-area clearance. Local Chromium/WebKit checks passed for both defaults, overrides, all four routes, both orientations, persistence, blocked storage, keyboard, themes and axe; retained Top navigation checks preserve repeated taps, history, bookmarks and sharing. Hosted CI/publication and physical acceptance remain separate. [Combined batch record](REVIEW_NOV8_REFINEMENT.md).
