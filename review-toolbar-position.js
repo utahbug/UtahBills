@@ -14,9 +14,12 @@ export function installToolbarPosition(panel,place){
   root.dataset.reviewToolbar=position;
   if(top&&nav.parentElement!==header)header.append(nav);
   else if(!top&&nav.parentNode!==original.parentNode)original.after(nav);
-  row.setAttribute('aria-label',`Move toolbar to ${position==='top'?'Bottom':'Top'}`);
-  row.querySelector('.review-toolbar-arrow').replaceChildren(createElement(position==='top'?ArrowDown:ArrowUp));
-  status.textContent=`Toolbar at ${position}.`;
+  if(row.dataset.position!==position){
+   row.dataset.position=position;
+   row.setAttribute('aria-label',`Move toolbar to ${position==='top'?'Bottom':'Top'}`);
+   row.querySelector('.review-toolbar-arrow').replaceChildren(createElement(position==='top'?ArrowDown:ArrowUp));
+   status.textContent=`Toolbar at ${position}.`;
+  }
   measure();
   if(wasScrolled){const delta=main.getBoundingClientRect().top-before;if(Math.abs(delta)>1)scrollBy(0,delta)}
   requestAnimationFrame(place);
