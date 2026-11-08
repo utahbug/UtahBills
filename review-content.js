@@ -6,6 +6,10 @@ export function installReviewContent(){
   if(heading&&main.querySelector('#session')&&heading.textContent!=='2027 Legislature Bills')heading.textContent='2027 Legislature Bills';
   for(const label of nav.querySelectorAll('.phone-activity-label>span'))if(label.textContent!=='Recent')label.textContent='Recent';
   const period=main.querySelector('#activity-period');if(period&&!period.closest('label').classList.contains('review-selected-range')){period.closest('label').classList.add('review-selected-range');const mark=document.createElement('span');mark.textContent='✓';mark.className='review-range-check';mark.setAttribute('aria-hidden','true');period.closest('label').prepend(mark)}
+  const month=main.querySelector('#calendar-month'),toggle=main.querySelector('#calendar-toggle');
+  if(month&&toggle&&!main.querySelector('.review-month-controls')){
+   const row=document.createElement('div');row.className='review-month-controls';const label=month.closest('label');label.before(row);row.append(label,toggle);
+  }
   const event=main.querySelector('#calendar-type');
   if(event&&!main.querySelector('#review-key-dates')){
    const group=document.createElement('div');group.className='review-event-controls';const label=event.closest('label');label.before(group);group.append(label);
