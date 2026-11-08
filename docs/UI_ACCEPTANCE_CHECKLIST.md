@@ -140,3 +140,5 @@ UI-027/028/030/031 now cover icon-and-text desktop ovals with compact wrapping, 
 ## November 8 — owner revision to UI-027/UI-031
 
 Owner supersedes the oval experiment with borderless icon + text banner navigation, and the pale-blue page tint with near-white reading surroundings plus a restrained blue/purple/red accent experiment. Key Dates is italic, with underline only on hover/focus. Review-only implementation preserves UI-030, Settings, heading/filter/dialog behavior, Main and production. [Design and verification](REVIEW_ICON_COLOR_REVISION.md). Publication and owner acceptance remain separate gates.
+
+November 8 owner Calendar refinement: Review groups Month + Show/Hide calendar above Event + Key Dates, and reduces only outer Events spacing. The latest near-white stylesheet is served, but its subtlety on the owner's iPhone remains a palette issue for a separate decision. No colors or event-record density change. [Implementation and verification](REVIEW_CALENDAR_COMPACT.md).

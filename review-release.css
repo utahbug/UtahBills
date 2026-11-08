@@ -87,3 +87,12 @@ main{padding-top:10px}
 :root:not(.phone-navigation) header nav[aria-label="Main navigation"] a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
 #review-key-dates:focus{text-decoration:underline}
 @media(hover:hover){#review-key-dates:hover{text-decoration:underline}}
+
+/* Calendar layout only: preserve control nodes, record spacing and the current palette. */
+.calendar-controls:has(.review-month-controls){flex-direction:column;align-items:flex-start;gap:0;margin-bottom:0}
+.review-month-controls{display:flex;align-items:center;flex-wrap:wrap;gap:0 12px;max-width:100%}
+.review-month-controls>*{min-width:0;max-width:100%}
+.calendar-agenda{margin-top:4px;padding-top:0}
+.calendar-agenda .agenda-heading.results-toolbar{margin:0}
+.calendar-agenda #day-events>.calendar-date-group:first-child{margin-top:4px}
+#calendar-grid .month-grid{margin-bottom:8px}
