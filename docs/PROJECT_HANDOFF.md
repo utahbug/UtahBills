@@ -43,6 +43,14 @@ Use official evidence and neutral wording. Keep requests distinct from introduce
 
 **Search registration:** The production [sitemap](https://legislation.utahbug.com/sitemap.xml) advertises 276 eligible URLs: the homepage and 275 verified request pages. Clean Air Fund (`YXDVILQHGE`) retains noindex because its status was unconfirmed in the production snapshot. The owner’s next step is **Verify** in Google Search Console. After ownership confirmation, check prior submissions, submit the sitemap once and request homepage indexing. Bing ownership/import and submission are pending. Actual engine crawling and index inclusion require separate evidence from those accounts.
 
+Post-merge check at approximately 20:16 Mountain on November 5 found no newer genuine scheduled acquisition than run 42099089278. Main and Review still show 276 public requests (275 verified plus one unconfirmed) and 94 Calendar events. Post-repair scheduled publication remains pending; no Cloudflare candidate or upload was performed.
+
+## November 5 investigation recommendations — no implementation
+
+[Search discoverability audit](SEARCH_DISCOVERABILITY_AUDIT.md) verified all 276 eligible production sitemap pages against the accepted package and recommends a clearer, consistent static/rendered homepage title and description. Google/Bing account outcomes remain unconfirmed. No indexing or production changes were made.
+
+[Pre-introduction description investigation](REQUEST_DESCRIPTION_INVESTIGATION.md) found 20 official 2027 drafts in nine October meetings, plus one comparison. Thirteen request candidates have corroborating exact-title/session/sponsor evidence, but zero direct tracking-ID-to-draft links were found and none is approved for publication. Seven other proposals remain unmatched or unresolved. The proposed manual association policy, pilot scope and independent reviewer require owner approval. Reuse CAL-004, TRANS-002, DATA-005 and existing source/editorial gates; preserve scheduled-refresh reliability as the priority. No application, acquisition or published-data change is included.
+
 ## Publication and recovery
 
 1. **Starting a conversation:** Read [AGENTS](../AGENTS.md), this handoff, then the relevant backlog entries, dated verification records and acceptance checklist. Fetch remote Main, inspect local changes and check recent Actions runs and active jobs. For ChatGPT without repository access, ask for this file at a named commit and the relevant evidence. Recheck versions before treating a dated count, deployment or owner approval as current.
