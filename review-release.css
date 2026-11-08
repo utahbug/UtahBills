@@ -96,3 +96,24 @@ main{padding-top:10px}
 .calendar-agenda .agenda-heading.results-toolbar{margin:0}
 .calendar-agenda #day-events>.calendar-date-group:first-child{margin-top:4px}
 #calendar-grid .month-grid{margin-bottom:8px}
+
+/* Review link interaction: preserve text and source-diff annotations. */
+:root a[href],:root button.text-control,:root #remove-sponsor,:root #search-guidance button{text-decoration:none!important}
+:root a[href][aria-current],:root a[href]:focus-visible,:root button.text-control:focus-visible,:root #remove-sponsor:focus-visible,:root #search-guidance button:focus-visible{text-decoration:underline!important}
+@media(hover:hover){:root a[href]:hover,:root button.text-control:hover,:root #remove-sponsor:hover,:root #search-guidance button:hover{text-decoration:underline!important}}
+:root a[href]:active,:root button.text-control:active{background-color:var(--appearance-hover,#eaf1f3)}
+/* Inline prose links need a non-color cue; official external indicators stay intact. */
+:is(main,footer) :is(p,li,dd) a[href]::before{content:"";display:inline-block;width:.8em;height:.8em;margin-inline-end:.2em;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' d='m10 13 4-4m-5 6-2 2a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 2 2-2a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0'/%3E%3C/svg%3E") center/contain no-repeat}
+/* Exact legend badge treatment, shared by legend, grid and event listings. */
+:root .calendar-key{background:var(--appearance-subtle,#e8eef3);color:var(--appearance-text,#173650);padding:1px 4px;border-radius:3px;font-family:inherit;font-size:.68rem;font-weight:700;line-height:1.5}
+:root .calendar-key.deadline{background:var(--appearance-warning-bg,#faedce);color:var(--appearance-warning-text,#604400)}
+:root .calendar-key.floor,:root .calendar-key.session{background:var(--appearance-purple-bg,#e9e4f4);color:var(--appearance-purple-text,#49396a)}
+:root .calendar-key.caucus{background:var(--appearance-positive-bg,#dceee8);color:var(--appearance-positive-text,#244d42)}
+/* Shared tracks align both rows; no offsets or reduced interaction targets. */
+.calendar-controls:has(.review-month-controls){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:0 12px;width:fit-content;max-width:100%}
+.calendar-controls :is(.review-month-controls,.review-event-controls){display:contents}
+.calendar-controls :is(.review-month-controls,.review-event-controls)>label{grid-column:1;min-width:0}
+.calendar-controls :is(#calendar-toggle,#review-key-dates){grid-column:2;justify-self:start;max-width:100%;padding-inline:0}
+.calendar-controls #review-key-dates{font-size:.9rem}
+.calendar-controls .review-month-controls .selected-value{padding-left:0}
+@media(max-width:360px){.calendar-controls:has(.review-month-controls){grid-template-columns:minmax(0,1fr)}.calendar-controls :is(#calendar-toggle,#review-key-dates){grid-column:1}}

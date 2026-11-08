@@ -13,7 +13,7 @@ for(const engine of [chromium,webkit]){const b=await engine.launch();try{
   assert.equal(await p.locator('.review-month-controls #calendar-toggle').count(),1);assert.equal(await p.locator('.review-month-controls #calendar-month').count(),1);
   await p.evaluate(()=>window.originalCalendarToggle=document.querySelector('#calendar-toggle'));
   if(enlarged)await p.evaluate(()=>{const es=[...document.querySelectorAll('main *')],sizes=es.map(e=>parseFloat(getComputedStyle(e).fontSize));es.forEach((e,i)=>e.style.fontSize=sizes[i]*2+'px')});
-  const first=await p.locator('.review-month-controls').boundingBox(),second=await p.locator('.review-event-controls').boundingBox();assert.ok(second.y>=first.y+first.height-1);
+  const first=await toggle.boundingBox(),second=await key.boundingBox();assert.ok(second.y>=first.y+first.height-1);if(width>360){const a=await month.locator('xpath=ancestor::label').boundingBox(),e=await type.locator('xpath=ancestor::label').boundingBox();assert.ok(Math.abs(a.x-e.x)<1);assert.ok(Math.abs(first.x-second.x)<1,'Shared second-column alignment')}
   if(!enlarged&&width>=390){const a=await month.boundingBox(),t=await toggle.boundingBox();assert.ok(Math.abs(a.y+a.height/2-t.y-t.height/2)<2,'Month/toggle same row')}
   for(const control of [month,toggle,type,key]){const r=await control.boundingBox();assert.ok(r.width>=44&&r.height>=44,JSON.stringify({name,r}));assert.ok(r.x>=0&&r.x+r.width<=width+1)}
   assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
