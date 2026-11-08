@@ -921,6 +921,8 @@ All four entries are **Low · Proposed**. The owner requested documentation only
 
 ### UI-030
 
+**November 7: implementation authorized for Review only; owner acceptance and Main promotion pending.** [Focused verification](REVIEW_TOOLBAR_POSITION.md).
+
 **iPhone navigation position.** Explore a reversible Top/Bottom preference for the existing four-icon navigation on phone layouts only. A fresh browser defaults to Bottom. Verify switching both ways, persistence after reload on the same device/browser, and usable navigation if storage is unavailable. Exactly one primary bar may be visible, focusable or announced at a time. Check portrait and landscape, safe-area and keyboard clearance, active-section announcements, repeated bill taps and Back/Forward from detail pages. Tablet and desktop retain their established navigation. Preserve UI-025 and UI-026.
 
 ## November 13 preparation — November 6 status
