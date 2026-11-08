@@ -946,3 +946,7 @@ November 7 UI-027/UI-029 follow-up: owner authorized final Review-only oval shap
 ## November 8 combined Review authorization
 
 UI-027/028/030/031 now cover icon-and-text desktop ovals with compact wrapping, responsive tagline, iPhone Top/iPad Bottom defaults for the compact toolbar, one arrow action and scrolling banner, and consistent pale-page/white-results surfaces. Saved position overrides remain authoritative; desktop standard navigation exposes no preference. Current 2027 heading, Activity selected-range indication, verified Key Dates and simplified KSR presentation are Review-only. This supersedes older Bottom-for-all and full-white Activity/Calendar guidance. [Implementation, sources and verification gates](REVIEW_NOV8_REFINEMENT.md). Owner physical/visual acceptance and any promotion remain pending.
+
+## November 8 — owner revision to UI-027/UI-031
+
+Owner supersedes the oval experiment with borderless icon + text banner navigation, and the pale-blue page tint with near-white reading surroundings plus a restrained blue/purple/red accent experiment. Key Dates is italic, with underline only on hover/focus. Review-only implementation preserves UI-030, Settings, heading/filter/dialog behavior, Main and production. [Design and verification](REVIEW_ICON_COLOR_REVISION.md). Publication and owner acceptance remain separate gates.
