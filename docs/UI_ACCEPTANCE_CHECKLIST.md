@@ -158,3 +158,5 @@ November 8 publication verified at `c0f1d77`: mandatory CI/Pages and live Chromi
 ## November 8 — owner revision to UI-027/UI-031
 
 Owner supersedes the oval experiment with borderless icon + text banner navigation, and the pale-blue page tint with near-white reading surroundings plus a restrained blue/purple/red accent experiment. Key Dates is italic, with underline only on hover/focus. Review-only implementation preserves UI-030, Settings, heading/filter/dialog behavior, Main and production. [Design and verification](REVIEW_ICON_COLOR_REVISION.md). Publication and owner acceptance remain separate gates.
+
+November 8 revised design published at `6c04b0d`; mandatory CI/Pages and live Chromium/WebKit checks passed. UI-027 now uses borderless icon/text navigation; UI-031 uses neutral surroundings and a thin light-mode accent; Key Dates is italic with hover/focus underline. [Receipt and remaining acceptance](REVIEW_ICON_COLOR_REVISION.md#published-verification). Main, shared data, noindex and production restrictions remain intact.
