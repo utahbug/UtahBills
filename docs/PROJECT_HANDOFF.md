@@ -139,3 +139,7 @@ The owner authorizes UI-034 and publication of the verified navigation/filter fi
 [PR #28 publication receipt](https://github.com/utahbug/UtahBills/pull/28) records the exact final commit, mandatory CI/Pages result, live environment checks and Cloudflare deployment/checksum/rollback evidence as each gate completes. Local checks do not establish publication; consult the receipt for the final status.
 
 November 9 release continuation: PRs #28/#29 remain the intended release. Both CI runs stopped at the existing batch2 brand/history assertion; no GitHub or Cloudflare publication occurred from those failed runs. [Diagnosis and scoped runtime correction](UI_PUBLIC_REFINEMENTS.md#november-9-ci-regression-diagnosis) preserves ordinary listing state on brand return-to-top while retaining clean explicit Bills and sponsor-view recovery. Existing tests and data safeguards remain intact. PR #28 records final verification/publication outcomes.
+
+The continuation also restores the existing public-request recovery control ID in the shared empty-state panel. This is a compatibility repair within the approved filter-recovery scope; the original Activity and introduced-record transition assertions remain unchanged. Final release gates and evidence remain in PR #28.
+
+Final form of the compatibility repair: preserve the original unavailable-record panel and native public-request link whenever saved-only filtering is inactive. This supersedes the intermediate control-ID-only correction noted above; saved-filter recovery remains intact.

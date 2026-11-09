@@ -13,7 +13,8 @@ export function installReviewBills(){
    notice.append(icon,document.createTextNode('Showing bookmarked records only — '),button('Show all',actions.showAll));toolbar.after(notice);
    for(const count of main.querySelectorAll('#count>span'))count.textContent=count.textContent.replace(' · Saved only','');
   }
-  if(state.count||(!state.saved&&state.total))return;
+  // Preserve the native no-records panel/link unless saved-only filtering needs recovery.
+  if(state.count||!state.saved)return;
   const results=main.querySelector('#results');if(!results)return;
   const hint=main.querySelector('#search-guidance'),broaden=hint.querySelector('button');
   if(state.savedCount&&state.total&&broaden){const message=hint.querySelector('[role=status]');hint.replaceChildren(...[message,broaden].filter(Boolean));hint.hidden=false}else hint.hidden=true;
