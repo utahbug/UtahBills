@@ -26,3 +26,9 @@ Production overlay unit checks pass exact-baseline/CI rejection gates, immutable
 ## Publication and candidate receipt
 
 [PR #26](https://github.com/utahbug/UtahBills/pull/26) retains the exact merged commit, mandatory CI/Pages outcome, live Review verification and production-candidate checksum receipt as those gates complete. Consult that receipt rather than treating local test completion as publication or upload authorization.
+
+## Focused recovery follow-up
+
+The empty saved-results notice retains the existing any-word search action and its reverse action. The decorative bookmark is explicitly hidden from assistive technology. Focused Chromium/WebKit tests passed all three viewport widths, including the AND/any-word round trip with saved-only filtering retained.
+
+CI run 42549054526 failed twice because the browser process crashed when the heavily exercised Review page navigated to Main. The isolation assertions now use a fresh Main browser context; all within-Review history and navigation assertions remain. No required checks were removed. Final mandatory CI and publication remain gated and are recorded in the linked publication receipt.
