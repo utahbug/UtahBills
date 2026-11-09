@@ -9,12 +9,14 @@ export function installReviewBills(){
   const button=(text,action)=>{const b=document.createElement('button');b.type='button';b.className='text-control';b.textContent=text;b.onclick=action;return b};
   if(state.saved){
    const notice=document.createElement('div');notice.id='review-saved-notice';notice.className='review-filter-notice';notice.setAttribute('role','status');
-   notice.append(createElement(Bookmark,{'aria-hidden':'true',fill:'currentColor'}),document.createTextNode('Showing bookmarked records only — '),button('Show all',actions.showAll));toolbar.after(notice);
+   const icon=createElement(Bookmark);icon.setAttribute('aria-hidden','true');icon.setAttribute('fill','currentColor');
+   notice.append(icon,document.createTextNode('Showing bookmarked records only — '),button('Show all',actions.showAll));toolbar.after(notice);
    for(const count of main.querySelectorAll('#count>span'))count.textContent=count.textContent.replace(' · Saved only','');
   }
   if(state.count||(!state.saved&&state.total))return;
   const results=main.querySelector('#results');if(!results)return;
-  main.querySelector('#search-guidance').hidden=true;
+  const hint=main.querySelector('#search-guidance'),broaden=hint.querySelector('button');
+  if(state.savedCount&&state.total&&broaden){const message=hint.querySelector('[role=status]');hint.replaceChildren(...[message,broaden].filter(Boolean));hint.hidden=false}else hint.hidden=true;
   const empty=document.createElement('section');empty.className='review-empty-results';empty.setAttribute('aria-label','No matching records');
   const explanation=document.createElement('p');
   if(!state.total){
