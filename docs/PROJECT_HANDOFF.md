@@ -121,3 +121,11 @@ November 8 combined links/Calendar refinement published at `e7d17e3`: mandatory 
 November 8 owner production authorization accepts the interface at `e7d17e3` (UI-027/028/029/030/031 and the approved Calendar/link refinements), excludes UI-021 lighter typography, and permits verified data promotion after all release gates. [Scoped production preparation and evidence](ACCEPTED_PRODUCTION_RELEASE.md). Production upload and live verification are pending; prior dated Review-only restrictions are superseded only for the explicitly accepted interface. No automatic production updates are authorized.
 
 November 8 production publication completed: the accepted interface is live on Cloudflare, excluding UI-021 lighter typography. UI-027/028/029/030/031 accepted behavior, Calendar/link refinements and verified November 8 data are promoted only as documented. PRs #6/#8 were reconciled through #24. No DNS, analytics configuration, automatic updater or unrelated feature changes. [Final evidence and remaining limitations](ACCEPTED_PRODUCTION_RELEASE.md#published-release--november-8-mountain-time).
+
+## Review follow-up — full-row Legislators navigation
+
+Owner requested the existing profile link to cover directory-row whitespace while preserving independent count links. This is isolated to Review CSS; the November 8 Cloudflare release and frozen production assets remain unchanged. [Implementation and verification](REVIEW_LEGISLATOR_ROWS.md). Publication and owner physical-device acceptance must be distinguished from local browser checks.
+
+The owner added **UI-033** active-filter recovery and the **2027 Bill Tracker** heading to the pending Review follow-up. Review uses actual in-memory bookmark and result state; Main retains existing behavior and Cloudflare remains at its verified release. [Scope, tests and acceptance limits](REVIEW_FILTER_RECOVERY.md). Do not confuse these pending Review changes with the already published production design.
+
+The owner subsequently authorized preparation of a production-only candidate for these verified fixes, but **not upload**. [Candidate scope and gate](INTERFACE_FIXES_RELEASE.md) require the current production package/data/indexing to remain unchanged outside the explicit UI/provenance allowlist. The current deployment is the immediate rollback for any future authorized replacement.

@@ -172,3 +172,11 @@ November 8 combined links/Calendar refinement published at `e7d17e3`: mandatory 
 November 8 owner production authorization accepts the interface at `e7d17e3` (UI-027/028/029/030/031 and the approved Calendar/link refinements), excludes UI-021 lighter typography, and permits verified data promotion after all release gates. [Scoped production preparation and evidence](ACCEPTED_PRODUCTION_RELEASE.md). Production upload and live verification are pending; prior dated Review-only restrictions are superseded only for the explicitly accepted interface. No automatic production updates are authorized.
 
 November 8 owner-approved interface production release completed at `8af6ca7`, Cloudflare `9cd53e01-15f6-43b1-8185-b48f9522348a`. Accepted UI-027/028/029/030/031 behavior and Calendar/link refinements are live; UI-021 lighter typography remains Review-only. Automated live browser/package/source/indexing checks passed. Physical clipboard, VoiceOver and broader human accessibility acceptance remain distinct; no automatic data updater is enabled. [Receipt](ACCEPTED_PRODUCTION_RELEASE.md#published-release--november-8-mountain-time).
+
+## Review — Legislators full-row navigation
+
+See [focused verification](REVIEW_LEGISLATOR_ROWS.md). Check row whitespace opens the correct profile; Introduced/Requests links retain their destinations; all optional columns, sort/filter state, Back/Forward and repeated taps work. Verify one native profile tab stop, visible row focus, 44px targets, Light/Dark and enlarged text. Physical iPhone/iPad and VoiceOver acceptance remains pending. Main and Cloudflare must remain unchanged until separately approved.
+
+## Review — Bills filter recovery and heading (UI-033)
+
+[Focused record](REVIEW_FILTER_RECOVERY.md): verify the filled-bookmark notice and Show all, distinct empty states, clearly selected Record Type, switch to public requests, unchanged legislator count-link destinations, clean primary Bills navigation and preserved Back/Forward restrictions. Test zero/one/multiple bookmarks, combined restrictions, blocked storage, complete Copy/CSV and pagination. Confirm 2027 Bill Tracker and unchanged 2026 archive heading. Physical iPhone/iPad and VoiceOver acceptance remains pending; no production promotion.

@@ -1,3 +1,4 @@
+import {packageInterfaceFixes} from '../scripts/package-interface-fixes.mjs';
 import {approveRelease} from '../scripts/approve-release.mjs';
 import {packageSocialUpdate} from '../scripts/package-social-update.mjs';
 import {applySocialPreview,socialImagePath,verifySocialImage} from '../scripts/social-preview.mjs';
@@ -29,3 +30,18 @@ const options={expectedContentSha256:accepted.contentSha256,authorization:'Isola
 await assert.rejects(approveRelease(promoted,path.join(root,'failed-ci'),{...options,ci:{...options.ci,conclusion:'failure'}}),/mandatory CI/);
 const approved=await approveRelease(promoted,path.join(root,'approved'),options);assert.equal(approved.approved,true);assert.equal(approved.phase,'public-search-release');for(const [name,sha]of Object.entries(accepted.files))if(name!=='release.json')assert.equal(approved.files[name],sha);await verifyRelease(promoted);
 await writeFile(path.join(one,'site/app.js'),'tampered');await assert.rejects(verifyRelease(one),/checksum mismatch/);await writeFile(path.join(two,'site/extra.txt'),'extra');await assert.rejects(verifyRelease(two),/Unexpected release files/);await writeFile(path.join(input,'app.js'),'changed');await assert.rejects(packageMain(input,path.join(root,'bad'),{commit:'fixture'}),/Unverified Main artifact/);console.log('Identity-bound historical titles; deterministic production-only package; immutable raw bytes; root metadata/noindex; checksum and extra-file rejection passed.');
+
+// Restore the input after the preceding deliberate tamper test.
+await writeFile(path.join(input,'app.js'),originals['app.js']);
+// Scoped follow-up packages preserve every baseline byte outside the three UI assets.
+const fixBase=path.join(root,'fix-base'),fixOut=path.join(root,'fix-candidate');
+const fixBaseline=await packageMain(input,fixBase,{commit:'a'.repeat(40),phase:'public-search-release',approved:true},{promoteAcceptedUI:true});
+const fixIdentity={expectedContentSha256:fixBaseline.contentSha256,changeCommit:'b'.repeat(40),commitTime:'2026-11-08T00:00:00Z',ci:{headSha:'b'.repeat(40),conclusion:'success',databaseId:0,url:'test fixture',jobs:[{name:'build',conclusion:'success'},{name:'deploy',conclusion:'success'}]}};
+const fixed=await packageInterfaceFixes(fixBase,fixOut,fixIdentity);
+assert.deepEqual(Object.keys(fixed.files).filter(n=>fixed.files[n]!==fixBaseline.files[n]).sort(),['app.js','assets/accepted-ui.css','assets/accepted-ui.js','release.json']);
+assert.equal(fixed.approved,false);assert.equal(fixed.phase,'indexable-release-candidate');assert.equal(fixed.approval,undefined);assert.deepEqual(fixed.snapshots,fixBaseline.snapshots);assert.equal((await verifyRelease(fixBase)).contentSha256,fixBaseline.contentSha256);
+assert.ok((await readFile(path.join(fixOut,'site/assets/accepted-ui.js'),'utf8')).includes('2027 Bill Tracker'));
+assert.ok(!(await readFile(path.join(fixOut,'site/assets/accepted-ui.js'),'utf8')).includes('2027 Legislature Bills'));
+await assert.rejects(packageInterfaceFixes(fixBase,path.join(root,'fix-bad-checksum'),{...fixIdentity,expectedContentSha256:'0'.repeat(64)}),/checksum mismatch/);
+await assert.rejects(packageInterfaceFixes(fixBase,path.join(root,'fix-bad-ci'),{...fixIdentity,ci:{...fixIdentity.ci,headSha:'c'.repeat(40)}}),/successful CI/);
+console.log('Scoped interface overlay: exact baseline, CI gate, four-file allowlist, unchanged data/indexing, immutable rollback and pending upload approval passed.');
