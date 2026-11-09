@@ -51,3 +51,11 @@ Owner added the final domain decision during this batch. RELEASE-003 is complete
 Regression diagnostics: a retained WebKit 1180px/dark count-link case timed out while multiple local suites were running. The exact unchanged case passed in isolation; no assertion or application navigation was changed for that result. Final CI must still exercise the complete matrix. The new accessibility test resets zoom, returns to the page top and waits for layout before auditing; this avoids measuring a transient partially clipped link during viewport restoration. Both open and closed Columns panels remain subject to the full axe checks.
 
 Final commit, mandatory CI and hosted Review evidence are recorded in the [PR #33 publication receipt](https://github.com/utahbug/UtahBills/pull/33). Consult that receipt before treating the implementation as published; local verification alone is not publication.
+
+
+### Post-merge CI correction
+
+Inherited push run [42669967054](https://github.com/utahbug/UtahBills/actions/runs/42669967054) completed successfully. PR #33 merged at `60075015f35bbf223439cf3a9ee24844af920f39`. Its push run [42675668946](https://github.com/utahbug/UtahBills/actions/runs/42675668946) stopped at the retained typography assertion before publication: unchecked Party cells were hidden visually but still changed row textContent. The correction creates Party headings/cells only when enabled for 2026 and removes them when disabled. The original typography assertion remains unchanged; the new Party suite additionally verifies zero disabled Party elements and exact original row text after Restore defaults. This is a Review-only rendering fix, with no data, native preferences or production change. Final CI and publication evidence is recorded in the linked PR receipt; failed CI is not a published or accepted release.
+
+
+The focused correction passed the unchanged complete `review-artifact.mjs` and `review-typography.mjs` checks locally, followed by the full Party/labels suite in Chromium and WebKit (including the added default DOM/Restore checks). `scripts/analyze.py --check` and whitespace checks passed. This local result does not substitute for mandatory post-merge CI or live Review verification.

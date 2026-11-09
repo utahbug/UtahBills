@@ -15,6 +15,8 @@ for(const engine of [chromium,webkit].filter(e=>!process.env.ENGINE||e.name()===
  const open=async()=>{if(!await page.locator('.directory-columns-menu').evaluate(e=>e.open))await page.locator('.directory-columns-menu>summary').click();await page.locator('[data-review-party]').waitFor({state:'visible'})};
  await page.goto(base+'review/#legislators');await page.locator('[data-review-party]').waitFor({state:'attached'});
  assert.equal(await page.locator('[data-review-party]').isChecked(),false);
+ assert.equal(await page.locator('.review-party,.review-party-heading').count(),0,'disabled Party adds no DOM text');
+ const originalRows=await page.locator('.legislator-row').allTextContents();
  const original=await page.locator('.legislator-row h2 a').allTextContents();
  const links=await page.locator('.legislator-row a').evaluateAll(es=>es.map(e=>({href:e.getAttribute('href'),text:e.textContent})));
  await open();await page.locator('[data-review-party]').focus();await page.keyboard.press('Space');await page.keyboard.press('Escape');
@@ -30,6 +32,8 @@ for(const engine of [chromium,webkit].filter(e=>!process.env.ENGINE||e.name()===
  await page.reload();await page.locator('.review-party').first().waitFor();assert.equal(await page.locator('[data-review-party]').isChecked(),true);
  await page.locator('#directory-session').selectOption('2027');assert.equal(await page.locator('.review-party').count(),0);assert.match(await page.locator('#directory-results').textContent(),/not been imported/);
  await page.locator('#directory-session').selectOption('2026');await open();await page.locator('.restore-columns').click();assert.equal(await page.locator('[data-review-party]').isChecked(),false);await page.keyboard.press('Escape');
+ assert.equal(await page.locator('.review-party,.review-party-heading').count(),0);
+ assert.deepEqual(await page.locator('.legislator-row').allTextContents(),originalRows,'Restore returns exact original row content');
  // Upgrade existing native preferences without changing their storage or defaults.
  await page.evaluate(()=>{localStorage.setItem('utahbills-directory-columns',JSON.stringify({bills:false,requests:true,district:true}));localStorage.removeItem('utahbills-review-party-column')});await page.reload();await page.locator('[data-review-party]').waitFor({state:'attached'});assert.equal(await page.locator('[data-column="bills"]').isChecked(),false);assert.equal(await page.locator('[data-column="district"]').isChecked(),true);assert.equal(await page.locator('[data-review-party]').isChecked(),false);
  await open();await page.locator('[data-review-party]').check();await page.keyboard.press('Escape');
