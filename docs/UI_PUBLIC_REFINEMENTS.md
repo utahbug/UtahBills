@@ -32,3 +32,11 @@ Source-validated build and combined-artifact checks passed. Focused Chromium/Web
 [PR #28 publication receipt](https://github.com/utahbug/UtahBills/pull/28) records the exact final commit, mandatory CI/Pages result, live environment checks and Cloudflare deployment/checksum/rollback evidence as each gate completes. Local checks do not establish publication; consult the receipt for the final status.
 
 The week-boundary browser fixture fixes its clock to December 29, 2026, while retaining real date arithmetic for supplied dates. This keeps upcoming-event assertions deterministic after the fixture dates pass; it does not alter the application clock or published records.
+
+## November 9 CI regression diagnosis
+
+Runs 42581951654 and 42583209795 stopped before publication at unchanged `tests/batch2.mjs:60`. Local reproduction returned an empty search instead of `Generated test`. The shared reset handler incorrectly treated the brand's established return-to-top action within a normal Bills listing as a fresh navigation, clearing deliberate filters. This was a runtime regression, not a legislative-data discrepancy or obsolete test assertion.
+
+The corrected handler preserves search, sort, pagination, bookmarks and history when the brand returns to the top of a normal listing. Explicit Bills navigation still starts a clean current listing. Brand navigation from another page or a legislator-specific listing also clears restrictive scope. The original batch2 assertions remain unchanged; `tests/brand-navigation.mjs` adds Chromium/WebKit Main/Review phone/desktop coverage for both behaviors. Source reconciliation and publication gates are unchanged. The final receipt remains PR #28; do not deploy the older f22fd8a candidate.
+
+The unchanged batch2 test, new eight-case brand-navigation matrix, and combined artifact isolation check passed locally after the correction. Mandatory CI and hosted publication remain pending.
