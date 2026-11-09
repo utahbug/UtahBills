@@ -13,6 +13,7 @@ class Evidence(unittest.TestCase):
   for field,value in [('session','2027GS'),('district',999),('name','Wrong person'),('house','X')]:
    changed=copy.deepcopy(people);next(p for p in changed if p['id']==ident)[field]=value
    with self.assertRaises(AssertionError):project(source,changed)
+  with self.assertRaises(AssertionError):project(dict(source,url='https://le.utah.gov/asp/roster/roster.asp?year=2027'),people)
   corrupted=dict(source,sha256='0'*64)
   with self.assertRaises(AssertionError):project(corrupted,people)
 if __name__=='__main__':unittest.main()

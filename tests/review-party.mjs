@@ -16,7 +16,7 @@ for(const engine of [chromium,webkit].filter(e=>!process.env.ENGINE||e.name()===
  await page.goto(base+'review/#legislators');await page.locator('[data-review-party]').waitFor({state:'attached'});
  assert.equal(await page.locator('[data-review-party]').isChecked(),false);
  const original=await page.locator('.legislator-row h2 a').allTextContents();
- const links=await page.locator('.legislator-row a').evaluateAll(es=>es.map(e=>({href:e.getAttribute('href'),text:e.textContent}))); 
+ const links=await page.locator('.legislator-row a').evaluateAll(es=>es.map(e=>({href:e.getAttribute('href'),text:e.textContent})));
  await open();await page.locator('[data-review-party]').focus();await page.keyboard.press('Space');await page.keyboard.press('Escape');
  await page.waitForFunction(()=>[...document.querySelectorAll('.review-party')].some(e=>e.textContent.includes('Republican')));
  assert.equal(await page.locator('.review-party:visible').count(),104);
