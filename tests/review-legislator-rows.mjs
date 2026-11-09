@@ -40,7 +40,7 @@ for(const engine of [chromium,webkit].filter(e=>!process.env.ENGINE||e.name()===
    await page.evaluate(()=>document.documentElement.style.fontSize='200%');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
    await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);
    await page.screenshot({path:`test-results/review-legislator-rows/${engine.name()}-${width}-${theme}.png`});
-  assert.deepEqual(errors,[]);await page.close();const main=await browser.newPage({...options,colorScheme:theme});main.on('pageerror',e=>errors.push(e.message));await main.goto(base+'#legislators');await main.locator('.legislator-row').first().waitFor();assert.equal(await main.locator('.legislator-row h2 a').first().evaluate(e=>getComputedStyle(e,'::after').content),'none');assert.deepEqual(errors,[]);await main.close();
+  assert.deepEqual(errors,[]);await page.close();const main=await browser.newPage({...options,colorScheme:theme});main.on('pageerror',e=>errors.push(e.message));await main.goto(base+'#legislators');await main.locator('.legislator-row').first().waitFor();assert.equal(await main.locator('.legislator-row h2 a').first().evaluate(e=>getComputedStyle(e,'::after').position),'absolute');assert.deepEqual(errors,[]);await main.close();
   }
  }
 }finally{await browser.close()}}

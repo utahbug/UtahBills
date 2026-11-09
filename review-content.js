@@ -3,7 +3,7 @@ export function installReviewContent(){
  const main=document.querySelector('main'),nav=document.querySelector('header nav');
  function update(){
   const heading=main.querySelector('.bills-heading h1');
-  if(heading&&main.querySelector('#session')&&heading.textContent!=='2027 Bill Tracker')heading.textContent='2027 Bill Tracker';
+  if(heading&&main.querySelector('#session')&&heading.textContent!=='2027 Utah Bill Tracking')heading.textContent='2027 Utah Bill Tracking';
   for(const label of nav.querySelectorAll('.phone-activity-label>span'))if(label.textContent!=='Recent')label.textContent='Recent';
   const period=main.querySelector('#activity-period');if(period&&!period.closest('label').classList.contains('review-selected-range')){period.closest('label').classList.add('review-selected-range');const mark=document.createElement('span');mark.textContent='✓';mark.className='review-range-check';mark.setAttribute('aria-hidden','true');period.closest('label').prepend(mark)}
   const month=main.querySelector('#calendar-month'),toggle=main.querySelector('#calendar-toggle');

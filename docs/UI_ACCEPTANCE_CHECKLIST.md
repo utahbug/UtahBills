@@ -180,3 +180,7 @@ See [focused verification](REVIEW_LEGISLATOR_ROWS.md). Check row whitespace open
 ## Review — Bills filter recovery and heading (UI-033)
 
 [Focused record](REVIEW_FILTER_RECOVERY.md): verify the filled-bookmark notice and Show all, distinct empty states, clearly selected Record Type, switch to public requests, unchanged legislator count-link destinations, clean primary Bills navigation and preserved Back/Forward restrictions. Test zero/one/multiple bookmarks, combined restrictions, blocked storage, complete Copy/CSV and pagination. Confirm 2027 Bill Tracker and unchanged 2026 archive heading. Physical iPhone/iPad and VoiceOver acceptance remains pending; no production promotion.
+
+## UI-034 — owner-authorized shared public corrections
+
+[Focused acceptance and release gates](UI_PUBLIC_REFINEMENTS.md) supersede the earlier Review-only promotion restriction for UI-032/UI-033 and the old current heading only within this approved release. Check source/bookmark adjacency and independent action, exact dynamic tooltips, desktop centered / phone left-aligned notice, 2027 Utah Bill Tracking, unchanged archive, Monday-Sunday Calendar separators across filtered/weekend/year boundaries, native row/count links and search/Copy/history regressions. Test both themes and enlarged text. Main/Review noindex and separate typography remain required. Physical iPhone/iPad, VoiceOver and real clipboard acceptance are pending.

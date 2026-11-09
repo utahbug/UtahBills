@@ -2,6 +2,8 @@ import {copyResults,copyText,toolbarInfo,compactSelects} from './ui.js';
 import {infoIcon,deadlineIcon,calendarIcon} from './info.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const categories={meeting:['M','Committee / commission'],floor:['F','Floor session'],session:['S','Session milestone'],deadline:['D','Deadline'],caucus:['C','Caucus'],other:['O','Other official event']};
+// Monday-Sunday calendar weeks, based on the official date string, not device timezone.
+export function calendarWeek(date){const d=new Date(date+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-(d.getUTCDay()+6)%7);return d.toISOString().slice(0,10)}
 export const mountainDate=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 export function monthDays(month){const [y,m]=month.split('-').map(Number);return {offset:new Date(Date.UTC(y,m-1,1)).getUTCDay(),count:new Date(Date.UTC(y,m,0)).getUTCDate()}}
 const fullDate=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{timeZone:'UTC',weekday:'long',year:'numeric',month:'long',day:'numeric'});
@@ -32,7 +34,8 @@ export async function showCalendar(main){
   const box=main.querySelector('#calendar-content');
   const upcoming=upcomingMode?snapshot.events.filter(e=>e.date>=mountainDate()&&(!category||category===e.category)).sort((a,b)=>a.date.localeCompare(b.date)||(a.start||'').localeCompare(b.start||'')||a.name.localeCompare(b.name)||a.id.localeCompare(b.id)):events.filter(e=>!selected||e.date>=selected);
   upcoming.sort((a,b)=>a.date.localeCompare(b.date)||(a.start||'').localeCompare(b.start||'')||a.name.localeCompare(b.name)||a.id.localeCompare(b.id));
-  const grouped=[...new Set(upcoming.map(e=>e.date))].map(d=>`<section class="calendar-date-group" aria-labelledby="events-${d}"><h3 id="events-${d}"><time datetime="${d}">${fullDate(d)}</time></h3>${eventRows(upcoming.filter(e=>e.date===d))}</section>`).join('');
+  const dates=[...new Set(upcoming.map(e=>e.date))];
+  const grouped=dates.map((d,i)=>`<section class="calendar-date-group${i&&calendarWeek(d)!==calendarWeek(dates[i-1])?' calendar-week-start':''}" aria-labelledby="events-${d}"><h3 id="events-${d}"><time datetime="${d}">${fullDate(d)}</time></h3>${eventRows(upcoming.filter(e=>e.date===d))}</section>`).join('');
   const message=upcomingMode?(!upcoming.length?'No upcoming matching events in saved coverage. Choose a month to view earlier recorded activity.':''):!events.length?(category?'No events match this type in the selected month.':'No events are listed for this month in the saved snapshot.'):
    !upcoming.length?'No more matching events are listed from this date through the end of the month. Choose a month or an earlier grid date to browse past events.':
    selected&&upcoming[0].date!==selected?`No matching events on ${fullDate(selected)}. Next scheduled: ${fullDate(upcoming[0].date)}.`:'';

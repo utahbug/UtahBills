@@ -57,3 +57,7 @@ The owner has authorized the specific interface and verified-data promotion desc
 ## Scoped interface follow-up — preparation authorization only
 
 The owner authorized preparing UI-032/UI-033 and the 2027 Bill Tracker heading after successful Review testing. Use the [scoped immutable-overlay procedure](INTERFACE_FIXES_RELEASE.md), preserving the current production package/data/indexing byte-for-byte outside its four-file UI/provenance allowlist. This is **not** Cloudflare upload authorization. Keep the candidate unapproved and retain current/earlier rollback packages.
+
+## November 9 scoped public UI authorization
+
+The owner explicitly authorizes the six corrections and verified navigation/filter follow-up in [UI-034](UI_PUBLIC_REFINEMENTS.md). This supersedes the preceding preparation-only upload gate for this release. The scoped overlay now rebuilds shared `app.js` and `styles.css`, plus the exact accepted-UI heading override; `assets/accepted-ui.css` is unchanged. The only other permitted difference is release metadata. Validate all unchanged bytes and exact CI, preserve the immutable baseline, make an approved copy with the existing approval tool, and deploy only after all documented checks pass. Do not alter data, indexing, Analytics, DNS, redirects, or Review typography.

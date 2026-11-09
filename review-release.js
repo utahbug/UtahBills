@@ -1,4 +1,3 @@
-import {installReviewBills} from './review-bills.js';
 import {installReviewContent} from './review-content.js';
 import {installToolbarPosition} from './review-toolbar-position.js';
 import {createElement,SlidersHorizontal,Info,CircleHelp} from 'lucide';
@@ -37,5 +36,3 @@ if(!moveContactIcon()){const observer=new MutationObserver(()=>{if(moveContactIc
 installToolbarPosition(panel,place);
 
 installReviewContent();
-
-installReviewBills();

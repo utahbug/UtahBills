@@ -985,3 +985,10 @@ November 8 owner-approved interface production release completed at `8af6ca7`, C
 - **Dependencies:** Existing TRANS-006 local bookmarks, search parsing, verified source scopes and UI-025 navigation safeguards.
 - **Acceptance:** Active saved notice with one-tap Show all; distinguish absent bookmarks, restricted matches and unavailable record types using actual state; clear record-type selection and public-request recovery; preserve count-link destinations, history, complete Copy/CSV, sorting, pagination and stored bookmarks. Primary Bills navigation must not retain a hidden sponsor restriction. Preserve archive heading, source data, Main and production. Test blocked storage, all device classes/themes, keyboard and accessibility; physical owner acceptance remains separate.
 - **Evidence:** [Decisions and verification](REVIEW_FILTER_RECOVERY.md).
+
+### UI-034
+- Priority: owner-authorized focused public UI release, November 9, 2026.
+- Scope: compact independent detail bookmarks/source tooltips; 2027 Utah Bill Tracking heading; desktop bookmark-notice centering; updated bookmark labels; weekly Calendar list separators.
+- Dependencies: UI-032/UI-033 verified navigation/recovery; immutable accepted production baseline; exact-commit mandatory CI and Main/Review publication.
+- Acceptance: [implementation, week convention, environment differences and release gates](UI_PUBLIC_REFINEMENTS.md). All six corrections pass Chromium/WebKit, touch/keyboard, Light/Dark, enlarged text and source/package checks; no data/indexing/domain changes. Physical device/VoiceOver acceptance remains separate.
+- Status: implementation and verification in progress; no new public release claimed until the receipt is recorded.
