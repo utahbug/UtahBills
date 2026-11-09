@@ -1,0 +1,178 @@
+{
+  "verifiedAt": "2026-11-09T00:38:08.162Z",
+  "productionURL": "https://legislation.utahbug.com/",
+  "deploymentId": "9cd53e01-15f6-43b1-8185-b48f9522348a",
+  "project": "utahbills",
+  "productionBranch": "main",
+  "runtimeCommit": "8af6ca7d990d0b6dec156561aa89ce0140a36e15",
+  "dataCommit": "98a5dec7f10f4203d099a30454e3714beff45391",
+  "dataTree": "037afa0bad442801980a1421a4a718b222cc8fd1",
+  "acceptedUIBaseline": "e7d17e382cfc01c241164d54e70bfc869570d1cf",
+  "contentSha256": "285232f20c53011cc0255b50021300c091da28aec9db79641778c985cad5d504",
+  "manifestSha256": "eb24ae6a6ecf3847b864b41dd2937b368ae3f3c014079266be8b8bd91f26d619",
+  "approved": true,
+  "package": "release-candidates/approved-production-8af6ca7d990d0b6dec156561aa89ce0140a36e15",
+  "ci": {
+    "run": 42535283693,
+    "conclusion": "success",
+    "attempt": 1,
+    "url": "https://github.com/utahbug/UtahBills/actions/runs/42535283693"
+  },
+  "refresh": {
+    "run": 42531024937,
+    "event": "workflow_dispatch",
+    "allFiveComponents": "success",
+    "mandatoryCIAndPages": "success",
+    "latestGenuineScheduledSuccess": 42279718407
+  },
+  "audit": {
+    "commit": "8af6ca7d990d0b6dec156561aa89ce0140a36e15",
+    "contentSha256": "285232f20c53011cc0255b50021300c091da28aec9db79641778c985cad5d504",
+    "approved": true,
+    "eligibleURLs": 283,
+    "verifiedRequests": 282,
+    "sourceObservedExcluded": [
+      "requests/2027/YPQWEJNNQR/index.html"
+    ],
+    "introduced": 0,
+    "calendarEvents": 97,
+    "requestsCheckedAt": "2026-11-08T22:36:06.519370+00:00",
+    "calendarCheckedAt": "2026-11-08T22:36:05.440534+00:00",
+    "live": true,
+    "crawlerProbes": "All eligible URLs returned 200, no noindex and correct canonical for ordinary, Googlebot and Bingbot requests. This is not evidence of actual engine indexing."
+  },
+  "browserChecks": [
+    {
+      "browser": "chromium",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "viewport": {
+        "width": 1180,
+        "height": 820
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": {
+        "width": 1180,
+        "height": 820
+      },
+      "passed": true
+    },
+    {
+      "browser": "webkit",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true
+    }
+  ],
+  "clipboardVerification": "Browser tests simulate clipboard APIs and verify complete output/CSV; physical iPhone clipboard and VoiceOver are not claimed.",
+  "hosting": {
+    "checkedAt": "2026-11-09T00:38:08.162Z",
+    "deployment": {
+      "Id": "9cd53e01-15f6-43b1-8185-b48f9522348a",
+      "Environment": "Production",
+      "Branch": "main",
+      "Source": "8af6ca7",
+      "Deployment": "https://9cd53e01.utahbills.pages.dev",
+      "Status": "59 seconds ago",
+      "Build": "https://dash.cloudflare.com/5ae20e07908599cb1891090a61645991/pages/view/utahbills/9cd53e01-15f6-43b1-8185-b48f9522348a"
+    },
+    "rollbackDeploymentRetained": true,
+    "analytics": [
+      {
+        "browser": "chromium",
+        "beacon": 1,
+        "requests": [
+          "https://static.cloudflareinsights.com/beacon.min.js",
+          "https://cloudflareinsights.com/cdn-cgi/rum"
+        ]
+      },
+      {
+        "browser": "webkit",
+        "beacon": 1,
+        "requests": [
+          "https://static.cloudflareinsights.com/beacon.min.js",
+          "https://cloudflareinsights.com/cdn-cgi/rum"
+        ]
+      }
+    ],
+    "pagesAliasesNoindex": true
+  },
+  "rollback": {
+    "deploymentId": "aa8f3da8-71b6-4959-a0a7-6ae979ab0ecc",
+    "package": "release-candidates/public-index-39aa68c649631f87fa3522aba1229fc583e914d8",
+    "contentSha256": "5fe44301e1d978bae8762571c6b9dcae1026799b760b42d2a7d99e8e1251c6bf",
+    "retainedAndReverified": true
+  },
+  "limitations": [
+    "283 official observations include 282 status-verified requests and one source-observed request with unconfirmed status. YPQWEJNNQR remains noindex and excluded from sitemap.",
+    "Zero introduced 2027 measures in verified snapshot; no speculative descriptions.",
+    "Existing five unresolved 2026 vote-detail cases and source qualifications remain.",
+    "Cloudflare Analytics beacon and delivery requests observed; account totals and uniform hash-route tracking not verified.",
+    "No automatic Cloudflare data update was enabled.",
+    "Crawler probes establish eligibility/access, not actual indexing. Google/Bing account outcomes unchanged."
+  ],
+  "documentationReconciliation": {
+    "PR6": "merged through PR24",
+    "PR8": "merged through PR24",
+    "releasePR": 24
+  }
+}
