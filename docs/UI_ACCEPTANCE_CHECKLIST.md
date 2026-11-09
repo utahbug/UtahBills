@@ -184,3 +184,7 @@ See [focused verification](REVIEW_LEGISLATOR_ROWS.md). Check row whitespace open
 ## UI-034 — owner-authorized shared public corrections
 
 [Focused acceptance and release gates](UI_PUBLIC_REFINEMENTS.md) supersede the earlier Review-only promotion restriction for UI-032/UI-033 and the old current heading only within this approved release. Check source/bookmark adjacency and independent action, exact dynamic tooltips, desktop centered / phone left-aligned notice, 2027 Utah Bill Tracking, unchanged archive, Monday-Sunday Calendar separators across filtered/weekend/year boundaries, native row/count links and search/Copy/history regressions. Test both themes and enlarged text. Main/Review noindex and separate typography remain required. Physical iPhone/iPad, VoiceOver and real clipboard acceptance are pending.
+
+## Verified November 9 publication
+
+Runtime 41e6c63e8d2d328178aa50df645557be7e99add1 passed [mandatory CI/Pages](https://github.com/utahbug/UtahBills/actions/runs/42638733187) and live Main/Review/production checks. Cloudflare deployment e89d8426-df1e-422a-9ae7-890570279788, approved content SHA-256 a496d85fd5635a3bfa868ca9c8023123e77bb5ad54a551de5980a95db5a28bf4. The four-file overlay preserves 9,621 other files, source data, indexing and domains; previous production is retained for rollback. [Machine-readable receipt and limitations](evidence/NOV9_PUBLIC_RELEASE.json) / [publication receipt](https://github.com/utahbug/UtahBills/pull/28). Physical iPhone/iPad, VoiceOver and real clipboard acceptance remain pending.
