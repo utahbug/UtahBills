@@ -991,4 +991,4 @@ November 8 owner-approved interface production release completed at `8af6ca7`, C
 - Scope: compact independent detail bookmarks/source tooltips; 2027 Utah Bill Tracking heading; desktop bookmark-notice centering; updated bookmark labels; weekly Calendar list separators.
 - Dependencies: UI-032/UI-033 verified navigation/recovery; immutable accepted production baseline; exact-commit mandatory CI and Main/Review publication.
 - Acceptance: [implementation, week convention, environment differences and release gates](UI_PUBLIC_REFINEMENTS.md). All six corrections pass Chromium/WebKit, touch/keyboard, Light/Dark, enlarged text and source/package checks; no data/indexing/domain changes. Physical device/VoiceOver acceptance remains separate.
-- Status: implementation and verification in progress; no new public release claimed until the receipt is recorded.
+- Status: implemented and published November 9 at 41e6c63e8d2d328178aa50df645557be7e99add1; mandatory CI and live Main/Review/Cloudflare verification passed. [Release evidence](evidence/NOV9_PUBLIC_RELEASE.json). Physical-device/VoiceOver/real-clipboard acceptance remains pending.
