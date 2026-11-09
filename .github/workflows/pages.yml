@@ -163,6 +163,7 @@ jobs:
         with:
           path: dist
   deploy:
+    if: false # Diagnostic branch: never publish.
     needs: build
     runs-on: ubuntu-latest
     environment:

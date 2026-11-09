@@ -11,7 +11,7 @@ assert.equal(affiliation(evidence,'2026',id,record.name),record.party);
 for(const args of [[evidence,'2027',id,record.name],[evidence,'2026',id,'wrong'],[evidence,'2026','missing',record.name],[null,'2026',id,record.name]])assert.equal(affiliation(...args),'Unavailable');
 await mkdir('test-results/review-party',{recursive:true});
 for(const engine of [chromium,webkit].filter(e=>!process.env.ENGINE||e.name()===process.env.ENGINE)){const browser=await engine.launch();try{
- const page=await browser.newPage({viewport:{width:1280,height:1000}});const errors=[];page.on('pageerror',e=>{errors.push(e.message);console.error('Party browser error',page.url(),e.message)});
+ const page=await browser.newPage({viewport:{width:1280,height:1000}});let phase='initial';const errors=[];page.on('console',m=>{if(m.text().startsWith('ROTRACE'))console.log(m.text())});await page.addInitScript(()=>{const Native=ResizeObserver,trace=[];window.ResizeObserver=class extends Native{constructor(cb){const source=new Error().stack;super((entries,observer)=>{trace.push({source,targets:entries.map(e=>e.target.tagName+'.'+e.target.className)});if(trace.length>12)trace.shift();cb(entries,observer)})}};addEventListener('error',()=>console.error('ROTRACE '+JSON.stringify({width:innerWidth,font:document.documentElement.style.fontSize,zoom:document.documentElement.style.zoom,trace}))) });page.on('pageerror',e=>{errors.push(e.message);console.error('Party browser error',phase,page.url(),e.message)});
  const open=async()=>{if(!await page.locator('.directory-columns-menu').evaluate(e=>e.open))await page.locator('.directory-columns-menu>summary').click();await page.locator('[data-review-party]').waitFor({state:'visible'})};
  await page.goto(base+'review/#legislators');await page.locator('[data-review-party]').waitFor({state:'attached'});
  assert.equal(await page.locator('[data-review-party]').isChecked(),false);
@@ -40,6 +40,7 @@ for(const engine of [chromium,webkit].filter(e=>!process.env.ENGINE||e.name()===
  for(const width of [320,390,844,1280])for(const theme of ['light','dark']){
   await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:theme});
   for(const mode of ['normal','text','zoom']){
+   phase=JSON.stringify({width,theme,mode});console.log('Party phase '+engine.name()+' '+phase);
    await page.reload();await page.locator('.review-party').first().waitFor();
    await page.evaluate(mode=>{document.documentElement.style.fontSize=mode==='text'?'200%':'';document.documentElement.style.zoom=mode==='zoom'?'2':''},mode);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`${engine.name()} ${width} ${mode}`);
