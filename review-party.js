@@ -47,16 +47,18 @@ export function installParty(){
    const session=main.querySelector('#directory-session').value;
    const headings=main.querySelector('.directory-columns');
    let heading=headings.querySelector('.review-party-heading');
-   if(!heading){heading=document.createElement('span');heading.className='review-party-heading';heading.textContent='Party (2026)';headings.append(heading)}
-   heading.hidden=!enabled||session!=='2026';
+   const showParty=enabled&&session==='2026';
+   if(showParty&&!heading){heading=document.createElement('span');heading.className='review-party-heading';heading.textContent='Party (2026)';headings.append(heading)}
+   if(!showParty)heading?.remove();
    const selected=[...fields.querySelectorAll('[data-column]')].filter(i=>i.checked).map(i=>i.dataset.column);
    // Recompute from native checkboxes after every native draw, never append tracks repeatedly.
    const tracks=['minmax(0,1fr)',...selected.map(k=>k==='bills'?'minmax(0,11rem)':'minmax(0,16rem)'),...(enabled?['minmax(0,9rem)']:[])];
    layout.style.setProperty('--directory-columns',tracks.join(' '));
    layout.style.setProperty('--directory-width',`max(30rem,calc(${15+selected.reduce((n,k)=>n+(k==='bills'?11:16),0)+(enabled?9:0)}rem + ${(tracks.length-1)*16+24}px))`);
    for(const row of main.querySelectorAll('.legislator-row')){
-    let cell=row.querySelector('.review-party');if(!cell){cell=document.createElement('span');cell.className='review-party';row.querySelector('.directory-counts').append(cell)}
-    cell.hidden=!enabled||session!=='2026';
+    let cell=row.querySelector('.review-party');
+    if(!showParty){cell?.remove();continue}
+    if(!cell){cell=document.createElement('span');cell.className='review-party';row.querySelector('.directory-counts').append(cell)}
     const link=row.querySelector('h2 a'),id=link.getAttribute('href').split('/')[1];
     const value=affiliation(evidence,session,id,link.textContent.trim());
     if(cell.textContent!=='Party (2026): '+value){cell.replaceChildren();const label=document.createElement('span');label.className='directory-mobile-label';label.textContent='Party (2026): ';cell.append(label,value);}
