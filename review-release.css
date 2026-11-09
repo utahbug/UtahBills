@@ -124,3 +124,7 @@ main{padding-top:10px}
 .review-party[hidden],.review-party-heading[hidden]{display:none}
 .review-party-note{font-size:.8125rem;line-height:1.5}
 @container directory (max-width:46em){.review-party{flex-basis:100%;text-align:left;justify-self:start;padding-block:4px}.review-party-heading{display:none}}
+
+/* Keep narrow desktop Review header padding stable when the shared observer
+   toggles navigation-wrapped; changing its measured height feeds back in WebKit. */
+@media(max-width:700px){:root:not(.phone-navigation) header .header-inner:has(#review-settings-trigger){padding-top:8px!important}}

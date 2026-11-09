@@ -59,3 +59,13 @@ Inherited push run [42669967054](https://github.com/utahbug/UtahBills/actions/ru
 
 
 The focused correction passed the unchanged complete `review-artifact.mjs` and `review-typography.mjs` checks locally, followed by the full Party/labels suite in Chromium and WebKit (including the added default DOM/Restore checks). `scripts/analyze.py --check` and whitespace checks passed. This local result does not substitute for mandatory post-merge CI or live Review verification.
+
+
+### Linux WebKit resize gate
+
+Both attempts of [42681875116](https://github.com/utahbug/UtahBills/actions/runs/42681875116) passed the retained artifact/typography checks and Chromium Party suite, then failed the unchanged zero-browser-errors assertion with a WebKit ResizeObserver notification. Four instrumented local WebKit runs passed. A separate [diagnostic run 42687594426](https://github.com/utahbug/UtahBills/actions/runs/42687594426) used `refresh_data=false`, retained all checks and explicitly disabled publication. Its trace located the error at the initial 1280-to-320px desktop viewport transition, before text/zoom enlargement, while the shared header observer changed wrapping state.
+
+The focused Review-only CSS correction fixes narrow desktop header top padding at the wrapped value (8px), so toggling `navigation-wrapped` no longer changes the height being measured. Phone rules, Main assets and frozen production remain unchanged. Test errors now include the active viewport/theme/enlargement phase; no error is suppressed and no assertion or mandatory workflow check is removed. Final Linux CI and live publication remain required; see the PR receipts linked from PR #33 for the final outcome.
+
+
+The stable-padding correction passed the unchanged complete artifact and typography suites locally, then the complete Chromium/WebKit Party suite. Source/documentation analysis and whitespace checks passed. These results supplement, not replace, the pending full Linux CI gate.
