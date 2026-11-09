@@ -28,3 +28,5 @@ Publication and final package/deployment evidence will be recorded in the implem
 ## Local verification
 
 Source-validated build and combined-artifact checks passed. Focused Chromium/WebKit tests passed in Main and Review at all five widths, including hover without geometry changes, focus/Escape, doubled text, both themes, axe, filtered date groups and year boundaries. Dialog focus assertions wait for the native close event rather than assuming synchronous WebKit focus restoration. Existing filter recovery and repeated phone-sized row/count/history checks passed, as did immutable package/approval rejection tests. Screenshots of request controls and Calendar dividers were inspected. Full mandatory CI, hosted verification and production publication remain pending until the receipt is recorded.
+
+[PR #28 publication receipt](https://github.com/utahbug/UtahBills/pull/28) records the exact final commit, mandatory CI/Pages result, live environment checks and Cloudflare deployment/checksum/rollback evidence as each gate completes. Local checks do not establish publication; consult the receipt for the final status.
