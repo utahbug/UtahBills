@@ -40,3 +40,11 @@ Runs 42581951654 and 42583209795 stopped before publication at unchanged `tests/
 The corrected handler preserves search, sort, pagination, bookmarks and history when the brand returns to the top of a normal listing. Explicit Bills navigation still starts a clean current listing. Brand navigation from another page or a legislator-specific listing also clears restrictive scope. The original batch2 assertions remain unchanged; `tests/brand-navigation.mjs` adds Chromium/WebKit Main/Review phone/desktop coverage for both behaviors. Source reconciliation and publication gates are unchanged. The final receipt remains PR #28; do not deploy the older f22fd8a candidate.
 
 The unchanged batch2 test, new eight-case brand-navigation matrix, and combined artifact isolation check passed locally after the correction. Mandatory CI and hosted publication remain pending.
+
+The previously unreached mandatory suite also exposed a compatibility omission in the shared empty-state replacement: its existing View 2027 public requests action lacked the established show-requests control ID. Restoring that ID preserves the same action and route; unchanged activity.mjs and phase4d.mjs now pass, alongside Chromium/WebKit saved-filter recovery. No original test assertions or source checks were removed.
+
+The final legacy transition check also requires the established truthful empty-state wording, 'latest saved records'. The shared replacement now retains that wording rather than adding an unnecessary adjective. The original phase4v assertion is unchanged.
+
+Final correction superseding the intermediate ID/wording edits above: preserve the original unavailable-record panel when saved-only filtering is inactive. This retains its native public-request link, show-requests ID, compact empty-index structure and original wording. The replacement panel is limited to saved-filter recovery. All original Activity and phase4v/phase4w assertions remain unchanged. Intermediate edits remain in ignored diagnostic backups.
+
+Final local verification passed: unchanged activity.mjs, phase4v.mjs, phase4w.mjs and phase4x.mjs; Chromium/WebKit saved-filter recovery; and the previously unreached suite from batch2b through phase4u. The final condition preserves existing native empty-state semantics and retains all saved-only actions. Mandatory CI remains the publication gate.
