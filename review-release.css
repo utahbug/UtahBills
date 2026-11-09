@@ -117,20 +117,3 @@ main{padding-top:10px}
 .calendar-controls #review-key-dates{font-size:.9rem}
 .calendar-controls .review-month-controls .selected-value{padding-left:0}
 @media(max-width:360px){.calendar-controls:has(.review-month-controls){grid-template-columns:minmax(0,1fr)}.calendar-controls :is(#calendar-toggle,#review-key-dates){grid-column:1}}
-
-/* Review-only: native profile anchor covers the row; count links stay independent. */
-.legislator-row{position:relative;isolation:isolate;min-height:44px}
-.legislator-row a{touch-action:manipulation}
-.legislator-row h2 a::after{content:"";position:absolute;inset:0}
-.legislator-row .directory-counts>a{position:relative;z-index:1}
-.legislator-row:has(a:focus-visible){box-shadow:inset 0 0 0 2px var(--appearance-focus,#a04400)}
-@media(hover:hover){.legislator-row:hover{background:var(--appearance-hover,#edf6ff)}}
-
-/* Review-only active filter recovery; uses the existing application state. */
-.review-record-type #session{border:2px solid var(--appearance-accent,#17628a);background:var(--appearance-surface,#fff)}
-.review-filter-notice{display:flex;align-items:center;flex-wrap:wrap;gap:0 6px;padding:2px 8px;margin:4px 0;border:1px solid var(--line);border-radius:4px;background:var(--appearance-hover,#edf6ff);font-size:.9rem}
-.review-filter-notice>svg{width:18px;height:18px;flex:none;fill:currentColor}
-:root .review-filter-notice button,:root .review-empty-results button{min-width:44px;min-height:44px;text-decoration:underline!important}
-.review-empty-results{padding:8px 0}.review-empty-results p{margin:4px 0}.review-empty-results button{margin-right:12px}
-
-/* End Review navigation/filter follow-up. */

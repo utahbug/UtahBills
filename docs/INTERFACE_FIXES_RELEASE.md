@@ -1,4 +1,6 @@
-# UI-032/UI-033 production follow-up — preparation only
+# UI-032/UI-033 production follow-up — November 8 preparation record
+
+**Superseded for the November 9 authorized release by [UI-034](UI_PUBLIC_REFINEMENTS.md).** The prior candidate remains immutable and was not uploaded. The current overlay allowlist is `app.js`, `styles.css`, `assets/accepted-ui.js`, and `release.json`; the accepted UI stylesheet is preserved.
 
 Owner authorization on November 8, 2026: finish and verify the Legislators navigation and Bills filter corrections in GitHub Review, then prepare a scoped production update. **No Cloudflare upload is authorized.** The previously requested 2027 Bill Tracker heading is included; no other design or typography promotion is included.
 

@@ -7,7 +7,7 @@ await mkdir('test-results',{recursive:true});const axe=await readFile('node_modu
 const base=process.env.UTAHBILLS_BASE_URL||'http://127.0.0.1:4173/UtahBills/';
 await page.addInitScript(()=>localStorage.setItem('utahbills-results-per-page','25'));
 try{
-await page.goto(base);await page.getByRole('heading',{name:'Find a bill. Understand its impact.'}).waitFor();
+await page.goto(base);await page.getByRole('heading',{name:'2027 Utah Bill Tracking'}).waitFor();
 await openArchive(page);await page.locator('#search').fill('HB 154');assert.equal(await page.locator('.bill-row').count(),1);await page.locator('#clear-search').click();
 await page.locator('.advanced-search>summary').click();await page.locator('#status').selectOption('Signed');assert.equal(await page.locator('.bill-row').count(),25);await page.locator('#chamber').selectOption('Senate');assert.equal(await page.locator('.bill-row').count(),25);await page.locator('#clear').click();
 await page.locator('#search').fill('ZZZNOMATCHQQQ');await page.locator('#search-guidance').waitFor();assert.match(await page.locator('#search-guidance').innerText(),/No records match this search/);assert.equal(await page.locator('.bill-row').count(),0);assert.equal(await page.locator('.empty').count(),0);await page.locator('#clear-search').click();
