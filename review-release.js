@@ -1,3 +1,5 @@
+import {installParty} from './review-party.js';
+installParty();
 import {installReviewContent} from './review-content.js';
 import {installToolbarPosition} from './review-toolbar-position.js';
 import {createElement,SlidersHorizontal,Info,CircleHelp} from 'lucide';

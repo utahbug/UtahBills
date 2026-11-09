@@ -26,7 +26,7 @@ export function installToolbarPosition(panel,place){
  }
  row.addEventListener('click',()=>{position=position==='top'?'bottom':'top';let saved=false;try{localStorage.setItem(key,position);saved=true}catch{}apply();status.textContent+=saved?' Saved for this browser.':' This browser could not save it; the setting applies for this visit.'});
  new MutationObserver(apply).observe(root,{attributes:true,attributeFilter:['class']});
- new ResizeObserver(measure).observe(banner);
+ new ResizeObserver(()=>requestAnimationFrame(measure)).observe(banner);
  addEventListener('storage',event=>{if(event.key===key||event.key===null){position=['top','bottom'].includes(event.newValue)?event.newValue:defaultPosition();apply()}});
  apply();
 }

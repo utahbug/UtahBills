@@ -19,7 +19,7 @@ This section and the latest dated task notes supersede older pending statements;
 | UI-001/UI-019 / RELEASE-001 | Automated coverage and technical-source spacing are implemented; physical iPhone/iPad, VoiceOver, real clipboard and independent editorial acceptance remain open. Contact mailto is contact@utahbug.com; real delivery/monitoring remains an owner check. |
 | SESSION-002/003 | Blocked on authoritative 2027 membership and first real introduced/conversion evidence; zero introduced measures in the accepted snapshot. |
 | RELEASE-004 / search accounts | Eligible production indexing is authorized and deployed; GitHub/alternate-host/qualified-record restrictions remain. Google/Bing ownership, submission and indexing outcomes are not verified. |
-| DATA-005; LEG-003 party extension; TRANS-008 | Approved future directions, not implementation authorization. Require exact record/member/date evidence and scoped approval. |
+| DATA-005; TRANS-008 | Approved future directions, not implementation authorization. Require exact record/member/date evidence and scoped approval. |
 | CAL-004 / TRANS-002 | Description investigation retained; zero approved request descriptions. Exact authoritative joins/editorial policy remain gates. |
 | TRANS-006 advanced; LEG-001; RELEASE-003; DATA-002/003/004 | Monitoring/notifications/sync deferred; private address lookup blocked; domain/redirect decision and historical vote issues remain open. No unrelated work starts during handoff. |
 
@@ -1009,3 +1009,16 @@ November 8 owner-approved interface production release completed at `8af6ca7`, C
 - Dependencies: UI-032/UI-033 verified navigation/recovery; immutable accepted production baseline; exact-commit mandatory CI and Main/Review publication.
 - Acceptance: [implementation, week convention, environment differences and release gates](UI_PUBLIC_REFINEMENTS.md). All six corrections pass Chromium/WebKit, touch/keyboard, Light/Dark, enlarged text and source/package checks; no data/indexing/domain changes. Physical device/VoiceOver acceptance remains separate.
 - Status: implemented and published November 9 at 41e6c63e8d2d328178aa50df645557be7e99add1; mandatory CI and live Main/Review/Cloudflare verification passed. [Release evidence](evidence/NOV9_PUBLIC_RELEASE.json). Physical-device/VoiceOver/real-clipboard acceptance remains pending.
+
+
+## November 9 combined Review batch
+
+LEG-003 Party extension is now authorized and implemented in Review source only, pending verification/publication and owner acceptance. Exact 2026 roster IDs supply 100 affiliations; four lack direct IDs and remain unavailable. No 2027 affiliation, party sorting, inferred identities or vote totals. Shared Main runtime/data and existing preferences remain unchanged. [Evidence, release readiness and gates](NOV9_REVIEW_PARTY_READINESS.md). The additional redundant Request label correction is Review-only and preserves underlying record kind and all data operations.
+
+### ANALYTICS-001
+
+**Audit existing Cloudflare measurement and exclude owner/test traffic safely** — **Medium · Audit complete; implementation proposed, awaiting owner authorization**.
+
+- **Dependencies:** Owner access to Web Analytics dashboard/rules; current Pages integration; a separately approved tracking/configuration/release scope; physical PC/iPhone verification. Existing RUM management API access is denied, so account totals/rules remain owner checks.
+- **Acceptance:** Record injection mechanism, hostname/referral/bot/device limitations and controlled hash-route evidence. Any future implementation must disable all automatic injection before relying on an application-owned opt-out; validate zero opted-out submissions before load, single opted-in beacon, local preference persistence/blocked storage, static pages and real PC/iPhone. Exclude routine test submissions at browser-network level, preserve source/indexing/rollback, avoid identifiers/fingerprinting/cookies/new services and document recurring costs and limitations. No claim of retroactive person identification or complete bot removal.
+- **Evidence:** [Read-only audit and specific proposal](CLOUDFLARE_ANALYTICS_AUDIT.md). No production tracking or Cloudflare settings changed. Separate owner authorization required before implementation.
