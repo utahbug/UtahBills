@@ -53,3 +53,7 @@ For the owner's 2026-11-03 metadata-only approval, use `packageSocialUpdate` in 
 ## Accepted indexed interface release — November 8
 
 The owner has authorized the specific interface and verified-data promotion described in [the current production release record](ACCEPTED_PRODUCTION_RELEASE.md). Its explicit `--accepted-ui` packaging path freezes the accepted UI without Review typography. The indexed candidate is then copied by `approve-release.mjs` into a separately checksummed `approved:true` release after exact-commit CI verification. This supersedes the historical unindexed/placeholder gate for this release only. Keep original packages, source audits, security/indexing controls and rollback records; use the existing Wrangler Direct Upload project and production branch.
+
+## Scoped interface follow-up — preparation authorization only
+
+The owner authorized preparing UI-032/UI-033 and the 2027 Bill Tracker heading after successful Review testing. Use the [scoped immutable-overlay procedure](INTERFACE_FIXES_RELEASE.md), preserving the current production package/data/indexing byte-for-byte outside its four-file UI/provenance allowlist. This is **not** Cloudflare upload authorization. Keep the candidate unapproved and retain current/earlier rollback packages.
