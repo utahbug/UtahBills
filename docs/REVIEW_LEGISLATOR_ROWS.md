@@ -17,3 +17,7 @@ Initial focus/background variants exposed intermittent WebKit missed activations
 ## Local verification results
 
 Full WebKit device/theme/optional-column/history tests passed with the final fast-tap/inset-focus variant; Chromium passed the same matrix before the touch-specific refinements, and both engines passed the final iPhone-default top-toolbar case. Shared artifact, mandatory CI and live checks remain separate publication gates. [Production candidate preparation](INTERFACE_FIXES_RELEASE.md) is authorized only after those gates; upload remains prohibited without separate approval.
+
+## Publication and candidate receipt
+
+[PR #26](https://github.com/utahbug/UtahBills/pull/26) retains the exact merged commit, mandatory CI/Pages outcome, live Review verification and production-candidate checksum receipt as those gates complete. Consult that receipt rather than treating local test completion as publication or upload authorization.

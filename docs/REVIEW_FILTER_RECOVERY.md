@@ -22,3 +22,7 @@ Local checks, mandatory CI and live publication results are recorded separately 
 Chromium/WebKit filter-recovery suites passed, including isolated 65-request fixtures, zero/one/two bookmarks, reload persistence, blocked local storage, combined search/status/type restrictions, complete Copy across pagination, CSV, historical heading preservation, primary-navigation reset with Back/Forward restoration, selected Record Type styling, Light/Dark, enlarged text and axe. Existing November 8 Review content/heading checks also passed. These are browser checks, not physical-device or clipboard acceptance.
 
 Production overlay unit checks pass exact-baseline/CI rejection gates, immutable rollback verification and the exact four-file allowlist. The owner authorized [candidate preparation only](INTERFACE_FIXES_RELEASE.md); production upload requires new authorization.
+
+## Publication and candidate receipt
+
+[PR #26](https://github.com/utahbug/UtahBills/pull/26) retains the exact merged commit, mandatory CI/Pages outcome, live Review verification and production-candidate checksum receipt as those gates complete. Consult that receipt rather than treating local test completion as publication or upload authorization.

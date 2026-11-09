@@ -975,13 +975,13 @@ November 8 owner-approved interface production release completed at `8af6ca7`, C
 
 ### UI-032
 - **Title:** Full-row Legislators navigation.
-- **Priority/status:** Owner-prioritized Review follow-up; verification/publication in progress, physical acceptance pending.
+- **Priority/status:** Owner-prioritized, implemented in [Review follow-up PR #26](https://github.com/utahbug/UtahBills/pull/26); publication receipt linked there, physical acceptance pending.
 - **Acceptance:** Existing profile anchor covers row whitespace; Introduced/Requests/District remain independent; no nested anchors or duplicate tab stops; 44px targets, hover/focus, all optional columns, themes, repeated touch and Back/Forward verified in Chromium/WebKit. No Main/production promotion.
 - **Evidence:** [Focused verification](REVIEW_LEGISLATOR_ROWS.md).
 
 ### UI-033
 - **Title:** Visible and recoverable Bills filters; 2027 Bill Tracker heading.
-- **Priority/status:** High, owner-requested Review correction; verification/publication in progress.
+- **Priority/status:** High, implemented in [Review follow-up PR #26](https://github.com/utahbug/UtahBills/pull/26); publication receipt linked there, physical acceptance pending.
 - **Dependencies:** Existing TRANS-006 local bookmarks, search parsing, verified source scopes and UI-025 navigation safeguards.
 - **Acceptance:** Active saved notice with one-tap Show all; distinguish absent bookmarks, restricted matches and unavailable record types using actual state; clear record-type selection and public-request recovery; preserve count-link destinations, history, complete Copy/CSV, sorting, pagination and stored bookmarks. Primary Bills navigation must not retain a hidden sponsor restriction. Preserve archive heading, source data, Main and production. Test blocked storage, all device classes/themes, keyboard and accessibility; physical owner acceptance remains separate.
 - **Evidence:** [Decisions and verification](REVIEW_FILTER_RECOVERY.md).

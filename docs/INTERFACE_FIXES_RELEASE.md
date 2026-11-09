@@ -23,3 +23,7 @@ node scripts/package-interface-fixes.mjs BASE NEW_OUTPUT BASE_SHA EXACT_COMMIT S
 Verify using `verifyRelease` and `scripts/check-indexed-release.mjs`, then exercise the actual candidate in Chromium/WebKit including row/count links, saved-filter recovery, 2027/archive headings, navigation, Copy/CSV, Calendar and original typography. Record commit, checksum, file-difference evidence and limitations. Do not run Wrangler upload, alter Cloudflare settings, update data or relabel the immutable package as approved. A later explicit owner authorization must identify this exact candidate and use the existing immutable approval-copy procedure.
 
 Candidate creation and publication remain pending until the final receipt is recorded. Physical iPhone/iPad, VoiceOver and real clipboard acceptance remain owner checks; automated browser tests do not establish those outcomes.
+
+## Publication and candidate receipt
+
+[PR #26](https://github.com/utahbug/UtahBills/pull/26) retains the exact merged commit, mandatory CI/Pages outcome, live Review verification and production-candidate checksum receipt as those gates complete. Consult that receipt rather than treating local test completion as publication or upload authorization.
