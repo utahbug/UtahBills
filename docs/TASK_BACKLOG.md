@@ -21,7 +21,7 @@ This section and the latest dated task notes supersede older pending statements;
 | RELEASE-004 / search accounts | Eligible production indexing is authorized and deployed; GitHub/alternate-host/qualified-record restrictions remain. Google/Bing ownership, submission and indexing outcomes are not verified. |
 | DATA-005; TRANS-008 | Approved future directions, not implementation authorization. Require exact record/member/date evidence and scoped approval. |
 | CAL-004 / TRANS-002 | Description investigation retained; zero approved request descriptions. Exact authoritative joins/editorial policy remain gates. |
-| TRANS-006 advanced; LEG-001; RELEASE-003; DATA-002/003/004 | Monitoring/notifications/sync deferred; private address lookup blocked; domain/redirect decision and historical vote issues remain open. No unrelated work starts during handoff. |
+| TRANS-006 advanced; LEG-001; DATA-002/003/004 | Monitoring/notifications/sync deferred; private address lookup blocked; historical vote issues remain open. No unrelated work starts during handoff. |
 
 ## Historical baseline and evidence
 
@@ -359,11 +359,11 @@ TEST-001 is complete under the [Phase 6A acceptance decision](#test-001); its cr
 
 ### RELEASE-003
 
-**Decide final branding and custom-domain needs** — **Low** · **Approved/Not started**
+**Decide final branding and custom-domain needs** — **Low · Completed November 9, 2026**.
 
-- **Dependencies:** Explicit owner decisions; current UtahBug branding and Main URL remain.
-- **Source:** [Roadmap Stage 6](../ROADMAP.md#stage-6--public-release-preparation--planned).
-- **Acceptance:** Record final branding/domain decision, including retaining current choices if desired. Any domain or environment change requires its own explicit authorization and validation; this backlog creates no new URL.
+- **Owner decision:** https://legislation.utahbug.com/ remains primary/canonical. https://bills.utahbug.com/ remains the publicity/social/tester short address, permanently redirecting (301) to the primary website with paths and query strings preserved. Existing UtahBug branding is retained.
+- **Verification:** [Actual HTTP and Chromium/WebKit redirect evidence](DOMAIN_REDIRECT_VERIFICATION.md) passed root, query, static-record, robots and fragment-preservation checks; live Calendar/request hash navigation passed with analytics blocked. All 283 sitemap URLs, homepage canonical/og:url and checked static-record canonical remain on legislation.utahbug.com.
+- **Boundary:** The owner configured the Redirect Rule. This documentation/audit performed no DNS/settings/deployment change or sitemap resubmission. Search-account ownership/indexing remains separately unverified. Future domain changes need explicit authorization.
 
 ### RELEASE-004
 

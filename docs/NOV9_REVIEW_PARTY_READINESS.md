@@ -42,3 +42,12 @@ Local Party evidence and Chromium/WebKit browser tests passed, including Party-e
 Local verification found and corrected a Review Columns popover overflow under WebKit 200% CSS zoom: its native rect/offset scale omitted zoom. The Review panel now explicitly accounts for root zoom. Review header/banner ResizeObserver measurements are deferred one frame to prevent WebKit feedback warnings during enlargement; Main and frozen production observers are untouched. The browser test waits for the native popover layout event before checking unchanged bounds. No original assertion was weakened.
 
 Main comparison against the live GitHub site: app.js, styles.css, catalog-ui.json and calendar-ui.json matched byte-for-byte. index.html matched after CRLF-to-LF normalization, consistent with Windows checkout versus Linux CI; source index.html is unchanged. The complete build packaged 9,337 shared snapshot files and preserved Main during packaging. Production files were not built or modified.
+
+Complete artifact verification rechecked every one of the 9,337 Main manifest files and all shared Review files. Both preserved production and rollback packages passed their complete manifest/file checksums again. The November 8 failed schedule retains its unexpired refresh-attempt artifact; no failed-run snapshot was promoted.
+
+Owner added the final domain decision during this batch. RELEASE-003 is complete after [actual redirect/canonical verification](DOMAIN_REDIRECT_VERIFICATION.md). The owner configured the rule; this agent performed only read-only tests/documentation, with no separate deployment or account change.
+
+
+Regression diagnostics: a retained WebKit 1180px/dark count-link case timed out while multiple local suites were running. The exact unchanged case passed in isolation; no assertion or application navigation was changed for that result. Final CI must still exercise the complete matrix. The new accessibility test resets zoom, returns to the page top and waits for layout before auditing; this avoids measuring a transient partially clipped link during viewport restoration. Both open and closed Columns panels remain subject to the full axe checks.
+
+Final commit, mandatory CI and hosted Review evidence are recorded in the [PR #33 publication receipt](https://github.com/utahbug/UtahBills/pull/33). Consult that receipt before treating the implementation as published; local verification alone is not publication.
