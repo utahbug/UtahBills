@@ -2,6 +2,11 @@
 export function installReviewContent(){
  const main=document.querySelector('main'),nav=document.querySelector('header nav');
  function update(){
+  // Hide only the redundant kind label; retain meaningful suffixes and the underlying records.
+  for(const topic of main.querySelectorAll('.bill-row .topic')){
+   const redundant=topic.previousElementSibling?.textContent.trim()==='Bill request'&&topic.textContent.trim()==='Request';
+   if(topic.hidden!==redundant)topic.hidden=redundant;
+  }
   const heading=main.querySelector('.bills-heading h1');
   if(heading&&main.querySelector('#session')&&heading.textContent!=='2027 Utah Bill Tracking')heading.textContent='2027 Utah Bill Tracking';
   for(const label of nav.querySelectorAll('.phone-activity-label>span'))if(label.textContent!=='Recent')label.textContent='Recent';
@@ -36,5 +41,5 @@ export function installReviewContent(){
   const available=header.clientWidth-parseFloat(hs.paddingLeft)-parseFloat(hs.paddingRight);
   header.classList.toggle('review-hide-tagline',document.documentElement.classList.contains('phone-navigation')||brand.getBoundingClientRect().width+navWidth+tagWidth+3*(parseFloat(hs.columnGap)||16)>available);
  }
- new ResizeObserver(measure).observe(header);addEventListener('resize',measure);document.fonts.ready.then(measure);measure();
+ new ResizeObserver(()=>requestAnimationFrame(measure)).observe(header);addEventListener('resize',measure);document.fonts.ready.then(measure);measure();
 }

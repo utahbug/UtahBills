@@ -117,3 +117,10 @@ main{padding-top:10px}
 .calendar-controls #review-key-dates{font-size:.9rem}
 .calendar-controls .review-month-controls .selected-value{padding-left:0}
 @media(max-width:360px){.calendar-controls:has(.review-month-controls){grid-template-columns:minmax(0,1fr)}.calendar-controls :is(#calendar-toggle,#review-key-dates){grid-column:1}}
+
+/* Review-only historical affiliation; a label, never a score or sortable control. */
+.review-party-heading{display:flex;justify-content:center;align-items:center;min-height:44px;font-size:.8125rem;color:var(--appearance-muted,#536573);text-align:center}
+.review-party{align-self:center;justify-self:center;text-align:center;font-size:.875rem;overflow-wrap:anywhere}
+.review-party[hidden],.review-party-heading[hidden]{display:none}
+.review-party-note{font-size:.8125rem;line-height:1.5}
+@container directory (max-width:46em){.review-party{flex-basis:100%;text-align:left;justify-self:start;padding-block:4px}.review-party-heading{display:none}}
