@@ -2,6 +2,12 @@
 
 Last verified **2026-11-09**. UtahBug is the independent, nonpartisan public application for finding Utah legislation, understanding changes and checking the official evidence. The repository is [utahbug/UtahBills](https://github.com/utahbug/UtahBills). The working checkout is `C:\Users\kenro\Documents\UtahBills`. Use this repository only.
 
+## Start here — UTAH BILLS 6 (CODEX)
+
+Read [the comprehensive next-conversation handoff](UTAH_BILLS_6_HANDOFF.md) for exact commits/packages, PR disposition, release/rollback commands and safeguards, current data, source limitations and prioritized owner decisions. The current environment table and November 9 release evidence supersede earlier dated pending statements below; those entries are preserved as historical context, not active instructions. PR #32 is documentation-only consolidation; check its final merge SHA/Actions separately from the production runtime. No further development or Cloudflare deployment is authorized by this handoff.
+
+Immediate priorities are scheduled-refresh monitoring (latest genuine success November 6; current source snapshot from the verified November 8 manual refresh), physical-device/VoiceOver/clipboard and independent editorial acceptance, then authoritative 2027 membership/first-introduction readiness. Search-console outcomes and description/party/freshness feature decisions remain pending. See the current-status section of the [backlog](TASK_BACKLOG.md).
+
 ## Where each version runs
 
 | Environment | Verified release and evidence |
@@ -24,7 +30,7 @@ A later documentation commit can advance a branch without changing a deployed ve
 - **2026 archive:** All 1,016 indexed measures have metadata (931 bills and 85 resolutions, index checked October 21 UTC). Four enhanced examples have nine verified text versions. **DATA-002/003/004** cover conflicting vote totals, unresolved historical voter identities and vote coverage beyond action-history references. Retain conflicting originals and qualifications. See the [quality audit](QUALITY_AUDIT.md).
 - **Calendar:** Development and production have **97 events across eight complete months**, checked November 8 at 22:36:05.440534 UTC. Preserve historical agenda links, dates, source hashes and qualifications. [Phase 7H evidence](PHASE7H_ACQUISITION_VERIFICATION.md).
 - **Next data priority:** November 8 owner-requested guarded refresh [42531024937](https://github.com/utahbug/UtahBills/actions/runs/42531024937) passed every component, mandatory CI and publication. Reconciliation remains partial for the one qualified observation; never invent its status. The latest genuine scheduled success remains [November 6](https://github.com/utahbug/UtahBills/actions/runs/42279718407). The November 8 schedule failed a browser-test readiness assertion before publication; that assertion setup was corrected and passed subsequent CI. Manual refresh success is not a new scheduled-run result.
-- **Production data gate:** The owner-authorized accepted-interface and verified-data release succeeded. [Current production receipt](ACCEPTED_PRODUCTION_RELEASE.md) records exact runtime/data/UI identities, approved checksum, source/page audit, live checks and rollback. No automatic production updater is enabled; future code/data changes still require verification and owner authorization.
+- **Production data gate:** The owner-authorized accepted-interface and verified-data release succeeded. [Current production receipt](evidence/NOV9_PUBLIC_RELEASE.json) records exact runtime/data/UI identities, approved checksum, source/page audit, live checks and rollback. No automatic production updater is enabled; future code/data changes still require verification and owner authorization.
 
 ## Product decisions and acceptance boundaries
 

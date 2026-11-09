@@ -1,12 +1,29 @@
 # UtahBills authoritative task backlog
 
-Updated: October 28, 2026 (Phase 7B follow-up). Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation. [UI_ACCEPTANCE_CHECKLIST.md](UI_ACCEPTANCE_CHECKLIST.md) tracks continuing UI observations, regression evidence and separate human acceptance.
+Updated: November 9, 2026 (verified public release and UTAH BILLS 6 handoff). Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation. [UI_ACCEPTANCE_CHECKLIST.md](UI_ACCEPTANCE_CHECKLIST.md) tracks continuing UI observations, regression evidence and separate human acceptance.
 
 Phase 4F priority: October 2026–April 2027 coverage takes precedence. Historical 2026 vote conflicts and voter identities remain open at Low priority, except defects affecting 2027 accuracy require prompt investigation. LEG-001 is High/Blocked; the official-link fallback does not complete address lookup. [Investigation and verification](PHASE4F_VERIFICATION.md). SESSION-002 and SESSION-003 remain High priorities; TEST-001 completed in Phase 6A.
 
 Phase 4E maintenance: CAL-001 and UI-002 complete the authorized interface refinements. Phase 4D request freshness and transition-test readiness remain complete; the next actual scheduled run remains unverified. See [Phase 4E verification](PHASE4E_VERIFICATION.md), [Phase 4D verification](PHASE4D_VERIFICATION.md) and the completed task ledger.
 
-## Baseline and evidence
+## Current status — November 9, 2026
+
+This section and the latest dated task notes supersede older pending statements; historical baseline/count tables remain evidence, not a current aggregate. [Next-chat handoff](UTAH_BILLS_6_HANDOFF.md) and [release receipt](evidence/NOV9_PUBLIC_RELEASE.json) identify runtime 41e6c63e8d2d328178aa50df645557be7e99add1, successful CI/Pages 42638733187 and Cloudflare e89d8426-df1e-422a-9ae7-890570279788. This handoff changes documentation only.
+
+| IDs / area | Current disposition and next gate |
+| --- | --- |
+| UI-027/028/029/030/031 | Accepted production interface is published: borderless icon/text navigation, responsive tagline, four-entry direct-toggle Settings, iPhone Top / compact iPad Bottom preference, near-white/ restrained accent and approved Calendar/link treatment. Older oval/System/Bottom-for-all proposals are historical. Main retains its other established design. |
+| UI-032/033/034 | Approved row navigation, recoverable filters and six November 9 corrections are published; original tests retained. Current heading: 2027 Utah Bill Tracking. Physical acceptance remains separate. |
+| UI-021 | Lighter typography remains Review-only; no promotion authorization. |
+| TEST-001 / RELEASE-002 | Historical scheduled acceptance remains complete; continue monitoring genuine schedules and independent components. Latest successful schedule: November 6, 42279718407; November 7/8 schedules failed. Current verified November 8 snapshot came from manual 42531024937, not a new schedule. No automatic production refresh. |
+| UI-001/UI-019 / RELEASE-001 | Automated coverage and technical-source spacing are implemented; physical iPhone/iPad, VoiceOver, real clipboard and independent editorial acceptance remain open. Contact mailto is contact@utahbug.com; real delivery/monitoring remains an owner check. |
+| SESSION-002/003 | Blocked on authoritative 2027 membership and first real introduced/conversion evidence; zero introduced measures in the accepted snapshot. |
+| RELEASE-004 / search accounts | Eligible production indexing is authorized and deployed; GitHub/alternate-host/qualified-record restrictions remain. Google/Bing ownership, submission and indexing outcomes are not verified. |
+| DATA-005; LEG-003 party extension; TRANS-008 | Approved future directions, not implementation authorization. Require exact record/member/date evidence and scoped approval. |
+| CAL-004 / TRANS-002 | Description investigation retained; zero approved request descriptions. Exact authoritative joins/editorial policy remain gates. |
+| TRANS-006 advanced; LEG-001; RELEASE-003; DATA-002/003/004 | Monitoring/notifications/sync deferred; private address lookup blocked; domain/redirect decision and historical vote issues remain open. No unrelated work starts during handoff. |
+
+## Historical baseline and evidence
 
 Before this documentation batch, fetched `main` and `origin/main` both pointed to [af26e785e5d9f9acca5ee7cb4f2e00bb1b1c9759](https://github.com/utahbug/UtahBills/commit/af26e785e5d9f9acca5ee7cb4f2e00bb1b1c9759); working tree clean, zero commits ahead/behind. Latest push deployment [39860908975](https://github.com/utahbug/UtahBills/actions/runs/39860908975) succeeded. No scheduled data commit had advanced that handoff. GitHub issue inventory (all states) was empty. `docs/CODEX_HANDOFF.md` was absent.
 
@@ -334,7 +351,7 @@ TEST-001 is complete under the [Phase 6A acceptance decision](#test-001); its cr
 
 ### RELEASE-002
 
-**Verify release data completeness and freshness** — **Medium** · **Approved/Not started**
+**Verify release data completeness and freshness** — **Medium** · **Current release assessment verified; ongoing freshness/operational acceptance remains open**
 
 - **Dependencies:** DATA-001, TEST-001 and a release-scoped coverage review; unresolved DATA-002/DATA-003/SESSION-002 findings explicitly assessed.
 - **Source:** [Roadmap Stage 6](../ROADMAP.md#stage-6--public-release-preparation--planned).
@@ -350,11 +367,11 @@ TEST-001 is complete under the [Phase 6A acceptance decision](#test-001); its cr
 
 ### RELEASE-004
 
-**Approve public release and remove indexing restriction** — **Medium** · **Blocked**
+**Approve public release and remove indexing restriction** — **Medium** · **Completed for owner-approved eligible production pages; development/qualified-record restrictions retained**
 
-- **Dependencies:** Explicit public-release approval after RELEASE-001, RELEASE-002 and UI-001 acceptance.
-- **Source:** [AGENTS policy](../AGENTS.md#temporary-indexing-restriction); [Roadmap Stage 6](../ROADMAP.md#stage-6--public-release-preparation--planned).
-- **Acceptance:** Record approval; only then remove static noindex/nofollow from every application HTML page, run required checks, deploy and inspect published source. Preserve attribution and truthful limitations; banner removal or a successful deployment is not release approval.
+- **Decision:** The owner separately authorized eligible production indexing and the verified November 8/9 releases. This fulfills that scoped production decision without claiming RELEASE-001 or UI-001 human acceptance. Future production changes still require explicit scoped authorization.
+- **Source:** [AGENTS indexing policy](../AGENTS.md#search-indexing); [Roadmap Stage 6](../ROADMAP.md#stage-6--public-release-preparation--planned).
+- **Acceptance/evidence:** [Public indexing](PUBLIC_SEARCH_INDEXING.md) and [current release receipt](evidence/NOV9_PUBLIC_RELEASE.json) record authorization and verified eligible production pages. Preserve noindex on GitHub Main/Review, Cloudflare alternate hostnames and qualified excluded records, plus attribution, canonicals and source qualifications. Crawler access does not establish account verification, submission or confirmed indexing.
 
 ## 10. Deferred enhancements
 
@@ -975,15 +992,15 @@ November 8 owner-approved interface production release completed at `8af6ca7`, C
 
 ### UI-032
 - **Title:** Full-row Legislators navigation.
-- **Priority/status:** Owner-prioritized, implemented in [Review follow-up PR #26](https://github.com/utahbug/UtahBills/pull/26); publication receipt linked there, physical acceptance pending.
-- **Acceptance:** Existing profile anchor covers row whitespace; Introduced/Requests/District remain independent; no nested anchors or duplicate tab stops; 44px targets, hover/focus, all optional columns, themes, repeated touch and Back/Forward verified in Chromium/WebKit. No Main/production promotion.
+- **Priority/status:** Owner-prioritized; published to Main/Review and approved Cloudflare production November 9 at 41e6c63. [Current release receipt](evidence/NOV9_PUBLIC_RELEASE.json); physical acceptance remains pending.
+- **Acceptance:** Existing profile anchor covers row whitespace; Introduced/Requests/District remain independent; no nested anchors or duplicate tab stops; 44px targets, hover/focus, all optional columns, themes, repeated touch and Back/Forward verified in Chromium/WebKit. Owner-authorized Main/production promotion is recorded in UI-034; do not infer acceptance of unrelated Review experiments.
 - **Evidence:** [Focused verification](REVIEW_LEGISLATOR_ROWS.md).
 
 ### UI-033
-- **Title:** Visible and recoverable Bills filters; 2027 Bill Tracker heading.
-- **Priority/status:** High, implemented in [Review follow-up PR #26](https://github.com/utahbug/UtahBills/pull/26); publication receipt linked there, physical acceptance pending.
+- **Title:** Visible and recoverable Bills filters; current heading superseded by UI-034 to 2027 Utah Bill Tracking.
+- **Priority/status:** High; approved corrections published November 9 at 41e6c63, with original regression assertions retained. [Current release receipt](evidence/NOV9_PUBLIC_RELEASE.json); physical acceptance remains pending.
 - **Dependencies:** Existing TRANS-006 local bookmarks, search parsing, verified source scopes and UI-025 navigation safeguards.
-- **Acceptance:** Active saved notice with one-tap Show all; distinguish absent bookmarks, restricted matches and unavailable record types using actual state; clear record-type selection and public-request recovery; preserve count-link destinations, history, complete Copy/CSV, sorting, pagination and stored bookmarks. Primary Bills navigation must not retain a hidden sponsor restriction. Preserve archive heading, source data, Main and production. Test blocked storage, all device classes/themes, keyboard and accessibility; physical owner acceptance remains separate.
+- **Acceptance:** Active saved notice with one-tap Show all; distinguish absent bookmarks, restricted matches and unavailable record types using actual state; clear record-type selection and public-request recovery; preserve count-link destinations, history, complete Copy/CSV, sorting, pagination and stored bookmarks. Primary Bills navigation must not retain a hidden sponsor restriction. Preserve archive heading, source data and unrelated Main/production behavior; authorized promotion is recorded in UI-034. Test blocked storage, all device classes/themes, keyboard and accessibility; physical owner acceptance remains separate.
 - **Evidence:** [Decisions and verification](REVIEW_FILTER_RECOVERY.md).
 
 ### UI-034
