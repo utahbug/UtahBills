@@ -1013,7 +1013,7 @@ November 8 owner-approved interface production release completed at `8af6ca7`, C
 
 ## November 9 combined Review batch
 
-LEG-003 Party extension is now authorized and implemented in Review source only, pending verification/publication and owner acceptance. Exact 2026 roster IDs supply 100 affiliations; four lack direct IDs and remain unavailable. No 2027 affiliation, party sorting, inferred identities or vote totals. Shared Main runtime/data and existing preferences remain unchanged. [Evidence, release readiness and gates](NOV9_REVIEW_PARTY_READINESS.md). The additional redundant Request label correction is Review-only and preserves underlying record kind and all data operations.
+LEG-003 Party extension is implemented, fully tested and published on GitHub Review at `36be68dde16e6a810ae9a51314d4e26a3095b748` (successful full CI/Pages run `42689731784`); owner acceptance and production promotion remain pending. Exact 2026 roster IDs supply 100 affiliations; four lack direct IDs and remain unavailable. No 2027 affiliation, party sorting, inferred identities or vote totals. Shared Main runtime/data and existing preferences remain unchanged. [Evidence, release readiness and gates](NOV9_REVIEW_PARTY_READINESS.md). The additional redundant Request label correction is Review-only and preserves underlying record kind and all data operations.
 
 ### ANALYTICS-001
 
@@ -1022,3 +1022,13 @@ LEG-003 Party extension is now authorized and implemented in Review source only,
 - **Dependencies:** Owner access to Web Analytics dashboard/rules; current Pages integration; a separately approved tracking/configuration/release scope; physical PC/iPhone verification. Existing RUM management API access is denied, so account totals/rules remain owner checks.
 - **Acceptance:** Record injection mechanism, hostname/referral/bot/device limitations and controlled hash-route evidence. Any future implementation must disable all automatic injection before relying on an application-owned opt-out; validate zero opted-out submissions before load, single opted-in beacon, local preference persistence/blocked storage, static pages and real PC/iPhone. Exclude routine test submissions at browser-network level, preserve source/indexing/rollback, avoid identifiers/fingerprinting/cookies/new services and document recurring costs and limitations. No claim of retroactive person identification or complete bot removal.
 - **Evidence:** [Read-only audit and specific proposal](CLOUDFLARE_ANALYTICS_AUDIT.md). No production tracking or Cloudflare settings changed. Separate owner authorization required before implementation.
+
+
+## November 13 release-readiness priorities — verified November 9
+
+[Authoritative consolidated assessment](NOV13_RELEASE_READINESS.md) distinguishes implemented, tested, published and owner-accepted states. The earlier Review CI/header/menu/navigation gates are cleared by full Linux CI and live Chromium/WebKit verification; no assertion was weakened. The Request-label correction shares Party's Review-published, owner-acceptance-pending status. RELEASE-003 is complete; ANALYTICS-001 is audit complete, with implementation/configuration unapproved.
+
+- **Must fix before release:** For any new production package, obtain exact owner scope/deployment approval; check near-release source freshness and genuine scheduled collection/testing/publication separately. Restore proven scheduled publication before claiming automatic daily freshness, or explicitly accept a dated snapshot. Complete physical Safari/iPhone/iPad, VoiceOver and real clipboard acceptance before promoting new UI; blocking defects hold the affected promotion.
+- **Recommended:** Owner inspection of Google/Bing ownership/sitemap/indexing; Cloudflare canonical Host, date-range and Exclude Bots filters; routine test-side beacon/collection blocking and verified interim owner-device blocking.
+- **Can wait:** Manual analytics migration, section-level analytics, Party sorting/coverage expansion and typography changes. No 2027 roster/affiliation inference.
+- **Release recommendation:** Keep existing production typography and approved interface. Promote only explicitly accepted Party/label changes and verified data deltas under separate authorization; otherwise retain them in Review. No known new source delta currently requires Cloudflare publication.
