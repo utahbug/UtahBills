@@ -1,0 +1,390 @@
+{
+  "verifiedAt": "2026-11-09T21:24:17.206Z",
+  "http": [
+    {
+      "path": "/",
+      "status": 301,
+      "location": "https://legislation.utahbug.com/"
+    },
+    {
+      "path": "/?test=release%20readiness",
+      "status": 301,
+      "location": "https://legislation.utahbug.com/?test=release%20readiness"
+    },
+    {
+      "path": "/requests/2027/LEBLQCNWET/?test=direct",
+      "status": 301,
+      "location": "https://legislation.utahbug.com/requests/2027/LEBLQCNWET/?test=direct"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 301,
+      "location": "https://legislation.utahbug.com/robots.txt"
+    },
+    {
+      "ua": "UtahBills bounded readiness check",
+      "path": "/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "ua": "UtahBills bounded readiness check",
+      "path": "/requests/2027/LEBLQCNWET/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "ua": "Googlebot",
+      "path": "/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "ua": "Googlebot",
+      "path": "/requests/2027/LEBLQCNWET/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "ua": "bingbot",
+      "path": "/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "ua": "bingbot",
+      "path": "/requests/2027/LEBLQCNWET/",
+      "status": 200,
+      "canonical": true
+    }
+  ],
+  "navigation": [
+    {
+      "engine": "chromium",
+      "routes": [
+        {
+          "requested": "#legislators",
+          "actual": "#legislators",
+          "heading": "Legislators"
+        },
+        {
+          "requested": "#activity",
+          "actual": "#activity",
+          "heading": "Recent Activity"
+        },
+        {
+          "requested": "#calendar",
+          "actual": "#calendar",
+          "heading": "Legislative Calendar"
+        },
+        {
+          "requested": "#bills",
+          "actual": "#current-bills",
+          "heading": "2027 Utah Bill Tracking"
+        }
+      ],
+      "events": [
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "eventType",
+            "nt",
+            "location",
+            "versions",
+            "bi",
+            "memory",
+            "firstPaint",
+            "firstContentfulPaint",
+            "timingsV2",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 3,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "eventType",
+            "nt",
+            "location",
+            "versions",
+            "bi",
+            "siteToken",
+            "lcp",
+            "cls",
+            "fcp",
+            "ttfb",
+            "st"
+          ]
+        },
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 3,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 3,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "type": 3,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "ntapi",
+            "siteToken",
+            "st"
+          ]
+        }
+      ],
+      "forwardedAnalytics": 0
+    },
+    {
+      "engine": "webkit",
+      "routes": [
+        {
+          "requested": "#legislators",
+          "actual": "#legislators",
+          "heading": "Legislators"
+        },
+        {
+          "requested": "#activity",
+          "actual": "#activity",
+          "heading": "Recent Activity"
+        },
+        {
+          "requested": "#calendar",
+          "actual": "#calendar",
+          "heading": "Legislative Calendar"
+        },
+        {
+          "requested": "#bills",
+          "actual": "#current-bills",
+          "heading": "2027 Utah Bill Tracking"
+        }
+      ],
+      "events": [
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "eventType",
+            "nt",
+            "location",
+            "versions",
+            "bi",
+            "firstPaint",
+            "firstContentfulPaint",
+            "timingsV2",
+            "siteToken",
+            "st"
+          ]
+        },
+        {
+          "keys": []
+        },
+        {
+          "type": 1,
+          "location": "https://legislation.utahbug.com/",
+          "keys": [
+            "startTime",
+            "pageloadId",
+            "n",
+            "eventType",
+            "nt",
+            "location",
+            "referrer",
+            "versions",
+            "bi",
+            "siteToken",
+            "st"
+          ]
+        }
+      ],
+      "forwardedAnalytics": 0
+    }
+  ],
+  "sitemap": {
+    "count": 283,
+    "canonical": true,
+    "unconfirmedExcluded": true
+  },
+  "robots": "User-agent: *\nAllow: /\nSitemap: https://legislation.utahbug.com/sitemap.xml\n",
+  "review": {
+    "verifiedAt": "2026-11-09T21:24:16.705Z",
+    "commit": "36be68dde16e6a810ae9a51314d4e26a3095b748",
+    "assets": [
+      {
+        "path": "app.js",
+        "sha256": "d0ebf524e58f0b63707235dd388a23b9eedecea597fc59473ca648c7bfc28baa"
+      },
+      {
+        "path": "styles.css",
+        "sha256": "8adbe721a7b202b085c6fd20d70e4623def5f6f269bf76486d977ff56084a757"
+      },
+      {
+        "path": "data/catalog-ui.json",
+        "sha256": "f06c0dec367e7f3019b0590cd07dbf057e8981c64dbd86f61b4e56224362857a"
+      },
+      {
+        "path": "data/calendar-ui.json",
+        "sha256": "de7239e4d3d708615dafaf324ae03fad243babc5f1651bec217aadfa0632e079"
+      },
+      {
+        "path": "review/review-release.js",
+        "sha256": "2e003b8a5afb048e1cd2b55820f64fe63750d3eaac7d8672cfb68955fb5d955c"
+      }
+    ],
+    "engines": [
+      "chromium",
+      "webkit"
+    ],
+    "coverage": {
+      "verified": 100,
+      "unavailable": 4
+    }
+  },
+  "ci": {
+    "run": 42689731784,
+    "commit": "36be68dde16e6a810ae9a51314d4e26a3095b748",
+    "build": "success",
+    "deploy": "success",
+    "acquisition": "skipped"
+  },
+  "note": "Bounded live checks; all production analytics collection intercepted. Physical-device/owner acceptance and webmaster-account outcomes are not established.",
+  "production": {
+    "runtime": "41e6c63e8d2d328178aa50df645557be7e99add1",
+    "deployment": "e89d8426-df1e-422a-9ae7-890570279788",
+    "contentSha256": "a496d85fd5635a3bfa868ca9c8023123e77bb5ad54a551de5980a95db5a28bf4",
+    "verifiedFiles": 9625,
+    "deploymentStatus": "success",
+    "browserMatched": [
+      "app.js",
+      "styles.css",
+      "data/catalog-ui.json",
+      "data/calendar-ui.json"
+    ]
+  },
+  "rollback": {
+    "runtime": "8af6ca7d990d0b6dec156561aa89ce0140a36e15",
+    "deployment": "9cd53e01-15f6-43b1-8185-b48f9522348a",
+    "contentSha256": "285232f20c53011cc0255b50021300c091da28aec9db79641778c985cad5d504",
+    "verifiedFiles": 9625,
+    "deploymentStatus": "success"
+  },
+  "verificationQualification": "A direct Python GET of production data returned HTTP 403; browser-origin application/data requests returned 200 and matched the approved package. No security configuration was changed."
+}
