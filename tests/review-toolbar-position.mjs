@@ -1,3 +1,4 @@
+import {showSavedActivity} from './fixtures/activity-navigation.mjs';
 import assert from 'node:assert/strict';
 import {chromium,webkit,devices} from 'playwright';
 import {readFile,mkdir} from 'node:fs/promises';
@@ -9,7 +10,10 @@ for(const engine of [chromium,webkit]){const browser=await engine.launch();try{
  await p.goto(base+'review/');await p.locator('.bill-row').first().waitFor();assert.equal(await p.locator('html').getAttribute('data-review-toolbar'),saved||expected,engine.name()+' '+device+' '+JSON.stringify(viewport)+' saved='+saved);
  await p.evaluate(()=>{window.originalNav=document.querySelector('header nav');window.originalLinks=[...originalNav.children]});
  for(const route of ['requests','activity','calendar','legislators']){
- await p.goto(base+'review/#'+route);await p.locator('main h1').waitFor();await p.waitForFunction(()=>document.querySelector('#review-settings-trigger'));
+ await p.goto(base+'review/#'+route);await p.locator({requests:'.bill-row',activity:'#activity-period',calendar:'#calendar-month',legislators:'.legislator-row'}[route]).first().waitFor();
+ // A stale five-day window can be empty and unscrollable; exercise actual saved events.
+ if(route==='activity'){await showSavedActivity(p);await p.locator('.activity-row').first().waitFor()}
+ await p.waitForFunction(()=>document.querySelector('#review-settings-trigger'));
  await p.locator('#review-settings-trigger').click();await p.waitForFunction(()=>document.activeElement.id==='review-theme-toggle');
  const button=p.locator('#review-toolbar-position'),before=await p.locator('html').getAttribute('data-review-toolbar');assert.ok(await button.isVisible());assert.equal(await button.getAttribute('aria-label'),'Move toolbar to '+(before==='top'?'Bottom':'Top'));
  const target=await button.boundingBox();assert.ok(target.width>=44&&target.height>=44);await button.focus();await p.keyboard.press('Space');assert.equal(await p.locator('html').getAttribute('data-review-toolbar'),before==='top'?'bottom':'top');await p.keyboard.press('Escape');
@@ -18,8 +22,8 @@ for(const engine of [chromium,webkit]){const browser=await engine.launch();try{
  await p.evaluate(()=>scrollTo(0,0));if(await p.locator('html').getAttribute('data-review-toolbar')!==position){await p.locator('#review-settings-trigger').click();await button.click();await p.keyboard.press('Escape')}
  await p.evaluate(()=>scrollTo(0,600));await p.waitForTimeout(80);const nav=await p.locator('header nav').boundingBox(),banner=await p.locator('.header-inner').boundingBox();
  assert.equal(await p.locator('header nav').count(),1);assert.equal(await p.locator('header nav a').count(),4);
- if(await p.evaluate(()=>scrollY)>100)assert.ok(banner.y+banner.height<=1,'Banner scrolls away');
- if(position==='top')assert.ok(nav.y>=-1&&nav.y<2,'Top toolbar remains at viewport top');else assert.ok(nav.y>=viewport.height-160);
+ assert.ok(await p.evaluate(()=>scrollY)>100,'Scrolled geometry requires a scrollable route: '+route);assert.ok(banner.y+banner.height<=1,'Banner scrolls away');
+ if(position==='top')assert.ok(nav.y>=-1&&nav.y<2,'Top toolbar remains at viewport top '+JSON.stringify({engine:engine.name(),device,viewport,theme,saved,route,nav,banner,scrollY:await p.evaluate(()=>scrollY)}));else assert.ok(nav.y>=viewport.height-160);
  }
  await p.evaluate(()=>scrollTo(0,0));
  }
