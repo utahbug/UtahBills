@@ -1,6 +1,6 @@
 # UtahBills authoritative task backlog
 
-**November 23 scheduled-refresh repair:** PRs #37/#38 merged test-only historical-title, atomic-geometry and populated Activity-scroll corrections. Hosted CI confirmed those fixes, then exposed an older pinned request outside the selected Activity date window in Phase 4H. That focused recovery correction, a forced page-two case and all 14 previously unreached suites passed locally; replacement full CI, publication and genuine scheduled recovery are still pending. Exact source discrepancies, preserved assertions, publication gates and evidence: [repair record](NOV23_REFRESH_REPAIR.md). Historical TEST-001 acceptance and Cloudflare release/rollback identities are unchanged.
+**November 23 scheduled-refresh repair — final local receipt:** PRs #37–39 merged test/documentation-only corrections at `e63995dd476c57506efb39f8842f2747dccd6c95`. Full [CI/Pages 45264078785](https://github.com/utahbug/UtahBills/actions/runs/45264078785) passed; live Main/Review returned 200 with noindex and unchanged application/style/catalog/Calendar hashes. No post-repair genuine schedule was available: latest inspected schedule November 22 acquired successfully but failed before publication; last fully successful schedule remains November 15. Scheduled end-to-end recovery remains pending. [Causes, assertions, source limitations and final receipt](NOV23_REFRESH_REPAIR.md). Cloudflare runtime/deployment/rollback evidence is unchanged. This post-publication receipt is local and recorded on PR #39, for inclusion in the next normal documentation update.
 
 Updated: November 9, 2026 (verified public release and UTAH BILLS 6 handoff). Application: **UtahBug**. This is the authoritative inventory of unfinished approved work, proposed ideas and deferred enhancements. [ROADMAP.md](../ROADMAP.md) remains the high-level strategy; this file supplies stable task IDs and acceptance criteria. Recording approval of a direction does **not** authorize automatic implementation. [UI_ACCEPTANCE_CHECKLIST.md](UI_ACCEPTANCE_CHECKLIST.md) tracks continuing UI observations, regression evidence and separate human acceptance.
 
@@ -305,11 +305,14 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### NEWS-002
 
-**Add RSS news and relevant bill reporting** — **Medium** · **Approved/Not started**
+**Add RSS news and relevant bill reporting** — **Medium** · **In progress — Review-only prototype; production not authorized**
 
 - **Dependencies:** Evaluate feed reliability and permitted use for Deseret News, KSL TV/Radio and other Utah outlets.
 - **Source:** [Roadmap Stage 5](../ROADMAP.md#stage-5--news-and-outside-resources--planned--deferred).
 - **Acceptance:** Provide attributed dated RSS listings and evidence-based bill article associations; clearly separate reporting from official records; test unavailable feeds, duplicate articles, accessible links and permitted excerpt use.
+- **November 23 bounded authorization:** Six-outlet feed/terms investigation and four-topic/five-proposal fixtures; curated Review-only metadata listing. No daily collector or verified Related News associations enabled. [Workflow, evidence, permission limitations and verification](NEWS_002_INVESTIGATION.md).
+- **Additional acceptance:** Source-specific permitted-use approval; publication/updated/retrieval dates kept distinct; safe URLs and text-only rendering; exact session-qualified association evidence and independent editorial sign-off; failure-isolated acquisition with retained prior snapshots; duplicate/correction handling; Main asset isolation; Chromium/WebKit, keyboard, narrow/enlarged-text, light/dark and accessibility checks; separate physical/owner acceptance. Dependencies: publisher terms/access, NEWS-001 navigation decision, CAL-004/TRANS-002 evidence, SESSION-003 identity, UI-001/RELEASE-001 acceptance.
+- **Status:** Implemented in Review source; tests/publication recorded in the linked verification receipt as completed. Not owner-accepted or production-approved.
 
 ## 8. Testing, reliability, and deployment
 

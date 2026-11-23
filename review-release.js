@@ -38,3 +38,6 @@ if(!moveContactIcon()){const observer=new MutationObserver(()=>{if(moveContactIc
 installToolbarPosition(panel,place);
 
 installReviewContent();
+
+import {installNews} from './review-news.js';
+installNews();

@@ -1,0 +1,11 @@
+footer nav .review-news-trigger{border:0;background:transparent;color:var(--appearance-link,#155c79);font:inherit;font-size:14px;font-weight:600;padding:4px 6px;min-height:44px}
+#review-news{width:calc(100% - 24px);max-width:760px;max-height:calc(100dvh - 24px);overflow:auto;margin:auto;padding:16px;border:1px solid var(--line);border-radius:6px;color:var(--appearance-text,#233547);background:var(--appearance-surface,#fff);overflow-wrap:anywhere}
+#review-news::backdrop{background:#0008}
+#review-news .news-heading{display:flex;gap:12px;align-items:center;justify-content:space-between}
+#review-news h2{margin:0;font-size:1.2rem}
+#review-news .news-close{flex-shrink:0}
+#review-news .news-coverage,#review-news .news-list p{color:var(--muted);font-size:.875rem}
+#review-news .news-list{list-style:none;padding:0;margin:12px 0}
+#review-news li{border-top:1px solid var(--line);padding:8px 0}
+#review-news li p{margin:0}
+#review-news li a{display:block;min-height:44px;padding:10px 0;font-weight:600}

@@ -15,6 +15,7 @@ if(!html.includes('<meta name="robots" content="noindex, nofollow">'))throw Erro
 await writeFile(path.join(review,'index.html'),html.replace('</head>','<link rel="stylesheet" href="./review-typography.css"><link rel="stylesheet" href="./review-release.css"><script type="module" src="./review-release.js"></script></head>'));
 await cp('review-typography.css',path.join(review,'review-typography.css'));
 await cp('review-release.css',path.join(review,'review-release.css'));
+for(const file of ['review-news.css','review-news.json'])await cp(file,path.join(review,file));
 execFileSync(process.env.PYTHON||(process.platform==='win32'?'python':'python3'),['scripts/review_party.py',path.join(review,'review-party.json')],{stdio:'inherit'});
 await build({entryPoints:['review-release.js'],bundle:true,format:'esm',outfile:path.join(review,'review-release.js'),minify:true});
 for(const name of names){if(digest(await readFile(path.join(root,name)))!==before[name])throw Error('Main changed: '+name);if(name!=='index.html'&&digest(await readFile(path.join(review,name)))!==before[name])throw Error('Review snapshot mismatch: '+name)}

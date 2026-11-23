@@ -1,0 +1,64 @@
+{
+  "checkedOn": "2026-11-23",
+  "topics": 4,
+  "proposals": [
+    {
+      "topic": "Preliminary-municipality repeal",
+      "articleId": "dispatch-municipality-20261120",
+      "proposal": "Municipal Incorporation Modifications",
+      "evidenceType": "official-draft",
+      "officialURL": "https://le.utah.gov/interim/2026/pdf/00004196.pdf",
+      "draftVersion": "0112.hv..16",
+      "session": "2027GS",
+      "candidateRequest": "KGHDYMTMHB",
+      "associationStatus": "unverified",
+      "limitation": "No explicit tracking-ID-to-draft cross-reference established. Version 13 differs materially."
+    },
+    {
+      "topic": "Nuclear waste",
+      "articleId": "dispatch-nuclear-20261119",
+      "proposal": "Nuclear Regulatory Amendments",
+      "evidenceType": "official-draft",
+      "officialURL": "https://le.utah.gov/interim/2026/pdf/00004087.pdf",
+      "draftVersion": "0551.hv..3",
+      "session": "2027GS",
+      "candidateRequest": null,
+      "associationStatus": "unverified",
+      "limitation": "No exact public request association established; do not confuse with the 2026 bill of the same title."
+    },
+    {
+      "topic": "Nuclear waste",
+      "articleId": "dispatch-nuclear-20261119",
+      "proposal": "Regional Nuclear Lifecycle Campus Amendments",
+      "evidenceType": "official-agenda-policy-discussion",
+      "officialURL": "https://le.utah.gov/interim/2026/pdf/00004032.pdf",
+      "session": "2027GS",
+      "candidateRequest": null,
+      "associationStatus": "unverified",
+      "limitation": "Agenda item 5 describes proposed policies. No public statutory draft verified."
+    },
+    {
+      "topic": "Data centers/MIDA",
+      "articleId": "dispatch-data-centers-20261118",
+      "proposal": "Data center working group policy goals",
+      "evidenceType": "committee-hosted-policy-slides",
+      "officialURL": "https://le.utah.gov/interim/2026/pdf/00004171.pdf",
+      "session": "2027GS",
+      "candidateRequest": "QYQLLTCWXN",
+      "associationStatus": "unverified",
+      "limitation": "News links directly to slides, not statutory text; no exact request-to-slides association established."
+    },
+    {
+      "topic": "Digital license plates",
+      "articleId": "ksl-digital-plates-51647172",
+      "proposal": "Digital License Plate Program",
+      "evidenceType": "official-agenda-policy-discussion",
+      "officialURL": "https://le.utah.gov/interim/2026/pdf/00003965.pdf",
+      "session": "2027GS",
+      "candidateRequest": null,
+      "associationStatus": "unverified",
+      "limitation": "Agenda item 9 names the proposal and Kwan; KSL says draft incomplete. No plate-titled public request in the checked 306-row feed; absence is not proof no internal file exists."
+    }
+  ],
+  "approvedAssociations": []
+}
