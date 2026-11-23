@@ -1,5 +1,7 @@
 # UtahBills project handoff
 
+**November 23 scheduled-refresh repair:** Narrow test correction implemented and focused checks passed; full CI/publication and a subsequent genuine scheduled success remain pending. November 16 retained the request baseline during a real title mismatch while publishing valid Calendar data; November 17–22 stopped before publication. Exact collision evidence, safeguards and acceptance states: [repair record](NOV23_REFRESH_REPAIR.md). This dated incident status supersedes older scheduled-health claims, without changing historical TEST-001 acceptance or Cloudflare release/rollback identities.
+
 Last verified **2026-11-09**. UtahBug is the independent, nonpartisan public application for finding Utah legislation, understanding changes and checking the official evidence. The repository is [utahbug/UtahBills](https://github.com/utahbug/UtahBills). The working checkout is `C:\Users\kenro\Documents\UtahBills`. Use this repository only.
 
 ## Start here — UTAH BILLS 6 (CODEX)
