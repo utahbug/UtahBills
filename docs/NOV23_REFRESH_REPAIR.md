@@ -1,5 +1,19 @@
 # November 23 scheduled-refresh regression repair
 
+## Final verification — November 23
+
+PRs #37, #38 and #39 are merged. Final implementation merge: `e63995dd476c57506efb39f8842f2747dccd6c95`. Required [push CI 45264078785](https://github.com/utahbug/UtahBills/actions/runs/45264078785) completed successfully: build, complete functional/accessibility suite and GitHub Pages deployment. This supersedes earlier pending full-CI/publication statements in this record.
+
+Live Main and Review both returned HTTP 200 and retained `noindex, nofollow`. Published application, stylesheet, catalog and Calendar hashes match the pre-repair baseline: this release changes tests/documentation only. Retained catalog: November 15 (289 verified requests plus two qualified observations). Retained Calendar: November 16 (98 events). No failed-attempt data was promoted.
+
+Latest genuine schedule found remains failed November 22 run 45062437498; its acquisition succeeded but browser CI blocked preservation/publication. Latest fully successful genuine schedule remains November 15 run 43749346005. No post-repair schedule was available at the final check. GitHub publication is restored, but scheduled end-to-end recovery remains pending an actual schedule; no manual acquisition was triggered to manufacture that evidence.
+
+The latest inspected official attempt has 306 requests, 305 verified statuses and one qualified observation `XYKLEENCOS`, zero introduced 2027 measures and 100 Calendar events. The earlier OGMUTSKTAJ title discrepancy had reconciled in those November 22 sources. Qualifications and all acquisition/publication guards remain unchanged.
+
+Cloudflare metadata still reports runtime `41e6c63e8d2d328178aa50df645557be7e99add1`. No Cloudflare deployment, DNS, tracking, source-data or application/style change was made. The recorded November 9 deployment and approved rollback identities/checksums are preserved.
+
+This final receipt is recorded locally after publication and on PR #39; it does not start another publication workflow. The merged Main documentation records the investigation and pre-publication state; include this receipt in the next normal documentation update.
+
 ## Evidence and cause
 
 Read-only logs and retained attempt artifacts were inspected; no manual acquisition was started.
