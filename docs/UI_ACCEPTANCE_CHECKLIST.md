@@ -193,3 +193,8 @@ November 9 Review batch: LEG-003 Party uses exact 2026 roster evidence only; fou
 
 
 Party batch regression gate: Linux WebKit exposed a header ResizeObserver notification on the initial desktop 1280-to-320px transition. Verify the Review-only stable-padding correction through the unchanged complete CI suite and live Review checks; local browser success alone does not clear this gate. [Failure/diagnostic record](NOV9_REVIEW_PARTY_READINESS.md#linux-webkit-resize-gate).
+
+
+## NEWS-002 — November 23 Review prototype
+
+Curated footer Legislative News dialog: original dates/outlets/bylines/headlines/direct links; no verified associations. [Evidence and verification status](NEWS_002_INVESTIGATION.md). Automated Chromium/WebKit, keyboard/focus, 320px/enlarged text, light/dark, axe and failure isolation are required. Physical iPhone/VoiceOver, visual placement and owner acceptance remain pending; this is not a production promotion.

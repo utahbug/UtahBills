@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "mode": "curated-prototype",
+  "reviewedOn": "2026-11-23",
+  "articles": [
+    {
+      "id": "dispatch-municipality-20261120",
+      "outlet": "dispatch",
+      "publishedDate": "2026-11-20",
+      "author": "Katie McKellar",
+      "headline": "Utah lawmakers eye another attempt to repeal law allowing developers to form cities",
+      "url": "https://utahnewsdispatch.com/2026/11/20/proposed-repeal-law-allowing-developers-to-form-cities-preliminary-municipalities/"
+    },
+    {
+      "id": "dispatch-nuclear-20261119",
+      "outlet": "dispatch",
+      "publishedDate": "2026-11-19",
+      "author": "Alixel Cabrera",
+      "headline": "Utah lawmakers introduce bills expanding where high-level nuclear waste is allowed",
+      "url": "https://utahnewsdispatch.com/2026/11/19/utah-lawmakers-introduce-bills-expanding-where-high-level-nuclear-waste-is-allowed/"
+    },
+    {
+      "id": "dispatch-data-centers-20261118",
+      "outlet": "dispatch",
+      "publishedDate": "2026-11-18",
+      "author": "Annie Knox",
+      "headline": "Lawmakers’ plan would restrain Utah data center development — and MIDA",
+      "url": "https://utahnewsdispatch.com/2026/11/18/lawmakers-plan-would-restrain-utah-data-center-development-and-mida/"
+    },
+    {
+      "id": "ksl-digital-plates-51647172",
+      "outlet": "ksl",
+      "publishedDate": "2026-11-22",
+      "author": "Carter Williams",
+      "headline": "What are digital license plates? Utah to consider a bill that would allow them",
+      "url": "https://www.ksl.com/article/51647172/what-are-digital-license-plates-utah-to-consider-a-bill-that-would-allow-them"
+    }
+  ]
+}

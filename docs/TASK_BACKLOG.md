@@ -305,11 +305,14 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 
 ### NEWS-002
 
-**Add RSS news and relevant bill reporting** — **Medium** · **Approved/Not started**
+**Add RSS news and relevant bill reporting** — **Medium** · **In progress — Review-only prototype; production not authorized**
 
 - **Dependencies:** Evaluate feed reliability and permitted use for Deseret News, KSL TV/Radio and other Utah outlets.
 - **Source:** [Roadmap Stage 5](../ROADMAP.md#stage-5--news-and-outside-resources--planned--deferred).
 - **Acceptance:** Provide attributed dated RSS listings and evidence-based bill article associations; clearly separate reporting from official records; test unavailable feeds, duplicate articles, accessible links and permitted excerpt use.
+- **November 23 bounded authorization:** Six-outlet feed/terms investigation and four-topic/five-proposal fixtures; curated Review-only metadata listing. No daily collector or verified Related News associations enabled. [Workflow, evidence, permission limitations and verification](NEWS_002_INVESTIGATION.md).
+- **Additional acceptance:** Source-specific permitted-use approval; publication/updated/retrieval dates kept distinct; safe URLs and text-only rendering; exact session-qualified association evidence and independent editorial sign-off; failure-isolated acquisition with retained prior snapshots; duplicate/correction handling; Main asset isolation; Chromium/WebKit, keyboard, narrow/enlarged-text, light/dark and accessibility checks; separate physical/owner acceptance. Dependencies: publisher terms/access, NEWS-001 navigation decision, CAL-004/TRANS-002 evidence, SESSION-003 identity, UI-001/RELEASE-001 acceptance.
+- **Status:** Implemented in Review source; tests/publication recorded in the linked verification receipt as completed. Not owner-accepted or production-approved.
 
 ## 8. Testing, reliability, and deployment
 
