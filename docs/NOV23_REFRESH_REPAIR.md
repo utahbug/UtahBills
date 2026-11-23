@@ -32,3 +32,11 @@ November 17–22 failed browser checks skipped snapshot preservation, Pages arti
 Required full CI and post-repair GitHub publication are pending. A subsequent genuine scheduled success is a separate acceptance gate; a push or manual run must not be reported as scheduled recovery. Historical TEST-001 acceptance remains historical; this incident remains open until post-repair schedule evidence exists.
 
 Cloudflare is untouched: preserved November 9 runtime `41e6c63e8d2d328178aa50df645557be7e99add1`, deployment `e89d8426-df1e-422a-9ae7-890570279788`, rollback deployment `9cd53e01-15f6-43b1-8185-b48f9522348a`. Existing release/rollback checksum receipts remain authoritative and unchanged. No DNS, production tracking, UI or source-data promotion is included.
+
+## Full-CI follow-up: empty Activity window
+
+PR [#37](https://github.com/utahbug/UtahBills/pull/37) merged as `55870136bb21b4dea1e8f5e4182317b568422d0a`. Required push CI [45236051787](https://github.com/utahbug/UtahBills/actions/runs/45236051787) passed source/provenance checks and build, then stopped in `review-toolbar-position.mjs` before publication. This was a separate dated-content test assumption, not an acquisition failure.
+
+Local Chromium reproduction on iPhone 13, 390×844, Light, Activity showed `scrollY: 0`, banner `y: 0, height: 68`, navigation `y: 68`. The saved catalog's default Last 5 days window had become empty, so scrolling to 600 could not exercise sticky navigation. The assertion incorrectly required top-edge sticky positioning even though the page had not scrolled.
+
+The follow-up waits for each route's actual content and uses the existing `showSavedActivity` helper to select a dated window containing real saved events. It explicitly requires scrollY > 100 and always checks that the banner scrolled away, strengthening the former conditional assertion. Top/bottom geometry, all devices/routes/themes/preferences, keyboard, storage, Main isolation, axe and the imported navigation suite remain mandatory. No application/style/source changes are made. Focused full toolbar-position and imported navigation suites passed in Chromium and WebKit, including repeated touch/history, themes, keyboard, storage and axe. Replacement full CI and genuine scheduled recovery remain pending.
