@@ -65,3 +65,18 @@ Pending at initial write: local test results, full required CI, Review publicati
 - `tests/review-news.mjs` passed in Chromium and WebKit at 320/390/1280px, light/dark, doubled text, keyboard focus wrapping/Escape restoration, axe, no publisher requests, malformed/unsafe metadata, duplicate URLs, unavailable response/retry, and unchanged underlying records.
 - Initial focused run found a Shift+Tab boundary issue; explicit modal wrapping corrected it without relaxing the assertion. Close testing waits for the native asynchronous close event and still asserts restored trigger focus. Visual inspection found the existing external-link tail interacting with flex text; ordinary block/inline text flow corrected headline spacing and wrapping. Updated phone/light and desktop/dark screenshots inspected. Evidence: `test-results/review-news/` (local ignored artifacts).
 - Existing Main/Review typography suite passed across routes, themes, text enlargement and zoom, with unchanged content and unrelated styles. Existing Party/label suites passed in Chromium and WebKit; existing November 13 Settings/color/navigation suite passed both browsers, nine widths, light/dark, persistence, enlarged text/zoom, focus and axe. Required full CI/Pages and hosted Review verification remain pending. PR: https://github.com/utahbug/UtahBills/pull/40.
+
+## Publication tracking — local receipt
+
+PR #40 merged at `331e976d93bd0e88d7d3c8125d4287ccee416761`. Required push CI/Pages [45293206906](https://github.com/utahbug/UtahBills/actions/runs/45293206906) is queued behind independently triggered genuine schedule [45293092593](https://github.com/utahbug/UtahBills/actions/runs/45293092593), which is still in functional/accessibility checks. No acquisition was manually initiated by NEWS-002. Do not claim either run succeeded until verified. Hosted NEWS-002 publication remains pending. The five-file Main baseline is retained at `test-results/news-live-before.json`; post-publication check is prepared at `test-results/news-live-check.mjs`. No Cloudflare change. This receipt is local pending final verification, avoiding an extra publication solely for status text.
+
+
+## Phase 2 continuation
+
+The owner authorized a bounded manual research pipeline on November 23. [Phase 2 implementation and evidence](NEWS_002_PHASE2.md) supersedes the earlier no-collector status only for manual, nonpublishing research. Scheduling and automatic publication remain disabled; the Review sample and all source/identity/publication gates remain unchanged.
+
+## Final Phase 1 publication verification — November 23
+
+PR #40's required full CI and combined Main/Review publication succeeded in [run 45293206906](https://github.com/utahbug/UtahBills/actions/runs/45293206906). Hosted checks passed at 18:58:54 Mountain: Chromium/WebKit, 390/1280px, axe WCAG A/AA, exact four article URLs/dates/bylines, no overflow/page errors, Escape/focus restoration, and noindex. Phone and desktop screenshots were visually inspected. Main index/application/styles/catalog/Calendar hashes match the pre-publication baseline. Hosted CSS/JSON match merged Git bytes exactly; Windows local CRLF was accounted for without relaxing content equality. [Machine-readable receipt](evidence/NEWS_002_PUBLICATION.json). This supersedes the earlier pending publication statements. Physical iPhone/VoiceOver and owner acceptance remain pending. Cloudflare is unchanged.
+
+Independent schedule 45293092593 failed source checks and its stale-head snapshot push; no scheduled deployment. A successful no-acquisition push does not establish scheduled-refresh recovery. See the Phase 2 operational receipt.

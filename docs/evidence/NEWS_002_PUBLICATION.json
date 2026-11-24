@@ -1,0 +1,58 @@
+{
+  "verifiedAt": "2026-11-24T01:58:54.221Z",
+  "main": [
+    {
+      "path": "index.html",
+      "sha256": "0b66ff1aa2d63ef97c6555d0d73aaf6a13775e12e286b781900053320179ffa1",
+      "unchanged": true
+    },
+    {
+      "path": "app.js",
+      "sha256": "d0ebf524e58f0b63707235dd388a23b9eedecea597fc59473ca648c7bfc28baa",
+      "unchanged": true
+    },
+    {
+      "path": "styles.css",
+      "sha256": "8adbe721a7b202b085c6fd20d70e4623def5f6f269bf76486d977ff56084a757",
+      "unchanged": true
+    },
+    {
+      "path": "data/catalog-ui.json",
+      "sha256": "48eaa15248a1efc000c69f6aaacc5cadfc8c098e1667ec6184bcf79b5dfe79bb",
+      "unchanged": true
+    },
+    {
+      "path": "data/calendar-ui.json",
+      "sha256": "26bdaf7e91826afcb1573ead408791a329130e56bb8248b933660c5726ed1d03",
+      "unchanged": true
+    }
+  ],
+  "reviewAssetsMatch": true,
+  "browsers": [
+    "chromium",
+    "webkit"
+  ],
+  "widths": [
+    390,
+    1280
+  ],
+  "articles": 4,
+  "verifiedAssociations": 0,
+  "commit": "331e976d93bd0e88d7d3c8125d4287ccee416761",
+  "pullRequest": 40,
+  "ciRun": 45293206906,
+  "ciResult": "success",
+  "pagesResult": "success",
+  "reviewUrl": "https://utahbug.github.io/UtahBills/review/",
+  "mainUrl": "https://utahbug.github.io/UtahBills/",
+  "checks": [
+    "exact article URLs, publication dates and bylines",
+    "axe WCAG A/AA: zero violations",
+    "Escape and trigger focus restoration",
+    "dialog overflow",
+    "no page errors",
+    "noindex, nofollow"
+  ],
+  "physicalDeviceAcceptance": "pending",
+  "cloudflareChanged": false
+}
