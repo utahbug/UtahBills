@@ -81,9 +81,14 @@ def metadata(body,source,now):
         records[url]=record
     return list(records.values())
 
+def validate_state(state):
+    if not isinstance(state,dict) or state.get('schemaVersion')!=1 or any(not isinstance(state.get(key),kind) for key,kind in [('articles',dict),('sources',dict),('decisions',list)]):
+        raise ValueError('Invalid research state schema; retain saved file and investigate')
+
+
 def refresh(previous,sources,now,transport=fetch):
-    state=copy.deepcopy(previous or {'schemaVersion':1,'articles':{},'sources':{},'decisions':[]})
-    if state.get('schemaVersion')!=1:raise ValueError('Unknown research state schema')
+    state=copy.deepcopy(previous if previous is not None else {'schemaVersion':1,'articles':{},'sources':{},'decisions':[]})
+    validate_state(state)
     for key,source in sources.items():
         old=state['sources'].get(key,{})
         report={**old,'lastAttempt':now.isoformat(),'status':'disabled','reason':source['reason']}
@@ -214,6 +219,7 @@ def main():
     review.add_argument('--proposed-text')
     args=parser.parse_args();path=OUTPUT/'state.json'
     state=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'schemaVersion':1,'articles':{},'sources':{},'decisions':[]}
+    validate_state(state)
     if args.command=='collect':
         sources=json.loads((ROOT/'scripts/news_sources.json').read_text());state=refresh(state,sources,datetime.now(timezone.utc));atomic(path,state)
         print(json.dumps({'publicationEnabled':False,'sources':{k:{'status':v['status'],'reason':v['reason'],'lastSuccess':v.get('lastSuccess')} for k,v in state['sources'].items()},'retainedArticles':len(state['articles'])},indent=2))

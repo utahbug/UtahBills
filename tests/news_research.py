@@ -79,6 +79,8 @@ class NewsResearch(unittest.TestCase):
             return 200,rss([{}]),{}
         sources={'bad':dict(SOURCE,feed='https://bad.example/feed/'),'good':SOURCE};state=n.refresh(None,sources,NOW,transport);self.assertEqual(state['sources']['bad']['status'],'failed');self.assertEqual(state['sources']['good']['status'],'success');self.assertEqual(len(state['articles']),1)
     def test_atomic_and_no_publication_wiring(self):
+        for corrupt in [{},[],{'schemaVersion':2},{'schemaVersion':1,'articles':[],'sources':{},'decisions':[]}]:
+            transport=Fetch();self.assertRaises(ValueError,n.refresh,corrupt,{'example':SOURCE},NOW,transport);self.assertEqual(transport.calls,[])
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'state.json';n.atomic(path,{'a':1});n.atomic(path,{'a':2});self.assertEqual(json.loads(path.read_text()),{'a':2});self.assertEqual(len(list(Path(tmp).iterdir())),1)
         workflow=(n.ROOT/'.github/workflows/pages.yml').read_text();self.assertNotIn('news_research.py',workflow)
