@@ -312,7 +312,7 @@ Priority is a planning order, not a new defect-severity finding. Blocked tasks r
 - **Acceptance:** Provide attributed dated RSS listings and evidence-based bill article associations; clearly separate reporting from official records; test unavailable feeds, duplicate articles, accessible links and permitted excerpt use.
 - **November 23 bounded authorization:** Six-outlet feed/terms investigation and four-topic/five-proposal fixtures; curated Review-only metadata listing. No daily collector or verified Related News associations enabled. [Workflow, evidence, permission limitations and verification](NEWS_002_INVESTIGATION.md).
 - **Additional acceptance:** Source-specific permitted-use approval; publication/updated/retrieval dates kept distinct; safe URLs and text-only rendering; exact session-qualified association evidence and independent editorial sign-off; failure-isolated acquisition with retained prior snapshots; duplicate/correction handling; Main asset isolation; Chromium/WebKit, keyboard, narrow/enlarged-text, light/dark and accessibility checks; separate physical/owner acceptance. Dependencies: publisher terms/access, NEWS-001 navigation decision, CAL-004/TRANS-002 evidence, SESSION-003 identity, UI-001/RELEASE-001 acceptance.
-- **Status:** Implemented in Review source; tests/publication recorded in the linked verification receipt as completed. Not owner-accepted or production-approved.
+- **Status:** Implemented and locally tested; PR #40 merged at 331e976. Required CI/Pages 45293206906 and hosted publication are pending behind genuine schedule 45293092593. See the linked local receipt. Not owner-accepted or production-approved.
 
 ## 8. Testing, reliability, and deployment
 
