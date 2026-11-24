@@ -1,0 +1,50 @@
+{
+  "dispatch": {
+    "name": "Utah News Dispatch",
+    "feed": "https://utahnewsdispatch.com/feed/",
+    "enabled": true,
+    "reason": "Metadata-only, noncommercial manual research under published attribution/reuse guidelines; no article bodies or AI summaries.",
+    "terms": "https://utahnewsdispatch.com/republishing-guidelines/",
+    "reviewedOn": "2026-11-23"
+  },
+  "ksl": {
+    "name": "KSL",
+    "feed": "https://www.ksl.com/rss/news",
+    "enabled": false,
+    "reason": "Recurring-use conditions not readable/confirmed; no bypass.",
+    "terms": "https://support.ksl.com/hc/en-us/articles/1260800721790-KSL-Terms-of-Use",
+    "reviewedOn": "2026-11-23"
+  },
+  "deseret": {
+    "name": "Deseret News",
+    "feed": "https://www.deseret.com/arc/outboundfeeds/rss/?outputType=xml",
+    "enabled": false,
+    "reason": "Terms restrict extraction/monitoring; explicit feed permission required.",
+    "terms": "https://www.deseret.com/pages/terms-of-use/",
+    "reviewedOn": "2026-11-23"
+  },
+  "tribune": {
+    "name": "The Salt Lake Tribune",
+    "feed": "https://www.sltrib.com/arc/outboundfeeds/rss/?outputType=xml",
+    "enabled": false,
+    "reason": "Automated access/reuse restrictions, including named-agent robots restrictions; permission required.",
+    "terms": "https://www.sltrib.com/terms-of-service/",
+    "reviewedOn": "2026-11-23"
+  },
+  "fox13": {
+    "name": "FOX 13 Utah",
+    "feed": "https://www.fox13now.com/news/rss.rss",
+    "enabled": false,
+    "reason": "Advertised feed empty; permitted reuse and working endpoint unresolved.",
+    "terms": "https://www.fox13now.com/terms-of-use",
+    "reviewedOn": "2026-11-23"
+  },
+  "kuer": {
+    "name": "KUER",
+    "feed": "https://www.kuer.org/news.rss",
+    "enabled": false,
+    "reason": "Confirm eligibility for personal noncommercial/501(c)(3) RSS use or obtain permission.",
+    "terms": "https://www.kuer.org/privacy-policy-and-terms-of-use-for-kuer-org",
+    "reviewedOn": "2026-11-23"
+  }
+}
