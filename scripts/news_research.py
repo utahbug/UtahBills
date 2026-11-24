@@ -140,17 +140,19 @@ def research_queue(state,official):
         revision=article['revisions'][-1];title=revision['metadata']['headline'];folded=title.lower()
         topics=[key for key,words in TOPICS.items() if any(word in folded for word in words)]
         # Names come only from literal headline mentions; no inferred sponsors or roster membership.
-        sponsors=re.findall(r'\b(?:Sen\.|Rep\.|Senator|Representative)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})',title)
+        name_pattern=r'\b(?:Sen\.|Rep\.|Senator|Representative)\s+([A-Z][a-z]+(?:\s+[A-Z]\.)?\s+[A-Z][a-z]+)'
+        people=re.findall(name_pattern,title)
+        sponsors=re.findall(name_pattern+r'\s+(?i:sponsors?|sponsored|introduces?|introduced)\b',title)
         matches=[]
         for record in official:
             overlap=sorted(tokens(title)&tokens(record['title']))
             exact=bool(record['title'].strip()) and record['title'].strip().casefold() in folded
             sponsor=any(name.casefold() in folded for name in record.get('sponsorNames',[]) if name)
             if exact or len(overlap)>=2 or sponsor:
-                matches.append({'recordKey':record['key'],'sessionID':record['sessionID'],'recordEvidence':record.get('recordEvidence','Saved official metadata; current status not rechecked'),'officialSource':record.get('source'),'nameEvidenceSession':record.get('nameEvidenceSession'),'reasons':{'titleMention':exact,'sharedWords':overlap,'reportedSponsorMention':sponsor},'verification':'unverified'})
+                matches.append({'recordKey':record['key'],'sessionID':record['sessionID'],'recordEvidence':record.get('recordEvidence','Saved official metadata; current status not rechecked'),'officialSource':record.get('source'),'nameEvidenceSession':record.get('nameEvidenceSession'),'reasons':{'titleMention':exact,'sharedWords':overlap,'nameMentionOnly':sponsor},'verification':'unverified'})
         if not topics and not matches:continue
         decisions=[d for d in state['decisions'] if d['articleId']==article_id and d['revisionHash']==revision['hash']]
-        result.append({'articleId':article_id,'revisionHash':revision['hash'],'headline':title,'url':revision['metadata']['url'],'reportedSponsors':sponsors,'topics':topics,'candidates':matches,'editorialDecisions':decisions,'verification':'unverified','publishable':False})
+        result.append({'articleId':article_id,'revisionHash':revision['hash'],'headline':title,'url':revision['metadata']['url'],'reportedPeople':people,'reportedSponsors':sponsors,'topics':topics,'candidates':matches,'editorialDecisions':decisions,'verification':'unverified','publishable':False})
     return result
 
 def decide(state,article_id,revision_hash,proposal,decision,reviewer,reason,evidence,kind="association",proposed_text=None):

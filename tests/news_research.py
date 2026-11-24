@@ -54,6 +54,9 @@ class NewsResearch(unittest.TestCase):
     def test_candidates_never_verified_or_collapsed(self):
         state=self.initial();official=[{'key':'2027GS/request/A','sessionID':'2027GS','title':'Nuclear Regulation Amendments'},{'key':'2027GS/request/B','sessionID':'2027GS','title':'Nuclear Regulation Modifications'}];q=n.research_queue(state,official);self.assertEqual(len(q[0]['candidates']),2);self.assertTrue(all(c['verification']=='unverified' for c in q[0]['candidates']));self.assertFalse(q[0]['publishable'])
         cases=json.loads((n.ROOT/'docs/evidence/NEWS_002_CASES.json').read_text());self.assertEqual(len(cases['proposals']),5);self.assertEqual(len(set(c['topic'] for c in cases['proposals'])),4);self.assertEqual(cases['approvedAssociations'],[])
+    def test_named_lawmaker_is_not_inferred_sponsor(self):
+        opposed=n.refresh(None,{'example':SOURCE},NOW,Fetch(rss([dict(title='Sen. Karen Kwan opposes nuclear regulation')])));q=n.research_queue(opposed,[])[0];self.assertEqual(q['reportedPeople'],['Karen Kwan']);self.assertEqual(q['reportedSponsors'],[])
+        introduced=n.refresh(None,{'example':SOURCE},NOW,Fetch(rss([dict(title='Sen. Karen Kwan introduces nuclear regulation proposal')])));q=n.research_queue(introduced,[])[0];self.assertEqual(q['reportedSponsors'],['Karen Kwan']);self.assertEqual(q['verification'],'unverified')
     def test_editorial_decisions_revision_gate(self):
         state=self.initial();ident=next(iter(state['articles']));revision=state['articles'][ident]['revisions'][-1]['hash']
         self.assertRaises(ValueError,n.decide,state,ident,revision,'proposal','accept','Reviewer','rationale',[])
