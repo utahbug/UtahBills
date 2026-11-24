@@ -50,7 +50,7 @@ class NewsResearch(unittest.TestCase):
         self.assertRaises(ValueError,n.Redirect('news.example').redirect_request,None,None,302,'',{},'https://evil.example/x')
         self.assertNotEqual(n.canonical('https://news.example/x?id=1','news.example'),n.canonical('https://news.example/x?id=2','news.example'))
     def test_date_precision(self):
-        self.assertFalse(n.stamp('Mon, 23 Nov 2026 10:00:00',NOW)['timezoneKnown']);self.assertIsNone(n.stamp('2026-11-23',NOW)['instant']);self.assertRaises(ValueError,n.stamp,'2027-11-23',NOW)
+        self.assertFalse(n.stamp('Mon, 23 Nov 2026 10:00:00',NOW)['timezoneKnown']);self.assertIsNone(n.stamp('2026-11-23',NOW)['instant']);self.assertRaises(ValueError,n.stamp,'2027-11-23',NOW);self.assertRaises(ValueError,n.stamp,'2026-11-24T00:00:00+00:00',NOW)
     def test_candidates_never_verified_or_collapsed(self):
         state=self.initial();official=[{'key':'2027GS/request/A','sessionID':'2027GS','title':'Nuclear Regulation Amendments'},{'key':'2027GS/request/B','sessionID':'2027GS','title':'Nuclear Regulation Modifications'}];q=n.research_queue(state,official);self.assertEqual(len(q[0]['candidates']),2);self.assertTrue(all(c['verification']=='unverified' for c in q[0]['candidates']));self.assertFalse(q[0]['publishable'])
         cases=json.loads((n.ROOT/'docs/evidence/NEWS_002_CASES.json').read_text());self.assertEqual(len(cases['proposals']),5);self.assertEqual(len(set(c['topic'] for c in cases['proposals'])),4);self.assertEqual(cases['approvedAssociations'],[])

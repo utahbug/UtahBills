@@ -51,7 +51,7 @@ def fetch(url,headers=None):
 def stamp(raw,now):
     try: value=parsedate_to_datetime(raw)
     except (ValueError,TypeError): value=datetime.fromisoformat(raw.replace('Z','+00:00'))
-    if value.date()>now.date()+timedelta(days=1):raise ValueError('Future publication date')
+    if value.date()>now.date()+timedelta(days=1) or (value.tzinfo is not None and value>now+timedelta(minutes=10)):raise ValueError('Future publication date')
     return {'raw':raw,'date':value.date().isoformat(),'timezoneKnown':value.tzinfo is not None,
             'instant':value.astimezone(timezone.utc).isoformat() if value.tzinfo else None}
 
