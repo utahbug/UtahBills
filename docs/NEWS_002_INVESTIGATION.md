@@ -74,3 +74,9 @@ PR #40 merged at `331e976d93bd0e88d7d3c8125d4287ccee416761`. Required push CI/Pa
 ## Phase 2 continuation
 
 The owner authorized a bounded manual research pipeline on November 23. [Phase 2 implementation and evidence](NEWS_002_PHASE2.md) supersedes the earlier no-collector status only for manual, nonpublishing research. Scheduling and automatic publication remain disabled; the Review sample and all source/identity/publication gates remain unchanged.
+
+## Final Phase 1 publication verification — November 23
+
+PR #40's required full CI and combined Main/Review publication succeeded in [run 45293206906](https://github.com/utahbug/UtahBills/actions/runs/45293206906). Hosted checks passed at 18:58:54 Mountain: Chromium/WebKit, 390/1280px, axe WCAG A/AA, exact four article URLs/dates/bylines, no overflow/page errors, Escape/focus restoration, and noindex. Phone and desktop screenshots were visually inspected. Main index/application/styles/catalog/Calendar hashes match the pre-publication baseline. Hosted CSS/JSON match merged Git bytes exactly; Windows local CRLF was accounted for without relaxing content equality. [Machine-readable receipt](evidence/NEWS_002_PUBLICATION.json). This supersedes the earlier pending publication statements. Physical iPhone/VoiceOver and owner acceptance remain pending. Cloudflare is unchanged.
+
+Independent schedule 45293092593 failed source checks and its stale-head snapshot push; no scheduled deployment. A successful no-acquisition push does not establish scheduled-refresh recovery. See the Phase 2 operational receipt.
